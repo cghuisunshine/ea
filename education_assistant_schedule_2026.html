@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FT Education Assistant Schedule 2026</title>
+  <style>
+    :root {
+      --bg: #f6f2ec;
+      --paper: #fffdf9;
+      --ink: #222222;
+      --muted: #6f675d;
+      --line: #ded5c9;
+      --brand: #6f1d1b;
+      --brand-soft: #fff1eb;
+      --class: #fefefe;
+      --class-border: #d6d0c6;
+      --flex: #6f1d1b;
+      --flex-text: #ffd36a;
+      --holiday: #f8e7e3;
+      --holiday-ink: #9d3432;
+      --practicum: #eef7ee;
+      --practicum-border: #b8d8b9;
+      --workshop: #eef3fa;
+      --workshop-border: #b8c9e2;
+      --today: #1f6feb;
+      --shadow: 0 14px 40px rgba(44, 36, 26, 0.12);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(111, 29, 27, 0.08), transparent 32rem),
+        linear-gradient(180deg, var(--bg), #ede6dc);
+      min-height: 100vh;
+      padding: 24px;
+    }
+
+    .app {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .topline {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .brand {
+      display: grid;
+      gap: 4px;
+    }
+
+    .brand .small {
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(26px, 4vw, 42px);
+      line-height: 1.05;
+    }
+
+    .meta {
+      background: #fff8d7;
+      border: 1px solid #e8d074;
+      border-radius: 12px;
+      padding: 10px 12px;
+      min-width: 245px;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .meta strong { color: var(--brand); }
+
+    .subtitle {
+      font-weight: 700;
+      color: var(--brand);
+      font-size: 16px;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    button, select {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: white;
+      color: var(--ink);
+      border-radius: 12px;
+      min-height: 42px;
+      padding: 0 14px;
+      font: inherit;
+      font-weight: 650;
+      cursor: pointer;
+    }
+
+    button.primary {
+      background: var(--brand);
+      color: white;
+      border-color: var(--brand);
+    }
+
+    button[aria-pressed="true"] {
+      outline: 3px solid rgba(111, 29, 27, 0.22);
+      border-color: var(--brand);
+    }
+
+    button:hover, select:hover {
+      transform: translateY(-1px);
+    }
+
+    .view-title {
+      margin: 22px 0 12px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .view-title h2 {
+      margin: 0;
+      font-size: clamp(22px, 3vw, 34px);
+    }
+
+    .today-note {
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .week-grid, .month-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .weekday {
+      text-align: center;
+      font-weight: 800;
+      color: var(--muted);
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: .08em;
+      padding: 8px 4px;
+    }
+
+    .day {
+      background: rgba(255, 253, 249, 0.86);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      min-height: 176px;
+      padding: 10px;
+      position: relative;
+      box-shadow: 0 8px 20px rgba(35, 28, 20, 0.06);
+    }
+
+    .month-grid .day {
+      min-height: 134px;
+      padding: 8px;
+    }
+
+    .day.outside-month {
+      opacity: 0.55;
+      background: #fbf7f0;
+    }
+
+    .day.today {
+      border: 3px solid var(--today);
+      box-shadow: 0 0 0 4px rgba(31, 111, 235, 0.12), 0 12px 28px rgba(31, 111, 235, 0.12);
+    }
+
+    .date-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .date-num {
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .month-grid .date-num {
+      font-size: 18px;
+    }
+
+    .date-label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .today-pill {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      background: var(--today);
+      color: white;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 8px;
+      white-space: nowrap;
+    }
+
+    .event {
+      border: 1px solid var(--class-border);
+      background: var(--class);
+      border-radius: 12px;
+      padding: 8px;
+      margin-top: 7px;
+      font-size: 13px;
+      line-height: 1.25;
+    }
+
+    .event-title {
+      font-weight: 850;
+    }
+
+    .event-code {
+      color: var(--brand);
+      font-weight: 850;
+      margin-left: 4px;
+      white-space: nowrap;
+    }
+
+    .event-detail {
+      color: var(--muted);
+      margin-top: 3px;
+      font-size: 12.5px;
+    }
+
+    .event.flex {
+      background: var(--flex);
+      border-color: var(--flex);
+      color: var(--flex-text);
+      text-align: center;
+      font-weight: 900;
+      letter-spacing: .02em;
+    }
+
+    .event.flex .event-detail, .event.flex .event-code { color: var(--flex-text); }
+
+    .event.holiday {
+      background: var(--holiday);
+      border-color: #e9b7af;
+      color: var(--holiday-ink);
+      text-align: center;
+    }
+
+    .event.practicum {
+      background: var(--practicum);
+      border-color: var(--practicum-border);
+    }
+
+    .event.workshop, .event.orientation {
+      background: var(--workshop);
+      border-color: var(--workshop-border);
+    }
+
+    .event.orientation .event-title {
+      color: #136f63;
+    }
+
+    .empty {
+      color: #b3a89a;
+      font-size: 13px;
+      padding-top: 16px;
+      text-align: center;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .legend span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 253, 249, 0.72);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: white;
+    }
+
+    .dot.flex { background: var(--flex); border-color: var(--flex); }
+    .dot.holiday { background: var(--holiday); border-color: #e9b7af; }
+    .dot.practicum { background: var(--practicum); border-color: var(--practicum-border); }
+    .dot.workshop { background: var(--workshop); border-color: var(--workshop-border); }
+    .dot.today { background: var(--today); border-color: var(--today); }
+
+    .hidden { display: none !important; }
+
+    .footer {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 840px) {
+      body { padding: 12px; }
+      header { padding: 16px; }
+      .week-grid, .month-grid {
+        grid-template-columns: 1fr;
+      }
+      .weekday {
+        display: none;
+      }
+      .day {
+        min-height: auto;
+      }
+      .month-grid .day.outside-month {
+        display: none;
+      }
+      .controls > * {
+        flex: 1 1 42%;
+      }
+      select {
+        width: 100%;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      header, .day {
+        box-shadow: none;
+      }
+      .controls, .legend, .footer {
+        display: none;
+      }
+      .day.today {
+        border: 3px solid #000;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="topline">
+        <div class="brand">
+          <div class="small">Burnaby Community & Continuing Education</div>
+          <h1>FT – Education Assistant Schedule</h1>
+          <div class="subtitle">#B111 · Tue/Thu 6:00–9:00 pm · Sat 9:00 am–3:30 pm</div>
+        </div>
+        <div class="meta">
+          <div><strong>Start:</strong> Jul 03, 2026</div>
+          <div><strong>End:</strong> Dec 18, 2026</div>
+          <div><strong>Last updated:</strong> Jun 26, 2026</div>
+          <div><strong>By:</strong> Zahra Mozafari</div>
+          <div><strong>Note:</strong> subject to change</div>
+        </div>
+      </div>
+
+      <div class="controls" aria-label="Calendar controls">
+        <button class="primary" id="todayBtn">Today / Current Week</button>
+        <button id="prevBtn">‹ Previous</button>
+        <button id="nextBtn">Next ›</button>
+        <select id="monthSelect" aria-label="Jump to month">
+          <option value="2026-07-01">July 2026</option>
+          <option value="2026-08-01">August 2026</option>
+          <option value="2026-09-01">September 2026</option>
+          <option value="2026-10-01">October 2026</option>
+          <option value="2026-11-01">November 2026</option>
+          <option value="2026-12-01">December 2026</option>
+        </select>
+        <button id="weekMode" aria-pressed="true">Week view</button>
+        <button id="monthMode" aria-pressed="false">Month view</button>
+        <button onclick="window.print()">Print</button>
+      </div>
+    </header>
+
+    <section class="view-title">
+      <h2 id="rangeTitle">Current Week</h2>
+      <div class="today-note" id="todayLabel"></div>
+    </section>
+
+    <main id="calendar"></main>
+
+    <div class="legend" aria-label="Legend">
+      <span><i class="dot today"></i> Today</span>
+      <span><i class="dot"></i> Class</span>
+      <span><i class="dot flex"></i> Flex Day</span>
+      <span><i class="dot holiday"></i> Holiday / No class</span>
+      <span><i class="dot practicum"></i> Practicum</span>
+      <span><i class="dot workshop"></i> Orientation / Workshop</span>
+    </div>
+
+    <p class="footer">
+      Converted from the photographed monthly CCE schedules. The page opens to the current week by default and highlights today's date automatically.
+    </p>
+  </div>
+
+  <script>
+    const EVENTS = [
+  {
+    "date": "2026-07-01",
+    "title": "Canada Day",
+    "type": "holiday",
+    "code": "",
+    "instructor": "",
+    "note": "No class",
+    "time": ""
+  },
+  {
+    "date": "2026-07-03",
+    "title": "Orientation Day",
+    "type": "orientation",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Foundation / History – Special Ed",
+    "type": "class",
+    "code": "#6115-1",
+    "instructor": "Christine Boudreau",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-07",
+    "title": "Foundation / History – Special Ed",
+    "type": "class",
+    "code": "#6115-1",
+    "instructor": "Christine Boudreau",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Foundation / History – Special Ed",
+    "type": "class",
+    "code": "#6115-1",
+    "instructor": "Christine Boudreau",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Foundation / History – Special Ed",
+    "type": "class",
+    "code": "#6115-1",
+    "instructor": "Christine Boudreau",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-10",
+    "title": "Foundation / History – Special Ed",
+    "type": "class",
+    "code": "#6115-1",
+    "instructor": "Christine Boudreau",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-13",
+    "title": "Flex Day",
+    "type": "flex",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-14",
+    "title": "Child and Adolescent Development",
+    "type": "class",
+    "code": "#6116-1",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Child and Adolescent Development",
+    "type": "class",
+    "code": "#6116-1",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Child and Adolescent Development",
+    "type": "class",
+    "code": "#6116-1",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-17",
+    "title": "Child and Adolescent Development",
+    "type": "class",
+    "code": "#6116-1",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Child and Adolescent Development",
+    "type": "class",
+    "code": "#6116-1",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-21",
+    "title": "Flex Day",
+    "type": "flex",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Supporting Students with Diverse Needs",
+    "type": "class",
+    "code": "#6117-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Supporting Students with Diverse Needs",
+    "type": "class",
+    "code": "#6117-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-24",
+    "title": "Supporting Students with Diverse Needs",
+    "type": "class",
+    "code": "#6117-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-27",
+    "title": "Supporting Students with Diverse Needs",
+    "type": "class",
+    "code": "#6117-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Supporting Students with Diverse Needs",
+    "type": "class",
+    "code": "#6117-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Supporting Students with Diverse Needs",
+    "type": "class",
+    "code": "#6117-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-30",
+    "title": "Supporting Students with Diverse Needs",
+    "type": "class",
+    "code": "#6117-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-07-31",
+    "title": "Flex Day",
+    "type": "flex",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-03",
+    "title": "BC Day",
+    "type": "holiday",
+    "code": "",
+    "instructor": "",
+    "note": "No class",
+    "time": ""
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Intro to Tech for EAs",
+    "type": "class",
+    "code": "#6128-1",
+    "instructor": "Christine Boudreau",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-05",
+    "title": "Intro to Tech for EAs",
+    "type": "class",
+    "code": "#6128-1",
+    "instructor": "Christine Boudreau",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Intro to Tech for EAs",
+    "type": "class",
+    "code": "#6128-1",
+    "instructor": "Melissa Roffel / Kathy Roffel",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-07",
+    "title": "Intro to Tech for EAs",
+    "type": "class",
+    "code": "#6128-1",
+    "instructor": "Melissa Roffel / Kathy Roffel",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-10",
+    "title": "Non Violent Crisis Intervention",
+    "type": "class",
+    "code": "#6123-1",
+    "instructor": "Christine Boudreau",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-11",
+    "title": "Non Violent Crisis Intervention",
+    "type": "class",
+    "code": "#6123-1",
+    "instructor": "Christine Boudreau",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Flex Day",
+    "type": "flex",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Inclusive Support in Education",
+    "type": "class",
+    "code": "#6121-1",
+    "instructor": "Leonie Stephens",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-14",
+    "title": "Inclusive Support in Education",
+    "type": "class",
+    "code": "#6121-1",
+    "instructor": "Leonie Stephens",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Inclusive Support in Education",
+    "type": "class",
+    "code": "#6121-1",
+    "instructor": "Leonie Stephens",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-18",
+    "title": "Inclusive Support in Education",
+    "type": "class",
+    "code": "#6121-1",
+    "instructor": "Leonie Stephens",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Inclusive Support in Education",
+    "type": "class",
+    "code": "#6121-1",
+    "instructor": "Leonie Stephens",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-20",
+    "title": "Inclusive Support in Education",
+    "type": "class",
+    "code": "#6121-1",
+    "instructor": "Leonie Stephens",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-21",
+    "title": "Flex Day",
+    "type": "flex",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Working Effectively in Schools",
+    "type": "class",
+    "code": "#6120-1",
+    "instructor": "Heather",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-25",
+    "title": "Working Effectively in Schools",
+    "type": "class",
+    "code": "#6120-1",
+    "instructor": "Heather",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-26",
+    "title": "Working Effectively in Schools",
+    "type": "class",
+    "code": "#6120-1",
+    "instructor": "Heather",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-27",
+    "title": "Working Effectively in Schools",
+    "type": "class",
+    "code": "#6120-1",
+    "instructor": "Heather",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-28",
+    "title": "Working Effectively in Schools",
+    "type": "class",
+    "code": "#6120-1",
+    "instructor": "Heather",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-08-31",
+    "title": "Positive Behaviour Interventions",
+    "type": "class",
+    "code": "#6119-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-01",
+    "title": "Positive Behaviour Interventions",
+    "type": "class",
+    "code": "#6119-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Positive Behaviour Interventions",
+    "type": "class",
+    "code": "#6119-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-03",
+    "title": "Positive Behaviour Interventions",
+    "type": "class",
+    "code": "#6119-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-04",
+    "title": "Positive Behaviour Interventions",
+    "type": "class",
+    "code": "#6119-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-07",
+    "title": "Labor Day",
+    "type": "holiday",
+    "code": "",
+    "instructor": "",
+    "note": "No class",
+    "time": ""
+  },
+  {
+    "date": "2026-09-08",
+    "title": "Positive Behaviour Interventions",
+    "type": "class",
+    "code": "#6119-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Positive Behaviour Interventions",
+    "type": "class",
+    "code": "#6119-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-10",
+    "title": "Positive Behaviour Interventions",
+    "type": "class",
+    "code": "#6119-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-11",
+    "title": "Positive Behaviour Interventions",
+    "type": "class",
+    "code": "#6119-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-14",
+    "title": "Positive Behaviour Interventions",
+    "type": "class",
+    "code": "#6119-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-15",
+    "title": "Positive Behaviour Interventions",
+    "type": "class",
+    "code": "#6119-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Positive Behaviour Interventions",
+    "type": "class",
+    "code": "#6119-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-17",
+    "title": "Flex Day",
+    "type": "flex",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-18",
+    "title": "Positive Behaviour Interventions",
+    "type": "class",
+    "code": "#6119-1",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-21",
+    "title": "POPARD",
+    "type": "class",
+    "code": "#6122-1",
+    "instructor": "Provincial Outreach Program for Autism and Related Disorders",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-22",
+    "title": "POPARD",
+    "type": "class",
+    "code": "#6122-1",
+    "instructor": "Provincial Outreach Program for Autism and Related Disorders",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-23",
+    "title": "POPARD",
+    "type": "class",
+    "code": "#6122-1",
+    "instructor": "Provincial Outreach Program for Autism and Related Disorders",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-24",
+    "title": "POPARD",
+    "type": "class",
+    "code": "#6122-1",
+    "instructor": "Provincial Outreach Program for Autism and Related Disorders",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-25",
+    "title": "POPARD",
+    "type": "class",
+    "code": "#6122-1",
+    "instructor": "Provincial Outreach Program for Autism and Related Disorders",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-28",
+    "title": "First Aid",
+    "type": "workshop",
+    "code": "#6130-1",
+    "instructor": "St. John Ambulance New West",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-29",
+    "title": "First Aid",
+    "type": "workshop",
+    "code": "#6130-1",
+    "instructor": "St. John Ambulance New West",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-09-30",
+    "title": "National Day for Truth and Reconciliation",
+    "type": "holiday",
+    "code": "",
+    "instructor": "",
+    "note": "No class",
+    "time": ""
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Practicum 1 Prep Session",
+    "type": "practicum",
+    "code": "",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": "9:00 am–3:30 pm"
+  },
+  {
+    "date": "2026-10-02",
+    "title": "Practicum 1",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-05",
+    "title": "Practicum 1",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-06",
+    "title": "Practicum 1",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-07",
+    "title": "Practicum 1",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-08",
+    "title": "Practicum 1",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-09",
+    "title": "Practicum 1",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-12",
+    "title": "Thanksgiving Day",
+    "type": "holiday",
+    "code": "",
+    "instructor": "",
+    "note": "No class",
+    "time": ""
+  },
+  {
+    "date": "2026-10-13",
+    "title": "Practicum 1",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-14",
+    "title": "AM – Practicum 1 / PM – Practicum Debrief",
+    "type": "practicum",
+    "code": "",
+    "instructor": "Zahra Mozafari & Rani Shirota",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-15",
+    "title": "Practicum 1",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-16",
+    "title": "Practicum 1",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-19",
+    "title": "Practicum 1",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-20",
+    "title": "Practicum 1",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-21",
+    "title": "Practicum 1",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-22",
+    "title": "Practicum 1",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-23",
+    "title": "AM – Practicum 1 / PM – Practicum Debrief",
+    "type": "practicum",
+    "code": "",
+    "instructor": "Zahra Mozafari & Rani Shirota",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-26",
+    "title": "Supporting Students with Communication",
+    "type": "class",
+    "code": "#6118-1",
+    "instructor": "Sarah Ehl",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-27",
+    "title": "Supporting Students with Communication",
+    "type": "class",
+    "code": "#6118-1",
+    "instructor": "Sarah Ehl",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-28",
+    "title": "Supporting Students with Communication",
+    "type": "class",
+    "code": "#6118-1",
+    "instructor": "Sarah Ehl",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-29",
+    "title": "Supporting Students with Communication",
+    "type": "class",
+    "code": "#6118-1",
+    "instructor": "Sarah Ehl",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Supporting Students with Communication",
+    "type": "class",
+    "code": "#6118-1",
+    "instructor": "Sarah Ehl",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-02",
+    "title": "Supporting Students with Communication",
+    "type": "class",
+    "code": "#6118-1",
+    "instructor": "Sarah Ehl",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-03",
+    "title": "Supporting Students with Communication",
+    "type": "class",
+    "code": "#6118-1",
+    "instructor": "Sarah Ehl",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-04",
+    "title": "Flex Day",
+    "type": "flex",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-05",
+    "title": "Working with Youth at Risk",
+    "type": "class",
+    "code": "#6129-1",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Working with Youth at Risk",
+    "type": "class",
+    "code": "#6129-1",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-09",
+    "title": "Supporting Health Care Nursing Focus",
+    "type": "class",
+    "code": "#6124-1",
+    "instructor": "Kimberly McKinley",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Supporting Health Care Nursing Focus",
+    "type": "class",
+    "code": "#6124-1",
+    "instructor": "Kimberly McKinley",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Remembrance Day",
+    "type": "holiday",
+    "code": "",
+    "instructor": "",
+    "note": "No class",
+    "time": ""
+  },
+  {
+    "date": "2026-11-12",
+    "title": "Supporting Health Care PT Focus",
+    "type": "class",
+    "code": "#6125-1",
+    "instructor": "Jennifer Finnegan",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Supporting Health Care PT Focus",
+    "type": "class",
+    "code": "#6125-1",
+    "instructor": "Jennifer Finnegan",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-16",
+    "title": "Supporting Health Care PT Focus",
+    "type": "class",
+    "code": "#6125-1",
+    "instructor": "Jennifer Finnegan",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-17",
+    "title": "Practicum 2 Prep Session",
+    "type": "practicum",
+    "code": "",
+    "instructor": "Zahra Mozafari",
+    "note": "",
+    "time": "9:00 am–3:30 pm"
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-20",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-25",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-26",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-27",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-11-30",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-01",
+    "title": "AM – Practicum / PM – Practicum Debrief",
+    "type": "practicum",
+    "code": "",
+    "instructor": "Zahra Mozafari & Rani Shirota",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-02",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-03",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-04",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-07",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-08",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-09",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-10",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-11",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-14",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-15",
+    "title": "Practicum 2",
+    "type": "practicum",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-16",
+    "title": "AM – Practicum / PM – Practicum Debrief",
+    "type": "practicum",
+    "code": "",
+    "instructor": "Zahra Mozafari & Rani Shirota",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-17",
+    "title": "Flex Day",
+    "type": "flex",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-18",
+    "title": "Flex Day",
+    "type": "flex",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-21",
+    "title": "Working with Youth at Risk",
+    "type": "class",
+    "code": "#6129-1",
+    "instructor": "District Psychology Team",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-22",
+    "title": "Flex Day",
+    "type": "flex",
+    "code": "",
+    "instructor": "",
+    "note": "",
+    "time": ""
+  },
+  {
+    "date": "2026-12-25",
+    "title": "Christmas",
+    "type": "holiday",
+    "code": "",
+    "instructor": "",
+    "note": "No class",
+    "time": ""
+  }
+];
+
+    const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const shortWeekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const monthNames = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+
+    let view = "week";
+    let anchorDate = getDefaultDate();
+
+    function getDefaultDate() {
+      const now = new Date();
+      now.setHours(0, 0, 0, 0);
+      return now;
+    }
+
+    function localDateFromKey(key) {
+      const [y, m, d] = key.split("-").map(Number);
+      return new Date(y, m - 1, d);
+    }
+
+    function keyFromDate(date) {
+      const y = date.getFullYear();
+      const m = String(date.getMonth() + 1).padStart(2, "0");
+      const d = String(date.getDate()).padStart(2, "0");
+      return `${y}-${m}-${d}`;
+    }
+
+    function sameDay(a, b) {
+      return a.getFullYear() === b.getFullYear()
+        && a.getMonth() === b.getMonth()
+        && a.getDate() === b.getDate();
+    }
+
+    function addDays(date, amount) {
+      const d = new Date(date);
+      d.setDate(d.getDate() + amount);
+      return d;
+    }
+
+    function startOfWeek(date) {
+      const d = new Date(date);
+      d.setDate(d.getDate() - d.getDay());
+      d.setHours(0, 0, 0, 0);
+      return d;
+    }
+
+    function startOfMonthGrid(date) {
+      const first = new Date(date.getFullYear(), date.getMonth(), 1);
+      return startOfWeek(first);
+    }
+
+    function endOfMonthGrid(date) {
+      const last = new Date(date.getFullYear(), date.getMonth() + 1, 0);
+      return addDays(last, 6 - last.getDay());
+    }
+
+    function formatRange(start, end) {
+      const sameMonth = start.getFullYear() === end.getFullYear() && start.getMonth() === end.getMonth();
+      if (sameMonth) {
+        return `${monthNames[start.getMonth()]} ${start.getDate()}–${end.getDate()}, ${start.getFullYear()}`;
+      }
+      return `${monthNames[start.getMonth()]} ${start.getDate()}, ${start.getFullYear()} – ${monthNames[end.getMonth()]} ${end.getDate()}, ${end.getFullYear()}`;
+    }
+
+    function formatFullDate(date) {
+      return `${weekdays[date.getDay()]}, ${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+    }
+
+    function eventsForDate(date) {
+      const key = keyFromDate(date);
+      return EVENTS.filter(event => event.date === key);
+    }
+
+    function render() {
+      document.getElementById("weekMode").setAttribute("aria-pressed", String(view === "week"));
+      document.getElementById("monthMode").setAttribute("aria-pressed", String(view === "month"));
+      document.getElementById("todayLabel").textContent = `Today: ${formatFullDate(getDefaultDate())}`;
+
+      if (view === "week") {
+        renderWeek();
+      } else {
+        renderMonth();
+      }
+    }
+
+    function renderWeek() {
+      const calendar = document.getElementById("calendar");
+      const weekStart = startOfWeek(anchorDate);
+      const weekEnd = addDays(weekStart, 6);
+      document.getElementById("rangeTitle").textContent = formatRange(weekStart, weekEnd);
+
+      const days = [];
+      for (let i = 0; i < 7; i++) days.push(addDays(weekStart, i));
+
+      calendar.innerHTML = `
+        <div class="week-grid" role="row">
+          ${weekdays.map(day => `<div class="weekday">${day}</div>`).join("")}
+          ${days.map(date => dayCell(date, false)).join("")}
+        </div>
+      `;
+      syncMonthSelect(anchorDate);
+    }
+
+    function renderMonth() {
+      const calendar = document.getElementById("calendar");
+      const monthDate = new Date(anchorDate.getFullYear(), anchorDate.getMonth(), 1);
+      const gridStart = startOfMonthGrid(monthDate);
+      const gridEnd = endOfMonthGrid(monthDate);
+      document.getElementById("rangeTitle").textContent = `${monthNames[monthDate.getMonth()]} ${monthDate.getFullYear()}`;
+
+      const days = [];
+      for (let d = gridStart; d <= gridEnd; d = addDays(d, 1)) days.push(new Date(d));
+
+      calendar.innerHTML = `
+        <div class="month-grid" role="row">
+          ${weekdays.map(day => `<div class="weekday">${day}</div>`).join("")}
+          ${days.map(date => dayCell(date, date.getMonth() !== monthDate.getMonth())).join("")}
+        </div>
+      `;
+      syncMonthSelect(monthDate);
+    }
+
+    function dayCell(date, outsideMonth) {
+      const today = getDefaultDate();
+      const dateEvents = eventsForDate(date);
+      const classes = [
+        "day",
+        outsideMonth ? "outside-month" : "",
+        sameDay(date, today) ? "today" : ""
+      ].filter(Boolean).join(" ");
+
+      return `
+        <article class="${classes}" aria-label="${formatFullDate(date)}">
+          <div class="date-row">
+            <div>
+              <div class="date-num">${date.getDate()}</div>
+              <div class="date-label">${shortWeekdays[date.getDay()]} · ${monthNames[date.getMonth()].slice(0, 3)}</div>
+            </div>
+            ${sameDay(date, today) ? `<span class="today-pill">Today</span>` : ""}
+          </div>
+          ${dateEvents.length ? dateEvents.map(eventCard).join("") : `<div class="empty">No scheduled item</div>`}
+        </article>
+      `;
+    }
+
+    function eventCard(event) {
+      const typeClass = event.type || "class";
+      const code = event.code ? `<span class="event-code">${event.code}</span>` : "";
+      const instructor = event.instructor ? `<div class="event-detail">Instructor: ${escapeHtml(event.instructor)}</div>` : "";
+      const time = event.time ? `<div class="event-detail">Time: ${escapeHtml(event.time)}</div>` : "";
+      const note = event.note ? `<div class="event-detail">${escapeHtml(event.note)}</div>` : "";
+      return `
+        <div class="event ${typeClass}">
+          <div class="event-title">${escapeHtml(event.title)}${code}</div>
+          ${time}
+          ${instructor}
+          ${note}
+        </div>
+      `;
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function syncMonthSelect(date) {
+      const select = document.getElementById("monthSelect");
+      const key = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-01`;
+      if ([...select.options].some(option => option.value === key)) {
+        select.value = key;
+      }
+    }
+
+    document.getElementById("todayBtn").addEventListener("click", () => {
+      anchorDate = getDefaultDate();
+      view = "week";
+      render();
+    });
+
+    document.getElementById("prevBtn").addEventListener("click", () => {
+      anchorDate = view === "week" ? addDays(anchorDate, -7) : new Date(anchorDate.getFullYear(), anchorDate.getMonth() - 1, 1);
+      render();
+    });
+
+    document.getElementById("nextBtn").addEventListener("click", () => {
+      anchorDate = view === "week" ? addDays(anchorDate, 7) : new Date(anchorDate.getFullYear(), anchorDate.getMonth() + 1, 1);
+      render();
+    });
+
+    document.getElementById("weekMode").addEventListener("click", () => {
+      view = "week";
+      render();
+    });
+
+    document.getElementById("monthMode").addEventListener("click", () => {
+      view = "month";
+      render();
+    });
+
+    document.getElementById("monthSelect").addEventListener("change", (event) => {
+      anchorDate = localDateFromKey(event.target.value);
+      view = "month";
+      render();
+    });
+
+    render();
+  </script>
+</body>
+</html>
