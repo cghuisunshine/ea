@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 1&2 Review Quiz — Answer Form</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #dbe4f0;
+      --accent: #0f6fc6;
+      --answer: #e8f4ff;
+      --correct: #d8f3dc;
+      --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f6fc6, #0b9bd8);
+      color: white;
+      padding: 32px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+    }
+
+    header p {
+      margin: 0;
+      opacity: 0.95;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 28px auto;
+      padding: 0 16px 40px;
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--card);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      border: none;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-size: 1rem;
+      cursor: pointer;
+      background: var(--accent);
+      color: #fff;
+    }
+
+    button.secondary {
+      background: #374151;
+    }
+
+    .score {
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+      margin: 18px 0;
+      box-shadow: var(--shadow);
+    }
+
+    .q-header {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .point {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .question-text {
+      font-size: 1.06rem;
+      margin: 0 0 16px;
+    }
+
+    .options {
+      display: grid;
+      gap: 10px;
+    }
+
+    .option {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: #fff;
+    }
+
+    .option.correct-choice {
+      background: var(--answer);
+      border-color: #9ecff5;
+    }
+
+    .option input {
+      width: 18px;
+      height: 18px;
+    }
+
+    .answer-line {
+      margin: 14px 0 0;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: var(--correct);
+    }
+
+    .answer-key {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px;
+      margin-top: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+    }
+
+    th {
+      background: #eef5ff;
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+      header, .toolbar {
+        box-shadow: none;
+      }
+      button {
+        display: none;
+      }
+      .card, .answer-key {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Module 1&2 Review Quiz</h1>
+    <p>Answer Form — correct answers are pre-selected and shown below each question.</p>
+  </header>
+
+  <main>
+    <div class="toolbar">
+      <div>
+        <strong>Saved answers:</strong> 10 of 10<br>
+        <span class="score" id="score">Score: not checked yet</span>
+      </div>
+      <div>
+        <button onclick="checkAnswers()">Check Answers</button>
+        <button class="secondary" onclick="window.print()">Print / Save as PDF</button>
+      </div>
+    </div>
+
+    <form id="quizForm">
+      
+      <section class="card" data-answer="True">
+        <div class="q-header">
+          <h2>Question 1</h2>
+          <span class="point">1 point</span>
+        </div>
+        <p class="question-text">An Education Assistant needs to be aware of their role and personal values, beliefs and attitudes in supporting students with special needs in the school and community.</p>
+        <div class="options">
+          
+          <label class="option correct-choice" for="q1_0">
+            <input id="q1_0" type="radio" name="q1" value="True" checked>
+            <span>True</span>
+          </label>
+        
+          <label class="option" for="q1_1">
+            <input id="q1_1" type="radio" name="q1" value="False" >
+            <span>False</span>
+          </label>
+        
+        </div>
+        <p class="answer-line">Answer: <strong>True</strong></p>
+      </section>
+    
+      <section class="card" data-answer="True">
+        <div class="q-header">
+          <h2>Question 2</h2>
+          <span class="point">1 point</span>
+        </div>
+        <p class="question-text">In the History of Special Education in BC:<br><br>Often medical professionals and educators had recommended that children with special needs be placed in institutions for people with special needs.</p>
+        <div class="options">
+          
+          <label class="option correct-choice" for="q2_0">
+            <input id="q2_0" type="radio" name="q2" value="True" checked>
+            <span>True</span>
+          </label>
+        
+          <label class="option" for="q2_1">
+            <input id="q2_1" type="radio" name="q2" value="False" >
+            <span>False</span>
+          </label>
+        
+        </div>
+        <p class="answer-line">Answer: <strong>True</strong></p>
+      </section>
+    
+      <section class="card" data-answer="False">
+        <div class="q-header">
+          <h2>Question 3</h2>
+          <span class="point">1 point</span>
+        </div>
+        <p class="question-text">In 1989, Ministerial Order 150, the Special Needs Students Order, was added to the School Act. This order states that Teachers have the right to decide whether or not they will accept students with a learning disability in their classroom.</p>
+        <div class="options">
+          
+          <label class="option" for="q3_0">
+            <input id="q3_0" type="radio" name="q3" value="True" >
+            <span>True</span>
+          </label>
+        
+          <label class="option correct-choice" for="q3_1">
+            <input id="q3_1" type="radio" name="q3" value="False" checked>
+            <span>False</span>
+          </label>
+        
+        </div>
+        <p class="answer-line">Answer: <strong>False</strong></p>
+      </section>
+    
+      <section class="card" data-answer="typical">
+        <div class="q-header">
+          <h2>Question 4</h2>
+          <span class="point">1 point</span>
+        </div>
+        <p class="question-text">Some parents and educators were worried about how the inclusion of students with diverse needs would affect the “_______” students.</p>
+        <div class="options">
+          
+          <label class="option correct-choice" for="q4_0">
+            <input id="q4_0" type="radio" name="q4" value="typical" checked>
+            <span>typical</span>
+          </label>
+        
+          <label class="option" for="q4_1">
+            <input id="q4_1" type="radio" name="q4" value="Older" >
+            <span>Older</span>
+          </label>
+        
+          <label class="option" for="q4_2">
+            <input id="q4_2" type="radio" name="q4" value="New" >
+            <span>New</span>
+          </label>
+        
+          <label class="option" for="q4_3">
+            <input id="q4_3" type="radio" name="q4" value="Younger" >
+            <span>Younger</span>
+          </label>
+        
+        </div>
+        <p class="answer-line">Answer: <strong>typical</strong></p>
+      </section>
+    
+      <section class="card" data-answer="All of these">
+        <div class="q-header">
+          <h2>Question 5</h2>
+          <span class="point">1 point</span>
+        </div>
+        <p class="question-text">Which of the following are examples of supports used to increase accessibility/participation:</p>
+        <div class="options">
+          
+          <label class="option correct-choice" for="q5_0">
+            <input id="q5_0" type="radio" name="q5" value="All of these" checked>
+            <span>All of these</span>
+          </label>
+        
+          <label class="option" for="q5_1">
+            <input id="q5_1" type="radio" name="q5" value="Eyeglasses" >
+            <span>Eyeglasses</span>
+          </label>
+        
+          <label class="option" for="q5_2">
+            <input id="q5_2" type="radio" name="q5" value="Enlarged font (size of letters)" >
+            <span>Enlarged font (size of letters)</span>
+          </label>
+        
+          <label class="option" for="q5_3">
+            <input id="q5_3" type="radio" name="q5" value="Lined Paper" >
+            <span>Lined Paper</span>
+          </label>
+        
+          <label class="option" for="q5_4">
+            <input id="q5_4" type="radio" name="q5" value="Slower/faster mouse tracking" >
+            <span>Slower/faster mouse tracking</span>
+          </label>
+        
+        </div>
+        <p class="answer-line">Answer: <strong>All of these</strong></p>
+      </section>
+    
+      <section class="card" data-answer="True">
+        <div class="q-header">
+          <h2>Question 6</h2>
+          <span class="point">1 point</span>
+        </div>
+        <p class="question-text">The areas in which a student with special needs may have challenges or special gifts are:<br><br>sensory, physical, intellectual, emotional, behavioral</p>
+        <div class="options">
+          
+          <label class="option correct-choice" for="q6_0">
+            <input id="q6_0" type="radio" name="q6" value="True" checked>
+            <span>True</span>
+          </label>
+        
+          <label class="option" for="q6_1">
+            <input id="q6_1" type="radio" name="q6" value="False" >
+            <span>False</span>
+          </label>
+        
+        </div>
+        <p class="answer-line">Answer: <strong>True</strong></p>
+      </section>
+    
+      <section class="card" data-answer="True">
+        <div class="q-header">
+          <h2>Question 7</h2>
+          <span class="point">1 point</span>
+        </div>
+        <p class="question-text">Disruption in a child’s education and exclusion from regular education are associated with adverse economic outcomes for the whole family.</p>
+        <div class="options">
+          
+          <label class="option correct-choice" for="q7_0">
+            <input id="q7_0" type="radio" name="q7" value="True" checked>
+            <span>True</span>
+          </label>
+        
+          <label class="option" for="q7_1">
+            <input id="q7_1" type="radio" name="q7" value="False" >
+            <span>False</span>
+          </label>
+        
+        </div>
+        <p class="answer-line">Answer: <strong>True</strong></p>
+      </section>
+    
+      <section class="card" data-answer="True">
+        <div class="q-header">
+          <h2>Question 8</h2>
+          <span class="point">1 point</span>
+        </div>
+        <p class="question-text">Thanks to the tenacity of parents and their advocates, who believed children with disabilities had a right to learn and belong, our school communities have now progressed to a point where it has become a common practice for a diverse group of learners to have their educational needs met in regular classrooms.</p>
+        <div class="options">
+          
+          <label class="option correct-choice" for="q8_0">
+            <input id="q8_0" type="radio" name="q8" value="True" checked>
+            <span>True</span>
+          </label>
+        
+          <label class="option" for="q8_1">
+            <input id="q8_1" type="radio" name="q8" value="False" >
+            <span>False</span>
+          </label>
+        
+        </div>
+        <p class="answer-line">Answer: <strong>True</strong></p>
+      </section>
+    
+      <section class="card" data-answer="Individual Education Plan">
+        <div class="q-header">
+          <h2>Question 9</h2>
+          <span class="point">1 point</span>
+        </div>
+        <p class="question-text">An __________________________________ is a documented plan developed for a student with special needs that describes individualized goals, adaptations, modifications, the services to be provided, and includes measures for tracking achievement.</p>
+        <div class="options">
+          
+          <label class="option correct-choice" for="q9_0">
+            <input id="q9_0" type="radio" name="q9" value="Individual Education Plan" checked>
+            <span>Individual Education Plan</span>
+          </label>
+        
+          <label class="option" for="q9_1">
+            <input id="q9_1" type="radio" name="q9" value="Inclusive Education Plan" >
+            <span>Inclusive Education Plan</span>
+          </label>
+        
+          <label class="option" for="q9_2">
+            <input id="q9_2" type="radio" name="q9" value="Interactive Economic Program" >
+            <span>Interactive Economic Program</span>
+          </label>
+        
+          <label class="option" for="q9_3">
+            <input id="q9_3" type="radio" name="q9" value="Individual Education Program" >
+            <span>Individual Education Program</span>
+          </label>
+        
+        </div>
+        <p class="answer-line">Answer: <strong>Individual Education Plan</strong></p>
+      </section>
+    
+      <section class="card" data-answer="Integration">
+        <div class="q-header">
+          <h2>Question 10</h2>
+          <span class="point">1 point</span>
+        </div>
+        <p class="question-text">Fred sits at a table at the back of the class doing puzzles alone with Mrs. Jones, while Mrs. Cooper teaches the class Math and Science lessons.<br><br>This is an example of:</p>
+        <div class="options">
+          
+          <label class="option" for="q10_0">
+            <input id="q10_0" type="radio" name="q10" value="Exclusion" >
+            <span>Exclusion</span>
+          </label>
+        
+          <label class="option correct-choice" for="q10_1">
+            <input id="q10_1" type="radio" name="q10" value="Integration" checked>
+            <span>Integration</span>
+          </label>
+        
+          <label class="option" for="q10_2">
+            <input id="q10_2" type="radio" name="q10" value="Inclusion" >
+            <span>Inclusion</span>
+          </label>
+        
+          <label class="option" for="q10_3">
+            <input id="q10_3" type="radio" name="q10" value="Segregation" >
+            <span>Segregation</span>
+          </label>
+        
+        </div>
+        <p class="answer-line">Answer: <strong>Integration</strong></p>
+      </section>
+    
+    </form>
+
+    <section class="answer-key">
+      <h2>Answer Key</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Question</th>
+            <th>Correct Answer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>True</td></tr><tr><td>2</td><td>True</td></tr><tr><td>3</td><td>False</td></tr><tr><td>4</td><td>typical</td></tr><tr><td>5</td><td>All of these</td></tr><tr><td>6</td><td>True</td></tr><tr><td>7</td><td>True</td></tr><tr><td>8</td><td>True</td></tr><tr><td>9</td><td>Individual Education Plan</td></tr><tr><td>10</td><td>Integration</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script>
+    const answers = {"{1: 'True', 2: 'True', 3: 'False', 4: 'typical', 5: 'All of these', 6: 'True', 7: 'True', 8: 'True', 9: 'Individual Education Plan', 10: 'Integration'}"};
+
+    function checkAnswers() {
+      let correct = 0;
+      let total = Object.keys(answers).length;
+
+      for (const [num, answer] of Object.entries(answers)) {
+        const selected = document.querySelector(`input[name="q${num}"]:checked`);
+        if (selected && selected.value === answer) correct++;
+      }
+
+      document.getElementById("score").textContent = `Score: ${correct} / ${total}`;
+    }
+  </script>
+</body>
+</html>
