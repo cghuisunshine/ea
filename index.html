@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education Assistant Resources</title>
+  <style>
+    :root {
+      --bg: #f6f3ec;
+      --paper: #fffdf8;
+      --ink: #1f2933;
+      --muted: #607080;
+      --line: #e1d8c8;
+      --accent: #087ea4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    main {
+      width: min(100%, 560px);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.25;
+      margin: 0 0 8px;
+    }
+
+    p {
+      color: var(--muted);
+      margin: 0 0 20px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    a {
+      display: block;
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 16px;
+      background: #ffffff;
+      transition: border-color 140ms ease, color 140ms ease;
+    }
+
+    a:hover,
+    a:focus-visible {
+      border-color: var(--accent);
+      color: var(--accent);
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Education Assistant Resources</h1>
+    <p>Open a resource below.</p>
+    <ul>
+      <li><a href="education_assistant_schedule_2026.html">FT Education Assistant Schedule 2026</a></li>
+      <li><a href="inclusion_tutorial.html">Inclusion Tutorial</a></li>
+    </ul>
+  </main>
+</body>
+</html>
