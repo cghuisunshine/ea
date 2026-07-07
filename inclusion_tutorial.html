@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inclusion Tutorial | Education Assistant Study Page</title>
+  <style>
+    :root{
+      --bg:#f6f3ec;
+      --paper:#fffdf8;
+      --ink:#1f2933;
+      --muted:#607080;
+      --line:#e1d8c8;
+      --accent:#087ea4;
+      --accent2:#7952b3;
+      --good:#0d7a5f;
+      --warn:#b55b00;
+      --bad:#b00020;
+      --soft:#eaf7fb;
+      --soft2:#f2ecfb;
+      --shadow:0 12px 30px rgba(31,41,51,.10);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:linear-gradient(180deg,#eee8dd 0,#f6f3ec 300px,#f6f3ec 100%);
+      color:var(--ink);
+      line-height:1.6;
+    }
+    a{color:var(--accent)}
+    .topbar{
+      position:sticky; top:0; z-index:20;
+      background:rgba(255,253,248,.92);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      max-width:1120px; margin:auto; padding:.65rem 1rem;
+      display:flex; gap:.6rem; align-items:center; justify-content:space-between;
+    }
+    .brand{font-weight:800; letter-spacing:.2px; color:var(--accent)}
+    .links{display:flex; gap:.35rem; overflow:auto; white-space:nowrap; padding-bottom:2px}
+    .links a{font-size:.9rem; text-decoration:none; padding:.35rem .65rem; border-radius:999px; color:#25313b}
+    .links a:hover{background:var(--soft)}
+    header.hero{max-width:1120px; margin:0 auto; padding:4.2rem 1rem 2.5rem}
+    .hero-card{
+      background:radial-gradient(circle at 10% 10%, #e6f7fc 0, transparent 28%),
+                 radial-gradient(circle at 100% 0%, #f0e8fb 0, transparent 32%),
+                 var(--paper);
+      border:1px solid var(--line);
+      border-radius:28px;
+      box-shadow:var(--shadow);
+      padding:2.2rem;
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:1.5rem;
+      align-items:center;
+    }
+    h1{font-size:clamp(2.1rem,5vw,4.2rem); line-height:1.02; margin:.2rem 0 .8rem}
+    .subtitle{font-size:1.16rem; color:var(--muted); max-width:62ch}
+    .pillrow{display:flex; flex-wrap:wrap; gap:.55rem; margin-top:1.2rem}
+    .pill{background:#fff; border:1px solid var(--line); border-radius:999px; padding:.42rem .75rem; font-weight:650; font-size:.92rem}
+    .hero-visual{background:#fff; border:1px solid var(--line); border-radius:22px; padding:1rem}
+    .mini-diagram{display:grid; grid-template-columns:1fr 1fr; gap:.7rem}
+    .mini-panel{border:1px solid var(--line); border-radius:14px; padding:.7rem; min-height:112px; background:#fbfaf7}
+    .mini-title{font-weight:800; font-size:.78rem; letter-spacing:.07em; text-align:center; margin-top:.3rem}
+    .people{display:grid; grid-template-columns:repeat(5,1fr); gap:.2rem; align-items:center; min-height:68px}
+    .person{height:22px; border-radius:999px 999px 6px 6px; background:#7da8d9; position:relative; margin:auto; width:17px}
+    .person:before{content:""; position:absolute; width:13px; height:13px; border-radius:50%; background:inherit; top:-10px; left:2px}
+    .person.alt{background:#e5a95a}.person.pink{background:#d58aa7}.person.green{background:#6fa16e}.person.purple{background:#8f7ab8}
+    .table-dot{width:52px; height:34px; border-radius:50%; background:#b8b0a3; margin:auto; grid-column:span 5}
+    .out{opacity:.55; transform:translateY(20px)}
+    .split .people{grid-template-columns:repeat(4,1fr)}
+    .split .table-dot{grid-column:span 4; width:40px}
+    main{max-width:1120px; margin:auto; padding:0 1rem 4rem}
+    section{margin:2rem 0}
+    .card{
+      background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); box-shadow:0 8px 22px rgba(31,41,51,.06); padding:1.4rem;
+    }
+    h2{font-size:clamp(1.55rem,3vw,2.4rem); margin:.2rem 0 1rem; line-height:1.15}
+    h3{margin:1rem 0 .55rem; font-size:1.2rem}
+    .lead{font-size:1.07rem; color:var(--muted)}
+    .grid{display:grid; gap:1rem}
+    .grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .concept-card{padding:1rem; border-radius:16px; border:1px solid var(--line); background:#fff}
+    .concept-card strong{display:block; font-size:1.1rem; margin-bottom:.35rem}
+    .tag{display:inline-block; font-size:.75rem; font-weight:800; letter-spacing:.04em; border-radius:999px; padding:.18rem .5rem; color:#fff; background:var(--accent); margin-bottom:.5rem}
+    .tag.bad{background:var(--bad)} .tag.warn{background:var(--warn)} .tag.good{background:var(--good)} .tag.purple{background:var(--accent2)}
+    .compare-table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; border:1px solid var(--line); background:#fff}
+    .compare-table th,.compare-table td{padding:.85rem; border-bottom:1px solid var(--line); vertical-align:top}
+    .compare-table th{background:#f1efe8; text-align:left}
+    .compare-table tr:last-child td{border-bottom:0}
+    .note{background:var(--soft); border-left:5px solid var(--accent); padding:1rem; border-radius:12px; margin:.8rem 0}
+    .note.purple{background:var(--soft2); border-left-color:var(--accent2)}
+    details{background:#fff; border:1px solid var(--line); border-radius:14px; padding:.85rem 1rem; margin:.75rem 0}
+    summary{cursor:pointer; font-weight:750; color:#25313b}
+    .tree{background:#fff; border:1px dashed #b9aa95; padding:1rem; border-radius:16px; overflow:auto}
+    .tree ul{list-style:none; margin:0; padding-left:1.2rem; border-left:2px solid #e0d5c4}
+    .tree li{margin:.45rem 0; position:relative}
+    .tree li:before{content:""; position:absolute; left:-1.2rem; top:.78rem; width:.85rem; border-top:2px solid #e0d5c4}
+    .tree > ul{border-left:0; padding-left:0}.tree > ul > li:before{display:none}
+    .activity{border:1px solid var(--line); border-radius:16px; padding:1rem; background:#fffdfd}
+    .btn{border:0; background:var(--accent); color:#fff; border-radius:999px; padding:.55rem .9rem; font-weight:750; cursor:pointer}
+    .btn.secondary{background:#5a6874}
+    .btn:hover{filter:brightness(.95)}
+    .answer{display:none; margin-top:.75rem; padding:.85rem; background:#eef9f5; border:1px solid #bfe7d8; border-radius:12px}
+    .choice-row{display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.8rem}
+    .choice{border:1px solid var(--line); background:#fff; border-radius:999px; padding:.42rem .75rem; cursor:pointer}
+    .choice.selected{outline:3px solid rgba(8,126,164,.25); border-color:var(--accent)}
+    .quiz-question{border-top:1px solid var(--line); padding:1rem 0}
+    .quiz-question:first-child{border-top:0}
+    label{display:block; padding:.28rem 0; cursor:pointer}
+    .result{font-weight:800; margin-top:1rem; padding:1rem; border-radius:12px; display:none}
+    .result.good{background:#eef9f5; color:#075f4a}.result.try{background:#fff5e7; color:#8a4700}
+    .footer{margin-top:3rem; color:var(--muted); font-size:.9rem; text-align:center}
+    .printbox{display:flex; justify-content:flex-end; margin:1rem 0}
+    .cn{color:#374151; font-size:.96rem; background:#faf7ef}
+    .small{font-size:.92rem; color:var(--muted)}
+    .callout-big{font-size:1.28rem; font-weight:800; background:#fff; border:2px solid #d8ccb8; border-radius:18px; padding:1.2rem; text-align:center}
+    @media (max-width:850px){
+      .hero-card{grid-template-columns:1fr; padding:1.4rem}
+      .grid.two,.grid.three,.grid.four{grid-template-columns:1fr}
+      .links{display:none}
+    }
+    @media print{
+      .topbar,.printbox,.btn,.choice-row{display:none!important}
+      body{background:#fff}.card,.hero-card{box-shadow:none; break-inside:avoid}
+      .answer{display:block!important}
+      details{break-inside:avoid}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <nav class="nav" aria-label="Page navigation">
+      <div class="brand">Inclusion Tutorial</div>
+      <div class="links">
+        <a href="#goals">Goals</a>
+        <a href="#concepts">Concepts</a>
+        <a href="#compare">Integration vs Inclusion</a>
+        <a href="#adapt">Adaptations</a>
+        <a href="#policy">Policy</a>
+        <a href="#quiz">Quiz</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <div class="hero-card">
+      <div>
+        <div class="tag purple">Education Assistant Study Page</div>
+        <h1>Inclusion: From Placement to Belonging</h1>
+        <p class="subtitle">A tutorial page to review the core ideas from Day 2: exclusion, segregation, integration, inclusion, adaptations, modifications, school teams, and Ministry policy concepts.</p>
+        <div class="pillrow">
+          <span class="pill">Belonging</span>
+          <span class="pill">Equity</span>
+          <span class="pill">Participation</span>
+          <span class="pill">Student voice</span>
+          <span class="pill">Accessibility</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Simple visual comparing exclusion, segregation, integration, and inclusion">
+        <div class="mini-diagram">
+          <div class="mini-panel">
+            <div class="people"><span class="person"></span><span class="person"></span><span class="person"></span><span class="person"></span><span class="person alt out"></span></div>
+            <div class="mini-title">EXCLUSION</div>
+          </div>
+          <div class="mini-panel split">
+            <div class="people"><span class="person"></span><span class="person"></span><span class="person"></span><span class="person"></span><span class="table-dot"></span><span class="person alt"></span><span class="person pink"></span></div>
+            <div class="mini-title">SEGREGATION</div>
+          </div>
+          <div class="mini-panel">
+            <div class="people"><span class="person"></span><span class="person"></span><span class="person"></span><span class="person alt"></span><span class="person pink"></span><span class="table-dot"></span></div>
+            <div class="mini-title">INTEGRATION</div>
+          </div>
+          <div class="mini-panel">
+            <div class="people"><span class="person"></span><span class="person alt"></span><span class="person pink"></span><span class="person green"></span><span class="person purple"></span><span class="table-dot"></span></div>
+            <div class="mini-title">INCLUSION</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="printbox"><button class="btn secondary" onclick="window.print()">Print / Save as PDF</button></div>
+
+    <section id="goals" class="card">
+      <h2>1. Learning Goals</h2>
+      <p class="lead">By the end of this tutorial, you should be able to explain what inclusion means and recognize what it looks like in a school setting.</p>
+      <div class="grid four">
+        <div class="concept-card"><strong>Define inclusion</strong><span>Use simple language: access, belonging, participation, and support.</span></div>
+        <div class="concept-card"><strong>Compare concepts</strong><span>Tell the difference between exclusion, segregation, integration, and inclusion.</span></div>
+        <div class="concept-card"><strong>Apply examples</strong><span>Identify whether a school situation is inclusive or not.</span></div>
+        <div class="concept-card"><strong>Explain supports</strong><span>Describe adaptations, modifications, accommodations, and IEP ideas.</span></div>
+      </div>
+      <details class="cn"><summary>中文理解提示</summary>
+        <p>本页的重点是：包容教育不只是“把学生放进普通教室”，而是让学生真正有归属感、能参与、能学习，并得到合适的支持。</p>
+      </details>
+    </section>
+
+    <section id="concepts" class="card">
+      <h2>2. Inclusion Concepts Tree</h2>
+      <div class="tree">
+        <ul>
+          <li><strong>Inclusion</strong>
+            <ul>
+              <li><strong>Belonging</strong> — students feel welcomed and valued</li>
+              <li><strong>Equity</strong> — students receive what they need to access learning</li>
+              <li><strong>Accessibility</strong> — barriers are removed before they block participation</li>
+              <li><strong>Meaningful participation</strong> — students join classroom life at their level</li>
+              <li><strong>Differentiation</strong> — different ways to learn and show understanding</li>
+              <li><strong>Collaboration</strong> — teacher, EA, family, specialists, and student voice work together</li>
+              <li><strong>Respect for diversity</strong> — ability, culture, language, identity, and family background are respected</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="note">
+        <strong>Simple definition:</strong> Inclusion means all students have equitable access to learning and are supported to participate meaningfully with others, not just placed in the same room.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. Four Key Concepts</h2>
+      <div class="grid four">
+        <div class="concept-card">
+          <span class="tag bad">Not included</span>
+          <strong>Exclusion</strong>
+          <p>A student is kept out of the classroom, activity, trip, or learning opportunity.</p>
+          <p><em>Example:</em> A student is told to stay home from a school picnic because the environment is difficult to access.</p>
+        </div>
+        <div class="concept-card">
+          <span class="tag warn">Separated</span>
+          <strong>Segregation</strong>
+          <p>A student is in the school, but separated into a different room or group because of disability or learning needs.</p>
+          <p><em>Example:</em> A student spends the day in a separate mixed-grade room for students with learning differences.</p>
+        </div>
+        <div class="concept-card">
+          <span class="tag purple">Placed together</span>
+          <strong>Integration</strong>
+          <p>A student is physically in the regular classroom, but the classroom system may not change enough for meaningful participation.</p>
+          <p><em>Example:</em> A student sits in the classroom but works separately with an EA on unrelated work.</p>
+        </div>
+        <div class="concept-card">
+          <span class="tag good">Belongs</span>
+          <strong>Inclusion</strong>
+          <p>The class changes so the student can participate, learn, interact, and feel like a valued member.</p>
+          <p><em>Example:</em> The lesson is adapted so the student joins the same topic with peers at an appropriate level.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="compare" class="card">
+      <h2>4. Integration vs Inclusion</h2>
+      <table class="compare-table">
+        <thead><tr><th>Integration</th><th>Inclusion</th></tr></thead>
+        <tbody>
+          <tr><td>The student joins the regular setting.</td><td>The setting is designed so the student can belong and participate.</td></tr>
+          <tr><td>The student may need to adjust to the existing system.</td><td>The adults adjust instruction, materials, expectations, and supports.</td></tr>
+          <tr><td>Can become “breathing the same air” without real participation.</td><td>Focuses on meaningful participation and interaction with peers.</td></tr>
+          <tr><td>Often adult-dependent or separate work.</td><td>Teacher-led learning with EA support, peer connection, and appropriate goals.</td></tr>
+        </tbody>
+      </table>
+      <details class="cn"><summary>中文理解提示</summary>
+        <p><strong>Integration（融合/整合）</strong>：学生进入普通教室，但可能只是坐在那里，学习任务仍然分开。<br><strong>Inclusion（包容）</strong>：教室、教学和支持方式会改变，让学生真正参与和归属。</p>
+      </details>
+    </section>
+
+    <section class="card">
+      <h2>5. Quick Check: Which Concept?</h2>
+      <div class="grid two">
+        <div class="activity">
+          <h3>Scenario A: Margaret</h3>
+          <p>Margaret is a Grade 3 student with Down Syndrome. Her brother goes to a Grade 3/4 classroom, but Margaret is walked down the hall to a mixed-grade room for students with learning differences.</p>
+          <button class="btn" onclick="reveal('a1')">Show answer</button>
+          <div id="a1" class="answer"><strong>Segregation.</strong> Margaret is in the same school, but she is separated from her age/grade peers in a different room.</div>
+        </div>
+        <div class="activity">
+          <h3>Scenario B: Eric</h3>
+          <p>The school is going to Kits Beach for a picnic. The administration asks Eric’s parents to keep him home because it will be difficult to use his wheelchair on the sand.</p>
+          <button class="btn" onclick="reveal('a2')">Show answer</button>
+          <div id="a2" class="answer"><strong>Exclusion.</strong> Eric is not given access to the school activity. Inclusion would require planning for accessibility.</div>
+        </div>
+      </div>
+      <div class="activity" style="margin-top:1rem">
+        <h3>Scenario C: “Breathing the same air”</h3>
+        <p>A student is in the regular classroom, but works on a separate curriculum at the back of the room with an EA and has little interaction with classmates.</p>
+        <button class="btn" onclick="reveal('a3')">Show answer</button>
+        <div id="a3" class="answer"><strong>Integration, not inclusion.</strong> The student is placed in the room, but the activity is not meaningfully connected to the class.</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>6. What Inclusion Is and Is Not</h2>
+      <div class="grid two">
+        <div class="concept-card">
+          <span class="tag bad">Does not mean</span>
+          <ul>
+            <li>Separate curriculum in the back of the classroom with an EA.</li>
+            <li>Students sitting passively while adults do the work.</li>
+            <li>Expecting every student to meet the exact same goals in the exact same way.</li>
+          </ul>
+        </div>
+        <div class="concept-card">
+          <span class="tag good">Means</span>
+          <ul>
+            <li>Students work on the same classroom topic or activity when possible.</li>
+            <li>Students are actively involved at their own level of ability.</li>
+            <li>Teacher directs learning; EA supports access, participation, and independence.</li>
+            <li>Individualized goals may be used when needed.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout-big">Fair does not always mean everyone gets the same thing. Fair means everyone can access the learning.</div>
+    </section>
+
+    <section class="card">
+      <h2>7. Benefits of Inclusion</h2>
+      <p class="lead">Inclusion can benefit all learners, including students with disabilities or diverse abilities and typically developing peers.</p>
+      <div class="grid five"></div>
+      <div class="grid four">
+        <div class="concept-card"><strong>Social skills</strong><p>Building relationships, peer interaction, respectful feedback.</p></div>
+        <div class="concept-card"><strong>Communication skills</strong><p>Learning to express needs and understand others.</p></div>
+        <div class="concept-card"><strong>Academic skills</strong><p>Learning through participation in class activities.</p></div>
+        <div class="concept-card"><strong>Coping skills</strong><p>Managing routines, conflict, boundaries, and change.</p></div>
+      </div>
+      <div class="note purple"><strong>EA connection:</strong> An excellent EA supports participation without taking over. The goal is access, independence, dignity, and peer connection.</div>
+    </section>
+
+    <section id="adapt" class="card">
+      <h2>8. Adaptations, Modifications, Accommodations</h2>
+      <table class="compare-table">
+        <thead><tr><th>Term</th><th>Meaning</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Adaptation</strong></td><td>Changes to environment, materials, instruction, assessment, equipment, or how work is completed.</td><td>Audio books, enlarged font, extra time, lower reading level, visual instructions.</td></tr>
+          <tr><td><strong>Modification</strong></td><td>Changes to the content, learning goals, or skills the student is expected to master.</td><td>Instead of writing a full planet report, the student identifies planets and says their names.</td></tr>
+          <tr><td><strong>Accommodation</strong></td><td>Often used similarly to adaptation; a support that increases access without changing the core learning goal.</td><td>Wheelchair, eyeglasses, lined paper, adjustable seat, speech-to-text.</td></tr>
+        </tbody>
+      </table>
+      <details class="cn"><summary>中文理解提示</summary>
+        <p><strong>Adaptation/Accommodation</strong> 通常是“怎么学/怎么做”的支持；<strong>Modification</strong> 是“学什么/目标是什么”发生改变。</p>
+      </details>
+    </section>
+
+    <section class="card">
+      <h2>9. Inclusive Activity Examples</h2>
+      <div class="grid two">
+        <div class="activity">
+          <h3>Penguin research</h3>
+          <p><strong>Class activity:</strong> Research penguins and make a poster about appearance, habitat, diet, and life cycle.</p>
+          <p><strong>Inclusive adapted/modified option:</strong> Label penguin body parts and identify at least two foods penguins eat.</p>
+        </div>
+        <div class="activity">
+          <h3>Silent reading</h3>
+          <p><strong>Class activity:</strong> Read silently for 10 minutes.</p>
+          <p><strong>Inclusive option:</strong> Look at picture books quietly or use electronic books on an iPad.</p>
+        </div>
+        <div class="activity">
+          <h3>Calendar circle time</h3>
+          <p><strong>Class activity:</strong> Participate in calendar routines.</p>
+          <p><strong>Inclusive option:</strong> Tell the teacher the date/day, or press play to start the days-of-the-week song.</p>
+        </div>
+        <div class="activity">
+          <h3>Harry Potter summary</h3>
+          <p><strong>Class activity:</strong> Read the book and write a summary.</p>
+          <p><strong>Inclusive option:</strong> Make a 5-minute group movie, watch the movie, or sequence photos of scenes.</p>
+        </div>
+      </div>
+      <details>
+        <summary>Your turn: Salmon booklet activity</summary>
+        <p><strong>Class activity:</strong> Make a booklet with 10 written journal entries from the perspective of a salmon, including events and challenges from egg to adult salmon.</p>
+        <p><strong>Possible adapted/modified ideas:</strong></p>
+        <ul>
+          <li>Use picture cards to sequence the salmon life cycle.</li>
+          <li>Choose 3 important stages instead of 10 written entries.</li>
+          <li>Use sentence starters: “I am an egg. I need ___.”</li>
+          <li>Record an audio journal instead of writing.</li>
+          <li>Work with a peer to match dangers/challenges to each stage.</li>
+        </ul>
+        <p><strong>Think:</strong> What is the purpose of the activity? Life cycle knowledge? Perspective writing? Sequencing? Vocabulary? The support should match the purpose.</p>
+      </details>
+    </section>
+
+    <section class="card">
+      <h2>10. Student Voice: “Nothing About Us Without Us”</h2>
+      <p>The phrase reminds educators that people with disabilities should be included in decisions that affect their lives. In schools, this means students should have a voice in their learning plans, supports, communication preferences, and goals.</p>
+      <div class="grid three">
+        <div class="concept-card"><strong>Ask</strong><p>How does the student prefer to receive help?</p></div>
+        <div class="concept-card"><strong>Listen</strong><p>Notice communication, choices, discomfort, and strengths.</p></div>
+        <div class="concept-card"><strong>Include</strong><p>Involve the student in goal-setting when possible.</p></div>
+      </div>
+      <div class="note"><strong>EA reflection:</strong> Support should not be only adult control. It should remove barriers and protect dignity.</div>
+    </section>
+
+    <section class="card">
+      <h2>11. School Support Teams</h2>
+      <div class="grid three">
+        <div class="concept-card">
+          <strong>School-Based Team</strong>
+          <p>May include administrator, learning support teacher, classroom teacher, EA, counsellor, speech-language pathologist, and other school staff.</p>
+        </div>
+        <div class="concept-card">
+          <strong>District Team</strong>
+          <p>May include district administrators, district learning support teachers, school psychologists, behaviour analysts, DHH/vision teachers, and mental health liaisons.</p>
+        </div>
+        <div class="concept-card">
+          <strong>Community/Health Supports</strong>
+          <p>For example, Fraser Health CSRT may support students with physical disabilities, developmental disabilities, or complex medical needs.</p>
+        </div>
+      </div>
+      <p class="small">Important: Parents/caregivers should be informed when a student is referred to the school-based team. A case manager may coordinate when the team is large.</p>
+    </section>
+
+    <section id="policy" class="card">
+      <h2>12. Ministry Policy Review</h2>
+      <p class="lead">Use these notes to study for the Ministry of Education Inclusive Education Policy Manual assignment.</p>
+      <details open>
+        <summary>1) Rationale of the policy</summary>
+        <p>Inclusive education programs and services support students with disabilities or diverse abilities to have equitable access to learning and opportunities to pursue and achieve their educational goals.</p>
+        <p><strong>School example:</strong> A class activity is adapted or modified so students can participate with peers instead of being removed from the activity.</p>
+      </details>
+      <details>
+        <summary>2) Types of disabilities students may have</summary>
+        <p>Examples include intellectual, physical, sensory, emotional, or behavioural disabilities or diverse abilities.</p>
+      </details>
+      <details>
+        <summary>3) Alternatives to full-time placement in regular classrooms</summary>
+        <p>Appropriate alternatives may include resource rooms, self-contained classes, community-based programs, or specialized settings.</p>
+      </details>
+      <details>
+        <summary>4) What must school boards consult parents about?</summary>
+        <p>Parents must have an opportunity to be consulted about the student’s IEP and placement.</p>
+      </details>
+      <details>
+        <summary>5) Do all students with disabilities or diverse abilities need an IEP?</summary>
+        <p><strong>No.</strong> An IEP may not be required when the student needs little or no adaptations, the expected learning outcomes are not modified, and the student receives 25 or fewer hours of remedial instruction from someone other than the classroom teacher in a school year.</p>
+      </details>
+      <details>
+        <summary>6) Are students only evaluated on grade/course learning standards?</summary>
+        <p><strong>False.</strong> In rare cases, students with significant cognitive disabilities or diverse abilities may be assessed only on individualized learning goals in their IEP.</p>
+      </details>
+    </section>
+
+    <section class="card">
+      <h2>13. Free Write / Reflection Practice</h2>
+      <p>Use this template to prepare a short answer for class:</p>
+      <div class="activity">
+        <p><strong>My definition of inclusion:</strong> Inclusion means...</p>
+        <p><strong>In a classroom, inclusion can look like:</strong> ...</p>
+        <p><strong>One example:</strong> ...</p>
+        <p><strong>One question I still have:</strong> ...</p>
+      </div>
+      <details class="cn"><summary>Sample answer with simple English</summary>
+        <p>Inclusion means every student is welcomed, respected, and supported to participate in classroom learning. In a classroom, inclusion can look like adapting the same class activity so a student can work with peers at their own level. For example, during a research project, one student may use pictures, sentence starters, or assistive technology to show understanding. My question is how an EA can support the student without doing the work for them.</p>
+      </details>
+    </section>
+
+    <section id="quiz" class="card">
+      <h2>14. Practice Quiz</h2>
+      <form id="quizForm">
+        <div class="quiz-question">
+          <p><strong>1. A student is physically in the classroom but works separately at the back with an EA on unrelated work. What is this most likely?</strong></p>
+          <label><input type="radio" name="q1" value="a"> Inclusion</label>
+          <label><input type="radio" name="q1" value="b"> Integration</label>
+          <label><input type="radio" name="q1" value="c"> Exclusion</label>
+        </div>
+        <div class="quiz-question">
+          <p><strong>2. A student is asked to stay home from a school activity because the environment is not accessible. What is this?</strong></p>
+          <label><input type="radio" name="q2" value="a"> Segregation</label>
+          <label><input type="radio" name="q2" value="b"> Exclusion</label>
+          <label><input type="radio" name="q2" value="c"> Inclusion</label>
+        </div>
+        <div class="quiz-question">
+          <p><strong>3. Changing how a student completes an assignment, without changing the main learning goal, is usually a/an:</strong></p>
+          <label><input type="radio" name="q3" value="a"> Adaptation/accommodation</label>
+          <label><input type="radio" name="q3" value="b"> Exclusion</label>
+          <label><input type="radio" name="q3" value="c"> School-Based Team</label>
+        </div>
+        <div class="quiz-question">
+          <p><strong>4. Changing the learning goals or expected content for a student is called:</strong></p>
+          <label><input type="radio" name="q4" value="a"> Modification</label>
+          <label><input type="radio" name="q4" value="b"> Integration</label>
+          <label><input type="radio" name="q4" value="c"> Peer support</label>
+        </div>
+        <div class="quiz-question">
+          <p><strong>5. Which statement best matches inclusion?</strong></p>
+          <label><input type="radio" name="q5" value="a"> Every student receives exactly the same support.</label>
+          <label><input type="radio" name="q5" value="b"> Students are supported to access, participate, interact, and learn meaningfully.</label>
+          <label><input type="radio" name="q5" value="c"> Students with disabilities always work in a separate room.</label>
+        </div>
+        <button type="button" class="btn" onclick="checkQuiz()">Check answers</button>
+      </form>
+      <div id="quizResult" class="result"></div>
+    </section>
+
+    <section class="card">
+      <h2>15. One-Minute Summary</h2>
+      <p><strong>Inclusion is more than location.</strong> A student can be in the same room and still not be included. True inclusion means barriers are removed, the student has meaningful participation, and the classroom community values the student’s presence, voice, strengths, and learning goals.</p>
+    </section>
+
+    <div class="footer">
+      Created as a study tutorial from the uploaded Day 2 Inclusion class slides. Use your instructor’s Brightspace materials and rubric as the final authority for assignments.
+    </div>
+  </main>
+
+  <script>
+    function reveal(id){
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+    function checkQuiz(){
+      const key = {q1:'b', q2:'b', q3:'a', q4:'a', q5:'b'};
+      let score = 0;
+      let total = Object.keys(key).length;
+      for (const q in key){
+        const chosen = document.querySelector(`input[name="${q}"]:checked`);
+        if (chosen && chosen.value === key[q]) score++;
+      }
+      const box = document.getElementById('quizResult');
+      box.style.display = 'block';
+      box.className = 'result ' + (score >= 4 ? 'good' : 'try');
+      box.innerHTML = `Score: ${score}/${total}. ` + (score >= 4 ? 'Great review!' : 'Review the concept cards above, then try again.');
+    }
+  </script>
+</body>
+</html>
