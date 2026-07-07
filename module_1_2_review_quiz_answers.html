@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Module 1&2 Review Quiz — Answer Form</title>
+  <title>Module 1&2 Review Quiz</title>
   <style>
     :root {
-      --bg: #f6f8fb;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --line: #dbe4f0;
-      --accent: #0f6fc6;
-      --answer: #e8f4ff;
-      --correct: #d8f3dc;
-      --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      --bg: #f6f3ec;
+      --paper: #fffdf8;
+      --surface: #ffffff;
+      --ink: #1f2933;
+      --muted: #607080;
+      --line: #e1d8c8;
+      --accent: #087ea4;
+      --good-bg: #edf7ed;
+      --good-line: #80a884;
+      --bad-bg: #fff1f0;
+      --bad-line: #d48b83;
     }
 
     * {
@@ -23,33 +25,37 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       background: var(--bg);
-      color: var(--text);
+      color: var(--ink);
       line-height: 1.55;
     }
 
     header {
-      background: linear-gradient(135deg, #0f6fc6, #0b9bd8);
-      color: white;
-      padding: 32px 20px;
-      text-align: center;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      padding: 24px 20px;
     }
 
-    header h1 {
-      margin: 0 0 8px;
-      font-size: clamp(1.6rem, 3vw, 2.4rem);
+    .header-inner,
+    main {
+      width: min(100%, 900px);
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 26px;
+      line-height: 1.2;
     }
 
     header p {
       margin: 0;
-      opacity: 0.95;
+      color: var(--muted);
     }
 
     main {
-      max-width: 900px;
-      margin: 28px auto;
-      padding: 0 16px 40px;
+      padding: 20px 16px 40px;
     }
 
     .toolbar {
@@ -58,40 +64,67 @@
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      background: var(--card);
+      background: var(--paper);
       border: 1px solid var(--line);
-      box-shadow: var(--shadow);
-      border-radius: 16px;
-      padding: 16px;
-      margin-bottom: 20px;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+    }
+
+    .toolbar-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
     }
 
     button {
-      border: none;
-      border-radius: 10px;
-      padding: 10px 14px;
-      font-size: 1rem;
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: 9px 12px;
+      font: inherit;
       cursor: pointer;
       background: var(--accent);
       color: #fff;
     }
 
     button.secondary {
-      background: #374151;
+      border-color: var(--line);
+      background: var(--surface);
+      color: var(--ink);
     }
 
-    .score {
+    button:hover,
+    button:focus-visible {
+      outline: 2px solid rgba(8, 126, 164, 0.25);
+      outline-offset: 2px;
+    }
+
+    .status {
       font-weight: 700;
       color: var(--accent);
     }
 
     .card {
-      background: var(--card);
+      background: var(--surface);
       border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 22px;
-      margin: 18px 0;
-      box-shadow: var(--shadow);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 14px 0;
+    }
+
+    .card.correct {
+      border-color: var(--good-line);
+      background: var(--good-bg);
+    }
+
+    .card.incorrect {
+      border-color: var(--bad-line);
+      background: var(--bad-bg);
+    }
+
+    .card.revealed {
+      border-color: var(--accent);
+      background: var(--paper);
     }
 
     .q-header {
@@ -105,16 +138,16 @@
 
     h2 {
       margin: 0;
-      font-size: 1.2rem;
+      font-size: 18px;
     }
 
     .point {
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 15px;
     }
 
     .question-text {
-      font-size: 1.06rem;
+      font-size: 17px;
       margin: 0 0 16px;
     }
 
@@ -126,66 +159,62 @@
     .option {
       display: flex;
       gap: 10px;
-      align-items: center;
+      align-items: flex-start;
       border: 1px solid var(--line);
-      border-radius: 12px;
+      border-radius: 8px;
       padding: 10px 12px;
-      background: #fff;
+      background: var(--surface);
     }
 
-    .option.correct-choice {
-      background: var(--answer);
-      border-color: #9ecff5;
+    .option:has(input:focus-visible) {
+      border-color: var(--accent);
+      outline: 2px solid rgba(8, 126, 164, 0.18);
+      outline-offset: 1px;
+    }
+
+    .option.answer-choice {
+      border-color: var(--accent);
+      background: var(--paper);
+      font-weight: 700;
     }
 
     .option input {
       width: 18px;
       height: 18px;
+      margin-top: 3px;
+      flex: 0 0 auto;
     }
 
-    .answer-line {
+    .feedback {
+      display: none;
       margin: 14px 0 0;
-      padding: 10px 12px;
-      border-radius: 10px;
-      background: var(--correct);
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+      font-weight: 700;
     }
 
-    .answer-key {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 20px;
-      margin-top: 24px;
-      box-shadow: var(--shadow);
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    th, td {
-      padding: 10px;
-      border-bottom: 1px solid var(--line);
-      text-align: left;
-    }
-
-    th {
-      background: #eef5ff;
+    .card.correct .feedback,
+    .card.incorrect .feedback,
+    .card.revealed .feedback {
+      display: block;
     }
 
     @media print {
       body {
         background: white;
       }
-      header, .toolbar {
-        box-shadow: none;
+
+      header,
+      .toolbar,
+      .card {
+        background: white;
       }
-      button {
+
+      .toolbar-actions {
         display: none;
       }
-      .card, .answer-key {
-        box-shadow: none;
+
+      .card {
         break-inside: avoid;
       }
     }
@@ -193,321 +222,351 @@
 </head>
 <body>
   <header>
-    <h1>Module 1&2 Review Quiz</h1>
-    <p>Answer Form — correct answers are pre-selected and shown below each question.</p>
+    <div class="header-inner">
+      <h1>Module 1&2 Review Quiz</h1>
+      <p>Choose the best answer for each question, then submit when you are ready to review your score.</p>
+    </div>
   </header>
 
   <main>
     <div class="toolbar">
       <div>
-        <strong>Saved answers:</strong> 10 of 10<br>
-        <span class="score" id="score">Score: not checked yet</span>
+        <strong id="answeredCount">Answered: 0 of 10</strong><br>
+        <span class="status" id="score">Score: not submitted</span>
       </div>
-      <div>
-        <button onclick="checkAnswers()">Check Answers</button>
-        <button class="secondary" onclick="window.print()">Print / Save as PDF</button>
+      <div class="toolbar-actions">
+        <button id="submitQuiz" type="button">Submit quiz</button>
+        <button id="showAnswers" class="secondary" type="button">Show answers</button>
+        <button id="resetQuiz" class="secondary" type="button">Reset</button>
+        <button class="secondary" type="button" onclick="window.print()">Print</button>
       </div>
     </div>
 
     <form id="quizForm">
-      
-      <section class="card" data-answer="True">
+      <section class="card" data-question="1">
         <div class="q-header">
           <h2>Question 1</h2>
           <span class="point">1 point</span>
         </div>
         <p class="question-text">An Education Assistant needs to be aware of their role and personal values, beliefs and attitudes in supporting students with special needs in the school and community.</p>
         <div class="options">
-          
-          <label class="option correct-choice" for="q1_0">
-            <input id="q1_0" type="radio" name="q1" value="True" checked>
+          <label class="option" for="q1_0">
+            <input id="q1_0" type="radio" name="q1" value="True">
             <span>True</span>
           </label>
-        
           <label class="option" for="q1_1">
-            <input id="q1_1" type="radio" name="q1" value="False" >
+            <input id="q1_1" type="radio" name="q1" value="False">
             <span>False</span>
           </label>
-        
         </div>
-        <p class="answer-line">Answer: <strong>True</strong></p>
+        <p class="feedback" aria-live="polite"></p>
       </section>
-    
-      <section class="card" data-answer="True">
+
+      <section class="card" data-question="2">
         <div class="q-header">
           <h2>Question 2</h2>
           <span class="point">1 point</span>
         </div>
         <p class="question-text">In the History of Special Education in BC:<br><br>Often medical professionals and educators had recommended that children with special needs be placed in institutions for people with special needs.</p>
         <div class="options">
-          
-          <label class="option correct-choice" for="q2_0">
-            <input id="q2_0" type="radio" name="q2" value="True" checked>
+          <label class="option" for="q2_0">
+            <input id="q2_0" type="radio" name="q2" value="True">
             <span>True</span>
           </label>
-        
           <label class="option" for="q2_1">
-            <input id="q2_1" type="radio" name="q2" value="False" >
+            <input id="q2_1" type="radio" name="q2" value="False">
             <span>False</span>
           </label>
-        
         </div>
-        <p class="answer-line">Answer: <strong>True</strong></p>
+        <p class="feedback" aria-live="polite"></p>
       </section>
-    
-      <section class="card" data-answer="False">
+
+      <section class="card" data-question="3">
         <div class="q-header">
           <h2>Question 3</h2>
           <span class="point">1 point</span>
         </div>
         <p class="question-text">In 1989, Ministerial Order 150, the Special Needs Students Order, was added to the School Act. This order states that Teachers have the right to decide whether or not they will accept students with a learning disability in their classroom.</p>
         <div class="options">
-          
           <label class="option" for="q3_0">
-            <input id="q3_0" type="radio" name="q3" value="True" >
+            <input id="q3_0" type="radio" name="q3" value="True">
             <span>True</span>
           </label>
-        
-          <label class="option correct-choice" for="q3_1">
-            <input id="q3_1" type="radio" name="q3" value="False" checked>
+          <label class="option" for="q3_1">
+            <input id="q3_1" type="radio" name="q3" value="False">
             <span>False</span>
           </label>
-        
         </div>
-        <p class="answer-line">Answer: <strong>False</strong></p>
+        <p class="feedback" aria-live="polite"></p>
       </section>
-    
-      <section class="card" data-answer="typical">
+
+      <section class="card" data-question="4">
         <div class="q-header">
           <h2>Question 4</h2>
           <span class="point">1 point</span>
         </div>
-        <p class="question-text">Some parents and educators were worried about how the inclusion of students with diverse needs would affect the “_______” students.</p>
+        <p class="question-text">Some parents and educators were worried about how the inclusion of students with diverse needs would affect the "_______" students.</p>
         <div class="options">
-          
-          <label class="option correct-choice" for="q4_0">
-            <input id="q4_0" type="radio" name="q4" value="typical" checked>
+          <label class="option" for="q4_0">
+            <input id="q4_0" type="radio" name="q4" value="typical">
             <span>typical</span>
           </label>
-        
           <label class="option" for="q4_1">
-            <input id="q4_1" type="radio" name="q4" value="Older" >
+            <input id="q4_1" type="radio" name="q4" value="Older">
             <span>Older</span>
           </label>
-        
           <label class="option" for="q4_2">
-            <input id="q4_2" type="radio" name="q4" value="New" >
+            <input id="q4_2" type="radio" name="q4" value="New">
             <span>New</span>
           </label>
-        
           <label class="option" for="q4_3">
-            <input id="q4_3" type="radio" name="q4" value="Younger" >
+            <input id="q4_3" type="radio" name="q4" value="Younger">
             <span>Younger</span>
           </label>
-        
         </div>
-        <p class="answer-line">Answer: <strong>typical</strong></p>
+        <p class="feedback" aria-live="polite"></p>
       </section>
-    
-      <section class="card" data-answer="All of these">
+
+      <section class="card" data-question="5">
         <div class="q-header">
           <h2>Question 5</h2>
           <span class="point">1 point</span>
         </div>
         <p class="question-text">Which of the following are examples of supports used to increase accessibility/participation:</p>
         <div class="options">
-          
-          <label class="option correct-choice" for="q5_0">
-            <input id="q5_0" type="radio" name="q5" value="All of these" checked>
+          <label class="option" for="q5_0">
+            <input id="q5_0" type="radio" name="q5" value="All of these">
             <span>All of these</span>
           </label>
-        
           <label class="option" for="q5_1">
-            <input id="q5_1" type="radio" name="q5" value="Eyeglasses" >
+            <input id="q5_1" type="radio" name="q5" value="Eyeglasses">
             <span>Eyeglasses</span>
           </label>
-        
           <label class="option" for="q5_2">
-            <input id="q5_2" type="radio" name="q5" value="Enlarged font (size of letters)" >
+            <input id="q5_2" type="radio" name="q5" value="Enlarged font (size of letters)">
             <span>Enlarged font (size of letters)</span>
           </label>
-        
           <label class="option" for="q5_3">
-            <input id="q5_3" type="radio" name="q5" value="Lined Paper" >
+            <input id="q5_3" type="radio" name="q5" value="Lined Paper">
             <span>Lined Paper</span>
           </label>
-        
           <label class="option" for="q5_4">
-            <input id="q5_4" type="radio" name="q5" value="Slower/faster mouse tracking" >
+            <input id="q5_4" type="radio" name="q5" value="Slower/faster mouse tracking">
             <span>Slower/faster mouse tracking</span>
           </label>
-        
         </div>
-        <p class="answer-line">Answer: <strong>All of these</strong></p>
+        <p class="feedback" aria-live="polite"></p>
       </section>
-    
-      <section class="card" data-answer="True">
+
+      <section class="card" data-question="6">
         <div class="q-header">
           <h2>Question 6</h2>
           <span class="point">1 point</span>
         </div>
         <p class="question-text">The areas in which a student with special needs may have challenges or special gifts are:<br><br>sensory, physical, intellectual, emotional, behavioral</p>
         <div class="options">
-          
-          <label class="option correct-choice" for="q6_0">
-            <input id="q6_0" type="radio" name="q6" value="True" checked>
+          <label class="option" for="q6_0">
+            <input id="q6_0" type="radio" name="q6" value="True">
             <span>True</span>
           </label>
-        
           <label class="option" for="q6_1">
-            <input id="q6_1" type="radio" name="q6" value="False" >
+            <input id="q6_1" type="radio" name="q6" value="False">
             <span>False</span>
           </label>
-        
         </div>
-        <p class="answer-line">Answer: <strong>True</strong></p>
+        <p class="feedback" aria-live="polite"></p>
       </section>
-    
-      <section class="card" data-answer="True">
+
+      <section class="card" data-question="7">
         <div class="q-header">
           <h2>Question 7</h2>
           <span class="point">1 point</span>
         </div>
-        <p class="question-text">Disruption in a child’s education and exclusion from regular education are associated with adverse economic outcomes for the whole family.</p>
+        <p class="question-text">Disruption in a child's education and exclusion from regular education are associated with adverse economic outcomes for the whole family.</p>
         <div class="options">
-          
-          <label class="option correct-choice" for="q7_0">
-            <input id="q7_0" type="radio" name="q7" value="True" checked>
+          <label class="option" for="q7_0">
+            <input id="q7_0" type="radio" name="q7" value="True">
             <span>True</span>
           </label>
-        
           <label class="option" for="q7_1">
-            <input id="q7_1" type="radio" name="q7" value="False" >
+            <input id="q7_1" type="radio" name="q7" value="False">
             <span>False</span>
           </label>
-        
         </div>
-        <p class="answer-line">Answer: <strong>True</strong></p>
+        <p class="feedback" aria-live="polite"></p>
       </section>
-    
-      <section class="card" data-answer="True">
+
+      <section class="card" data-question="8">
         <div class="q-header">
           <h2>Question 8</h2>
           <span class="point">1 point</span>
         </div>
         <p class="question-text">Thanks to the tenacity of parents and their advocates, who believed children with disabilities had a right to learn and belong, our school communities have now progressed to a point where it has become a common practice for a diverse group of learners to have their educational needs met in regular classrooms.</p>
         <div class="options">
-          
-          <label class="option correct-choice" for="q8_0">
-            <input id="q8_0" type="radio" name="q8" value="True" checked>
+          <label class="option" for="q8_0">
+            <input id="q8_0" type="radio" name="q8" value="True">
             <span>True</span>
           </label>
-        
           <label class="option" for="q8_1">
-            <input id="q8_1" type="radio" name="q8" value="False" >
+            <input id="q8_1" type="radio" name="q8" value="False">
             <span>False</span>
           </label>
-        
         </div>
-        <p class="answer-line">Answer: <strong>True</strong></p>
+        <p class="feedback" aria-live="polite"></p>
       </section>
-    
-      <section class="card" data-answer="Individual Education Plan">
+
+      <section class="card" data-question="9">
         <div class="q-header">
           <h2>Question 9</h2>
           <span class="point">1 point</span>
         </div>
         <p class="question-text">An __________________________________ is a documented plan developed for a student with special needs that describes individualized goals, adaptations, modifications, the services to be provided, and includes measures for tracking achievement.</p>
         <div class="options">
-          
-          <label class="option correct-choice" for="q9_0">
-            <input id="q9_0" type="radio" name="q9" value="Individual Education Plan" checked>
+          <label class="option" for="q9_0">
+            <input id="q9_0" type="radio" name="q9" value="Individual Education Plan">
             <span>Individual Education Plan</span>
           </label>
-        
           <label class="option" for="q9_1">
-            <input id="q9_1" type="radio" name="q9" value="Inclusive Education Plan" >
+            <input id="q9_1" type="radio" name="q9" value="Inclusive Education Plan">
             <span>Inclusive Education Plan</span>
           </label>
-        
           <label class="option" for="q9_2">
-            <input id="q9_2" type="radio" name="q9" value="Interactive Economic Program" >
+            <input id="q9_2" type="radio" name="q9" value="Interactive Economic Program">
             <span>Interactive Economic Program</span>
           </label>
-        
           <label class="option" for="q9_3">
-            <input id="q9_3" type="radio" name="q9" value="Individual Education Program" >
+            <input id="q9_3" type="radio" name="q9" value="Individual Education Program">
             <span>Individual Education Program</span>
           </label>
-        
         </div>
-        <p class="answer-line">Answer: <strong>Individual Education Plan</strong></p>
+        <p class="feedback" aria-live="polite"></p>
       </section>
-    
-      <section class="card" data-answer="Integration">
+
+      <section class="card" data-question="10">
         <div class="q-header">
           <h2>Question 10</h2>
           <span class="point">1 point</span>
         </div>
         <p class="question-text">Fred sits at a table at the back of the class doing puzzles alone with Mrs. Jones, while Mrs. Cooper teaches the class Math and Science lessons.<br><br>This is an example of:</p>
         <div class="options">
-          
           <label class="option" for="q10_0">
-            <input id="q10_0" type="radio" name="q10" value="Exclusion" >
+            <input id="q10_0" type="radio" name="q10" value="Exclusion">
             <span>Exclusion</span>
           </label>
-        
-          <label class="option correct-choice" for="q10_1">
-            <input id="q10_1" type="radio" name="q10" value="Integration" checked>
+          <label class="option" for="q10_1">
+            <input id="q10_1" type="radio" name="q10" value="Integration">
             <span>Integration</span>
           </label>
-        
           <label class="option" for="q10_2">
-            <input id="q10_2" type="radio" name="q10" value="Inclusion" >
+            <input id="q10_2" type="radio" name="q10" value="Inclusion">
             <span>Inclusion</span>
           </label>
-        
           <label class="option" for="q10_3">
-            <input id="q10_3" type="radio" name="q10" value="Segregation" >
+            <input id="q10_3" type="radio" name="q10" value="Segregation">
             <span>Segregation</span>
           </label>
-        
         </div>
-        <p class="answer-line">Answer: <strong>Integration</strong></p>
+        <p class="feedback" aria-live="polite"></p>
       </section>
-    
     </form>
-
-    <section class="answer-key">
-      <h2>Answer Key</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Question</th>
-            <th>Correct Answer</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>1</td><td>True</td></tr><tr><td>2</td><td>True</td></tr><tr><td>3</td><td>False</td></tr><tr><td>4</td><td>typical</td></tr><tr><td>5</td><td>All of these</td></tr><tr><td>6</td><td>True</td></tr><tr><td>7</td><td>True</td></tr><tr><td>8</td><td>True</td></tr><tr><td>9</td><td>Individual Education Plan</td></tr><tr><td>10</td><td>Integration</td></tr>
-        </tbody>
-      </table>
-    </section>
   </main>
 
   <script>
-    const answers = {"{1: 'True', 2: 'True', 3: 'False', 4: 'typical', 5: 'All of these', 6: 'True', 7: 'True', 8: 'True', 9: 'Individual Education Plan', 10: 'Integration'}"};
+    const answers = {
+      1: "True",
+      2: "True",
+      3: "False",
+      4: "typical",
+      5: "All of these",
+      6: "True",
+      7: "True",
+      8: "True",
+      9: "Individual Education Plan",
+      10: "Integration",
+    };
 
-    function checkAnswers() {
+    const form = document.getElementById("quizForm");
+    const answeredCount = document.getElementById("answeredCount");
+    const score = document.getElementById("score");
+
+    function getAnsweredTotal() {
+      return Object.keys(answers).filter((num) => {
+        return document.querySelector(`input[name="q${num}"]:checked`);
+      }).length;
+    }
+
+    function updateAnsweredCount() {
+      answeredCount.textContent = `Answered: ${getAnsweredTotal()} of ${Object.keys(answers).length}`;
+    }
+
+    function submitQuiz() {
       let correct = 0;
-      let total = Object.keys(answers).length;
+      const total = Object.keys(answers).length;
 
       for (const [num, answer] of Object.entries(answers)) {
+        const card = document.querySelector(`[data-question="${num}"]`);
         const selected = document.querySelector(`input[name="q${num}"]:checked`);
-        if (selected && selected.value === answer) correct++;
+        const feedback = card.querySelector(".feedback");
+        const isCorrect = Boolean(selected && selected.value === answer);
+
+        card.classList.remove("correct", "incorrect", "revealed");
+        card.classList.add(isCorrect ? "correct" : "incorrect");
+        document.querySelectorAll(".answer-choice").forEach((option) => {
+          option.classList.remove("answer-choice");
+        });
+        feedback.textContent = isCorrect
+          ? "Correct"
+          : `Review: the correct answer is ${answer}.`;
+
+        if (isCorrect) {
+          correct++;
+        }
       }
 
-      document.getElementById("score").textContent = `Score: ${correct} / ${total}`;
+      score.textContent = `Score: ${correct} / ${total}`;
+      updateAnsweredCount();
     }
+
+    function showAnswers() {
+      document.querySelectorAll(".answer-choice").forEach((option) => {
+        option.classList.remove("answer-choice");
+      });
+
+      for (const [num, answer] of Object.entries(answers)) {
+        const card = document.querySelector(`[data-question="${num}"]`);
+        const feedback = card.querySelector(".feedback");
+        const correctInput = Array.from(document.querySelectorAll(`input[name="q${num}"]`))
+          .find((input) => input.value === answer);
+
+        card.classList.remove("correct", "incorrect");
+        card.classList.add("revealed");
+        correctInput.checked = true;
+        correctInput.parentElement.classList.add("answer-choice");
+        feedback.textContent = `Answer: ${answer}`;
+      }
+
+      score.textContent = "Answers shown";
+      updateAnsweredCount();
+    }
+
+    function resetQuiz() {
+      form.reset();
+      document.querySelectorAll(".card").forEach((card) => {
+        card.classList.remove("correct", "incorrect", "revealed");
+        card.querySelector(".feedback").textContent = "";
+      });
+      document.querySelectorAll(".answer-choice").forEach((option) => {
+        option.classList.remove("answer-choice");
+      });
+      score.textContent = "Score: not submitted";
+      updateAnsweredCount();
+    }
+
+    form.addEventListener("change", updateAnsweredCount);
+    document.getElementById("submitQuiz").addEventListener("click", submitQuiz);
+    document.getElementById("showAnswers").addEventListener("click", showAnswers);
+    document.getElementById("resetQuiz").addEventListener("click", resetQuiz);
+    updateAnsweredCount();
   </script>
 </body>
 </html>
