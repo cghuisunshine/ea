@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruby Support Profile</title>
+  <style>
+    :root {
+      --bg: #f6f3ec;
+      --paper: #fffdf8;
+      --ink: #1f2933;
+      --muted: #607080;
+      --line: #e1d8c8;
+      --accent: #087ea4;
+      --soft: #f1eadf;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .wrap {
+      width: min(100%, 1080px);
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 18px;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .back:hover,
+    .back:focus-visible {
+      color: var(--accent);
+      outline: none;
+    }
+
+    header,
+    section {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(280px, 430px) 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(30px, 5vw, 48px);
+      color: #b42318;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 10px 0 0;
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 60ch;
+    }
+
+    .source-image {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+      padding: 10px;
+    }
+
+    .source-image img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .source-image figcaption {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    main {
+      display: grid;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+      padding: 16px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    .note {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 16px;
+    }
+
+    .goals {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .goal {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .wrap {
+        padding: 16px;
+      }
+
+      header,
+      .grid,
+      .goals {
+        grid-template-columns: 1fr;
+      }
+
+      header,
+      section {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">Back to resources</a>
+
+    <header>
+      <figure class="source-image">
+        <img src="Ruby.png" alt="Handwritten Ruby support profile notes" />
+        <figcaption>Original handwritten support notes for Ruby.</figcaption>
+      </figure>
+
+      <div>
+        <h1>Ruby Support Profile</h1>
+        <p class="intro">
+          The image summarizes how Ruby participates in different parts of the school day,
+          where she is independent, and where adult, peer, home, or specialist support helps.
+        </p>
+        <div class="note">
+          <h2>Overall meaning</h2>
+          <p>
+            Ruby can take part in classroom, social, and physical activities when expectations
+            are clear and support is adjusted to the activity. The notes show a mix of
+            independence, adapted tools, peer connection, one-on-one adult help, and goals that
+            build confidence.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Classroom Learning</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>Reading</h3>
+            <ul>
+              <li>Ruby reads independently.</li>
+              <li>She uses the same reading bin as others.</li>
+              <li>She works at her own level.</li>
+            </ul>
+            <p>
+              This suggests inclusion with individualized expectations: Ruby joins the same
+              routine while using materials that match her current reading level.
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>Instruction</h3>
+            <ul>
+              <li>Support can come from the teacher or an Education Assistant.</li>
+              <li>One-on-one instruction is useful when needed.</li>
+            </ul>
+            <p>
+              The support is not only about completing tasks. It also helps Ruby understand
+              directions, stay engaged, and access the same lesson as her classmates.
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>Math</h3>
+            <ul>
+              <li>During lessons, Ruby works beside the teacher.</li>
+              <li>For math bins, she works with a helpful and friendly peer.</li>
+            </ul>
+            <p>
+              Math support combines adult proximity during direct teaching with peer support
+              during practice. The peer relationship matters because the note names the peer as
+              helpful and friendly.
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>Journal Share</h3>
+            <ul>
+              <li>Ruby benefits from teacher support.</li>
+              <li>Repeating information helps.</li>
+              <li>She may need help as the activity continues.</li>
+            </ul>
+            <p>
+              For speaking or sharing tasks, Ruby may need repeated prompts and flexible help so
+              she can participate without being rushed.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Social Participation</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>Library</h3>
+            <ul>
+              <li>Ruby sits with peers.</li>
+              <li>She raises her hand.</li>
+              <li>Her answers are accepted.</li>
+            </ul>
+            <p>
+              The library notes show positive participation: Ruby joins peers, follows the group
+              routine, and is given space for her responses to count.
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>Recess</h3>
+            <ul>
+              <li>The note says "H+S". The exact abbreviation should be confirmed locally.</li>
+              <li>Different rules may apply at recess.</li>
+            </ul>
+            <p>
+              Recess may need explicit expectations and supervision because outdoor or unstructured
+              time often has different social and safety rules from classroom time.
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>Lunch</h3>
+            <ul>
+              <li>Ruby ate with a friend.</li>
+              <li>A handshake is noted as part of the interaction.</li>
+            </ul>
+            <p>
+              These details show social connection. The support goal is likely to keep these
+              successful peer interactions happening naturally.
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>Hall</h3>
+            <ul>
+              <li>High fives are listed for the hallway.</li>
+            </ul>
+            <p>
+              A simple high five can be a quick positive connection during transitions and may
+              help Ruby feel recognized and successful.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Adapted Activities</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>Art</h3>
+            <ul>
+              <li>Ruby uses adapted scissors.</li>
+            </ul>
+            <p>
+              This is a tool adaptation. It lets Ruby participate in the same art task with a
+              tool that better fits her motor or access needs.
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>P.E.</h3>
+            <ul>
+              <li>Some activities are adapted.</li>
+              <li>A dance break is helpful.</li>
+            </ul>
+            <p>
+              Physical Education may need modified activities, but the note also points to
+              movement as a positive support strategy.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Extra Support</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>S/P</h3>
+            <ul>
+              <li>The note says Ruby gets extra support at home.</li>
+              <li>The abbreviation "S/P" should be confirmed before using it in formal notes.</li>
+            </ul>
+            <p>
+              The key idea is that support is shared between school and home, not limited to one
+              setting.
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>Extra support sometimes</h3>
+            <ul>
+              <li>An Education Assistant may help.</li>
+              <li>A specialist teacher may help.</li>
+            </ul>
+            <p>
+              The word "sometimes" matters. Ruby does not need every support all the time, but
+              the team should know which supports to bring in when a task or situation calls for
+              them.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Goals</h2>
+        <p>
+          The bottom of the image lists four goals that focus on completion, persistence,
+          success, and self-esteem.
+        </p>
+        <div class="goals">
+          <div class="goal">Finish</div>
+          <div class="goal">Hard things</div>
+          <div class="goal">See success</div>
+          <div class="goal">Pride</div>
+        </div>
+        <div class="note">
+          <h3>Language goal: "not but" to "and"</h3>
+          <p>
+            The note shows a communication goal of shifting from "not but" language to "and"
+            language. In practice, this means framing feedback or self-talk in a more connected
+            way. For example, instead of treating difficulty and success as opposites, Ruby can
+            learn to say that something is hard and she can keep trying.
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
