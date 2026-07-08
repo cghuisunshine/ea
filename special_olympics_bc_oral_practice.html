@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:," />
+  <title>Special Olympics BC – Oral Presentation Practice</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #1d4ed8;
+      --primary-light: #dbeafe;
+      --border: #d1d5db;
+      --accent: #f97316;
+      --success: #15803d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1d4ed8, #2563eb, #60a5fa);
+      color: white;
+      padding: 34px 18px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 14px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    button, select {
+      border: 1px solid var(--border);
+      background: white;
+      color: var(--text);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+
+    button:hover, select:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    button.primary {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    button.primary:hover {
+      background: #1e40af;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 22px 16px 60px;
+    }
+
+    .practice-box {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      border-left: 7px solid var(--accent);
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 22px;
+    }
+
+    .practice-box h2 {
+      margin-top: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .mini-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .mini-card strong {
+      display: block;
+      color: var(--primary);
+    }
+
+    .speaker {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      margin: 24px 0;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+    }
+
+    .speaker h2 {
+      margin-top: 0;
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary-light);
+      padding-bottom: 8px;
+    }
+
+    .speaker .time {
+      display: inline-block;
+      color: var(--success);
+      background: #dcfce7;
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+
+    .speaker-tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin: 2px 0 14px;
+    }
+
+    .model-audio-wrap {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+      margin: 2px 0 14px;
+      background: #f9fafb;
+    }
+
+    .model-audio-wrap strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+
+    .model-audio {
+      display: block;
+      width: 100%;
+    }
+
+    .model-sentence {
+      border-radius: 5px;
+      padding: 1px 3px;
+      transition: background-color 120ms ease, color 120ms ease;
+    }
+
+    .model-sentence.is-speaking {
+      background: #fef3c7;
+      color: #111827;
+    }
+
+    .record-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .record-btn.recording {
+      background: #fee2e2;
+      border-color: #dc2626;
+      color: #991b1b;
+    }
+
+    .record-icon {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #dc2626;
+      display: inline-block;
+    }
+
+    .record-btn.recording .record-icon {
+      border-radius: 2px;
+      background: #991b1b;
+    }
+
+    .record-status {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .record-playback {
+      display: block;
+      width: 100%;
+      margin: 10px 0 8px;
+    }
+
+    .record-download {
+      display: inline-block;
+      color: var(--primary);
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .speaker p {
+      margin: 1rem 0;
+    }
+
+    .cue {
+      background: #eef2ff;
+      border-left: 5px solid #4f46e5;
+      padding: 12px 14px;
+      border-radius: 10px;
+      margin: 14px 0;
+      font-weight: bold;
+    }
+
+    .activity {
+      background: #ecfeff;
+      border-left: 5px solid #0891b2;
+      padding: 14px;
+      border-radius: 12px;
+      margin-top: 18px;
+    }
+
+    .big-message {
+      text-align: center;
+      font-size: clamp(1.8rem, 6vw, 3.6rem);
+      font-weight: bold;
+      color: var(--primary);
+      margin: 28px 0;
+      line-height: 1.25;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .highlight {
+      background: #fef3c7;
+      border-radius: 8px;
+      padding: 2px 4px;
+    }
+
+    .progress-wrap {
+      width: 180px;
+      height: 12px;
+      background: #e5e7eb;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: var(--primary);
+      transition: width 0.2s linear;
+    }
+
+    .timer {
+      font-weight: bold;
+      min-width: 78px;
+      text-align: center;
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 30px 16px;
+      border-top: 1px solid var(--border);
+      background: white;
+    }
+
+    @media print {
+      .toolbar {
+        display: none;
+      }
+
+      body {
+        background: white;
+        font-size: 14px;
+      }
+
+      header {
+        color: black;
+        background: white;
+        border-bottom: 2px solid #000;
+      }
+
+      .speaker {
+        box-shadow: none;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Special Olympics BC</h1>
+    <p>5-Speaker Oral Presentation Practice Page</p>
+  </header>
+
+  <nav class="toolbar">
+    <button class="primary" onclick="startTimer()">Start 10-Min Timer</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+    <button id="playAllModelButton" onclick="playAllModelAudio()" aria-pressed="false">Play All Model Audio</button>
+    <span class="timer" id="timer">10:00</span>
+    <div class="progress-wrap" aria-label="timer progress">
+      <div class="progress-bar" id="progress"></div>
+    </div>
+
+    <select id="speakerSelect" onchange="filterSpeaker()">
+      <option value="all">Show all speakers</option>
+      <option value="speaker1">Speaker 1 only</option>
+      <option value="speaker2">Speaker 2 only</option>
+      <option value="speaker3">Speaker 3 only</option>
+      <option value="speaker4">Speaker 4 only</option>
+      <option value="speaker5">Speaker 5 only</option>
+    </select>
+
+    <button onclick="changeFont(1)">A+</button>
+    <button onclick="changeFont(-1)">A-</button>
+    <button onclick="window.print()">Print</button>
+  </nav>
+
+  <main class="container">
+    <section class="practice-box">
+      <h2>Practice Goals</h2>
+      <p>Each speaker should practise for about <strong>1.5 to 2 minutes</strong>. Do not read too fast. Look up, pause, and explain the ideas in your own words.</p>
+
+      <div class="grid">
+        <div class="mini-card"><strong>Speaker 1</strong>Introduction + Origin</div>
+        <div class="mini-card"><strong>Speaker 2</strong>SOBC History + Today</div>
+        <div class="mini-card"><strong>Speaker 3</strong>Social Model + Rights</div>
+        <div class="mini-card"><strong>Speaker 4</strong>School Inclusion</div>
+        <div class="mini-card"><strong>Speaker 5</strong>EA Role + Activity</div>
+      </div>
+
+      <p><strong>Tip:</strong> Slides should have short keywords only. Use this page as speaker notes, not as text to read word-for-word.</p>
+    </section>
+
+    <section id="speaker1" class="speaker">
+      <h2>Speaker 1 — Introduction and Origin</h2>
+      <span class="time">Suggested time: 1.5–2 minutes</span>
+      <div class="model-audio-wrap">
+        <strong>Listen to model audio</strong>
+        <audio class="model-audio" data-speaker="speaker1" controls preload="metadata" src="audio/special-olympics-bc-speaker-1.mp3"></audio>
+      </div>
+      <div class="speaker-tools">
+        <button class="record-btn" type="button" data-speaker="speaker1" onclick="toggleRecording('speaker1')" aria-label="Record Speaker 1">
+          <span class="record-icon" aria-hidden="true"></span>
+          <span>Record</span>
+        </button>
+        <span class="record-status" id="speaker1Status">Ready to record</span>
+      </div>
+      <audio class="record-playback hidden" id="speaker1Audio" controls></audio>
+      <a class="record-download hidden" id="speaker1Download" href="#" download="speaker-1-practice.webm">Download Speaker 1 recording</a>
+
+      <p>Good morning everyone. Today our group is presenting about <strong>Special Olympics BC</strong>.</p>
+
+      <p>Special Olympics BC is part of a larger movement that supports people with intellectual disabilities through sport, friendship, health, and community inclusion. This topic is important because it connects to disability rights, the social model of disability, and inclusion in schools.</p>
+
+      <p>Special Olympics did not begin only as a sports competition. It began because people started to challenge unfair beliefs about people with intellectual disabilities.</p>
+
+      <p>In the early 1960s, Dr. Frank Hayden, a Canadian researcher at the University of Toronto, studied children with intellectual disabilities at Beverley School in Toronto. At that time, many people believed these children could not be physically active or successful in sports.</p>
+
+      <p>Dr. Hayden’s research showed something very important. He found that many children with intellectual disabilities had low physical fitness not because they were unable, but because they had not been given enough chances to play, train, and participate.</p>
+
+      <p>This idea helped inspire the Special Olympics movement. Eunice Kennedy Shriver helped organize the first Special Olympics event in Chicago in 1968. Canada was represented at that first event, and later Harry “Red” Foster helped bring Special Olympics to Canada.</p>
+
+      <p>The first Canadian Special Olympics event was held in Toronto in 1969.</p>
+
+      <div class="cue">Slide cue: show timeline — 1960s → 1968 → 1969 → 1980</div>
+    </section>
+
+    <section id="speaker2" class="speaker">
+      <h2>Speaker 2 — Special Olympics BC History and What It Does Today</h2>
+      <span class="time">Suggested time: 1.5–2 minutes</span>
+      <div class="model-audio-wrap">
+        <strong>Listen to model audio</strong>
+        <audio class="model-audio" data-speaker="speaker2" controls preload="metadata" src="audio/special-olympics-bc-speaker-2.mp3"></audio>
+      </div>
+      <div class="speaker-tools">
+        <button class="record-btn" type="button" data-speaker="speaker2" onclick="toggleRecording('speaker2')" aria-label="Record Speaker 2">
+          <span class="record-icon" aria-hidden="true"></span>
+          <span>Record</span>
+        </button>
+        <span class="record-status" id="speaker2Status">Ready to record</span>
+      </div>
+      <audio class="record-playback hidden" id="speaker2Audio" controls></audio>
+      <a class="record-download hidden" id="speaker2Download" href="#" download="speaker-2-practice.webm">Download Speaker 2 recording</a>
+
+      <p>Special Olympics BC began in 1980. At first, it started with two weekends of games and about 500 participants.</p>
+
+      <p>Since then, Special Olympics BC has grown into year-round programs in many communities across British Columbia. It is no longer just one event. It includes regular training, competitions, youth programs, health programs, and community activities.</p>
+
+      <p>Athletes can participate in many sports, such as swimming, basketball, bowling, soccer, floor hockey, track and field, and more.</p>
+
+      <p>The purpose of Special Olympics BC is not only to win medals. Winning can be exciting, but the bigger purpose is to help athletes build confidence, health, friendships, teamwork, independence, and belonging.</p>
+
+      <p>Special Olympics BC also helps the public see people with intellectual disabilities in a more respectful way. Instead of focusing only on what someone cannot do, it focuses on what people can do when they are given support and opportunity.</p>
+
+      <p>This connects strongly to inclusion because athletes are not being hidden away or separated from the community. They are participating, competing, leading, and being celebrated.</p>
+
+      <div class="cue">Slide cue: show BC map, sports icons, and words like confidence, friendship, belonging.</div>
+    </section>
+
+    <section id="speaker3" class="speaker">
+      <h2>Speaker 3 — Social Model of Disability and Rights</h2>
+      <span class="time">Suggested time: 1.5–2 minutes</span>
+      <div class="model-audio-wrap">
+        <strong>Listen to model audio</strong>
+        <audio class="model-audio" data-speaker="speaker3" controls preload="metadata" src="audio/special-olympics-bc-speaker-3.mp3"></audio>
+      </div>
+      <div class="speaker-tools">
+        <button class="record-btn" type="button" data-speaker="speaker3" onclick="toggleRecording('speaker3')" aria-label="Record Speaker 3">
+          <span class="record-icon" aria-hidden="true"></span>
+          <span>Record</span>
+        </button>
+        <span class="record-status" id="speaker3Status">Ready to record</span>
+      </div>
+      <audio class="record-playback hidden" id="speaker3Audio" controls></audio>
+      <a class="record-download hidden" id="speaker3Download" href="#" download="speaker-3-practice.webm">Download Speaker 3 recording</a>
+
+      <p>Now we will connect Special Olympics BC to the <strong>social model of disability</strong>.</p>
+
+      <p>The social model of disability says that disability is not only caused by a person’s impairment or diagnosis. Disability is also created by barriers in society.</p>
+
+      <p>These barriers can include low expectations, inaccessible programs, negative attitudes, lack of support, and being excluded from activities.</p>
+
+      <p>For example, if a student wants to join a game but the instructions are confusing, the rules are too fast, and nobody adapts the activity, the problem is not only inside the student. The problem is also in the environment.</p>
+
+      <p>Special Olympics BC helps remove these barriers. It gives people with intellectual disabilities real opportunities to train, compete, make friends, and be recognized for their strengths.</p>
+
+      <p>This contributes to rights because rights are not only about laws. Rights are also about real access, real participation, and real respect.</p>
+
+      <p>Special Olympics BC shows that people with intellectual disabilities have the right to participate in community life, to be included in sports, and to be proud of their achievements.</p>
+
+      <p>It also changes public attitudes. It helps society move from pity to respect, and from exclusion to inclusion.</p>
+
+      <div class="cue">Slide cue: show “Barrier → Support → Participation”.</div>
+    </section>
+
+    <section id="speaker4" class="speaker">
+      <h2>Speaker 4 — Connection to Inclusion in Schools</h2>
+      <span class="time">Suggested time: 1.5–2 minutes</span>
+      <div class="model-audio-wrap">
+        <strong>Listen to model audio</strong>
+        <audio class="model-audio" data-speaker="speaker4" controls preload="metadata" src="audio/special-olympics-bc-speaker-4.mp3"></audio>
+      </div>
+      <div class="speaker-tools">
+        <button class="record-btn" type="button" data-speaker="speaker4" onclick="toggleRecording('speaker4')" aria-label="Record Speaker 4">
+          <span class="record-icon" aria-hidden="true"></span>
+          <span>Record</span>
+        </button>
+        <span class="record-status" id="speaker4Status">Ready to record</span>
+      </div>
+      <audio class="record-playback hidden" id="speaker4Audio" controls></audio>
+      <a class="record-download hidden" id="speaker4Download" href="#" download="speaker-4-practice.webm">Download Speaker 4 recording</a>
+
+      <p>Special Olympics BC is also connected to inclusion in schools.</p>
+
+      <p>Inclusion does not mean a student is simply placed in the same classroom or gym. Real inclusion means the student participates, learns, makes choices, builds friendships, and feels valued.</p>
+
+      <p>Special Olympics BC has youth programs that support children and teenagers. Programs such as Active Start and FUNdamentals help younger children develop movement skills, sport skills, and social skills.</p>
+
+      <p>Unified Sports is especially important for schools because it brings students with and without intellectual disabilities together on the same team.</p>
+
+      <p>This is a strong example of inclusion. Students are not separated into “helpers” and “people who need help.” Instead, everyone participates together. They learn teamwork, patience, communication, and respect.</p>
+
+      <p>In schools, sports can sometimes create exclusion. Some students may be picked last, left out, or asked to watch instead of play. But inclusive sports can change this.</p>
+
+      <p>For example, a teacher or EA can adapt a game by slowing the pace, using a bigger ball, giving visual instructions, creating partner roles, or focusing on teamwork instead of only winning.</p>
+
+      <p>Special Olympics BC reminds us that inclusion must be active. We need to create real chances for students to join, not just say they are welcome.</p>
+
+      <div class="cue">Slide cue: show students playing on one team together.</div>
+    </section>
+
+    <section id="speaker5" class="speaker">
+      <h2>Speaker 5 — Why EAs Need to Know + Class Activity + Closing</h2>
+      <span class="time">Suggested time: 2–2.5 minutes</span>
+      <div class="model-audio-wrap">
+        <strong>Listen to model audio</strong>
+        <audio class="model-audio" data-speaker="speaker5" controls preload="metadata" src="audio/special-olympics-bc-speaker-5.mp3"></audio>
+      </div>
+      <div class="speaker-tools">
+        <button class="record-btn" type="button" data-speaker="speaker5" onclick="toggleRecording('speaker5')" aria-label="Record Speaker 5">
+          <span class="record-icon" aria-hidden="true"></span>
+          <span>Record</span>
+        </button>
+        <span class="record-status" id="speaker5Status">Ready to record</span>
+      </div>
+      <audio class="record-playback hidden" id="speaker5Audio" controls></audio>
+      <a class="record-download hidden" id="speaker5Download" href="#" download="speaker-5-practice.webm">Download Speaker 5 recording</a>
+
+      <p>As future Education Assistants, we need to know about Special Olympics BC because EAs often support students who face barriers in school.</p>
+
+      <p>An EA may support a student in gym class, recess, field trips, clubs, classroom group work, or social activities. The EA might help by breaking instructions into smaller steps, using visuals, modelling a skill, encouraging peer support, or helping the student manage anxiety.</p>
+
+      <p>Special Olympics BC reminds us that our job is not to do everything for the student. Our job is to support independence, confidence, participation, and belonging.</p>
+
+      <p>Sometimes the most important support is helping classmates understand how to include someone respectfully.</p>
+
+      <div class="activity">
+        <p><strong>Class Activity: Barrier or Inclusion?</strong></p>
+        <p>Now we have a short activity for the class. We will read three examples. Please decide if each one shows a <strong>barrier</strong> or <strong>inclusion</strong>.</p>
+
+        <p><strong>Example one:</strong> A student watches gym class from the side because the game is too fast.<br>
+        Answer: This is a barrier.</p>
+
+        <p><strong>Example two:</strong> The teacher changes the rules so every student has a role on the team.<br>
+        Answer: This is inclusion.</p>
+
+        <p><strong>Example three:</strong> Students with disabilities play only in a separate room and never join classmates.<br>
+        Answer: This is segregation, not full inclusion.</p>
+      </div>
+
+      <p>To close, Special Olympics BC teaches us that people with intellectual disabilities need opportunity, support, and respect. Inclusion is not passive. It is something we create through our choices, our attitudes, and our actions.</p>
+
+      <div class="big-message">Opportunity + Support = Inclusion</div>
+
+      <div class="cue">Closing cue: all speakers can say one word: belonging, respect, friendship, opportunity, inclusion.</div>
+    </section>
+  </main>
+
+  <footer>
+    Practice page for group oral presentation — Special Olympics BC
+  </footer>
+
+  <script src="audio/special-olympics-bc-sentences.js"></script>
+  <script>
+    let baseFont = 18;
+    let totalSeconds = 10 * 60;
+    let secondsLeft = totalSeconds;
+    let timerId = null;
+    let activeRecording = null;
+    let playAllModelActive = false;
+    let playAllModelIndex = 0;
+    let playAllModelAudioElement = null;
+    const savedRecordings = {};
+
+    function updateTimerDisplay() {
+      const min = Math.floor(secondsLeft / 60);
+      const sec = secondsLeft % 60;
+      document.getElementById('timer').textContent = `${min}:${sec.toString().padStart(2, '0')}`;
+      const used = totalSeconds - secondsLeft;
+      document.getElementById('progress').style.width = `${(used / totalSeconds) * 100}%`;
+    }
+
+    function startTimer() {
+      if (timerId) return;
+      timerId = setInterval(() => {
+        if (secondsLeft > 0) {
+          secondsLeft--;
+          updateTimerDisplay();
+        } else {
+          pauseTimer();
+          alert('Time is up. Great practice!');
+        }
+      }, 1000);
+    }
+
+    function pauseTimer() {
+      if (timerId) {
+        clearInterval(timerId);
+        timerId = null;
+      }
+    }
+
+    function resetTimer() {
+      pauseTimer();
+      secondsLeft = totalSeconds;
+      updateTimerDisplay();
+    }
+
+    function changeFont(delta) {
+      baseFont = Math.max(14, Math.min(28, baseFont + delta));
+      document.body.style.fontSize = baseFont + 'px';
+    }
+
+    function filterSpeaker() {
+      const value = document.getElementById('speakerSelect').value;
+      const speakers = document.querySelectorAll('.speaker');
+      speakers.forEach(section => {
+        if (value === 'all' || section.id === value) {
+          section.classList.remove('hidden');
+        } else {
+          section.classList.add('hidden');
+        }
+      });
+      if (value !== 'all') {
+        document.getElementById(value).scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function getSentenceRanges(text) {
+      const protectedText = text
+        .replace(/Dr\./g, 'Dr§')
+        .replace(/Mr\./g, 'Mr§')
+        .replace(/Mrs\./g, 'Mrs§')
+        .replace(/Ms\./g, 'Ms§');
+      const ranges = [];
+      const pattern = /[^.!?]+[.!?]+(?:["”’]+)?|[^.!?]+$/g;
+      let match;
+
+      while ((match = pattern.exec(protectedText)) !== null) {
+        const raw = match[0];
+        const leading = raw.match(/^\s*/)[0].length;
+        const trailing = raw.match(/\s*$/)[0].length;
+        const start = match.index + leading;
+        const end = match.index + raw.length - trailing;
+        if (start < end) {
+          ranges.push({ start, end });
+        }
+      }
+
+      return ranges;
+    }
+
+    function getTextNodes(container) {
+      const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+      const nodes = [];
+      let node;
+
+      while ((node = walker.nextNode())) {
+        if (node.nodeValue.trim()) {
+          nodes.push(node);
+        }
+      }
+
+      return nodes;
+    }
+
+    function wrapTextNodeRange(node, start, end, speakerId, sentenceIndex) {
+      const range = document.createRange();
+      const span = document.createElement('span');
+      span.className = 'model-sentence';
+      span.dataset.speaker = speakerId;
+      span.dataset.index = String(sentenceIndex);
+      range.setStart(node, start);
+      range.setEnd(node, end);
+      range.surroundContents(span);
+    }
+
+    function wrapExistingSpeakerSentences(speakerId) {
+      const section = document.getElementById(speakerId);
+      if (!section || section.dataset.ttsWrapped === 'true') return;
+
+      const targets = [...document.querySelectorAll('.speaker p, .speaker .big-message')]
+        .filter(target => target.closest('.speaker') === section);
+      let sentenceIndex = 0;
+
+      targets.forEach(target => {
+        const textNodes = getTextNodes(target);
+        let cursor = 0;
+        const nodeRanges = textNodes.map(node => {
+          const start = cursor;
+          const end = start + node.nodeValue.length;
+          cursor = end;
+          return { node, start, end };
+        });
+        const operations = [];
+
+        getSentenceRanges(target.textContent).forEach(range => {
+          nodeRanges.forEach(nodeRange => {
+            const start = Math.max(range.start, nodeRange.start);
+            const end = Math.min(range.end, nodeRange.end);
+            if (start < end) {
+              operations.push({
+                node: nodeRange.node,
+                start: start - nodeRange.start,
+                end: end - nodeRange.start,
+                sentenceIndex
+              });
+            }
+          });
+          sentenceIndex++;
+        });
+
+        operations.reverse().forEach(operation => {
+          wrapTextNodeRange(
+            operation.node,
+            operation.start,
+            operation.end,
+            speakerId,
+            operation.sentenceIndex
+          );
+        });
+      });
+
+      section.dataset.ttsWrapped = 'true';
+    }
+
+    function getModelAudios() {
+      return [...document.querySelectorAll('.model-audio')]
+        .sort((first, second) => first.dataset.speaker.localeCompare(second.dataset.speaker));
+    }
+
+    function updatePlayAllModelButton() {
+      const button = document.getElementById('playAllModelButton');
+      button.textContent = playAllModelActive ? 'Stop All Model Audio' : 'Play All Model Audio';
+      button.setAttribute('aria-pressed', String(playAllModelActive));
+    }
+
+    function playAllModelAudio() {
+      if (playAllModelActive) {
+        stopAllModelAudio();
+        return;
+      }
+
+      playAllModelActive = true;
+      playAllModelIndex = 0;
+      updatePlayAllModelButton();
+      playNextModelAudio();
+    }
+
+    function playNextModelAudio() {
+      const audios = getModelAudios();
+      if (!playAllModelActive || playAllModelIndex >= audios.length) {
+        stopAllModelAudio();
+        return;
+      }
+
+      playAllModelAudioElement = audios[playAllModelIndex];
+      const section = document.getElementById(playAllModelAudioElement.dataset.speaker);
+      section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      playAllModelAudioElement.currentTime = 0;
+      playAllModelAudioElement.play().catch(() => {
+        stopAllModelAudio();
+        alert('The browser blocked automatic audio playback. Please click Play All Model Audio again.');
+      });
+    }
+
+    function stopAllModelAudio() {
+      if (playAllModelAudioElement) {
+        playAllModelAudioElement.pause();
+        playAllModelAudioElement.currentTime = 0;
+      }
+      playAllModelActive = false;
+      playAllModelIndex = 0;
+      playAllModelAudioElement = null;
+      updatePlayAllModelButton();
+    }
+
+    function bindModelAudioHighlighting() {
+      document.querySelectorAll('.model-audio').forEach(audio => {
+        const speakerId = audio.dataset.speaker;
+        const sentences = (window.modelSentenceTimings && window.modelSentenceTimings[speakerId]) || [];
+        if (sentences.length === 0) return;
+
+        wrapExistingSpeakerSentences(speakerId);
+        const spans = [...document.querySelectorAll(`.model-sentence[data-speaker="${speakerId}"]`)];
+        let active = -1;
+
+        function setActive(next) {
+          if (next === active) return;
+          if (active >= 0) {
+            spans
+              .filter(span => span.dataset.index === String(active))
+              .forEach(span => span.classList.remove('is-speaking'));
+          }
+          if (next >= 0) {
+            const activeSpans = spans.filter(span => span.dataset.index === String(next));
+            activeSpans.forEach(span => span.classList.add('is-speaking'));
+            activeSpans[0]?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+          }
+          active = next;
+        }
+
+        function clearActive() {
+          setActive(-1);
+        }
+
+        function paint() {
+          const time = audio.currentTime;
+          const next = sentences.findIndex(sentence => time >= sentence.start && time < sentence.end);
+          setActive(next);
+          if (!audio.paused && !audio.ended) {
+            requestAnimationFrame(paint);
+          }
+        }
+
+        audio.addEventListener('play', () => {
+          document.querySelectorAll('.model-audio').forEach(otherAudio => {
+            if (otherAudio !== audio) otherAudio.pause();
+          });
+          paint();
+        });
+        audio.addEventListener('pause', clearActive);
+        audio.addEventListener('ended', () => {
+          clearActive();
+          if (playAllModelActive && audio === playAllModelAudioElement) {
+            playAllModelIndex++;
+            playNextModelAudio();
+          }
+        });
+        audio.addEventListener('seeked', () => {
+          if (!audio.paused && !audio.ended) paint();
+        });
+      });
+    }
+
+    function setRecordingStatus(speakerId, message) {
+      document.getElementById(`${speakerId}Status`).textContent = message;
+    }
+
+    function setRecordButtonState(speakerId, isRecording) {
+      const button = document.querySelector(`.record-btn[data-speaker="${speakerId}"]`);
+      button.classList.toggle('recording', isRecording);
+      button.querySelector('span:last-child').textContent = isRecording ? 'Stop' : 'Record';
+      button.setAttribute('aria-label', `${isRecording ? 'Stop recording' : 'Record'} ${speakerId.replace('speaker', 'Speaker ')}`);
+    }
+
+    async function toggleRecording(speakerId) {
+      if (activeRecording && activeRecording.speakerId === speakerId) {
+        stopRecording();
+        return;
+      }
+
+      if (activeRecording) {
+        stopRecording();
+      }
+
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.MediaRecorder) {
+        setRecordingStatus(speakerId, 'Recording is not supported in this browser.');
+        return;
+      }
+
+      try {
+        setRecordingStatus(speakerId, 'Requesting microphone access...');
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        const recorder = new MediaRecorder(stream);
+        const chunks = [];
+
+        recorder.addEventListener('dataavailable', event => {
+          if (event.data.size > 0) {
+            chunks.push(event.data);
+          }
+        });
+
+        recorder.addEventListener('stop', () => {
+          const audio = document.getElementById(`${speakerId}Audio`);
+          const download = document.getElementById(`${speakerId}Download`);
+          const blob = new Blob(chunks, { type: recorder.mimeType || 'audio/webm' });
+
+          if (savedRecordings[speakerId]) {
+            URL.revokeObjectURL(savedRecordings[speakerId]);
+          }
+
+          savedRecordings[speakerId] = URL.createObjectURL(blob);
+          audio.src = savedRecordings[speakerId];
+          audio.classList.remove('hidden');
+          download.href = savedRecordings[speakerId];
+          download.classList.remove('hidden');
+          stream.getTracks().forEach(track => track.stop());
+          setRecordButtonState(speakerId, false);
+          setRecordingStatus(speakerId, 'Recording saved. You can play it back or download it.');
+
+          if (activeRecording && activeRecording.speakerId === speakerId) {
+            activeRecording = null;
+          }
+        });
+
+        activeRecording = { speakerId, recorder };
+        recorder.start();
+        setRecordButtonState(speakerId, true);
+        setRecordingStatus(speakerId, 'Recording...');
+      } catch (error) {
+        setRecordButtonState(speakerId, false);
+        setRecordingStatus(speakerId, 'Microphone permission was not granted.');
+      }
+    }
+
+    function stopRecording() {
+      if (!activeRecording) return;
+      activeRecording.recorder.stop();
+    }
+
+    bindModelAudioHighlighting();
+    updateTimerDisplay();
+  </script>
+</body>
+</html>
