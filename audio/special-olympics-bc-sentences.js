@@ -2,386 +2,326 @@ window.modelSentenceTimings = {
   "speaker1": [
     {
       "text": "Good morning everyone.",
-      "start": 0,
-      "end": 1.364
+      "start": 0.1,
+      "end": 1.3875
     },
     {
       "text": "Today our group is presenting about Special Olympics BC.",
-      "start": 1.364,
-      "end": 5.455
+      "start": 2.3625,
+      "end": 5.65
     },
     {
-      "text": "Special Olympics BC is part of a larger movement that supports people with intellectual disabilities through sport, friendship, health, and community inclusion.",
-      "start": 5.455,
-      "end": 15.457
+      "text": "Special Olympics BC is part of the larger Special Olympics movement.",
+      "start": 6.7,
+      "end": 10.725
     },
     {
-      "text": "This topic is important because it connects to disability rights, the social model of disability, and inclusion in schools.",
-      "start": 15.457,
-      "end": 24.095
+      "text": "This movement began because people started to challenge unfair beliefs about people with intellectual disabilities.",
+      "start": 11.75,
+      "end": 17.4875
     },
     {
-      "text": "Special Olympics did not begin only as a sports competition.",
-      "start": 24.095,
-      "end": 28.641
+      "text": "In the early 1960s, Dr. Frank Hayden, a Canadian sport scientist at the University of Toronto, studied students at Beverley School in Toronto.",
+      "start": 18.45,
+      "end": 27.575
     },
     {
-      "text": "It began because people started to challenge unfair beliefs about people with intellectual disabilities.",
-      "start": 28.641,
-      "end": 35.006
-    },
-    {
-      "text": "In the early 1960s, Dr. Frank Hayden, a Canadian researcher at the University of Toronto, studied children with intellectual disabilities at Beverley School in Toronto.",
-      "start": 35.006,
-      "end": 46.371
-    },
-    {
-      "text": "At that time, many people believed these children could not be physically active or successful in sports.",
-      "start": 46.371,
-      "end": 54.1
+      "text": "At that time, many people believed children with intellectual disabilities could not be successful in physical activity or sports.",
+      "start": 28.5875,
+      "end": 35.1875
     },
     {
       "text": "Dr. Hayden’s research showed something very important.",
-      "start": 54.1,
-      "end": 57.282
+      "start": 36.225,
+      "end": 39.0875
     },
     {
-      "text": "He found that many children with intellectual disabilities had low physical fitness not because they were unable, but because they had not been given enough chances to play, train, and participate.",
-      "start": 57.282,
-      "end": 71.376
+      "text": "He found that low fitness was not mainly caused by disability itself.",
+      "start": 40.1125,
+      "end": 43.8375
     },
     {
-      "text": "This idea helped inspire the Special Olympics movement.",
-      "start": 71.376,
-      "end": 75.013
+      "text": "It was caused by a lack of chances to play, train, and participate.",
+      "start": 44.7875,
+      "end": 48.65
     },
     {
-      "text": "Eunice Kennedy Shriver helped organize the first Special Olympics event in Chicago in 1968.",
-      "start": 75.013,
-      "end": 81.377
+      "text": "His research influenced Eunice Kennedy Shriver, who helped organize the first Special Olympics event in Chicago in 1968.",
+      "start": 49.6375,
+      "end": 56.9875
     },
     {
-      "text": "Canada was represented at that first event, and later Harry “Red” Foster helped bring Special Olympics to Canada.",
-      "start": 81.377,
-      "end": 89.561
+      "text": "Canada was represented there by students from Beverley School.",
+      "start": 57.9875,
+      "end": 61.0375
     },
     {
-      "text": "The first Canadian Special Olympics event was held in Toronto in 1969.",
-      "start": 89.561,
-      "end": 95.016
+      "text": "Later, Harry “Red” Foster helped bring Special Olympics to Canada, and the first Canadian Special Olympics event was held in Toronto in 1969.",
+      "start": 61.9875,
+      "end": 70.875
+    },
+    {
+      "text": "Special Olympics BC began in 1980 with two weekends of games and about 500 participants.",
+      "start": 71.8,
+      "end": 78.175
+    },
+    {
+      "text": "Since then, it has grown into year-round programs across British Columbia.",
+      "start": 79.1875,
+      "end": 83.275
     }
   ],
   "speaker2": [
     {
-      "text": "Special Olympics BC began in 1980.",
-      "start": 0,
-      "end": 2.771
+      "text": "Special Olympics BC connects strongly to the social model of disability.",
+      "start": 0.1,
+      "end": 4.15
     },
     {
-      "text": "At first, it started with two weekends of games and about 500 participants.",
-      "start": 2.771,
-      "end": 8.774
+      "text": "The social model says that disability is not only about a person’s diagnosis or impairment.",
+      "start": 5.15,
+      "end": 10.1875
     },
     {
-      "text": "Since then, Special Olympics BC has grown into year-round programs in many communities across British Columbia.",
-      "start": 8.774,
-      "end": 16.163
+      "text": "Disability is also created by barriers in society.",
+      "start": 11.2,
+      "end": 14.225
     },
     {
-      "text": "It is no longer just one event.",
-      "start": 16.163,
-      "end": 19.395
+      "text": "These barriers can include low expectations, inaccessible activities, negative attitudes, lack of support, and exclusion.",
+      "start": 15.225,
+      "end": 22.2125
     },
     {
-      "text": "It includes regular training, competitions, youth programs, health programs, and community activities.",
-      "start": 19.395,
-      "end": 24.937
+      "text": "Special Olympics BC helps remove these barriers.",
+      "start": 23.15,
+      "end": 26.0875
     },
     {
-      "text": "Athletes can participate in many sports, such as swimming, basketball, bowling, soccer, floor hockey, track and field, and more.",
-      "start": 24.937,
-      "end": 33.711
+      "text": "It gives children and adults with intellectual disabilities real opportunities to train, compete, make friends, and be recognized for their strengths.",
+      "start": 27.0875,
+      "end": 34.925
     },
     {
-      "text": "The purpose of Special Olympics BC is not only to win medals.",
-      "start": 33.711,
-      "end": 39.252
+      "text": "This contributes to disability rights because rights are not only about laws.",
+      "start": 35.9375,
+      "end": 40.225
     },
     {
-      "text": "Winning can be exciting, but the bigger purpose is to help athletes build confidence, health, friendships, teamwork, independence, and belonging.",
-      "start": 39.252,
-      "end": 48.488
+      "text": "Rights are also about real access, participation, dignity, and respect.",
+      "start": 41.2,
+      "end": 45.3875
     },
     {
-      "text": "Special Olympics BC also helps the public see people with intellectual disabilities in a more respectful way.",
-      "start": 48.488,
-      "end": 56.338
+      "text": "For example, if a person is never invited to join a sport, the barrier is not only inside the person.",
+      "start": 46.375,
+      "end": 51.9375
     },
     {
-      "text": "Instead of focusing only on what someone cannot do, it focuses on what people can do when they are given support and opportunity.",
-      "start": 56.338,
-      "end": 66.959
+      "text": "The barrier is also in the environment.",
+      "start": 52.875,
+      "end": 54.9625
     },
     {
-      "text": "This connects strongly to inclusion because athletes are not being hidden away or separated from the community.",
-      "start": 66.959,
-      "end": 74.81
+      "text": "But when the rules, coaching, and support are changed, that person can participate and succeed.",
+      "start": 55.975,
+      "end": 60.675
     },
     {
-      "text": "They are participating, competing, leading, and being celebrated.",
-      "start": 74.81,
-      "end": 78.504
+      "text": "Special Olympics BC changes public attitudes.",
+      "start": 61.625,
+      "end": 64.625
+    },
+    {
+      "text": "It helps people move from pity to respect, and from exclusion to inclusion.",
+      "start": 65.675,
+      "end": 69.6875
     }
   ],
   "speaker3": [
     {
-      "text": "Now we will connect Special Olympics BC to the social model of disability.",
-      "start": 0,
-      "end": 5.718
+      "text": "Special Olympics BC is connected to inclusion in schools because both focus on belonging and participation.",
+      "start": 0.1,
+      "end": 6.125
     },
     {
-      "text": "The social model of disability says that disability is not only caused by a person’s impairment or diagnosis.",
-      "start": 5.718,
-      "end": 13.636
+      "text": "Inclusion does not mean a student is simply placed in the same classroom or gym.",
+      "start": 7.075,
+      "end": 11.3
     },
     {
-      "text": "Disability is also created by barriers in society.",
-      "start": 13.636,
-      "end": 17.155
+      "text": "Real inclusion means the student participates, learns, makes choices, builds friendships, and feels valued.",
+      "start": 12.2375,
+      "end": 17.85
     },
     {
-      "text": "These barriers can include low expectations, inaccessible programs, negative attitudes, lack of support, and being excluded from activities.",
-      "start": 17.155,
-      "end": 25.073
+      "text": "Special Olympics BC has youth programs that support children and teenagers with intellectual disabilities.",
+      "start": 18.825,
+      "end": 24.6625
     },
     {
-      "text": "For example, if a student wants to join a game but the instructions are confusing, the rules are too fast, and nobody adapts the activity, the problem is not only inside the student.",
-      "start": 25.073,
-      "end": 39.589
+      "text": "Programs such as Active Start and FUNdamentals help children develop movement skills, sport skills, social skills, and confidence.",
+      "start": 25.6125,
+      "end": 32.925
     },
     {
-      "text": "The problem is also in the environment.",
-      "start": 39.589,
-      "end": 42.668
+      "text": "Unified Sports is especially important for schools.",
+      "start": 33.925,
+      "end": 36.85
     },
     {
-      "text": "Special Olympics BC helps remove these barriers.",
-      "start": 42.668,
-      "end": 45.747
+      "text": "It brings students with and without intellectual disabilities together on the same team.",
+      "start": 37.8125,
+      "end": 42.2875
     },
     {
-      "text": "It gives people with intellectual disabilities real opportunities to train, compete, make friends, and be recognized for their strengths.",
-      "start": 45.747,
-      "end": 54.105
+      "text": "They train together, play together, and learn from each other.",
+      "start": 43.225,
+      "end": 46.2875
     },
     {
-      "text": "This contributes to rights because rights are not only about laws.",
-      "start": 54.105,
-      "end": 58.943
+      "text": "This is a strong example of inclusion because students are not separated into “helpers” and “people who need help.”",
+      "start": 47.2375,
+      "end": 53.0375
     },
     {
-      "text": "Rights are also about real access, real participation, and real respect.",
-      "start": 58.943,
-      "end": 63.782
+      "text": "Everyone participates as teammates.",
+      "start": 54,
+      "end": 56.0125
     },
     {
-      "text": "Special Olympics BC shows that people with intellectual disabilities have the right to participate in community life, to be included in sports, and to be proud of their achievements.",
-      "start": 63.782,
-      "end": 76.538
-    },
-    {
-      "text": "It also changes public attitudes.",
-      "start": 76.538,
-      "end": 78.738
-    },
-    {
-      "text": "It helps society move from pity to respect, and from exclusion to inclusion.",
-      "start": 78.738,
-      "end": 84.456
+      "text": "For example, in gym class, a teacher or EA can slow the pace of a game, use a bigger ball, give visual instructions, create partner roles, or focus on teamwork instead of only winning.",
+      "start": 57.0625,
+      "end": 67.95
     }
   ],
   "speaker4": [
     {
-      "text": "Special Olympics BC is also connected to inclusion in schools.",
-      "start": 0,
-      "end": 4.513
+      "text": "As future Education Assistants, we need to know about Special Olympics BC because EAs often support students who face barriers in school.",
+      "start": 0.1,
+      "end": 7.95
     },
     {
-      "text": "Inclusion does not mean a student is simply placed in the same classroom or gym.",
-      "start": 4.513,
-      "end": 11.282
+      "text": "An EA may support a student in gym class, recess, field trips, clubs, classroom group work, or social activities.",
+      "start": 8.9,
+      "end": 15.9375
     },
     {
-      "text": "Real inclusion means the student participates, learns, makes choices, builds friendships, and feels valued.",
-      "start": 11.282,
-      "end": 17.6
+      "text": "Sometimes students want to join, but they may feel nervous, confused, or left out.",
+      "start": 16.9,
+      "end": 21.475
     },
     {
-      "text": "Special Olympics BC has youth programs that support children and teenagers.",
-      "start": 17.6,
-      "end": 22.565
+      "text": "An EA can help by breaking instructions into smaller steps, using visuals, modelling a skill, encouraging peer support, or helping the student manage anxiety.",
+      "start": 22.475,
+      "end": 31.9125
     },
     {
-      "text": "Programs such as Active Start and FUNdamentals help younger children develop movement skills, sport skills, and social skills.",
-      "start": 22.565,
-      "end": 30.688
+      "text": "The EA’s role is not to do everything for the student.",
+      "start": 32.9125,
+      "end": 35.825
     },
     {
-      "text": "Unified Sports is especially important for schools because it brings students with and without intellectual disabilities together on the same team.",
-      "start": 30.688,
-      "end": 40.165
+      "text": "The goal is to support independence, confidence, participation, and belonging.",
+      "start": 36.85,
+      "end": 41.0125
     },
     {
-      "text": "This is a strong example of inclusion.",
-      "start": 40.165,
-      "end": 43.324
+      "text": "Special Olympics BC also gives EAs a community resource to share with teachers and families.",
+      "start": 41.95,
+      "end": 47.575
     },
     {
-      "text": "Students are not separated into “helpers” and “people who need help.”",
-      "start": 43.324,
-      "end": 48.288
+      "text": "It shows that sport can be used to build friendship, leadership, health, and self-esteem.",
+      "start": 48.5375,
+      "end": 53.1375
     },
     {
-      "text": "Instead, everyone participates together.",
-      "start": 48.288,
-      "end": 50.094
-    },
-    {
-      "text": "They learn teamwork, patience, communication, and respect.",
-      "start": 50.094,
-      "end": 53.253
-    },
-    {
-      "text": "In schools, sports can sometimes create exclusion.",
-      "start": 53.253,
-      "end": 56.412
-    },
-    {
-      "text": "Some students may be picked last, left out, or asked to watch instead of play.",
-      "start": 56.412,
-      "end": 63.181
-    },
-    {
-      "text": "But inclusive sports can change this.",
-      "start": 63.181,
-      "end": 65.889
-    },
-    {
-      "text": "For example, a teacher or EA can adapt a game by slowing the pace, using a bigger ball, giving visual instructions, creating partner roles, or focusing on teamwork instead of only winning.",
-      "start": 65.889,
-      "end": 80.33
-    },
-    {
-      "text": "Special Olympics BC reminds us that inclusion must be active.",
-      "start": 80.33,
-      "end": 84.843
+      "text": "Most importantly, it reminds us that inclusion is active.",
+      "start": 54.0625,
+      "end": 57.2125
     },
     {
       "text": "We need to create real chances for students to join, not just say they are welcome.",
-      "start": 84.843,
-      "end": 92.064
+      "start": 58.175,
+      "end": 62.5875
     }
   ],
   "speaker5": [
     {
-      "text": "As future Education Assistants, we need to know about Special Olympics BC because EAs often support students who face barriers in school.",
-      "start": 0,
-      "end": 10.207
+      "text": "To summarize, Special Olympics BC began from a simple but powerful idea: people with intellectual disabilities need opportunity, support, and respect.",
+      "start": 0.1,
+      "end": 8.75
     },
     {
-      "text": "An EA may support a student in gym class, recess, field trips, clubs, classroom group work, or social activities.",
-      "start": 10.207,
-      "end": 19.021
+      "text": "The movement grew from Dr. Frank Hayden’s research in Toronto, the first Special Olympics event in 1968, the first Canadian event in 1969, and the beginning of Special Olympics BC in 1980.",
+      "start": 9.7375,
+      "end": 22.4625
     },
     {
-      "text": "The EA might help by breaking instructions into smaller steps, using visuals, modelling a skill, encouraging peer support, or helping the student manage anxiety.",
-      "start": 19.021,
-      "end": 30.156
+      "text": "Special Olympics BC contributes to rights by removing barriers and changing public attitudes.",
+      "start": 23.4625,
+      "end": 28.75
     },
     {
-      "text": "Special Olympics BC reminds us that our job is not to do everything for the student.",
-      "start": 30.156,
-      "end": 37.579
+      "text": "It helps children and adults with intellectual disabilities participate in sports, build friendships, and be seen for their abilities.",
+      "start": 29.8,
+      "end": 36.7625
     },
     {
-      "text": "Our job is to support independence, confidence, participation, and belonging.",
-      "start": 37.579,
-      "end": 42.218
+      "text": "It also connects strongly to schools because inclusion means real participation, not just being present.",
+      "start": 37.7125,
+      "end": 43.125
     },
     {
-      "text": "Sometimes the most important support is helping classmates understand how to include someone respectfully.",
-      "start": 42.218,
-      "end": 48.713
-    },
-    {
-      "text": "Class Activity: Barrier or Inclusion?",
-      "start": 48.713,
-      "end": 51.033
-    },
-    {
-      "text": "Now we have a short activity for the class.",
-      "start": 51.033,
-      "end": 55.208
+      "text": "Now we have a short class activity.",
+      "start": 44.1375,
+      "end": 46
     },
     {
       "text": "We will read three examples.",
-      "start": 55.208,
-      "end": 57.528
+      "start": 47,
+      "end": 48.6375
     },
     {
-      "text": "Please decide if each one shows a barrier or inclusion.",
-      "start": 57.528,
-      "end": 62.167
+      "text": "Please decide if each one shows a barrier, inclusion, or segregation.",
+      "start": 49.625,
+      "end": 53.55
     },
     {
       "text": "Example one: A student watches gym class from the side because the game is too fast.",
-      "start": 62.167,
-      "end": 69.59
+      "start": 54.4875,
+      "end": 59.3
     },
     {
-      "text": "Answer: This is a barrier.",
-      "start": 69.59,
-      "end": 71.909
+      "text": "This is a barrier.",
+      "start": 60.3,
+      "end": 61.3875
     },
     {
       "text": "Example two: The teacher changes the rules so every student has a role on the team.",
-      "start": 71.909,
-      "end": 79.332
+      "start": 62.3625,
+      "end": 67.075
     },
     {
-      "text": "Answer: This is inclusion.",
-      "start": 79.332,
-      "end": 81.188
+      "text": "This is inclusion.",
+      "start": 68,
+      "end": 69.0375
     },
     {
       "text": "Example three: Students with disabilities play only in a separate room and never join classmates.",
-      "start": 81.188,
-      "end": 88.147
+      "start": 70,
+      "end": 75.8375
     },
     {
-      "text": "Answer: This is segregation, not full inclusion.",
-      "start": 88.147,
-      "end": 91.395
-    },
-    {
-      "text": "To close, Special Olympics BC teaches us that people with intellectual disabilities need opportunity, support, and respect.",
-      "start": 91.395,
-      "end": 99.281
-    },
-    {
-      "text": "Inclusion is not passive.",
-      "start": 99.281,
-      "end": 101.137
-    },
-    {
-      "text": "It is something we create through our choices, our attitudes, and our actions.",
-      "start": 101.137,
-      "end": 107.168
+      "text": "This is segregation, not full inclusion.",
+      "start": 76.875,
+      "end": 79.325
     },
     {
       "text": "Opportunity + Support = Inclusion",
-      "start": 107.168,
-      "end": 109.488
+      "start": 80.275,
+      "end": 82.7
     }
   ]
 };

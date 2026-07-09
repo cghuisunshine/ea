@@ -1,6 +1,1487 @@
 {
-  "text": "As future Education Assistants, we need to know about Special Olympics BC because EAs often support students who face barriers in school.\n\nAn EA may support a student in gym class, recess, field trips, clubs, classroom group work, or social activities. The EA might help by breaking instructions into smaller steps, using visuals, modelling a skill, encouraging peer support, or helping the student manage anxiety.\n\nSpecial Olympics BC reminds us that our job is not to do everything for the student. Our job is to support independence, confidence, participation, and belonging.\n\nSometimes the most important support is helping classmates understand how to include someone respectfully.\n\nClass Activity: Barrier or Inclusion?\n\nNow we have a short activity for the class. We will read three examples. Please decide if each one shows a barrier or inclusion .\n\nExample one: A student watches gym class from the side because the game is too fast. Answer: This is a barrier.\n\nExample two: The teacher changes the rules so every student has a role on the team. Answer: This is inclusion.\n\nExample three: Students with disabilities play only in a separate room and never join classmates. Answer: This is segregation, not full inclusion.\n\nTo close, Special Olympics BC teaches us that people with intellectual disabilities need opportunity, support, and respect. Inclusion is not passive. It is something we create through our choices, our attitudes, and our actions.\n\nOpportunity + Support = Inclusion\n",
+  "text": "To summarize, Special Olympics BC began from a simple but powerful idea: people with intellectual disabilities need opportunity, support, and respect.\n\nThe movement grew from Dr. Frank Hayden’s research in Toronto, the first Special Olympics event in 1968, the first Canadian event in 1969, and the beginning of Special Olympics BC in 1980.\n\nSpecial Olympics BC contributes to rights by removing barriers and changing public attitudes. It helps children and adults with intellectual disabilities participate in sports, build friendships, and be seen for their abilities.\n\nIt also connects strongly to schools because inclusion means real participation, not just being present.\n\nNow we have a short class activity. We will read three examples. Please decide if each one shows a barrier, inclusion, or segregation.\n\nExample one: A student watches gym class from the side because the game is too fast.\n\nThis is a barrier.\n\nExample two: The teacher changes the rules so every student has a role on the team.\n\nThis is inclusion.\n\nExample three: Students with disabilities play only in a separate room and never join classmates.\n\nThis is segregation, not full inclusion.\n\nOpportunity + Support = Inclusion\n",
   "voice": "en-CA-ClaraNeural",
   "audio": "special-olympics-bc-speaker-5.mp3",
-  "words": []
+  "words": [
+    {
+      "text": "To",
+      "start": 0.1,
+      "end": 0.175,
+      "duration": 0.075,
+      "start_char": 0,
+      "end_char": 2
+    },
+    {
+      "text": "summarize",
+      "start": 0.175,
+      "end": 0.75,
+      "duration": 0.575,
+      "start_char": 3,
+      "end_char": 12
+    },
+    {
+      "text": "Special",
+      "start": 0.8375,
+      "end": 1.2625,
+      "duration": 0.425,
+      "start_char": 14,
+      "end_char": 21
+    },
+    {
+      "text": "Olympics",
+      "start": 1.2625,
+      "end": 1.775,
+      "duration": 0.5125,
+      "start_char": 22,
+      "end_char": 30
+    },
+    {
+      "text": "BC",
+      "start": 1.8,
+      "end": 2.2375,
+      "duration": 0.4375,
+      "start_char": 31,
+      "end_char": 33
+    },
+    {
+      "text": "began",
+      "start": 2.325,
+      "end": 2.7125,
+      "duration": 0.3875,
+      "start_char": 34,
+      "end_char": 39
+    },
+    {
+      "text": "from",
+      "start": 2.7125,
+      "end": 2.875,
+      "duration": 0.1625,
+      "start_char": 40,
+      "end_char": 44
+    },
+    {
+      "text": "a",
+      "start": 2.875,
+      "end": 2.9125,
+      "duration": 0.0375,
+      "start_char": 45,
+      "end_char": 46
+    },
+    {
+      "text": "simple",
+      "start": 2.9125,
+      "end": 3.3125,
+      "duration": 0.4,
+      "start_char": 47,
+      "end_char": 53
+    },
+    {
+      "text": "but",
+      "start": 3.325,
+      "end": 3.475,
+      "duration": 0.15,
+      "start_char": 54,
+      "end_char": 57
+    },
+    {
+      "text": "powerful",
+      "start": 3.475,
+      "end": 3.9375,
+      "duration": 0.4625,
+      "start_char": 58,
+      "end_char": 66
+    },
+    {
+      "text": "idea",
+      "start": 3.9375,
+      "end": 4.375,
+      "duration": 0.4375,
+      "start_char": 67,
+      "end_char": 71
+    },
+    {
+      "text": "people",
+      "start": 4.8125,
+      "end": 5.1125,
+      "duration": 0.3,
+      "start_char": 73,
+      "end_char": 79
+    },
+    {
+      "text": "with",
+      "start": 5.1125,
+      "end": 5.25,
+      "duration": 0.1375,
+      "start_char": 80,
+      "end_char": 84
+    },
+    {
+      "text": "intellectual",
+      "start": 5.2625,
+      "end": 5.875,
+      "duration": 0.6125,
+      "start_char": 85,
+      "end_char": 97
+    },
+    {
+      "text": "disabilities",
+      "start": 5.875,
+      "end": 6.6,
+      "duration": 0.725,
+      "start_char": 98,
+      "end_char": 110
+    },
+    {
+      "text": "need",
+      "start": 6.6125,
+      "end": 6.8,
+      "duration": 0.1875,
+      "start_char": 111,
+      "end_char": 115
+    },
+    {
+      "text": "opportunity",
+      "start": 6.8,
+      "end": 7.45,
+      "duration": 0.65,
+      "start_char": 116,
+      "end_char": 127
+    },
+    {
+      "text": "support",
+      "start": 7.5625,
+      "end": 8.075,
+      "duration": 0.5125,
+      "start_char": 129,
+      "end_char": 136
+    },
+    {
+      "text": "and",
+      "start": 8.1625,
+      "end": 8.275,
+      "duration": 0.1125,
+      "start_char": 138,
+      "end_char": 141
+    },
+    {
+      "text": "respect",
+      "start": 8.275,
+      "end": 8.75,
+      "duration": 0.475,
+      "start_char": 142,
+      "end_char": 149
+    },
+    {
+      "text": "The",
+      "start": 9.7375,
+      "end": 9.85,
+      "duration": 0.1125,
+      "start_char": 152,
+      "end_char": 155
+    },
+    {
+      "text": "movement",
+      "start": 9.8625,
+      "end": 10.2875,
+      "duration": 0.425,
+      "start_char": 156,
+      "end_char": 164
+    },
+    {
+      "text": "grew",
+      "start": 10.3,
+      "end": 10.55,
+      "duration": 0.25,
+      "start_char": 165,
+      "end_char": 169
+    },
+    {
+      "text": "from",
+      "start": 10.55,
+      "end": 10.725,
+      "duration": 0.175,
+      "start_char": 170,
+      "end_char": 174
+    },
+    {
+      "text": "Dr.",
+      "start": 10.725,
+      "end": 11.0875,
+      "duration": 0.3625,
+      "start_char": 175,
+      "end_char": 178
+    },
+    {
+      "text": "Frank",
+      "start": 11.0875,
+      "end": 11.375,
+      "duration": 0.2875,
+      "start_char": 179,
+      "end_char": 184
+    },
+    {
+      "text": "Hayden’s",
+      "start": 11.375,
+      "end": 11.75,
+      "duration": 0.375,
+      "start_char": 185,
+      "end_char": 193
+    },
+    {
+      "text": "research",
+      "start": 11.75,
+      "end": 12.2,
+      "duration": 0.45,
+      "start_char": 194,
+      "end_char": 202
+    },
+    {
+      "text": "in",
+      "start": 12.2,
+      "end": 12.3,
+      "duration": 0.1,
+      "start_char": 203,
+      "end_char": 205
+    },
+    {
+      "text": "Toronto",
+      "start": 12.3,
+      "end": 12.8125,
+      "duration": 0.5125,
+      "start_char": 206,
+      "end_char": 213
+    },
+    {
+      "text": "the",
+      "start": 13.225,
+      "end": 13.3,
+      "duration": 0.075,
+      "start_char": 215,
+      "end_char": 218
+    },
+    {
+      "text": "first",
+      "start": 13.3,
+      "end": 13.5625,
+      "duration": 0.2625,
+      "start_char": 219,
+      "end_char": 224
+    },
+    {
+      "text": "Special",
+      "start": 13.5625,
+      "end": 13.95,
+      "duration": 0.3875,
+      "start_char": 225,
+      "end_char": 232
+    },
+    {
+      "text": "Olympics",
+      "start": 13.95,
+      "end": 14.4625,
+      "duration": 0.5125,
+      "start_char": 233,
+      "end_char": 241
+    },
+    {
+      "text": "event",
+      "start": 14.4625,
+      "end": 14.7625,
+      "duration": 0.3,
+      "start_char": 242,
+      "end_char": 247
+    },
+    {
+      "text": "in 1968",
+      "start": 14.8,
+      "end": 16.0625,
+      "duration": 1.2625,
+      "start_char": 248,
+      "end_char": 255
+    },
+    {
+      "text": "the",
+      "start": 16.4125,
+      "end": 16.5,
+      "duration": 0.0875,
+      "start_char": 257,
+      "end_char": 260
+    },
+    {
+      "text": "first",
+      "start": 16.5,
+      "end": 16.825,
+      "duration": 0.325,
+      "start_char": 261,
+      "end_char": 266
+    },
+    {
+      "text": "Canadian",
+      "start": 16.8375,
+      "end": 17.3,
+      "duration": 0.4625,
+      "start_char": 267,
+      "end_char": 275
+    },
+    {
+      "text": "event",
+      "start": 17.3,
+      "end": 17.6,
+      "duration": 0.3,
+      "start_char": 276,
+      "end_char": 281
+    },
+    {
+      "text": "in 1969",
+      "start": 17.625,
+      "end": 18.95,
+      "duration": 1.325,
+      "start_char": 282,
+      "end_char": 289
+    },
+    {
+      "text": "and",
+      "start": 19.3875,
+      "end": 19.4625,
+      "duration": 0.075,
+      "start_char": 291,
+      "end_char": 294
+    },
+    {
+      "text": "the",
+      "start": 19.5,
+      "end": 19.575,
+      "duration": 0.075,
+      "start_char": 295,
+      "end_char": 298
+    },
+    {
+      "text": "beginning",
+      "start": 19.575,
+      "end": 19.975,
+      "duration": 0.4,
+      "start_char": 299,
+      "end_char": 308
+    },
+    {
+      "text": "of",
+      "start": 19.975,
+      "end": 20.05,
+      "duration": 0.075,
+      "start_char": 309,
+      "end_char": 311
+    },
+    {
+      "text": "Special",
+      "start": 20.05,
+      "end": 20.425,
+      "duration": 0.375,
+      "start_char": 312,
+      "end_char": 319
+    },
+    {
+      "text": "Olympics",
+      "start": 20.425,
+      "end": 20.9,
+      "duration": 0.475,
+      "start_char": 320,
+      "end_char": 328
+    },
+    {
+      "text": "BC",
+      "start": 20.9125,
+      "end": 21.35,
+      "duration": 0.4375,
+      "start_char": 329,
+      "end_char": 331
+    },
+    {
+      "text": "in 1980",
+      "start": 21.55,
+      "end": 22.4625,
+      "duration": 0.9125,
+      "start_char": 332,
+      "end_char": 339
+    },
+    {
+      "text": "Special",
+      "start": 23.4625,
+      "end": 23.9,
+      "duration": 0.4375,
+      "start_char": 342,
+      "end_char": 349
+    },
+    {
+      "text": "Olympics",
+      "start": 23.9,
+      "end": 24.425,
+      "duration": 0.525,
+      "start_char": 350,
+      "end_char": 358
+    },
+    {
+      "text": "BC",
+      "start": 24.4375,
+      "end": 24.875,
+      "duration": 0.4375,
+      "start_char": 359,
+      "end_char": 361
+    },
+    {
+      "text": "contributes",
+      "start": 24.925,
+      "end": 25.525,
+      "duration": 0.6,
+      "start_char": 362,
+      "end_char": 373
+    },
+    {
+      "text": "to",
+      "start": 25.5375,
+      "end": 25.65,
+      "duration": 0.1125,
+      "start_char": 374,
+      "end_char": 376
+    },
+    {
+      "text": "rights",
+      "start": 25.65,
+      "end": 26.0,
+      "duration": 0.35,
+      "start_char": 377,
+      "end_char": 383
+    },
+    {
+      "text": "by",
+      "start": 26.0125,
+      "end": 26.15,
+      "duration": 0.1375,
+      "start_char": 384,
+      "end_char": 386
+    },
+    {
+      "text": "removing",
+      "start": 26.1625,
+      "end": 26.5875,
+      "duration": 0.425,
+      "start_char": 387,
+      "end_char": 395
+    },
+    {
+      "text": "barriers",
+      "start": 26.5875,
+      "end": 27.1125,
+      "duration": 0.525,
+      "start_char": 396,
+      "end_char": 404
+    },
+    {
+      "text": "and",
+      "start": 27.2,
+      "end": 27.325,
+      "duration": 0.125,
+      "start_char": 405,
+      "end_char": 408
+    },
+    {
+      "text": "changing",
+      "start": 27.325,
+      "end": 27.7625,
+      "duration": 0.4375,
+      "start_char": 409,
+      "end_char": 417
+    },
+    {
+      "text": "public",
+      "start": 27.7625,
+      "end": 28.1375,
+      "duration": 0.375,
+      "start_char": 418,
+      "end_char": 424
+    },
+    {
+      "text": "attitudes",
+      "start": 28.1375,
+      "end": 28.75,
+      "duration": 0.6125,
+      "start_char": 425,
+      "end_char": 434
+    },
+    {
+      "text": "It",
+      "start": 29.8,
+      "end": 29.8875,
+      "duration": 0.0875,
+      "start_char": 436,
+      "end_char": 438
+    },
+    {
+      "text": "helps",
+      "start": 29.925,
+      "end": 30.25,
+      "duration": 0.325,
+      "start_char": 439,
+      "end_char": 444
+    },
+    {
+      "text": "children",
+      "start": 30.25,
+      "end": 30.7,
+      "duration": 0.45,
+      "start_char": 445,
+      "end_char": 453
+    },
+    {
+      "text": "and",
+      "start": 30.7,
+      "end": 30.8375,
+      "duration": 0.1375,
+      "start_char": 454,
+      "end_char": 457
+    },
+    {
+      "text": "adults",
+      "start": 30.8375,
+      "end": 31.25,
+      "duration": 0.4125,
+      "start_char": 458,
+      "end_char": 464
+    },
+    {
+      "text": "with",
+      "start": 31.25,
+      "end": 31.3875,
+      "duration": 0.1375,
+      "start_char": 465,
+      "end_char": 469
+    },
+    {
+      "text": "intellectual",
+      "start": 31.4125,
+      "end": 32.05,
+      "duration": 0.6375,
+      "start_char": 470,
+      "end_char": 482
+    },
+    {
+      "text": "disabilities",
+      "start": 32.05,
+      "end": 32.725,
+      "duration": 0.675,
+      "start_char": 483,
+      "end_char": 495
+    },
+    {
+      "text": "participate",
+      "start": 32.725,
+      "end": 33.375,
+      "duration": 0.65,
+      "start_char": 496,
+      "end_char": 507
+    },
+    {
+      "text": "in",
+      "start": 33.375,
+      "end": 33.5,
+      "duration": 0.125,
+      "start_char": 508,
+      "end_char": 510
+    },
+    {
+      "text": "sports",
+      "start": 33.5,
+      "end": 33.975,
+      "duration": 0.475,
+      "start_char": 511,
+      "end_char": 517
+    },
+    {
+      "text": "build",
+      "start": 34.2625,
+      "end": 34.525,
+      "duration": 0.2625,
+      "start_char": 519,
+      "end_char": 524
+    },
+    {
+      "text": "friendships",
+      "start": 34.525,
+      "end": 35.1125,
+      "duration": 0.5875,
+      "start_char": 525,
+      "end_char": 536
+    },
+    {
+      "text": "and",
+      "start": 35.3125,
+      "end": 35.425,
+      "duration": 0.1125,
+      "start_char": 538,
+      "end_char": 541
+    },
+    {
+      "text": "be",
+      "start": 35.4375,
+      "end": 35.5375,
+      "duration": 0.1,
+      "start_char": 542,
+      "end_char": 544
+    },
+    {
+      "text": "seen",
+      "start": 35.55,
+      "end": 35.875,
+      "duration": 0.325,
+      "start_char": 545,
+      "end_char": 549
+    },
+    {
+      "text": "for",
+      "start": 35.8875,
+      "end": 36.0,
+      "duration": 0.1125,
+      "start_char": 550,
+      "end_char": 553
+    },
+    {
+      "text": "their",
+      "start": 36.0125,
+      "end": 36.1875,
+      "duration": 0.175,
+      "start_char": 554,
+      "end_char": 559
+    },
+    {
+      "text": "abilities",
+      "start": 36.1875,
+      "end": 36.7625,
+      "duration": 0.575,
+      "start_char": 560,
+      "end_char": 569
+    },
+    {
+      "text": "It",
+      "start": 37.7125,
+      "end": 37.8,
+      "duration": 0.0875,
+      "start_char": 572,
+      "end_char": 574
+    },
+    {
+      "text": "also",
+      "start": 37.85,
+      "end": 38.1875,
+      "duration": 0.3375,
+      "start_char": 575,
+      "end_char": 579
+    },
+    {
+      "text": "connects",
+      "start": 38.2,
+      "end": 38.55,
+      "duration": 0.35,
+      "start_char": 580,
+      "end_char": 588
+    },
+    {
+      "text": "strongly",
+      "start": 38.55,
+      "end": 39.0,
+      "duration": 0.45,
+      "start_char": 589,
+      "end_char": 597
+    },
+    {
+      "text": "to",
+      "start": 39.025,
+      "end": 39.125,
+      "duration": 0.1,
+      "start_char": 598,
+      "end_char": 600
+    },
+    {
+      "text": "schools",
+      "start": 39.125,
+      "end": 39.5875,
+      "duration": 0.4625,
+      "start_char": 601,
+      "end_char": 608
+    },
+    {
+      "text": "because",
+      "start": 39.6,
+      "end": 39.9125,
+      "duration": 0.3125,
+      "start_char": 609,
+      "end_char": 616
+    },
+    {
+      "text": "inclusion",
+      "start": 39.9125,
+      "end": 40.375,
+      "duration": 0.4625,
+      "start_char": 617,
+      "end_char": 626
+    },
+    {
+      "text": "means",
+      "start": 40.375,
+      "end": 40.65,
+      "duration": 0.275,
+      "start_char": 627,
+      "end_char": 632
+    },
+    {
+      "text": "real",
+      "start": 40.65,
+      "end": 40.8875,
+      "duration": 0.2375,
+      "start_char": 633,
+      "end_char": 637
+    },
+    {
+      "text": "participation",
+      "start": 40.8875,
+      "end": 41.7625,
+      "duration": 0.875,
+      "start_char": 638,
+      "end_char": 651
+    },
+    {
+      "text": "not",
+      "start": 41.975,
+      "end": 42.25,
+      "duration": 0.275,
+      "start_char": 653,
+      "end_char": 656
+    },
+    {
+      "text": "just",
+      "start": 42.25,
+      "end": 42.475,
+      "duration": 0.225,
+      "start_char": 657,
+      "end_char": 661
+    },
+    {
+      "text": "being",
+      "start": 42.475,
+      "end": 42.7125,
+      "duration": 0.2375,
+      "start_char": 662,
+      "end_char": 667
+    },
+    {
+      "text": "present",
+      "start": 42.725,
+      "end": 43.125,
+      "duration": 0.4,
+      "start_char": 668,
+      "end_char": 675
+    },
+    {
+      "text": "Now",
+      "start": 44.1375,
+      "end": 44.3875,
+      "duration": 0.25,
+      "start_char": 678,
+      "end_char": 681
+    },
+    {
+      "text": "we",
+      "start": 44.425,
+      "end": 44.55,
+      "duration": 0.125,
+      "start_char": 682,
+      "end_char": 684
+    },
+    {
+      "text": "have",
+      "start": 44.5625,
+      "end": 44.7625,
+      "duration": 0.2,
+      "start_char": 685,
+      "end_char": 689
+    },
+    {
+      "text": "a",
+      "start": 44.7875,
+      "end": 44.8375,
+      "duration": 0.05,
+      "start_char": 690,
+      "end_char": 691
+    },
+    {
+      "text": "short",
+      "start": 44.8375,
+      "end": 45.1875,
+      "duration": 0.35,
+      "start_char": 692,
+      "end_char": 697
+    },
+    {
+      "text": "class",
+      "start": 45.1875,
+      "end": 45.5375,
+      "duration": 0.35,
+      "start_char": 698,
+      "end_char": 703
+    },
+    {
+      "text": "activity",
+      "start": 45.5375,
+      "end": 46.0,
+      "duration": 0.4625,
+      "start_char": 704,
+      "end_char": 712
+    },
+    {
+      "text": "We",
+      "start": 47.0,
+      "end": 47.1625,
+      "duration": 0.1625,
+      "start_char": 714,
+      "end_char": 716
+    },
+    {
+      "text": "will",
+      "start": 47.1875,
+      "end": 47.3625,
+      "duration": 0.175,
+      "start_char": 717,
+      "end_char": 721
+    },
+    {
+      "text": "read",
+      "start": 47.3625,
+      "end": 47.65,
+      "duration": 0.2875,
+      "start_char": 722,
+      "end_char": 726
+    },
+    {
+      "text": "three",
+      "start": 47.65,
+      "end": 47.9125,
+      "duration": 0.2625,
+      "start_char": 727,
+      "end_char": 732
+    },
+    {
+      "text": "examples",
+      "start": 47.9875,
+      "end": 48.6375,
+      "duration": 0.65,
+      "start_char": 733,
+      "end_char": 741
+    },
+    {
+      "text": "Please",
+      "start": 49.625,
+      "end": 49.9,
+      "duration": 0.275,
+      "start_char": 743,
+      "end_char": 749
+    },
+    {
+      "text": "decide",
+      "start": 49.9,
+      "end": 50.35,
+      "duration": 0.45,
+      "start_char": 750,
+      "end_char": 756
+    },
+    {
+      "text": "if",
+      "start": 50.3625,
+      "end": 50.475,
+      "duration": 0.1125,
+      "start_char": 757,
+      "end_char": 759
+    },
+    {
+      "text": "each",
+      "start": 50.4875,
+      "end": 50.75,
+      "duration": 0.2625,
+      "start_char": 760,
+      "end_char": 764
+    },
+    {
+      "text": "one",
+      "start": 50.75,
+      "end": 51.0125,
+      "duration": 0.2625,
+      "start_char": 765,
+      "end_char": 768
+    },
+    {
+      "text": "shows",
+      "start": 51.0125,
+      "end": 51.3,
+      "duration": 0.2875,
+      "start_char": 769,
+      "end_char": 774
+    },
+    {
+      "text": "a",
+      "start": 51.3,
+      "end": 51.3375,
+      "duration": 0.0375,
+      "start_char": 775,
+      "end_char": 776
+    },
+    {
+      "text": "barrier",
+      "start": 51.3375,
+      "end": 51.8375,
+      "duration": 0.5,
+      "start_char": 777,
+      "end_char": 784
+    },
+    {
+      "text": "inclusion",
+      "start": 51.975,
+      "end": 52.55,
+      "duration": 0.575,
+      "start_char": 786,
+      "end_char": 795
+    },
+    {
+      "text": "or",
+      "start": 52.675,
+      "end": 52.775,
+      "duration": 0.1,
+      "start_char": 797,
+      "end_char": 799
+    },
+    {
+      "text": "segregation",
+      "start": 52.7875,
+      "end": 53.55,
+      "duration": 0.7625,
+      "start_char": 800,
+      "end_char": 811
+    },
+    {
+      "text": "Example",
+      "start": 54.4875,
+      "end": 54.9875,
+      "duration": 0.5,
+      "start_char": 814,
+      "end_char": 821
+    },
+    {
+      "text": "one",
+      "start": 54.9875,
+      "end": 55.3,
+      "duration": 0.3125,
+      "start_char": 822,
+      "end_char": 825
+    },
+    {
+      "text": "A",
+      "start": 55.6,
+      "end": 55.65,
+      "duration": 0.05,
+      "start_char": 827,
+      "end_char": 828
+    },
+    {
+      "text": "student",
+      "start": 55.6875,
+      "end": 56.1,
+      "duration": 0.4125,
+      "start_char": 829,
+      "end_char": 836
+    },
+    {
+      "text": "watches",
+      "start": 56.1,
+      "end": 56.475,
+      "duration": 0.375,
+      "start_char": 837,
+      "end_char": 844
+    },
+    {
+      "text": "gym",
+      "start": 56.475,
+      "end": 56.7375,
+      "duration": 0.2625,
+      "start_char": 845,
+      "end_char": 848
+    },
+    {
+      "text": "class",
+      "start": 56.75,
+      "end": 57.125,
+      "duration": 0.375,
+      "start_char": 849,
+      "end_char": 854
+    },
+    {
+      "text": "from",
+      "start": 57.125,
+      "end": 57.2625,
+      "duration": 0.1375,
+      "start_char": 855,
+      "end_char": 859
+    },
+    {
+      "text": "the",
+      "start": 57.2625,
+      "end": 57.35,
+      "duration": 0.0875,
+      "start_char": 860,
+      "end_char": 863
+    },
+    {
+      "text": "side",
+      "start": 57.35,
+      "end": 57.7625,
+      "duration": 0.4125,
+      "start_char": 864,
+      "end_char": 868
+    },
+    {
+      "text": "because",
+      "start": 57.7875,
+      "end": 58.0875,
+      "duration": 0.3,
+      "start_char": 869,
+      "end_char": 876
+    },
+    {
+      "text": "the",
+      "start": 58.0875,
+      "end": 58.1875,
+      "duration": 0.1,
+      "start_char": 877,
+      "end_char": 880
+    },
+    {
+      "text": "game",
+      "start": 58.1875,
+      "end": 58.5125,
+      "duration": 0.325,
+      "start_char": 881,
+      "end_char": 885
+    },
+    {
+      "text": "is",
+      "start": 58.5125,
+      "end": 58.6375,
+      "duration": 0.125,
+      "start_char": 886,
+      "end_char": 888
+    },
+    {
+      "text": "too",
+      "start": 58.6375,
+      "end": 58.825,
+      "duration": 0.1875,
+      "start_char": 889,
+      "end_char": 892
+    },
+    {
+      "text": "fast",
+      "start": 58.8375,
+      "end": 59.3,
+      "duration": 0.4625,
+      "start_char": 893,
+      "end_char": 897
+    },
+    {
+      "text": "This",
+      "start": 60.3,
+      "end": 60.6375,
+      "duration": 0.3375,
+      "start_char": 900,
+      "end_char": 904
+    },
+    {
+      "text": "is",
+      "start": 60.6375,
+      "end": 60.7875,
+      "duration": 0.15,
+      "start_char": 905,
+      "end_char": 907
+    },
+    {
+      "text": "a",
+      "start": 60.7875,
+      "end": 60.8375,
+      "duration": 0.05,
+      "start_char": 908,
+      "end_char": 909
+    },
+    {
+      "text": "barrier",
+      "start": 60.8375,
+      "end": 61.3875,
+      "duration": 0.55,
+      "start_char": 910,
+      "end_char": 917
+    },
+    {
+      "text": "Example",
+      "start": 62.3625,
+      "end": 62.8625,
+      "duration": 0.5,
+      "start_char": 920,
+      "end_char": 927
+    },
+    {
+      "text": "two",
+      "start": 62.8625,
+      "end": 63.1125,
+      "duration": 0.25,
+      "start_char": 928,
+      "end_char": 931
+    },
+    {
+      "text": "The",
+      "start": 63.5125,
+      "end": 63.5625,
+      "duration": 0.05,
+      "start_char": 933,
+      "end_char": 936
+    },
+    {
+      "text": "teacher",
+      "start": 63.625,
+      "end": 63.9875,
+      "duration": 0.3625,
+      "start_char": 937,
+      "end_char": 944
+    },
+    {
+      "text": "changes",
+      "start": 63.9875,
+      "end": 64.4375,
+      "duration": 0.45,
+      "start_char": 945,
+      "end_char": 952
+    },
+    {
+      "text": "the",
+      "start": 64.4375,
+      "end": 64.55,
+      "duration": 0.1125,
+      "start_char": 953,
+      "end_char": 956
+    },
+    {
+      "text": "rules",
+      "start": 64.55,
+      "end": 64.9625,
+      "duration": 0.4125,
+      "start_char": 957,
+      "end_char": 962
+    },
+    {
+      "text": "so",
+      "start": 64.975,
+      "end": 65.125,
+      "duration": 0.15,
+      "start_char": 963,
+      "end_char": 965
+    },
+    {
+      "text": "every",
+      "start": 65.2,
+      "end": 65.4625,
+      "duration": 0.2625,
+      "start_char": 966,
+      "end_char": 971
+    },
+    {
+      "text": "student",
+      "start": 65.475,
+      "end": 65.8625,
+      "duration": 0.3875,
+      "start_char": 972,
+      "end_char": 979
+    },
+    {
+      "text": "has",
+      "start": 65.8625,
+      "end": 66.075,
+      "duration": 0.2125,
+      "start_char": 980,
+      "end_char": 983
+    },
+    {
+      "text": "a",
+      "start": 66.075,
+      "end": 66.125,
+      "duration": 0.05,
+      "start_char": 984,
+      "end_char": 985
+    },
+    {
+      "text": "role",
+      "start": 66.125,
+      "end": 66.45,
+      "duration": 0.325,
+      "start_char": 986,
+      "end_char": 990
+    },
+    {
+      "text": "on",
+      "start": 66.45,
+      "end": 66.575,
+      "duration": 0.125,
+      "start_char": 991,
+      "end_char": 993
+    },
+    {
+      "text": "the",
+      "start": 66.575,
+      "end": 66.65,
+      "duration": 0.075,
+      "start_char": 994,
+      "end_char": 997
+    },
+    {
+      "text": "team",
+      "start": 66.65,
+      "end": 67.075,
+      "duration": 0.425,
+      "start_char": 998,
+      "end_char": 1002
+    },
+    {
+      "text": "This",
+      "start": 68.0,
+      "end": 68.3,
+      "duration": 0.3,
+      "start_char": 1005,
+      "end_char": 1009
+    },
+    {
+      "text": "is",
+      "start": 68.3,
+      "end": 68.4375,
+      "duration": 0.1375,
+      "start_char": 1010,
+      "end_char": 1012
+    },
+    {
+      "text": "inclusion",
+      "start": 68.4375,
+      "end": 69.0375,
+      "duration": 0.6,
+      "start_char": 1013,
+      "end_char": 1022
+    },
+    {
+      "text": "Example",
+      "start": 70.0,
+      "end": 70.5,
+      "duration": 0.5,
+      "start_char": 1025,
+      "end_char": 1032
+    },
+    {
+      "text": "three",
+      "start": 70.5,
+      "end": 70.825,
+      "duration": 0.325,
+      "start_char": 1033,
+      "end_char": 1038
+    },
+    {
+      "text": "Students",
+      "start": 71.2125,
+      "end": 71.775,
+      "duration": 0.5625,
+      "start_char": 1040,
+      "end_char": 1048
+    },
+    {
+      "text": "with",
+      "start": 71.775,
+      "end": 71.9125,
+      "duration": 0.1375,
+      "start_char": 1049,
+      "end_char": 1053
+    },
+    {
+      "text": "disabilities",
+      "start": 71.9125,
+      "end": 72.6375,
+      "duration": 0.725,
+      "start_char": 1054,
+      "end_char": 1066
+    },
+    {
+      "text": "play",
+      "start": 72.65,
+      "end": 72.9125,
+      "duration": 0.2625,
+      "start_char": 1067,
+      "end_char": 1071
+    },
+    {
+      "text": "only",
+      "start": 72.9875,
+      "end": 73.325,
+      "duration": 0.3375,
+      "start_char": 1072,
+      "end_char": 1076
+    },
+    {
+      "text": "in",
+      "start": 73.3875,
+      "end": 73.5,
+      "duration": 0.1125,
+      "start_char": 1077,
+      "end_char": 1079
+    },
+    {
+      "text": "a",
+      "start": 73.5,
+      "end": 73.5375,
+      "duration": 0.0375,
+      "start_char": 1080,
+      "end_char": 1081
+    },
+    {
+      "text": "separate",
+      "start": 73.5375,
+      "end": 73.9375,
+      "duration": 0.4,
+      "start_char": 1082,
+      "end_char": 1090
+    },
+    {
+      "text": "room",
+      "start": 73.9375,
+      "end": 74.3125,
+      "duration": 0.375,
+      "start_char": 1091,
+      "end_char": 1095
+    },
+    {
+      "text": "and",
+      "start": 74.5125,
+      "end": 74.625,
+      "duration": 0.1125,
+      "start_char": 1096,
+      "end_char": 1099
+    },
+    {
+      "text": "never",
+      "start": 74.6625,
+      "end": 74.9125,
+      "duration": 0.25,
+      "start_char": 1100,
+      "end_char": 1105
+    },
+    {
+      "text": "join",
+      "start": 74.9125,
+      "end": 75.2375,
+      "duration": 0.325,
+      "start_char": 1106,
+      "end_char": 1110
+    },
+    {
+      "text": "classmates",
+      "start": 75.2375,
+      "end": 75.8375,
+      "duration": 0.6,
+      "start_char": 1111,
+      "end_char": 1121
+    },
+    {
+      "text": "This",
+      "start": 76.875,
+      "end": 77.1625,
+      "duration": 0.2875,
+      "start_char": 1124,
+      "end_char": 1128
+    },
+    {
+      "text": "is",
+      "start": 77.1625,
+      "end": 77.2625,
+      "duration": 0.1,
+      "start_char": 1129,
+      "end_char": 1131
+    },
+    {
+      "text": "segregation",
+      "start": 77.2625,
+      "end": 78.0375,
+      "duration": 0.775,
+      "start_char": 1132,
+      "end_char": 1143
+    },
+    {
+      "text": "not",
+      "start": 78.1625,
+      "end": 78.4625,
+      "duration": 0.3,
+      "start_char": 1145,
+      "end_char": 1148
+    },
+    {
+      "text": "full",
+      "start": 78.4625,
+      "end": 78.7375,
+      "duration": 0.275,
+      "start_char": 1149,
+      "end_char": 1153
+    },
+    {
+      "text": "inclusion",
+      "start": 78.7375,
+      "end": 79.325,
+      "duration": 0.5875,
+      "start_char": 1154,
+      "end_char": 1163
+    },
+    {
+      "text": "Opportunity",
+      "start": 80.275,
+      "end": 80.95,
+      "duration": 0.675,
+      "start_char": 1166,
+      "end_char": 1177
+    },
+    {
+      "text": "+",
+      "start": 80.975,
+      "end": 81.25,
+      "duration": 0.275,
+      "start_char": 1178,
+      "end_char": 1179
+    },
+    {
+      "text": "Support",
+      "start": 81.25,
+      "end": 81.6875,
+      "duration": 0.4375,
+      "start_char": 1180,
+      "end_char": 1187
+    },
+    {
+      "text": "=",
+      "start": 81.7,
+      "end": 82.15,
+      "duration": 0.45,
+      "start_char": 1188,
+      "end_char": 1189
+    },
+    {
+      "text": "Inclusion",
+      "start": 82.15,
+      "end": 82.7,
+      "duration": 0.55,
+      "start_char": 1190,
+      "end_char": 1199
+    }
+  ]
 }

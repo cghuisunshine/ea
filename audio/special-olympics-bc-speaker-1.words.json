@@ -1,6 +1,1487 @@
 {
-  "text": "Good morning everyone. Today our group is presenting about Special Olympics BC .\n\nSpecial Olympics BC is part of a larger movement that supports people with intellectual disabilities through sport, friendship, health, and community inclusion. This topic is important because it connects to disability rights, the social model of disability, and inclusion in schools.\n\nSpecial Olympics did not begin only as a sports competition. It began because people started to challenge unfair beliefs about people with intellectual disabilities.\n\nIn the early 1960s, Dr. Frank Hayden, a Canadian researcher at the University of Toronto, studied children with intellectual disabilities at Beverley School in Toronto. At that time, many people believed these children could not be physically active or successful in sports.\n\nDr. Hayden’s research showed something very important. He found that many children with intellectual disabilities had low physical fitness not because they were unable, but because they had not been given enough chances to play, train, and participate.\n\nThis idea helped inspire the Special Olympics movement. Eunice Kennedy Shriver helped organize the first Special Olympics event in Chicago in 1968. Canada was represented at that first event, and later Harry “Red” Foster helped bring Special Olympics to Canada.\n\nThe first Canadian Special Olympics event was held in Toronto in 1969.\n",
+  "text": "Good morning everyone. Today our group is presenting about Special Olympics BC.\n\nSpecial Olympics BC is part of the larger Special Olympics movement. This movement began because people started to challenge unfair beliefs about people with intellectual disabilities.\n\nIn the early 1960s, Dr. Frank Hayden, a Canadian sport scientist at the University of Toronto, studied students at Beverley School in Toronto. At that time, many people believed children with intellectual disabilities could not be successful in physical activity or sports.\n\nDr. Hayden’s research showed something very important. He found that low fitness was not mainly caused by disability itself. It was caused by a lack of chances to play, train, and participate.\n\nHis research influenced Eunice Kennedy Shriver, who helped organize the first Special Olympics event in Chicago in 1968. Canada was represented there by students from Beverley School. Later, Harry “Red” Foster helped bring Special Olympics to Canada, and the first Canadian Special Olympics event was held in Toronto in 1969.\n\nSpecial Olympics BC began in 1980 with two weekends of games and about 500 participants. Since then, it has grown into year-round programs across British Columbia.\n",
   "voice": "en-CA-ClaraNeural",
   "audio": "special-olympics-bc-speaker-1.mp3",
-  "words": []
+  "words": [
+    {
+      "text": "Good",
+      "start": 0.1,
+      "end": 0.3625,
+      "duration": 0.2625,
+      "start_char": 0,
+      "end_char": 4
+    },
+    {
+      "text": "morning",
+      "start": 0.375,
+      "end": 0.7875,
+      "duration": 0.4125,
+      "start_char": 5,
+      "end_char": 12
+    },
+    {
+      "text": "everyone",
+      "start": 0.825,
+      "end": 1.3875,
+      "duration": 0.5625,
+      "start_char": 13,
+      "end_char": 21
+    },
+    {
+      "text": "Today",
+      "start": 2.3625,
+      "end": 2.7,
+      "duration": 0.3375,
+      "start_char": 23,
+      "end_char": 28
+    },
+    {
+      "text": "our",
+      "start": 2.7625,
+      "end": 2.8875,
+      "duration": 0.125,
+      "start_char": 29,
+      "end_char": 32
+    },
+    {
+      "text": "group",
+      "start": 2.9125,
+      "end": 3.225,
+      "duration": 0.3125,
+      "start_char": 33,
+      "end_char": 38
+    },
+    {
+      "text": "is",
+      "start": 3.25,
+      "end": 3.3875,
+      "duration": 0.1375,
+      "start_char": 39,
+      "end_char": 41
+    },
+    {
+      "text": "presenting",
+      "start": 3.4,
+      "end": 3.9125,
+      "duration": 0.5125,
+      "start_char": 42,
+      "end_char": 52
+    },
+    {
+      "text": "about",
+      "start": 3.925,
+      "end": 4.1875,
+      "duration": 0.2625,
+      "start_char": 53,
+      "end_char": 58
+    },
+    {
+      "text": "Special",
+      "start": 4.1875,
+      "end": 4.625,
+      "duration": 0.4375,
+      "start_char": 59,
+      "end_char": 66
+    },
+    {
+      "text": "Olympics",
+      "start": 4.625,
+      "end": 5.1875,
+      "duration": 0.5625,
+      "start_char": 67,
+      "end_char": 75
+    },
+    {
+      "text": "BC",
+      "start": 5.2,
+      "end": 5.65,
+      "duration": 0.45,
+      "start_char": 76,
+      "end_char": 78
+    },
+    {
+      "text": "Special",
+      "start": 6.7,
+      "end": 7.125,
+      "duration": 0.425,
+      "start_char": 81,
+      "end_char": 88
+    },
+    {
+      "text": "Olympics",
+      "start": 7.125,
+      "end": 7.65,
+      "duration": 0.525,
+      "start_char": 89,
+      "end_char": 97
+    },
+    {
+      "text": "BC",
+      "start": 7.6625,
+      "end": 8.15,
+      "duration": 0.4875,
+      "start_char": 98,
+      "end_char": 100
+    },
+    {
+      "text": "is",
+      "start": 8.35,
+      "end": 8.4625,
+      "duration": 0.1125,
+      "start_char": 101,
+      "end_char": 103
+    },
+    {
+      "text": "part",
+      "start": 8.5,
+      "end": 8.7625,
+      "duration": 0.2625,
+      "start_char": 104,
+      "end_char": 108
+    },
+    {
+      "text": "of",
+      "start": 8.7625,
+      "end": 8.8375,
+      "duration": 0.075,
+      "start_char": 109,
+      "end_char": 111
+    },
+    {
+      "text": "the",
+      "start": 8.8375,
+      "end": 8.9375,
+      "duration": 0.1,
+      "start_char": 112,
+      "end_char": 115
+    },
+    {
+      "text": "larger",
+      "start": 8.9375,
+      "end": 9.3,
+      "duration": 0.3625,
+      "start_char": 116,
+      "end_char": 122
+    },
+    {
+      "text": "Special",
+      "start": 9.3,
+      "end": 9.725,
+      "duration": 0.425,
+      "start_char": 123,
+      "end_char": 130
+    },
+    {
+      "text": "Olympics",
+      "start": 9.725,
+      "end": 10.2625,
+      "duration": 0.5375,
+      "start_char": 131,
+      "end_char": 139
+    },
+    {
+      "text": "movement",
+      "start": 10.2625,
+      "end": 10.725,
+      "duration": 0.4625,
+      "start_char": 140,
+      "end_char": 148
+    },
+    {
+      "text": "This",
+      "start": 11.75,
+      "end": 12.0125,
+      "duration": 0.2625,
+      "start_char": 150,
+      "end_char": 154
+    },
+    {
+      "text": "movement",
+      "start": 12.0125,
+      "end": 12.4375,
+      "duration": 0.425,
+      "start_char": 155,
+      "end_char": 163
+    },
+    {
+      "text": "began",
+      "start": 12.45,
+      "end": 12.8625,
+      "duration": 0.4125,
+      "start_char": 164,
+      "end_char": 169
+    },
+    {
+      "text": "because",
+      "start": 12.8625,
+      "end": 13.1875,
+      "duration": 0.325,
+      "start_char": 170,
+      "end_char": 177
+    },
+    {
+      "text": "people",
+      "start": 13.1875,
+      "end": 13.5125,
+      "duration": 0.325,
+      "start_char": 178,
+      "end_char": 184
+    },
+    {
+      "text": "started",
+      "start": 13.5125,
+      "end": 13.875,
+      "duration": 0.3625,
+      "start_char": 185,
+      "end_char": 192
+    },
+    {
+      "text": "to",
+      "start": 13.875,
+      "end": 13.95,
+      "duration": 0.075,
+      "start_char": 193,
+      "end_char": 195
+    },
+    {
+      "text": "challenge",
+      "start": 13.95,
+      "end": 14.425,
+      "duration": 0.475,
+      "start_char": 196,
+      "end_char": 205
+    },
+    {
+      "text": "unfair",
+      "start": 14.4375,
+      "end": 14.8375,
+      "duration": 0.4,
+      "start_char": 206,
+      "end_char": 212
+    },
+    {
+      "text": "beliefs",
+      "start": 14.8375,
+      "end": 15.3125,
+      "duration": 0.475,
+      "start_char": 213,
+      "end_char": 220
+    },
+    {
+      "text": "about",
+      "start": 15.3125,
+      "end": 15.5625,
+      "duration": 0.25,
+      "start_char": 221,
+      "end_char": 226
+    },
+    {
+      "text": "people",
+      "start": 15.5625,
+      "end": 15.9125,
+      "duration": 0.35,
+      "start_char": 227,
+      "end_char": 233
+    },
+    {
+      "text": "with",
+      "start": 15.9125,
+      "end": 16.0625,
+      "duration": 0.15,
+      "start_char": 234,
+      "end_char": 238
+    },
+    {
+      "text": "intellectual",
+      "start": 16.075,
+      "end": 16.7,
+      "duration": 0.625,
+      "start_char": 239,
+      "end_char": 251
+    },
+    {
+      "text": "disabilities",
+      "start": 16.7,
+      "end": 17.4875,
+      "duration": 0.7875,
+      "start_char": 252,
+      "end_char": 264
+    },
+    {
+      "text": "In",
+      "start": 18.45,
+      "end": 18.55,
+      "duration": 0.1,
+      "start_char": 267,
+      "end_char": 269
+    },
+    {
+      "text": "the",
+      "start": 18.6,
+      "end": 18.6875,
+      "duration": 0.0875,
+      "start_char": 270,
+      "end_char": 273
+    },
+    {
+      "text": "early",
+      "start": 18.725,
+      "end": 19.025,
+      "duration": 0.3,
+      "start_char": 274,
+      "end_char": 279
+    },
+    {
+      "text": "1960s",
+      "start": 19.0375,
+      "end": 20.1125,
+      "duration": 1.075,
+      "start_char": 280,
+      "end_char": 285
+    },
+    {
+      "text": "Dr.",
+      "start": 20.4,
+      "end": 20.75,
+      "duration": 0.35,
+      "start_char": 287,
+      "end_char": 290
+    },
+    {
+      "text": "Frank",
+      "start": 20.75,
+      "end": 21.025,
+      "duration": 0.275,
+      "start_char": 291,
+      "end_char": 296
+    },
+    {
+      "text": "Hayden",
+      "start": 21.025,
+      "end": 21.4375,
+      "duration": 0.4125,
+      "start_char": 297,
+      "end_char": 303
+    },
+    {
+      "text": "a",
+      "start": 21.775,
+      "end": 21.825,
+      "duration": 0.05,
+      "start_char": 305,
+      "end_char": 306
+    },
+    {
+      "text": "Canadian",
+      "start": 21.85,
+      "end": 22.375,
+      "duration": 0.525,
+      "start_char": 307,
+      "end_char": 315
+    },
+    {
+      "text": "sport",
+      "start": 22.375,
+      "end": 22.7,
+      "duration": 0.325,
+      "start_char": 316,
+      "end_char": 321
+    },
+    {
+      "text": "scientist",
+      "start": 22.7,
+      "end": 23.2875,
+      "duration": 0.5875,
+      "start_char": 322,
+      "end_char": 331
+    },
+    {
+      "text": "at",
+      "start": 23.3,
+      "end": 23.4,
+      "duration": 0.1,
+      "start_char": 332,
+      "end_char": 334
+    },
+    {
+      "text": "the",
+      "start": 23.4125,
+      "end": 23.4875,
+      "duration": 0.075,
+      "start_char": 335,
+      "end_char": 338
+    },
+    {
+      "text": "University",
+      "start": 23.4875,
+      "end": 24.1375,
+      "duration": 0.65,
+      "start_char": 339,
+      "end_char": 349
+    },
+    {
+      "text": "of",
+      "start": 24.15,
+      "end": 24.2375,
+      "duration": 0.0875,
+      "start_char": 350,
+      "end_char": 352
+    },
+    {
+      "text": "Toronto",
+      "start": 24.2375,
+      "end": 24.775,
+      "duration": 0.5375,
+      "start_char": 353,
+      "end_char": 360
+    },
+    {
+      "text": "studied",
+      "start": 25.1375,
+      "end": 25.5875,
+      "duration": 0.45,
+      "start_char": 362,
+      "end_char": 369
+    },
+    {
+      "text": "students",
+      "start": 25.5875,
+      "end": 26.05,
+      "duration": 0.4625,
+      "start_char": 370,
+      "end_char": 378
+    },
+    {
+      "text": "at",
+      "start": 26.0625,
+      "end": 26.1875,
+      "duration": 0.125,
+      "start_char": 379,
+      "end_char": 381
+    },
+    {
+      "text": "Beverley",
+      "start": 26.1875,
+      "end": 26.575,
+      "duration": 0.3875,
+      "start_char": 382,
+      "end_char": 390
+    },
+    {
+      "text": "School",
+      "start": 26.5875,
+      "end": 26.9625,
+      "duration": 0.375,
+      "start_char": 391,
+      "end_char": 397
+    },
+    {
+      "text": "in",
+      "start": 26.9625,
+      "end": 27.0625,
+      "duration": 0.1,
+      "start_char": 398,
+      "end_char": 400
+    },
+    {
+      "text": "Toronto",
+      "start": 27.0625,
+      "end": 27.575,
+      "duration": 0.5125,
+      "start_char": 401,
+      "end_char": 408
+    },
+    {
+      "text": "At",
+      "start": 28.5875,
+      "end": 28.7,
+      "duration": 0.1125,
+      "start_char": 410,
+      "end_char": 412
+    },
+    {
+      "text": "that",
+      "start": 28.75,
+      "end": 28.95,
+      "duration": 0.2,
+      "start_char": 413,
+      "end_char": 417
+    },
+    {
+      "text": "time",
+      "start": 28.95,
+      "end": 29.3125,
+      "duration": 0.3625,
+      "start_char": 418,
+      "end_char": 422
+    },
+    {
+      "text": "many",
+      "start": 29.5,
+      "end": 29.7625,
+      "duration": 0.2625,
+      "start_char": 424,
+      "end_char": 428
+    },
+    {
+      "text": "people",
+      "start": 29.775,
+      "end": 30.1,
+      "duration": 0.325,
+      "start_char": 429,
+      "end_char": 435
+    },
+    {
+      "text": "believed",
+      "start": 30.1,
+      "end": 30.475,
+      "duration": 0.375,
+      "start_char": 436,
+      "end_char": 444
+    },
+    {
+      "text": "children",
+      "start": 30.475,
+      "end": 30.9,
+      "duration": 0.425,
+      "start_char": 445,
+      "end_char": 453
+    },
+    {
+      "text": "with",
+      "start": 30.9,
+      "end": 31.025,
+      "duration": 0.125,
+      "start_char": 454,
+      "end_char": 458
+    },
+    {
+      "text": "intellectual",
+      "start": 31.05,
+      "end": 31.7,
+      "duration": 0.65,
+      "start_char": 459,
+      "end_char": 471
+    },
+    {
+      "text": "disabilities",
+      "start": 31.7,
+      "end": 32.4375,
+      "duration": 0.7375,
+      "start_char": 472,
+      "end_char": 484
+    },
+    {
+      "text": "could",
+      "start": 32.525,
+      "end": 32.6625,
+      "duration": 0.1375,
+      "start_char": 485,
+      "end_char": 490
+    },
+    {
+      "text": "not",
+      "start": 32.675,
+      "end": 32.875,
+      "duration": 0.2,
+      "start_char": 491,
+      "end_char": 494
+    },
+    {
+      "text": "be",
+      "start": 32.875,
+      "end": 32.975,
+      "duration": 0.1,
+      "start_char": 495,
+      "end_char": 497
+    },
+    {
+      "text": "successful",
+      "start": 32.975,
+      "end": 33.5875,
+      "duration": 0.6125,
+      "start_char": 498,
+      "end_char": 508
+    },
+    {
+      "text": "in",
+      "start": 33.5875,
+      "end": 33.7,
+      "duration": 0.1125,
+      "start_char": 509,
+      "end_char": 511
+    },
+    {
+      "text": "physical",
+      "start": 33.7125,
+      "end": 34.125,
+      "duration": 0.4125,
+      "start_char": 512,
+      "end_char": 520
+    },
+    {
+      "text": "activity",
+      "start": 34.125,
+      "end": 34.575,
+      "duration": 0.45,
+      "start_char": 521,
+      "end_char": 529
+    },
+    {
+      "text": "or",
+      "start": 34.6125,
+      "end": 34.7375,
+      "duration": 0.125,
+      "start_char": 530,
+      "end_char": 532
+    },
+    {
+      "text": "sports",
+      "start": 34.7375,
+      "end": 35.1875,
+      "duration": 0.45,
+      "start_char": 533,
+      "end_char": 539
+    },
+    {
+      "text": "Dr.",
+      "start": 36.225,
+      "end": 36.6125,
+      "duration": 0.3875,
+      "start_char": 542,
+      "end_char": 545
+    },
+    {
+      "text": "Hayden’s",
+      "start": 36.6125,
+      "end": 37.025,
+      "duration": 0.4125,
+      "start_char": 546,
+      "end_char": 554
+    },
+    {
+      "text": "research",
+      "start": 37.025,
+      "end": 37.5,
+      "duration": 0.475,
+      "start_char": 555,
+      "end_char": 563
+    },
+    {
+      "text": "showed",
+      "start": 37.5125,
+      "end": 37.825,
+      "duration": 0.3125,
+      "start_char": 564,
+      "end_char": 570
+    },
+    {
+      "text": "something",
+      "start": 37.825,
+      "end": 38.225,
+      "duration": 0.4,
+      "start_char": 571,
+      "end_char": 580
+    },
+    {
+      "text": "very",
+      "start": 38.225,
+      "end": 38.525,
+      "duration": 0.3,
+      "start_char": 581,
+      "end_char": 585
+    },
+    {
+      "text": "important",
+      "start": 38.575,
+      "end": 39.0875,
+      "duration": 0.5125,
+      "start_char": 586,
+      "end_char": 595
+    },
+    {
+      "text": "He",
+      "start": 40.1125,
+      "end": 40.2,
+      "duration": 0.0875,
+      "start_char": 597,
+      "end_char": 599
+    },
+    {
+      "text": "found",
+      "start": 40.2375,
+      "end": 40.575,
+      "duration": 0.3375,
+      "start_char": 600,
+      "end_char": 605
+    },
+    {
+      "text": "that",
+      "start": 40.575,
+      "end": 40.7125,
+      "duration": 0.1375,
+      "start_char": 606,
+      "end_char": 610
+    },
+    {
+      "text": "low",
+      "start": 40.7125,
+      "end": 40.9,
+      "duration": 0.1875,
+      "start_char": 611,
+      "end_char": 614
+    },
+    {
+      "text": "fitness",
+      "start": 40.925,
+      "end": 41.4125,
+      "duration": 0.4875,
+      "start_char": 615,
+      "end_char": 622
+    },
+    {
+      "text": "was",
+      "start": 41.475,
+      "end": 41.6375,
+      "duration": 0.1625,
+      "start_char": 623,
+      "end_char": 626
+    },
+    {
+      "text": "not",
+      "start": 41.6375,
+      "end": 41.8875,
+      "duration": 0.25,
+      "start_char": 627,
+      "end_char": 630
+    },
+    {
+      "text": "mainly",
+      "start": 41.8875,
+      "end": 42.2125,
+      "duration": 0.325,
+      "start_char": 631,
+      "end_char": 637
+    },
+    {
+      "text": "caused",
+      "start": 42.25,
+      "end": 42.5875,
+      "duration": 0.3375,
+      "start_char": 638,
+      "end_char": 644
+    },
+    {
+      "text": "by",
+      "start": 42.5875,
+      "end": 42.7,
+      "duration": 0.1125,
+      "start_char": 645,
+      "end_char": 647
+    },
+    {
+      "text": "disability",
+      "start": 42.7375,
+      "end": 43.3375,
+      "duration": 0.6,
+      "start_char": 648,
+      "end_char": 658
+    },
+    {
+      "text": "itself",
+      "start": 43.375,
+      "end": 43.8375,
+      "duration": 0.4625,
+      "start_char": 659,
+      "end_char": 665
+    },
+    {
+      "text": "It",
+      "start": 44.7875,
+      "end": 44.875,
+      "duration": 0.0875,
+      "start_char": 667,
+      "end_char": 669
+    },
+    {
+      "text": "was",
+      "start": 44.9125,
+      "end": 45.175,
+      "duration": 0.2625,
+      "start_char": 670,
+      "end_char": 673
+    },
+    {
+      "text": "caused",
+      "start": 45.175,
+      "end": 45.5125,
+      "duration": 0.3375,
+      "start_char": 674,
+      "end_char": 680
+    },
+    {
+      "text": "by",
+      "start": 45.5125,
+      "end": 45.6375,
+      "duration": 0.125,
+      "start_char": 681,
+      "end_char": 683
+    },
+    {
+      "text": "a",
+      "start": 45.6875,
+      "end": 45.725,
+      "duration": 0.0375,
+      "start_char": 684,
+      "end_char": 685
+    },
+    {
+      "text": "lack",
+      "start": 45.725,
+      "end": 46.0125,
+      "duration": 0.2875,
+      "start_char": 686,
+      "end_char": 690
+    },
+    {
+      "text": "of",
+      "start": 46.0125,
+      "end": 46.1,
+      "duration": 0.0875,
+      "start_char": 691,
+      "end_char": 693
+    },
+    {
+      "text": "chances",
+      "start": 46.1,
+      "end": 46.5875,
+      "duration": 0.4875,
+      "start_char": 694,
+      "end_char": 701
+    },
+    {
+      "text": "to",
+      "start": 46.5875,
+      "end": 46.6875,
+      "duration": 0.1,
+      "start_char": 702,
+      "end_char": 704
+    },
+    {
+      "text": "play",
+      "start": 46.6875,
+      "end": 46.9875,
+      "duration": 0.3,
+      "start_char": 705,
+      "end_char": 709
+    },
+    {
+      "text": "train",
+      "start": 47.1625,
+      "end": 47.625,
+      "duration": 0.4625,
+      "start_char": 711,
+      "end_char": 716
+    },
+    {
+      "text": "and",
+      "start": 47.825,
+      "end": 47.9375,
+      "duration": 0.1125,
+      "start_char": 718,
+      "end_char": 721
+    },
+    {
+      "text": "participate",
+      "start": 47.95,
+      "end": 48.65,
+      "duration": 0.7,
+      "start_char": 722,
+      "end_char": 733
+    },
+    {
+      "text": "His",
+      "start": 49.6375,
+      "end": 49.8125,
+      "duration": 0.175,
+      "start_char": 736,
+      "end_char": 739
+    },
+    {
+      "text": "research",
+      "start": 49.8125,
+      "end": 50.2625,
+      "duration": 0.45,
+      "start_char": 740,
+      "end_char": 748
+    },
+    {
+      "text": "influenced",
+      "start": 50.275,
+      "end": 50.825,
+      "duration": 0.55,
+      "start_char": 749,
+      "end_char": 759
+    },
+    {
+      "text": "Eunice",
+      "start": 50.825,
+      "end": 51.2125,
+      "duration": 0.3875,
+      "start_char": 760,
+      "end_char": 766
+    },
+    {
+      "text": "Kennedy",
+      "start": 51.2125,
+      "end": 51.5625,
+      "duration": 0.35,
+      "start_char": 767,
+      "end_char": 774
+    },
+    {
+      "text": "Shriver",
+      "start": 51.5625,
+      "end": 52.0375,
+      "duration": 0.475,
+      "start_char": 775,
+      "end_char": 782
+    },
+    {
+      "text": "who",
+      "start": 52.4,
+      "end": 52.475,
+      "duration": 0.075,
+      "start_char": 784,
+      "end_char": 787
+    },
+    {
+      "text": "helped",
+      "start": 52.4875,
+      "end": 52.7875,
+      "duration": 0.3,
+      "start_char": 788,
+      "end_char": 794
+    },
+    {
+      "text": "organize",
+      "start": 52.8,
+      "end": 53.375,
+      "duration": 0.575,
+      "start_char": 795,
+      "end_char": 803
+    },
+    {
+      "text": "the",
+      "start": 53.375,
+      "end": 53.475,
+      "duration": 0.1,
+      "start_char": 804,
+      "end_char": 807
+    },
+    {
+      "text": "first",
+      "start": 53.475,
+      "end": 53.7375,
+      "duration": 0.2625,
+      "start_char": 808,
+      "end_char": 813
+    },
+    {
+      "text": "Special",
+      "start": 53.7375,
+      "end": 54.125,
+      "duration": 0.3875,
+      "start_char": 814,
+      "end_char": 821
+    },
+    {
+      "text": "Olympics",
+      "start": 54.125,
+      "end": 54.675,
+      "duration": 0.55,
+      "start_char": 822,
+      "end_char": 830
+    },
+    {
+      "text": "event",
+      "start": 54.675,
+      "end": 54.9625,
+      "duration": 0.2875,
+      "start_char": 831,
+      "end_char": 836
+    },
+    {
+      "text": "in",
+      "start": 54.975,
+      "end": 55.1,
+      "duration": 0.125,
+      "start_char": 837,
+      "end_char": 839
+    },
+    {
+      "text": "Chicago",
+      "start": 55.1,
+      "end": 55.6125,
+      "duration": 0.5125,
+      "start_char": 840,
+      "end_char": 847
+    },
+    {
+      "text": "in 1968",
+      "start": 55.7125,
+      "end": 56.9875,
+      "duration": 1.275,
+      "start_char": 848,
+      "end_char": 855
+    },
+    {
+      "text": "Canada",
+      "start": 57.9875,
+      "end": 58.4125,
+      "duration": 0.425,
+      "start_char": 857,
+      "end_char": 863
+    },
+    {
+      "text": "was",
+      "start": 58.4125,
+      "end": 58.65,
+      "duration": 0.2375,
+      "start_char": 864,
+      "end_char": 867
+    },
+    {
+      "text": "represented",
+      "start": 58.65,
+      "end": 59.3,
+      "duration": 0.65,
+      "start_char": 868,
+      "end_char": 879
+    },
+    {
+      "text": "there",
+      "start": 59.3,
+      "end": 59.425,
+      "duration": 0.125,
+      "start_char": 880,
+      "end_char": 885
+    },
+    {
+      "text": "by",
+      "start": 59.425,
+      "end": 59.55,
+      "duration": 0.125,
+      "start_char": 886,
+      "end_char": 888
+    },
+    {
+      "text": "students",
+      "start": 59.5875,
+      "end": 60.0625,
+      "duration": 0.475,
+      "start_char": 889,
+      "end_char": 897
+    },
+    {
+      "text": "from",
+      "start": 60.0625,
+      "end": 60.225,
+      "duration": 0.1625,
+      "start_char": 898,
+      "end_char": 902
+    },
+    {
+      "text": "Beverley",
+      "start": 60.225,
+      "end": 60.6125,
+      "duration": 0.3875,
+      "start_char": 903,
+      "end_char": 911
+    },
+    {
+      "text": "School",
+      "start": 60.625,
+      "end": 61.0375,
+      "duration": 0.4125,
+      "start_char": 912,
+      "end_char": 918
+    },
+    {
+      "text": "Later",
+      "start": 61.9875,
+      "end": 62.425,
+      "duration": 0.4375,
+      "start_char": 920,
+      "end_char": 925
+    },
+    {
+      "text": "Harry",
+      "start": 62.55,
+      "end": 62.825,
+      "duration": 0.275,
+      "start_char": 927,
+      "end_char": 932
+    },
+    {
+      "text": "Red",
+      "start": 62.9,
+      "end": 63.2,
+      "duration": 0.3,
+      "start_char": 934,
+      "end_char": 937
+    },
+    {
+      "text": "Foster",
+      "start": 63.225,
+      "end": 63.6625,
+      "duration": 0.4375,
+      "start_char": 939,
+      "end_char": 945
+    },
+    {
+      "text": "helped",
+      "start": 63.6625,
+      "end": 63.9375,
+      "duration": 0.275,
+      "start_char": 946,
+      "end_char": 952
+    },
+    {
+      "text": "bring",
+      "start": 63.9375,
+      "end": 64.125,
+      "duration": 0.1875,
+      "start_char": 953,
+      "end_char": 958
+    },
+    {
+      "text": "Special",
+      "start": 64.125,
+      "end": 64.5375,
+      "duration": 0.4125,
+      "start_char": 959,
+      "end_char": 966
+    },
+    {
+      "text": "Olympics",
+      "start": 64.5375,
+      "end": 65.05,
+      "duration": 0.5125,
+      "start_char": 967,
+      "end_char": 975
+    },
+    {
+      "text": "to",
+      "start": 65.05,
+      "end": 65.1625,
+      "duration": 0.1125,
+      "start_char": 976,
+      "end_char": 978
+    },
+    {
+      "text": "Canada",
+      "start": 65.175,
+      "end": 65.6375,
+      "duration": 0.4625,
+      "start_char": 979,
+      "end_char": 985
+    },
+    {
+      "text": "and",
+      "start": 66.075,
+      "end": 66.15,
+      "duration": 0.075,
+      "start_char": 987,
+      "end_char": 990
+    },
+    {
+      "text": "the",
+      "start": 66.1875,
+      "end": 66.275,
+      "duration": 0.0875,
+      "start_char": 991,
+      "end_char": 994
+    },
+    {
+      "text": "first",
+      "start": 66.275,
+      "end": 66.5875,
+      "duration": 0.3125,
+      "start_char": 995,
+      "end_char": 1000
+    },
+    {
+      "text": "Canadian",
+      "start": 66.6,
+      "end": 67.0625,
+      "duration": 0.4625,
+      "start_char": 1001,
+      "end_char": 1009
+    },
+    {
+      "text": "Special",
+      "start": 67.0625,
+      "end": 67.4375,
+      "duration": 0.375,
+      "start_char": 1010,
+      "end_char": 1017
+    },
+    {
+      "text": "Olympics",
+      "start": 67.4375,
+      "end": 67.9625,
+      "duration": 0.525,
+      "start_char": 1018,
+      "end_char": 1026
+    },
+    {
+      "text": "event",
+      "start": 67.9625,
+      "end": 68.2375,
+      "duration": 0.275,
+      "start_char": 1027,
+      "end_char": 1032
+    },
+    {
+      "text": "was",
+      "start": 68.2875,
+      "end": 68.475,
+      "duration": 0.1875,
+      "start_char": 1033,
+      "end_char": 1036
+    },
+    {
+      "text": "held",
+      "start": 68.475,
+      "end": 68.7625,
+      "duration": 0.2875,
+      "start_char": 1037,
+      "end_char": 1041
+    },
+    {
+      "text": "in",
+      "start": 68.7625,
+      "end": 68.875,
+      "duration": 0.1125,
+      "start_char": 1042,
+      "end_char": 1044
+    },
+    {
+      "text": "Toronto",
+      "start": 68.875,
+      "end": 69.375,
+      "duration": 0.5,
+      "start_char": 1045,
+      "end_char": 1052
+    },
+    {
+      "text": "in 1969",
+      "start": 69.475,
+      "end": 70.875,
+      "duration": 1.4,
+      "start_char": 1053,
+      "end_char": 1060
+    },
+    {
+      "text": "Special",
+      "start": 71.8,
+      "end": 72.225,
+      "duration": 0.425,
+      "start_char": 1063,
+      "end_char": 1070
+    },
+    {
+      "text": "Olympics",
+      "start": 72.225,
+      "end": 72.7125,
+      "duration": 0.4875,
+      "start_char": 1071,
+      "end_char": 1079
+    },
+    {
+      "text": "BC",
+      "start": 72.725,
+      "end": 73.15,
+      "duration": 0.425,
+      "start_char": 1080,
+      "end_char": 1082
+    },
+    {
+      "text": "began",
+      "start": 73.2375,
+      "end": 73.7,
+      "duration": 0.4625,
+      "start_char": 1083,
+      "end_char": 1088
+    },
+    {
+      "text": "in 1980",
+      "start": 73.725,
+      "end": 74.65,
+      "duration": 0.925,
+      "start_char": 1089,
+      "end_char": 1096
+    },
+    {
+      "text": "with",
+      "start": 74.85,
+      "end": 74.975,
+      "duration": 0.125,
+      "start_char": 1097,
+      "end_char": 1101
+    },
+    {
+      "text": "two",
+      "start": 74.975,
+      "end": 75.1875,
+      "duration": 0.2125,
+      "start_char": 1102,
+      "end_char": 1105
+    },
+    {
+      "text": "weekends",
+      "start": 75.1875,
+      "end": 75.6375,
+      "duration": 0.45,
+      "start_char": 1106,
+      "end_char": 1114
+    },
+    {
+      "text": "of",
+      "start": 75.6375,
+      "end": 75.725,
+      "duration": 0.0875,
+      "start_char": 1115,
+      "end_char": 1117
+    },
+    {
+      "text": "games",
+      "start": 75.725,
+      "end": 76.1375,
+      "duration": 0.4125,
+      "start_char": 1118,
+      "end_char": 1123
+    },
+    {
+      "text": "and",
+      "start": 76.45,
+      "end": 76.5625,
+      "duration": 0.1125,
+      "start_char": 1124,
+      "end_char": 1127
+    },
+    {
+      "text": "about",
+      "start": 76.5875,
+      "end": 76.825,
+      "duration": 0.2375,
+      "start_char": 1128,
+      "end_char": 1133
+    },
+    {
+      "text": "500",
+      "start": 76.825,
+      "end": 77.525,
+      "duration": 0.7,
+      "start_char": 1134,
+      "end_char": 1137
+    },
+    {
+      "text": "participants",
+      "start": 77.525,
+      "end": 78.175,
+      "duration": 0.65,
+      "start_char": 1138,
+      "end_char": 1150
+    },
+    {
+      "text": "Since",
+      "start": 79.1875,
+      "end": 79.4625,
+      "duration": 0.275,
+      "start_char": 1152,
+      "end_char": 1157
+    },
+    {
+      "text": "then",
+      "start": 79.4625,
+      "end": 79.7875,
+      "duration": 0.325,
+      "start_char": 1158,
+      "end_char": 1162
+    },
+    {
+      "text": "it",
+      "start": 80.025,
+      "end": 80.1,
+      "duration": 0.075,
+      "start_char": 1164,
+      "end_char": 1166
+    },
+    {
+      "text": "has",
+      "start": 80.1625,
+      "end": 80.3625,
+      "duration": 0.2,
+      "start_char": 1167,
+      "end_char": 1170
+    },
+    {
+      "text": "grown",
+      "start": 80.3625,
+      "end": 80.7,
+      "duration": 0.3375,
+      "start_char": 1171,
+      "end_char": 1176
+    },
+    {
+      "text": "into",
+      "start": 80.7,
+      "end": 80.875,
+      "duration": 0.175,
+      "start_char": 1177,
+      "end_char": 1181
+    },
+    {
+      "text": "year-round",
+      "start": 80.875,
+      "end": 81.3875,
+      "duration": 0.5125,
+      "start_char": 1182,
+      "end_char": 1192
+    },
+    {
+      "text": "programs",
+      "start": 81.3875,
+      "end": 81.9875,
+      "duration": 0.6,
+      "start_char": 1193,
+      "end_char": 1201
+    },
+    {
+      "text": "across",
+      "start": 82.0,
+      "end": 82.3875,
+      "duration": 0.3875,
+      "start_char": 1202,
+      "end_char": 1208
+    },
+    {
+      "text": "British",
+      "start": 82.3875,
+      "end": 82.7125,
+      "duration": 0.325,
+      "start_char": 1209,
+      "end_char": 1216
+    },
+    {
+      "text": "Columbia",
+      "start": 82.7125,
+      "end": 83.275,
+      "duration": 0.5625,
+      "start_char": 1217,
+      "end_char": 1225
+    }
+  ]
 }
