@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Special Olympics BC – Speaker 3 & 4 True/False Practice</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --ink: #1f2937;
+      --muted: #5b677a;
+      --brand: #155eef;
+      --brand-dark: #0f3fb3;
+      --soft-blue: #eaf1ff;
+      --soft-green: #eaf8ef;
+      --soft-red: #fff0f0;
+      --border: #d7deea;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+      --font-size: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-size: var(--font-size);
+      line-height: 1.65;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(21, 94, 239, 0.12), transparent 32rem),
+        linear-gradient(180deg, #f9fbff 0%, var(--bg) 100%);
+    }
+
+    header {
+      padding: 34px 18px 22px;
+      text-align: center;
+      background: linear-gradient(135deg, #0f3fb3, #155eef 58%, #3b82f6);
+      color: #fff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+    }
+
+    header p {
+      max-width: 880px;
+      margin: 12px auto 0;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.05em;
+    }
+
+    .wrap {
+      width: min(1060px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 26px 0 48px;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: -8px auto 22px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(8px);
+      box-shadow: var(--shadow);
+    }
+
+    button, .link-button {
+      appearance: none;
+      border: 1px solid var(--brand);
+      border-radius: 999px;
+      background: var(--brand);
+      color: #fff;
+      padding: 9px 16px;
+      font: inherit;
+      font-size: 0.95em;
+      line-height: 1.2;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+    }
+
+    button:hover, .link-button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(21, 94, 239, 0.22);
+      background: var(--brand-dark);
+    }
+
+    button.secondary {
+      color: var(--brand-dark);
+      background: #fff;
+    }
+
+    button.secondary:hover {
+      color: #fff;
+      background: var(--brand-dark);
+    }
+
+    .intro, .card, .answer-key, .source-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .intro {
+      padding: 22px;
+      margin-bottom: 20px;
+    }
+
+    .intro h2, .answer-key h2, .source-box h2 {
+      margin: 0 0 10px;
+      font-size: 1.45em;
+      color: var(--brand-dark);
+    }
+
+    .goals {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .goal {
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: var(--soft-blue);
+      border: 1px solid #cfe0ff;
+    }
+
+    .quiz {
+      display: grid;
+      gap: 16px;
+    }
+
+    .card {
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .q-head {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .number {
+      flex: 0 0 auto;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: var(--brand);
+      font-weight: 800;
+    }
+
+    .statement {
+      margin: 0;
+      font-weight: 650;
+      font-size: 1.08em;
+    }
+
+    .choices {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 12px 0 6px 54px;
+    }
+
+    .choice {
+      min-width: 110px;
+      background: #fff;
+      color: var(--brand-dark);
+      border: 1px solid var(--border);
+    }
+
+    .choice.selected {
+      color: #fff;
+      background: var(--brand);
+      border-color: var(--brand);
+    }
+
+    .feedback {
+      display: none;
+      margin: 14px 0 0 54px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+    }
+
+    .feedback.correct {
+      display: block;
+      background: var(--soft-green);
+      border-color: #b8e8c6;
+    }
+
+    .feedback.incorrect {
+      display: block;
+      background: var(--soft-red);
+      border-color: #f2c4c4;
+    }
+
+    .feedback.reveal {
+      display: block;
+      background: #fff9e8;
+      border-color: #f4d68b;
+    }
+
+    .score {
+      display: none;
+      margin: 22px 0 0;
+      padding: 18px;
+      text-align: center;
+      border: 2px dashed #9bb8ff;
+      border-radius: 18px;
+      background: #f8fbff;
+      font-weight: 800;
+      color: var(--brand-dark);
+      font-size: 1.15em;
+    }
+
+    .answer-key, .source-box {
+      padding: 22px;
+      margin-top: 20px;
+    }
+
+    .answer-key.hidden {
+      display: none;
+    }
+
+    .answer-key ol {
+      margin-bottom: 0;
+    }
+
+    .source-box a {
+      color: var(--brand-dark);
+      font-weight: 700;
+    }
+
+    .tag {
+      display: inline-block;
+      margin: 0 0 10px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #eef4ff;
+      color: var(--brand-dark);
+      font-size: 0.86em;
+      font-weight: 700;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 22px 14px 34px;
+      font-size: 0.92em;
+    }
+
+    @media (max-width: 720px) {
+      .toolbar { border-radius: 22px; }
+      .goals { grid-template-columns: 1fr; }
+      .choices, .feedback { margin-left: 0; }
+      .q-head { align-items: center; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      header, .toolbar, footer { display: none; }
+      .wrap { width: 100%; padding: 0; }
+      .intro, .card, .answer-key, .source-box {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+      .answer-key.hidden { display: block; }
+      .feedback { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Special Olympics BC</h1>
+    <p>Speaker 3 & Speaker 4 — True / False Practice Questions</p>
+  </header>
+
+  <main class="wrap">
+    <nav class="toolbar" aria-label="Practice controls">
+      <button type="button" onclick="checkAnswers()">Check Answers</button>
+      <button type="button" class="secondary" onclick="showAnswers()">Show Answers</button>
+      <button type="button" class="secondary" onclick="resetQuiz()">Reset</button>
+      <button type="button" class="secondary" onclick="changeFont(1)">A+</button>
+      <button type="button" class="secondary" onclick="changeFont(-1)">A-</button>
+      <button type="button" class="secondary" onclick="window.print()">Print</button>
+    </nav>
+
+    <section class="intro">
+      <h2>Practice Goal</h2>
+      <p>Use these six questions to review the main ideas from Speaker 3 and Speaker 4. Choose <strong>True</strong> or <strong>False</strong>, then check your answers.</p>
+      <div class="goals">
+        <div class="goal"><strong>Speaker 3:</strong> Inclusion in schools means real belonging, participation, choices, friendships, teamwork, and feeling valued.</div>
+        <div class="goal"><strong>Speaker 4:</strong> EAs support students by building independence, confidence, participation, and belonging.</div>
+      </div>
+    </section>
+
+    <section class="quiz" id="quiz" aria-label="True or false quiz">
+      <article class="card" data-answer="false">
+        <span class="tag">Speaker 3</span>
+        <div class="q-head">
+          <div class="number">1</div>
+          <p class="statement">Inclusion means a student is simply placed in the same classroom or gym.</p>
+        </div>
+        <div class="choices">
+          <button type="button" class="choice" onclick="selectChoice(this, true)">True</button>
+          <button type="button" class="choice" onclick="selectChoice(this, false)">False</button>
+        </div>
+        <div class="feedback">Correct answer: <strong>False.</strong> Real inclusion means the student participates, learns, makes choices, builds friendships, and feels valued.</div>
+      </article>
+
+      <article class="card" data-answer="true">
+        <span class="tag">Speaker 3</span>
+        <div class="q-head">
+          <div class="number">2</div>
+          <p class="statement">Programs such as Active Start and FUNdamentals help children develop movement skills, sport skills, social skills, and confidence.</p>
+        </div>
+        <div class="choices">
+          <button type="button" class="choice" onclick="selectChoice(this, true)">True</button>
+          <button type="button" class="choice" onclick="selectChoice(this, false)">False</button>
+        </div>
+        <div class="feedback">Correct answer: <strong>True.</strong> These youth programs support children and teenagers with intellectual disabilities.</div>
+      </article>
+
+      <article class="card" data-answer="false">
+        <span class="tag">Speaker 3</span>
+        <div class="q-head">
+          <div class="number">3</div>
+          <p class="statement">Unified Sports separates students into “helpers” and “people who need help.”</p>
+        </div>
+        <div class="choices">
+          <button type="button" class="choice" onclick="selectChoice(this, true)">True</button>
+          <button type="button" class="choice" onclick="selectChoice(this, false)">False</button>
+        </div>
+        <div class="feedback">Correct answer: <strong>False.</strong> Unified Sports brings students with and without intellectual disabilities together as teammates.</div>
+      </article>
+
+      <article class="card" data-answer="true">
+        <span class="tag">Speaker 3</span>
+        <div class="q-head">
+          <div class="number">4</div>
+          <p class="statement">In gym class, a teacher or EA can support inclusion by changing the pace, using a bigger ball, giving visual instructions, creating partner roles, or focusing on teamwork.</p>
+        </div>
+        <div class="choices">
+          <button type="button" class="choice" onclick="selectChoice(this, true)">True</button>
+          <button type="button" class="choice" onclick="selectChoice(this, false)">False</button>
+        </div>
+        <div class="feedback">Correct answer: <strong>True.</strong> These are examples of adapting activities so more students can participate.</div>
+      </article>
+
+      <article class="card" data-answer="false">
+        <span class="tag">Speaker 4</span>
+        <div class="q-head">
+          <div class="number">5</div>
+          <p class="statement">The EA’s role is to do everything for the student.</p>
+        </div>
+        <div class="choices">
+          <button type="button" class="choice" onclick="selectChoice(this, true)">True</button>
+          <button type="button" class="choice" onclick="selectChoice(this, false)">False</button>
+        </div>
+        <div class="feedback">Correct answer: <strong>False.</strong> The EA’s goal is to support independence, confidence, participation, and belonging.</div>
+      </article>
+
+      <article class="card" data-answer="true">
+        <span class="tag">Speaker 4</span>
+        <div class="q-head">
+          <div class="number">6</div>
+          <p class="statement">Inclusion is active: students need real chances to join, not just words saying they are welcome.</p>
+        </div>
+        <div class="choices">
+          <button type="button" class="choice" onclick="selectChoice(this, true)">True</button>
+          <button type="button" class="choice" onclick="selectChoice(this, false)">False</button>
+        </div>
+        <div class="feedback">Correct answer: <strong>True.</strong> Speaker 4 says we need to create real chances for students to join.</div>
+      </article>
+    </section>
+
+    <div class="score" id="scoreBox"></div>
+
+    <section class="answer-key hidden" id="answerKey">
+      <h2>Answer Key</h2>
+      <ol>
+        <li>False — Real inclusion is more than being in the same place.</li>
+        <li>True — Active Start and FUNdamentals build skills and confidence.</li>
+        <li>False — Unified Sports makes everyone teammates.</li>
+        <li>True — Adaptations can help students participate.</li>
+        <li>False — EAs support independence, not dependence.</li>
+        <li>True — Inclusion requires real chances to join.</li>
+      </ol>
+    </section>
+
+    <section class="source-box">
+      <h2>Source</h2>
+      <p>Based on the Speaker 3 and Speaker 4 sections from the original practice page:</p>
+      <p><a href="https://cghuisunshine.github.io/ea/special_olympics_bc_5_speaker_oral_practice.html" target="_blank" rel="noopener">Special Olympics BC – 5-Speaker Oral Presentation Practice Page</a></p>
+    </section>
+  </main>
+
+  <footer>
+    Practice page for Special Olympics BC oral presentation — Speaker 3 & Speaker 4.
+  </footer>
+
+  <script>
+    let baseFont = 18;
+
+    document.querySelectorAll('.feedback').forEach(feedback => {
+      feedback.dataset.original = feedback.innerHTML;
+    });
+
+    function selectChoice(button, value) {
+      const card = button.closest('.card');
+      card.dataset.selected = String(value);
+      card.querySelectorAll('.choice').forEach(btn => btn.classList.remove('selected'));
+      button.classList.add('selected');
+      const feedback = card.querySelector('.feedback');
+      feedback.className = 'feedback';
+      feedback.innerHTML = feedback.dataset.original;
+    }
+
+    function checkAnswers() {
+      const cards = Array.from(document.querySelectorAll('.card'));
+      let correct = 0;
+      let answered = 0;
+
+      cards.forEach(card => {
+        const expected = card.dataset.answer;
+        const selected = card.dataset.selected;
+        const feedback = card.querySelector('.feedback');
+        const original = feedback.dataset.original;
+        feedback.className = 'feedback';
+
+        if (selected === undefined) {
+          feedback.classList.add('reveal');
+          feedback.innerHTML = 'Please choose <strong>True</strong> or <strong>False</strong> first.';
+          return;
+        }
+
+        answered++;
+        if (selected === expected) {
+          correct++;
+          feedback.classList.add('correct');
+          feedback.innerHTML = '✅ ' + original;
+        } else {
+          feedback.classList.add('incorrect');
+          feedback.innerHTML = '❌ ' + original;
+        }
+      });
+
+      const scoreBox = document.getElementById('scoreBox');
+      scoreBox.style.display = 'block';
+      if (answered < cards.length) {
+        scoreBox.textContent = `You answered ${answered} of ${cards.length}. Current score: ${correct} / ${cards.length}.`;
+      } else {
+        scoreBox.textContent = `Your score: ${correct} / ${cards.length}.`;
+      }
+    }
+
+    function showAnswers() {
+      document.querySelectorAll('.card').forEach(card => {
+        const feedback = card.querySelector('.feedback');
+        feedback.className = 'feedback reveal';
+        feedback.innerHTML = feedback.dataset.original;
+      });
+      document.getElementById('answerKey').classList.remove('hidden');
+      document.getElementById('scoreBox').style.display = 'none';
+    }
+
+    function resetQuiz() {
+      document.querySelectorAll('.card').forEach(card => {
+        delete card.dataset.selected;
+        card.querySelectorAll('.choice').forEach(btn => btn.classList.remove('selected'));
+        const feedback = card.querySelector('.feedback');
+        feedback.className = 'feedback';
+        feedback.innerHTML = feedback.dataset.original;
+      });
+      document.getElementById('answerKey').classList.add('hidden');
+      document.getElementById('scoreBox').style.display = 'none';
+    }
+
+    function changeFont(delta) {
+      baseFont = Math.max(14, Math.min(26, baseFont + delta));
+      document.documentElement.style.setProperty('--font-size', baseFont + 'px');
+    }
+  </script>
+</body>
+</html>
