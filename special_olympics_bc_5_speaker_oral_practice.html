@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="data:," />
-  <title>Special Olympics BC – Oral Presentation Practice</title>
+  <title>Special Olympics BC – 5-Speaker Oral Presentation Practice</title>
   <style>
     :root {
       --bg: #f6f8fb;
@@ -16,6 +16,8 @@
       --border: #d1d5db;
       --accent: #f97316;
       --success: #15803d;
+      --cyan: #0891b2;
+      --purple: #4f46e5;
     }
 
     * {
@@ -68,7 +70,8 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
 
-    button, select {
+    button,
+    select {
       border: 1px solid var(--border);
       background: white;
       color: var(--text);
@@ -78,7 +81,8 @@
       cursor: pointer;
     }
 
-    button:hover, select:hover {
+    button:hover,
+    select:hover {
       border-color: var(--primary);
       background: var(--primary-light);
     }
@@ -114,7 +118,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       gap: 12px;
       margin: 16px 0;
     }
@@ -246,7 +250,16 @@
 
     .cue {
       background: #eef2ff;
-      border-left: 5px solid #4f46e5;
+      border-left: 5px solid var(--purple);
+      padding: 12px 14px;
+      border-radius: 10px;
+      margin: 14px 0;
+      font-weight: bold;
+    }
+
+    .transition {
+      background: #eff6ff;
+      border-left: 5px solid var(--primary);
       padding: 12px 14px;
       border-radius: 10px;
       margin: 14px 0;
@@ -255,10 +268,28 @@
 
     .activity {
       background: #ecfeff;
-      border-left: 5px solid #0891b2;
+      border-left: 5px solid var(--cyan);
       padding: 14px;
       border-radius: 12px;
       margin-top: 18px;
+    }
+
+    .activity h3 {
+      margin-top: 0;
+      color: #0e7490;
+    }
+
+    .example-card {
+      background: white;
+      border: 1px solid #a5f3fc;
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin: 12px 0;
+    }
+
+    .answer {
+      color: var(--success);
+      font-weight: bold;
     }
 
     .big-message {
@@ -272,12 +303,6 @@
 
     .hidden {
       display: none !important;
-    }
-
-    .highlight {
-      background: #fef3c7;
-      border-radius: 8px;
-      padding: 2px 4px;
     }
 
     .progress-wrap {
@@ -311,8 +336,11 @@
     }
 
     @media print {
-      .toolbar {
-        display: none;
+      .toolbar,
+      .speaker-tools,
+      .record-playback,
+      .record-download {
+        display: none !important;
       }
 
       body {
@@ -366,22 +394,22 @@
   <main class="container">
     <section class="practice-box">
       <h2>Practice Goals</h2>
-      <p>Each speaker should practise for about <strong>1.5 to 2 minutes</strong>. Do not read too fast. Look up, pause, and explain the ideas in your own words.</p>
+      <p>This page is for a <strong>5-speaker oral presentation</strong>. Each speaker should practise speaking clearly, pausing between key points, and looking up from the notes.</p>
 
       <div class="grid">
-        <div class="mini-card"><strong>Speaker 1</strong>Introduction + Origin</div>
-        <div class="mini-card"><strong>Speaker 2</strong>SOBC History + Today</div>
-        <div class="mini-card"><strong>Speaker 3</strong>Social Model + Rights</div>
-        <div class="mini-card"><strong>Speaker 4</strong>School Inclusion</div>
-        <div class="mini-card"><strong>Speaker 5</strong>EA Role + Activity</div>
+        <div class="mini-card"><strong>Speaker 1</strong>History and origin</div>
+        <div class="mini-card"><strong>Speaker 2</strong>Rights and social model</div>
+        <div class="mini-card"><strong>Speaker 3</strong>Inclusion in schools</div>
+        <div class="mini-card"><strong>Speaker 4</strong>Why EAs need to know</div>
+        <div class="mini-card"><strong>Speaker 5</strong>Summary and activity</div>
       </div>
 
-      <p><strong>Tip:</strong> Slides should have short keywords only. Use this page as speaker notes, not as text to read word-for-word.</p>
+      <p><strong>Tip:</strong> Use this page as speaker notes. On slides, use short keywords only, not full paragraphs.</p>
     </section>
 
     <section id="speaker1" class="speaker">
-      <h2>Speaker 1 — Introduction and Origin</h2>
-      <span class="time">Suggested time: 1.5–2 minutes</span>
+      <h2>Speaker 1 — Part 1: History and Origin</h2>
+      <span class="time">Suggested time: about 2 minutes</span>
       <div class="model-audio-wrap">
         <strong>Listen to model audio</strong>
         <audio class="model-audio" data-speaker="speaker1" controls preload="metadata" src="audio/special-olympics-bc-speaker-1.mp3"></audio>
@@ -396,26 +424,25 @@
       <audio class="record-playback hidden" id="speaker1Audio" controls></audio>
       <a class="record-download hidden" id="speaker1Download" href="#" download="speaker-1-practice.webm">Download Speaker 1 recording</a>
 
-      <p>Good morning everyone. Today our group is presenting about <strong>Special Olympics BC</strong>.</p>
+      <p>Good morning everyone. Today our group is presenting about Special Olympics BC.</p>
 
-      <p>Special Olympics BC is part of a larger movement that supports people with intellectual disabilities through sport, friendship, health, and community inclusion. This topic is important because it connects to disability rights, the social model of disability, and inclusion in schools.</p>
+      <p>Special Olympics BC is part of the larger Special Olympics movement. This movement began because people started to challenge unfair beliefs about people with intellectual disabilities.</p>
 
-      <p>Special Olympics did not begin only as a sports competition. It began because people started to challenge unfair beliefs about people with intellectual disabilities.</p>
+      <p>In the early 1960s, Dr. Frank Hayden, a Canadian sport scientist at the University of Toronto, studied students at Beverley School in Toronto. At that time, many people believed children with intellectual disabilities could not be successful in physical activity or sports.</p>
 
-      <p>In the early 1960s, Dr. Frank Hayden, a Canadian researcher at the University of Toronto, studied children with intellectual disabilities at Beverley School in Toronto. At that time, many people believed these children could not be physically active or successful in sports.</p>
+      <p>Dr. Hayden’s research showed something very important. He found that low fitness was not mainly caused by disability itself. It was caused by a lack of chances to play, train, and participate.</p>
 
-      <p>Dr. Hayden’s research showed something very important. He found that many children with intellectual disabilities had low physical fitness not because they were unable, but because they had not been given enough chances to play, train, and participate.</p>
+      <p>His research influenced Eunice Kennedy Shriver, who helped organize the first Special Olympics event in Chicago in 1968. Canada was represented there by students from Beverley School. Later, Harry “Red” Foster helped bring Special Olympics to Canada, and the first Canadian Special Olympics event was held in Toronto in 1969.</p>
 
-      <p>This idea helped inspire the Special Olympics movement. Eunice Kennedy Shriver helped organize the first Special Olympics event in Chicago in 1968. Canada was represented at that first event, and later Harry “Red” Foster helped bring Special Olympics to Canada.</p>
+      <p>Special Olympics BC began in 1980 with two weekends of games and about 500 participants. Since then, it has grown into year-round programs across British Columbia.</p>
 
-      <p>The first Canadian Special Olympics event was held in Toronto in 1969.</p>
-
-      <div class="cue">Slide cue: show timeline — 1960s → 1968 → 1969 → 1980</div>
+      <div class="transition">Now Speaker 2 will explain how Special Olympics BC contributes to rights.</div>
+      <div class="cue">Slide cue: Dr. Frank Hayden → 1968 Chicago → 1969 Canada → 1980 Special Olympics BC.</div>
     </section>
 
     <section id="speaker2" class="speaker">
-      <h2>Speaker 2 — Special Olympics BC History and What It Does Today</h2>
-      <span class="time">Suggested time: 1.5–2 minutes</span>
+      <h2>Speaker 2 — Part 2: Rights and the Social Model of Disability</h2>
+      <span class="time">Suggested time: about 2 minutes</span>
       <div class="model-audio-wrap">
         <strong>Listen to model audio</strong>
         <audio class="model-audio" data-speaker="speaker2" controls preload="metadata" src="audio/special-olympics-bc-speaker-2.mp3"></audio>
@@ -430,24 +457,25 @@
       <audio class="record-playback hidden" id="speaker2Audio" controls></audio>
       <a class="record-download hidden" id="speaker2Download" href="#" download="speaker-2-practice.webm">Download Speaker 2 recording</a>
 
-      <p>Special Olympics BC began in 1980. At first, it started with two weekends of games and about 500 participants.</p>
+      <p>Special Olympics BC connects strongly to the social model of disability.</p>
 
-      <p>Since then, Special Olympics BC has grown into year-round programs in many communities across British Columbia. It is no longer just one event. It includes regular training, competitions, youth programs, health programs, and community activities.</p>
+      <p>The social model says that disability is not only about a person’s diagnosis or impairment. Disability is also created by barriers in society. These barriers can include low expectations, inaccessible activities, negative attitudes, lack of support, and exclusion.</p>
 
-      <p>Athletes can participate in many sports, such as swimming, basketball, bowling, soccer, floor hockey, track and field, and more.</p>
+      <p>Special Olympics BC helps remove these barriers. It gives children and adults with intellectual disabilities real opportunities to train, compete, make friends, and be recognized for their strengths.</p>
 
-      <p>The purpose of Special Olympics BC is not only to win medals. Winning can be exciting, but the bigger purpose is to help athletes build confidence, health, friendships, teamwork, independence, and belonging.</p>
+      <p>This contributes to disability rights because rights are not only about laws. Rights are also about real access, participation, dignity, and respect.</p>
 
-      <p>Special Olympics BC also helps the public see people with intellectual disabilities in a more respectful way. Instead of focusing only on what someone cannot do, it focuses on what people can do when they are given support and opportunity.</p>
+      <p>For example, if a person is never invited to join a sport, the barrier is not only inside the person. The barrier is also in the environment. But when the rules, coaching, and support are changed, that person can participate and succeed.</p>
 
-      <p>This connects strongly to inclusion because athletes are not being hidden away or separated from the community. They are participating, competing, leading, and being celebrated.</p>
+      <p>Special Olympics BC changes public attitudes. It helps people move from pity to respect, and from exclusion to inclusion.</p>
 
-      <div class="cue">Slide cue: show BC map, sports icons, and words like confidence, friendship, belonging.</div>
+      <div class="transition">Now Speaker 3 will explain how this connects to inclusion in schools.</div>
+      <div class="cue">Slide cue: Barrier → Support → Participation → Dignity and Respect.</div>
     </section>
 
     <section id="speaker3" class="speaker">
-      <h2>Speaker 3 — Social Model of Disability and Rights</h2>
-      <span class="time">Suggested time: 1.5–2 minutes</span>
+      <h2>Speaker 3 — Part 3: Inclusion in Schools</h2>
+      <span class="time">Suggested time: about 2 minutes</span>
       <div class="model-audio-wrap">
         <strong>Listen to model audio</strong>
         <audio class="model-audio" data-speaker="speaker3" controls preload="metadata" src="audio/special-olympics-bc-speaker-3.mp3"></audio>
@@ -462,28 +490,25 @@
       <audio class="record-playback hidden" id="speaker3Audio" controls></audio>
       <a class="record-download hidden" id="speaker3Download" href="#" download="speaker-3-practice.webm">Download Speaker 3 recording</a>
 
-      <p>Now we will connect Special Olympics BC to the <strong>social model of disability</strong>.</p>
+      <p>Special Olympics BC is connected to inclusion in schools because both focus on belonging and participation.</p>
 
-      <p>The social model of disability says that disability is not only caused by a person’s impairment or diagnosis. Disability is also created by barriers in society.</p>
+      <p>Inclusion does not mean a student is simply placed in the same classroom or gym. Real inclusion means the student participates, learns, makes choices, builds friendships, and feels valued.</p>
 
-      <p>These barriers can include low expectations, inaccessible programs, negative attitudes, lack of support, and being excluded from activities.</p>
+      <p>Special Olympics BC has youth programs that support children and teenagers with intellectual disabilities. Programs such as Active Start and FUNdamentals help children develop movement skills, sport skills, social skills, and confidence.</p>
 
-      <p>For example, if a student wants to join a game but the instructions are confusing, the rules are too fast, and nobody adapts the activity, the problem is not only inside the student. The problem is also in the environment.</p>
+      <p>Unified Sports is especially important for schools. It brings students with and without intellectual disabilities together on the same team. They train together, play together, and learn from each other.</p>
 
-      <p>Special Olympics BC helps remove these barriers. It gives people with intellectual disabilities real opportunities to train, compete, make friends, and be recognized for their strengths.</p>
+      <p>This is a strong example of inclusion because students are not separated into “helpers” and “people who need help.” Everyone participates as teammates.</p>
 
-      <p>This contributes to rights because rights are not only about laws. Rights are also about real access, real participation, and real respect.</p>
+      <p>For example, in gym class, a teacher or EA can slow the pace of a game, use a bigger ball, give visual instructions, create partner roles, or focus on teamwork instead of only winning.</p>
 
-      <p>Special Olympics BC shows that people with intellectual disabilities have the right to participate in community life, to be included in sports, and to be proud of their achievements.</p>
-
-      <p>It also changes public attitudes. It helps society move from pity to respect, and from exclusion to inclusion.</p>
-
-      <div class="cue">Slide cue: show “Barrier → Support → Participation”.</div>
+      <div class="transition">Now Speaker 4 will explain why this information is important for Education Assistants.</div>
+      <div class="cue">Slide cue: Belonging, participation, teamwork, Unified Sports, and school inclusion.</div>
     </section>
 
     <section id="speaker4" class="speaker">
-      <h2>Speaker 4 — Connection to Inclusion in Schools</h2>
-      <span class="time">Suggested time: 1.5–2 minutes</span>
+      <h2>Speaker 4 — Part 3 Continued: Why EAs Need to Know</h2>
+      <span class="time">Suggested time: about 2 minutes</span>
       <div class="model-audio-wrap">
         <strong>Listen to model audio</strong>
         <audio class="model-audio" data-speaker="speaker4" controls preload="metadata" src="audio/special-olympics-bc-speaker-4.mp3"></audio>
@@ -498,28 +523,25 @@
       <audio class="record-playback hidden" id="speaker4Audio" controls></audio>
       <a class="record-download hidden" id="speaker4Download" href="#" download="speaker-4-practice.webm">Download Speaker 4 recording</a>
 
-      <p>Special Olympics BC is also connected to inclusion in schools.</p>
+      <p>As future Education Assistants, we need to know about Special Olympics BC because EAs often support students who face barriers in school.</p>
 
-      <p>Inclusion does not mean a student is simply placed in the same classroom or gym. Real inclusion means the student participates, learns, makes choices, builds friendships, and feels valued.</p>
+      <p>An EA may support a student in gym class, recess, field trips, clubs, classroom group work, or social activities. Sometimes students want to join, but they may feel nervous, confused, or left out.</p>
 
-      <p>Special Olympics BC has youth programs that support children and teenagers. Programs such as Active Start and FUNdamentals help younger children develop movement skills, sport skills, and social skills.</p>
+      <p>An EA can help by breaking instructions into smaller steps, using visuals, modelling a skill, encouraging peer support, or helping the student manage anxiety.</p>
 
-      <p>Unified Sports is especially important for schools because it brings students with and without intellectual disabilities together on the same team.</p>
+      <p>The EA’s role is not to do everything for the student. The goal is to support independence, confidence, participation, and belonging.</p>
 
-      <p>This is a strong example of inclusion. Students are not separated into “helpers” and “people who need help.” Instead, everyone participates together. They learn teamwork, patience, communication, and respect.</p>
+      <p>Special Olympics BC also gives EAs a community resource to share with teachers and families. It shows that sport can be used to build friendship, leadership, health, and self-esteem.</p>
 
-      <p>In schools, sports can sometimes create exclusion. Some students may be picked last, left out, or asked to watch instead of play. But inclusive sports can change this.</p>
+      <p>Most importantly, it reminds us that inclusion is active. We need to create real chances for students to join, not just say they are welcome.</p>
 
-      <p>For example, a teacher or EA can adapt a game by slowing the pace, using a bigger ball, giving visual instructions, creating partner roles, or focusing on teamwork instead of only winning.</p>
-
-      <p>Special Olympics BC reminds us that inclusion must be active. We need to create real chances for students to join, not just say they are welcome.</p>
-
-      <div class="cue">Slide cue: show students playing on one team together.</div>
+      <div class="transition">Now Speaker 5 will summarize our presentation and lead a short class activity.</div>
+      <div class="cue">Slide cue: EA support should build independence, confidence, participation, and belonging.</div>
     </section>
 
     <section id="speaker5" class="speaker">
-      <h2>Speaker 5 — Why EAs Need to Know + Class Activity + Closing</h2>
-      <span class="time">Suggested time: 2–2.5 minutes</span>
+      <h2>Speaker 5 — Part 4: Summary and Class Activity</h2>
+      <span class="time">Suggested time: about 2 minutes</span>
       <div class="model-audio-wrap">
         <strong>Listen to model audio</strong>
         <audio class="model-audio" data-speaker="speaker5" controls preload="metadata" src="audio/special-olympics-bc-speaker-5.mp3"></audio>
@@ -534,33 +556,36 @@
       <audio class="record-playback hidden" id="speaker5Audio" controls></audio>
       <a class="record-download hidden" id="speaker5Download" href="#" download="speaker-5-practice.webm">Download Speaker 5 recording</a>
 
-      <p>As future Education Assistants, we need to know about Special Olympics BC because EAs often support students who face barriers in school.</p>
+      <p>To summarize, Special Olympics BC began from a simple but powerful idea: people with intellectual disabilities need opportunity, support, and respect.</p>
 
-      <p>An EA may support a student in gym class, recess, field trips, clubs, classroom group work, or social activities. The EA might help by breaking instructions into smaller steps, using visuals, modelling a skill, encouraging peer support, or helping the student manage anxiety.</p>
+      <p>The movement grew from Dr. Frank Hayden’s research in Toronto, the first Special Olympics event in 1968, the first Canadian event in 1969, and the beginning of Special Olympics BC in 1980.</p>
 
-      <p>Special Olympics BC reminds us that our job is not to do everything for the student. Our job is to support independence, confidence, participation, and belonging.</p>
+      <p>Special Olympics BC contributes to rights by removing barriers and changing public attitudes. It helps children and adults with intellectual disabilities participate in sports, build friendships, and be seen for their abilities.</p>
 
-      <p>Sometimes the most important support is helping classmates understand how to include someone respectfully.</p>
+      <p>It also connects strongly to schools because inclusion means real participation, not just being present.</p>
 
       <div class="activity">
-        <p><strong>Class Activity: Barrier or Inclusion?</strong></p>
-        <p>Now we have a short activity for the class. We will read three examples. Please decide if each one shows a <strong>barrier</strong> or <strong>inclusion</strong>.</p>
+        <h3>Short Class Activity</h3>
+        <p>Now we have a short class activity. We will read three examples. Please decide if each one shows a barrier, inclusion, or segregation.</p>
 
-        <p><strong>Example one:</strong> A student watches gym class from the side because the game is too fast.<br>
-        Answer: This is a barrier.</p>
+        <div class="example-card">
+          <p><strong>Example one:</strong> A student watches gym class from the side because the game is too fast.</p>
+          <p class="answer">This is a barrier.</p>
+        </div>
 
-        <p><strong>Example two:</strong> The teacher changes the rules so every student has a role on the team.<br>
-        Answer: This is inclusion.</p>
+        <div class="example-card">
+          <p><strong>Example two:</strong> The teacher changes the rules so every student has a role on the team.</p>
+          <p class="answer">This is inclusion.</p>
+        </div>
 
-        <p><strong>Example three:</strong> Students with disabilities play only in a separate room and never join classmates.<br>
-        Answer: This is segregation, not full inclusion.</p>
+        <div class="example-card">
+          <p><strong>Example three:</strong> Students with disabilities play only in a separate room and never join classmates.</p>
+          <p class="answer">This is segregation, not full inclusion.</p>
+        </div>
       </div>
 
-      <p>To close, Special Olympics BC teaches us that people with intellectual disabilities need opportunity, support, and respect. Inclusion is not passive. It is something we create through our choices, our attitudes, and our actions.</p>
-
       <div class="big-message">Opportunity + Support = Inclusion</div>
-
-      <div class="cue">Closing cue: all speakers can say one word: belonging, respect, friendship, opportunity, inclusion.</div>
+      <div class="cue">Slide cue: End with the final message and invite classmates to answer the activity examples.</div>
     </section>
   </main>
 
@@ -847,9 +872,10 @@
 
     function setRecordButtonState(speakerId, isRecording) {
       const button = document.querySelector(`.record-btn[data-speaker="${speakerId}"]`);
+      const label = speakerId.replace('speaker', 'Speaker ');
       button.classList.toggle('recording', isRecording);
       button.querySelector('span:last-child').textContent = isRecording ? 'Stop' : 'Record';
-      button.setAttribute('aria-label', `${isRecording ? 'Stop recording' : 'Record'} ${speakerId.replace('speaker', 'Speaker ')}`);
+      button.setAttribute('aria-label', `${isRecording ? 'Stop recording' : 'Record'} ${label}`);
     }
 
     async function toggleRecording(speakerId) {
