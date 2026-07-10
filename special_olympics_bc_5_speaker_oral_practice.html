@@ -305,6 +305,26 @@
       display: none !important;
     }
 
+    body.script-only .practice-box,
+    body.script-only .model-audio-wrap,
+    body.script-only .speaker-tools,
+    body.script-only .record-playback,
+    body.script-only .record-download,
+    body.script-only .time,
+    body.script-only .cue,
+    body.script-only .activity,
+    body.script-only .big-message,
+    body.script-only .practice-control,
+    body.script-only footer {
+      display: none !important;
+    }
+
+    body.script-only .speaker {
+      padding: 18px 22px;
+      margin: 16px 0;
+      box-shadow: none;
+    }
+
     .progress-wrap {
       width: 180px;
       height: 12px;
@@ -368,12 +388,13 @@
   </header>
 
   <nav class="toolbar">
-    <button class="primary" onclick="startTimer()">Start 10-Min Timer</button>
-    <button onclick="pauseTimer()">Pause</button>
-    <button onclick="resetTimer()">Reset</button>
-    <button id="playAllModelButton" onclick="playAllModelAudio()" aria-pressed="false">Play All Model Audio</button>
-    <span class="timer" id="timer">10:00</span>
-    <div class="progress-wrap" aria-label="timer progress">
+    <button class="primary practice-control" onclick="startTimer()">Start 10-Min Timer</button>
+    <button class="practice-control" onclick="pauseTimer()">Pause</button>
+    <button class="practice-control" onclick="resetTimer()">Reset</button>
+    <button class="practice-control" id="playAllModelButton" onclick="playAllModelAudio()" aria-pressed="false">Play All Model Audio</button>
+    <button id="scriptOnlyButton" onclick="toggleScriptOnly()" aria-pressed="false">Script Only</button>
+    <span class="timer practice-control" id="timer">10:00</span>
+    <div class="progress-wrap practice-control" aria-label="timer progress">
       <div class="progress-bar" id="progress"></div>
     </div>
 
@@ -478,7 +499,7 @@
       <span class="time">Suggested time: about 2 minutes</span>
       <div class="model-audio-wrap">
         <strong>Listen to model audio</strong>
-        <audio class="model-audio" data-speaker="speaker3" controls preload="metadata" src="audio/special-olympics-bc-speaker-3.mp3"></audio>
+        <audio class="model-audio" data-speaker="speaker3" controls preload="metadata" src="audio/special-olympics-bc-speaker-3.mp3?v=e3f4ea03"></audio>
       </div>
       <div class="speaker-tools">
         <button class="record-btn" type="button" data-speaker="speaker3" onclick="toggleRecording('speaker3')" aria-label="Record Speaker 3">
@@ -519,7 +540,7 @@
       <span class="time">Suggested time: about 2 minutes</span>
       <div class="model-audio-wrap">
         <strong>Listen to model audio</strong>
-        <audio class="model-audio" data-speaker="speaker4" controls preload="metadata" src="audio/special-olympics-bc-speaker-4.mp3"></audio>
+        <audio class="model-audio" data-speaker="speaker4" controls preload="metadata" src="audio/special-olympics-bc-speaker-4.mp3?v=b7a21c1b"></audio>
       </div>
       <div class="speaker-tools">
         <button class="record-btn" type="button" data-speaker="speaker4" onclick="toggleRecording('speaker4')" aria-label="Record Speaker 4">
@@ -609,7 +630,7 @@
     Practice page for group oral presentation — Special Olympics BC
   </footer>
 
-  <script src="audio/special-olympics-bc-sentences.js"></script>
+  <script src="audio/special-olympics-bc-sentences.js?v=20260709-183632"></script>
   <script>
     let baseFont = 18;
     let totalSeconds = 10 * 60;
@@ -658,6 +679,13 @@
     function changeFont(delta) {
       baseFont = Math.max(14, Math.min(28, baseFont + delta));
       document.body.style.fontSize = baseFont + 'px';
+    }
+
+    function toggleScriptOnly() {
+      const enabled = document.body.classList.toggle('script-only');
+      const button = document.getElementById('scriptOnlyButton');
+      button.textContent = enabled ? 'Show All Parts' : 'Script Only';
+      button.setAttribute('aria-pressed', String(enabled));
     }
 
     function filterSpeaker() {
