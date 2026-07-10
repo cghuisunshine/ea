@@ -140,111 +140,231 @@ window.modelSentenceTimings = {
   ],
   "speaker3": [
     {
-      "text": "Special Olympics BC is connected to inclusion in schools because both focus on belonging and participation.",
+      "text": "First, we can see the idea moving from just present, to participating, and finally to belonging.",
       "start": 0.1,
-      "end": 6.125
+      "end": 5.2125
     },
     {
-      "text": "Inclusion does not mean a student is simply placed in the same classroom or gym.",
-      "start": 7.075,
-      "end": 11.3
+      "text": "Being just present means the student is in the same classroom or gym, but may not really be involved.",
+      "start": 6.1375,
+      "end": 11.275
     },
     {
-      "text": "Real inclusion means the student participates, learns, makes choices, builds friendships, and feels valued.",
-      "start": 12.2375,
-      "end": 17.85
+      "text": "They may only watch, wait, or feel left out.",
+      "start": 12.2625,
+      "end": 15
     },
     {
-      "text": "Special Olympics BC has youth programs that support children and teenagers with intellectual disabilities.",
-      "start": 18.825,
-      "end": 24.6625
+      "text": "The next step is participating.",
+      "start": 16.0125,
+      "end": 17.8375
     },
     {
-      "text": "Programs such as Active Start and FUNdamentals help children develop movement skills, sport skills, social skills, and confidence.",
-      "start": 25.6125,
-      "end": 32.925
+      "text": "This means the student is doing the activity, making choices, practising skills, and joining with others.",
+      "start": 18.8,
+      "end": 24.2875
     },
     {
-      "text": "Unified Sports is especially important for schools.",
-      "start": 33.925,
-      "end": 36.85
+      "text": "The final goal is belonging.",
+      "start": 25.3,
+      "end": 26.825
     },
     {
-      "text": "It brings students with and without intellectual disabilities together on the same team.",
-      "start": 37.8125,
-      "end": 42.2875
+      "text": "Belonging means the student feels accepted, valued, and part of the group.",
+      "start": 27.8,
+      "end": 31.5125
     },
     {
-      "text": "They train together, play together, and learn from each other.",
-      "start": 43.225,
-      "end": 46.2875
+      "text": "Special Olympics BC connects to inclusion in several ways.",
+      "start": 32.4875,
+      "end": 35.9875
     },
     {
-      "text": "This is a strong example of inclusion because students are not separated into “helpers” and “people who need help.”",
-      "start": 47.2375,
-      "end": 53.0375
+      "text": "First, there are youth programs.",
+      "start": 36.9875,
+      "end": 38.6875
     },
     {
-      "text": "Everyone participates as teammates.",
-      "start": 54,
-      "end": 56.0125
+      "text": "Programs like Active Start and FUNdamentals help children develop movement skills, sport skills, social skills, and confidence.",
+      "start": 39.7375,
+      "end": 46.8625
     },
     {
-      "text": "For example, in gym class, a teacher or EA can slow the pace of a game, use a bigger ball, give visual instructions, create partner roles, or focus on teamwork instead of only winning.",
-      "start": 57.0625,
-      "end": 67.95
+      "text": "Second, there is Unified Sports.",
+      "start": 47.8625,
+      "end": 49.7375
+    },
+    {
+      "text": "In Unified Sports, students with and without intellectual disabilities train and compete on the same team.",
+      "start": 50.8,
+      "end": 56.85
+    },
+    {
+      "text": "This is very important because it changes “helping” into teamwork.",
+      "start": 57.7875,
+      "end": 61.25
+    },
+    {
+      "text": "Students are not separated into “helpers” and “students who need help.”",
+      "start": 62.275,
+      "end": 65.95
+    },
+    {
+      "text": "Instead, everyone has a role, and everyone participates as teammates.",
+      "start": 66.925,
+      "end": 71.2125
+    },
+    {
+      "text": "Third, Special Olympics BC also gives ideas for inclusive gym activities.",
+      "start": 72.2375,
+      "end": 76.925
+    },
+    {
+      "text": "For example, a teacher or EA can use a bigger ball, slow down the pace, create partner roles, give visual instructions, and focus on teamwork goals.",
+      "start": 77.8875,
+      "end": 86.5625
+    },
+    {
+      "text": "So, real inclusion is not only about being in the same place.",
+      "start": 87.5,
+      "end": 90.9125
+    },
+    {
+      "text": "Real inclusion means students participate, build friendships, and feel that they belong.",
+      "start": 91.8875,
+      "end": 96.35
     }
   ],
   "speaker4": [
     {
-      "text": "As future Education Assistants, we need to know about Special Olympics BC because EAs often support students who face barriers in school.",
+      "text": "First, an EA can break steps down.",
       "start": 0.1,
-      "end": 7.95
+      "end": 2.4
     },
     {
-      "text": "An EA may support a student in gym class, recess, field trips, clubs, classroom group work, or social activities.",
-      "start": 8.9,
-      "end": 15.9375
+      "text": "SOBC has ready-made lesson plans that already divide sport skills into short, clear steps.",
+      "start": 3.375,
+      "end": 8.725
     },
     {
-      "text": "Sometimes students want to join, but they may feel nervous, confused, or left out.",
-      "start": 16.9,
-      "end": 21.475
+      "text": "This helps students understand one part at a time.",
+      "start": 9.7125,
+      "end": 12.6625
     },
     {
-      "text": "An EA can help by breaking instructions into smaller steps, using visuals, modelling a skill, encouraging peer support, or helping the student manage anxiety.",
-      "start": 22.475,
-      "end": 31.9125
+      "text": "Second, an EA can use visuals.",
+      "start": 13.5875,
+      "end": 15.7125
     },
     {
-      "text": "The EA’s role is not to do everything for the student.",
+      "text": "The EA can use demonstrations, pictures, gestures, and activity guides from SOBC FUNdamentals to help students see what they need to do.",
+      "start": 16.6875,
+      "end": 24.675
+    },
+    {
+      "text": "Third, an EA can model skills.",
+      "start": 25.675,
+      "end": 27.7375
+    },
+    {
+      "text": "In Unified Sports, everyone should have a meaningful role.",
+      "start": 28.725,
+      "end": 31.9625
+    },
+    {
+      "text": "The EA can model how to take turns, join a team, follow rules, and participate respectfully.",
       "start": 32.9125,
-      "end": 35.825
+      "end": 38.55
     },
     {
-      "text": "The goal is to support independence, confidence, participation, and belonging.",
-      "start": 36.85,
-      "end": 41.0125
+      "text": "Fourth, an EA can build peer support.",
+      "start": 39.55,
+      "end": 41.7875
     },
     {
-      "text": "Special Olympics BC also gives EAs a community resource to share with teachers and families.",
-      "start": 41.95,
-      "end": 47.575
+      "text": "SOBC Unified Sports pairs students with and without intellectual disabilities as teammates.",
+      "start": 42.8,
+      "end": 48.375
     },
     {
-      "text": "It shows that sport can be used to build friendship, leadership, health, and self-esteem.",
-      "start": 48.5375,
-      "end": 53.1375
+      "text": "They train and compete together, just like any other school team.",
+      "start": 49.4125,
+      "end": 52.8125
     },
     {
-      "text": "Most importantly, it reminds us that inclusion is active.",
-      "start": 54.0625,
-      "end": 57.2125
+      "text": "Fifth, an EA can adapt activities.",
+      "start": 53.75,
+      "end": 56.0125
     },
     {
-      "text": "We need to create real chances for students to join, not just say they are welcome.",
-      "start": 58.175,
-      "end": 62.5875
+      "text": "SOBC uses a divisioning approach.",
+      "start": 57,
+      "end": 59.375
+    },
+    {
+      "text": "This means students can be grouped by ability, so every student can compete and participate at a fair level.",
+      "start": 60.4,
+      "end": 66.15
+    },
+    {
+      "text": "There are also specific SOBC resources for EAs.",
+      "start": 67.0875,
+      "end": 70.65
+    },
+    {
+      "text": "For younger children, Active Start, for ages 2 to 6, and FUNdamentals, for ages 7 to 11, support motor skills and sport skills.",
+      "start": 71.625,
+      "end": 79.7625
+    },
+    {
+      "text": "These programs can be used in communities and schools.",
+      "start": 80.7125,
+      "end": 83.65
+    },
+    {
+      "text": "For older students, Unified Sports, for ages 12 to 18, provides lesson plans for sports such as 3-on-3 basketball, soccer, and floorball.",
+      "start": 84.6125,
+      "end": 93.8625
+    },
+    {
+      "text": "Students practise and compete together as part of a team.",
+      "start": 94.825,
+      "end": 97.825
+    },
+    {
+      "text": "To access these resources, EAs can visit the Special Olympics BC website, especially the Youth Programs and School Sport pages.",
+      "start": 98.75,
+      "end": 106.6
+    },
+    {
+      "text": "They can also ask the school or district about registering as a Unified Champion School or joining a school sport program.",
+      "start": 107.5625,
+      "end": 114.275
+    },
+    {
+      "text": "For example, a student with a disability may feel nervous in gym class.",
+      "start": 115.2,
+      "end": 119.275
+    },
+    {
+      "text": "The EA can download a FUNdamentals lesson plan, preview the rules, break down the skill, model the first turn, and then pair the student with a peer.",
+      "start": 120.275,
+      "end": 128.2875
+    },
+    {
+      "text": "This shows that inclusion is active.",
+      "start": 129.2625,
+      "end": 131.2125
+    },
+    {
+      "text": "An excellent EA does not just tell students they are welcome.",
+      "start": 132.1875,
+      "end": 135.45
+    },
+    {
+      "text": "An excellent EA plans, supports, adapts, and creates real chances for students to participate.",
+      "start": 136.3875,
+      "end": 141.875
     }
   ],
   "speaker5": [

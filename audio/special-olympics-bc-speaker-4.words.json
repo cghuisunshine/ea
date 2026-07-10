@@ -1,1239 +1,2671 @@
 {
-  "text": "As future Education Assistants, we need to know about Special Olympics BC because EAs often support students who face barriers in school.\n\nAn EA may support a student in gym class, recess, field trips, clubs, classroom group work, or social activities. Sometimes students want to join, but they may feel nervous, confused, or left out.\n\nAn EA can help by breaking instructions into smaller steps, using visuals, modelling a skill, encouraging peer support, or helping the student manage anxiety.\n\nThe EA’s role is not to do everything for the student. The goal is to support independence, confidence, participation, and belonging.\n\nSpecial Olympics BC also gives EAs a community resource to share with teachers and families. It shows that sport can be used to build friendship, leadership, health, and self-esteem.\n\nMost importantly, it reminds us that inclusion is active. We need to create real chances for students to join, not just say they are welcome.\n",
+  "text": "First, an EA can break steps down. SOBC has ready-made lesson plans that already divide sport skills into short, clear steps. This helps students understand one part at a time.\n\nSecond, an EA can use visuals. The EA can use demonstrations, pictures, gestures, and activity guides from SOBC FUNdamentals to help students see what they need to do.\n\nThird, an EA can model skills. In Unified Sports, everyone should have a meaningful role. The EA can model how to take turns, join a team, follow rules, and participate respectfully.\n\nFourth, an EA can build peer support. SOBC Unified Sports pairs students with and without intellectual disabilities as teammates. They train and compete together, just like any other school team.\n\nFifth, an EA can adapt activities. SOBC uses a divisioning approach. This means students can be grouped by ability, so every student can compete and participate at a fair level.\n\nThere are also specific SOBC resources for EAs. For younger children, Active Start, for ages 2 to 6, and FUNdamentals, for ages 7 to 11, support motor skills and sport skills. These programs can be used in communities and schools.\n\nFor older students, Unified Sports, for ages 12 to 18, provides lesson plans for sports such as 3-on-3 basketball, soccer, and floorball. Students practise and compete together as part of a team.\n\nTo access these resources, EAs can visit the Special Olympics BC website, especially the Youth Programs and School Sport pages. They can also ask the school or district about registering as a Unified Champion School or joining a school sport program.\n\nFor example, a student with a disability may feel nervous in gym class. The EA can download a FUNdamentals lesson plan, preview the rules, break down the skill, model the first turn, and then pair the student with a peer.\n\nThis shows that inclusion is active. An excellent EA does not just tell students they are welcome. An excellent EA plans, supports, adapts, and creates real chances for students to participate.\n",
   "voice": "en-CA-ClaraNeural",
   "audio": "special-olympics-bc-speaker-4.mp3",
   "words": [
     {
-      "text": "As",
+      "text": "First",
       "start": 0.1,
-      "end": 0.275,
-      "duration": 0.175,
+      "end": 0.5125,
+      "duration": 0.4125,
       "start_char": 0,
-      "end_char": 2
+      "end_char": 5
     },
     {
-      "text": "future",
-      "start": 0.2875,
-      "end": 0.6875,
-      "duration": 0.4,
-      "start_char": 3,
+      "text": "an",
+      "start": 0.6,
+      "end": 0.7125,
+      "duration": 0.1125,
+      "start_char": 7,
       "end_char": 9
     },
     {
-      "text": "Education",
-      "start": 0.7,
-      "end": 1.325,
-      "duration": 0.625,
+      "text": "EA",
+      "start": 0.7375,
+      "end": 1.1,
+      "duration": 0.3625,
       "start_char": 10,
-      "end_char": 19
+      "end_char": 12
     },
     {
-      "text": "Assistants",
-      "start": 1.325,
-      "end": 1.8875,
-      "duration": 0.5625,
-      "start_char": 20,
-      "end_char": 30
+      "text": "can",
+      "start": 1.175,
+      "end": 1.3375,
+      "duration": 0.1625,
+      "start_char": 13,
+      "end_char": 16
     },
     {
-      "text": "we",
-      "start": 2.2125,
-      "end": 2.3,
-      "duration": 0.0875,
-      "start_char": 32,
-      "end_char": 34
+      "text": "break",
+      "start": 1.3375,
+      "end": 1.6125,
+      "duration": 0.275,
+      "start_char": 17,
+      "end_char": 22
     },
     {
-      "text": "need",
-      "start": 2.3,
-      "end": 2.525,
-      "duration": 0.225,
+      "text": "steps",
+      "start": 1.625,
+      "end": 2.0125,
+      "duration": 0.3875,
+      "start_char": 23,
+      "end_char": 28
+    },
+    {
+      "text": "down",
+      "start": 2.0125,
+      "end": 2.4,
+      "duration": 0.3875,
+      "start_char": 29,
+      "end_char": 33
+    },
+    {
+      "text": "SOBC",
+      "start": 3.375,
+      "end": 4.1125,
+      "duration": 0.7375,
       "start_char": 35,
       "end_char": 39
     },
     {
-      "text": "to",
-      "start": 2.525,
-      "end": 2.6125,
-      "duration": 0.0875,
+      "text": "has",
+      "start": 4.1875,
+      "end": 4.4,
+      "duration": 0.2125,
       "start_char": 40,
-      "end_char": 42
+      "end_char": 43
     },
     {
-      "text": "know",
-      "start": 2.6125,
-      "end": 2.7875,
-      "duration": 0.175,
-      "start_char": 43,
-      "end_char": 47
+      "text": "ready-made",
+      "start": 4.4,
+      "end": 4.9125,
+      "duration": 0.5125,
+      "start_char": 44,
+      "end_char": 54
     },
     {
-      "text": "about",
-      "start": 2.875,
-      "end": 3.1125,
-      "duration": 0.2375,
-      "start_char": 48,
-      "end_char": 53
-    },
-    {
-      "text": "Special",
-      "start": 3.1125,
-      "end": 3.5125,
-      "duration": 0.4,
-      "start_char": 54,
+      "text": "lesson",
+      "start": 4.9125,
+      "end": 5.2375,
+      "duration": 0.325,
+      "start_char": 55,
       "end_char": 61
     },
     {
-      "text": "Olympics",
-      "start": 3.5125,
-      "end": 4.0125,
-      "duration": 0.5,
-      "start_char": 62,
-      "end_char": 70
-    },
-    {
-      "text": "BC",
-      "start": 4.025,
-      "end": 4.4375,
-      "duration": 0.4125,
-      "start_char": 71,
-      "end_char": 73
-    },
-    {
-      "text": "because",
-      "start": 4.675,
-      "end": 5.025,
-      "duration": 0.35,
-      "start_char": 74,
-      "end_char": 81
-    },
-    {
-      "text": "EAs",
-      "start": 5.0375,
-      "end": 5.45,
-      "duration": 0.4125,
-      "start_char": 82,
-      "end_char": 85
-    },
-    {
-      "text": "often",
-      "start": 5.45,
-      "end": 5.7875,
-      "duration": 0.3375,
-      "start_char": 86,
-      "end_char": 91
-    },
-    {
-      "text": "support",
-      "start": 5.7875,
-      "end": 6.1625,
-      "duration": 0.375,
-      "start_char": 92,
-      "end_char": 99
-    },
-    {
-      "text": "students",
-      "start": 6.1625,
-      "end": 6.6,
-      "duration": 0.4375,
-      "start_char": 100,
-      "end_char": 108
-    },
-    {
-      "text": "who",
-      "start": 6.6125,
-      "end": 6.7125,
-      "duration": 0.1,
-      "start_char": 109,
-      "end_char": 112
-    },
-    {
-      "text": "face",
-      "start": 6.7125,
-      "end": 7.0,
-      "duration": 0.2875,
-      "start_char": 113,
-      "end_char": 117
-    },
-    {
-      "text": "barriers",
-      "start": 7.0,
-      "end": 7.45,
-      "duration": 0.45,
-      "start_char": 118,
-      "end_char": 126
-    },
-    {
-      "text": "in",
-      "start": 7.45,
-      "end": 7.5625,
-      "duration": 0.1125,
-      "start_char": 127,
-      "end_char": 129
-    },
-    {
-      "text": "school",
-      "start": 7.5625,
-      "end": 7.95,
+      "text": "plans",
+      "start": 5.25,
+      "end": 5.6375,
       "duration": 0.3875,
-      "start_char": 130,
+      "start_char": 62,
+      "end_char": 67
+    },
+    {
+      "text": "that",
+      "start": 5.6625,
+      "end": 5.7875,
+      "duration": 0.125,
+      "start_char": 68,
+      "end_char": 72
+    },
+    {
+      "text": "already",
+      "start": 5.7875,
+      "end": 6.175,
+      "duration": 0.3875,
+      "start_char": 73,
+      "end_char": 80
+    },
+    {
+      "text": "divide",
+      "start": 6.1875,
+      "end": 6.5875,
+      "duration": 0.4,
+      "start_char": 81,
+      "end_char": 87
+    },
+    {
+      "text": "sport",
+      "start": 6.5875,
+      "end": 6.9,
+      "duration": 0.3125,
+      "start_char": 88,
+      "end_char": 93
+    },
+    {
+      "text": "skills",
+      "start": 6.9,
+      "end": 7.2875,
+      "duration": 0.3875,
+      "start_char": 94,
+      "end_char": 100
+    },
+    {
+      "text": "into",
+      "start": 7.2875,
+      "end": 7.4625,
+      "duration": 0.175,
+      "start_char": 101,
+      "end_char": 105
+    },
+    {
+      "text": "short",
+      "start": 7.4625,
+      "end": 7.8,
+      "duration": 0.3375,
+      "start_char": 106,
+      "end_char": 111
+    },
+    {
+      "text": "clear",
+      "start": 7.975,
+      "end": 8.2375,
+      "duration": 0.2625,
+      "start_char": 113,
+      "end_char": 118
+    },
+    {
+      "text": "steps",
+      "start": 8.2375,
+      "end": 8.725,
+      "duration": 0.4875,
+      "start_char": 119,
+      "end_char": 124
+    },
+    {
+      "text": "This",
+      "start": 9.7125,
+      "end": 10.0,
+      "duration": 0.2875,
+      "start_char": 126,
+      "end_char": 130
+    },
+    {
+      "text": "helps",
+      "start": 10.0,
+      "end": 10.3125,
+      "duration": 0.3125,
+      "start_char": 131,
       "end_char": 136
     },
     {
-      "text": "An",
-      "start": 8.9,
-      "end": 9.025,
-      "duration": 0.125,
-      "start_char": 139,
-      "end_char": 141
+      "text": "students",
+      "start": 10.3125,
+      "end": 10.7625,
+      "duration": 0.45,
+      "start_char": 137,
+      "end_char": 145
     },
     {
-      "text": "EA",
-      "start": 9.0625,
-      "end": 9.425,
-      "duration": 0.3625,
-      "start_char": 142,
-      "end_char": 144
-    },
-    {
-      "text": "may",
-      "start": 9.475,
-      "end": 9.65,
-      "duration": 0.175,
-      "start_char": 145,
-      "end_char": 148
-    },
-    {
-      "text": "support",
-      "start": 9.6625,
-      "end": 10.0875,
-      "duration": 0.425,
-      "start_char": 149,
+      "text": "understand",
+      "start": 10.775,
+      "end": 11.425,
+      "duration": 0.65,
+      "start_char": 146,
       "end_char": 156
     },
     {
-      "text": "a",
-      "start": 10.0875,
-      "end": 10.1375,
-      "duration": 0.05,
+      "text": "one",
+      "start": 11.425,
+      "end": 11.65,
+      "duration": 0.225,
       "start_char": 157,
-      "end_char": 158
+      "end_char": 160
     },
     {
-      "text": "student",
-      "start": 10.1375,
-      "end": 10.5375,
-      "duration": 0.4,
-      "start_char": 159,
-      "end_char": 166
+      "text": "part",
+      "start": 11.6625,
+      "end": 11.9875,
+      "duration": 0.325,
+      "start_char": 161,
+      "end_char": 165
     },
     {
-      "text": "in",
-      "start": 10.5375,
-      "end": 10.65,
+      "text": "at",
+      "start": 12.0375,
+      "end": 12.1625,
+      "duration": 0.125,
+      "start_char": 166,
+      "end_char": 168
+    },
+    {
+      "text": "a",
+      "start": 12.1625,
+      "end": 12.2125,
+      "duration": 0.05,
+      "start_char": 169,
+      "end_char": 170
+    },
+    {
+      "text": "time",
+      "start": 12.2125,
+      "end": 12.6625,
+      "duration": 0.45,
+      "start_char": 171,
+      "end_char": 175
+    },
+    {
+      "text": "Second",
+      "start": 13.5875,
+      "end": 14.075,
+      "duration": 0.4875,
+      "start_char": 178,
+      "end_char": 184
+    },
+    {
+      "text": "an",
+      "start": 14.15,
+      "end": 14.2625,
       "duration": 0.1125,
-      "start_char": 167,
-      "end_char": 169
+      "start_char": 186,
+      "end_char": 188
     },
     {
-      "text": "gym",
-      "start": 10.65,
-      "end": 10.9125,
-      "duration": 0.2625,
-      "start_char": 170,
-      "end_char": 173
-    },
-    {
-      "text": "class",
-      "start": 10.925,
-      "end": 11.3625,
-      "duration": 0.4375,
-      "start_char": 174,
-      "end_char": 179
-    },
-    {
-      "text": "recess",
-      "start": 11.5375,
-      "end": 12.1125,
-      "duration": 0.575,
-      "start_char": 181,
-      "end_char": 187
-    },
-    {
-      "text": "field",
-      "start": 12.2375,
-      "end": 12.5875,
-      "duration": 0.35,
+      "text": "EA",
+      "start": 14.2875,
+      "end": 14.65,
+      "duration": 0.3625,
       "start_char": 189,
-      "end_char": 194
+      "end_char": 191
     },
     {
-      "text": "trips",
-      "start": 12.5875,
-      "end": 13.0,
-      "duration": 0.4125,
-      "start_char": 195,
-      "end_char": 200
+      "text": "can",
+      "start": 14.725,
+      "end": 14.8875,
+      "duration": 0.1625,
+      "start_char": 192,
+      "end_char": 195
     },
     {
-      "text": "clubs",
-      "start": 13.2125,
-      "end": 13.6125,
-      "duration": 0.4,
-      "start_char": 202,
+      "text": "use",
+      "start": 14.8875,
+      "end": 15.125,
+      "duration": 0.2375,
+      "start_char": 196,
+      "end_char": 199
+    },
+    {
+      "text": "visuals",
+      "start": 15.125,
+      "end": 15.7125,
+      "duration": 0.5875,
+      "start_char": 200,
       "end_char": 207
     },
     {
-      "text": "classroom",
-      "start": 13.775,
-      "end": 14.2125,
-      "duration": 0.4375,
+      "text": "The",
+      "start": 16.6875,
+      "end": 16.85,
+      "duration": 0.1625,
       "start_char": 209,
-      "end_char": 218
+      "end_char": 212
     },
     {
-      "text": "group",
-      "start": 14.2125,
-      "end": 14.4375,
-      "duration": 0.225,
-      "start_char": 219,
-      "end_char": 224
-    },
-    {
-      "text": "work",
-      "start": 14.4375,
-      "end": 14.725,
-      "duration": 0.2875,
-      "start_char": 225,
-      "end_char": 229
-    },
-    {
-      "text": "or",
-      "start": 14.8875,
-      "end": 14.9875,
-      "duration": 0.1,
-      "start_char": 231,
-      "end_char": 233
-    },
-    {
-      "text": "social",
-      "start": 14.9875,
-      "end": 15.325,
-      "duration": 0.3375,
-      "start_char": 234,
-      "end_char": 240
-    },
-    {
-      "text": "activities",
-      "start": 15.325,
-      "end": 15.9375,
-      "duration": 0.6125,
-      "start_char": 241,
-      "end_char": 251
-    },
-    {
-      "text": "Sometimes",
+      "text": "EA",
       "start": 16.9,
-      "end": 17.475,
-      "duration": 0.575,
-      "start_char": 253,
-      "end_char": 262
+      "end": 17.25,
+      "duration": 0.35,
+      "start_char": 213,
+      "end_char": 215
     },
     {
-      "text": "students",
-      "start": 17.475,
-      "end": 17.9,
-      "duration": 0.425,
-      "start_char": 263,
-      "end_char": 271
+      "text": "can",
+      "start": 17.3125,
+      "end": 17.4625,
+      "duration": 0.15,
+      "start_char": 216,
+      "end_char": 219
     },
     {
-      "text": "want",
-      "start": 17.9,
-      "end": 18.125,
-      "duration": 0.225,
-      "start_char": 272,
-      "end_char": 276
+      "text": "use",
+      "start": 17.4625,
+      "end": 17.675,
+      "duration": 0.2125,
+      "start_char": 220,
+      "end_char": 223
     },
     {
-      "text": "to",
-      "start": 18.125,
-      "end": 18.225,
-      "duration": 0.1,
-      "start_char": 277,
+      "text": "demonstrations",
+      "start": 17.675,
+      "end": 18.5375,
+      "duration": 0.8625,
+      "start_char": 224,
+      "end_char": 238
+    },
+    {
+      "text": "pictures",
+      "start": 18.75,
+      "end": 19.225,
+      "duration": 0.475,
+      "start_char": 240,
+      "end_char": 248
+    },
+    {
+      "text": "gestures",
+      "start": 19.425,
+      "end": 20.025,
+      "duration": 0.6,
+      "start_char": 250,
+      "end_char": 258
+    },
+    {
+      "text": "and",
+      "start": 20.275,
+      "end": 20.3875,
+      "duration": 0.1125,
+      "start_char": 260,
+      "end_char": 263
+    },
+    {
+      "text": "activity",
+      "start": 20.3875,
+      "end": 20.825,
+      "duration": 0.4375,
+      "start_char": 264,
+      "end_char": 272
+    },
+    {
+      "text": "guides",
+      "start": 20.8375,
+      "end": 21.175,
+      "duration": 0.3375,
+      "start_char": 273,
       "end_char": 279
     },
     {
-      "text": "join",
-      "start": 18.225,
-      "end": 18.625,
-      "duration": 0.4,
+      "text": "from",
+      "start": 21.175,
+      "end": 21.35,
+      "duration": 0.175,
       "start_char": 280,
       "end_char": 284
     },
     {
-      "text": "but",
-      "start": 18.925,
-      "end": 19.0125,
-      "duration": 0.0875,
-      "start_char": 286,
+      "text": "SOBC",
+      "start": 21.3625,
+      "end": 22.05,
+      "duration": 0.6875,
+      "start_char": 285,
       "end_char": 289
     },
     {
-      "text": "they",
-      "start": 19.0125,
-      "end": 19.125,
-      "duration": 0.1125,
+      "text": "FUNdamentals",
+      "start": 22.0875,
+      "end": 22.7625,
+      "duration": 0.675,
       "start_char": 290,
-      "end_char": 294
+      "end_char": 302
     },
     {
-      "text": "may",
-      "start": 19.125,
-      "end": 19.2625,
-      "duration": 0.1375,
-      "start_char": 295,
-      "end_char": 298
-    },
-    {
-      "text": "feel",
-      "start": 19.3,
-      "end": 19.5875,
-      "duration": 0.2875,
-      "start_char": 299,
-      "end_char": 303
-    },
-    {
-      "text": "nervous",
-      "start": 19.5875,
-      "end": 20.025,
-      "duration": 0.4375,
-      "start_char": 304,
-      "end_char": 311
-    },
-    {
-      "text": "confused",
-      "start": 20.1375,
-      "end": 20.7,
-      "duration": 0.5625,
-      "start_char": 313,
-      "end_char": 321
-    },
-    {
-      "text": "or",
-      "start": 20.8,
-      "end": 20.8875,
-      "duration": 0.0875,
-      "start_char": 323,
-      "end_char": 325
-    },
-    {
-      "text": "left",
-      "start": 20.9,
-      "end": 21.225,
-      "duration": 0.325,
-      "start_char": 326,
-      "end_char": 330
-    },
-    {
-      "text": "out",
-      "start": 21.2375,
-      "end": 21.475,
-      "duration": 0.2375,
-      "start_char": 331,
-      "end_char": 334
-    },
-    {
-      "text": "An",
-      "start": 22.475,
-      "end": 22.6,
-      "duration": 0.125,
-      "start_char": 337,
-      "end_char": 339
-    },
-    {
-      "text": "EA",
-      "start": 22.625,
-      "end": 23.0,
-      "duration": 0.375,
-      "start_char": 340,
-      "end_char": 342
-    },
-    {
-      "text": "can",
-      "start": 23.075,
-      "end": 23.225,
-      "duration": 0.15,
-      "start_char": 343,
-      "end_char": 346
+      "text": "to",
+      "start": 22.7625,
+      "end": 22.8625,
+      "duration": 0.1,
+      "start_char": 303,
+      "end_char": 305
     },
     {
       "text": "help",
-      "start": 23.225,
-      "end": 23.4875,
+      "start": 22.8625,
+      "end": 23.125,
       "duration": 0.2625,
-      "start_char": 347,
-      "end_char": 351
+      "start_char": 306,
+      "end_char": 310
     },
     {
-      "text": "by",
-      "start": 23.4875,
-      "end": 23.6125,
+      "text": "students",
+      "start": 23.125,
+      "end": 23.55,
+      "duration": 0.425,
+      "start_char": 311,
+      "end_char": 319
+    },
+    {
+      "text": "see",
+      "start": 23.55,
+      "end": 23.775,
+      "duration": 0.225,
+      "start_char": 320,
+      "end_char": 323
+    },
+    {
+      "text": "what",
+      "start": 23.825,
+      "end": 23.9875,
+      "duration": 0.1625,
+      "start_char": 324,
+      "end_char": 328
+    },
+    {
+      "text": "they",
+      "start": 23.9875,
+      "end": 24.1125,
       "duration": 0.125,
-      "start_char": 352,
-      "end_char": 354
+      "start_char": 329,
+      "end_char": 333
     },
     {
-      "text": "breaking",
-      "start": 23.65,
-      "end": 24.05,
-      "duration": 0.4,
-      "start_char": 355,
+      "text": "need",
+      "start": 24.1125,
+      "end": 24.3625,
+      "duration": 0.25,
+      "start_char": 334,
+      "end_char": 338
+    },
+    {
+      "text": "to",
+      "start": 24.3625,
+      "end": 24.4375,
+      "duration": 0.075,
+      "start_char": 339,
+      "end_char": 341
+    },
+    {
+      "text": "do",
+      "start": 24.4375,
+      "end": 24.675,
+      "duration": 0.2375,
+      "start_char": 342,
+      "end_char": 344
+    },
+    {
+      "text": "Third",
+      "start": 25.675,
+      "end": 26.05,
+      "duration": 0.375,
+      "start_char": 347,
+      "end_char": 352
+    },
+    {
+      "text": "an",
+      "start": 26.15,
+      "end": 26.275,
+      "duration": 0.125,
+      "start_char": 354,
+      "end_char": 356
+    },
+    {
+      "text": "EA",
+      "start": 26.3125,
+      "end": 26.675,
+      "duration": 0.3625,
+      "start_char": 357,
+      "end_char": 359
+    },
+    {
+      "text": "can",
+      "start": 26.75,
+      "end": 26.925,
+      "duration": 0.175,
+      "start_char": 360,
       "end_char": 363
     },
     {
-      "text": "instructions",
-      "start": 24.05,
-      "end": 24.675,
-      "duration": 0.625,
+      "text": "model",
+      "start": 26.925,
+      "end": 27.25,
+      "duration": 0.325,
       "start_char": 364,
+      "end_char": 369
+    },
+    {
+      "text": "skills",
+      "start": 27.25,
+      "end": 27.7375,
+      "duration": 0.4875,
+      "start_char": 370,
       "end_char": 376
     },
     {
-      "text": "into",
-      "start": 24.675,
-      "end": 24.85,
-      "duration": 0.175,
-      "start_char": 377,
-      "end_char": 381
+      "text": "In",
+      "start": 28.725,
+      "end": 28.85,
+      "duration": 0.125,
+      "start_char": 378,
+      "end_char": 380
     },
     {
-      "text": "smaller",
-      "start": 24.85,
-      "end": 25.2875,
-      "duration": 0.4375,
-      "start_char": 382,
-      "end_char": 389
+      "text": "Unified",
+      "start": 28.875,
+      "end": 29.45,
+      "duration": 0.575,
+      "start_char": 381,
+      "end_char": 388
     },
     {
-      "text": "steps",
-      "start": 25.2875,
-      "end": 25.7625,
-      "duration": 0.475,
-      "start_char": 390,
+      "text": "Sports",
+      "start": 29.45,
+      "end": 29.9375,
+      "duration": 0.4875,
+      "start_char": 389,
       "end_char": 395
     },
     {
-      "text": "using",
-      "start": 26.025,
-      "end": 26.3625,
-      "duration": 0.3375,
+      "text": "everyone",
+      "start": 30.2,
+      "end": 30.65,
+      "duration": 0.45,
       "start_char": 397,
-      "end_char": 402
+      "end_char": 405
     },
     {
-      "text": "visuals",
-      "start": 26.3625,
-      "end": 26.9125,
-      "duration": 0.55,
-      "start_char": 403,
-      "end_char": 410
+      "text": "should",
+      "start": 30.65,
+      "end": 30.8375,
+      "duration": 0.1875,
+      "start_char": 406,
+      "end_char": 412
     },
     {
-      "text": "modelling",
-      "start": 27.1375,
-      "end": 27.625,
-      "duration": 0.4875,
-      "start_char": 412,
-      "end_char": 421
+      "text": "have",
+      "start": 30.8375,
+      "end": 31.025,
+      "duration": 0.1875,
+      "start_char": 413,
+      "end_char": 417
     },
     {
       "text": "a",
-      "start": 27.625,
-      "end": 27.6625,
-      "duration": 0.0375,
-      "start_char": 422,
-      "end_char": 423
+      "start": 31.025,
+      "end": 31.075,
+      "duration": 0.05,
+      "start_char": 418,
+      "end_char": 419
     },
     {
-      "text": "skill",
-      "start": 27.6625,
-      "end": 28.075,
-      "duration": 0.4125,
-      "start_char": 424,
-      "end_char": 429
+      "text": "meaningful",
+      "start": 31.075,
+      "end": 31.5875,
+      "duration": 0.5125,
+      "start_char": 420,
+      "end_char": 430
     },
     {
-      "text": "encouraging",
-      "start": 28.4375,
-      "end": 28.9875,
-      "duration": 0.55,
+      "text": "role",
+      "start": 31.5875,
+      "end": 31.9625,
+      "duration": 0.375,
       "start_char": 431,
-      "end_char": 442
-    },
-    {
-      "text": "peer",
-      "start": 28.9875,
-      "end": 29.2125,
-      "duration": 0.225,
-      "start_char": 443,
-      "end_char": 447
-    },
-    {
-      "text": "support",
-      "start": 29.2125,
-      "end": 29.6625,
-      "duration": 0.45,
-      "start_char": 448,
-      "end_char": 455
-    },
-    {
-      "text": "or",
-      "start": 30.05,
-      "end": 30.15,
-      "duration": 0.1,
-      "start_char": 457,
-      "end_char": 459
-    },
-    {
-      "text": "helping",
-      "start": 30.1625,
-      "end": 30.5375,
-      "duration": 0.375,
-      "start_char": 460,
-      "end_char": 467
-    },
-    {
-      "text": "the",
-      "start": 30.5375,
-      "end": 30.625,
-      "duration": 0.0875,
-      "start_char": 468,
-      "end_char": 471
-    },
-    {
-      "text": "student",
-      "start": 30.625,
-      "end": 31.0125,
-      "duration": 0.3875,
-      "start_char": 472,
-      "end_char": 479
-    },
-    {
-      "text": "manage",
-      "start": 31.0125,
-      "end": 31.3875,
-      "duration": 0.375,
-      "start_char": 480,
-      "end_char": 486
-    },
-    {
-      "text": "anxiety",
-      "start": 31.3875,
-      "end": 31.9125,
-      "duration": 0.525,
-      "start_char": 487,
-      "end_char": 494
+      "end_char": 435
     },
     {
       "text": "The",
       "start": 32.9125,
-      "end": 33.075,
-      "duration": 0.1625,
-      "start_char": 497,
-      "end_char": 500
+      "end": 33.0625,
+      "duration": 0.15,
+      "start_char": 437,
+      "end_char": 440
     },
     {
-      "text": "EA’s",
-      "start": 33.125,
-      "end": 33.575,
-      "duration": 0.45,
-      "start_char": 501,
-      "end_char": 505
-    },
-    {
-      "text": "role",
-      "start": 33.575,
-      "end": 33.9,
-      "duration": 0.325,
-      "start_char": 506,
-      "end_char": 510
-    },
-    {
-      "text": "is",
-      "start": 33.9125,
-      "end": 34.05,
-      "duration": 0.1375,
-      "start_char": 511,
-      "end_char": 513
-    },
-    {
-      "text": "not",
-      "start": 34.0625,
-      "end": 34.3,
-      "duration": 0.2375,
-      "start_char": 514,
-      "end_char": 517
-    },
-    {
-      "text": "to",
-      "start": 34.3,
-      "end": 34.4,
-      "duration": 0.1,
-      "start_char": 518,
-      "end_char": 520
-    },
-    {
-      "text": "do",
-      "start": 34.4,
-      "end": 34.575,
-      "duration": 0.175,
-      "start_char": 521,
-      "end_char": 523
-    },
-    {
-      "text": "everything",
-      "start": 34.65,
-      "end": 35.125,
-      "duration": 0.475,
-      "start_char": 524,
-      "end_char": 534
-    },
-    {
-      "text": "for",
-      "start": 35.1375,
-      "end": 35.25,
-      "duration": 0.1125,
-      "start_char": 535,
-      "end_char": 538
-    },
-    {
-      "text": "the",
-      "start": 35.275,
-      "end": 35.375,
-      "duration": 0.1,
-      "start_char": 539,
-      "end_char": 542
-    },
-    {
-      "text": "student",
-      "start": 35.375,
-      "end": 35.825,
-      "duration": 0.45,
-      "start_char": 543,
-      "end_char": 550
-    },
-    {
-      "text": "The",
-      "start": 36.85,
-      "end": 36.9625,
-      "duration": 0.1125,
-      "start_char": 552,
-      "end_char": 555
-    },
-    {
-      "text": "goal",
-      "start": 36.9875,
-      "end": 37.2875,
-      "duration": 0.3,
-      "start_char": 556,
-      "end_char": 560
-    },
-    {
-      "text": "is",
-      "start": 37.2875,
-      "end": 37.4,
-      "duration": 0.1125,
-      "start_char": 561,
-      "end_char": 563
-    },
-    {
-      "text": "to",
-      "start": 37.4,
-      "end": 37.5,
-      "duration": 0.1,
-      "start_char": 564,
-      "end_char": 566
-    },
-    {
-      "text": "support",
-      "start": 37.5,
-      "end": 37.925,
-      "duration": 0.425,
-      "start_char": 567,
-      "end_char": 574
-    },
-    {
-      "text": "independence",
-      "start": 37.925,
-      "end": 38.6625,
-      "duration": 0.7375,
-      "start_char": 575,
-      "end_char": 587
-    },
-    {
-      "text": "confidence",
-      "start": 38.7625,
-      "end": 39.35,
-      "duration": 0.5875,
-      "start_char": 589,
-      "end_char": 599
-    },
-    {
-      "text": "participation",
-      "start": 39.4375,
-      "end": 40.2625,
-      "duration": 0.825,
-      "start_char": 601,
-      "end_char": 614
-    },
-    {
-      "text": "and",
-      "start": 40.3625,
-      "end": 40.475,
-      "duration": 0.1125,
-      "start_char": 616,
-      "end_char": 619
-    },
-    {
-      "text": "belonging",
-      "start": 40.475,
-      "end": 41.0125,
-      "duration": 0.5375,
-      "start_char": 620,
-      "end_char": 629
-    },
-    {
-      "text": "Special",
-      "start": 41.95,
-      "end": 42.3625,
-      "duration": 0.4125,
-      "start_char": 632,
-      "end_char": 639
-    },
-    {
-      "text": "Olympics",
-      "start": 42.3625,
-      "end": 42.8875,
-      "duration": 0.525,
-      "start_char": 640,
-      "end_char": 648
-    },
-    {
-      "text": "BC",
-      "start": 42.9125,
-      "end": 43.3625,
-      "duration": 0.45,
-      "start_char": 649,
-      "end_char": 651
-    },
-    {
-      "text": "also",
-      "start": 43.475,
-      "end": 43.825,
+      "text": "EA",
+      "start": 33.1125,
+      "end": 33.4625,
       "duration": 0.35,
-      "start_char": 652,
-      "end_char": 656
+      "start_char": 441,
+      "end_char": 443
     },
     {
-      "text": "gives",
-      "start": 43.8375,
-      "end": 44.15,
-      "duration": 0.3125,
-      "start_char": 657,
-      "end_char": 662
+      "text": "can",
+      "start": 33.525,
+      "end": 33.675,
+      "duration": 0.15,
+      "start_char": 444,
+      "end_char": 447
     },
     {
-      "text": "EAs",
-      "start": 44.2,
-      "end": 44.6125,
-      "duration": 0.4125,
-      "start_char": 663,
-      "end_char": 666
+      "text": "model",
+      "start": 33.675,
+      "end": 34.0,
+      "duration": 0.325,
+      "start_char": 448,
+      "end_char": 453
+    },
+    {
+      "text": "how",
+      "start": 34.0,
+      "end": 34.15,
+      "duration": 0.15,
+      "start_char": 454,
+      "end_char": 457
+    },
+    {
+      "text": "to",
+      "start": 34.1875,
+      "end": 34.275,
+      "duration": 0.0875,
+      "start_char": 458,
+      "end_char": 460
+    },
+    {
+      "text": "take",
+      "start": 34.275,
+      "end": 34.5125,
+      "duration": 0.2375,
+      "start_char": 461,
+      "end_char": 465
+    },
+    {
+      "text": "turns",
+      "start": 34.525,
+      "end": 34.975,
+      "duration": 0.45,
+      "start_char": 466,
+      "end_char": 471
+    },
+    {
+      "text": "join",
+      "start": 35.1625,
+      "end": 35.5,
+      "duration": 0.3375,
+      "start_char": 473,
+      "end_char": 477
     },
     {
       "text": "a",
-      "start": 44.6125,
-      "end": 44.6625,
-      "duration": 0.05,
-      "start_char": 667,
-      "end_char": 668
+      "start": 35.5,
+      "end": 35.5375,
+      "duration": 0.0375,
+      "start_char": 478,
+      "end_char": 479
     },
     {
-      "text": "community",
-      "start": 44.6625,
-      "end": 45.1375,
-      "duration": 0.475,
-      "start_char": 669,
-      "end_char": 678
+      "text": "team",
+      "start": 35.5375,
+      "end": 35.975,
+      "duration": 0.4375,
+      "start_char": 480,
+      "end_char": 484
     },
     {
-      "text": "resource",
-      "start": 45.15,
-      "end": 45.7,
-      "duration": 0.55,
-      "start_char": 679,
-      "end_char": 687
+      "text": "follow",
+      "start": 36.1625,
+      "end": 36.55,
+      "duration": 0.3875,
+      "start_char": 486,
+      "end_char": 492
     },
     {
-      "text": "to",
-      "start": 45.7125,
-      "end": 45.825,
-      "duration": 0.1125,
-      "start_char": 688,
-      "end_char": 690
-    },
-    {
-      "text": "share",
-      "start": 45.825,
-      "end": 46.1375,
-      "duration": 0.3125,
-      "start_char": 691,
-      "end_char": 696
-    },
-    {
-      "text": "with",
-      "start": 46.1625,
-      "end": 46.325,
-      "duration": 0.1625,
-      "start_char": 697,
-      "end_char": 701
-    },
-    {
-      "text": "teachers",
-      "start": 46.3375,
-      "end": 46.85,
-      "duration": 0.5125,
-      "start_char": 702,
-      "end_char": 710
+      "text": "rules",
+      "start": 36.5625,
+      "end": 37.0125,
+      "duration": 0.45,
+      "start_char": 493,
+      "end_char": 498
     },
     {
       "text": "and",
-      "start": 46.85,
-      "end": 46.975,
-      "duration": 0.125,
-      "start_char": 711,
-      "end_char": 714
+      "start": 37.2125,
+      "end": 37.3125,
+      "duration": 0.1,
+      "start_char": 500,
+      "end_char": 503
     },
     {
-      "text": "families",
-      "start": 46.975,
-      "end": 47.575,
+      "text": "participate",
+      "start": 37.325,
+      "end": 37.95,
+      "duration": 0.625,
+      "start_char": 504,
+      "end_char": 515
+    },
+    {
+      "text": "respectfully",
+      "start": 37.95,
+      "end": 38.55,
       "duration": 0.6,
-      "start_char": 715,
-      "end_char": 723
+      "start_char": 516,
+      "end_char": 528
     },
     {
-      "text": "It",
-      "start": 48.5375,
-      "end": 48.65,
-      "duration": 0.1125,
-      "start_char": 725,
-      "end_char": 727
+      "text": "Fourth",
+      "start": 39.55,
+      "end": 39.9375,
+      "duration": 0.3875,
+      "start_char": 531,
+      "end_char": 537
     },
     {
-      "text": "shows",
-      "start": 48.675,
-      "end": 49.0125,
-      "duration": 0.3375,
+      "text": "an",
+      "start": 40.0375,
+      "end": 40.1625,
+      "duration": 0.125,
+      "start_char": 539,
+      "end_char": 541
+    },
+    {
+      "text": "EA",
+      "start": 40.1875,
+      "end": 40.5375,
+      "duration": 0.35,
+      "start_char": 542,
+      "end_char": 544
+    },
+    {
+      "text": "can",
+      "start": 40.625,
+      "end": 40.7875,
+      "duration": 0.1625,
+      "start_char": 545,
+      "end_char": 548
+    },
+    {
+      "text": "build",
+      "start": 40.7875,
+      "end": 41.0625,
+      "duration": 0.275,
+      "start_char": 549,
+      "end_char": 554
+    },
+    {
+      "text": "peer",
+      "start": 41.0625,
+      "end": 41.325,
+      "duration": 0.2625,
+      "start_char": 555,
+      "end_char": 559
+    },
+    {
+      "text": "support",
+      "start": 41.325,
+      "end": 41.7875,
+      "duration": 0.4625,
+      "start_char": 560,
+      "end_char": 567
+    },
+    {
+      "text": "SOBC",
+      "start": 42.8,
+      "end": 43.575,
+      "duration": 0.775,
+      "start_char": 569,
+      "end_char": 573
+    },
+    {
+      "text": "Unified",
+      "start": 43.5875,
+      "end": 44.15,
+      "duration": 0.5625,
+      "start_char": 574,
+      "end_char": 581
+    },
+    {
+      "text": "Sports",
+      "start": 44.15,
+      "end": 44.5375,
+      "duration": 0.3875,
+      "start_char": 582,
+      "end_char": 588
+    },
+    {
+      "text": "pairs",
+      "start": 44.55,
+      "end": 44.875,
+      "duration": 0.325,
+      "start_char": 589,
+      "end_char": 594
+    },
+    {
+      "text": "students",
+      "start": 44.875,
+      "end": 45.3375,
+      "duration": 0.4625,
+      "start_char": 595,
+      "end_char": 603
+    },
+    {
+      "text": "with",
+      "start": 45.35,
+      "end": 45.5625,
+      "duration": 0.2125,
+      "start_char": 604,
+      "end_char": 608
+    },
+    {
+      "text": "and",
+      "start": 45.8,
+      "end": 45.8875,
+      "duration": 0.0875,
+      "start_char": 609,
+      "end_char": 612
+    },
+    {
+      "text": "without",
+      "start": 45.9125,
+      "end": 46.2625,
+      "duration": 0.35,
+      "start_char": 613,
+      "end_char": 620
+    },
+    {
+      "text": "intellectual",
+      "start": 46.275,
+      "end": 46.9125,
+      "duration": 0.6375,
+      "start_char": 621,
+      "end_char": 633
+    },
+    {
+      "text": "disabilities",
+      "start": 46.9125,
+      "end": 47.6375,
+      "duration": 0.725,
+      "start_char": 634,
+      "end_char": 646
+    },
+    {
+      "text": "as",
+      "start": 47.6375,
+      "end": 47.7875,
+      "duration": 0.15,
+      "start_char": 647,
+      "end_char": 649
+    },
+    {
+      "text": "teammates",
+      "start": 47.7875,
+      "end": 48.375,
+      "duration": 0.5875,
+      "start_char": 650,
+      "end_char": 659
+    },
+    {
+      "text": "They",
+      "start": 49.4125,
+      "end": 49.6,
+      "duration": 0.1875,
+      "start_char": 661,
+      "end_char": 665
+    },
+    {
+      "text": "train",
+      "start": 49.625,
+      "end": 50.0125,
+      "duration": 0.3875,
+      "start_char": 666,
+      "end_char": 671
+    },
+    {
+      "text": "and",
+      "start": 50.0125,
+      "end": 50.1125,
+      "duration": 0.1,
+      "start_char": 672,
+      "end_char": 675
+    },
+    {
+      "text": "compete",
+      "start": 50.1375,
+      "end": 50.55,
+      "duration": 0.4125,
+      "start_char": 676,
+      "end_char": 683
+    },
+    {
+      "text": "together",
+      "start": 50.55,
+      "end": 50.9875,
+      "duration": 0.4375,
+      "start_char": 684,
+      "end_char": 692
+    },
+    {
+      "text": "just",
+      "start": 51.1125,
+      "end": 51.3625,
+      "duration": 0.25,
+      "start_char": 694,
+      "end_char": 698
+    },
+    {
+      "text": "like",
+      "start": 51.3625,
+      "end": 51.5625,
+      "duration": 0.2,
+      "start_char": 699,
+      "end_char": 703
+    },
+    {
+      "text": "any",
+      "start": 51.575,
+      "end": 51.825,
+      "duration": 0.25,
+      "start_char": 704,
+      "end_char": 707
+    },
+    {
+      "text": "other",
+      "start": 51.8875,
+      "end": 52.0875,
+      "duration": 0.2,
+      "start_char": 708,
+      "end_char": 713
+    },
+    {
+      "text": "school",
+      "start": 52.0875,
+      "end": 52.4,
+      "duration": 0.3125,
+      "start_char": 714,
+      "end_char": 720
+    },
+    {
+      "text": "team",
+      "start": 52.4,
+      "end": 52.8125,
+      "duration": 0.4125,
+      "start_char": 721,
+      "end_char": 725
+    },
+    {
+      "text": "Fifth",
+      "start": 53.75,
+      "end": 54.15,
+      "duration": 0.4,
       "start_char": 728,
       "end_char": 733
     },
     {
-      "text": "that",
-      "start": 49.0125,
-      "end": 49.175,
-      "duration": 0.1625,
-      "start_char": 734,
-      "end_char": 738
+      "text": "an",
+      "start": 54.225,
+      "end": 54.35,
+      "duration": 0.125,
+      "start_char": 735,
+      "end_char": 737
     },
     {
-      "text": "sport",
-      "start": 49.175,
-      "end": 49.5125,
-      "duration": 0.3375,
-      "start_char": 739,
-      "end_char": 744
+      "text": "EA",
+      "start": 54.3875,
+      "end": 54.7375,
+      "duration": 0.35,
+      "start_char": 738,
+      "end_char": 740
     },
     {
       "text": "can",
-      "start": 49.525,
-      "end": 49.675,
-      "duration": 0.15,
+      "start": 54.8125,
+      "end": 54.9875,
+      "duration": 0.175,
+      "start_char": 741,
+      "end_char": 744
+    },
+    {
+      "text": "adapt",
+      "start": 55.0,
+      "end": 55.3625,
+      "duration": 0.3625,
       "start_char": 745,
-      "end_char": 748
+      "end_char": 750
     },
     {
-      "text": "be",
-      "start": 49.675,
-      "end": 49.775,
-      "duration": 0.1,
-      "start_char": 749,
-      "end_char": 751
+      "text": "activities",
+      "start": 55.3625,
+      "end": 56.0125,
+      "duration": 0.65,
+      "start_char": 751,
+      "end_char": 761
     },
     {
-      "text": "used",
-      "start": 49.775,
-      "end": 50.0625,
+      "text": "SOBC",
+      "start": 57.0,
+      "end": 57.825,
+      "duration": 0.825,
+      "start_char": 763,
+      "end_char": 767
+    },
+    {
+      "text": "uses",
+      "start": 57.8375,
+      "end": 58.2875,
+      "duration": 0.45,
+      "start_char": 768,
+      "end_char": 772
+    },
+    {
+      "text": "a",
+      "start": 58.2875,
+      "end": 58.3375,
+      "duration": 0.05,
+      "start_char": 773,
+      "end_char": 774
+    },
+    {
+      "text": "divisioning",
+      "start": 58.3375,
+      "end": 58.8875,
+      "duration": 0.55,
+      "start_char": 775,
+      "end_char": 786
+    },
+    {
+      "text": "approach",
+      "start": 58.8875,
+      "end": 59.375,
+      "duration": 0.4875,
+      "start_char": 787,
+      "end_char": 795
+    },
+    {
+      "text": "This",
+      "start": 60.4,
+      "end": 60.6875,
       "duration": 0.2875,
-      "start_char": 752,
-      "end_char": 756
-    },
-    {
-      "text": "to",
-      "start": 50.0625,
-      "end": 50.1625,
-      "duration": 0.1,
-      "start_char": 757,
-      "end_char": 759
-    },
-    {
-      "text": "build",
-      "start": 50.1625,
-      "end": 50.425,
-      "duration": 0.2625,
-      "start_char": 760,
-      "end_char": 765
-    },
-    {
-      "text": "friendship",
-      "start": 50.425,
-      "end": 50.9375,
-      "duration": 0.5125,
-      "start_char": 766,
-      "end_char": 776
-    },
-    {
-      "text": "leadership",
-      "start": 51.025,
-      "end": 51.6,
-      "duration": 0.575,
-      "start_char": 778,
-      "end_char": 788
-    },
-    {
-      "text": "health",
-      "start": 51.7375,
-      "end": 52.125,
-      "duration": 0.3875,
-      "start_char": 790,
-      "end_char": 796
-    },
-    {
-      "text": "and",
-      "start": 52.1875,
-      "end": 52.325,
-      "duration": 0.1375,
-      "start_char": 798,
+      "start_char": 797,
       "end_char": 801
     },
     {
-      "text": "self-esteem",
-      "start": 52.325,
-      "end": 53.1375,
-      "duration": 0.8125,
+      "text": "means",
+      "start": 60.6875,
+      "end": 60.975,
+      "duration": 0.2875,
       "start_char": 802,
-      "end_char": 813
-    },
-    {
-      "text": "Most",
-      "start": 54.0625,
-      "end": 54.4125,
-      "duration": 0.35,
-      "start_char": 816,
-      "end_char": 820
-    },
-    {
-      "text": "importantly",
-      "start": 54.4125,
-      "end": 54.9875,
-      "duration": 0.575,
-      "start_char": 821,
-      "end_char": 832
-    },
-    {
-      "text": "it",
-      "start": 55.2375,
-      "end": 55.3125,
-      "duration": 0.075,
-      "start_char": 834,
-      "end_char": 836
-    },
-    {
-      "text": "reminds",
-      "start": 55.35,
-      "end": 55.8,
-      "duration": 0.45,
-      "start_char": 837,
-      "end_char": 844
-    },
-    {
-      "text": "us",
-      "start": 55.8,
-      "end": 55.95,
-      "duration": 0.15,
-      "start_char": 845,
-      "end_char": 847
-    },
-    {
-      "text": "that",
-      "start": 55.95,
-      "end": 56.1,
-      "duration": 0.15,
-      "start_char": 848,
-      "end_char": 852
-    },
-    {
-      "text": "inclusion",
-      "start": 56.1,
-      "end": 56.625,
-      "duration": 0.525,
-      "start_char": 853,
-      "end_char": 862
-    },
-    {
-      "text": "is",
-      "start": 56.625,
-      "end": 56.75,
-      "duration": 0.125,
-      "start_char": 863,
-      "end_char": 865
-    },
-    {
-      "text": "active",
-      "start": 56.75,
-      "end": 57.2125,
-      "duration": 0.4625,
-      "start_char": 866,
-      "end_char": 872
-    },
-    {
-      "text": "We",
-      "start": 58.175,
-      "end": 58.325,
-      "duration": 0.15,
-      "start_char": 874,
-      "end_char": 876
-    },
-    {
-      "text": "need",
-      "start": 58.35,
-      "end": 58.6,
-      "duration": 0.25,
-      "start_char": 877,
-      "end_char": 881
-    },
-    {
-      "text": "to",
-      "start": 58.6,
-      "end": 58.6875,
-      "duration": 0.0875,
-      "start_char": 882,
-      "end_char": 884
-    },
-    {
-      "text": "create",
-      "start": 58.7,
-      "end": 59.1125,
-      "duration": 0.4125,
-      "start_char": 885,
-      "end_char": 891
-    },
-    {
-      "text": "real",
-      "start": 59.1125,
-      "end": 59.3625,
-      "duration": 0.25,
-      "start_char": 892,
-      "end_char": 896
-    },
-    {
-      "text": "chances",
-      "start": 59.3625,
-      "end": 59.8375,
-      "duration": 0.475,
-      "start_char": 897,
-      "end_char": 904
-    },
-    {
-      "text": "for",
-      "start": 59.8375,
-      "end": 59.9375,
-      "duration": 0.1,
-      "start_char": 905,
-      "end_char": 908
+      "end_char": 807
     },
     {
       "text": "students",
-      "start": 59.9375,
-      "end": 60.375,
-      "duration": 0.4375,
-      "start_char": 909,
-      "end_char": 917
+      "start": 60.975,
+      "end": 61.425,
+      "duration": 0.45,
+      "start_char": 808,
+      "end_char": 816
     },
     {
-      "text": "to",
-      "start": 60.375,
-      "end": 60.475,
+      "text": "can",
+      "start": 61.425,
+      "end": 61.55,
+      "duration": 0.125,
+      "start_char": 817,
+      "end_char": 820
+    },
+    {
+      "text": "be",
+      "start": 61.55,
+      "end": 61.65,
       "duration": 0.1,
-      "start_char": 918,
-      "end_char": 920
+      "start_char": 821,
+      "end_char": 823
     },
     {
-      "text": "join",
-      "start": 60.475,
-      "end": 60.9,
-      "duration": 0.425,
-      "start_char": 921,
-      "end_char": 925
+      "text": "grouped",
+      "start": 61.6625,
+      "end": 61.95,
+      "duration": 0.2875,
+      "start_char": 824,
+      "end_char": 831
     },
     {
-      "text": "not",
-      "start": 61.1875,
-      "end": 61.45,
+      "text": "by",
+      "start": 61.95,
+      "end": 62.1,
+      "duration": 0.15,
+      "start_char": 832,
+      "end_char": 834
+    },
+    {
+      "text": "ability",
+      "start": 62.1625,
+      "end": 62.6,
+      "duration": 0.4375,
+      "start_char": 835,
+      "end_char": 842
+    },
+    {
+      "text": "so",
+      "start": 62.85,
+      "end": 63.0375,
+      "duration": 0.1875,
+      "start_char": 844,
+      "end_char": 846
+    },
+    {
+      "text": "every",
+      "start": 63.0875,
+      "end": 63.35,
       "duration": 0.2625,
-      "start_char": 927,
+      "start_char": 847,
+      "end_char": 852
+    },
+    {
+      "text": "student",
+      "start": 63.3625,
+      "end": 63.7625,
+      "duration": 0.4,
+      "start_char": 853,
+      "end_char": 860
+    },
+    {
+      "text": "can",
+      "start": 63.775,
+      "end": 63.9125,
+      "duration": 0.1375,
+      "start_char": 861,
+      "end_char": 864
+    },
+    {
+      "text": "compete",
+      "start": 63.925,
+      "end": 64.3875,
+      "duration": 0.4625,
+      "start_char": 865,
+      "end_char": 872
+    },
+    {
+      "text": "and",
+      "start": 64.5375,
+      "end": 64.65,
+      "duration": 0.1125,
+      "start_char": 873,
+      "end_char": 876
+    },
+    {
+      "text": "participate",
+      "start": 64.675,
+      "end": 65.3375,
+      "duration": 0.6625,
+      "start_char": 877,
+      "end_char": 888
+    },
+    {
+      "text": "at",
+      "start": 65.3625,
+      "end": 65.4875,
+      "duration": 0.125,
+      "start_char": 889,
+      "end_char": 891
+    },
+    {
+      "text": "a",
+      "start": 65.5,
+      "end": 65.55,
+      "duration": 0.05,
+      "start_char": 892,
+      "end_char": 893
+    },
+    {
+      "text": "fair",
+      "start": 65.55,
+      "end": 65.775,
+      "duration": 0.225,
+      "start_char": 894,
+      "end_char": 898
+    },
+    {
+      "text": "level",
+      "start": 65.7875,
+      "end": 66.15,
+      "duration": 0.3625,
+      "start_char": 899,
+      "end_char": 904
+    },
+    {
+      "text": "There",
+      "start": 67.0875,
+      "end": 67.2875,
+      "duration": 0.2,
+      "start_char": 907,
+      "end_char": 912
+    },
+    {
+      "text": "are",
+      "start": 67.2875,
+      "end": 67.35,
+      "duration": 0.0625,
+      "start_char": 913,
+      "end_char": 916
+    },
+    {
+      "text": "also",
+      "start": 67.3875,
+      "end": 67.75,
+      "duration": 0.3625,
+      "start_char": 917,
+      "end_char": 921
+    },
+    {
+      "text": "specific",
+      "start": 67.75,
+      "end": 68.3125,
+      "duration": 0.5625,
+      "start_char": 922,
       "end_char": 930
     },
     {
-      "text": "just",
-      "start": 61.45,
-      "end": 61.675,
-      "duration": 0.225,
+      "text": "SOBC",
+      "start": 68.3875,
+      "end": 69.1875,
+      "duration": 0.8,
       "start_char": 931,
       "end_char": 935
     },
     {
-      "text": "say",
-      "start": 61.675,
-      "end": 61.8875,
-      "duration": 0.2125,
+      "text": "resources",
+      "start": 69.2375,
+      "end": 69.9,
+      "duration": 0.6625,
       "start_char": 936,
-      "end_char": 939
+      "end_char": 945
+    },
+    {
+      "text": "for",
+      "start": 69.9,
+      "end": 70.0375,
+      "duration": 0.1375,
+      "start_char": 946,
+      "end_char": 949
+    },
+    {
+      "text": "EAs",
+      "start": 70.05,
+      "end": 70.65,
+      "duration": 0.6,
+      "start_char": 950,
+      "end_char": 953
+    },
+    {
+      "text": "For",
+      "start": 71.625,
+      "end": 71.775,
+      "duration": 0.15,
+      "start_char": 955,
+      "end_char": 958
+    },
+    {
+      "text": "younger",
+      "start": 71.7875,
+      "end": 72.1125,
+      "duration": 0.325,
+      "start_char": 959,
+      "end_char": 966
+    },
+    {
+      "text": "children",
+      "start": 72.1125,
+      "end": 72.6125,
+      "duration": 0.5,
+      "start_char": 967,
+      "end_char": 975
+    },
+    {
+      "text": "Active",
+      "start": 72.7875,
+      "end": 73.0875,
+      "duration": 0.3,
+      "start_char": 977,
+      "end_char": 983
+    },
+    {
+      "text": "Start",
+      "start": 73.0875,
+      "end": 73.475,
+      "duration": 0.3875,
+      "start_char": 984,
+      "end_char": 989
+    },
+    {
+      "text": "for",
+      "start": 73.575,
+      "end": 73.7375,
+      "duration": 0.1625,
+      "start_char": 991,
+      "end_char": 994
+    },
+    {
+      "text": "ages",
+      "start": 73.7625,
+      "end": 74.1625,
+      "duration": 0.4,
+      "start_char": 995,
+      "end_char": 999
+    },
+    {
+      "text": "2",
+      "start": 74.1625,
+      "end": 74.325,
+      "duration": 0.1625,
+      "start_char": 1000,
+      "end_char": 1001
+    },
+    {
+      "text": "to",
+      "start": 74.3375,
+      "end": 74.4375,
+      "duration": 0.1,
+      "start_char": 1002,
+      "end_char": 1004
+    },
+    {
+      "text": "6",
+      "start": 74.4375,
+      "end": 74.8625,
+      "duration": 0.425,
+      "start_char": 1005,
+      "end_char": 1006
+    },
+    {
+      "text": "and",
+      "start": 75.05,
+      "end": 75.1625,
+      "duration": 0.1125,
+      "start_char": 1008,
+      "end_char": 1011
+    },
+    {
+      "text": "FUNdamentals",
+      "start": 75.175,
+      "end": 75.95,
+      "duration": 0.775,
+      "start_char": 1012,
+      "end_char": 1024
+    },
+    {
+      "text": "for",
+      "start": 76.075,
+      "end": 76.2375,
+      "duration": 0.1625,
+      "start_char": 1026,
+      "end_char": 1029
+    },
+    {
+      "text": "ages",
+      "start": 76.2625,
+      "end": 76.6375,
+      "duration": 0.375,
+      "start_char": 1030,
+      "end_char": 1034
+    },
+    {
+      "text": "7",
+      "start": 76.6375,
+      "end": 76.95,
+      "duration": 0.3125,
+      "start_char": 1035,
+      "end_char": 1036
+    },
+    {
+      "text": "to",
+      "start": 76.95,
+      "end": 77.025,
+      "duration": 0.075,
+      "start_char": 1037,
+      "end_char": 1039
+    },
+    {
+      "text": "11",
+      "start": 77.0875,
+      "end": 77.5,
+      "duration": 0.4125,
+      "start_char": 1040,
+      "end_char": 1042
+    },
+    {
+      "text": "support",
+      "start": 77.6125,
+      "end": 78.05,
+      "duration": 0.4375,
+      "start_char": 1044,
+      "end_char": 1051
+    },
+    {
+      "text": "motor",
+      "start": 78.05,
+      "end": 78.3625,
+      "duration": 0.3125,
+      "start_char": 1052,
+      "end_char": 1057
+    },
+    {
+      "text": "skills",
+      "start": 78.3625,
+      "end": 78.8125,
+      "duration": 0.45,
+      "start_char": 1058,
+      "end_char": 1064
+    },
+    {
+      "text": "and",
+      "start": 78.8125,
+      "end": 78.9625,
+      "duration": 0.15,
+      "start_char": 1065,
+      "end_char": 1068
+    },
+    {
+      "text": "sport",
+      "start": 78.9625,
+      "end": 79.3,
+      "duration": 0.3375,
+      "start_char": 1069,
+      "end_char": 1074
+    },
+    {
+      "text": "skills",
+      "start": 79.3,
+      "end": 79.7625,
+      "duration": 0.4625,
+      "start_char": 1075,
+      "end_char": 1081
+    },
+    {
+      "text": "These",
+      "start": 80.7125,
+      "end": 81.0375,
+      "duration": 0.325,
+      "start_char": 1083,
+      "end_char": 1088
+    },
+    {
+      "text": "programs",
+      "start": 81.0375,
+      "end": 81.6375,
+      "duration": 0.6,
+      "start_char": 1089,
+      "end_char": 1097
+    },
+    {
+      "text": "can",
+      "start": 81.6375,
+      "end": 81.775,
+      "duration": 0.1375,
+      "start_char": 1098,
+      "end_char": 1101
+    },
+    {
+      "text": "be",
+      "start": 81.775,
+      "end": 81.8625,
+      "duration": 0.0875,
+      "start_char": 1102,
+      "end_char": 1104
+    },
+    {
+      "text": "used",
+      "start": 81.8625,
+      "end": 82.2375,
+      "duration": 0.375,
+      "start_char": 1105,
+      "end_char": 1109
+    },
+    {
+      "text": "in",
+      "start": 82.2375,
+      "end": 82.35,
+      "duration": 0.1125,
+      "start_char": 1110,
+      "end_char": 1112
+    },
+    {
+      "text": "communities",
+      "start": 82.3625,
+      "end": 82.975,
+      "duration": 0.6125,
+      "start_char": 1113,
+      "end_char": 1124
+    },
+    {
+      "text": "and",
+      "start": 82.9875,
+      "end": 83.1125,
+      "duration": 0.125,
+      "start_char": 1125,
+      "end_char": 1128
+    },
+    {
+      "text": "schools",
+      "start": 83.1125,
+      "end": 83.65,
+      "duration": 0.5375,
+      "start_char": 1129,
+      "end_char": 1136
+    },
+    {
+      "text": "For",
+      "start": 84.6125,
+      "end": 84.7375,
+      "duration": 0.125,
+      "start_char": 1139,
+      "end_char": 1142
+    },
+    {
+      "text": "older",
+      "start": 84.7625,
+      "end": 85.0875,
+      "duration": 0.325,
+      "start_char": 1143,
+      "end_char": 1148
+    },
+    {
+      "text": "students",
+      "start": 85.0875,
+      "end": 85.5625,
+      "duration": 0.475,
+      "start_char": 1149,
+      "end_char": 1157
+    },
+    {
+      "text": "Unified",
+      "start": 85.6625,
+      "end": 86.2375,
+      "duration": 0.575,
+      "start_char": 1159,
+      "end_char": 1166
+    },
+    {
+      "text": "Sports",
+      "start": 86.2375,
+      "end": 86.6875,
+      "duration": 0.45,
+      "start_char": 1167,
+      "end_char": 1173
+    },
+    {
+      "text": "for",
+      "start": 86.775,
+      "end": 86.9375,
+      "duration": 0.1625,
+      "start_char": 1175,
+      "end_char": 1178
+    },
+    {
+      "text": "ages",
+      "start": 86.9625,
+      "end": 87.35,
+      "duration": 0.3875,
+      "start_char": 1179,
+      "end_char": 1183
+    },
+    {
+      "text": "12",
+      "start": 87.35,
+      "end": 87.675,
+      "duration": 0.325,
+      "start_char": 1184,
+      "end_char": 1186
+    },
+    {
+      "text": "to",
+      "start": 87.675,
+      "end": 87.8,
+      "duration": 0.125,
+      "start_char": 1187,
+      "end_char": 1189
+    },
+    {
+      "text": "18",
+      "start": 87.825,
+      "end": 88.4125,
+      "duration": 0.5875,
+      "start_char": 1190,
+      "end_char": 1192
+    },
+    {
+      "text": "provides",
+      "start": 88.825,
+      "end": 89.2375,
+      "duration": 0.4125,
+      "start_char": 1194,
+      "end_char": 1202
+    },
+    {
+      "text": "lesson",
+      "start": 89.2375,
+      "end": 89.5625,
+      "duration": 0.325,
+      "start_char": 1203,
+      "end_char": 1209
+    },
+    {
+      "text": "plans",
+      "start": 89.5625,
+      "end": 89.9,
+      "duration": 0.3375,
+      "start_char": 1210,
+      "end_char": 1215
+    },
+    {
+      "text": "for",
+      "start": 89.9,
+      "end": 90.0125,
+      "duration": 0.1125,
+      "start_char": 1216,
+      "end_char": 1219
+    },
+    {
+      "text": "sports",
+      "start": 90.0125,
+      "end": 90.425,
+      "duration": 0.4125,
+      "start_char": 1220,
+      "end_char": 1226
+    },
+    {
+      "text": "such",
+      "start": 90.425,
+      "end": 90.6375,
+      "duration": 0.2125,
+      "start_char": 1227,
+      "end_char": 1231
+    },
+    {
+      "text": "as",
+      "start": 90.6375,
+      "end": 90.75,
+      "duration": 0.1125,
+      "start_char": 1232,
+      "end_char": 1234
+    },
+    {
+      "text": "3-on-3",
+      "start": 90.75,
+      "end": 91.8375,
+      "duration": 1.0875,
+      "start_char": 1235,
+      "end_char": 1241
+    },
+    {
+      "text": "basketball",
+      "start": 91.875,
+      "end": 92.5125,
+      "duration": 0.6375,
+      "start_char": 1242,
+      "end_char": 1252
+    },
+    {
+      "text": "soccer",
+      "start": 92.575,
+      "end": 93.0375,
+      "duration": 0.4625,
+      "start_char": 1254,
+      "end_char": 1260
+    },
+    {
+      "text": "and",
+      "start": 93.15,
+      "end": 93.275,
+      "duration": 0.125,
+      "start_char": 1262,
+      "end_char": 1265
+    },
+    {
+      "text": "floorball",
+      "start": 93.2875,
+      "end": 93.8625,
+      "duration": 0.575,
+      "start_char": 1266,
+      "end_char": 1275
+    },
+    {
+      "text": "Students",
+      "start": 94.825,
+      "end": 95.3,
+      "duration": 0.475,
+      "start_char": 1277,
+      "end_char": 1285
+    },
+    {
+      "text": "practise",
+      "start": 95.3,
+      "end": 95.8,
+      "duration": 0.5,
+      "start_char": 1286,
+      "end_char": 1294
+    },
+    {
+      "text": "and",
+      "start": 95.8125,
+      "end": 95.9375,
+      "duration": 0.125,
+      "start_char": 1295,
+      "end_char": 1298
+    },
+    {
+      "text": "compete",
+      "start": 95.9625,
+      "end": 96.3875,
+      "duration": 0.425,
+      "start_char": 1299,
+      "end_char": 1306
+    },
+    {
+      "text": "together",
+      "start": 96.3875,
+      "end": 96.8125,
+      "duration": 0.425,
+      "start_char": 1307,
+      "end_char": 1315
+    },
+    {
+      "text": "as",
+      "start": 96.8125,
+      "end": 96.9375,
+      "duration": 0.125,
+      "start_char": 1316,
+      "end_char": 1318
+    },
+    {
+      "text": "part",
+      "start": 96.9375,
+      "end": 97.225,
+      "duration": 0.2875,
+      "start_char": 1319,
+      "end_char": 1323
+    },
+    {
+      "text": "of",
+      "start": 97.225,
+      "end": 97.325,
+      "duration": 0.1,
+      "start_char": 1324,
+      "end_char": 1326
+    },
+    {
+      "text": "a",
+      "start": 97.325,
+      "end": 97.375,
+      "duration": 0.05,
+      "start_char": 1327,
+      "end_char": 1328
+    },
+    {
+      "text": "team",
+      "start": 97.375,
+      "end": 97.825,
+      "duration": 0.45,
+      "start_char": 1329,
+      "end_char": 1333
+    },
+    {
+      "text": "To",
+      "start": 98.75,
+      "end": 98.8375,
+      "duration": 0.0875,
+      "start_char": 1336,
+      "end_char": 1338
+    },
+    {
+      "text": "access",
+      "start": 98.8875,
+      "end": 99.3875,
+      "duration": 0.5,
+      "start_char": 1339,
+      "end_char": 1345
+    },
+    {
+      "text": "these",
+      "start": 99.3875,
+      "end": 99.6125,
+      "duration": 0.225,
+      "start_char": 1346,
+      "end_char": 1351
+    },
+    {
+      "text": "resources",
+      "start": 99.6125,
+      "end": 100.3125,
+      "duration": 0.7,
+      "start_char": 1352,
+      "end_char": 1361
+    },
+    {
+      "text": "EAs",
+      "start": 100.55,
+      "end": 100.9875,
+      "duration": 0.4375,
+      "start_char": 1363,
+      "end_char": 1366
+    },
+    {
+      "text": "can",
+      "start": 100.9875,
+      "end": 101.125,
+      "duration": 0.1375,
+      "start_char": 1367,
+      "end_char": 1370
+    },
+    {
+      "text": "visit",
+      "start": 101.1375,
+      "end": 101.425,
+      "duration": 0.2875,
+      "start_char": 1371,
+      "end_char": 1376
+    },
+    {
+      "text": "the",
+      "start": 101.425,
+      "end": 101.5,
+      "duration": 0.075,
+      "start_char": 1377,
+      "end_char": 1380
+    },
+    {
+      "text": "Special",
+      "start": 101.5,
+      "end": 101.9125,
+      "duration": 0.4125,
+      "start_char": 1381,
+      "end_char": 1388
+    },
+    {
+      "text": "Olympics",
+      "start": 101.9125,
+      "end": 102.4375,
+      "duration": 0.525,
+      "start_char": 1389,
+      "end_char": 1397
+    },
+    {
+      "text": "BC",
+      "start": 102.4625,
+      "end": 102.8625,
+      "duration": 0.4,
+      "start_char": 1398,
+      "end_char": 1400
+    },
+    {
+      "text": "website",
+      "start": 102.9,
+      "end": 103.4625,
+      "duration": 0.5625,
+      "start_char": 1401,
+      "end_char": 1408
+    },
+    {
+      "text": "especially",
+      "start": 103.8625,
+      "end": 104.375,
+      "duration": 0.5125,
+      "start_char": 1410,
+      "end_char": 1420
+    },
+    {
+      "text": "the",
+      "start": 104.4,
+      "end": 104.4875,
+      "duration": 0.0875,
+      "start_char": 1421,
+      "end_char": 1424
+    },
+    {
+      "text": "Youth",
+      "start": 104.4875,
+      "end": 104.725,
+      "duration": 0.2375,
+      "start_char": 1425,
+      "end_char": 1430
+    },
+    {
+      "text": "Programs",
+      "start": 104.7375,
+      "end": 105.2875,
+      "duration": 0.55,
+      "start_char": 1431,
+      "end_char": 1439
+    },
+    {
+      "text": "and",
+      "start": 105.3125,
+      "end": 105.4625,
+      "duration": 0.15,
+      "start_char": 1440,
+      "end_char": 1443
+    },
+    {
+      "text": "School",
+      "start": 105.4625,
+      "end": 105.775,
+      "duration": 0.3125,
+      "start_char": 1444,
+      "end_char": 1450
+    },
+    {
+      "text": "Sport",
+      "start": 105.775,
+      "end": 106.1125,
+      "duration": 0.3375,
+      "start_char": 1451,
+      "end_char": 1456
+    },
+    {
+      "text": "pages",
+      "start": 106.1125,
+      "end": 106.6,
+      "duration": 0.4875,
+      "start_char": 1457,
+      "end_char": 1462
+    },
+    {
+      "text": "They",
+      "start": 107.5625,
+      "end": 107.7125,
+      "duration": 0.15,
+      "start_char": 1464,
+      "end_char": 1468
+    },
+    {
+      "text": "can",
+      "start": 107.725,
+      "end": 107.875,
+      "duration": 0.15,
+      "start_char": 1469,
+      "end_char": 1472
+    },
+    {
+      "text": "also",
+      "start": 107.875,
+      "end": 108.2,
+      "duration": 0.325,
+      "start_char": 1473,
+      "end_char": 1477
+    },
+    {
+      "text": "ask",
+      "start": 108.25,
+      "end": 108.5,
+      "duration": 0.25,
+      "start_char": 1478,
+      "end_char": 1481
+    },
+    {
+      "text": "the",
+      "start": 108.5,
+      "end": 108.6125,
+      "duration": 0.1125,
+      "start_char": 1482,
+      "end_char": 1485
+    },
+    {
+      "text": "school",
+      "start": 108.6125,
+      "end": 109.025,
+      "duration": 0.4125,
+      "start_char": 1486,
+      "end_char": 1492
+    },
+    {
+      "text": "or",
+      "start": 109.1125,
+      "end": 109.2125,
+      "duration": 0.1,
+      "start_char": 1493,
+      "end_char": 1495
+    },
+    {
+      "text": "district",
+      "start": 109.225,
+      "end": 109.7125,
+      "duration": 0.4875,
+      "start_char": 1496,
+      "end_char": 1504
+    },
+    {
+      "text": "about",
+      "start": 109.7125,
+      "end": 109.9625,
+      "duration": 0.25,
+      "start_char": 1505,
+      "end_char": 1510
+    },
+    {
+      "text": "registering",
+      "start": 109.9625,
+      "end": 110.6,
+      "duration": 0.6375,
+      "start_char": 1511,
+      "end_char": 1522
+    },
+    {
+      "text": "as",
+      "start": 110.6375,
+      "end": 110.7625,
+      "duration": 0.125,
+      "start_char": 1523,
+      "end_char": 1525
+    },
+    {
+      "text": "a",
+      "start": 110.7625,
+      "end": 110.8125,
+      "duration": 0.05,
+      "start_char": 1526,
+      "end_char": 1527
+    },
+    {
+      "text": "Unified",
+      "start": 110.8125,
+      "end": 111.35,
+      "duration": 0.5375,
+      "start_char": 1528,
+      "end_char": 1535
+    },
+    {
+      "text": "Champion",
+      "start": 111.35,
+      "end": 111.8375,
+      "duration": 0.4875,
+      "start_char": 1536,
+      "end_char": 1544
+    },
+    {
+      "text": "School",
+      "start": 111.8375,
+      "end": 112.2625,
+      "duration": 0.425,
+      "start_char": 1545,
+      "end_char": 1551
+    },
+    {
+      "text": "or",
+      "start": 112.525,
+      "end": 112.625,
+      "duration": 0.1,
+      "start_char": 1552,
+      "end_char": 1554
+    },
+    {
+      "text": "joining",
+      "start": 112.65,
+      "end": 113.05,
+      "duration": 0.4,
+      "start_char": 1555,
+      "end_char": 1562
+    },
+    {
+      "text": "a",
+      "start": 113.05,
+      "end": 113.0875,
+      "duration": 0.0375,
+      "start_char": 1563,
+      "end_char": 1564
+    },
+    {
+      "text": "school",
+      "start": 113.0875,
+      "end": 113.4125,
+      "duration": 0.325,
+      "start_char": 1565,
+      "end_char": 1571
+    },
+    {
+      "text": "sport",
+      "start": 113.4125,
+      "end": 113.7375,
+      "duration": 0.325,
+      "start_char": 1572,
+      "end_char": 1577
+    },
+    {
+      "text": "program",
+      "start": 113.7375,
+      "end": 114.275,
+      "duration": 0.5375,
+      "start_char": 1578,
+      "end_char": 1585
+    },
+    {
+      "text": "For",
+      "start": 115.2,
+      "end": 115.3875,
+      "duration": 0.1875,
+      "start_char": 1588,
+      "end_char": 1591
+    },
+    {
+      "text": "example",
+      "start": 115.4,
+      "end": 115.9875,
+      "duration": 0.5875,
+      "start_char": 1592,
+      "end_char": 1599
+    },
+    {
+      "text": "a",
+      "start": 116.15,
+      "end": 116.2,
+      "duration": 0.05,
+      "start_char": 1601,
+      "end_char": 1602
+    },
+    {
+      "text": "student",
+      "start": 116.2375,
+      "end": 116.65,
+      "duration": 0.4125,
+      "start_char": 1603,
+      "end_char": 1610
+    },
+    {
+      "text": "with",
+      "start": 116.65,
+      "end": 116.8,
+      "duration": 0.15,
+      "start_char": 1611,
+      "end_char": 1615
+    },
+    {
+      "text": "a",
+      "start": 116.8,
+      "end": 116.85,
+      "duration": 0.05,
+      "start_char": 1616,
+      "end_char": 1617
+    },
+    {
+      "text": "disability",
+      "start": 116.85,
+      "end": 117.5125,
+      "duration": 0.6625,
+      "start_char": 1618,
+      "end_char": 1628
+    },
+    {
+      "text": "may",
+      "start": 117.55,
+      "end": 117.7125,
+      "duration": 0.1625,
+      "start_char": 1629,
+      "end_char": 1632
+    },
+    {
+      "text": "feel",
+      "start": 117.7375,
+      "end": 118.0375,
+      "duration": 0.3,
+      "start_char": 1633,
+      "end_char": 1637
+    },
+    {
+      "text": "nervous",
+      "start": 118.0375,
+      "end": 118.45,
+      "duration": 0.4125,
+      "start_char": 1638,
+      "end_char": 1645
+    },
+    {
+      "text": "in",
+      "start": 118.45,
+      "end": 118.575,
+      "duration": 0.125,
+      "start_char": 1646,
+      "end_char": 1648
+    },
+    {
+      "text": "gym",
+      "start": 118.575,
+      "end": 118.825,
+      "duration": 0.25,
+      "start_char": 1649,
+      "end_char": 1652
+    },
+    {
+      "text": "class",
+      "start": 118.825,
+      "end": 119.275,
+      "duration": 0.45,
+      "start_char": 1653,
+      "end_char": 1658
+    },
+    {
+      "text": "The",
+      "start": 120.275,
+      "end": 120.425,
+      "duration": 0.15,
+      "start_char": 1660,
+      "end_char": 1663
+    },
+    {
+      "text": "EA",
+      "start": 120.475,
+      "end": 120.8,
+      "duration": 0.325,
+      "start_char": 1664,
+      "end_char": 1666
+    },
+    {
+      "text": "can",
+      "start": 120.8625,
+      "end": 121.0125,
+      "duration": 0.15,
+      "start_char": 1667,
+      "end_char": 1670
+    },
+    {
+      "text": "download",
+      "start": 121.0125,
+      "end": 121.5125,
+      "duration": 0.5,
+      "start_char": 1671,
+      "end_char": 1679
+    },
+    {
+      "text": "a",
+      "start": 121.5125,
+      "end": 121.55,
+      "duration": 0.0375,
+      "start_char": 1680,
+      "end_char": 1681
+    },
+    {
+      "text": "FUNdamentals",
+      "start": 121.55,
+      "end": 122.225,
+      "duration": 0.675,
+      "start_char": 1682,
+      "end_char": 1694
+    },
+    {
+      "text": "lesson",
+      "start": 122.225,
+      "end": 122.55,
+      "duration": 0.325,
+      "start_char": 1695,
+      "end_char": 1701
+    },
+    {
+      "text": "plan",
+      "start": 122.55,
+      "end": 122.925,
+      "duration": 0.375,
+      "start_char": 1702,
+      "end_char": 1706
+    },
+    {
+      "text": "preview",
+      "start": 123.2125,
+      "end": 123.4875,
+      "duration": 0.275,
+      "start_char": 1708,
+      "end_char": 1715
+    },
+    {
+      "text": "the",
+      "start": 123.4875,
+      "end": 123.6,
+      "duration": 0.1125,
+      "start_char": 1716,
+      "end_char": 1719
+    },
+    {
+      "text": "rules",
+      "start": 123.6,
+      "end": 124.025,
+      "duration": 0.425,
+      "start_char": 1720,
+      "end_char": 1725
+    },
+    {
+      "text": "break",
+      "start": 124.175,
+      "end": 124.4125,
+      "duration": 0.2375,
+      "start_char": 1727,
+      "end_char": 1732
+    },
+    {
+      "text": "down",
+      "start": 124.425,
+      "end": 124.6875,
+      "duration": 0.2625,
+      "start_char": 1733,
+      "end_char": 1737
+    },
+    {
+      "text": "the",
+      "start": 124.6875,
+      "end": 124.7625,
+      "duration": 0.075,
+      "start_char": 1738,
+      "end_char": 1741
+    },
+    {
+      "text": "skill",
+      "start": 124.7625,
+      "end": 125.15,
+      "duration": 0.3875,
+      "start_char": 1742,
+      "end_char": 1747
+    },
+    {
+      "text": "model",
+      "start": 125.35,
+      "end": 125.6625,
+      "duration": 0.3125,
+      "start_char": 1749,
+      "end_char": 1754
+    },
+    {
+      "text": "the",
+      "start": 125.6625,
+      "end": 125.7625,
+      "duration": 0.1,
+      "start_char": 1755,
+      "end_char": 1758
+    },
+    {
+      "text": "first",
+      "start": 125.7625,
+      "end": 126.0375,
+      "duration": 0.275,
+      "start_char": 1759,
+      "end_char": 1764
+    },
+    {
+      "text": "turn",
+      "start": 126.0375,
+      "end": 126.3875,
+      "duration": 0.35,
+      "start_char": 1765,
+      "end_char": 1769
+    },
+    {
+      "text": "and",
+      "start": 126.725,
+      "end": 126.8125,
+      "duration": 0.0875,
+      "start_char": 1771,
+      "end_char": 1774
+    },
+    {
+      "text": "then",
+      "start": 126.8625,
+      "end": 127.0625,
+      "duration": 0.2,
+      "start_char": 1775,
+      "end_char": 1779
+    },
+    {
+      "text": "pair",
+      "start": 127.0625,
+      "end": 127.25,
+      "duration": 0.1875,
+      "start_char": 1780,
+      "end_char": 1784
+    },
+    {
+      "text": "the",
+      "start": 127.275,
+      "end": 127.375,
+      "duration": 0.1,
+      "start_char": 1785,
+      "end_char": 1788
+    },
+    {
+      "text": "student",
+      "start": 127.375,
+      "end": 127.75,
+      "duration": 0.375,
+      "start_char": 1789,
+      "end_char": 1796
+    },
+    {
+      "text": "with",
+      "start": 127.75,
+      "end": 127.8875,
+      "duration": 0.1375,
+      "start_char": 1797,
+      "end_char": 1801
+    },
+    {
+      "text": "a",
+      "start": 127.8875,
+      "end": 127.925,
+      "duration": 0.0375,
+      "start_char": 1802,
+      "end_char": 1803
+    },
+    {
+      "text": "peer",
+      "start": 127.925,
+      "end": 128.2875,
+      "duration": 0.3625,
+      "start_char": 1804,
+      "end_char": 1808
+    },
+    {
+      "text": "This",
+      "start": 129.2625,
+      "end": 129.5375,
+      "duration": 0.275,
+      "start_char": 1811,
+      "end_char": 1815
+    },
+    {
+      "text": "shows",
+      "start": 129.5375,
+      "end": 129.8875,
+      "duration": 0.35,
+      "start_char": 1816,
+      "end_char": 1821
+    },
+    {
+      "text": "that",
+      "start": 129.8875,
+      "end": 130.05,
+      "duration": 0.1625,
+      "start_char": 1822,
+      "end_char": 1826
+    },
+    {
+      "text": "inclusion",
+      "start": 130.0625,
+      "end": 130.6,
+      "duration": 0.5375,
+      "start_char": 1827,
+      "end_char": 1836
+    },
+    {
+      "text": "is",
+      "start": 130.6,
+      "end": 130.725,
+      "duration": 0.125,
+      "start_char": 1837,
+      "end_char": 1839
+    },
+    {
+      "text": "active",
+      "start": 130.7375,
+      "end": 131.2125,
+      "duration": 0.475,
+      "start_char": 1840,
+      "end_char": 1846
+    },
+    {
+      "text": "An",
+      "start": 132.1875,
+      "end": 132.325,
+      "duration": 0.1375,
+      "start_char": 1848,
+      "end_char": 1850
+    },
+    {
+      "text": "excellent",
+      "start": 132.35,
+      "end": 132.85,
+      "duration": 0.5,
+      "start_char": 1851,
+      "end_char": 1860
+    },
+    {
+      "text": "EA",
+      "start": 132.875,
+      "end": 133.2375,
+      "duration": 0.3625,
+      "start_char": 1861,
+      "end_char": 1863
+    },
+    {
+      "text": "does",
+      "start": 133.3125,
+      "end": 133.475,
+      "duration": 0.1625,
+      "start_char": 1864,
+      "end_char": 1868
+    },
+    {
+      "text": "not",
+      "start": 133.4875,
+      "end": 133.7625,
+      "duration": 0.275,
+      "start_char": 1869,
+      "end_char": 1872
+    },
+    {
+      "text": "just",
+      "start": 133.7625,
+      "end": 134.0,
+      "duration": 0.2375,
+      "start_char": 1873,
+      "end_char": 1877
+    },
+    {
+      "text": "tell",
+      "start": 134.0,
+      "end": 134.2625,
+      "duration": 0.2625,
+      "start_char": 1878,
+      "end_char": 1882
+    },
+    {
+      "text": "students",
+      "start": 134.2625,
+      "end": 134.7125,
+      "duration": 0.45,
+      "start_char": 1883,
+      "end_char": 1891
     },
     {
       "text": "they",
-      "start": 61.9,
-      "end": 62.025,
-      "duration": 0.125,
-      "start_char": 940,
-      "end_char": 944
+      "start": 134.7125,
+      "end": 134.85,
+      "duration": 0.1375,
+      "start_char": 1892,
+      "end_char": 1896
     },
     {
       "text": "are",
-      "start": 62.0625,
-      "end": 62.1125,
+      "start": 134.8875,
+      "end": 134.9375,
       "duration": 0.05,
-      "start_char": 945,
-      "end_char": 948
+      "start_char": 1897,
+      "end_char": 1900
     },
     {
       "text": "welcome",
-      "start": 62.1125,
-      "end": 62.5875,
-      "duration": 0.475,
-      "start_char": 949,
-      "end_char": 956
+      "start": 134.95,
+      "end": 135.45,
+      "duration": 0.5,
+      "start_char": 1901,
+      "end_char": 1908
+    },
+    {
+      "text": "An",
+      "start": 136.3875,
+      "end": 136.525,
+      "duration": 0.1375,
+      "start_char": 1910,
+      "end_char": 1912
+    },
+    {
+      "text": "excellent",
+      "start": 136.55,
+      "end": 137.05,
+      "duration": 0.5,
+      "start_char": 1913,
+      "end_char": 1922
+    },
+    {
+      "text": "EA",
+      "start": 137.075,
+      "end": 137.3875,
+      "duration": 0.3125,
+      "start_char": 1923,
+      "end_char": 1925
+    },
+    {
+      "text": "plans",
+      "start": 137.4375,
+      "end": 137.875,
+      "duration": 0.4375,
+      "start_char": 1926,
+      "end_char": 1931
+    },
+    {
+      "text": "supports",
+      "start": 137.9375,
+      "end": 138.5375,
+      "duration": 0.6,
+      "start_char": 1933,
+      "end_char": 1941
+    },
+    {
+      "text": "adapts",
+      "start": 138.6375,
+      "end": 139.0875,
+      "duration": 0.45,
+      "start_char": 1943,
+      "end_char": 1949
+    },
+    {
+      "text": "and",
+      "start": 139.225,
+      "end": 139.325,
+      "duration": 0.1,
+      "start_char": 1951,
+      "end_char": 1954
+    },
+    {
+      "text": "creates",
+      "start": 139.375,
+      "end": 139.825,
+      "duration": 0.45,
+      "start_char": 1955,
+      "end_char": 1962
+    },
+    {
+      "text": "real",
+      "start": 139.825,
+      "end": 140.075,
+      "duration": 0.25,
+      "start_char": 1963,
+      "end_char": 1967
+    },
+    {
+      "text": "chances",
+      "start": 140.075,
+      "end": 140.5375,
+      "duration": 0.4625,
+      "start_char": 1968,
+      "end_char": 1975
+    },
+    {
+      "text": "for",
+      "start": 140.5375,
+      "end": 140.65,
+      "duration": 0.1125,
+      "start_char": 1976,
+      "end_char": 1979
+    },
+    {
+      "text": "students",
+      "start": 140.65,
+      "end": 141.1,
+      "duration": 0.45,
+      "start_char": 1980,
+      "end_char": 1988
+    },
+    {
+      "text": "to",
+      "start": 141.1,
+      "end": 141.2,
+      "duration": 0.1,
+      "start_char": 1989,
+      "end_char": 1991
+    },
+    {
+      "text": "participate",
+      "start": 141.2,
+      "end": 141.875,
+      "duration": 0.675,
+      "start_char": 1992,
+      "end_char": 2003
     }
   ]
 }
