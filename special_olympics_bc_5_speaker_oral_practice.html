@@ -70,6 +70,23 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
 
+    .toolbar-panel {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .toolbar.is-collapsed {
+      justify-content: flex-end;
+      padding: 6px 10px;
+    }
+
+    .toolbar.is-collapsed .toolbar-panel {
+      display: none;
+    }
+
     button,
     select {
       border: 1px solid var(--border);
@@ -387,29 +404,32 @@
     <p>5-Speaker Oral Presentation Practice Page</p>
   </header>
 
-  <nav class="toolbar">
-    <button class="primary practice-control" onclick="startTimer()">Start 10-Min Timer</button>
-    <button class="practice-control" onclick="pauseTimer()">Pause</button>
-    <button class="practice-control" onclick="resetTimer()">Reset</button>
-    <button class="practice-control" id="playAllModelButton" onclick="playAllModelAudio()" aria-pressed="false">Play All Model Audio</button>
-    <button id="scriptOnlyButton" onclick="toggleScriptOnly()" aria-pressed="false">Script Only</button>
-    <span class="timer practice-control" id="timer">10:00</span>
-    <div class="progress-wrap practice-control" aria-label="timer progress">
-      <div class="progress-bar" id="progress"></div>
+  <nav class="toolbar" id="controlToolbar">
+    <button id="controlsToggle" onclick="toggleControls()" aria-expanded="true" aria-controls="controlPanel">Hide Controls</button>
+    <div class="toolbar-panel" id="controlPanel">
+      <button class="primary practice-control" onclick="startTimer()">Start 10-Min Timer</button>
+      <button class="practice-control" onclick="pauseTimer()">Pause</button>
+      <button class="practice-control" onclick="resetTimer()">Reset</button>
+      <button class="practice-control" id="playAllModelButton" onclick="playAllModelAudio()" aria-pressed="false">Play All Model Audio</button>
+      <button id="scriptOnlyButton" onclick="toggleScriptOnly()" aria-pressed="false">Script Only</button>
+      <span class="timer practice-control" id="timer">10:00</span>
+      <div class="progress-wrap practice-control" aria-label="timer progress">
+        <div class="progress-bar" id="progress"></div>
+      </div>
+
+      <select id="speakerSelect" onchange="filterSpeaker()">
+        <option value="all">Show all speakers</option>
+        <option value="speaker1">Speaker 1 only</option>
+        <option value="speaker2">Speaker 2 only</option>
+        <option value="speaker3">Speaker 3 only</option>
+        <option value="speaker4">Speaker 4 only</option>
+        <option value="speaker5">Speaker 5 only</option>
+      </select>
+
+      <button onclick="changeFont(1)">A+</button>
+      <button onclick="changeFont(-1)">A-</button>
+      <button onclick="window.print()">Print</button>
     </div>
-
-    <select id="speakerSelect" onchange="filterSpeaker()">
-      <option value="all">Show all speakers</option>
-      <option value="speaker1">Speaker 1 only</option>
-      <option value="speaker2">Speaker 2 only</option>
-      <option value="speaker3">Speaker 3 only</option>
-      <option value="speaker4">Speaker 4 only</option>
-      <option value="speaker5">Speaker 5 only</option>
-    </select>
-
-    <button onclick="changeFont(1)">A+</button>
-    <button onclick="changeFont(-1)">A-</button>
-    <button onclick="window.print()">Print</button>
   </nav>
 
   <main class="container">
@@ -679,6 +699,14 @@
     function changeFont(delta) {
       baseFont = Math.max(14, Math.min(28, baseFont + delta));
       document.body.style.fontSize = baseFont + 'px';
+    }
+
+    function toggleControls() {
+      const toolbar = document.getElementById('controlToolbar');
+      const button = document.getElementById('controlsToggle');
+      const collapsed = toolbar.classList.toggle('is-collapsed');
+      button.textContent = collapsed ? 'Show Controls' : 'Hide Controls';
+      button.setAttribute('aria-expanded', String(!collapsed));
     }
 
     function toggleScriptOnly() {
