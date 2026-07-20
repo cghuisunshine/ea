@@ -205,7 +205,7 @@
   </style>
 </head>
 <body>
-  <button class="controls-menu-toggle" type="button" id="controlsMenuToggle" aria-label="Hide script; double-click for settings" aria-haspopup="menu" aria-expanded="false" aria-controls="controlsMenu" title="Click: Hide script · Double-click: Settings">
+  <button class="controls-menu-toggle" type="button" id="controlsMenuToggle" aria-label="Show script; double-click for settings" aria-haspopup="menu" aria-expanded="false" aria-controls="controlsMenu" title="Click: Show script · Double-click: Settings">
     <span class="hamburger-icon" aria-hidden="true"></span>
   </button>
   <div class="controls-menu" id="controlsMenu" role="menu" aria-label="Presentation settings" hidden>
@@ -216,7 +216,7 @@
     </label>
   </div>
   <main class="deck">
-    <div class="stage" id="stage">
+    <div class="stage script-hidden" id="stage">
       <div class="slides" aria-live="polite">
         <section class="slide active" data-script="Hello, everyone.&#10;&#10;Today, I would like to share how my beliefs about child and adolescent development have changed. I will explain where my earlier beliefs came from, what I have learned in this program, and how this learning will guide my future work as an Education Assistant.">
           <div class="slide-number">01</div>
@@ -296,7 +296,7 @@
         </section>
       </div>
 
-      <aside class="script" id="script" aria-label="Script">
+      <aside class="script hidden" id="script" aria-label="Script">
         <audio class="model-audio" id="modelAudio" controls preload="metadata" aria-label="Model audio for the current page" hidden></audio>
         <p id="scriptText"></p>
       </aside>
