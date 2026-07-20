@@ -299,6 +299,9 @@
       let animationFrame = null;
       let edgeTapStart = null;
       let hamburgerClickTimer = null;
+      let hamburgerTouchTapAt = 0;
+      let ignoreTouchClickUntil = 0;
+      const hamburgerDoubleTapWindow = 500;
 
       function clearHighlight() {
         if (activeWord >= 0) wordSpans[activeWord]?.classList.remove('is-speaking');
@@ -391,7 +394,35 @@
         requestAnimationFrame(fitScriptText);
       }
 
+      controlsMenuToggle.addEventListener('pointerup', (event) => {
+        if (!event.isPrimary || !['touch', 'pen'].includes(event.pointerType)) return;
+        event.preventDefault();
+
+        const now = Date.now();
+        ignoreTouchClickUntil = now + 700;
+
+        if (hamburgerTouchTapAt && now - hamburgerTouchTapAt <= hamburgerDoubleTapWindow) {
+          if (hamburgerClickTimer) clearTimeout(hamburgerClickTimer);
+          hamburgerClickTimer = null;
+          hamburgerTouchTapAt = 0;
+          setControlsMenuOpen(controlsMenu.hidden);
+          return;
+        }
+
+        hamburgerTouchTapAt = now;
+        if (hamburgerClickTimer) clearTimeout(hamburgerClickTimer);
+        hamburgerClickTimer = setTimeout(() => {
+          setControlsMenuOpen(false);
+          toggleScript();
+          hamburgerClickTimer = null;
+          hamburgerTouchTapAt = 0;
+        }, hamburgerDoubleTapWindow);
+      });
       controlsMenuToggle.addEventListener('click', (event) => {
+        if (Date.now() < ignoreTouchClickUntil) {
+          event.preventDefault();
+          return;
+        }
         if (event.detail > 1) return;
         if (hamburgerClickTimer) clearTimeout(hamburgerClickTimer);
         hamburgerClickTimer = setTimeout(() => {
@@ -402,6 +433,7 @@
       });
       controlsMenuToggle.addEventListener('dblclick', (event) => {
         event.preventDefault();
+        if (Date.now() < ignoreTouchClickUntil) return;
         if (hamburgerClickTimer) {
           clearTimeout(hamburgerClickTimer);
           hamburgerClickTimer = null;
