@@ -64,7 +64,7 @@
     .stage {
       min-height: 0;
       display: grid;
-      grid-template-rows: repeat(2, minmax(0, 1fr));
+      grid-template-rows: minmax(140px, 0.6fr) minmax(0, 1.4fr);
     }
     .slides { position: relative; min-width: 0; min-height: 0; background: var(--paper); }
     .slide {
@@ -109,6 +109,7 @@
     .model-audio-label { flex: none; color: var(--muted); font-size: 14px; }
     .model-audio { width: min(100%, 520px); height: 36px; }
     .script p {
+      flex: 1;
       min-height: 0;
       margin: 0;
       overflow: auto;
@@ -156,9 +157,10 @@
     .keys { color: #bfae9f; font-size: 13px; margin-left: 8px; }
     @media (max-width: 850px) {
       .deck { grid-template-rows: minmax(0, 1fr) auto; }
+      .stage { grid-template-rows: minmax(110px, 0.4fr) minmax(0, 1.6fr); }
       .slide { padding: 24px; }
-      .script { padding: 22px 24px; }
-      .script-header { align-items: flex-start; flex-direction: column; gap: 10px; }
+      .script { padding: 18px 20px; gap: 12px; }
+      .script-header { align-items: flex-start; flex-direction: column; gap: 8px; }
       .model-audio-group { width: 100%; justify-content: flex-start; }
       .compare { grid-template-columns: 1fr; }
       .factors { grid-template-columns: repeat(2, 1fr); }
@@ -343,6 +345,19 @@
 
         if (cursor < text.length) scriptText.append(document.createTextNode(text.slice(cursor)));
         wordSpans = [...scriptText.querySelectorAll('.tts-word')];
+        requestAnimationFrame(fitScriptText);
+      }
+
+      function fitScriptText() {
+        if (script.classList.contains('hidden') || !scriptText.textContent) return;
+        scriptText.style.fontSize = '';
+        let fontSize = parseFloat(getComputedStyle(scriptText).fontSize);
+        const minimumFontSize = 12;
+
+        while (scriptText.scrollHeight > scriptText.clientHeight + 1 && fontSize > minimumFontSize) {
+          fontSize = Math.max(minimumFontSize, fontSize - 0.5);
+          scriptText.style.fontSize = `${fontSize}px`;
+        }
       }
 
       function paintHighlight() {
@@ -380,6 +395,7 @@
         stage.classList.toggle('script-hidden', hidden);
         toggleButton.textContent = hidden ? 'Show script' : 'Hide script';
         if (hidden) modelAudio.pause();
+        else requestAnimationFrame(fitScriptText);
       }
 
       document.getElementById('prev').addEventListener('click', () => show(index - 1));
@@ -402,6 +418,7 @@
       });
       modelAudio.addEventListener('pause', clearHighlight);
       modelAudio.addEventListener('ended', clearHighlight);
+      window.addEventListener('resize', () => requestAnimationFrame(fitScriptText));
       document.addEventListener('keydown', (event) => {
         if (event.target === modelAudio) return;
         if (['ArrowRight', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); show(index + 1); }
