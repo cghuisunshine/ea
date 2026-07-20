@@ -170,6 +170,30 @@
       .script { padding: 18px 20px; gap: 12px; }
       .compare { grid-template-columns: 1fr; }
       .factors { grid-template-columns: repeat(2, 1fr); }
+      .stage .slide.slide-neuroplasticity {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      .slide-neuroplasticity .flow {
+        width: 100%;
+        max-width: none;
+        gap: clamp(2px, 0.6vw, 4px);
+      }
+      .stage .slide-neuroplasticity .flow div {
+        flex: 0 1 auto;
+        min-width: 0;
+        font-size: clamp(11px, 3.2vw, 13px);
+        line-height: 1.15;
+        white-space: nowrap;
+      }
+      .stage .slide-neuroplasticity .flow .flow-wide {
+        flex: 0 1 clamp(68px, 20vw, 82px);
+        white-space: normal;
+      }
+      .stage .slide-neuroplasticity .flow b {
+        flex: 0 0 auto;
+        font-size: clamp(12px, 3.5vw, 16px);
+      }
     }
     @media print {
       body { background: white; overflow: visible; }
@@ -218,11 +242,11 @@
           </div>
         </section>
 
-        <section class="slide" data-script="Another important change in my thinking came from learning about neuroplasticity. I once believed that a child’s academic ability was mostly fixed. I now understand that the brain can grow and change through experience, practice, supportive relationships, and education. Repeated positive experiences can strengthen connections in the brain.&#10;&#10;This understanding will guide how I support students as an Education Assistant. If a student is struggling today, I should not assume that the student is incapable. With suitable support, encouragement, practice, and time, that student may make significant progress.">
+        <section class="slide slide-neuroplasticity" data-script="Another important change in my thinking came from learning about neuroplasticity. I once believed that a child’s academic ability was mostly fixed. I now understand that the brain can grow and change through experience, practice, supportive relationships, and education. Repeated positive experiences can strengthen connections in the brain.&#10;&#10;This understanding will guide how I support students as an Education Assistant. If a student is struggling today, I should not assume that the student is incapable. With suitable support, encouragement, practice, and time, that student may make significant progress.">
           <div class="slide-number">04</div>
           <div class="content">
             <h2>Minds can grow and change</h2>
-            <div class="flow"><div>Experience</div><b>→</b><div>Practice</div><b>→</b><div>Supportive relationships</div><b>→</b><div>Growth</div></div>
+            <div class="flow"><div>Experience</div><b>→</b><div>Practice</div><b>→</b><div class="flow-wide">Supportive relationships</div><b>→</b><div>Growth</div></div>
           </div>
         </section>
 
