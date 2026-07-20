@@ -165,17 +165,36 @@
       .compare { grid-template-columns: 1fr; }
       .factors { grid-template-columns: repeat(2, 1fr); }
       .toolbar {
+        position: relative;
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 6px;
-        padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
+        padding: 6px 88px calc(6px + env(safe-area-inset-bottom));
       }
       .toolbar button {
         min-width: 0;
+        min-height: 44px;
         padding: 7px 3px;
         font-size: clamp(11px, 3vw, 14px);
         line-height: 1.2;
         white-space: nowrap;
+        touch-action: manipulation;
+      }
+      .toolbar #prev,
+      .toolbar #next {
+        position: absolute;
+        top: 6px;
+        bottom: calc(6px + env(safe-area-inset-bottom));
+        width: 72px;
+      }
+      .toolbar #prev { left: 8px; }
+      .toolbar #next { right: 8px; }
+      .toolbar #toggleScript { grid-column: 1; }
+      .toolbar #fullscreen { grid-column: 2; }
+      .toolbar #prev:focus-visible,
+      .toolbar #next:focus-visible {
+        outline: 2px solid #f5eee8;
+        outline-offset: -3px;
       }
       .progress {
         grid-column: 1 / -1;
@@ -183,6 +202,7 @@
         text-align: center;
         font-size: 12px;
         line-height: 1;
+        pointer-events: none;
       }
       .keys { display: none; }
     }
