@@ -129,7 +129,10 @@
       gap: 18px;
       overflow: hidden;
     }
+    .model-audio-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 14px; }
+    .model-audio-row[hidden] { display: none; }
     .model-audio { width: min(100%, 520px); height: 36px; }
+    .model-audio-duration { color: var(--muted); font-size: 14px; white-space: nowrap; }
     .script p {
       flex: 1;
       min-height: 0;
@@ -297,7 +300,10 @@
       </div>
 
       <aside class="script hidden" id="script" aria-label="Script">
-        <audio class="model-audio" id="modelAudio" controls preload="metadata" aria-label="Model audio for the current page" hidden></audio>
+        <div class="model-audio-row" id="modelAudioRow" hidden>
+          <audio class="model-audio" id="modelAudio" controls preload="metadata" aria-label="Model audio for the current page"></audio>
+          <span class="model-audio-duration">Total model audio: <time datetime="PT6M45S">6:45</time></span>
+        </div>
         <p id="scriptText"></p>
       </aside>
     </div>
@@ -310,6 +316,7 @@
       const script = document.getElementById('script');
       const scriptText = document.getElementById('scriptText');
       const modelAudio = document.getElementById('modelAudio');
+      const modelAudioRow = document.getElementById('modelAudioRow');
       const stage = document.getElementById('stage');
       const controlsMenuToggle = document.getElementById('controlsMenuToggle');
       const controlsMenu = document.getElementById('controlsMenu');
@@ -412,7 +419,7 @@
 
       function setModelAudioEnabled(enabled) {
         modelAudioToggle.checked = enabled;
-        modelAudio.hidden = !enabled;
+        modelAudioRow.hidden = !enabled;
         modelAudioState.textContent = enabled ? 'On' : 'Off';
         if (!enabled) modelAudio.pause();
         requestAnimationFrame(fitScriptText);
