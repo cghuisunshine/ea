@@ -54,12 +54,11 @@
     .hamburger-icon { position: relative; }
     .hamburger-icon::before { position: absolute; top: -6px; left: 0; }
     .hamburger-icon::after { position: absolute; top: 6px; left: 0; }
-    body.page-buttons-hidden button:not(.controls-menu-toggle) { display: none !important; }
     .deck {
       height: 100vh;
       height: 100dvh;
       display: grid;
-      grid-template-rows: minmax(0, 1fr) 48px;
+      grid-template-rows: minmax(0, 1fr);
     }
     .stage {
       min-height: 0;
@@ -103,10 +102,6 @@
       gap: 18px;
       overflow: hidden;
     }
-    .script-header { display: flex; align-items: center; gap: 24px; }
-    .script h3 { flex: none; margin: 0; font-size: 18px; color: var(--accent); }
-    .model-audio-group { min-width: 0; flex: 1; display: flex; align-items: center; justify-content: flex-end; gap: 12px; }
-    .model-audio-label { flex: none; color: var(--muted); font-size: 14px; }
     .model-audio { width: min(100%, 520px); height: 36px; }
     .script p {
       flex: 1;
@@ -142,81 +137,24 @@
       font-size: clamp(16px, 1.5vw, 21px);
     }
     .stage:not(.script-hidden) .quote { font-size: clamp(24px, 2.7vw, 38px); }
-    .toolbar {
-      background: #1f1b18;
-      color: #f5eee8;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 0 14px;
-      border-top: 1px solid #413730;
-    }
-    .toolbar button { color: inherit; background: transparent; border: 1px solid #5c4e45; border-radius: 6px; padding: 5px 11px; cursor: pointer; }
-    .toolbar button:hover, .toolbar button:focus-visible { background: #3a302a; outline: none; }
-    .progress { margin-left: auto; font-variant-numeric: tabular-nums; color: #d9cbc1; }
-    .keys { color: #bfae9f; font-size: 13px; margin-left: 8px; }
     @media (max-width: 850px) {
-      .deck { grid-template-rows: minmax(0, 1fr) auto; }
       .stage { grid-template-rows: minmax(110px, 0.4fr) minmax(0, 1.6fr); }
       .slide { padding: 24px; }
       .script { padding: 18px 20px; gap: 12px; }
-      .script-header { align-items: flex-start; flex-direction: column; gap: 8px; }
-      .model-audio-group { width: 100%; justify-content: flex-start; }
       .compare { grid-template-columns: 1fr; }
       .factors { grid-template-columns: repeat(2, 1fr); }
-      .toolbar {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 6px;
-        padding: 6px 88px calc(6px + env(safe-area-inset-bottom));
-      }
-      .toolbar button {
-        min-width: 0;
-        min-height: 44px;
-        padding: 7px 3px;
-        font-size: clamp(11px, 3vw, 14px);
-        line-height: 1.2;
-        white-space: nowrap;
-        touch-action: manipulation;
-      }
-      .toolbar #prev,
-      .toolbar #next {
-        position: absolute;
-        top: 6px;
-        bottom: calc(6px + env(safe-area-inset-bottom));
-        width: 72px;
-      }
-      .toolbar #prev { left: 8px; }
-      .toolbar #next { right: 8px; }
-      .toolbar #toggleScript { grid-column: 1; }
-      .toolbar #fullscreen { grid-column: 2; }
-      .toolbar #prev:focus-visible,
-      .toolbar #next:focus-visible {
-        outline: 2px solid #f5eee8;
-        outline-offset: -3px;
-      }
-      .progress {
-        grid-column: 1 / -1;
-        margin-left: 0;
-        text-align: center;
-        font-size: 12px;
-        line-height: 1;
-        pointer-events: none;
-      }
-      .keys { display: none; }
     }
     @media print {
       body { background: white; overflow: visible; }
       .deck, .stage { display: block; height: auto; }
       .slides { background: white; }
       .slide { position: relative; display: flex !important; height: 7.5in; page-break-after: always; }
-      .script, .toolbar, .controls-menu-toggle { display: none !important; }
+      .script, .controls-menu-toggle { display: none !important; }
     }
   </style>
 </head>
 <body>
-  <button class="controls-menu-toggle" type="button" id="controlsMenuToggle" aria-label="Hide all page buttons" aria-pressed="false" title="Hide all page buttons">
+  <button class="controls-menu-toggle" type="button" id="controlsMenuToggle" aria-label="Hide script" aria-expanded="true" aria-controls="script" title="Hide script">
     <span class="hamburger-icon" aria-hidden="true"></span>
   </button>
   <main class="deck">
@@ -300,26 +238,11 @@
         </section>
       </div>
 
-      <aside class="script" id="script" aria-label="Speaker script">
-        <div class="script-header">
-          <h3>Speaker script</h3>
-          <div class="model-audio-group">
-            <span class="model-audio-label">Model audio · UK English</span>
-            <audio class="model-audio" id="modelAudio" controls preload="metadata" aria-label="Model audio for the current page"></audio>
-          </div>
-        </div>
+      <aside class="script" id="script" aria-label="Script">
+        <audio class="model-audio" id="modelAudio" controls preload="metadata" aria-label="Model audio for the current page"></audio>
         <p id="scriptText"></p>
       </aside>
     </div>
-
-    <nav class="toolbar" aria-label="Presentation controls">
-      <button type="button" id="prev" aria-label="Previous slide">← Previous</button>
-      <button type="button" id="next" aria-label="Next slide">Next →</button>
-      <button type="button" id="toggleScript">Hide script</button>
-      <button type="button" id="fullscreen">Full screen</button>
-      <span class="keys">Arrow keys to turn pages · S to show/hide script · F for full screen</span>
-      <span class="progress" id="progress">1 / 10</span>
-    </nav>
   </main>
 
   <script src="audio/beliefs-child-development-timings.js?v=20260719-unified-en-gb-sonia"></script>
@@ -330,8 +253,6 @@
       const scriptText = document.getElementById('scriptText');
       const modelAudio = document.getElementById('modelAudio');
       const stage = document.getElementById('stage');
-      const progress = document.getElementById('progress');
-      const toggleButton = document.getElementById('toggleScript');
       const controlsMenuToggle = document.getElementById('controlsMenuToggle');
       const pageTimings = window.beliefsChildDevelopmentTimings || [];
       let index = 0;
@@ -339,6 +260,7 @@
       let wordSpans = [];
       let activeWord = -1;
       let animationFrame = null;
+      let edgeTapStart = null;
 
       function clearHighlight() {
         if (activeWord >= 0) wordSpans[activeWord]?.classList.remove('is-speaking');
@@ -405,33 +327,42 @@
         renderTimedScript(timing);
         modelAudio.src = `audio/beliefs-child-development-page-${String(index + 1).padStart(2, '0')}.mp3?v=20260719-unified-en-gb-sonia`;
         modelAudio.load();
-        progress.textContent = `${index + 1} / ${slides.length}`;
-        document.getElementById('prev').disabled = index === 0;
-        document.getElementById('next').disabled = index === slides.length - 1;
       }
 
       function toggleScript() {
         const hidden = script.classList.toggle('hidden');
         stage.classList.toggle('script-hidden', hidden);
-        toggleButton.textContent = hidden ? 'Show script' : 'Hide script';
+        const action = hidden ? 'Show' : 'Hide';
+        controlsMenuToggle.setAttribute('aria-expanded', String(!hidden));
+        controlsMenuToggle.setAttribute('aria-label', `${action} script`);
+        controlsMenuToggle.title = `${action} script`;
         if (hidden) modelAudio.pause();
         else requestAnimationFrame(fitScriptText);
       }
 
-      document.getElementById('prev').addEventListener('click', () => show(index - 1));
-      document.getElementById('next').addEventListener('click', () => show(index + 1));
-      toggleButton.addEventListener('click', toggleScript);
-      controlsMenuToggle.addEventListener('click', () => {
-        const hidden = document.body.classList.toggle('page-buttons-hidden');
-        const action = hidden ? 'Show' : 'Hide';
-        controlsMenuToggle.setAttribute('aria-pressed', String(hidden));
-        controlsMenuToggle.setAttribute('aria-label', `${action} all page buttons`);
-        controlsMenuToggle.title = `${action} all page buttons`;
+      controlsMenuToggle.addEventListener('click', toggleScript);
+      stage.addEventListener('pointerdown', (event) => {
+        if (!window.matchMedia('(max-width: 850px)').matches) return;
+        if (event.target instanceof Element && event.target.closest('audio, button, a, input, select, textarea')) return;
+        edgeTapStart = {
+          pointerId: event.pointerId,
+          x: event.clientX,
+          y: event.clientY,
+          time: Date.now()
+        };
       });
-      document.getElementById('fullscreen').addEventListener('click', () => {
-        if (!document.fullscreenElement) document.documentElement.requestFullscreen?.();
-        else document.exitFullscreen?.();
+      stage.addEventListener('pointerup', (event) => {
+        const start = edgeTapStart;
+        edgeTapStart = null;
+        if (!start || start.pointerId !== event.pointerId) return;
+        if (Date.now() - start.time > 500) return;
+        if (Math.hypot(event.clientX - start.x, event.clientY - start.y) > 12) return;
+
+        const edgeWidth = Math.min(88, Math.max(56, window.innerWidth * 0.18));
+        if (event.clientX <= edgeWidth && index > 0) show(index - 1);
+        else if (event.clientX >= window.innerWidth - edgeWidth && index < slides.length - 1) show(index + 1);
       });
+      stage.addEventListener('pointercancel', () => { edgeTapStart = null; });
       modelAudio.addEventListener('play', () => {
         if (animationFrame) cancelAnimationFrame(animationFrame);
         paintHighlight();
@@ -446,7 +377,10 @@
         if (event.key === 'Home') show(0);
         if (event.key === 'End') show(slides.length - 1);
         if (event.key.toLowerCase() === 's') toggleScript();
-        if (event.key.toLowerCase() === 'f') document.getElementById('fullscreen').click();
+        if (event.key.toLowerCase() === 'f') {
+          if (!document.fullscreenElement) document.documentElement.requestFullscreen?.();
+          else document.exitFullscreen?.();
+        }
       });
       show(0);
     })();
