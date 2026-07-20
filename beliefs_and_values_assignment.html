@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Beliefs and Understandings About Child Development reflection assignment." />
+  <title>Beliefs and Understandings About Child Development</title>
+  <style>
+    :root {
+      --ink: #18212f;
+      --muted: #667085;
+      --paper: #ffffff;
+      --page-bg: #eef2f7;
+      --line: #d8e0ea;
+      --navy: #173b66;
+      --blue: #2d6eaa;
+      --blue-soft: #eaf3fb;
+      --gold: #a96712;
+      --gold-soft: #fff6e6;
+      --shadow: 0 18px 50px rgba(18, 35, 56, 0.12);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 0 0, rgba(45,110,170,.12), transparent 30rem),
+        linear-gradient(180deg, #f6f8fb 0%, var(--page-bg) 100%);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      padding: 12px 18px;
+      background: rgba(246, 248, 251, 0.88);
+      border-bottom: 1px solid rgba(216, 224, 234, 0.9);
+      backdrop-filter: blur(14px);
+    }
+
+    .toolbar-inner {
+      width: min(980px, 100%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .toolbar-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      color: var(--navy);
+      font-size: .92rem;
+      font-weight: 750;
+    }
+
+    .toolbar-title span:last-child {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .mark {
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border-radius: 9px;
+      color: white;
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      box-shadow: 0 5px 14px rgba(23,59,102,.22);
+    }
+
+    .actions { display: flex; gap: 8px; }
+
+    button {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 9px 13px;
+      font: inherit;
+      font-size: .87rem;
+      font-weight: 700;
+      cursor: pointer;
+      color: var(--navy);
+      background: var(--paper);
+      transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      border-color: #b9c9db;
+      box-shadow: 0 7px 18px rgba(18,35,56,.09);
+    }
+
+    button.primary {
+      color: white;
+      border-color: var(--navy);
+      background: var(--navy);
+    }
+
+    main {
+      width: min(980px, calc(100% - 28px));
+      margin: 34px auto 60px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(28px, 6vw, 56px);
+      border-radius: 24px;
+      color: white;
+      background:
+        linear-gradient(120deg, rgba(23,59,102,.98), rgba(45,110,170,.92)),
+        #173b66;
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      right: -72px;
+      bottom: -125px;
+      border-radius: 50%;
+      border: 42px solid rgba(255,255,255,.08);
+    }
+
+    .eyebrow {
+      margin: 0 0 9px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: .77rem;
+      font-weight: 800;
+      opacity: .82;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 3.75rem);
+      line-height: 1.08;
+      letter-spacing: -.025em;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 18px 0 0;
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: rgba(255,255,255,.85);
+    }
+
+    .summary-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      margin-top: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: var(--line);
+      box-shadow: 0 8px 26px rgba(18,35,56,.06);
+    }
+
+    .summary-item {
+      padding: 15px 18px;
+      background: rgba(255,255,255,.9);
+    }
+
+    .summary-item strong {
+      display: block;
+      color: var(--navy);
+      font-size: 1.05rem;
+    }
+
+    .summary-item span {
+      color: var(--muted);
+      font-size: .82rem;
+    }
+
+    .section-list {
+      display: grid;
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    article.topic {
+      position: relative;
+      display: grid;
+      grid-template-columns: 82px 1fr;
+      gap: 22px;
+      padding: 28px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.96);
+      box-shadow: 0 12px 30px rgba(18,35,56,.065);
+    }
+
+    article.topic::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 5px;
+      background: linear-gradient(180deg, var(--blue), #77a9d4);
+    }
+
+    .topic-number {
+      width: 64px;
+      height: 64px;
+      display: grid;
+      place-items: center;
+      border-radius: 17px;
+      color: var(--navy);
+      background: var(--blue-soft);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+    }
+
+    .topic h2 {
+      margin: 0 0 16px;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+      line-height: 1.25;
+    }
+
+    .reflection-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .reflection {
+      min-height: 100%;
+      padding: 17px 18px;
+      border-radius: 13px;
+      border: 1px solid #d9e5f0;
+      background: #f8fbfe;
+    }
+
+    .reflection.after {
+      border-color: #ead4aa;
+      background: var(--gold-soft);
+    }
+
+    .label {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 8px;
+      color: var(--blue);
+      font-size: .75rem;
+      font-weight: 850;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .after .label { color: var(--gold); }
+
+    .label-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .reflection p {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.035rem;
+      line-height: 1.63;
+    }
+
+    footer {
+      margin-top: 26px;
+      padding: 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .86rem;
+    }
+
+    @media (max-width: 720px) {
+      .toolbar-title span:last-child { display: none; }
+      .summary-strip { grid-template-columns: 1fr; }
+      article.topic { grid-template-columns: 1fr; padding: 23px 20px 22px; gap: 12px; }
+      .topic-number { width: 50px; height: 50px; border-radius: 14px; font-size: 1.25rem; }
+      .reflection-grid { grid-template-columns: 1fr; }
+      .hero { border-radius: 18px; }
+      main { margin-top: 20px; }
+    }
+
+    @media print {
+      @page { size: Letter; margin: 0.52in 0.58in; }
+
+      body {
+        background: white;
+        font-size: 10.4pt;
+        line-height: 1.35;
+      }
+
+      .toolbar, .summary-strip, footer { display: none !important; }
+
+      main {
+        width: auto;
+        margin: 0;
+      }
+
+      .hero {
+        padding: 0 0 12pt;
+        color: #111;
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+        border-bottom: 1.5pt solid #173b66;
+      }
+
+      .hero::after { display: none; }
+      .eyebrow { color: #173b66; opacity: 1; margin-bottom: 3pt; }
+      h1 { max-width: none; font-size: 22pt; line-height: 1.08; }
+      .hero p { color: #444; margin-top: 5pt; font-size: 9.6pt; }
+
+      .section-list {
+        display: block;
+        margin-top: 10pt;
+      }
+
+      article.topic {
+        display: block;
+        margin: 0 0 8pt;
+        padding: 0 0 7pt;
+        border: 0;
+        border-bottom: .6pt solid #cfd7e0;
+        border-radius: 0;
+        box-shadow: none;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      article.topic::before, .topic-number { display: none; }
+      .topic h2 { margin: 0 0 3pt; font-size: 12.4pt; }
+      .reflection-grid { display: block; }
+      .reflection {
+        padding: 0;
+        border: 0;
+        background: none;
+      }
+      .reflection.after { margin-top: 3pt; background: none; }
+      .label { margin: 0 4pt 0 0; font-size: 8pt; vertical-align: baseline; }
+      .label-dot { display: none; }
+      .reflection p {
+        display: inline;
+        font-size: 10.1pt;
+        line-height: 1.35;
+      }
+
+      article:nth-of-type(6) { break-before: page; page-break-before: always; }
+    }
+  </style>
+</head>
+<body>
+  <header class="toolbar" aria-label="Page tools">
+    <div class="toolbar-inner">
+      <div class="toolbar-title">
+        <span class="mark" aria-hidden="true">B</span>
+        <span>Beliefs and Understandings About Child Development</span>
+      </div>
+      <div class="actions">
+        <button type="button" onclick="window.scrollTo({top:0, behavior:'smooth'})">Top</button>
+        <button class="primary" type="button" onclick="window.print()">Print / Save PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Reflective Assignment</p>
+      <h1>Beliefs and Understandings About Child Development</h1>
+      <p>A reflection on how children grow, learn, form identity, regulate emotions and behaviour, and respond to the people and environments around them.</p>
+    </section>
+
+    <section class="summary-strip" aria-label="Assignment overview">
+      <div class="summary-item"><strong>9 topics</strong><span>Key areas of development</span></div>
+      <div class="summary-item"><strong>Before and after</strong><span>Original beliefs and new learning</span></div>
+      <div class="summary-item"><strong>Print ready</strong><span>Designed for a two-page Letter layout</span></div>
+    </section>
+
+    <section class="section-list" aria-label="Reflections">
+      <article class="topic" id="important-factors">
+        <div class="topic-number">01</div>
+        <div>
+          <h2>Important Factors</h2>
+          <div class="reflection-grid">
+            <div class="reflection">
+              <div class="label"><span class="label-dot"></span>Initial Understanding</div>
+              <p>One of the most critical factors is the environment in which a child is raised. Supportive relationships with parents, caregivers, and mentors provide a foundation for emotional security and resilience.</p>
+            </div>
+            <div class="reflection after">
+              <div class="label"><span class="label-dot"></span>After Learning</div>
+              <p>I now understand that development is influenced by interacting factors, including biology, family, culture, school, peers, and personal experiences.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="topic" id="growth-and-change">
+        <div class="topic-number">02</div>
+        <div>
+          <h2>Growth and Change in Minds</h2>
+          <div class="reflection-grid">
+            <div class="reflection">
+              <div class="label"><span class="label-dot"></span>Initial Understanding</div>
+              <p>Children’s minds grow and change remarkably due to neuroplasticity—the brain’s ability to reorganize itself through experiences. Early interactions, sensory experiences, and education foster cognitive skills, emotional intelligence, and moral understanding.</p>
+            </div>
+            <div class="reflection after">
+              <div class="label"><span class="label-dot"></span>After Learning</div>
+              <p>I learned that repeated experiences strengthen brain connections. Positive relationships and a safe environment can support children’s learning and development.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="topic" id="role-of-teacher">
+        <div class="topic-number">03</div>
+        <div>
+          <h2>Role of the Teacher</h2>
+          <div class="reflection-grid">
+            <div class="reflection">
+              <div class="label"><span class="label-dot"></span>Initial Understanding</div>
+              <p>Teachers are pivotal in shaping young minds. They create a structured environment that encourages exploration and learning.</p>
+            </div>
+            <div class="reflection after">
+              <div class="label"><span class="label-dot"></span>After Learning</div>
+              <p>Teachers do more than provide knowledge. They build trusting relationships, model skills, and create safe opportunities for students to practise and make mistakes.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="topic" id="identity">
+        <div class="topic-number">04</div>
+        <div>
+          <h2>Sense of Identity</h2>
+          <div class="reflection-grid">
+            <div class="reflection">
+              <div class="label"><span class="label-dot"></span>Initial Understanding</div>
+              <p>Children and adolescents develop their sense of self through varied experiences, interactions, and self-reflection.</p>
+            </div>
+            <div class="reflection after">
+              <div class="label"><span class="label-dot"></span>After Learning</div>
+              <p>I now understand that identity is shaped by family, culture, interests, school experiences, and feedback from peers and adults.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="topic" id="nature-nurture">
+        <div class="topic-number">05</div>
+        <div>
+          <h2>Nature vs. Nurture</h2>
+          <div class="reflection-grid">
+            <div class="reflection">
+              <div class="label"><span class="label-dot"></span>Initial Understanding</div>
+              <p>Both nature and nurture play integral roles in human development. Genetic predispositions influence personality traits, cognitive abilities, and emotional responses, but environmental factors also shape how these characteristics develop.</p>
+            </div>
+            <div class="reflection after">
+              <div class="label"><span class="label-dot"></span>After Learning</div>
+              <p>I previously viewed nature and nurture separately. I now understand that inherited characteristics and environmental experiences continuously influence each other.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="topic" id="emotional-changes">
+        <div class="topic-number">06</div>
+        <div>
+          <h2>Emotional Changes</h2>
+          <div class="reflection-grid">
+            <div class="reflection">
+              <div class="label"><span class="label-dot"></span>Initial Understanding</div>
+              <p>Over their school years, individuals often experience profound changes in how they handle emotions. School environments provide opportunities for emotional learning and resilience-building.</p>
+            </div>
+            <div class="reflection after">
+              <div class="label"><span class="label-dot"></span>After Learning</div>
+              <p>Emotional regulation develops gradually. Children become better at understanding and managing feelings, although adolescents may still experience emotions very intensely.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="topic" id="behaviour-regulation">
+        <div class="topic-number">07</div>
+        <div>
+          <h2>Behaviour Regulation</h2>
+          <div class="reflection-grid">
+            <div class="reflection">
+              <div class="label"><span class="label-dot"></span>Initial Understanding</div>
+              <p>Children learn to regulate their behaviour through consistent modelling from adults and feedback from their peers.</p>
+            </div>
+            <div class="reflection after">
+              <div class="label"><span class="label-dot"></span>After Learning</div>
+              <p>I learned that children first need co-regulation from calm adults. With modelling, routines, and practice, they gradually develop self-regulation.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="topic" id="peer-groups">
+        <div class="topic-number">08</div>
+        <div>
+          <h2>Influence of Peer Groups</h2>
+          <div class="reflection-grid">
+            <div class="reflection">
+              <div class="label"><span class="label-dot"></span>Initial Understanding</div>
+              <p>Peer groups have a significant influence on children’s social development. Friends can provide a sense of belonging, influence behaviour and interests, and help shape values.</p>
+            </div>
+            <div class="reflection after">
+              <div class="label"><span class="label-dot"></span>After Learning</div>
+              <p>Peer influence can be positive or negative. Friendships can build confidence and belonging, while pressure or exclusion can harm self-esteem.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="topic" id="challenges">
+        <div class="topic-number">09</div>
+        <div>
+          <h2>Challenges and Future Difficulties</h2>
+          <div class="reflection-grid">
+            <div class="reflection">
+              <div class="label"><span class="label-dot"></span>Initial Understanding</div>
+              <p>Early-life challenges, such as trauma or neglect, can lead to later difficulties, including mental health concerns, social difficulties, and learning challenges.</p>
+            </div>
+            <div class="reflection after">
+              <div class="label"><span class="label-dot"></span>After Learning</div>
+              <p>Early challenges increase risk but do not determine a child’s future. Caring adults, supportive schools, and other protective factors can build resilience.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      Beliefs and Understandings About Child Development · Reflective Assignment
+    </footer>
+  </main>
+</body>
+</html>
