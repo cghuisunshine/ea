@@ -39,6 +39,8 @@
       border: 1px solid #5c4e45;
       border-radius: 7px;
       cursor: pointer;
+      touch-action: manipulation;
+      user-select: none;
     }
     .controls-menu-toggle:hover,
     .controls-menu-toggle:focus-visible { background: #3a302a; outline: 2px solid #f5eee8; outline-offset: 2px; }
@@ -54,6 +56,31 @@
     .hamburger-icon { position: relative; }
     .hamburger-icon::before { position: absolute; top: -6px; left: 0; }
     .hamburger-icon::after { position: absolute; top: 6px; left: 0; }
+    .controls-menu {
+      position: fixed;
+      top: 62px;
+      right: 14px;
+      z-index: 999;
+      width: 210px;
+      padding: 8px;
+      color: #f5eee8;
+      background: #1f1b18;
+      border: 1px solid #5c4e45;
+      border-radius: 7px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
+    }
+    .controls-menu[hidden] { display: none; }
+    .controls-menu-option {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px;
+      cursor: pointer;
+    }
+    .controls-menu-option:hover { background: #3a302a; }
+    .controls-menu-option input { margin: 0; accent-color: var(--accent); }
+    .controls-menu-state { margin-left: auto; color: #d9cbc1; font-size: 13px; }
     .deck {
       height: 100vh;
       height: 100dvh;
@@ -149,14 +176,21 @@
       .deck, .stage { display: block; height: auto; }
       .slides { background: white; }
       .slide { position: relative; display: flex !important; height: 7.5in; page-break-after: always; }
-      .script, .controls-menu-toggle { display: none !important; }
+      .script, .controls-menu-toggle, .controls-menu { display: none !important; }
     }
   </style>
 </head>
 <body>
-  <button class="controls-menu-toggle" type="button" id="controlsMenuToggle" aria-label="Hide script" aria-expanded="true" aria-controls="script" title="Hide script">
+  <button class="controls-menu-toggle" type="button" id="controlsMenuToggle" aria-label="Hide script; double-click for settings" aria-haspopup="menu" aria-expanded="false" aria-controls="controlsMenu" title="Click: Hide script · Double-click: Settings">
     <span class="hamburger-icon" aria-hidden="true"></span>
   </button>
+  <div class="controls-menu" id="controlsMenu" role="menu" aria-label="Presentation settings" hidden>
+    <label class="controls-menu-option">
+      <input type="checkbox" id="modelAudioToggle" role="menuitemcheckbox">
+      <span>Model audio</span>
+      <span class="controls-menu-state" id="modelAudioState">Off</span>
+    </label>
+  </div>
   <main class="deck">
     <div class="stage" id="stage">
       <div class="slides" aria-live="polite">
@@ -239,7 +273,7 @@
       </div>
 
       <aside class="script" id="script" aria-label="Script">
-        <audio class="model-audio" id="modelAudio" controls preload="metadata" aria-label="Model audio for the current page"></audio>
+        <audio class="model-audio" id="modelAudio" controls preload="metadata" aria-label="Model audio for the current page" hidden></audio>
         <p id="scriptText"></p>
       </aside>
     </div>
@@ -254,6 +288,9 @@
       const modelAudio = document.getElementById('modelAudio');
       const stage = document.getElementById('stage');
       const controlsMenuToggle = document.getElementById('controlsMenuToggle');
+      const controlsMenu = document.getElementById('controlsMenu');
+      const modelAudioToggle = document.getElementById('modelAudioToggle');
+      const modelAudioState = document.getElementById('modelAudioState');
       const pageTimings = window.beliefsChildDevelopmentTimings || [];
       let index = 0;
       let timedWords = [];
@@ -261,6 +298,7 @@
       let activeWord = -1;
       let animationFrame = null;
       let edgeTapStart = null;
+      let hamburgerClickTimer = null;
 
       function clearHighlight() {
         if (activeWord >= 0) wordSpans[activeWord]?.classList.remove('is-speaking');
@@ -333,14 +371,49 @@
         const hidden = script.classList.toggle('hidden');
         stage.classList.toggle('script-hidden', hidden);
         const action = hidden ? 'Show' : 'Hide';
-        controlsMenuToggle.setAttribute('aria-expanded', String(!hidden));
-        controlsMenuToggle.setAttribute('aria-label', `${action} script`);
-        controlsMenuToggle.title = `${action} script`;
+        controlsMenuToggle.setAttribute('aria-label', `${action} script; double-click for settings`);
+        controlsMenuToggle.title = `Click: ${action} script · Double-click: Settings`;
         if (hidden) modelAudio.pause();
         else requestAnimationFrame(fitScriptText);
       }
 
-      controlsMenuToggle.addEventListener('click', toggleScript);
+      function setControlsMenuOpen(open) {
+        controlsMenu.hidden = !open;
+        controlsMenuToggle.setAttribute('aria-expanded', String(open));
+        if (open) modelAudioToggle.focus();
+      }
+
+      function setModelAudioEnabled(enabled) {
+        modelAudioToggle.checked = enabled;
+        modelAudio.hidden = !enabled;
+        modelAudioState.textContent = enabled ? 'On' : 'Off';
+        if (!enabled) modelAudio.pause();
+        requestAnimationFrame(fitScriptText);
+      }
+
+      controlsMenuToggle.addEventListener('click', (event) => {
+        if (event.detail > 1) return;
+        if (hamburgerClickTimer) clearTimeout(hamburgerClickTimer);
+        hamburgerClickTimer = setTimeout(() => {
+          setControlsMenuOpen(false);
+          toggleScript();
+          hamburgerClickTimer = null;
+        }, 350);
+      });
+      controlsMenuToggle.addEventListener('dblclick', (event) => {
+        event.preventDefault();
+        if (hamburgerClickTimer) {
+          clearTimeout(hamburgerClickTimer);
+          hamburgerClickTimer = null;
+        }
+        setControlsMenuOpen(controlsMenu.hidden);
+      });
+      modelAudioToggle.addEventListener('change', () => setModelAudioEnabled(modelAudioToggle.checked));
+      document.addEventListener('pointerdown', (event) => {
+        if (controlsMenu.hidden) return;
+        if (controlsMenu.contains(event.target) || controlsMenuToggle.contains(event.target)) return;
+        setControlsMenuOpen(false);
+      });
       stage.addEventListener('pointerdown', (event) => {
         if (!window.matchMedia('(max-width: 850px)').matches) return;
         if (event.target instanceof Element && event.target.closest('audio, button, a, input, select, textarea')) return;
@@ -371,7 +444,12 @@
       modelAudio.addEventListener('ended', clearHighlight);
       window.addEventListener('resize', () => requestAnimationFrame(fitScriptText));
       document.addEventListener('keydown', (event) => {
-        if (event.target === modelAudio) return;
+        if (event.key === 'Escape' && !controlsMenu.hidden) {
+          setControlsMenuOpen(false);
+          controlsMenuToggle.focus();
+          return;
+        }
+        if (event.target instanceof Element && event.target.closest('audio, button, input, select, textarea, a')) return;
         if (['ArrowRight', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); show(index + 1); }
         if (['ArrowLeft', 'PageUp'].includes(event.key)) { event.preventDefault(); show(index - 1); }
         if (event.key === 'Home') show(0);
@@ -382,6 +460,7 @@
           else document.exitFullscreen?.();
         }
       });
+      setModelAudioEnabled(false);
       show(0);
     })();
   </script>
