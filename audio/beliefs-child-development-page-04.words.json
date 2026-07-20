@@ -1,0 +1,711 @@
+{
+  "text": "Another important change in my thinking came from learning about neuroplasticity. I once believed that a child’s academic ability was mostly fixed. I now understand that the brain can grow and change through experience, practice, supportive relationships, and education. Repeated positive experiences can strengthen connections in the brain.\n\nThis understanding will guide how I support students as an Education Assistant. If a student is struggling today, I should not assume that the student is incapable. With suitable support, encouragement, practice, and time, that student may make significant progress.",
+  "voice": "en-GB-SoniaNeural",
+  "audio": "beliefs-child-development-page-04.mp3",
+  "words": [
+    {
+      "text": "Another",
+      "start": 0.115791,
+      "end": 0.536832,
+      "duration": 0.421041,
+      "start_char": 0,
+      "end_char": 7
+    },
+    {
+      "text": "important",
+      "start": 0.55,
+      "end": 1.142125,
+      "duration": 0.592125,
+      "start_char": 8,
+      "end_char": 17
+    },
+    {
+      "text": "change",
+      "start": 1.15525,
+      "end": 1.589458,
+      "duration": 0.434208,
+      "start_char": 18,
+      "end_char": 24
+    },
+    {
+      "text": "in",
+      "start": 1.602625,
+      "end": 1.681583,
+      "duration": 0.078958,
+      "start_char": 25,
+      "end_char": 27
+    },
+    {
+      "text": "my",
+      "start": 1.69475,
+      "end": 1.852625,
+      "duration": 0.157875,
+      "start_char": 28,
+      "end_char": 30
+    },
+    {
+      "text": "thinking",
+      "start": 1.865791,
+      "end": 2.405249,
+      "duration": 0.539458,
+      "start_char": 31,
+      "end_char": 39
+    },
+    {
+      "text": "came",
+      "start": 2.418416,
+      "end": 2.707874,
+      "duration": 0.289458,
+      "start_char": 40,
+      "end_char": 44
+    },
+    {
+      "text": "from",
+      "start": 2.721041,
+      "end": 2.931582,
+      "duration": 0.210541,
+      "start_char": 45,
+      "end_char": 49
+    },
+    {
+      "text": "learning",
+      "start": 2.94475,
+      "end": 3.365791,
+      "duration": 0.421041,
+      "start_char": 50,
+      "end_char": 58
+    },
+    {
+      "text": "about",
+      "start": 3.378958,
+      "end": 3.760541,
+      "duration": 0.381583,
+      "start_char": 59,
+      "end_char": 64
+    },
+    {
+      "text": "neuroplasticity",
+      "start": 3.773666,
+      "end": 4.918416,
+      "duration": 1.14475,
+      "start_char": 65,
+      "end_char": 80
+    },
+    {
+      "text": "I",
+      "start": 5.342125,
+      "end": 5.460541,
+      "duration": 0.118416,
+      "start_char": 82,
+      "end_char": 83
+    },
+    {
+      "text": "once",
+      "start": 5.473666,
+      "end": 5.802624,
+      "duration": 0.328958,
+      "start_char": 84,
+      "end_char": 88
+    },
+    {
+      "text": "believed",
+      "start": 5.815791,
+      "end": 6.421041,
+      "duration": 0.60525,
+      "start_char": 89,
+      "end_char": 97
+    },
+    {
+      "text": "that",
+      "start": 6.434208,
+      "end": 6.605249,
+      "duration": 0.171041,
+      "start_char": 98,
+      "end_char": 102
+    },
+    {
+      "text": "a",
+      "start": 6.618416,
+      "end": 6.697374,
+      "duration": 0.078958,
+      "start_char": 103,
+      "end_char": 104
+    },
+    {
+      "text": "child’s",
+      "start": 6.710541,
+      "end": 7.236874,
+      "duration": 0.526333,
+      "start_char": 105,
+      "end_char": 112
+    },
+    {
+      "text": "academic",
+      "start": 7.25,
+      "end": 7.815791,
+      "duration": 0.565791,
+      "start_char": 113,
+      "end_char": 121
+    },
+    {
+      "text": "ability",
+      "start": 7.828958,
+      "end": 8.407916,
+      "duration": 0.578958,
+      "start_char": 122,
+      "end_char": 129
+    },
+    {
+      "text": "was",
+      "start": 8.421041,
+      "end": 8.631582,
+      "duration": 0.210541,
+      "start_char": 130,
+      "end_char": 133
+    },
+    {
+      "text": "mostly",
+      "start": 8.64475,
+      "end": 9.105291,
+      "duration": 0.460541,
+      "start_char": 134,
+      "end_char": 140
+    },
+    {
+      "text": "fixed",
+      "start": 9.118416,
+      "end": 9.763166,
+      "duration": 0.64475,
+      "start_char": 141,
+      "end_char": 146
+    },
+    {
+      "text": "I",
+      "start": 10.184208,
+      "end": 10.289458,
+      "duration": 0.10525,
+      "start_char": 148,
+      "end_char": 149
+    },
+    {
+      "text": "now",
+      "start": 10.302625,
+      "end": 10.618416,
+      "duration": 0.315791,
+      "start_char": 150,
+      "end_char": 153
+    },
+    {
+      "text": "understand",
+      "start": 10.631583,
+      "end": 11.342124,
+      "duration": 0.710541,
+      "start_char": 154,
+      "end_char": 164
+    },
+    {
+      "text": "that",
+      "start": 11.35525,
+      "end": 11.5,
+      "duration": 0.14475,
+      "start_char": 165,
+      "end_char": 169
+    },
+    {
+      "text": "the",
+      "start": 11.513166,
+      "end": 11.618416,
+      "duration": 0.10525,
+      "start_char": 170,
+      "end_char": 173
+    },
+    {
+      "text": "brain",
+      "start": 11.631583,
+      "end": 11.947374,
+      "duration": 0.315791,
+      "start_char": 174,
+      "end_char": 179
+    },
+    {
+      "text": "can",
+      "start": 11.960541,
+      "end": 12.144749,
+      "duration": 0.184208,
+      "start_char": 180,
+      "end_char": 183
+    },
+    {
+      "text": "grow",
+      "start": 12.157875,
+      "end": 12.486833,
+      "duration": 0.328958,
+      "start_char": 184,
+      "end_char": 188
+    },
+    {
+      "text": "and",
+      "start": 12.5,
+      "end": 12.631583,
+      "duration": 0.131583,
+      "start_char": 189,
+      "end_char": 192
+    },
+    {
+      "text": "change",
+      "start": 12.64475,
+      "end": 13.131583,
+      "duration": 0.486833,
+      "start_char": 193,
+      "end_char": 199
+    },
+    {
+      "text": "through",
+      "start": 13.14475,
+      "end": 13.315791,
+      "duration": 0.171041,
+      "start_char": 200,
+      "end_char": 207
+    },
+    {
+      "text": "experience",
+      "start": 13.328958,
+      "end": 14.157916,
+      "duration": 0.828958,
+      "start_char": 208,
+      "end_char": 218
+    },
+    {
+      "text": "practice",
+      "start": 14.447375,
+      "end": 15.078958,
+      "duration": 0.631583,
+      "start_char": 220,
+      "end_char": 228
+    },
+    {
+      "text": "supportive",
+      "start": 15.35525,
+      "end": 15.894708,
+      "duration": 0.539458,
+      "start_char": 230,
+      "end_char": 240
+    },
+    {
+      "text": "relationships",
+      "start": 15.907875,
+      "end": 16.776291,
+      "duration": 0.868416,
+      "start_char": 241,
+      "end_char": 254
+    },
+    {
+      "text": "and",
+      "start": 16.973666,
+      "end": 17.118416,
+      "duration": 0.14475,
+      "start_char": 256,
+      "end_char": 259
+    },
+    {
+      "text": "education",
+      "start": 17.131583,
+      "end": 17.907916,
+      "duration": 0.776333,
+      "start_char": 260,
+      "end_char": 269
+    },
+    {
+      "text": "Repeated",
+      "start": 18.328958,
+      "end": 19.013166,
+      "duration": 0.684208,
+      "start_char": 271,
+      "end_char": 279
+    },
+    {
+      "text": "positive",
+      "start": 19.026333,
+      "end": 19.513166,
+      "duration": 0.486833,
+      "start_char": 280,
+      "end_char": 288
+    },
+    {
+      "text": "experiences",
+      "start": 19.526333,
+      "end": 20.526333,
+      "duration": 1.0,
+      "start_char": 289,
+      "end_char": 300
+    },
+    {
+      "text": "can",
+      "start": 20.539458,
+      "end": 20.763124,
+      "duration": 0.223666,
+      "start_char": 301,
+      "end_char": 304
+    },
+    {
+      "text": "strengthen",
+      "start": 20.776333,
+      "end": 21.342124,
+      "duration": 0.565791,
+      "start_char": 305,
+      "end_char": 315
+    },
+    {
+      "text": "connections",
+      "start": 21.35525,
+      "end": 22.013125,
+      "duration": 0.657875,
+      "start_char": 316,
+      "end_char": 327
+    },
+    {
+      "text": "in",
+      "start": 22.026333,
+      "end": 22.131583,
+      "duration": 0.10525,
+      "start_char": 328,
+      "end_char": 330
+    },
+    {
+      "text": "the",
+      "start": 22.14475,
+      "end": 22.236875,
+      "duration": 0.092125,
+      "start_char": 331,
+      "end_char": 334
+    },
+    {
+      "text": "brain",
+      "start": 22.25,
+      "end": 22.736833,
+      "duration": 0.486833,
+      "start_char": 335,
+      "end_char": 340
+    },
+    {
+      "text": "This",
+      "start": 23.157875,
+      "end": 23.421041,
+      "duration": 0.263166,
+      "start_char": 343,
+      "end_char": 347
+    },
+    {
+      "text": "understanding",
+      "start": 23.434208,
+      "end": 24.236833,
+      "duration": 0.802625,
+      "start_char": 348,
+      "end_char": 361
+    },
+    {
+      "text": "will",
+      "start": 24.25,
+      "end": 24.39475,
+      "duration": 0.14475,
+      "start_char": 362,
+      "end_char": 366
+    },
+    {
+      "text": "guide",
+      "start": 24.407875,
+      "end": 24.85525,
+      "duration": 0.447375,
+      "start_char": 367,
+      "end_char": 372
+    },
+    {
+      "text": "how",
+      "start": 24.868416,
+      "end": 25.092082,
+      "duration": 0.223666,
+      "start_char": 373,
+      "end_char": 376
+    },
+    {
+      "text": "I",
+      "start": 25.10525,
+      "end": 25.2105,
+      "duration": 0.10525,
+      "start_char": 377,
+      "end_char": 378
+    },
+    {
+      "text": "support",
+      "start": 25.223666,
+      "end": 25.723666,
+      "duration": 0.5,
+      "start_char": 379,
+      "end_char": 386
+    },
+    {
+      "text": "students",
+      "start": 25.736833,
+      "end": 26.342083,
+      "duration": 0.60525,
+      "start_char": 387,
+      "end_char": 395
+    },
+    {
+      "text": "as",
+      "start": 26.35525,
+      "end": 26.513125,
+      "duration": 0.157875,
+      "start_char": 396,
+      "end_char": 398
+    },
+    {
+      "text": "an",
+      "start": 26.526333,
+      "end": 26.618458,
+      "duration": 0.092125,
+      "start_char": 399,
+      "end_char": 401
+    },
+    {
+      "text": "Education",
+      "start": 26.631583,
+      "end": 27.210541,
+      "duration": 0.578958,
+      "start_char": 402,
+      "end_char": 411
+    },
+    {
+      "text": "Assistant",
+      "start": 27.223666,
+      "end": 27.973666,
+      "duration": 0.75,
+      "start_char": 412,
+      "end_char": 421
+    },
+    {
+      "text": "If",
+      "start": 28.39475,
+      "end": 28.552625,
+      "duration": 0.157875,
+      "start_char": 423,
+      "end_char": 425
+    },
+    {
+      "text": "a",
+      "start": 28.565791,
+      "end": 28.644749,
+      "duration": 0.078958,
+      "start_char": 426,
+      "end_char": 427
+    },
+    {
+      "text": "student",
+      "start": 28.657875,
+      "end": 29.144708,
+      "duration": 0.486833,
+      "start_char": 428,
+      "end_char": 435
+    },
+    {
+      "text": "is",
+      "start": 29.157875,
+      "end": 29.276291,
+      "duration": 0.118416,
+      "start_char": 436,
+      "end_char": 438
+    },
+    {
+      "text": "struggling",
+      "start": 29.289458,
+      "end": 29.776291,
+      "duration": 0.486833,
+      "start_char": 439,
+      "end_char": 449
+    },
+    {
+      "text": "today",
+      "start": 29.789458,
+      "end": 30.289458,
+      "duration": 0.5,
+      "start_char": 450,
+      "end_char": 455
+    },
+    {
+      "text": "I",
+      "start": 30.60525,
+      "end": 30.723666,
+      "duration": 0.118416,
+      "start_char": 457,
+      "end_char": 458
+    },
+    {
+      "text": "should",
+      "start": 30.736833,
+      "end": 30.934208,
+      "duration": 0.197375,
+      "start_char": 459,
+      "end_char": 465
+    },
+    {
+      "text": "not",
+      "start": 30.947375,
+      "end": 31.171041,
+      "duration": 0.223666,
+      "start_char": 466,
+      "end_char": 469
+    },
+    {
+      "text": "assume",
+      "start": 31.184208,
+      "end": 31.657874,
+      "duration": 0.473666,
+      "start_char": 470,
+      "end_char": 476
+    },
+    {
+      "text": "that",
+      "start": 31.671041,
+      "end": 31.828916,
+      "duration": 0.157875,
+      "start_char": 477,
+      "end_char": 481
+    },
+    {
+      "text": "the",
+      "start": 31.842125,
+      "end": 31.947375,
+      "duration": 0.10525,
+      "start_char": 482,
+      "end_char": 485
+    },
+    {
+      "text": "student",
+      "start": 31.960541,
+      "end": 32.434207,
+      "duration": 0.473666,
+      "start_char": 486,
+      "end_char": 493
+    },
+    {
+      "text": "is",
+      "start": 32.447375,
+      "end": 32.565791,
+      "duration": 0.118416,
+      "start_char": 494,
+      "end_char": 496
+    },
+    {
+      "text": "incapable",
+      "start": 32.578958,
+      "end": 33.355291,
+      "duration": 0.776333,
+      "start_char": 497,
+      "end_char": 506
+    },
+    {
+      "text": "With",
+      "start": 33.776333,
+      "end": 33.986874,
+      "duration": 0.210541,
+      "start_char": 508,
+      "end_char": 512
+    },
+    {
+      "text": "suitable",
+      "start": 34.0,
+      "end": 34.526333,
+      "duration": 0.526333,
+      "start_char": 513,
+      "end_char": 521
+    },
+    {
+      "text": "support",
+      "start": 34.539458,
+      "end": 35.171041,
+      "duration": 0.631583,
+      "start_char": 522,
+      "end_char": 529
+    },
+    {
+      "text": "encouragement",
+      "start": 35.39475,
+      "end": 36.25,
+      "duration": 0.85525,
+      "start_char": 531,
+      "end_char": 544
+    },
+    {
+      "text": "practice",
+      "start": 36.5,
+      "end": 37.157875,
+      "duration": 0.657875,
+      "start_char": 546,
+      "end_char": 554
+    },
+    {
+      "text": "and",
+      "start": 37.342125,
+      "end": 37.486875,
+      "duration": 0.14475,
+      "start_char": 556,
+      "end_char": 559
+    },
+    {
+      "text": "time",
+      "start": 37.5,
+      "end": 37.960541,
+      "duration": 0.460541,
+      "start_char": 560,
+      "end_char": 564
+    },
+    {
+      "text": "that",
+      "start": 38.315791,
+      "end": 38.473666,
+      "duration": 0.157875,
+      "start_char": 566,
+      "end_char": 570
+    },
+    {
+      "text": "student",
+      "start": 38.486833,
+      "end": 38.986833,
+      "duration": 0.5,
+      "start_char": 571,
+      "end_char": 578
+    },
+    {
+      "text": "may",
+      "start": 39.0,
+      "end": 39.197375,
+      "duration": 0.197375,
+      "start_char": 579,
+      "end_char": 582
+    },
+    {
+      "text": "make",
+      "start": 39.210541,
+      "end": 39.421082,
+      "duration": 0.210541,
+      "start_char": 583,
+      "end_char": 587
+    },
+    {
+      "text": "significant",
+      "start": 39.434208,
+      "end": 40.118416,
+      "duration": 0.684208,
+      "start_char": 588,
+      "end_char": 599
+    },
+    {
+      "text": "progress",
+      "start": 40.131583,
+      "end": 40.842124,
+      "duration": 0.710541,
+      "start_char": 600,
+      "end_char": 608
+    }
+  ]
+}

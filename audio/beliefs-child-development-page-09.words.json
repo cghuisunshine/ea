@@ -1,0 +1,751 @@
+{
+  "text": "Another important lesson for me is that early challenges can affect development without completely determining a child’s future. Experiences such as poverty, abuse, neglect, family addiction, or trauma may increase the risk of emotional, social, behavioural, or learning difficulties.\n\nAt the same time, caring adults, supportive schools, positive friendships, stable routines, and access to services can act as protective factors. As an EA, I may become one of the trusted adults who helps a student feel safe, supported, and capable. This reminds me that even small, consistent actions can make a meaningful difference.",
+  "voice": "en-GB-SoniaNeural",
+  "audio": "beliefs-child-development-page-09.mp3",
+  "words": [
+    {
+      "text": "Another",
+      "start": 0.115791,
+      "end": 0.497374,
+      "duration": 0.381583,
+      "start_char": 0,
+      "end_char": 7
+    },
+    {
+      "text": "important",
+      "start": 0.510541,
+      "end": 1.089499,
+      "duration": 0.578958,
+      "start_char": 8,
+      "end_char": 17
+    },
+    {
+      "text": "lesson",
+      "start": 1.102625,
+      "end": 1.484208,
+      "duration": 0.381583,
+      "start_char": 18,
+      "end_char": 24
+    },
+    {
+      "text": "for",
+      "start": 1.497375,
+      "end": 1.628958,
+      "duration": 0.131583,
+      "start_char": 25,
+      "end_char": 28
+    },
+    {
+      "text": "me",
+      "start": 1.642125,
+      "end": 1.957916,
+      "duration": 0.315791,
+      "start_char": 29,
+      "end_char": 31
+    },
+    {
+      "text": "is",
+      "start": 1.971041,
+      "end": 2.168416,
+      "duration": 0.197375,
+      "start_char": 32,
+      "end_char": 34
+    },
+    {
+      "text": "that",
+      "start": 2.181583,
+      "end": 2.457916,
+      "duration": 0.276333,
+      "start_char": 35,
+      "end_char": 39
+    },
+    {
+      "text": "early",
+      "start": 2.471041,
+      "end": 2.734207,
+      "duration": 0.263166,
+      "start_char": 40,
+      "end_char": 45
+    },
+    {
+      "text": "challenges",
+      "start": 2.747375,
+      "end": 3.40525,
+      "duration": 0.657875,
+      "start_char": 46,
+      "end_char": 56
+    },
+    {
+      "text": "can",
+      "start": 3.418416,
+      "end": 3.576291,
+      "duration": 0.157875,
+      "start_char": 57,
+      "end_char": 60
+    },
+    {
+      "text": "affect",
+      "start": 3.589458,
+      "end": 4.010499,
+      "duration": 0.421041,
+      "start_char": 61,
+      "end_char": 67
+    },
+    {
+      "text": "development",
+      "start": 4.023666,
+      "end": 4.747332,
+      "duration": 0.723666,
+      "start_char": 68,
+      "end_char": 79
+    },
+    {
+      "text": "without",
+      "start": 4.760541,
+      "end": 5.168416,
+      "duration": 0.407875,
+      "start_char": 80,
+      "end_char": 87
+    },
+    {
+      "text": "completely",
+      "start": 5.181583,
+      "end": 5.734208,
+      "duration": 0.552625,
+      "start_char": 88,
+      "end_char": 98
+    },
+    {
+      "text": "determining",
+      "start": 5.747375,
+      "end": 6.352625,
+      "duration": 0.60525,
+      "start_char": 99,
+      "end_char": 110
+    },
+    {
+      "text": "a",
+      "start": 6.365791,
+      "end": 6.418416,
+      "duration": 0.052625,
+      "start_char": 111,
+      "end_char": 112
+    },
+    {
+      "text": "child’s",
+      "start": 6.431583,
+      "end": 6.878958,
+      "duration": 0.447375,
+      "start_char": 113,
+      "end_char": 120
+    },
+    {
+      "text": "future",
+      "start": 6.892125,
+      "end": 7.44475,
+      "duration": 0.552625,
+      "start_char": 121,
+      "end_char": 127
+    },
+    {
+      "text": "Experiences",
+      "start": 7.842125,
+      "end": 8.75,
+      "duration": 0.907875,
+      "start_char": 129,
+      "end_char": 140
+    },
+    {
+      "text": "such",
+      "start": 8.763166,
+      "end": 8.986832,
+      "duration": 0.223666,
+      "start_char": 141,
+      "end_char": 145
+    },
+    {
+      "text": "as",
+      "start": 9.0,
+      "end": 9.118416,
+      "duration": 0.118416,
+      "start_char": 146,
+      "end_char": 148
+    },
+    {
+      "text": "poverty",
+      "start": 9.131583,
+      "end": 9.723708,
+      "duration": 0.592125,
+      "start_char": 149,
+      "end_char": 156
+    },
+    {
+      "text": "abuse",
+      "start": 9.921041,
+      "end": 10.486832,
+      "duration": 0.565791,
+      "start_char": 158,
+      "end_char": 163
+    },
+    {
+      "text": "neglect",
+      "start": 10.710541,
+      "end": 11.315791,
+      "duration": 0.60525,
+      "start_char": 165,
+      "end_char": 172
+    },
+    {
+      "text": "family",
+      "start": 11.618416,
+      "end": 11.999999,
+      "duration": 0.381583,
+      "start_char": 174,
+      "end_char": 180
+    },
+    {
+      "text": "addiction",
+      "start": 12.013166,
+      "end": 12.592124,
+      "duration": 0.578958,
+      "start_char": 181,
+      "end_char": 190
+    },
+    {
+      "text": "or",
+      "start": 12.868416,
+      "end": 12.986832,
+      "duration": 0.118416,
+      "start_char": 192,
+      "end_char": 194
+    },
+    {
+      "text": "trauma",
+      "start": 13.0,
+      "end": 13.526333,
+      "duration": 0.526333,
+      "start_char": 195,
+      "end_char": 201
+    },
+    {
+      "text": "may",
+      "start": 13.539458,
+      "end": 13.749999,
+      "duration": 0.210541,
+      "start_char": 202,
+      "end_char": 205
+    },
+    {
+      "text": "increase",
+      "start": 13.763166,
+      "end": 14.197374,
+      "duration": 0.434208,
+      "start_char": 206,
+      "end_char": 214
+    },
+    {
+      "text": "the",
+      "start": 14.210541,
+      "end": 14.315791,
+      "duration": 0.10525,
+      "start_char": 215,
+      "end_char": 218
+    },
+    {
+      "text": "risk",
+      "start": 14.328958,
+      "end": 14.605291,
+      "duration": 0.276333,
+      "start_char": 219,
+      "end_char": 223
+    },
+    {
+      "text": "of",
+      "start": 14.618416,
+      "end": 14.710541,
+      "duration": 0.092125,
+      "start_char": 224,
+      "end_char": 226
+    },
+    {
+      "text": "emotional",
+      "start": 14.723666,
+      "end": 15.355249,
+      "duration": 0.631583,
+      "start_char": 227,
+      "end_char": 236
+    },
+    {
+      "text": "social",
+      "start": 15.631583,
+      "end": 16.184208,
+      "duration": 0.552625,
+      "start_char": 238,
+      "end_char": 244
+    },
+    {
+      "text": "behavioural",
+      "start": 16.39475,
+      "end": 17.078958,
+      "duration": 0.684208,
+      "start_char": 246,
+      "end_char": 257
+    },
+    {
+      "text": "or",
+      "start": 17.302625,
+      "end": 17.328958,
+      "duration": 0.026333,
+      "start_char": 259,
+      "end_char": 261
+    },
+    {
+      "text": "learning",
+      "start": 17.342125,
+      "end": 17.776333,
+      "duration": 0.434208,
+      "start_char": 262,
+      "end_char": 270
+    },
+    {
+      "text": "difficulties",
+      "start": 17.789458,
+      "end": 18.644708,
+      "duration": 0.85525,
+      "start_char": 271,
+      "end_char": 283
+    },
+    {
+      "text": "At",
+      "start": 19.065791,
+      "end": 19.184207,
+      "duration": 0.118416,
+      "start_char": 286,
+      "end_char": 288
+    },
+    {
+      "text": "the",
+      "start": 19.197375,
+      "end": 19.302625,
+      "duration": 0.10525,
+      "start_char": 289,
+      "end_char": 292
+    },
+    {
+      "text": "same",
+      "start": 19.315791,
+      "end": 19.605249,
+      "duration": 0.289458,
+      "start_char": 293,
+      "end_char": 297
+    },
+    {
+      "text": "time",
+      "start": 19.618416,
+      "end": 20.078957,
+      "duration": 0.460541,
+      "start_char": 298,
+      "end_char": 302
+    },
+    {
+      "text": "caring",
+      "start": 20.302625,
+      "end": 20.723666,
+      "duration": 0.421041,
+      "start_char": 304,
+      "end_char": 310
+    },
+    {
+      "text": "adults",
+      "start": 20.736833,
+      "end": 21.249999,
+      "duration": 0.513166,
+      "start_char": 311,
+      "end_char": 317
+    },
+    {
+      "text": "supportive",
+      "start": 21.486833,
+      "end": 22.052624,
+      "duration": 0.565791,
+      "start_char": 319,
+      "end_char": 329
+    },
+    {
+      "text": "schools",
+      "start": 22.065791,
+      "end": 22.631582,
+      "duration": 0.565791,
+      "start_char": 330,
+      "end_char": 337
+    },
+    {
+      "text": "positive",
+      "start": 22.89475,
+      "end": 23.342125,
+      "duration": 0.447375,
+      "start_char": 339,
+      "end_char": 347
+    },
+    {
+      "text": "friendships",
+      "start": 23.35525,
+      "end": 24.013125,
+      "duration": 0.657875,
+      "start_char": 348,
+      "end_char": 359
+    },
+    {
+      "text": "stable",
+      "start": 24.302625,
+      "end": 24.7105,
+      "duration": 0.407875,
+      "start_char": 361,
+      "end_char": 367
+    },
+    {
+      "text": "routines",
+      "start": 24.723666,
+      "end": 25.381541,
+      "duration": 0.657875,
+      "start_char": 368,
+      "end_char": 376
+    },
+    {
+      "text": "and",
+      "start": 25.657875,
+      "end": 25.842083,
+      "duration": 0.184208,
+      "start_char": 378,
+      "end_char": 381
+    },
+    {
+      "text": "access",
+      "start": 25.85525,
+      "end": 26.289458,
+      "duration": 0.434208,
+      "start_char": 382,
+      "end_char": 388
+    },
+    {
+      "text": "to",
+      "start": 26.302625,
+      "end": 26.421041,
+      "duration": 0.118416,
+      "start_char": 389,
+      "end_char": 391
+    },
+    {
+      "text": "services",
+      "start": 26.434208,
+      "end": 27.052624,
+      "duration": 0.618416,
+      "start_char": 392,
+      "end_char": 400
+    },
+    {
+      "text": "can",
+      "start": 27.065791,
+      "end": 27.236832,
+      "duration": 0.171041,
+      "start_char": 401,
+      "end_char": 404
+    },
+    {
+      "text": "act",
+      "start": 27.25,
+      "end": 27.552625,
+      "duration": 0.302625,
+      "start_char": 405,
+      "end_char": 408
+    },
+    {
+      "text": "as",
+      "start": 27.565791,
+      "end": 27.657916,
+      "duration": 0.092125,
+      "start_char": 409,
+      "end_char": 411
+    },
+    {
+      "text": "protective",
+      "start": 27.671041,
+      "end": 28.210499,
+      "duration": 0.539458,
+      "start_char": 412,
+      "end_char": 422
+    },
+    {
+      "text": "factors",
+      "start": 28.223666,
+      "end": 28.907874,
+      "duration": 0.684208,
+      "start_char": 423,
+      "end_char": 430
+    },
+    {
+      "text": "As",
+      "start": 29.328958,
+      "end": 29.513166,
+      "duration": 0.184208,
+      "start_char": 432,
+      "end_char": 434
+    },
+    {
+      "text": "an",
+      "start": 29.526333,
+      "end": 29.644749,
+      "duration": 0.118416,
+      "start_char": 435,
+      "end_char": 437
+    },
+    {
+      "text": "EA",
+      "start": 29.657875,
+      "end": 30.171041,
+      "duration": 0.513166,
+      "start_char": 438,
+      "end_char": 440
+    },
+    {
+      "text": "I",
+      "start": 30.460541,
+      "end": 30.578957,
+      "duration": 0.118416,
+      "start_char": 442,
+      "end_char": 443
+    },
+    {
+      "text": "may",
+      "start": 30.592125,
+      "end": 30.7895,
+      "duration": 0.197375,
+      "start_char": 444,
+      "end_char": 447
+    },
+    {
+      "text": "become",
+      "start": 30.802625,
+      "end": 31.171041,
+      "duration": 0.368416,
+      "start_char": 448,
+      "end_char": 454
+    },
+    {
+      "text": "one",
+      "start": 31.184208,
+      "end": 31.342083,
+      "duration": 0.157875,
+      "start_char": 455,
+      "end_char": 458
+    },
+    {
+      "text": "of",
+      "start": 31.35525,
+      "end": 31.447375,
+      "duration": 0.092125,
+      "start_char": 459,
+      "end_char": 461
+    },
+    {
+      "text": "the",
+      "start": 31.460541,
+      "end": 31.552666,
+      "duration": 0.092125,
+      "start_char": 462,
+      "end_char": 465
+    },
+    {
+      "text": "trusted",
+      "start": 31.565791,
+      "end": 32.013166,
+      "duration": 0.447375,
+      "start_char": 466,
+      "end_char": 473
+    },
+    {
+      "text": "adults",
+      "start": 32.026333,
+      "end": 32.526333,
+      "duration": 0.5,
+      "start_char": 474,
+      "end_char": 480
+    },
+    {
+      "text": "who",
+      "start": 32.539458,
+      "end": 32.657874,
+      "duration": 0.118416,
+      "start_char": 481,
+      "end_char": 484
+    },
+    {
+      "text": "helps",
+      "start": 32.671041,
+      "end": 32.960499,
+      "duration": 0.289458,
+      "start_char": 485,
+      "end_char": 490
+    },
+    {
+      "text": "a",
+      "start": 32.973666,
+      "end": 33.039457,
+      "duration": 0.065791,
+      "start_char": 491,
+      "end_char": 492
+    },
+    {
+      "text": "student",
+      "start": 33.052625,
+      "end": 33.473666,
+      "duration": 0.421041,
+      "start_char": 493,
+      "end_char": 500
+    },
+    {
+      "text": "feel",
+      "start": 33.486833,
+      "end": 33.763166,
+      "duration": 0.276333,
+      "start_char": 501,
+      "end_char": 505
+    },
+    {
+      "text": "safe",
+      "start": 33.776333,
+      "end": 34.223708,
+      "duration": 0.447375,
+      "start_char": 506,
+      "end_char": 510
+    },
+    {
+      "text": "supported",
+      "start": 34.486833,
+      "end": 35.210499,
+      "duration": 0.723666,
+      "start_char": 512,
+      "end_char": 521
+    },
+    {
+      "text": "and",
+      "start": 35.407875,
+      "end": 35.578916,
+      "duration": 0.171041,
+      "start_char": 523,
+      "end_char": 526
+    },
+    {
+      "text": "capable",
+      "start": 35.592125,
+      "end": 36.236875,
+      "duration": 0.64475,
+      "start_char": 527,
+      "end_char": 534
+    },
+    {
+      "text": "This",
+      "start": 36.657875,
+      "end": 36.921041,
+      "duration": 0.263166,
+      "start_char": 536,
+      "end_char": 540
+    },
+    {
+      "text": "reminds",
+      "start": 36.934208,
+      "end": 37.434208,
+      "duration": 0.5,
+      "start_char": 541,
+      "end_char": 548
+    },
+    {
+      "text": "me",
+      "start": 37.447375,
+      "end": 37.671041,
+      "duration": 0.223666,
+      "start_char": 549,
+      "end_char": 551
+    },
+    {
+      "text": "that",
+      "start": 37.684208,
+      "end": 37.907874,
+      "duration": 0.223666,
+      "start_char": 552,
+      "end_char": 556
+    },
+    {
+      "text": "even",
+      "start": 37.921041,
+      "end": 38.223666,
+      "duration": 0.302625,
+      "start_char": 557,
+      "end_char": 561
+    },
+    {
+      "text": "small",
+      "start": 38.236833,
+      "end": 38.776291,
+      "duration": 0.539458,
+      "start_char": 562,
+      "end_char": 567
+    },
+    {
+      "text": "consistent",
+      "start": 39.026333,
+      "end": 39.697374,
+      "duration": 0.671041,
+      "start_char": 569,
+      "end_char": 579
+    },
+    {
+      "text": "actions",
+      "start": 39.710541,
+      "end": 40.263166,
+      "duration": 0.552625,
+      "start_char": 580,
+      "end_char": 587
+    },
+    {
+      "text": "can",
+      "start": 40.276333,
+      "end": 40.447374,
+      "duration": 0.171041,
+      "start_char": 588,
+      "end_char": 591
+    },
+    {
+      "text": "make",
+      "start": 40.460541,
+      "end": 40.684207,
+      "duration": 0.223666,
+      "start_char": 592,
+      "end_char": 596
+    },
+    {
+      "text": "a",
+      "start": 40.697375,
+      "end": 40.75,
+      "duration": 0.052625,
+      "start_char": 597,
+      "end_char": 598
+    },
+    {
+      "text": "meaningful",
+      "start": 40.763166,
+      "end": 41.328957,
+      "duration": 0.565791,
+      "start_char": 599,
+      "end_char": 609
+    },
+    {
+      "text": "difference",
+      "start": 41.342125,
+      "end": 42.065791,
+      "duration": 0.723666,
+      "start_char": 610,
+      "end_char": 620
+    }
+  ]
+}

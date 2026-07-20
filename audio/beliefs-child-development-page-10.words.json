@@ -1,0 +1,975 @@
+{
+  "text": "When I reflect on my learning, I can see that my beliefs have been shaped by my experiences in China, my teaching experience, my observations in Canada, and this program. My earlier experiences taught me the value of effort, responsibility, discipline, and academic achievement. This program has taught me that students also need safety, trusting relationships, belonging, individualized support, and opportunities to become independent.\n\nThe most important change in my thinking is that an EA should not try to make every student fit into one system. My role is to help remove barriers so that each student can learn, participate, develop their strengths, and feel that they belong. This is the kind of Education Assistant I hope to become.\n\nThank you.",
+  "voice": "en-GB-SoniaNeural",
+  "audio": "beliefs-child-development-page-10.mp3",
+  "words": [
+    {
+      "text": "When",
+      "start": 0.142125,
+      "end": 0.313166,
+      "duration": 0.171041,
+      "start_char": 0,
+      "end_char": 4
+    },
+    {
+      "text": "I",
+      "start": 0.326333,
+      "end": 0.418458,
+      "duration": 0.092125,
+      "start_char": 5,
+      "end_char": 6
+    },
+    {
+      "text": "reflect",
+      "start": 0.431583,
+      "end": 0.905249,
+      "duration": 0.473666,
+      "start_char": 7,
+      "end_char": 14
+    },
+    {
+      "text": "on",
+      "start": 0.918416,
+      "end": 1.023666,
+      "duration": 0.10525,
+      "start_char": 15,
+      "end_char": 17
+    },
+    {
+      "text": "my",
+      "start": 1.036833,
+      "end": 1.155249,
+      "duration": 0.118416,
+      "start_char": 18,
+      "end_char": 20
+    },
+    {
+      "text": "learning",
+      "start": 1.168416,
+      "end": 1.694749,
+      "duration": 0.526333,
+      "start_char": 21,
+      "end_char": 29
+    },
+    {
+      "text": "I",
+      "start": 1.984208,
+      "end": 2.063166,
+      "duration": 0.078958,
+      "start_char": 31,
+      "end_char": 32
+    },
+    {
+      "text": "can",
+      "start": 2.076333,
+      "end": 2.273708,
+      "duration": 0.197375,
+      "start_char": 33,
+      "end_char": 36
+    },
+    {
+      "text": "see",
+      "start": 2.286833,
+      "end": 2.523666,
+      "duration": 0.236833,
+      "start_char": 37,
+      "end_char": 40
+    },
+    {
+      "text": "that",
+      "start": 2.536833,
+      "end": 2.707874,
+      "duration": 0.171041,
+      "start_char": 41,
+      "end_char": 45
+    },
+    {
+      "text": "my",
+      "start": 2.721041,
+      "end": 2.892082,
+      "duration": 0.171041,
+      "start_char": 46,
+      "end_char": 48
+    },
+    {
+      "text": "beliefs",
+      "start": 2.90525,
+      "end": 3.392083,
+      "duration": 0.486833,
+      "start_char": 49,
+      "end_char": 56
+    },
+    {
+      "text": "have",
+      "start": 3.40525,
+      "end": 3.536833,
+      "duration": 0.131583,
+      "start_char": 57,
+      "end_char": 61
+    },
+    {
+      "text": "been",
+      "start": 3.55,
+      "end": 3.721041,
+      "duration": 0.171041,
+      "start_char": 62,
+      "end_char": 66
+    },
+    {
+      "text": "shaped",
+      "start": 3.734208,
+      "end": 4.194749,
+      "duration": 0.460541,
+      "start_char": 67,
+      "end_char": 73
+    },
+    {
+      "text": "by",
+      "start": 4.207875,
+      "end": 4.326291,
+      "duration": 0.118416,
+      "start_char": 74,
+      "end_char": 76
+    },
+    {
+      "text": "my",
+      "start": 4.339458,
+      "end": 4.484208,
+      "duration": 0.14475,
+      "start_char": 77,
+      "end_char": 79
+    },
+    {
+      "text": "experiences",
+      "start": 4.497375,
+      "end": 5.273708,
+      "duration": 0.776333,
+      "start_char": 80,
+      "end_char": 91
+    },
+    {
+      "text": "in",
+      "start": 5.286833,
+      "end": 5.405249,
+      "duration": 0.118416,
+      "start_char": 92,
+      "end_char": 94
+    },
+    {
+      "text": "China",
+      "start": 5.418416,
+      "end": 5.878957,
+      "duration": 0.460541,
+      "start_char": 95,
+      "end_char": 100
+    },
+    {
+      "text": "my",
+      "start": 6.19475,
+      "end": 6.3,
+      "duration": 0.10525,
+      "start_char": 102,
+      "end_char": 104
+    },
+    {
+      "text": "teaching",
+      "start": 6.313166,
+      "end": 6.747374,
+      "duration": 0.434208,
+      "start_char": 105,
+      "end_char": 113
+    },
+    {
+      "text": "experience",
+      "start": 6.760541,
+      "end": 7.510541,
+      "duration": 0.75,
+      "start_char": 114,
+      "end_char": 124
+    },
+    {
+      "text": "my",
+      "start": 7.773666,
+      "end": 7.944707,
+      "duration": 0.171041,
+      "start_char": 126,
+      "end_char": 128
+    },
+    {
+      "text": "observations",
+      "start": 7.957875,
+      "end": 8.681541,
+      "duration": 0.723666,
+      "start_char": 129,
+      "end_char": 141
+    },
+    {
+      "text": "in",
+      "start": 8.69475,
+      "end": 8.813166,
+      "duration": 0.118416,
+      "start_char": 142,
+      "end_char": 144
+    },
+    {
+      "text": "Canada",
+      "start": 8.826333,
+      "end": 9.392124,
+      "duration": 0.565791,
+      "start_char": 145,
+      "end_char": 151
+    },
+    {
+      "text": "and",
+      "start": 9.602625,
+      "end": 9.773666,
+      "duration": 0.171041,
+      "start_char": 153,
+      "end_char": 156
+    },
+    {
+      "text": "this",
+      "start": 9.786833,
+      "end": 9.971041,
+      "duration": 0.184208,
+      "start_char": 157,
+      "end_char": 161
+    },
+    {
+      "text": "program",
+      "start": 9.984208,
+      "end": 10.602624,
+      "duration": 0.618416,
+      "start_char": 162,
+      "end_char": 169
+    },
+    {
+      "text": "My",
+      "start": 11.0,
+      "end": 11.25,
+      "duration": 0.25,
+      "start_char": 171,
+      "end_char": 173
+    },
+    {
+      "text": "earlier",
+      "start": 11.263166,
+      "end": 11.631582,
+      "duration": 0.368416,
+      "start_char": 174,
+      "end_char": 181
+    },
+    {
+      "text": "experiences",
+      "start": 11.64475,
+      "end": 12.592125,
+      "duration": 0.947375,
+      "start_char": 182,
+      "end_char": 193
+    },
+    {
+      "text": "taught",
+      "start": 12.60525,
+      "end": 12.934208,
+      "duration": 0.328958,
+      "start_char": 194,
+      "end_char": 200
+    },
+    {
+      "text": "me",
+      "start": 12.947375,
+      "end": 13.052625,
+      "duration": 0.10525,
+      "start_char": 201,
+      "end_char": 203
+    },
+    {
+      "text": "the",
+      "start": 13.065791,
+      "end": 13.171041,
+      "duration": 0.10525,
+      "start_char": 204,
+      "end_char": 207
+    },
+    {
+      "text": "value",
+      "start": 13.184208,
+      "end": 13.592083,
+      "duration": 0.407875,
+      "start_char": 208,
+      "end_char": 213
+    },
+    {
+      "text": "of",
+      "start": 13.60525,
+      "end": 13.723666,
+      "duration": 0.118416,
+      "start_char": 214,
+      "end_char": 216
+    },
+    {
+      "text": "effort",
+      "start": 13.736833,
+      "end": 14.210499,
+      "duration": 0.473666,
+      "start_char": 217,
+      "end_char": 223
+    },
+    {
+      "text": "responsibility",
+      "start": 14.473666,
+      "end": 15.499999,
+      "duration": 1.026333,
+      "start_char": 225,
+      "end_char": 239
+    },
+    {
+      "text": "discipline",
+      "start": 15.815791,
+      "end": 16.434207,
+      "duration": 0.618416,
+      "start_char": 241,
+      "end_char": 251
+    },
+    {
+      "text": "and",
+      "start": 16.64475,
+      "end": 16.7895,
+      "duration": 0.14475,
+      "start_char": 253,
+      "end_char": 256
+    },
+    {
+      "text": "academic",
+      "start": 16.802625,
+      "end": 17.342083,
+      "duration": 0.539458,
+      "start_char": 257,
+      "end_char": 265
+    },
+    {
+      "text": "achievement",
+      "start": 17.35525,
+      "end": 18.144708,
+      "duration": 0.789458,
+      "start_char": 266,
+      "end_char": 277
+    },
+    {
+      "text": "This",
+      "start": 18.552625,
+      "end": 18.802625,
+      "duration": 0.25,
+      "start_char": 279,
+      "end_char": 283
+    },
+    {
+      "text": "program",
+      "start": 18.815791,
+      "end": 19.315791,
+      "duration": 0.5,
+      "start_char": 284,
+      "end_char": 291
+    },
+    {
+      "text": "has",
+      "start": 19.328958,
+      "end": 19.513166,
+      "duration": 0.184208,
+      "start_char": 292,
+      "end_char": 295
+    },
+    {
+      "text": "taught",
+      "start": 19.526333,
+      "end": 19.868458,
+      "duration": 0.342125,
+      "start_char": 296,
+      "end_char": 302
+    },
+    {
+      "text": "me",
+      "start": 19.881583,
+      "end": 20.039458,
+      "duration": 0.157875,
+      "start_char": 303,
+      "end_char": 305
+    },
+    {
+      "text": "that",
+      "start": 20.052625,
+      "end": 20.223666,
+      "duration": 0.171041,
+      "start_char": 306,
+      "end_char": 310
+    },
+    {
+      "text": "students",
+      "start": 20.236833,
+      "end": 20.749999,
+      "duration": 0.513166,
+      "start_char": 311,
+      "end_char": 319
+    },
+    {
+      "text": "also",
+      "start": 20.763166,
+      "end": 21.118416,
+      "duration": 0.35525,
+      "start_char": 320,
+      "end_char": 324
+    },
+    {
+      "text": "need",
+      "start": 21.131583,
+      "end": 21.368416,
+      "duration": 0.236833,
+      "start_char": 325,
+      "end_char": 329
+    },
+    {
+      "text": "safety",
+      "start": 21.381583,
+      "end": 21.960541,
+      "duration": 0.578958,
+      "start_char": 330,
+      "end_char": 336
+    },
+    {
+      "text": "trusting",
+      "start": 22.25,
+      "end": 22.684208,
+      "duration": 0.434208,
+      "start_char": 338,
+      "end_char": 346
+    },
+    {
+      "text": "relationships",
+      "start": 22.697375,
+      "end": 23.578958,
+      "duration": 0.881583,
+      "start_char": 347,
+      "end_char": 360
+    },
+    {
+      "text": "belonging",
+      "start": 23.842125,
+      "end": 24.421083,
+      "duration": 0.578958,
+      "start_char": 362,
+      "end_char": 371
+    },
+    {
+      "text": "individualized",
+      "start": 24.671041,
+      "end": 25.447374,
+      "duration": 0.776333,
+      "start_char": 373,
+      "end_char": 387
+    },
+    {
+      "text": "support",
+      "start": 25.460541,
+      "end": 26.026332,
+      "duration": 0.565791,
+      "start_char": 388,
+      "end_char": 395
+    },
+    {
+      "text": "and",
+      "start": 26.328958,
+      "end": 26.434208,
+      "duration": 0.10525,
+      "start_char": 397,
+      "end_char": 400
+    },
+    {
+      "text": "opportunities",
+      "start": 26.447375,
+      "end": 27.210541,
+      "duration": 0.763166,
+      "start_char": 401,
+      "end_char": 414
+    },
+    {
+      "text": "to",
+      "start": 27.223666,
+      "end": 27.328916,
+      "duration": 0.10525,
+      "start_char": 415,
+      "end_char": 417
+    },
+    {
+      "text": "become",
+      "start": 27.342125,
+      "end": 27.671083,
+      "duration": 0.328958,
+      "start_char": 418,
+      "end_char": 424
+    },
+    {
+      "text": "independent",
+      "start": 27.684208,
+      "end": 28.565791,
+      "duration": 0.881583,
+      "start_char": 425,
+      "end_char": 436
+    },
+    {
+      "text": "The",
+      "start": 28.960541,
+      "end": 29.078957,
+      "duration": 0.118416,
+      "start_char": 439,
+      "end_char": 442
+    },
+    {
+      "text": "most",
+      "start": 29.092125,
+      "end": 29.39475,
+      "duration": 0.302625,
+      "start_char": 443,
+      "end_char": 447
+    },
+    {
+      "text": "important",
+      "start": 29.407875,
+      "end": 29.986833,
+      "duration": 0.578958,
+      "start_char": 448,
+      "end_char": 457
+    },
+    {
+      "text": "change",
+      "start": 30.0,
+      "end": 30.35525,
+      "duration": 0.35525,
+      "start_char": 458,
+      "end_char": 464
+    },
+    {
+      "text": "in",
+      "start": 30.368416,
+      "end": 30.447374,
+      "duration": 0.078958,
+      "start_char": 465,
+      "end_char": 467
+    },
+    {
+      "text": "my",
+      "start": 30.460541,
+      "end": 30.618416,
+      "duration": 0.157875,
+      "start_char": 468,
+      "end_char": 470
+    },
+    {
+      "text": "thinking",
+      "start": 30.631583,
+      "end": 31.223708,
+      "duration": 0.592125,
+      "start_char": 471,
+      "end_char": 479
+    },
+    {
+      "text": "is",
+      "start": 31.236833,
+      "end": 31.381583,
+      "duration": 0.14475,
+      "start_char": 480,
+      "end_char": 482
+    },
+    {
+      "text": "that",
+      "start": 31.39475,
+      "end": 31.578958,
+      "duration": 0.184208,
+      "start_char": 483,
+      "end_char": 487
+    },
+    {
+      "text": "an",
+      "start": 31.592125,
+      "end": 31.710541,
+      "duration": 0.118416,
+      "start_char": 488,
+      "end_char": 490
+    },
+    {
+      "text": "EA",
+      "start": 31.723666,
+      "end": 32.144707,
+      "duration": 0.421041,
+      "start_char": 491,
+      "end_char": 493
+    },
+    {
+      "text": "should",
+      "start": 32.157875,
+      "end": 32.368416,
+      "duration": 0.210541,
+      "start_char": 494,
+      "end_char": 500
+    },
+    {
+      "text": "not",
+      "start": 32.381583,
+      "end": 32.618416,
+      "duration": 0.236833,
+      "start_char": 501,
+      "end_char": 504
+    },
+    {
+      "text": "try",
+      "start": 32.631583,
+      "end": 32.855249,
+      "duration": 0.223666,
+      "start_char": 505,
+      "end_char": 508
+    },
+    {
+      "text": "to",
+      "start": 32.868416,
+      "end": 33.026291,
+      "duration": 0.157875,
+      "start_char": 509,
+      "end_char": 511
+    },
+    {
+      "text": "make",
+      "start": 33.039458,
+      "end": 33.289458,
+      "duration": 0.25,
+      "start_char": 512,
+      "end_char": 516
+    },
+    {
+      "text": "every",
+      "start": 33.302625,
+      "end": 33.565791,
+      "duration": 0.263166,
+      "start_char": 517,
+      "end_char": 522
+    },
+    {
+      "text": "student",
+      "start": 33.578958,
+      "end": 34.013166,
+      "duration": 0.434208,
+      "start_char": 523,
+      "end_char": 530
+    },
+    {
+      "text": "fit",
+      "start": 34.026333,
+      "end": 34.315791,
+      "duration": 0.289458,
+      "start_char": 531,
+      "end_char": 534
+    },
+    {
+      "text": "into",
+      "start": 34.328958,
+      "end": 34.565791,
+      "duration": 0.236833,
+      "start_char": 535,
+      "end_char": 539
+    },
+    {
+      "text": "one",
+      "start": 34.578958,
+      "end": 34.815791,
+      "duration": 0.236833,
+      "start_char": 540,
+      "end_char": 543
+    },
+    {
+      "text": "system",
+      "start": 34.828958,
+      "end": 35.407916,
+      "duration": 0.578958,
+      "start_char": 544,
+      "end_char": 550
+    },
+    {
+      "text": "My",
+      "start": 35.828958,
+      "end": 36.039499,
+      "duration": 0.210541,
+      "start_char": 552,
+      "end_char": 554
+    },
+    {
+      "text": "role",
+      "start": 36.052625,
+      "end": 36.486833,
+      "duration": 0.434208,
+      "start_char": 555,
+      "end_char": 559
+    },
+    {
+      "text": "is",
+      "start": 36.5,
+      "end": 36.618416,
+      "duration": 0.118416,
+      "start_char": 560,
+      "end_char": 562
+    },
+    {
+      "text": "to",
+      "start": 36.631583,
+      "end": 36.736833,
+      "duration": 0.10525,
+      "start_char": 563,
+      "end_char": 565
+    },
+    {
+      "text": "help",
+      "start": 36.75,
+      "end": 37.0,
+      "duration": 0.25,
+      "start_char": 566,
+      "end_char": 570
+    },
+    {
+      "text": "remove",
+      "start": 37.013166,
+      "end": 37.407916,
+      "duration": 0.39475,
+      "start_char": 571,
+      "end_char": 577
+    },
+    {
+      "text": "barriers",
+      "start": 37.421041,
+      "end": 37.947374,
+      "duration": 0.526333,
+      "start_char": 578,
+      "end_char": 586
+    },
+    {
+      "text": "so",
+      "start": 37.960541,
+      "end": 38.118416,
+      "duration": 0.157875,
+      "start_char": 587,
+      "end_char": 589
+    },
+    {
+      "text": "that",
+      "start": 38.131583,
+      "end": 38.328958,
+      "duration": 0.197375,
+      "start_char": 590,
+      "end_char": 594
+    },
+    {
+      "text": "each",
+      "start": 38.342125,
+      "end": 38.578958,
+      "duration": 0.236833,
+      "start_char": 595,
+      "end_char": 599
+    },
+    {
+      "text": "student",
+      "start": 38.592125,
+      "end": 38.986875,
+      "duration": 0.39475,
+      "start_char": 600,
+      "end_char": 607
+    },
+    {
+      "text": "can",
+      "start": 39.0,
+      "end": 39.171041,
+      "duration": 0.171041,
+      "start_char": 608,
+      "end_char": 611
+    },
+    {
+      "text": "learn",
+      "start": 39.184208,
+      "end": 39.592083,
+      "duration": 0.407875,
+      "start_char": 612,
+      "end_char": 617
+    },
+    {
+      "text": "participate",
+      "start": 39.85525,
+      "end": 40.697375,
+      "duration": 0.842125,
+      "start_char": 619,
+      "end_char": 630
+    },
+    {
+      "text": "develop",
+      "start": 40.960541,
+      "end": 41.368416,
+      "duration": 0.407875,
+      "start_char": 632,
+      "end_char": 639
+    },
+    {
+      "text": "their",
+      "start": 41.381583,
+      "end": 41.513166,
+      "duration": 0.131583,
+      "start_char": 640,
+      "end_char": 645
+    },
+    {
+      "text": "strengths",
+      "start": 41.526333,
+      "end": 42.131583,
+      "duration": 0.60525,
+      "start_char": 646,
+      "end_char": 655
+    },
+    {
+      "text": "and",
+      "start": 42.35525,
+      "end": 42.486833,
+      "duration": 0.131583,
+      "start_char": 657,
+      "end_char": 660
+    },
+    {
+      "text": "feel",
+      "start": 42.5,
+      "end": 42.842125,
+      "duration": 0.342125,
+      "start_char": 661,
+      "end_char": 665
+    },
+    {
+      "text": "that",
+      "start": 42.85525,
+      "end": 43.0,
+      "duration": 0.14475,
+      "start_char": 666,
+      "end_char": 670
+    },
+    {
+      "text": "they",
+      "start": 43.013166,
+      "end": 43.144749,
+      "duration": 0.131583,
+      "start_char": 671,
+      "end_char": 675
+    },
+    {
+      "text": "belong",
+      "start": 43.157875,
+      "end": 43.684208,
+      "duration": 0.526333,
+      "start_char": 676,
+      "end_char": 682
+    },
+    {
+      "text": "This",
+      "start": 44.10525,
+      "end": 44.35525,
+      "duration": 0.25,
+      "start_char": 684,
+      "end_char": 688
+    },
+    {
+      "text": "is",
+      "start": 44.368416,
+      "end": 44.486832,
+      "duration": 0.118416,
+      "start_char": 689,
+      "end_char": 691
+    },
+    {
+      "text": "the",
+      "start": 44.5,
+      "end": 44.60525,
+      "duration": 0.10525,
+      "start_char": 692,
+      "end_char": 695
+    },
+    {
+      "text": "kind",
+      "start": 44.618416,
+      "end": 44.960541,
+      "duration": 0.342125,
+      "start_char": 696,
+      "end_char": 700
+    },
+    {
+      "text": "of",
+      "start": 44.973666,
+      "end": 45.065791,
+      "duration": 0.092125,
+      "start_char": 701,
+      "end_char": 703
+    },
+    {
+      "text": "Education",
+      "start": 45.078958,
+      "end": 45.697374,
+      "duration": 0.618416,
+      "start_char": 704,
+      "end_char": 713
+    },
+    {
+      "text": "Assistant",
+      "start": 45.710541,
+      "end": 46.342124,
+      "duration": 0.631583,
+      "start_char": 714,
+      "end_char": 723
+    },
+    {
+      "text": "I",
+      "start": 46.35525,
+      "end": 46.473666,
+      "duration": 0.118416,
+      "start_char": 724,
+      "end_char": 725
+    },
+    {
+      "text": "hope",
+      "start": 46.486833,
+      "end": 46.815791,
+      "duration": 0.328958,
+      "start_char": 726,
+      "end_char": 730
+    },
+    {
+      "text": "to",
+      "start": 46.828958,
+      "end": 46.921083,
+      "duration": 0.092125,
+      "start_char": 731,
+      "end_char": 733
+    },
+    {
+      "text": "become",
+      "start": 46.934208,
+      "end": 47.486833,
+      "duration": 0.552625,
+      "start_char": 734,
+      "end_char": 740
+    },
+    {
+      "text": "Thank",
+      "start": 47.881583,
+      "end": 48.249999,
+      "duration": 0.368416,
+      "start_char": 743,
+      "end_char": 748
+    },
+    {
+      "text": "you",
+      "start": 48.263166,
+      "end": 48.657916,
+      "duration": 0.39475,
+      "start_char": 749,
+      "end_char": 752
+    }
+  ]
+}

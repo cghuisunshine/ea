@@ -1,0 +1,383 @@
+{
+  "text": "Hello, everyone.\n\nToday, I would like to share how my beliefs about child and adolescent development have changed. I will explain where my earlier beliefs came from, what I have learned in this program, and how this learning will guide my future work as an Education Assistant.",
+  "voice": "en-GB-SoniaNeural",
+  "audio": "beliefs-child-development-page-01.mp3",
+  "words": [
+    {
+      "text": "Hello",
+      "start": 0.128958,
+      "end": 0.681583,
+      "duration": 0.552625,
+      "start_char": 0,
+      "end_char": 5
+    },
+    {
+      "text": "everyone",
+      "start": 0.957875,
+      "end": 1.65525,
+      "duration": 0.697375,
+      "start_char": 7,
+      "end_char": 15
+    },
+    {
+      "text": "Today",
+      "start": 2.052625,
+      "end": 2.592083,
+      "duration": 0.539458,
+      "start_char": 18,
+      "end_char": 23
+    },
+    {
+      "text": "I",
+      "start": 2.89475,
+      "end": 3.013166,
+      "duration": 0.118416,
+      "start_char": 25,
+      "end_char": 26
+    },
+    {
+      "text": "would",
+      "start": 3.026333,
+      "end": 3.184208,
+      "duration": 0.157875,
+      "start_char": 27,
+      "end_char": 32
+    },
+    {
+      "text": "like",
+      "start": 3.197375,
+      "end": 3.434208,
+      "duration": 0.236833,
+      "start_char": 33,
+      "end_char": 37
+    },
+    {
+      "text": "to",
+      "start": 3.447375,
+      "end": 3.552625,
+      "duration": 0.10525,
+      "start_char": 38,
+      "end_char": 40
+    },
+    {
+      "text": "share",
+      "start": 3.565791,
+      "end": 3.907916,
+      "duration": 0.342125,
+      "start_char": 41,
+      "end_char": 46
+    },
+    {
+      "text": "how",
+      "start": 3.921041,
+      "end": 4.144707,
+      "duration": 0.223666,
+      "start_char": 47,
+      "end_char": 50
+    },
+    {
+      "text": "my",
+      "start": 4.157875,
+      "end": 4.328916,
+      "duration": 0.171041,
+      "start_char": 51,
+      "end_char": 53
+    },
+    {
+      "text": "beliefs",
+      "start": 4.342125,
+      "end": 4.855291,
+      "duration": 0.513166,
+      "start_char": 54,
+      "end_char": 61
+    },
+    {
+      "text": "about",
+      "start": 4.868416,
+      "end": 5.171041,
+      "duration": 0.302625,
+      "start_char": 62,
+      "end_char": 67
+    },
+    {
+      "text": "child",
+      "start": 5.184208,
+      "end": 5.657874,
+      "duration": 0.473666,
+      "start_char": 68,
+      "end_char": 73
+    },
+    {
+      "text": "and",
+      "start": 5.671041,
+      "end": 5.855249,
+      "duration": 0.184208,
+      "start_char": 74,
+      "end_char": 77
+    },
+    {
+      "text": "adolescent",
+      "start": 5.868416,
+      "end": 6.486832,
+      "duration": 0.618416,
+      "start_char": 78,
+      "end_char": 88
+    },
+    {
+      "text": "development",
+      "start": 6.5,
+      "end": 7.10525,
+      "duration": 0.60525,
+      "start_char": 89,
+      "end_char": 100
+    },
+    {
+      "text": "have",
+      "start": 7.118416,
+      "end": 7.263166,
+      "duration": 0.14475,
+      "start_char": 101,
+      "end_char": 105
+    },
+    {
+      "text": "changed",
+      "start": 7.276333,
+      "end": 7.934208,
+      "duration": 0.657875,
+      "start_char": 106,
+      "end_char": 113
+    },
+    {
+      "text": "I",
+      "start": 8.35525,
+      "end": 8.486833,
+      "duration": 0.131583,
+      "start_char": 115,
+      "end_char": 116
+    },
+    {
+      "text": "will",
+      "start": 8.5,
+      "end": 8.657875,
+      "duration": 0.157875,
+      "start_char": 117,
+      "end_char": 121
+    },
+    {
+      "text": "explain",
+      "start": 8.671041,
+      "end": 9.236832,
+      "duration": 0.565791,
+      "start_char": 122,
+      "end_char": 129
+    },
+    {
+      "text": "where",
+      "start": 9.25,
+      "end": 9.381583,
+      "duration": 0.131583,
+      "start_char": 130,
+      "end_char": 135
+    },
+    {
+      "text": "my",
+      "start": 9.39475,
+      "end": 9.618416,
+      "duration": 0.223666,
+      "start_char": 136,
+      "end_char": 138
+    },
+    {
+      "text": "earlier",
+      "start": 9.631583,
+      "end": 10.039458,
+      "duration": 0.407875,
+      "start_char": 139,
+      "end_char": 146
+    },
+    {
+      "text": "beliefs",
+      "start": 10.052625,
+      "end": 10.473666,
+      "duration": 0.421041,
+      "start_char": 147,
+      "end_char": 154
+    },
+    {
+      "text": "came",
+      "start": 10.486833,
+      "end": 10.776291,
+      "duration": 0.289458,
+      "start_char": 155,
+      "end_char": 159
+    },
+    {
+      "text": "from",
+      "start": 10.789458,
+      "end": 11.131583,
+      "duration": 0.342125,
+      "start_char": 160,
+      "end_char": 164
+    },
+    {
+      "text": "what",
+      "start": 11.407875,
+      "end": 11.592083,
+      "duration": 0.184208,
+      "start_char": 166,
+      "end_char": 170
+    },
+    {
+      "text": "I",
+      "start": 11.60525,
+      "end": 11.684208,
+      "duration": 0.078958,
+      "start_char": 171,
+      "end_char": 172
+    },
+    {
+      "text": "have",
+      "start": 11.697375,
+      "end": 11.868416,
+      "duration": 0.171041,
+      "start_char": 173,
+      "end_char": 177
+    },
+    {
+      "text": "learned",
+      "start": 11.881583,
+      "end": 12.236833,
+      "duration": 0.35525,
+      "start_char": 178,
+      "end_char": 185
+    },
+    {
+      "text": "in",
+      "start": 12.25,
+      "end": 12.342125,
+      "duration": 0.092125,
+      "start_char": 186,
+      "end_char": 188
+    },
+    {
+      "text": "this",
+      "start": 12.35525,
+      "end": 12.526291,
+      "duration": 0.171041,
+      "start_char": 189,
+      "end_char": 193
+    },
+    {
+      "text": "program",
+      "start": 12.539458,
+      "end": 13.092083,
+      "duration": 0.552625,
+      "start_char": 194,
+      "end_char": 201
+    },
+    {
+      "text": "and",
+      "start": 13.434208,
+      "end": 13.499999,
+      "duration": 0.065791,
+      "start_char": 203,
+      "end_char": 206
+    },
+    {
+      "text": "how",
+      "start": 13.513166,
+      "end": 13.710541,
+      "duration": 0.197375,
+      "start_char": 207,
+      "end_char": 210
+    },
+    {
+      "text": "this",
+      "start": 13.723666,
+      "end": 13.947332,
+      "duration": 0.223666,
+      "start_char": 211,
+      "end_char": 215
+    },
+    {
+      "text": "learning",
+      "start": 13.960541,
+      "end": 14.342124,
+      "duration": 0.381583,
+      "start_char": 216,
+      "end_char": 224
+    },
+    {
+      "text": "will",
+      "start": 14.35525,
+      "end": 14.486833,
+      "duration": 0.131583,
+      "start_char": 225,
+      "end_char": 229
+    },
+    {
+      "text": "guide",
+      "start": 14.5,
+      "end": 14.842125,
+      "duration": 0.342125,
+      "start_char": 230,
+      "end_char": 235
+    },
+    {
+      "text": "my",
+      "start": 14.85525,
+      "end": 14.986833,
+      "duration": 0.131583,
+      "start_char": 236,
+      "end_char": 238
+    },
+    {
+      "text": "future",
+      "start": 15.0,
+      "end": 15.39475,
+      "duration": 0.39475,
+      "start_char": 239,
+      "end_char": 245
+    },
+    {
+      "text": "work",
+      "start": 15.407875,
+      "end": 15.776291,
+      "duration": 0.368416,
+      "start_char": 246,
+      "end_char": 250
+    },
+    {
+      "text": "as",
+      "start": 15.789458,
+      "end": 15.894708,
+      "duration": 0.10525,
+      "start_char": 251,
+      "end_char": 253
+    },
+    {
+      "text": "an",
+      "start": 15.907875,
+      "end": 16.0,
+      "duration": 0.092125,
+      "start_char": 254,
+      "end_char": 256
+    },
+    {
+      "text": "Education",
+      "start": 16.013166,
+      "end": 16.565791,
+      "duration": 0.552625,
+      "start_char": 257,
+      "end_char": 266
+    },
+    {
+      "text": "Assistant",
+      "start": 16.578958,
+      "end": 17.302624,
+      "duration": 0.723666,
+      "start_char": 267,
+      "end_char": 276
+    }
+  ]
+}

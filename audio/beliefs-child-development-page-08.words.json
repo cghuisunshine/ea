@@ -1,0 +1,695 @@
+{
+  "text": "I have also learned to pay closer attention to the influence of peers. Positive friendships can give a student a sense of belonging, confidence, and opportunities to develop social skills. At the same time, peer pressure, exclusion, and bullying can harm a student’s self-esteem and willingness to participate at school.\n\nThis has helped me understand that inclusion means more than placing students in the same classroom. As an EA, I should help create meaningful opportunities for every student to participate, communicate, and build relationships with others.",
+  "voice": "en-GB-SoniaNeural",
+  "audio": "beliefs-child-development-page-08.mp3",
+  "words": [
+    {
+      "text": "I",
+      "start": 0.142125,
+      "end": 0.247375,
+      "duration": 0.10525,
+      "start_char": 0,
+      "end_char": 1
+    },
+    {
+      "text": "have",
+      "start": 0.260541,
+      "end": 0.457916,
+      "duration": 0.197375,
+      "start_char": 2,
+      "end_char": 6
+    },
+    {
+      "text": "also",
+      "start": 0.471041,
+      "end": 0.799999,
+      "duration": 0.328958,
+      "start_char": 7,
+      "end_char": 11
+    },
+    {
+      "text": "learned",
+      "start": 0.813166,
+      "end": 1.339499,
+      "duration": 0.526333,
+      "start_char": 12,
+      "end_char": 19
+    },
+    {
+      "text": "to",
+      "start": 1.352625,
+      "end": 1.44475,
+      "duration": 0.092125,
+      "start_char": 20,
+      "end_char": 22
+    },
+    {
+      "text": "pay",
+      "start": 1.457875,
+      "end": 1.628916,
+      "duration": 0.171041,
+      "start_char": 23,
+      "end_char": 26
+    },
+    {
+      "text": "closer",
+      "start": 1.642125,
+      "end": 2.102666,
+      "duration": 0.460541,
+      "start_char": 27,
+      "end_char": 33
+    },
+    {
+      "text": "attention",
+      "start": 2.115791,
+      "end": 2.707916,
+      "duration": 0.592125,
+      "start_char": 34,
+      "end_char": 43
+    },
+    {
+      "text": "to",
+      "start": 2.721041,
+      "end": 2.839457,
+      "duration": 0.118416,
+      "start_char": 44,
+      "end_char": 46
+    },
+    {
+      "text": "the",
+      "start": 2.852625,
+      "end": 2.971041,
+      "duration": 0.118416,
+      "start_char": 47,
+      "end_char": 50
+    },
+    {
+      "text": "influence",
+      "start": 2.984208,
+      "end": 3.549999,
+      "duration": 0.565791,
+      "start_char": 51,
+      "end_char": 60
+    },
+    {
+      "text": "of",
+      "start": 3.563166,
+      "end": 3.681582,
+      "duration": 0.118416,
+      "start_char": 61,
+      "end_char": 63
+    },
+    {
+      "text": "peers",
+      "start": 3.69475,
+      "end": 4.286875,
+      "duration": 0.592125,
+      "start_char": 64,
+      "end_char": 69
+    },
+    {
+      "text": "Positive",
+      "start": 4.684208,
+      "end": 5.157874,
+      "duration": 0.473666,
+      "start_char": 71,
+      "end_char": 79
+    },
+    {
+      "text": "friendships",
+      "start": 5.171041,
+      "end": 5.802624,
+      "duration": 0.631583,
+      "start_char": 80,
+      "end_char": 91
+    },
+    {
+      "text": "can",
+      "start": 5.815791,
+      "end": 5.999999,
+      "duration": 0.184208,
+      "start_char": 92,
+      "end_char": 95
+    },
+    {
+      "text": "give",
+      "start": 6.013166,
+      "end": 6.197374,
+      "duration": 0.184208,
+      "start_char": 96,
+      "end_char": 100
+    },
+    {
+      "text": "a",
+      "start": 6.210541,
+      "end": 6.276332,
+      "duration": 0.065791,
+      "start_char": 101,
+      "end_char": 102
+    },
+    {
+      "text": "student",
+      "start": 6.289458,
+      "end": 6.763124,
+      "duration": 0.473666,
+      "start_char": 103,
+      "end_char": 110
+    },
+    {
+      "text": "a",
+      "start": 6.776333,
+      "end": 6.842124,
+      "duration": 0.065791,
+      "start_char": 111,
+      "end_char": 112
+    },
+    {
+      "text": "sense",
+      "start": 6.85525,
+      "end": 7.223666,
+      "duration": 0.368416,
+      "start_char": 113,
+      "end_char": 118
+    },
+    {
+      "text": "of",
+      "start": 7.236833,
+      "end": 7.355249,
+      "duration": 0.118416,
+      "start_char": 119,
+      "end_char": 121
+    },
+    {
+      "text": "belonging",
+      "start": 7.368416,
+      "end": 7.973666,
+      "duration": 0.60525,
+      "start_char": 122,
+      "end_char": 131
+    },
+    {
+      "text": "confidence",
+      "start": 8.263166,
+      "end": 9.013166,
+      "duration": 0.75,
+      "start_char": 133,
+      "end_char": 143
+    },
+    {
+      "text": "and",
+      "start": 9.289458,
+      "end": 9.421041,
+      "duration": 0.131583,
+      "start_char": 145,
+      "end_char": 148
+    },
+    {
+      "text": "opportunities",
+      "start": 9.434208,
+      "end": 10.249999,
+      "duration": 0.815791,
+      "start_char": 149,
+      "end_char": 162
+    },
+    {
+      "text": "to",
+      "start": 10.263166,
+      "end": 10.368416,
+      "duration": 0.10525,
+      "start_char": 163,
+      "end_char": 165
+    },
+    {
+      "text": "develop",
+      "start": 10.381583,
+      "end": 10.815791,
+      "duration": 0.434208,
+      "start_char": 166,
+      "end_char": 173
+    },
+    {
+      "text": "social",
+      "start": 10.828958,
+      "end": 11.263166,
+      "duration": 0.434208,
+      "start_char": 174,
+      "end_char": 180
+    },
+    {
+      "text": "skills",
+      "start": 11.276333,
+      "end": 11.881583,
+      "duration": 0.60525,
+      "start_char": 181,
+      "end_char": 187
+    },
+    {
+      "text": "At",
+      "start": 12.302625,
+      "end": 12.434208,
+      "duration": 0.131583,
+      "start_char": 189,
+      "end_char": 191
+    },
+    {
+      "text": "the",
+      "start": 12.447375,
+      "end": 12.552625,
+      "duration": 0.10525,
+      "start_char": 192,
+      "end_char": 195
+    },
+    {
+      "text": "same",
+      "start": 12.565791,
+      "end": 12.855249,
+      "duration": 0.289458,
+      "start_char": 196,
+      "end_char": 200
+    },
+    {
+      "text": "time",
+      "start": 12.868416,
+      "end": 13.342082,
+      "duration": 0.473666,
+      "start_char": 201,
+      "end_char": 205
+    },
+    {
+      "text": "peer",
+      "start": 13.631583,
+      "end": 13.868416,
+      "duration": 0.236833,
+      "start_char": 207,
+      "end_char": 211
+    },
+    {
+      "text": "pressure",
+      "start": 13.881583,
+      "end": 14.407916,
+      "duration": 0.526333,
+      "start_char": 212,
+      "end_char": 220
+    },
+    {
+      "text": "exclusion",
+      "start": 14.618416,
+      "end": 15.368416,
+      "duration": 0.75,
+      "start_char": 222,
+      "end_char": 231
+    },
+    {
+      "text": "and",
+      "start": 15.592125,
+      "end": 15.736875,
+      "duration": 0.14475,
+      "start_char": 233,
+      "end_char": 236
+    },
+    {
+      "text": "bullying",
+      "start": 15.75,
+      "end": 16.171041,
+      "duration": 0.421041,
+      "start_char": 237,
+      "end_char": 245
+    },
+    {
+      "text": "can",
+      "start": 16.184208,
+      "end": 16.355249,
+      "duration": 0.171041,
+      "start_char": 246,
+      "end_char": 249
+    },
+    {
+      "text": "harm",
+      "start": 16.368416,
+      "end": 16.671041,
+      "duration": 0.302625,
+      "start_char": 250,
+      "end_char": 254
+    },
+    {
+      "text": "a",
+      "start": 16.684208,
+      "end": 16.736833,
+      "duration": 0.052625,
+      "start_char": 255,
+      "end_char": 256
+    },
+    {
+      "text": "student’s",
+      "start": 16.75,
+      "end": 17.25,
+      "duration": 0.5,
+      "start_char": 257,
+      "end_char": 266
+    },
+    {
+      "text": "self-esteem",
+      "start": 17.263166,
+      "end": 17.960541,
+      "duration": 0.697375,
+      "start_char": 267,
+      "end_char": 278
+    },
+    {
+      "text": "and",
+      "start": 17.973666,
+      "end": 18.078916,
+      "duration": 0.10525,
+      "start_char": 279,
+      "end_char": 282
+    },
+    {
+      "text": "willingness",
+      "start": 18.092125,
+      "end": 18.618458,
+      "duration": 0.526333,
+      "start_char": 283,
+      "end_char": 294
+    },
+    {
+      "text": "to",
+      "start": 18.631583,
+      "end": 18.736833,
+      "duration": 0.10525,
+      "start_char": 295,
+      "end_char": 297
+    },
+    {
+      "text": "participate",
+      "start": 18.75,
+      "end": 19.447375,
+      "duration": 0.697375,
+      "start_char": 298,
+      "end_char": 309
+    },
+    {
+      "text": "at",
+      "start": 19.460541,
+      "end": 19.552666,
+      "duration": 0.092125,
+      "start_char": 310,
+      "end_char": 312
+    },
+    {
+      "text": "school",
+      "start": 19.565791,
+      "end": 20.052624,
+      "duration": 0.486833,
+      "start_char": 313,
+      "end_char": 319
+    },
+    {
+      "text": "This",
+      "start": 20.473666,
+      "end": 20.723666,
+      "duration": 0.25,
+      "start_char": 322,
+      "end_char": 326
+    },
+    {
+      "text": "has",
+      "start": 20.736833,
+      "end": 20.894708,
+      "duration": 0.157875,
+      "start_char": 327,
+      "end_char": 330
+    },
+    {
+      "text": "helped",
+      "start": 20.907875,
+      "end": 21.2105,
+      "duration": 0.302625,
+      "start_char": 331,
+      "end_char": 337
+    },
+    {
+      "text": "me",
+      "start": 21.223666,
+      "end": 21.355249,
+      "duration": 0.131583,
+      "start_char": 338,
+      "end_char": 340
+    },
+    {
+      "text": "understand",
+      "start": 21.368416,
+      "end": 22.144749,
+      "duration": 0.776333,
+      "start_char": 341,
+      "end_char": 351
+    },
+    {
+      "text": "that",
+      "start": 22.157875,
+      "end": 22.328916,
+      "duration": 0.171041,
+      "start_char": 352,
+      "end_char": 356
+    },
+    {
+      "text": "inclusion",
+      "start": 22.342125,
+      "end": 22.947375,
+      "duration": 0.60525,
+      "start_char": 357,
+      "end_char": 366
+    },
+    {
+      "text": "means",
+      "start": 22.960541,
+      "end": 23.289499,
+      "duration": 0.328958,
+      "start_char": 367,
+      "end_char": 372
+    },
+    {
+      "text": "more",
+      "start": 23.302625,
+      "end": 23.526291,
+      "duration": 0.223666,
+      "start_char": 373,
+      "end_char": 377
+    },
+    {
+      "text": "than",
+      "start": 23.539458,
+      "end": 23.697333,
+      "duration": 0.157875,
+      "start_char": 378,
+      "end_char": 382
+    },
+    {
+      "text": "placing",
+      "start": 23.710541,
+      "end": 24.171082,
+      "duration": 0.460541,
+      "start_char": 383,
+      "end_char": 390
+    },
+    {
+      "text": "students",
+      "start": 24.184208,
+      "end": 24.736833,
+      "duration": 0.552625,
+      "start_char": 391,
+      "end_char": 399
+    },
+    {
+      "text": "in",
+      "start": 24.75,
+      "end": 24.868416,
+      "duration": 0.118416,
+      "start_char": 400,
+      "end_char": 402
+    },
+    {
+      "text": "the",
+      "start": 24.881583,
+      "end": 24.973708,
+      "duration": 0.092125,
+      "start_char": 403,
+      "end_char": 406
+    },
+    {
+      "text": "same",
+      "start": 24.986833,
+      "end": 25.263166,
+      "duration": 0.276333,
+      "start_char": 407,
+      "end_char": 411
+    },
+    {
+      "text": "classroom",
+      "start": 25.276333,
+      "end": 25.960541,
+      "duration": 0.684208,
+      "start_char": 412,
+      "end_char": 421
+    },
+    {
+      "text": "As",
+      "start": 26.381583,
+      "end": 26.565791,
+      "duration": 0.184208,
+      "start_char": 423,
+      "end_char": 425
+    },
+    {
+      "text": "an",
+      "start": 26.578958,
+      "end": 26.710541,
+      "duration": 0.131583,
+      "start_char": 426,
+      "end_char": 428
+    },
+    {
+      "text": "EA",
+      "start": 26.723666,
+      "end": 27.249999,
+      "duration": 0.526333,
+      "start_char": 429,
+      "end_char": 431
+    },
+    {
+      "text": "I",
+      "start": 27.513166,
+      "end": 27.657916,
+      "duration": 0.14475,
+      "start_char": 433,
+      "end_char": 434
+    },
+    {
+      "text": "should",
+      "start": 27.671041,
+      "end": 27.868416,
+      "duration": 0.197375,
+      "start_char": 435,
+      "end_char": 441
+    },
+    {
+      "text": "help",
+      "start": 27.881583,
+      "end": 28.157916,
+      "duration": 0.276333,
+      "start_char": 442,
+      "end_char": 446
+    },
+    {
+      "text": "create",
+      "start": 28.171041,
+      "end": 28.592082,
+      "duration": 0.421041,
+      "start_char": 447,
+      "end_char": 453
+    },
+    {
+      "text": "meaningful",
+      "start": 28.60525,
+      "end": 29.118416,
+      "duration": 0.513166,
+      "start_char": 454,
+      "end_char": 464
+    },
+    {
+      "text": "opportunities",
+      "start": 29.131583,
+      "end": 29.986833,
+      "duration": 0.85525,
+      "start_char": 465,
+      "end_char": 478
+    },
+    {
+      "text": "for",
+      "start": 30.0,
+      "end": 30.14475,
+      "duration": 0.14475,
+      "start_char": 479,
+      "end_char": 482
+    },
+    {
+      "text": "every",
+      "start": 30.157875,
+      "end": 30.486833,
+      "duration": 0.328958,
+      "start_char": 483,
+      "end_char": 488
+    },
+    {
+      "text": "student",
+      "start": 30.5,
+      "end": 30.960541,
+      "duration": 0.460541,
+      "start_char": 489,
+      "end_char": 496
+    },
+    {
+      "text": "to",
+      "start": 30.973666,
+      "end": 31.052624,
+      "duration": 0.078958,
+      "start_char": 497,
+      "end_char": 499
+    },
+    {
+      "text": "participate",
+      "start": 31.065791,
+      "end": 31.934207,
+      "duration": 0.868416,
+      "start_char": 500,
+      "end_char": 511
+    },
+    {
+      "text": "communicate",
+      "start": 32.236833,
+      "end": 32.986833,
+      "duration": 0.75,
+      "start_char": 513,
+      "end_char": 524
+    },
+    {
+      "text": "and",
+      "start": 33.236833,
+      "end": 33.355249,
+      "duration": 0.118416,
+      "start_char": 526,
+      "end_char": 529
+    },
+    {
+      "text": "build",
+      "start": 33.368416,
+      "end": 33.657874,
+      "duration": 0.289458,
+      "start_char": 530,
+      "end_char": 535
+    },
+    {
+      "text": "relationships",
+      "start": 33.671041,
+      "end": 34.447374,
+      "duration": 0.776333,
+      "start_char": 536,
+      "end_char": 549
+    },
+    {
+      "text": "with",
+      "start": 34.460541,
+      "end": 34.605291,
+      "duration": 0.14475,
+      "start_char": 550,
+      "end_char": 554
+    },
+    {
+      "text": "others",
+      "start": 34.618416,
+      "end": 35.131582,
+      "duration": 0.513166,
+      "start_char": 555,
+      "end_char": 561
+    }
+  ]
+}

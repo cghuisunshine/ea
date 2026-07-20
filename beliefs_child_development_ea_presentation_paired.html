@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beliefs and Understandings About Child Development</title>
+  <style>
+    :root {
+      --paper: #faf8f5;
+      --ink: #451a03;
+      --muted: #785d4d;
+      --line: #dfd4ca;
+      --accent: #b45309;
+      --support: #e9f3ec;
+      --support-ink: #29573a;
+      --panel: #fff;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      background: #28231f;
+      color: var(--ink);
+      font-family: Avenir, "Avenir Next", Helvetica, sans-serif;
+      overflow: hidden;
+    }
+    button { font: inherit; }
+    .controls-menu-toggle {
+      position: fixed;
+      top: 14px;
+      right: 14px;
+      z-index: 1000;
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      padding: 0;
+      color: #f5eee8;
+      background: #1f1b18;
+      border: 1px solid #5c4e45;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+    .controls-menu-toggle:hover,
+    .controls-menu-toggle:focus-visible { background: #3a302a; outline: 2px solid #f5eee8; outline-offset: 2px; }
+    .hamburger-icon,
+    .hamburger-icon::before,
+    .hamburger-icon::after {
+      width: 20px;
+      height: 2px;
+      display: block;
+      background: currentColor;
+      content: "";
+    }
+    .hamburger-icon { position: relative; }
+    .hamburger-icon::before { position: absolute; top: -6px; left: 0; }
+    .hamburger-icon::after { position: absolute; top: 6px; left: 0; }
+    body.page-buttons-hidden button:not(.controls-menu-toggle) { display: none !important; }
+    .deck { height: 100vh; display: grid; grid-template-rows: 1fr 48px; }
+    .stage {
+      min-height: 0;
+      display: grid;
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+    }
+    .slides { position: relative; min-width: 0; min-height: 0; background: var(--paper); }
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: none;
+      padding: clamp(30px, 5vw, 72px);
+      overflow: auto;
+    }
+    .slide.active { display: flex; flex-direction: column; }
+    .slide-number { color: var(--accent); font-weight: 700; font-size: 15px; margin-bottom: auto; }
+    h1, h2 { margin: 0; letter-spacing: -0.03em; max-width: 15ch; }
+    h1 { font-size: clamp(42px, 6vw, 82px); line-height: 1.02; }
+    h2 { font-size: clamp(36px, 5vw, 66px); line-height: 1.04; }
+    .subtitle { margin: 24px 0 0; max-width: 34ch; font-size: clamp(20px, 2.1vw, 30px); line-height: 1.35; color: var(--muted); }
+    .content { margin: auto 0; }
+    .statement { margin: 24px 0 0; max-width: 32ch; font-size: clamp(22px, 2.4vw, 34px); line-height: 1.35; }
+    .compare { margin: auto 0; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 1050px; }
+    .compare section { border-top: 4px solid var(--accent); padding-top: 18px; }
+    .compare section:last-child { border-color: var(--support-ink); }
+    .compare h3 { margin: 0 0 14px; font-size: 22px; }
+    .compare p { margin: 0; font-size: clamp(19px, 2vw, 28px); line-height: 1.4; }
+    .factors { margin: auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 920px; }
+    .factor { min-height: 110px; border: 1px solid var(--line); padding: 18px; background: var(--panel); font-size: clamp(18px, 1.8vw, 25px); display: flex; align-items: flex-end; }
+    .flow { margin: auto 0; display: flex; align-items: center; gap: 16px; max-width: 1000px; }
+    .flow div { flex: 1; border-top: 3px solid var(--accent); padding-top: 14px; font-size: clamp(19px, 2vw, 28px); line-height: 1.3; }
+    .flow b { color: var(--accent); font-size: 26px; }
+    .quote { margin: auto 0; padding-left: 28px; border-left: 5px solid var(--accent); max-width: 29ch; font-size: clamp(27px, 3.2vw, 48px); line-height: 1.25; }
+    .script {
+      min-height: 0;
+      background: var(--panel);
+      border-top: 1px solid var(--line);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      overflow: hidden;
+    }
+    .script-header { display: flex; align-items: center; gap: 24px; }
+    .script h3 { flex: none; margin: 0; font-size: 18px; color: var(--accent); }
+    .model-audio-group { min-width: 0; flex: 1; display: flex; align-items: center; justify-content: flex-end; gap: 12px; }
+    .model-audio-label { flex: none; color: var(--muted); font-size: 14px; }
+    .model-audio { width: min(100%, 520px); height: 36px; }
+    .script p {
+      min-height: 0;
+      margin: 0;
+      overflow: auto;
+      white-space: pre-line;
+      font-family: Charter, Georgia, serif;
+      font-size: clamp(17px, 1.35vw, 21px);
+      line-height: 1.62;
+      color: #332820;
+    }
+    .tts-word { border-radius: 3px; transition: background-color 120ms ease, color 120ms ease; }
+    .tts-word.is-speaking { background: #f2d49a; color: #27160b; }
+    .script.hidden { display: none; }
+    .stage.script-hidden { grid-template-rows: minmax(0, 1fr); }
+    .stage:not(.script-hidden) .slide { padding: clamp(22px, 3.5vw, 48px); }
+    .stage:not(.script-hidden) h1 { font-size: clamp(34px, 4vw, 54px); }
+    .stage:not(.script-hidden) h2 { font-size: clamp(30px, 3.5vw, 46px); }
+    .stage:not(.script-hidden) .subtitle {
+      margin-top: 14px;
+      font-size: clamp(17px, 1.6vw, 22px);
+    }
+    .stage:not(.script-hidden) .statement {
+      margin-top: 14px;
+      font-size: clamp(18px, 1.8vw, 25px);
+    }
+    .stage:not(.script-hidden) .compare p,
+    .stage:not(.script-hidden) .flow div { font-size: clamp(17px, 1.6vw, 22px); }
+    .stage:not(.script-hidden) .factor {
+      min-height: 64px;
+      padding: 12px;
+      font-size: clamp(16px, 1.5vw, 21px);
+    }
+    .stage:not(.script-hidden) .quote { font-size: clamp(24px, 2.7vw, 38px); }
+    .toolbar {
+      background: #1f1b18;
+      color: #f5eee8;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 14px;
+      border-top: 1px solid #413730;
+    }
+    .toolbar button { color: inherit; background: transparent; border: 1px solid #5c4e45; border-radius: 6px; padding: 5px 11px; cursor: pointer; }
+    .toolbar button:hover, .toolbar button:focus-visible { background: #3a302a; outline: none; }
+    .progress { margin-left: auto; font-variant-numeric: tabular-nums; color: #d9cbc1; }
+    .keys { color: #bfae9f; font-size: 13px; margin-left: 8px; }
+    @media (max-width: 850px) {
+      .slide { padding: 24px; }
+      .script { padding: 22px 24px; }
+      .script-header { align-items: flex-start; flex-direction: column; gap: 10px; }
+      .model-audio-group { width: 100%; justify-content: flex-start; }
+      .compare { grid-template-columns: 1fr; }
+      .factors { grid-template-columns: repeat(2, 1fr); }
+      .keys { display: none; }
+    }
+    @media print {
+      body { background: white; overflow: visible; }
+      .deck, .stage { display: block; height: auto; }
+      .slides { background: white; }
+      .slide { position: relative; display: flex !important; height: 7.5in; page-break-after: always; }
+      .script, .toolbar, .controls-menu-toggle { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <button class="controls-menu-toggle" type="button" id="controlsMenuToggle" aria-label="Hide all page buttons" aria-pressed="false" title="Hide all page buttons">
+    <span class="hamburger-icon" aria-hidden="true"></span>
+  </button>
+  <main class="deck">
+    <div class="stage" id="stage">
+      <div class="slides" aria-live="polite">
+        <section class="slide active" data-script="Hello, everyone.&#10;&#10;Today, I would like to share how my beliefs about child and adolescent development have changed. I will explain where my earlier beliefs came from, what I have learned in this program, and how this learning will guide my future work as an Education Assistant.">
+          <div class="slide-number">01</div>
+          <div class="content">
+            <h1>Beliefs and Understandings About Child Development</h1>
+            <p class="subtitle">How my thinking changed—and what it means for my future work as an Education Assistant</p>
+          </div>
+        </section>
+
+        <section class="slide" data-script="My earlier beliefs were shaped by my experiences in China. Before coming to Canada, I spent most of my career as a software engineer, and I also worked as a teacher for about two years. My own schooling and teaching took place in an education system that placed a strong emphasis on academic achievement and examination results.&#10;&#10;Students were usually expected to learn at the same pace. When students could not keep up, they often had to solve the problem on their own or rely on family support. Because this was the system I knew, it strongly influenced how I first understood learning and success.">
+          <div class="slide-number">02</div>
+          <div class="content">
+            <h2>Where my beliefs began</h2>
+            <p class="statement">China • software engineering • two years of teaching • an academic, examination-focused system</p>
+          </div>
+        </section>
+
+        <section class="slide" data-script="Because of this background, I once believed that a child’s future depended mainly on intelligence, effort, discipline, and family education.&#10;&#10;Through this program, I have come to understand that development is influenced by many connected factors. Biology, family relationships, culture, school, peers, economic circumstances, and personal experiences all play a part. I now believe that a safe environment and supportive adults can make a meaningful difference by helping a child develop confidence and resilience.">
+          <div class="slide-number">03</div>
+          <div class="compare">
+            <section><h3>Before</h3><p>Intelligence, effort, discipline, and family education shaped success.</p></section>
+            <section><h3>Now</h3><p>Development grows from many connected influences—and support can change outcomes.</p></section>
+          </div>
+        </section>
+
+        <section class="slide" data-script="Another important change in my thinking came from learning about neuroplasticity. I once believed that a child’s academic ability was mostly fixed. I now understand that the brain can grow and change through experience, practice, supportive relationships, and education. Repeated positive experiences can strengthen connections in the brain.&#10;&#10;This understanding will guide how I support students as an Education Assistant. If a student is struggling today, I should not assume that the student is incapable. With suitable support, encouragement, practice, and time, that student may make significant progress.">
+          <div class="slide-number">04</div>
+          <div class="content">
+            <h2>Minds can grow and change</h2>
+            <div class="flow"><div>Experience</div><b>→</b><div>Practice</div><b>→</b><div>Supportive relationships</div><b>→</b><div>Growth</div></div>
+          </div>
+        </section>
+
+        <section class="slide" data-script="My understanding of an educator’s role has also changed. I once believed that teachers and Education Assistants were mainly responsible for teaching knowledge, maintaining discipline, and helping students achieve good grades.&#10;&#10;I now understand that educators also support development by creating safe environments, building trusting relationships, modelling skills, and providing opportunities to practise. In my work as an EA, I may use a visual schedule, divide a task into smaller steps, repeat an instruction, or provide additional time. My goal will be to offer enough support for the student to succeed while still encouraging independence.">
+          <div class="slide-number">05</div>
+          <div class="content">
+            <h2>The EA’s role: support independence</h2>
+            <div class="factors"><div class="factor">Safe environment</div><div class="factor">Trusting relationships</div><div class="factor">Modelled skills</div><div class="factor">Visual schedules</div><div class="factor">Smaller steps</div><div class="factor">Time to practise</div></div>
+          </div>
+        </section>
+
+        <section class="slide" data-script="This program has also changed how I think about identity. I now understand that children and adolescents develop their sense of self through family, culture, language, interests, school experiences, and feedback from other people. I had not previously considered how strongly an adult’s words could affect a child’s self-image. Repeatedly describing a child as lazy, difficult, or weak may influence how that child comes to see themselves.&#10;&#10;As an EA, I want to notice each student’s strengths, use respectful language, and help every student feel accepted and capable. I also understand that nature and nurture continually influence each other. Biology may affect temperament, ability, or emotional responses, but relationships and experiences influence how these characteristics develop. A child’s future is not completely fixed.">
+          <div class="slide-number">06</div>
+          <div class="content">
+            <h2>Identity, nature, and nurture</h2>
+            <p class="statement">Biology matters. Environment matters. The words and relationships around a child matter.</p>
+          </div>
+        </section>
+
+        <section class="slide" data-script="My understanding of emotions and behaviour has changed in a similar way. I once viewed strong emotions or challenging behaviour mainly as discipline problems. I now understand that emotional regulation develops gradually and that behaviour can be a form of communication.&#10;&#10;A student may be communicating anxiety, frustration, confusion, sensory overload, or an unmet need. Calm adults can support regulation through clear routines, modelling, practice, co-regulation, and consistent feedback.&#10;&#10;In my work as an EA, I want to ask, ‘What is this student trying to communicate?’ instead of focusing only on, ‘How can I stop this behaviour?’ This question will help me respond with greater patience and understanding.">
+          <div class="slide-number">07</div>
+          <div class="quote">“What is this student trying to communicate?”</div>
+        </section>
+
+        <section class="slide" data-script="I have also learned to pay closer attention to the influence of peers. Positive friendships can give a student a sense of belonging, confidence, and opportunities to develop social skills. At the same time, peer pressure, exclusion, and bullying can harm a student’s self-esteem and willingness to participate at school.&#10;&#10;This has helped me understand that inclusion means more than placing students in the same classroom. As an EA, I should help create meaningful opportunities for every student to participate, communicate, and build relationships with others.">
+          <div class="slide-number">08</div>
+          <div class="compare">
+            <section><h3>Peers can support</h3><p>Belonging, confidence, friendship, and social learning</p></section>
+            <section><h3>Peers can harm</h3><p>Pressure, exclusion, bullying, and reduced participation</p></section>
+          </div>
+        </section>
+
+        <section class="slide" data-script="Another important lesson for me is that early challenges can affect development without completely determining a child’s future. Experiences such as poverty, abuse, neglect, family addiction, or trauma may increase the risk of emotional, social, behavioural, or learning difficulties.&#10;&#10;At the same time, caring adults, supportive schools, positive friendships, stable routines, and access to services can act as protective factors. As an EA, I may become one of the trusted adults who helps a student feel safe, supported, and capable. This reminds me that even small, consistent actions can make a meaningful difference.">
+          <div class="slide-number">09</div>
+          <div class="content">
+            <h2>Challenges do not decide the future</h2>
+            <p class="statement">Protective factors build resilience: caring adults, stable routines, supportive schools, friendships, and services.</p>
+          </div>
+        </section>
+
+        <section class="slide" data-script="When I reflect on my learning, I can see that my beliefs have been shaped by my experiences in China, my teaching experience, my observations in Canada, and this program. My earlier experiences taught me the value of effort, responsibility, discipline, and academic achievement. This program has taught me that students also need safety, trusting relationships, belonging, individualized support, and opportunities to become independent.&#10;&#10;The most important change in my thinking is that an EA should not try to make every student fit into one system. My role is to help remove barriers so that each student can learn, participate, develop their strengths, and feel that they belong. This is the kind of Education Assistant I hope to become.&#10;&#10;Thank you.">
+          <div class="slide-number">10</div>
+          <div class="content">
+            <h2>My role is to help remove barriers</h2>
+            <p class="subtitle">So each student can learn, participate, develop strengths, become independent, and belong.</p>
+          </div>
+        </section>
+      </div>
+
+      <aside class="script" id="script" aria-label="Speaker script">
+        <div class="script-header">
+          <h3>Speaker script</h3>
+          <div class="model-audio-group">
+            <span class="model-audio-label">Model audio · UK English</span>
+            <audio class="model-audio" id="modelAudio" controls preload="metadata" aria-label="Model audio for the current page"></audio>
+          </div>
+        </div>
+        <p id="scriptText"></p>
+      </aside>
+    </div>
+
+    <nav class="toolbar" aria-label="Presentation controls">
+      <button type="button" id="prev" aria-label="Previous slide">← Previous</button>
+      <button type="button" id="next" aria-label="Next slide">Next →</button>
+      <button type="button" id="toggleScript">Hide script</button>
+      <button type="button" id="fullscreen">Full screen</button>
+      <span class="keys">Arrow keys to turn pages · S to show/hide script · F for full screen</span>
+      <span class="progress" id="progress">1 / 10</span>
+    </nav>
+  </main>
+
+  <script src="audio/beliefs-child-development-timings.js?v=20260719-unified-en-gb-sonia"></script>
+  <script>
+    (() => {
+      const slides = [...document.querySelectorAll('.slide')];
+      const script = document.getElementById('script');
+      const scriptText = document.getElementById('scriptText');
+      const modelAudio = document.getElementById('modelAudio');
+      const stage = document.getElementById('stage');
+      const progress = document.getElementById('progress');
+      const toggleButton = document.getElementById('toggleScript');
+      const controlsMenuToggle = document.getElementById('controlsMenuToggle');
+      const pageTimings = window.beliefsChildDevelopmentTimings || [];
+      let index = 0;
+      let timedWords = [];
+      let wordSpans = [];
+      let activeWord = -1;
+      let animationFrame = null;
+
+      function clearHighlight() {
+        if (activeWord >= 0) wordSpans[activeWord]?.classList.remove('is-speaking');
+        activeWord = -1;
+      }
+
+      function renderTimedScript(payload) {
+        const text = payload?.text || slides[index].dataset.script;
+        timedWords = payload?.words || [];
+        scriptText.textContent = '';
+        let cursor = 0;
+
+        timedWords.forEach((word, wordIndex) => {
+          if (word.start_char > cursor) {
+            scriptText.append(document.createTextNode(text.slice(cursor, word.start_char)));
+          }
+          const span = document.createElement('span');
+          span.className = 'tts-word';
+          span.dataset.index = String(wordIndex);
+          span.textContent = text.slice(word.start_char, word.end_char);
+          scriptText.append(span);
+          cursor = word.end_char;
+        });
+
+        if (cursor < text.length) scriptText.append(document.createTextNode(text.slice(cursor)));
+        wordSpans = [...scriptText.querySelectorAll('.tts-word')];
+      }
+
+      function paintHighlight() {
+        const time = modelAudio.currentTime;
+        const nextWord = timedWords.findIndex(word => time >= word.start && time < word.end);
+        if (nextWord !== activeWord) {
+          clearHighlight();
+          if (nextWord >= 0) {
+            wordSpans[nextWord]?.classList.add('is-speaking');
+            activeWord = nextWord;
+          }
+        }
+        if (!modelAudio.paused && !modelAudio.ended) {
+          animationFrame = requestAnimationFrame(paintHighlight);
+        }
+      }
+
+      function show(nextIndex) {
+        index = Math.max(0, Math.min(slides.length - 1, nextIndex));
+        modelAudio.pause();
+        if (animationFrame) cancelAnimationFrame(animationFrame);
+        clearHighlight();
+        slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+        const timing = pageTimings[index];
+        renderTimedScript(timing);
+        modelAudio.src = `audio/beliefs-child-development-page-${String(index + 1).padStart(2, '0')}.mp3?v=20260719-unified-en-gb-sonia`;
+        modelAudio.load();
+        progress.textContent = `${index + 1} / ${slides.length}`;
+        document.getElementById('prev').disabled = index === 0;
+        document.getElementById('next').disabled = index === slides.length - 1;
+      }
+
+      function toggleScript() {
+        const hidden = script.classList.toggle('hidden');
+        stage.classList.toggle('script-hidden', hidden);
+        toggleButton.textContent = hidden ? 'Show script' : 'Hide script';
+        if (hidden) modelAudio.pause();
+      }
+
+      document.getElementById('prev').addEventListener('click', () => show(index - 1));
+      document.getElementById('next').addEventListener('click', () => show(index + 1));
+      toggleButton.addEventListener('click', toggleScript);
+      controlsMenuToggle.addEventListener('click', () => {
+        const hidden = document.body.classList.toggle('page-buttons-hidden');
+        const action = hidden ? 'Show' : 'Hide';
+        controlsMenuToggle.setAttribute('aria-pressed', String(hidden));
+        controlsMenuToggle.setAttribute('aria-label', `${action} all page buttons`);
+        controlsMenuToggle.title = `${action} all page buttons`;
+      });
+      document.getElementById('fullscreen').addEventListener('click', () => {
+        if (!document.fullscreenElement) document.documentElement.requestFullscreen?.();
+        else document.exitFullscreen?.();
+      });
+      modelAudio.addEventListener('play', () => {
+        if (animationFrame) cancelAnimationFrame(animationFrame);
+        paintHighlight();
+      });
+      modelAudio.addEventListener('pause', clearHighlight);
+      modelAudio.addEventListener('ended', clearHighlight);
+      document.addEventListener('keydown', (event) => {
+        if (event.target === modelAudio) return;
+        if (['ArrowRight', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); show(index + 1); }
+        if (['ArrowLeft', 'PageUp'].includes(event.key)) { event.preventDefault(); show(index - 1); }
+        if (event.key === 'Home') show(0);
+        if (event.key === 'End') show(slides.length - 1);
+        if (event.key.toLowerCase() === 's') toggleScript();
+        if (event.key.toLowerCase() === 'f') document.getElementById('fullscreen').click();
+      });
+      show(0);
+    })();
+  </script>
+</body>
+</html>

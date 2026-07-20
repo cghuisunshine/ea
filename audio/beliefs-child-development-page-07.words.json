@@ -1,0 +1,871 @@
+{
+  "text": "My understanding of emotions and behaviour has changed in a similar way. I once viewed strong emotions or challenging behaviour mainly as discipline problems. I now understand that emotional regulation develops gradually and that behaviour can be a form of communication.\n\nA student may be communicating anxiety, frustration, confusion, sensory overload, or an unmet need. Calm adults can support regulation through clear routines, modelling, practice, co-regulation, and consistent feedback.\n\nIn my work as an EA, I want to ask, ‘What is this student trying to communicate?’ instead of focusing only on, ‘How can I stop this behaviour?’ This question will help me respond with greater patience and understanding.",
+  "voice": "en-GB-SoniaNeural",
+  "audio": "beliefs-child-development-page-07.mp3",
+  "words": [
+    {
+      "text": "My",
+      "start": 0.115791,
+      "end": 0.378957,
+      "duration": 0.263166,
+      "start_char": 0,
+      "end_char": 2
+    },
+    {
+      "text": "understanding",
+      "start": 0.392125,
+      "end": 1.168458,
+      "duration": 0.776333,
+      "start_char": 3,
+      "end_char": 16
+    },
+    {
+      "text": "of",
+      "start": 1.181583,
+      "end": 1.273708,
+      "duration": 0.092125,
+      "start_char": 17,
+      "end_char": 19
+    },
+    {
+      "text": "emotions",
+      "start": 1.286833,
+      "end": 1.931583,
+      "duration": 0.64475,
+      "start_char": 20,
+      "end_char": 28
+    },
+    {
+      "text": "and",
+      "start": 1.94475,
+      "end": 2.063166,
+      "duration": 0.118416,
+      "start_char": 29,
+      "end_char": 32
+    },
+    {
+      "text": "behaviour",
+      "start": 2.076333,
+      "end": 2.707916,
+      "duration": 0.631583,
+      "start_char": 33,
+      "end_char": 42
+    },
+    {
+      "text": "has",
+      "start": 2.721041,
+      "end": 3.010499,
+      "duration": 0.289458,
+      "start_char": 43,
+      "end_char": 46
+    },
+    {
+      "text": "changed",
+      "start": 3.023666,
+      "end": 3.536832,
+      "duration": 0.513166,
+      "start_char": 47,
+      "end_char": 54
+    },
+    {
+      "text": "in",
+      "start": 3.55,
+      "end": 3.65525,
+      "duration": 0.10525,
+      "start_char": 55,
+      "end_char": 57
+    },
+    {
+      "text": "a",
+      "start": 3.668416,
+      "end": 3.721041,
+      "duration": 0.052625,
+      "start_char": 58,
+      "end_char": 59
+    },
+    {
+      "text": "similar",
+      "start": 3.734208,
+      "end": 4.128958,
+      "duration": 0.39475,
+      "start_char": 60,
+      "end_char": 67
+    },
+    {
+      "text": "way",
+      "start": 4.142125,
+      "end": 4.5895,
+      "duration": 0.447375,
+      "start_char": 68,
+      "end_char": 71
+    },
+    {
+      "text": "I",
+      "start": 5.013166,
+      "end": 5.131582,
+      "duration": 0.118416,
+      "start_char": 73,
+      "end_char": 74
+    },
+    {
+      "text": "once",
+      "start": 5.14475,
+      "end": 5.486875,
+      "duration": 0.342125,
+      "start_char": 75,
+      "end_char": 79
+    },
+    {
+      "text": "viewed",
+      "start": 5.5,
+      "end": 5.815791,
+      "duration": 0.315791,
+      "start_char": 80,
+      "end_char": 86
+    },
+    {
+      "text": "strong",
+      "start": 5.828958,
+      "end": 6.157916,
+      "duration": 0.328958,
+      "start_char": 87,
+      "end_char": 93
+    },
+    {
+      "text": "emotions",
+      "start": 6.171041,
+      "end": 6.907874,
+      "duration": 0.736833,
+      "start_char": 94,
+      "end_char": 102
+    },
+    {
+      "text": "or",
+      "start": 6.921041,
+      "end": 7.078916,
+      "duration": 0.157875,
+      "start_char": 103,
+      "end_char": 105
+    },
+    {
+      "text": "challenging",
+      "start": 7.092125,
+      "end": 7.671083,
+      "duration": 0.578958,
+      "start_char": 106,
+      "end_char": 117
+    },
+    {
+      "text": "behaviour",
+      "start": 7.684208,
+      "end": 8.302624,
+      "duration": 0.618416,
+      "start_char": 118,
+      "end_char": 127
+    },
+    {
+      "text": "mainly",
+      "start": 8.315791,
+      "end": 8.842124,
+      "duration": 0.526333,
+      "start_char": 128,
+      "end_char": 134
+    },
+    {
+      "text": "as",
+      "start": 8.85525,
+      "end": 9.013125,
+      "duration": 0.157875,
+      "start_char": 135,
+      "end_char": 137
+    },
+    {
+      "text": "discipline",
+      "start": 9.026333,
+      "end": 9.513166,
+      "duration": 0.486833,
+      "start_char": 138,
+      "end_char": 148
+    },
+    {
+      "text": "problems",
+      "start": 9.526333,
+      "end": 10.249999,
+      "duration": 0.723666,
+      "start_char": 149,
+      "end_char": 157
+    },
+    {
+      "text": "I",
+      "start": 10.671041,
+      "end": 10.789457,
+      "duration": 0.118416,
+      "start_char": 159,
+      "end_char": 160
+    },
+    {
+      "text": "now",
+      "start": 10.802625,
+      "end": 11.118416,
+      "duration": 0.315791,
+      "start_char": 161,
+      "end_char": 164
+    },
+    {
+      "text": "understand",
+      "start": 11.131583,
+      "end": 11.881583,
+      "duration": 0.75,
+      "start_char": 165,
+      "end_char": 175
+    },
+    {
+      "text": "that",
+      "start": 11.89475,
+      "end": 12.078958,
+      "duration": 0.184208,
+      "start_char": 176,
+      "end_char": 180
+    },
+    {
+      "text": "emotional",
+      "start": 12.092125,
+      "end": 12.618458,
+      "duration": 0.526333,
+      "start_char": 181,
+      "end_char": 190
+    },
+    {
+      "text": "regulation",
+      "start": 12.631583,
+      "end": 13.263166,
+      "duration": 0.631583,
+      "start_char": 191,
+      "end_char": 201
+    },
+    {
+      "text": "develops",
+      "start": 13.276333,
+      "end": 13.776333,
+      "duration": 0.5,
+      "start_char": 202,
+      "end_char": 210
+    },
+    {
+      "text": "gradually",
+      "start": 13.789458,
+      "end": 14.407874,
+      "duration": 0.618416,
+      "start_char": 211,
+      "end_char": 220
+    },
+    {
+      "text": "and",
+      "start": 14.421041,
+      "end": 14.592082,
+      "duration": 0.171041,
+      "start_char": 221,
+      "end_char": 224
+    },
+    {
+      "text": "that",
+      "start": 14.60525,
+      "end": 14.789458,
+      "duration": 0.184208,
+      "start_char": 225,
+      "end_char": 229
+    },
+    {
+      "text": "behaviour",
+      "start": 14.802625,
+      "end": 15.421041,
+      "duration": 0.618416,
+      "start_char": 230,
+      "end_char": 239
+    },
+    {
+      "text": "can",
+      "start": 15.434208,
+      "end": 15.618416,
+      "duration": 0.184208,
+      "start_char": 240,
+      "end_char": 243
+    },
+    {
+      "text": "be",
+      "start": 15.631583,
+      "end": 15.763166,
+      "duration": 0.131583,
+      "start_char": 244,
+      "end_char": 246
+    },
+    {
+      "text": "a",
+      "start": 15.776333,
+      "end": 15.828958,
+      "duration": 0.052625,
+      "start_char": 247,
+      "end_char": 248
+    },
+    {
+      "text": "form",
+      "start": 15.842125,
+      "end": 16.197375,
+      "duration": 0.35525,
+      "start_char": 249,
+      "end_char": 253
+    },
+    {
+      "text": "of",
+      "start": 16.210541,
+      "end": 16.328957,
+      "duration": 0.118416,
+      "start_char": 254,
+      "end_char": 256
+    },
+    {
+      "text": "communication",
+      "start": 16.342125,
+      "end": 17.302666,
+      "duration": 0.960541,
+      "start_char": 257,
+      "end_char": 270
+    },
+    {
+      "text": "A",
+      "start": 17.723666,
+      "end": 17.802624,
+      "duration": 0.078958,
+      "start_char": 273,
+      "end_char": 274
+    },
+    {
+      "text": "student",
+      "start": 17.815791,
+      "end": 18.355249,
+      "duration": 0.539458,
+      "start_char": 275,
+      "end_char": 282
+    },
+    {
+      "text": "may",
+      "start": 18.368416,
+      "end": 18.526291,
+      "duration": 0.157875,
+      "start_char": 283,
+      "end_char": 286
+    },
+    {
+      "text": "be",
+      "start": 18.539458,
+      "end": 18.684208,
+      "duration": 0.14475,
+      "start_char": 287,
+      "end_char": 289
+    },
+    {
+      "text": "communicating",
+      "start": 18.697375,
+      "end": 19.5,
+      "duration": 0.802625,
+      "start_char": 290,
+      "end_char": 303
+    },
+    {
+      "text": "anxiety",
+      "start": 19.513166,
+      "end": 20.276332,
+      "duration": 0.763166,
+      "start_char": 304,
+      "end_char": 311
+    },
+    {
+      "text": "frustration",
+      "start": 20.565791,
+      "end": 21.407916,
+      "duration": 0.842125,
+      "start_char": 313,
+      "end_char": 324
+    },
+    {
+      "text": "confusion",
+      "start": 21.671041,
+      "end": 22.460499,
+      "duration": 0.789458,
+      "start_char": 326,
+      "end_char": 335
+    },
+    {
+      "text": "sensory",
+      "start": 22.75,
+      "end": 23.263166,
+      "duration": 0.513166,
+      "start_char": 337,
+      "end_char": 344
+    },
+    {
+      "text": "overload",
+      "start": 23.276333,
+      "end": 23.947374,
+      "duration": 0.671041,
+      "start_char": 345,
+      "end_char": 353
+    },
+    {
+      "text": "or",
+      "start": 24.25,
+      "end": 24.39475,
+      "duration": 0.14475,
+      "start_char": 355,
+      "end_char": 357
+    },
+    {
+      "text": "an",
+      "start": 24.407875,
+      "end": 24.526291,
+      "duration": 0.118416,
+      "start_char": 358,
+      "end_char": 360
+    },
+    {
+      "text": "unmet",
+      "start": 24.539458,
+      "end": 24.973666,
+      "duration": 0.434208,
+      "start_char": 361,
+      "end_char": 366
+    },
+    {
+      "text": "need",
+      "start": 24.986833,
+      "end": 25.434208,
+      "duration": 0.447375,
+      "start_char": 367,
+      "end_char": 371
+    },
+    {
+      "text": "Calm",
+      "start": 25.813833,
+      "end": 26.169083,
+      "duration": 0.35525,
+      "start_char": 373,
+      "end_char": 377
+    },
+    {
+      "text": "adults",
+      "start": 26.18225,
+      "end": 26.603291,
+      "duration": 0.421041,
+      "start_char": 378,
+      "end_char": 384
+    },
+    {
+      "text": "can",
+      "start": 26.616458,
+      "end": 26.813833,
+      "duration": 0.197375,
+      "start_char": 385,
+      "end_char": 388
+    },
+    {
+      "text": "support",
+      "start": 26.826958,
+      "end": 27.274333,
+      "duration": 0.447375,
+      "start_char": 389,
+      "end_char": 396
+    },
+    {
+      "text": "regulation",
+      "start": 27.2875,
+      "end": 27.998041,
+      "duration": 0.710541,
+      "start_char": 397,
+      "end_char": 407
+    },
+    {
+      "text": "through",
+      "start": 28.011166,
+      "end": 28.247999,
+      "duration": 0.236833,
+      "start_char": 408,
+      "end_char": 415
+    },
+    {
+      "text": "clear",
+      "start": 28.261166,
+      "end": 28.563791,
+      "duration": 0.302625,
+      "start_char": 416,
+      "end_char": 421
+    },
+    {
+      "text": "routines",
+      "start": 28.576958,
+      "end": 29.287499,
+      "duration": 0.710541,
+      "start_char": 422,
+      "end_char": 430
+    },
+    {
+      "text": "modelling",
+      "start": 29.563833,
+      "end": 30.129624,
+      "duration": 0.565791,
+      "start_char": 432,
+      "end_char": 441
+    },
+    {
+      "text": "practice",
+      "start": 30.405916,
+      "end": 31.090124,
+      "duration": 0.684208,
+      "start_char": 443,
+      "end_char": 451
+    },
+    {
+      "text": "co-regulation",
+      "start": 31.379625,
+      "end": 32.353291,
+      "duration": 0.973666,
+      "start_char": 453,
+      "end_char": 466
+    },
+    {
+      "text": "and",
+      "start": 32.550666,
+      "end": 32.695416,
+      "duration": 0.14475,
+      "start_char": 468,
+      "end_char": 471
+    },
+    {
+      "text": "consistent",
+      "start": 32.708541,
+      "end": 33.379582,
+      "duration": 0.671041,
+      "start_char": 472,
+      "end_char": 482
+    },
+    {
+      "text": "feedback",
+      "start": 33.39275,
+      "end": 34.103291,
+      "duration": 0.710541,
+      "start_char": 483,
+      "end_char": 491
+    },
+    {
+      "text": "In",
+      "start": 34.526333,
+      "end": 34.631583,
+      "duration": 0.10525,
+      "start_char": 494,
+      "end_char": 496
+    },
+    {
+      "text": "my",
+      "start": 34.64475,
+      "end": 34.842125,
+      "duration": 0.197375,
+      "start_char": 497,
+      "end_char": 499
+    },
+    {
+      "text": "work",
+      "start": 34.85525,
+      "end": 35.2105,
+      "duration": 0.35525,
+      "start_char": 500,
+      "end_char": 504
+    },
+    {
+      "text": "as",
+      "start": 35.223666,
+      "end": 35.315791,
+      "duration": 0.092125,
+      "start_char": 505,
+      "end_char": 507
+    },
+    {
+      "text": "an",
+      "start": 35.328958,
+      "end": 35.460541,
+      "duration": 0.131583,
+      "start_char": 508,
+      "end_char": 510
+    },
+    {
+      "text": "EA",
+      "start": 35.473666,
+      "end": 35.960499,
+      "duration": 0.486833,
+      "start_char": 511,
+      "end_char": 513
+    },
+    {
+      "text": "I",
+      "start": 36.184208,
+      "end": 36.289458,
+      "duration": 0.10525,
+      "start_char": 515,
+      "end_char": 516
+    },
+    {
+      "text": "want",
+      "start": 36.302625,
+      "end": 36.539458,
+      "duration": 0.236833,
+      "start_char": 517,
+      "end_char": 521
+    },
+    {
+      "text": "to",
+      "start": 36.552625,
+      "end": 36.657875,
+      "duration": 0.10525,
+      "start_char": 522,
+      "end_char": 524
+    },
+    {
+      "text": "ask",
+      "start": 36.671041,
+      "end": 37.118416,
+      "duration": 0.447375,
+      "start_char": 525,
+      "end_char": 528
+    },
+    {
+      "text": "What",
+      "start": 37.381583,
+      "end": 37.578958,
+      "duration": 0.197375,
+      "start_char": 531,
+      "end_char": 535
+    },
+    {
+      "text": "is",
+      "start": 37.592125,
+      "end": 37.723708,
+      "duration": 0.131583,
+      "start_char": 536,
+      "end_char": 538
+    },
+    {
+      "text": "this",
+      "start": 37.736833,
+      "end": 37.921041,
+      "duration": 0.184208,
+      "start_char": 539,
+      "end_char": 543
+    },
+    {
+      "text": "student",
+      "start": 37.934208,
+      "end": 38.355249,
+      "duration": 0.421041,
+      "start_char": 544,
+      "end_char": 551
+    },
+    {
+      "text": "trying",
+      "start": 38.368416,
+      "end": 38.657874,
+      "duration": 0.289458,
+      "start_char": 552,
+      "end_char": 558
+    },
+    {
+      "text": "to",
+      "start": 38.671041,
+      "end": 38.763166,
+      "duration": 0.092125,
+      "start_char": 559,
+      "end_char": 561
+    },
+    {
+      "text": "communicate",
+      "start": 38.776333,
+      "end": 39.526333,
+      "duration": 0.75,
+      "start_char": 562,
+      "end_char": 573
+    },
+    {
+      "text": "instead",
+      "start": 39.986833,
+      "end": 40.355249,
+      "duration": 0.368416,
+      "start_char": 576,
+      "end_char": 583
+    },
+    {
+      "text": "of",
+      "start": 40.368416,
+      "end": 40.473666,
+      "duration": 0.10525,
+      "start_char": 584,
+      "end_char": 586
+    },
+    {
+      "text": "focusing",
+      "start": 40.486833,
+      "end": 41.092083,
+      "duration": 0.60525,
+      "start_char": 587,
+      "end_char": 595
+    },
+    {
+      "text": "only",
+      "start": 41.10525,
+      "end": 41.368416,
+      "duration": 0.263166,
+      "start_char": 596,
+      "end_char": 600
+    },
+    {
+      "text": "on",
+      "start": 41.381583,
+      "end": 41.710541,
+      "duration": 0.328958,
+      "start_char": 601,
+      "end_char": 603
+    },
+    {
+      "text": "How",
+      "start": 42.026333,
+      "end": 42.131583,
+      "duration": 0.10525,
+      "start_char": 606,
+      "end_char": 609
+    },
+    {
+      "text": "can",
+      "start": 42.14475,
+      "end": 42.315791,
+      "duration": 0.171041,
+      "start_char": 610,
+      "end_char": 613
+    },
+    {
+      "text": "I",
+      "start": 42.328958,
+      "end": 42.407916,
+      "duration": 0.078958,
+      "start_char": 614,
+      "end_char": 615
+    },
+    {
+      "text": "stop",
+      "start": 42.421041,
+      "end": 42.710499,
+      "duration": 0.289458,
+      "start_char": 616,
+      "end_char": 620
+    },
+    {
+      "text": "this",
+      "start": 42.723666,
+      "end": 42.894707,
+      "duration": 0.171041,
+      "start_char": 621,
+      "end_char": 625
+    },
+    {
+      "text": "behaviour",
+      "start": 42.907875,
+      "end": 43.552625,
+      "duration": 0.64475,
+      "start_char": 626,
+      "end_char": 635
+    },
+    {
+      "text": "This",
+      "start": 43.973666,
+      "end": 44.223666,
+      "duration": 0.25,
+      "start_char": 638,
+      "end_char": 642
+    },
+    {
+      "text": "question",
+      "start": 44.236833,
+      "end": 44.802624,
+      "duration": 0.565791,
+      "start_char": 643,
+      "end_char": 651
+    },
+    {
+      "text": "will",
+      "start": 44.815791,
+      "end": 44.960541,
+      "duration": 0.14475,
+      "start_char": 652,
+      "end_char": 656
+    },
+    {
+      "text": "help",
+      "start": 44.973666,
+      "end": 45.236832,
+      "duration": 0.263166,
+      "start_char": 657,
+      "end_char": 661
+    },
+    {
+      "text": "me",
+      "start": 45.25,
+      "end": 45.35525,
+      "duration": 0.10525,
+      "start_char": 662,
+      "end_char": 664
+    },
+    {
+      "text": "respond",
+      "start": 45.368416,
+      "end": 46.013166,
+      "duration": 0.64475,
+      "start_char": 665,
+      "end_char": 672
+    },
+    {
+      "text": "with",
+      "start": 46.026333,
+      "end": 46.210541,
+      "duration": 0.184208,
+      "start_char": 673,
+      "end_char": 677
+    },
+    {
+      "text": "greater",
+      "start": 46.223666,
+      "end": 46.618416,
+      "duration": 0.39475,
+      "start_char": 678,
+      "end_char": 685
+    },
+    {
+      "text": "patience",
+      "start": 46.631583,
+      "end": 47.289458,
+      "duration": 0.657875,
+      "start_char": 686,
+      "end_char": 694
+    },
+    {
+      "text": "and",
+      "start": 47.302625,
+      "end": 47.486833,
+      "duration": 0.184208,
+      "start_char": 695,
+      "end_char": 698
+    },
+    {
+      "text": "understanding",
+      "start": 47.5,
+      "end": 48.421041,
+      "duration": 0.921041,
+      "start_char": 699,
+      "end_char": 712
+    }
+  ]
+}

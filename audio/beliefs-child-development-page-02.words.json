@@ -1,0 +1,847 @@
+{
+  "text": "My earlier beliefs were shaped by my experiences in China. Before coming to Canada, I spent most of my career as a software engineer, and I also worked as a teacher for about two years. My own schooling and teaching took place in an education system that placed a strong emphasis on academic achievement and examination results.\n\nStudents were usually expected to learn at the same pace. When students could not keep up, they often had to solve the problem on their own or rely on family support. Because this was the system I knew, it strongly influenced how I first understood learning and success.",
+  "voice": "en-GB-SoniaNeural",
+  "audio": "beliefs-child-development-page-02.mp3",
+  "words": [
+    {
+      "text": "My",
+      "start": 0.142125,
+      "end": 0.392125,
+      "duration": 0.25,
+      "start_char": 0,
+      "end_char": 2
+    },
+    {
+      "text": "earlier",
+      "start": 0.40525,
+      "end": 0.813125,
+      "duration": 0.407875,
+      "start_char": 3,
+      "end_char": 10
+    },
+    {
+      "text": "beliefs",
+      "start": 0.826333,
+      "end": 1.378958,
+      "duration": 0.552625,
+      "start_char": 11,
+      "end_char": 18
+    },
+    {
+      "text": "were",
+      "start": 1.392125,
+      "end": 1.55,
+      "duration": 0.157875,
+      "start_char": 19,
+      "end_char": 23
+    },
+    {
+      "text": "shaped",
+      "start": 1.563166,
+      "end": 2.023707,
+      "duration": 0.460541,
+      "start_char": 24,
+      "end_char": 30
+    },
+    {
+      "text": "by",
+      "start": 2.036833,
+      "end": 2.168416,
+      "duration": 0.131583,
+      "start_char": 31,
+      "end_char": 33
+    },
+    {
+      "text": "my",
+      "start": 2.181583,
+      "end": 2.352624,
+      "duration": 0.171041,
+      "start_char": 34,
+      "end_char": 36
+    },
+    {
+      "text": "experiences",
+      "start": 2.365791,
+      "end": 3.221041,
+      "duration": 0.85525,
+      "start_char": 37,
+      "end_char": 48
+    },
+    {
+      "text": "in",
+      "start": 3.234208,
+      "end": 3.365791,
+      "duration": 0.131583,
+      "start_char": 49,
+      "end_char": 51
+    },
+    {
+      "text": "China",
+      "start": 3.378958,
+      "end": 3.944749,
+      "duration": 0.565791,
+      "start_char": 52,
+      "end_char": 57
+    },
+    {
+      "text": "Before",
+      "start": 4.342125,
+      "end": 4.68425,
+      "duration": 0.342125,
+      "start_char": 59,
+      "end_char": 65
+    },
+    {
+      "text": "coming",
+      "start": 4.697375,
+      "end": 5.0,
+      "duration": 0.302625,
+      "start_char": 66,
+      "end_char": 72
+    },
+    {
+      "text": "to",
+      "start": 5.013166,
+      "end": 5.118416,
+      "duration": 0.10525,
+      "start_char": 73,
+      "end_char": 75
+    },
+    {
+      "text": "Canada",
+      "start": 5.131583,
+      "end": 5.710541,
+      "duration": 0.578958,
+      "start_char": 76,
+      "end_char": 82
+    },
+    {
+      "text": "I",
+      "start": 5.960541,
+      "end": 6.078957,
+      "duration": 0.118416,
+      "start_char": 84,
+      "end_char": 85
+    },
+    {
+      "text": "spent",
+      "start": 6.092125,
+      "end": 6.5,
+      "duration": 0.407875,
+      "start_char": 86,
+      "end_char": 91
+    },
+    {
+      "text": "most",
+      "start": 6.513166,
+      "end": 6.802624,
+      "duration": 0.289458,
+      "start_char": 92,
+      "end_char": 96
+    },
+    {
+      "text": "of",
+      "start": 6.815791,
+      "end": 6.907916,
+      "duration": 0.092125,
+      "start_char": 97,
+      "end_char": 99
+    },
+    {
+      "text": "my",
+      "start": 6.921041,
+      "end": 7.065791,
+      "duration": 0.14475,
+      "start_char": 100,
+      "end_char": 102
+    },
+    {
+      "text": "career",
+      "start": 7.078958,
+      "end": 7.578958,
+      "duration": 0.5,
+      "start_char": 103,
+      "end_char": 109
+    },
+    {
+      "text": "as",
+      "start": 7.592125,
+      "end": 7.736875,
+      "duration": 0.14475,
+      "start_char": 110,
+      "end_char": 112
+    },
+    {
+      "text": "a",
+      "start": 7.75,
+      "end": 7.815791,
+      "duration": 0.065791,
+      "start_char": 113,
+      "end_char": 114
+    },
+    {
+      "text": "software",
+      "start": 7.828958,
+      "end": 8.289499,
+      "duration": 0.460541,
+      "start_char": 115,
+      "end_char": 123
+    },
+    {
+      "text": "engineer",
+      "start": 8.302625,
+      "end": 8.881583,
+      "duration": 0.578958,
+      "start_char": 124,
+      "end_char": 132
+    },
+    {
+      "text": "and",
+      "start": 9.210541,
+      "end": 9.355291,
+      "duration": 0.14475,
+      "start_char": 134,
+      "end_char": 137
+    },
+    {
+      "text": "I",
+      "start": 9.368416,
+      "end": 9.486832,
+      "duration": 0.118416,
+      "start_char": 138,
+      "end_char": 139
+    },
+    {
+      "text": "also",
+      "start": 9.5,
+      "end": 9.815791,
+      "duration": 0.315791,
+      "start_char": 140,
+      "end_char": 144
+    },
+    {
+      "text": "worked",
+      "start": 9.828958,
+      "end": 10.171083,
+      "duration": 0.342125,
+      "start_char": 145,
+      "end_char": 151
+    },
+    {
+      "text": "as",
+      "start": 10.184208,
+      "end": 10.263166,
+      "duration": 0.078958,
+      "start_char": 152,
+      "end_char": 154
+    },
+    {
+      "text": "a",
+      "start": 10.276333,
+      "end": 10.355291,
+      "duration": 0.078958,
+      "start_char": 155,
+      "end_char": 156
+    },
+    {
+      "text": "teacher",
+      "start": 10.368416,
+      "end": 10.828957,
+      "duration": 0.460541,
+      "start_char": 157,
+      "end_char": 164
+    },
+    {
+      "text": "for",
+      "start": 10.842125,
+      "end": 10.986875,
+      "duration": 0.14475,
+      "start_char": 165,
+      "end_char": 168
+    },
+    {
+      "text": "about",
+      "start": 11.0,
+      "end": 11.35525,
+      "duration": 0.35525,
+      "start_char": 169,
+      "end_char": 174
+    },
+    {
+      "text": "two",
+      "start": 11.368416,
+      "end": 11.565791,
+      "duration": 0.197375,
+      "start_char": 175,
+      "end_char": 178
+    },
+    {
+      "text": "years",
+      "start": 11.578958,
+      "end": 12.131583,
+      "duration": 0.552625,
+      "start_char": 179,
+      "end_char": 184
+    },
+    {
+      "text": "My",
+      "start": 12.526333,
+      "end": 12.789499,
+      "duration": 0.263166,
+      "start_char": 186,
+      "end_char": 188
+    },
+    {
+      "text": "own",
+      "start": 12.802625,
+      "end": 13.026291,
+      "duration": 0.223666,
+      "start_char": 189,
+      "end_char": 192
+    },
+    {
+      "text": "schooling",
+      "start": 13.039458,
+      "end": 13.565791,
+      "duration": 0.526333,
+      "start_char": 193,
+      "end_char": 202
+    },
+    {
+      "text": "and",
+      "start": 13.578958,
+      "end": 13.684208,
+      "duration": 0.10525,
+      "start_char": 203,
+      "end_char": 206
+    },
+    {
+      "text": "teaching",
+      "start": 13.697375,
+      "end": 14.2895,
+      "duration": 0.592125,
+      "start_char": 207,
+      "end_char": 215
+    },
+    {
+      "text": "took",
+      "start": 14.302625,
+      "end": 14.552625,
+      "duration": 0.25,
+      "start_char": 216,
+      "end_char": 220
+    },
+    {
+      "text": "place",
+      "start": 14.565791,
+      "end": 14.921041,
+      "duration": 0.35525,
+      "start_char": 221,
+      "end_char": 226
+    },
+    {
+      "text": "in",
+      "start": 14.934208,
+      "end": 15.026333,
+      "duration": 0.092125,
+      "start_char": 227,
+      "end_char": 229
+    },
+    {
+      "text": "an",
+      "start": 15.039458,
+      "end": 15.131583,
+      "duration": 0.092125,
+      "start_char": 230,
+      "end_char": 232
+    },
+    {
+      "text": "education",
+      "start": 15.14475,
+      "end": 15.75,
+      "duration": 0.60525,
+      "start_char": 233,
+      "end_char": 242
+    },
+    {
+      "text": "system",
+      "start": 15.763166,
+      "end": 16.236832,
+      "duration": 0.473666,
+      "start_char": 243,
+      "end_char": 249
+    },
+    {
+      "text": "that",
+      "start": 16.25,
+      "end": 16.421041,
+      "duration": 0.171041,
+      "start_char": 250,
+      "end_char": 254
+    },
+    {
+      "text": "placed",
+      "start": 16.434208,
+      "end": 16.776333,
+      "duration": 0.342125,
+      "start_char": 255,
+      "end_char": 261
+    },
+    {
+      "text": "a",
+      "start": 16.789458,
+      "end": 16.842083,
+      "duration": 0.052625,
+      "start_char": 262,
+      "end_char": 263
+    },
+    {
+      "text": "strong",
+      "start": 16.85525,
+      "end": 17.223666,
+      "duration": 0.368416,
+      "start_char": 264,
+      "end_char": 270
+    },
+    {
+      "text": "emphasis",
+      "start": 17.236833,
+      "end": 17.855249,
+      "duration": 0.618416,
+      "start_char": 271,
+      "end_char": 279
+    },
+    {
+      "text": "on",
+      "start": 17.868416,
+      "end": 18.065791,
+      "duration": 0.197375,
+      "start_char": 280,
+      "end_char": 282
+    },
+    {
+      "text": "academic",
+      "start": 18.078958,
+      "end": 18.618416,
+      "duration": 0.539458,
+      "start_char": 283,
+      "end_char": 291
+    },
+    {
+      "text": "achievement",
+      "start": 18.631583,
+      "end": 19.289458,
+      "duration": 0.657875,
+      "start_char": 292,
+      "end_char": 303
+    },
+    {
+      "text": "and",
+      "start": 19.302625,
+      "end": 19.421041,
+      "duration": 0.118416,
+      "start_char": 304,
+      "end_char": 307
+    },
+    {
+      "text": "examination",
+      "start": 19.434208,
+      "end": 20.157874,
+      "duration": 0.723666,
+      "start_char": 308,
+      "end_char": 319
+    },
+    {
+      "text": "results",
+      "start": 20.171041,
+      "end": 20.815791,
+      "duration": 0.64475,
+      "start_char": 320,
+      "end_char": 327
+    },
+    {
+      "text": "Students",
+      "start": 21.223666,
+      "end": 21.881541,
+      "duration": 0.657875,
+      "start_char": 330,
+      "end_char": 338
+    },
+    {
+      "text": "were",
+      "start": 21.89475,
+      "end": 22.0,
+      "duration": 0.10525,
+      "start_char": 339,
+      "end_char": 343
+    },
+    {
+      "text": "usually",
+      "start": 22.013166,
+      "end": 22.526332,
+      "duration": 0.513166,
+      "start_char": 344,
+      "end_char": 351
+    },
+    {
+      "text": "expected",
+      "start": 22.539458,
+      "end": 23.144708,
+      "duration": 0.60525,
+      "start_char": 352,
+      "end_char": 360
+    },
+    {
+      "text": "to",
+      "start": 23.157875,
+      "end": 23.276291,
+      "duration": 0.118416,
+      "start_char": 361,
+      "end_char": 363
+    },
+    {
+      "text": "learn",
+      "start": 23.289458,
+      "end": 23.697333,
+      "duration": 0.407875,
+      "start_char": 364,
+      "end_char": 369
+    },
+    {
+      "text": "at",
+      "start": 23.710541,
+      "end": 23.842124,
+      "duration": 0.131583,
+      "start_char": 370,
+      "end_char": 372
+    },
+    {
+      "text": "the",
+      "start": 23.85525,
+      "end": 23.9605,
+      "duration": 0.10525,
+      "start_char": 373,
+      "end_char": 376
+    },
+    {
+      "text": "same",
+      "start": 23.973666,
+      "end": 24.276291,
+      "duration": 0.302625,
+      "start_char": 377,
+      "end_char": 381
+    },
+    {
+      "text": "pace",
+      "start": 24.289458,
+      "end": 24.868416,
+      "duration": 0.578958,
+      "start_char": 382,
+      "end_char": 386
+    },
+    {
+      "text": "When",
+      "start": 25.289458,
+      "end": 25.513124,
+      "duration": 0.223666,
+      "start_char": 388,
+      "end_char": 392
+    },
+    {
+      "text": "students",
+      "start": 25.526333,
+      "end": 26.052666,
+      "duration": 0.526333,
+      "start_char": 393,
+      "end_char": 401
+    },
+    {
+      "text": "could",
+      "start": 26.065791,
+      "end": 26.223666,
+      "duration": 0.157875,
+      "start_char": 402,
+      "end_char": 407
+    },
+    {
+      "text": "not",
+      "start": 26.236833,
+      "end": 26.447374,
+      "duration": 0.210541,
+      "start_char": 408,
+      "end_char": 411
+    },
+    {
+      "text": "keep",
+      "start": 26.460541,
+      "end": 26.710541,
+      "duration": 0.25,
+      "start_char": 412,
+      "end_char": 416
+    },
+    {
+      "text": "up",
+      "start": 26.723666,
+      "end": 27.026291,
+      "duration": 0.302625,
+      "start_char": 417,
+      "end_char": 419
+    },
+    {
+      "text": "they",
+      "start": 27.328958,
+      "end": 27.460541,
+      "duration": 0.131583,
+      "start_char": 421,
+      "end_char": 425
+    },
+    {
+      "text": "often",
+      "start": 27.473666,
+      "end": 27.776291,
+      "duration": 0.302625,
+      "start_char": 426,
+      "end_char": 431
+    },
+    {
+      "text": "had",
+      "start": 27.789458,
+      "end": 27.973666,
+      "duration": 0.184208,
+      "start_char": 432,
+      "end_char": 435
+    },
+    {
+      "text": "to",
+      "start": 27.986833,
+      "end": 28.065791,
+      "duration": 0.078958,
+      "start_char": 436,
+      "end_char": 438
+    },
+    {
+      "text": "solve",
+      "start": 28.078958,
+      "end": 28.381583,
+      "duration": 0.302625,
+      "start_char": 439,
+      "end_char": 444
+    },
+    {
+      "text": "the",
+      "start": 28.39475,
+      "end": 28.5,
+      "duration": 0.10525,
+      "start_char": 445,
+      "end_char": 448
+    },
+    {
+      "text": "problem",
+      "start": 28.513166,
+      "end": 28.907916,
+      "duration": 0.39475,
+      "start_char": 449,
+      "end_char": 456
+    },
+    {
+      "text": "on",
+      "start": 28.921041,
+      "end": 29.052624,
+      "duration": 0.131583,
+      "start_char": 457,
+      "end_char": 459
+    },
+    {
+      "text": "their",
+      "start": 29.065791,
+      "end": 29.197374,
+      "duration": 0.131583,
+      "start_char": 460,
+      "end_char": 465
+    },
+    {
+      "text": "own",
+      "start": 29.210541,
+      "end": 29.618416,
+      "duration": 0.407875,
+      "start_char": 466,
+      "end_char": 469
+    },
+    {
+      "text": "or",
+      "start": 29.631583,
+      "end": 29.710541,
+      "duration": 0.078958,
+      "start_char": 470,
+      "end_char": 472
+    },
+    {
+      "text": "rely",
+      "start": 29.723666,
+      "end": 30.184207,
+      "duration": 0.460541,
+      "start_char": 473,
+      "end_char": 477
+    },
+    {
+      "text": "on",
+      "start": 30.197375,
+      "end": 30.342125,
+      "duration": 0.14475,
+      "start_char": 478,
+      "end_char": 480
+    },
+    {
+      "text": "family",
+      "start": 30.35525,
+      "end": 30.763125,
+      "duration": 0.407875,
+      "start_char": 481,
+      "end_char": 487
+    },
+    {
+      "text": "support",
+      "start": 30.776333,
+      "end": 31.447374,
+      "duration": 0.671041,
+      "start_char": 488,
+      "end_char": 495
+    },
+    {
+      "text": "Because",
+      "start": 31.842125,
+      "end": 32.210541,
+      "duration": 0.368416,
+      "start_char": 497,
+      "end_char": 504
+    },
+    {
+      "text": "this",
+      "start": 32.223666,
+      "end": 32.447332,
+      "duration": 0.223666,
+      "start_char": 505,
+      "end_char": 509
+    },
+    {
+      "text": "was",
+      "start": 32.460541,
+      "end": 32.618416,
+      "duration": 0.157875,
+      "start_char": 510,
+      "end_char": 513
+    },
+    {
+      "text": "the",
+      "start": 32.631583,
+      "end": 32.736833,
+      "duration": 0.10525,
+      "start_char": 514,
+      "end_char": 517
+    },
+    {
+      "text": "system",
+      "start": 32.75,
+      "end": 33.184208,
+      "duration": 0.434208,
+      "start_char": 518,
+      "end_char": 524
+    },
+    {
+      "text": "I",
+      "start": 33.197375,
+      "end": 33.2895,
+      "duration": 0.092125,
+      "start_char": 525,
+      "end_char": 526
+    },
+    {
+      "text": "knew",
+      "start": 33.302625,
+      "end": 33.7105,
+      "duration": 0.407875,
+      "start_char": 527,
+      "end_char": 531
+    },
+    {
+      "text": "it",
+      "start": 34.026333,
+      "end": 34.171083,
+      "duration": 0.14475,
+      "start_char": 533,
+      "end_char": 535
+    },
+    {
+      "text": "strongly",
+      "start": 34.184208,
+      "end": 34.631583,
+      "duration": 0.447375,
+      "start_char": 536,
+      "end_char": 544
+    },
+    {
+      "text": "influenced",
+      "start": 34.64475,
+      "end": 35.2895,
+      "duration": 0.64475,
+      "start_char": 545,
+      "end_char": 555
+    },
+    {
+      "text": "how",
+      "start": 35.302625,
+      "end": 35.486833,
+      "duration": 0.184208,
+      "start_char": 556,
+      "end_char": 559
+    },
+    {
+      "text": "I",
+      "start": 35.5,
+      "end": 35.60525,
+      "duration": 0.10525,
+      "start_char": 560,
+      "end_char": 561
+    },
+    {
+      "text": "first",
+      "start": 35.618416,
+      "end": 36.026291,
+      "duration": 0.407875,
+      "start_char": 562,
+      "end_char": 567
+    },
+    {
+      "text": "understood",
+      "start": 36.039458,
+      "end": 36.539458,
+      "duration": 0.5,
+      "start_char": 568,
+      "end_char": 578
+    },
+    {
+      "text": "learning",
+      "start": 36.552625,
+      "end": 37.013166,
+      "duration": 0.460541,
+      "start_char": 579,
+      "end_char": 587
+    },
+    {
+      "text": "and",
+      "start": 37.026333,
+      "end": 37.144749,
+      "duration": 0.118416,
+      "start_char": 588,
+      "end_char": 591
+    },
+    {
+      "text": "success",
+      "start": 37.157875,
+      "end": 37.921041,
+      "duration": 0.763166,
+      "start_char": 592,
+      "end_char": 599
+    }
+  ]
+}
