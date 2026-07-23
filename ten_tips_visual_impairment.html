@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ten practical tips for communicating respectfully and effectively with someone who has a visual impairment.">
+  <title>Ten Tips for Communicating with Someone Who Has a Visual Impairment</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --text: #162033;
+      --muted: #4d5b70;
+      --primary: #173f73;
+      --primary-light: #e8f1fb;
+      --accent: #f4b942;
+      --border: #d8e1ec;
+      --shadow: 0 12px 30px rgba(24, 48, 80, 0.10);
+      --radius: 18px;
+      --content-width: 980px;
+      font-size: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top right, rgba(244, 185, 66, 0.18), transparent 28rem),
+        linear-gradient(180deg, #eef4fb 0%, var(--bg) 30%, #f9fbfd 100%);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 1rem;
+      top: -4rem;
+      z-index: 1000;
+      padding: 0.75rem 1rem;
+      background: #000;
+      color: #fff;
+      border-radius: 0 0 8px 8px;
+      text-decoration: none;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #12365f 0%, #1d5b96 100%);
+      color: #fff;
+      padding: 4.5rem 1.25rem 5.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      right: -7rem;
+      bottom: -10rem;
+      width: 24rem;
+      height: 24rem;
+      border: 3rem solid rgba(255,255,255,0.08);
+      border-radius: 50%;
+    }
+
+    .hero {
+      width: min(100%, var(--content-width));
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding: 0.35rem 0.75rem;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 860px;
+      margin: 0;
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+    }
+
+    .hero p {
+      max-width: 780px;
+      margin: 1.4rem 0 0;
+      font-size: 1.08rem;
+      color: #edf5ff;
+    }
+
+    main {
+      width: min(calc(100% - 2rem), var(--content-width));
+      margin: -2.7rem auto 0;
+      position: relative;
+      z-index: 2;
+      padding-bottom: 3.5rem;
+    }
+
+    .intro {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 7px solid var(--accent);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: clamp(1.35rem, 3vw, 2rem);
+      margin-bottom: 1.5rem;
+    }
+
+    .intro p {
+      margin: 0;
+    }
+
+    .intro p + p {
+      margin-top: 1rem;
+    }
+
+    .tips {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .tip {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1rem;
+      align-items: start;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.35rem;
+      box-shadow: 0 8px 22px rgba(24, 48, 80, 0.07);
+    }
+
+    .number {
+      width: 3rem;
+      height: 3rem;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border-radius: 14px;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 1.15rem;
+      border: 1px solid #c9ddf3;
+    }
+
+    .tip h2 {
+      margin: 0 0 0.45rem;
+      color: var(--primary);
+      font-size: 1.18rem;
+      line-height: 1.3;
+    }
+
+    .tip p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .conclusion {
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+      background: #132f50;
+      color: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: center;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      text-align: center;
+      color: #627087;
+      padding: 0 1rem 2.5rem;
+      font-size: 0.9rem;
+    }
+
+    strong {
+      color: inherit;
+    }
+
+    @media (max-width: 760px) {
+      :root {
+        font-size: 17px;
+      }
+
+      header {
+        padding-top: 3.25rem;
+        padding-bottom: 4.75rem;
+      }
+
+      main {
+        width: min(calc(100% - 1.25rem), var(--content-width));
+      }
+
+      .tips {
+        grid-template-columns: 1fr;
+      }
+
+      .tip {
+        grid-template-columns: 2.7rem 1fr;
+        padding: 1.1rem;
+      }
+
+      .number {
+        width: 2.7rem;
+        height: 2.7rem;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      header {
+        background: #fff;
+        color: #000;
+        padding: 1rem 0 1.5rem;
+      }
+
+      header::after,
+      .eyebrow {
+        display: none;
+      }
+
+      .hero p {
+        color: #333;
+      }
+
+      main {
+        margin-top: 0;
+        width: 100%;
+      }
+
+      .intro,
+      .tip,
+      .conclusion {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+
+      .tips {
+        gap: 0.7rem;
+      }
+
+      .conclusion {
+        background: #fff;
+        color: #000;
+        border: 1px solid #aaa;
+      }
+
+      footer {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <div class="hero">
+      <span class="eyebrow">Inclusive Communication</span>
+      <h1>Ten Tips for Communicating with Someone Who Has a Visual Impairment</h1>
+      <p>Simple, respectful practices that can make everyday communication more natural, clear, and inclusive.</p>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="intro" aria-labelledby="introduction-heading">
+      <h2 id="introduction-heading" style="margin-top:0; color:#173f73;">Introduction</h2>
+      <p><strong>Henshaws</strong> supports people with sight loss and a range of other disabilities to live independently and go beyond expectations.</p>
+      <p>Welcome to Henshaws’ <em>Tips, Tricks and Tech</em>. Normally, these videos offer advice to people with sight loss. This guide is slightly different: it gives ten useful tips to sighted people about communicating with someone who has a visual impairment.</p>
+    </section>
+
+    <section class="tips" aria-label="Ten communication tips">
+      <article class="tip">
+        <div class="number" aria-hidden="true">1</div>
+        <div>
+          <h2>Identify yourself</h2>
+          <p>When entering a room, say hello and introduce yourself by name. When you leave, say goodbye so the person knows that you are no longer there.</p>
+        </div>
+      </article>
+
+      <article class="tip">
+        <div class="number" aria-hidden="true">2</div>
+        <div>
+          <h2>Ask about the person’s level of vision</h2>
+          <p>Do not assume how much a person can or cannot see. Ask what kind of support they need and how they would prefer you to help.</p>
+        </div>
+      </article>
+
+      <article class="tip">
+        <div class="number" aria-hidden="true">3</div>
+        <div>
+          <h2>Explain who is present</h2>
+          <p>In a group situation, make it clear how many people are in the group and identify everyone. Tell the person when someone enters or leaves.</p>
+        </div>
+      </article>
+
+      <article class="tip">
+        <div class="number" aria-hidden="true">4</div>
+        <div>
+          <h2>Be descriptive</h2>
+          <p>Do not simply say, “It’s over here,” or “It’s over there.” Give clear and specific directions, such as, “The chair is two steps in front of you,” or “Your cup is on your right.”</p>
+        </div>
+      </article>
+
+      <article class="tip">
+        <div class="number" aria-hidden="true">5</div>
+        <div>
+          <h2>Ask before offering support</h2>
+          <p>Do not automatically take hold of or guide someone. Ask whether they would like help first. Some people may want support, while others may not.</p>
+        </div>
+      </article>
+
+      <article class="tip">
+        <div class="number" aria-hidden="true">6</div>
+        <div>
+          <h2>Use everyday language</h2>
+          <p>There is no need to avoid phrases such as “See you later” or “Did you watch that movie?” People with visual impairments use these expressions too. Speak naturally and normally.</p>
+        </div>
+      </article>
+
+      <article class="tip">
+        <div class="number" aria-hidden="true">7</div>
+        <div>
+          <h2>Speak directly to the person</h2>
+          <p>Do not speak to a companion, support worker, or another person on their behalf. Address the person with the visual impairment directly.</p>
+        </div>
+      </article>
+
+      <article class="tip">
+        <div class="number" aria-hidden="true">8</div>
+        <div>
+          <h2>Relax</h2>
+          <p>Do not become overly nervous or self-conscious. Relax and communicate as you normally would with anyone else.</p>
+        </div>
+      </article>
+
+      <article class="tip">
+        <div class="number" aria-hidden="true">9</div>
+        <div>
+          <h2>Use natural body language</h2>
+          <p>Continue using normal gestures, facial expressions, and eye contact. Even if the person cannot see all your movements, natural body language helps your voice and communication sound more comfortable and genuine.</p>
+        </div>
+      </article>
+
+      <article class="tip">
+        <div class="number" aria-hidden="true">10</div>
+        <div>
+          <h2>Do not talk to or distract a guide dog</h2>
+          <p>Speak directly to the guide-dog owner, not to the dog. A guide dog is working and should not be distracted, touched, or given instructions without the owner’s permission.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="conclusion" aria-label="Conclusion">
+      These simple tips can help make communication more respectful, natural, and inclusive for people with visual impairments.
+    </section>
+  </main>
+
+  <footer>
+    Accessible communication begins with respect, clarity, and asking before helping.
+  </footer>
+</body>
+</html>
