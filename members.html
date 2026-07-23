@@ -1,0 +1,1641 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Participant Names: Linguistic Associations</title>
+<style>:root{color-scheme:light;background:#faf8f5}html,body{margin:0;background:#faf8f5}body{box-sizing:border-box;padding:0;background:inherit}iframe{display:block;width:100%;max-width:1400px;height:100vh;margin:0 auto;border:0;background:#faf8f5}</style>
+</head>
+<body>
+<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Participant Names: Linguistic Associations" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Participant Names: Linguistic Associations&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(--background) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: light-dark(rgb(255 255 255), rgb(24 24 24));
+  --foreground: light-dark(rgb(26 28 31), rgb(255 255 255));
+  --card: color-mix(in oklab, var(--foreground) 5%, transparent);
+  --card-foreground: var(--foreground);
+  --popover: light-dark(rgb(255 255 255), rgb(45 45 45));
+  --popover-foreground: var(--foreground);
+  --primary: light-dark(rgb(51 156 255), rgb(131 195 255));
+  --primary-foreground: light-dark(rgb(255 255 255), rgb(13 13 13));
+  --secondary: light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%));
+  --secondary-foreground: var(--foreground);
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: light-dark(
+    rgb(26 28 31 / 49.4%),
+    rgb(255 255 255 / 49.8%)
+  );
+  --accent: light-dark(rgb(229 242 255), rgb(13 39 63));
+  --accent-foreground: var(--primary);
+  --destructive: light-dark(rgb(226 85 7), rgb(255 133 73));
+  --border: light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%));
+  --input: light-dark(
+    rgb(26 28 31 / 11.8%),
+    color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+  );
+  --ring: light-dark(rgb(51 156 255), rgb(131 195 255 / 76%));
+  --font-size-base: 14px;
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --radius: 12.5px;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+  --color-background-primary: var(--background);
+  --color-text-primary: var(--foreground);
+  --color-border-secondary: var(--border);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  margin: 0;
+  padding: 5px;
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: pointer;
+  font-weight: var(--viz-font-weight-medium);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: superellipse(1.5);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget &gt; :not(.card) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: superellipse(1.5);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+    [aria-pressed=&quot;true&quot;],
+    [aria-selected=&quot;true&quot;],
+    .is-selected
+  ) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;main id=&quot;name-association-report&quot;&gt;
+  &lt;style&gt;
+    #name-association-report {
+      --page: #faf8f5;
+      --surface: #ffffff;
+      --surface-2: #f4f0ea;
+      --ink: #2f2925;
+      --muted: #6f655d;
+      --line: #ddd5cb;
+      --strong-line: #b9aa9b;
+      --accent: #9a4f24;
+      --accent-soft: #f2dfd1;
+      --focus: #8a481f;
+      --danger: #7f1d1d;
+      --c1: #9a4f24;
+      --c2: #b98035;
+      --c3: #5e7661;
+      --c4: #7f6556;
+      --c5: #a26052;
+      --c6: #6c7356;
+      --c7: #8c6f82;
+      --c8: #4f6d72;
+      --c9: #8c8279;
+      --c10: #a9a098;
+      min-height: 100%;
+      background: var(--page);
+      color: var(--ink);
+      font-family: &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    #name-association-report * { box-sizing: border-box; }
+    #name-association-report .page { max-width: 1280px; margin: 0 auto; padding: 32px 28px 56px; }
+    #name-association-report header { border-bottom: 1px solid var(--line); padding-bottom: 22px; }
+    #name-association-report h1 { margin: 0 0 6px; font-size: clamp(26px, 4vw, 38px); line-height: 1.15; font-weight: 600; letter-spacing: -0.025em; }
+    #name-association-report h2 { margin: 0 0 14px; font-size: 21px; line-height: 1.25; font-weight: 600; }
+    #name-association-report h3 { margin: 0 0 8px; font-size: 16px; line-height: 1.3; font-weight: 600; }
+    #name-association-report p { margin: 0; }
+    #name-association-report .subtitle { max-width: 760px; color: var(--muted); font-size: 16px; }
+
+    #name-association-report .disclaimer {
+      margin: 24px 0;
+      padding: 16px 18px;
+      border: 1px solid #d5b69f;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      background: #fff9f4;
+    }
+    #name-association-report .disclaimer strong { display: block; margin-bottom: 4px; }
+    #name-association-report .disclaimer p + p { margin-top: 7px; }
+
+    #name-association-report .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    #name-association-report .stat {
+      padding: 15px 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+    #name-association-report .stat-label { display: block; color: var(--muted); margin-bottom: 4px; }
+    #name-association-report .stat-value { display: block; font-size: 28px; line-height: 1.1; font-weight: 600; font-variant-numeric: tabular-nums; }
+    #name-association-report .stat-note { display: block; margin-top: 5px; color: var(--muted); font-size: 13px; }
+
+    #name-association-report section { margin-top: 34px; }
+    #name-association-report .charts {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+      gap: 28px;
+      align-items: start;
+    }
+    #name-association-report .chart-block { min-width: 0; }
+    #name-association-report .section-intro { color: var(--muted); margin: -7px 0 18px; max-width: 760px; }
+
+    #name-association-report .bar-chart { display: grid; gap: 10px; }
+    #name-association-report .bar-row {
+      display: grid;
+      grid-template-columns: minmax(154px, 1.3fr) minmax(150px, 2.7fr) 34px;
+      gap: 10px;
+      align-items: center;
+    }
+    #name-association-report .bar-label { color: var(--ink); line-height: 1.25; }
+    #name-association-report .bar-track { height: 19px; background: #e9e3dc; border-radius: 3px; overflow: hidden; }
+    #name-association-report .bar-fill { height: 100%; min-width: 2px; border-radius: 3px; transition: width 180ms ease; }
+    #name-association-report .bar-value { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
+
+    #name-association-report .donut-wrap { display: grid; grid-template-columns: minmax(190px, 240px) 1fr; gap: 20px; align-items: center; }
+    #name-association-report .donut { width: 100%; height: auto; display: block; }
+    #name-association-report .donut path { stroke: var(--surface); stroke-width: 2; }
+    #name-association-report .donut-total { fill: var(--ink); font-size: 28px; font-weight: 600; text-anchor: middle; }
+    #name-association-report .donut-caption { fill: var(--muted); font-size: 12px; text-anchor: middle; }
+    #name-association-report .legend { display: grid; gap: 8px; }
+    #name-association-report .legend-row { display: grid; grid-template-columns: 12px minmax(0, 1fr) auto; gap: 8px; align-items: start; }
+    #name-association-report .swatch { width: 10px; height: 10px; margin-top: 5px; border-radius: 2px; }
+    #name-association-report .legend-label { line-height: 1.3; }
+    #name-association-report .legend-value { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+    #name-association-report .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: end;
+      justify-content: space-between;
+      margin-bottom: 13px;
+    }
+    #name-association-report .search-group { flex: 1 1 390px; }
+    #name-association-report label { display: block; margin-bottom: 5px; color: var(--ink); font-weight: 500; }
+    #name-association-report input,
+    #name-association-report select,
+    #name-association-report button {
+      font: inherit;
+    }
+    #name-association-report input[type=&quot;search&quot;],
+    #name-association-report input[type=&quot;text&quot;],
+    #name-association-report select {
+      width: 100%;
+      min-height: 38px;
+      border: 1px solid var(--strong-line);
+      border-radius: 7px;
+      background: var(--surface);
+      color: var(--ink);
+      padding: 7px 9px;
+    }
+    #name-association-report input:focus,
+    #name-association-report select:focus,
+    #name-association-report button:focus-visible {
+      outline: 3px solid rgba(154, 79, 36, 0.22);
+      outline-offset: 1px;
+      border-color: var(--focus);
+    }
+    #name-association-report button {
+      min-height: 38px;
+      padding: 7px 12px;
+      border: 1px solid var(--strong-line);
+      border-radius: 7px;
+      background: var(--surface);
+      color: var(--ink);
+      cursor: pointer;
+    }
+    #name-association-report button:hover { background: var(--surface-2); }
+    #name-association-report .result-count { margin-top: 5px; color: var(--muted); font-size: 13px; }
+
+    #name-association-report .table-wrap { overflow-x: auto; border-top: 1px solid var(--line); }
+    #name-association-report table { width: 100%; min-width: 980px; border-collapse: collapse; background: transparent; }
+    #name-association-report th,
+    #name-association-report td { padding: 11px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    #name-association-report th { color: var(--muted); font-size: 13px; font-weight: 600; background: var(--page); }
+    #name-association-report td:first-child { width: 48px; color: var(--muted); font-variant-numeric: tabular-nums; }
+    #name-association-report td:nth-child(2) { width: 170px; font-weight: 500; }
+    #name-association-report td:nth-child(3) { width: 250px; }
+    #name-association-report td:nth-child(4) { width: 130px; }
+    #name-association-report .note-input { min-width: 300px; }
+    #name-association-report .empty-row { padding: 24px 10px; color: var(--muted); text-align: center; }
+
+    #name-association-report .analysis-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+    #name-association-report .analysis-item { padding-top: 13px; border-top: 2px solid var(--line); }
+    #name-association-report .analysis-item p { color: var(--muted); }
+    #name-association-report .analysis-item ul { margin: 8px 0 0; padding-left: 19px; color: var(--muted); }
+    #name-association-report .analysis-item li + li { margin-top: 5px; }
+    #name-association-report .method-note { margin-top: 23px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); }
+    #name-association-report .method-note strong { color: var(--ink); }
+
+    #name-association-report .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 900px) {
+      #name-association-report .charts { grid-template-columns: 1fr; }
+      #name-association-report .donut-wrap { grid-template-columns: minmax(180px, 220px) 1fr; }
+      #name-association-report .analysis-grid { grid-template-columns: 1fr; gap: 18px; }
+    }
+    @media (max-width: 620px) {
+      #name-association-report .page { padding: 22px 16px 40px; }
+      #name-association-report .stats { grid-template-columns: 1fr; }
+      #name-association-report .donut-wrap { grid-template-columns: 1fr; }
+      #name-association-report .donut { max-width: 220px; margin: 0 auto; }
+      #name-association-report .bar-row { grid-template-columns: 1fr 36px; gap: 4px 8px; }
+      #name-association-report .bar-label { grid-column: 1 / -1; }
+      #name-association-report .toolbar { align-items: stretch; }
+      #name-association-report .toolbar button { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #name-association-report .bar-fill { transition: none; }
+    }
+    @media print {
+      #name-association-report .page { max-width: none; padding: 0; }
+      #name-association-report .toolbar { display: none; }
+      #name-association-report .table-wrap { overflow: visible; }
+      #name-association-report table { min-width: 0; font-size: 11px; }
+      #name-association-report input,
+      #name-association-report select { border: 0; padding: 0; min-height: 0; appearance: none; }
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;page&quot;&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Participant names: linguistic associations&lt;/h1&gt;
+      &lt;p class=&quot;subtitle&quot;&gt;An editable, uncertainty-aware review of 30 learner names reconciled with the supplied Burnaby class-list PDF.&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;aside class=&quot;disclaimer&quot; aria-labelledby=&quot;limitation-heading&quot;&gt;
+      &lt;strong id=&quot;limitation-heading&quot;&gt;Important limitation&lt;/strong&gt;
+      &lt;p&gt;Country, nationality, ethnicity, race, citizenship, birthplace, or cultural identity cannot be determined from appearance or from a name. Unless explicitly marked as user-provided, the entries below describe only rough linguistic or geographic associations of the &lt;em&gt;name forms&lt;/em&gt; themselves.&lt;/p&gt;
+      &lt;p&gt;These provisional labels may be wrong. Names cross borders, languages, religions, families, and spelling systems; people also use adopted, shortened, married, or transliterated names. Do not use this page to make decisions about any participant.&lt;/p&gt;
+    &lt;/aside&gt;
+
+    &lt;div class=&quot;stats&quot; aria-label=&quot;Summary&quot;&gt;
+      &lt;div class=&quot;stat&quot;&gt;
+        &lt;span class=&quot;stat-label&quot;&gt;Name forms reviewed&lt;/span&gt;
+        &lt;span class=&quot;stat-value&quot; id=&quot;total-stat&quot;&gt;30&lt;/span&gt;
+        &lt;span class=&quot;stat-note&quot;&gt;Reconciled with the supplied class list&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;stat&quot;&gt;
+        &lt;span class=&quot;stat-label&quot;&gt;Current categories&lt;/span&gt;
+        &lt;span class=&quot;stat-value&quot; id=&quot;category-stat&quot;&gt;10&lt;/span&gt;
+        &lt;span class=&quot;stat-note&quot;&gt;Editable working groups, not identities&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;stat&quot;&gt;
+        &lt;span class=&quot;stat-label&quot;&gt;Low-confidence entries&lt;/span&gt;
+        &lt;span class=&quot;stat-value&quot; id=&quot;low-stat&quot;&gt;3&lt;/span&gt;
+        &lt;span class=&quot;stat-note&quot; id=&quot;low-stat-note&quot;&gt;Ambiguity is expected&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;section aria-labelledby=&quot;distribution-title&quot;&gt;
+      &lt;h2 id=&quot;distribution-title&quot;&gt;Estimated distribution of name-form associations&lt;/h2&gt;
+      &lt;p class=&quot;section-intro&quot;&gt;Both charts recalculate when an assignment is changed in the table. Counts describe the current labels only; they do not estimate the participants’ actual origins.&lt;/p&gt;
+      &lt;div class=&quot;charts&quot;&gt;
+        &lt;div class=&quot;chart-block&quot;&gt;
+          &lt;h3&gt;Count by provisional category&lt;/h3&gt;
+          &lt;div id=&quot;bar-chart&quot; class=&quot;bar-chart&quot; role=&quot;img&quot; aria-label=&quot;Horizontal bar chart of name-form association counts&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;chart-block&quot;&gt;
+          &lt;h3&gt;Share of current assignments&lt;/h3&gt;
+          &lt;div class=&quot;donut-wrap&quot;&gt;
+            &lt;svg id=&quot;donut-chart&quot; class=&quot;donut&quot; viewBox=&quot;0 0 240 240&quot; role=&quot;img&quot; aria-labelledby=&quot;donut-title donut-desc&quot;&gt;
+              &lt;title id=&quot;donut-title&quot;&gt;Doughnut chart of name-form associations&lt;/title&gt;
+              &lt;desc id=&quot;donut-desc&quot;&gt;The chart updates when table assignments change.&lt;/desc&gt;
+              &lt;g id=&quot;donut-arcs&quot;&gt;&lt;/g&gt;
+              &lt;text class=&quot;donut-total&quot; id=&quot;donut-total&quot; x=&quot;120&quot; y=&quot;116&quot;&gt;30&lt;/text&gt;
+              &lt;text class=&quot;donut-caption&quot; x=&quot;120&quot; y=&quot;136&quot;&gt;name forms&lt;/text&gt;
+            &lt;/svg&gt;
+            &lt;div id=&quot;legend&quot; class=&quot;legend&quot; aria-label=&quot;Chart legend&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section aria-labelledby=&quot;table-title&quot;&gt;
+      &lt;h2 id=&quot;table-title&quot;&gt;Search and edit the working table&lt;/h2&gt;
+      &lt;p class=&quot;section-intro&quot;&gt;Category, confidence, and ambiguity notes are editable. Changes remain in this open page until it is refreshed or reset.&lt;/p&gt;
+      &lt;div class=&quot;toolbar&quot;&gt;
+        &lt;div class=&quot;search-group&quot;&gt;
+          &lt;label for=&quot;search&quot;&gt;Search names, associations, confidence, or notes&lt;/label&gt;
+          &lt;input id=&quot;search&quot; type=&quot;search&quot; autocomplete=&quot;off&quot; placeholder=&quot;For example: Persian, broad, transliteration…&quot;&gt;
+          &lt;div id=&quot;result-count&quot; class=&quot;result-count&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&quot;button&quot; id=&quot;reset&quot;&gt;Reset all edits&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;table-wrap&quot;&gt;
+        &lt;table&gt;
+          &lt;caption class=&quot;sr-only&quot;&gt;Thirty participant name forms with editable linguistic associations, confidence levels, and ambiguity notes.&lt;/caption&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+              &lt;th scope=&quot;col&quot;&gt;Displayed name&lt;/th&gt;
+              &lt;th scope=&quot;col&quot;&gt;Association or user-provided origin&lt;/th&gt;
+              &lt;th scope=&quot;col&quot;&gt;Confidence&lt;/th&gt;
+              &lt;th scope=&quot;col&quot;&gt;Ambiguity note&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody id=&quot;name-rows&quot;&gt;&lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section aria-labelledby=&quot;analysis-title&quot;&gt;
+      &lt;h2 id=&quot;analysis-title&quot;&gt;Careful interpretation&lt;/h2&gt;
+      &lt;div class=&quot;analysis-grid&quot;&gt;
+        &lt;article class=&quot;analysis-item&quot;&gt;
+          &lt;h3&gt;What the charts can show&lt;/h3&gt;
+          &lt;p id=&quot;largest-group-analysis&quot;&gt;They summarize the provisional labels currently assigned to the 30 name strings.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;analysis-item&quot;&gt;
+          &lt;h3&gt;Why uncertainty is substantial&lt;/h3&gt;
+          &lt;ul&gt;
+            &lt;li&gt;Widely used given names such as Peter, Mary, Sarah, Nina, Emily, and Helen carry little location-specific information on their own.&lt;/li&gt;
+            &lt;li&gt;Romanization can map several original spellings to the same Latin-letter form.&lt;/li&gt;
+            &lt;li&gt;Initials, capitalization, incomplete names, and family-name changes remove context.&lt;/li&gt;
+            &lt;li&gt;A name’s linguistic history is not the same as its bearer’s identity or life history.&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;analysis-item&quot;&gt;
+          &lt;h3&gt;Appropriate use&lt;/h3&gt;
+          &lt;p&gt;Use this only as an editable language-and-naming exercise. It is not suitable for demographic reporting, student support decisions, hiring, screening, eligibility, or any other decision about people.&lt;/p&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
+      &lt;p class=&quot;method-note&quot;&gt;&lt;strong&gt;Method note:&lt;/strong&gt; Names and roster count were reconciled against the supplied Burnaby class-list PDF. The Chinese origins of Peter Chen and Emily Zhang and the Vietnamese origin of Tracy Tong were provided by the user. All other labels remain provisional name-form associations. No profile-photo appearance was used. “High confidence” means the full spelling pattern has a relatively distinctive association—or that the origin was explicitly supplied—not that nationality, ethnicity, citizenship, or identity was inferred.&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+
+  &lt;script&gt;
+    (() =&gt; {
+      const root = document.getElementById(&#x27;name-association-report&#x27;);
+      const categories = [
+        &#x27;Broad / international use&#x27;,
+        &#x27;Persian-language association&#x27;,
+        &#x27;Chinese romanization association&#x27;,
+        &#x27;Vietnamese association&#x27;,
+        &#x27;Spanish-derived / Philippine use&#x27;,
+        &#x27;Korean romanization association&#x27;,
+        &#x27;South Asian association&#x27;,
+        &#x27;West African association&#x27;,
+        &#x27;East African association&#x27;,
+        &#x27;Arabic-language association&#x27;,
+        &#x27;Multi-regional / unresolved&#x27;,
+        &#x27;Unassigned&#x27;
+      ];
+
+      const colors = {
+        &#x27;Broad / international use&#x27;: &#x27;#8c8279&#x27;,
+        &#x27;Persian-language association&#x27;: &#x27;#9a4f24&#x27;,
+        &#x27;Chinese romanization association&#x27;: &#x27;#5e7661&#x27;,
+        &#x27;Vietnamese association&#x27;: &#x27;#5f6f84&#x27;,
+        &#x27;Spanish-derived / Philippine use&#x27;: &#x27;#b98035&#x27;,
+        &#x27;Korean romanization association&#x27;: &#x27;#4f6d72&#x27;,
+        &#x27;South Asian association&#x27;: &#x27;#a26052&#x27;,
+        &#x27;West African association&#x27;: &#x27;#6c7356&#x27;,
+        &#x27;East African association&#x27;: &#x27;#826a3f&#x27;,
+        &#x27;Arabic-language association&#x27;: &#x27;#8c6f82&#x27;,
+        &#x27;Multi-regional / unresolved&#x27;: &#x27;#7f6556&#x27;,
+        &#x27;Unassigned&#x27;: &#x27;#a9a098&#x27;
+      };
+
+      const defaults = [
+        { name: &#x27;Mehri Ali Mohammadi&#x27;, category: &#x27;Persian-language association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;The full name form is strongly associated with Persian-language naming, although its Arabic-derived elements also occur elsewhere.&#x27; },
+        { name: &#x27;Sarah Alibakhshi&#x27;, category: &#x27;Persian-language association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;Alibakhshi provides a stronger Persian-language association than the given name Sarah alone.&#x27; },
+        { name: &#x27;Samin Assaran&#x27;, category: &#x27;Persian-language association&#x27;, confidence: &#x27;Medium&#x27;, note: &#x27;The full form is consistent with Persian naming, but transliteration and regional overlap remain possible.&#x27; },
+        { name: &#x27;Nevin Bazari&#x27;, category: &#x27;Persian-language association&#x27;, confidence: &#x27;Medium&#x27;, note: &#x27;Bazari supports a Persian-language association; Nevin is used across several regions and languages.&#x27; },
+        { name: &#x27;Peter Chen&#x27;, category: &#x27;Chinese romanization association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;Chinese origin was provided by the user; Chen also supports a Chinese romanization association.&#x27; },
+        { name: &#x27;Bo Cui&#x27;, category: &#x27;Chinese romanization association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;The two-part spelling is strongly consistent with Mandarin pinyin; the underlying characters are unknown.&#x27; },
+        { name: &#x27;Maan Dela Cruz&#x27;, category: &#x27;Spanish-derived / Philippine use&#x27;, confidence: &#x27;High&#x27;, note: &#x27;Dela Cruz is Spanish-derived and especially common in the Philippines, but is not exclusive to it.&#x27; },
+        { name: &#x27;Maryam Derakhshandeh&#x27;, category: &#x27;Persian-language association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;Derakhshandeh provides a strong Persian-language association; Maryam is used across many regions.&#x27; },
+        { name: &#x27;Mikaila Esmaiel&#x27;, category: &#x27;Arabic-language association&#x27;, confidence: &#x27;Low&#x27;, note: &#x27;Esmaiel has Arabic and broader West Asian variants; Mikaila has several unrelated spellings and uses.&#x27; },
+        { name: &#x27;Midya Fattahi Ghazi&#x27;, category: &#x27;Persian-language association&#x27;, confidence: &#x27;Medium&#x27;, note: &#x27;The complete form supports an Iranian or broader West Asian naming context, but several elements are Arabic-derived and regionally shared.&#x27; },
+        { name: &#x27;Nina Hoang&#x27;, category: &#x27;Vietnamese association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;Hoang is strongly associated with Vietnamese romanization; Nina is internationally used.&#x27; },
+        { name: &#x27;Zakir Hussain&#x27;, category: &#x27;South Asian association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;Arabic-derived elements are widely used; this combination is especially common across South Asian Muslim communities.&#x27; },
+        { name: &#x27;N&#x2019;dae John&#x27;, category: &#x27;West African association&#x27;, confidence: &#x27;Low&#x27;, note: &#x27;The given-name spelling may be associated with West African naming, but the full form remains difficult to localize.&#x27; },
+        { name: &#x27;Jaspreet Kaur&#x27;, category: &#x27;South Asian association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;The combination is strongly associated with Punjabi and Sikh naming, while neither identity nor nationality is established by the name alone.&#x27; },
+        { name: &#x27;Samira Kohen&#x27;, category: &#x27;Multi-regional / unresolved&#x27;, confidence: &#x27;Low&#x27;, note: &#x27;Samira is used across Arabic-, Persian-, South Asian-, and other communities; Kohen has separate Hebrew and regional associations.&#x27; },
+        { name: &#x27;Ivy Li&#x27;, category: &#x27;Chinese romanization association&#x27;, confidence: &#x27;Medium&#x27;, note: &#x27;Li is common in Chinese romanization but occurs elsewhere; Ivy is an adopted or international English given name.&#x27; },
+        { name: &#x27;Shiva Mahshid Falahi&#x27;, category: &#x27;Persian-language association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;Mahshid and the full combination strongly support a Persian-language naming context; Shiva also has distinct South Asian use.&#x27; },
+        { name: &#x27;Sanam Mohammadiejtenabi&#x27;, category: &#x27;Persian-language association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;The full form strongly supports a Persian-language naming context, while Sanam is also used in South Asia.&#x27; },
+        { name: &#x27;Shaista Naaz&#x27;, category: &#x27;South Asian association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;The combination is strongly associated with Urdu-speaking and wider South Asian Muslim naming contexts.&#x27; },
+        { name: &#x27;Mary Namirembe&#x27;, category: &#x27;East African association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;Namirembe is strongly associated with Luganda naming and Uganda; Mary is internationally used.&#x27; },
+        { name: &#x27;Ola Ogunfowora&#x27;, category: &#x27;West African association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;The full combination is strongly associated with Yoruba naming and Nigeria, though it does not establish nationality.&#x27; },
+        { name: &#x27;Sujin Oh&#x27;, category: &#x27;Korean romanization association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;The given-name and surname pattern is strongly consistent with Korean romanization; original Hangul is unknown.&#x27; },
+        { name: &#x27;Omoh Sanni&#x27;, category: &#x27;West African association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;The combination is strongly associated with West African, especially Nigerian, naming; each element also has variants.&#x27; },
+        { name: &#x27;Taranveer Singh&#x27;, category: &#x27;South Asian association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;The combination is strongly associated with Punjabi and Sikh naming, while nationality and identity remain unknown.&#x27; },
+        { name: &#x27;Sue Tahmasebi&#x27;, category: &#x27;Persian-language association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;Tahmasebi provides a strong Persian-language association; Sue is internationally used.&#x27; },
+        { name: &#x27;Marjan Tohidipour&#x27;, category: &#x27;Persian-language association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;Marjan and the -pour surname ending are strongly associated with Persian-language naming.&#x27; },
+        { name: &#x27;Tracy Tong&#x27;, category: &#x27;Vietnamese association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;Vietnamese origin was provided by the user; it is not inferred from the name Tracy Tong.&#x27; },
+        { name: &#x27;Helen Tran&#x27;, category: &#x27;Vietnamese association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;Tran is strongly associated with Vietnamese romanization; Helen is internationally used.&#x27; },
+        { name: &#x27;Ujjwal Vashisht&#x27;, category: &#x27;South Asian association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;The full combination is strongly associated with Sanskrit-derived and South Asian naming traditions.&#x27; },
+        { name: &#x27;Emily Zhang&#x27;, category: &#x27;Chinese romanization association&#x27;, confidence: &#x27;High&#x27;, note: &#x27;Chinese origin was provided by the user; Zhang also supports a Chinese romanization association.&#x27; }
+      ];
+
+      let entries = defaults.map((item, index) =&gt; ({ ...item, id: index + 1 }));
+      const rows = root.querySelector(&#x27;#name-rows&#x27;);
+      const search = root.querySelector(&#x27;#search&#x27;);
+      const resultCount = root.querySelector(&#x27;#result-count&#x27;);
+
+      function counts() {
+        return categories.map(category =&gt; ({
+          category,
+          count: entries.filter(item =&gt; item.category === category).length,
+          color: colors[category]
+        })).filter(item =&gt; item.count &gt; 0).sort((a, b) =&gt; b.count - a.count || a.category.localeCompare(b.category));
+      }
+
+      function optionList(values, selected) {
+        return values.map(value =&gt; {
+          const option = document.createElement(&#x27;option&#x27;);
+          option.value = value;
+          option.textContent = value;
+          option.selected = value === selected;
+          return option;
+        });
+      }
+
+      function fieldSelect(values, selected, label, id, field) {
+        const select = document.createElement(&#x27;select&#x27;);
+        select.setAttribute(&#x27;aria-label&#x27;, `${label} for ${id}`);
+        select.dataset.id = id;
+        select.dataset.field = field;
+        select.append(...optionList(values, selected));
+        return select;
+      }
+
+      function renderTable() {
+        const query = search.value.trim().toLocaleLowerCase();
+        const visible = entries.filter(item =&gt; [item.name, item.category, item.confidence, item.note]
+          .join(&#x27; &#x27;).toLocaleLowerCase().includes(query));
+        rows.replaceChildren();
+
+        if (!visible.length) {
+          const tr = document.createElement(&#x27;tr&#x27;);
+          const td = document.createElement(&#x27;td&#x27;);
+          td.colSpan = 5;
+          td.className = &#x27;empty-row&#x27;;
+          td.textContent = &#x27;No entries match this search.&#x27;;
+          tr.append(td);
+          rows.append(tr);
+        } else {
+          visible.forEach(item =&gt; {
+            const tr = document.createElement(&#x27;tr&#x27;);
+            const number = document.createElement(&#x27;td&#x27;);
+            number.textContent = item.id;
+            const name = document.createElement(&#x27;td&#x27;);
+            name.textContent = item.name;
+            const category = document.createElement(&#x27;td&#x27;);
+            category.append(fieldSelect(categories, item.category, &#x27;Association&#x27;, item.id, &#x27;category&#x27;));
+            const confidence = document.createElement(&#x27;td&#x27;);
+            confidence.append(fieldSelect([&#x27;High&#x27;, &#x27;Medium&#x27;, &#x27;Low&#x27;], item.confidence, &#x27;Confidence&#x27;, item.id, &#x27;confidence&#x27;));
+            const note = document.createElement(&#x27;td&#x27;);
+            const input = document.createElement(&#x27;input&#x27;);
+            input.type = &#x27;text&#x27;;
+            input.className = &#x27;note-input&#x27;;
+            input.value = item.note;
+            input.dataset.id = item.id;
+            input.dataset.field = &#x27;note&#x27;;
+            input.setAttribute(&#x27;aria-label&#x27;, `Ambiguity note for ${item.name}`);
+            note.append(input);
+            tr.append(number, name, category, confidence, note);
+            rows.append(tr);
+          });
+        }
+        resultCount.textContent = query ? `${visible.length} of ${entries.length} entries shown` : `${entries.length} entries shown`;
+      }
+
+      function polar(cx, cy, radius, angle) {
+        const radians = (angle - 90) * Math.PI / 180;
+        return { x: cx + radius * Math.cos(radians), y: cy + radius * Math.sin(radians) };
+      }
+
+      function arcPath(cx, cy, outer, inner, startAngle, endAngle) {
+        if (endAngle - startAngle &gt;= 359.999) {
+          return [
+            `M ${cx} ${cy - outer}`,
+            `A ${outer} ${outer} 0 1 1 ${cx - 0.01} ${cy - outer}`,
+            `L ${cx - 0.01} ${cy - inner}`,
+            `A ${inner} ${inner} 0 1 0 ${cx} ${cy - inner}`,
+            &#x27;Z&#x27;
+          ].join(&#x27; &#x27;);
+        }
+        const outerStart = polar(cx, cy, outer, endAngle);
+        const outerEnd = polar(cx, cy, outer, startAngle);
+        const innerStart = polar(cx, cy, inner, startAngle);
+        const innerEnd = polar(cx, cy, inner, endAngle);
+        const large = endAngle - startAngle &gt; 180 ? 1 : 0;
+        return [
+          `M ${outerStart.x} ${outerStart.y}`,
+          `A ${outer} ${outer} 0 ${large} 0 ${outerEnd.x} ${outerEnd.y}`,
+          `L ${innerStart.x} ${innerStart.y}`,
+          `A ${inner} ${inner} 0 ${large} 1 ${innerEnd.x} ${innerEnd.y}`,
+          &#x27;Z&#x27;
+        ].join(&#x27; &#x27;);
+      }
+
+      function renderCharts() {
+        const grouped = counts();
+        const total = entries.length;
+        const maximum = Math.max(...grouped.map(item =&gt; item.count), 1);
+        const bar = root.querySelector(&#x27;#bar-chart&#x27;);
+        bar.replaceChildren();
+        bar.setAttribute(&#x27;aria-label&#x27;, grouped.map(item =&gt; `${item.category}: ${item.count}`).join(&#x27;; &#x27;));
+
+        grouped.forEach(item =&gt; {
+          const row = document.createElement(&#x27;div&#x27;);
+          row.className = &#x27;bar-row&#x27;;
+          const label = document.createElement(&#x27;div&#x27;);
+          label.className = &#x27;bar-label&#x27;;
+          label.textContent = item.category;
+          const track = document.createElement(&#x27;div&#x27;);
+          track.className = &#x27;bar-track&#x27;;
+          const fill = document.createElement(&#x27;div&#x27;);
+          fill.className = &#x27;bar-fill&#x27;;
+          fill.style.width = `${(item.count / maximum) * 100}%`;
+          fill.style.backgroundColor = item.color;
+          track.append(fill);
+          const value = document.createElement(&#x27;div&#x27;);
+          value.className = &#x27;bar-value&#x27;;
+          value.textContent = item.count;
+          row.append(label, track, value);
+          bar.append(row);
+        });
+
+        const arcs = root.querySelector(&#x27;#donut-arcs&#x27;);
+        const legend = root.querySelector(&#x27;#legend&#x27;);
+        arcs.replaceChildren();
+        legend.replaceChildren();
+        let angle = 0;
+
+        grouped.forEach(item =&gt; {
+          const slice = total ? item.count / total * 360 : 0;
+          const path = document.createElementNS(&#x27;http://www.w3.org/2000/svg&#x27;, &#x27;path&#x27;);
+          path.setAttribute(&#x27;d&#x27;, arcPath(120, 120, 94, 58, angle, angle + slice));
+          path.setAttribute(&#x27;fill&#x27;, item.color);
+          const title = document.createElementNS(&#x27;http://www.w3.org/2000/svg&#x27;, &#x27;title&#x27;);
+          title.textContent = `${item.category}: ${item.count} (${(item.count / total * 100).toFixed(1)}%)`;
+          path.append(title);
+          arcs.append(path);
+          angle += slice;
+
+          const legendRow = document.createElement(&#x27;div&#x27;);
+          legendRow.className = &#x27;legend-row&#x27;;
+          const swatch = document.createElement(&#x27;span&#x27;);
+          swatch.className = &#x27;swatch&#x27;;
+          swatch.style.backgroundColor = item.color;
+          const label = document.createElement(&#x27;span&#x27;);
+          label.className = &#x27;legend-label&#x27;;
+          label.textContent = item.category;
+          const value = document.createElement(&#x27;span&#x27;);
+          value.className = &#x27;legend-value&#x27;;
+          value.textContent = `${item.count} · ${(item.count / total * 100).toFixed(1)}%`;
+          legendRow.append(swatch, label, value);
+          legend.append(legendRow);
+        });
+
+        root.querySelector(&#x27;#donut-total&#x27;).textContent = total;
+        root.querySelector(&#x27;#donut-desc&#x27;).textContent = grouped.map(item =&gt; `${item.category}: ${item.count}`).join(&#x27;; &#x27;);
+        root.querySelector(&#x27;#total-stat&#x27;).textContent = total;
+        root.querySelector(&#x27;#category-stat&#x27;).textContent = grouped.length;
+        const low = entries.filter(item =&gt; item.confidence === &#x27;Low&#x27;).length;
+        root.querySelector(&#x27;#low-stat&#x27;).textContent = low;
+        root.querySelector(&#x27;#low-stat-note&#x27;).textContent = `${(low / total * 100).toFixed(1)}% of the current confidence labels`;
+
+        const largest = grouped[0];
+        root.querySelector(&#x27;#largest-group-analysis&#x27;).textContent = largest
+          ? `The largest current working group is “${largest.category}” with ${largest.count} of ${total} name forms (${(largest.count / total * 100).toFixed(1)}%). This is a feature of the provisional spelling-based labels, not evidence about the people represented.`
+          : &#x27;No categories are currently assigned.&#x27;;
+      }
+
+      function updateEntry(target) {
+        const id = Number(target.dataset.id);
+        const field = target.dataset.field;
+        const item = entries.find(entry =&gt; entry.id === id);
+        if (!item || !field) return;
+        item[field] = target.value;
+        if (field !== &#x27;note&#x27;) renderCharts();
+      }
+
+      rows.addEventListener(&#x27;change&#x27;, event =&gt; updateEntry(event.target));
+      rows.addEventListener(&#x27;input&#x27;, event =&gt; {
+        if (event.target.dataset.field === &#x27;note&#x27;) updateEntry(event.target);
+      });
+      search.addEventListener(&#x27;input&#x27;, renderTable);
+      root.querySelector(&#x27;#reset&#x27;).addEventListener(&#x27;click&#x27;, () =&gt; {
+        entries = defaults.map((item, index) =&gt; ({ ...item, id: index + 1 }));
+        search.value = &#x27;&#x27;;
+        renderTable();
+        renderCharts();
+      });
+
+      renderTable();
+      renderCharts();
+    })();
+  &lt;/script&gt;
+&lt;/main&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+
+  const getTrigger = (target) =&gt;
+    target?.nodeType === Node.ELEMENT_NODE
+      ? target.closest(&quot;[data-tooltip]&quot;)
+      : null;
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handleLeave = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    document.removeEventListener(&quot;pointerover&quot;, handlePointerOpen);
+    document.removeEventListener(&quot;pointerout&quot;, handleLeave);
+    document.removeEventListener(&quot;focusin&quot;, handleFocusIn);
+    document.removeEventListener(&quot;focusout&quot;, handleLeave);
+    document.removeEventListener(&quot;keydown&quot;, handleKeyDown);
+    document.removeEventListener(&quot;contextmenu&quot;, handleContextMenu);
+    tooltip = null;
+  };
+
+  document.addEventListener(&quot;pointerover&quot;, handlePointerOpen);
+  document.addEventListener(&quot;pointerout&quot;, handleLeave);
+  document.addEventListener(&quot;focusin&quot;, handleFocusIn);
+  document.addEventListener(&quot;focusout&quot;, handleLeave);
+  document.addEventListener(&quot;keydown&quot;, handleKeyDown);
+  document.addEventListener(&quot;contextmenu&quot;, handleContextMenu);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+</body>
+</html>
