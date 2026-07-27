@@ -74,6 +74,30 @@
       gap: 8px;
       white-space: nowrap;
     }
+    .header-actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
+    .view-menu { position: relative; }
+    .view-menu-button {
+      width: 38px;
+      padding: 5px;
+      font-size: 21px;
+      line-height: 1;
+    }
+    .view-menu-panel {
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      width: 210px;
+      padding: 10px 12px 12px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    }
+    .view-menu-panel[hidden] { display: none; }
+    .view-menu-panel fieldset { margin: 0; padding: 0; border: 0; }
+    .view-menu-panel legend { margin-bottom: 7px; color: var(--muted); font-size: 13px; font-weight: 650; }
+    .view-option { display: flex; align-items: center; gap: 9px; min-height: 34px; cursor: pointer; }
+    .view-option input { width: 17px; height: 17px; margin: 0; }
     .clock-label { color: var(--muted); font-size: 13px; }
     .clock-value {
       min-width: 72px;
@@ -199,11 +223,6 @@
       color: #111827;
       box-shadow: 0 0 0 2px #ffe08a;
     }
-    .source-details { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); }
-    .source-details summary { cursor: pointer; color: var(--muted); font-size: 14px; font-weight: 650; }
-    .source-list { margin: 10px 0 0; padding-left: 20px; color: var(--muted); font-size: 13px; overflow-wrap: anywhere; }
-    .source-list li { margin: 6px 0; }
-
     .model-voice {
       display: grid;
       grid-template-columns: minmax(180px, .65fr) minmax(280px, 1.35fr);
@@ -220,6 +239,7 @@
     .model-voice-player { min-width: 0; }
     .model-voice-player audio { display: block; }
     .model-voice-status { min-height: 18px; margin: 4px 0 0; color: var(--muted); font-size: 12px; }
+    .model-voice[hidden], .recorder[hidden] { display: none !important; }
 
     .recorder {
       margin-top: 22px;
@@ -261,6 +281,7 @@
 
     @media (max-width: 760px) {
       .toolbar { grid-template-columns: 1fr; gap: 10px; padding: 10px 0; }
+      .header-actions { justify-content: space-between; }
       .presentation-clock { justify-content: flex-start; flex-wrap: wrap; }
       .navigation { grid-template-columns: 1fr; align-items: start; }
       .slide-tabs { overflow-x: auto; padding-bottom: 4px; }
@@ -288,11 +309,23 @@
         <p class="brand-title">Special Education Presentation Studio</p>
         <p class="brand-context" id="brandContext">Category A · Physically Dependent</p>
       </div>
-      <div class="presentation-clock" aria-label="Overall presentation timer">
-        <span class="clock-label">Presentation elapsed</span>
-        <span class="clock-value" id="presentationTime">00:00</span>
-        <button class="button compact primary" type="button" id="timerToggle">Start timer</button>
-        <button class="button compact" type="button" id="timerReset">Reset</button>
+      <div class="header-actions">
+        <div class="presentation-clock" aria-label="Overall presentation timer">
+          <span class="clock-label">Presentation elapsed</span>
+          <span class="clock-value" id="presentationTime">00:00</span>
+          <button class="button compact primary" type="button" id="timerToggle">Start timer</button>
+          <button class="button compact" type="button" id="timerReset">Reset</button>
+        </div>
+        <div class="view-menu" id="viewMenu">
+          <button class="button compact view-menu-button" type="button" id="viewMenuButton" aria-label="Show display options" aria-expanded="false" aria-controls="viewMenuPanel"><span aria-hidden="true">☰</span></button>
+          <div class="view-menu-panel" id="viewMenuPanel" hidden>
+            <fieldset>
+              <legend>Show sections</legend>
+              <label class="view-option"><input type="checkbox" id="showModelVoice" checked> Model audio</label>
+              <label class="view-option"><input type="checkbox" id="showRecorder" checked> Voice recording</label>
+            </fieldset>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -335,7 +368,7 @@
       </div>
       <div class="script-copy" id="scriptCopy"></div>
 
-      <section class="model-voice" aria-labelledby="modelVoiceTitle">
+      <section class="model-voice" id="modelVoiceSection" aria-labelledby="modelVoiceTitle">
         <div>
           <h3 class="model-voice-heading" id="modelVoiceTitle">Model voice</h3>
           <p class="model-voice-details" id="modelVoiceDetails">Sonia · British English female neural voice</p>
@@ -346,12 +379,7 @@
         </div>
       </section>
 
-      <details class="source-details">
-        <summary>Sources for this slide</summary>
-        <ul class="source-list" id="sourceList"></ul>
-      </details>
-
-      <section class="recorder" aria-labelledby="recorderTitle">
+      <section class="recorder" id="recorderSection" aria-labelledby="recorderTitle">
         <h3 class="recorder-heading" id="recorderTitle">Voice recording</h3>
         <p class="privacy-note">Your recording stays in this browser. Download it before closing the page if you want to keep it.</p>
         <div class="recorder-row">
@@ -405,8 +433,11 @@
       brandContext: $("brandContext"), deckSelect: $("deckSelect"), slideTabs: $("slideTabs"),
       progressFill: $("progressFill"), slideTitle: $("slideTitle"), slideCount: $("slideCount"),
       slideImage: $("slideImage"), previousSlide: $("previousSlide"), nextSlide: $("nextSlide"),
-      scriptDetails: $("scriptDetails"), scriptCopy: $("scriptCopy"), sourceList: $("sourceList"), copyScript: $("copyScript"),
-      modelVoice: $("modelVoice"), modelVoiceDetails: $("modelVoiceDetails"), modelVoiceStatus: $("modelVoiceStatus"),
+      scriptDetails: $("scriptDetails"), scriptCopy: $("scriptCopy"), copyScript: $("copyScript"),
+      modelVoiceSection: $("modelVoiceSection"), modelVoice: $("modelVoice"),
+      modelVoiceDetails: $("modelVoiceDetails"), modelVoiceStatus: $("modelVoiceStatus"),
+      recorderSection: $("recorderSection"), showModelVoice: $("showModelVoice"), showRecorder: $("showRecorder"),
+      viewMenu: $("viewMenu"), viewMenuButton: $("viewMenuButton"), viewMenuPanel: $("viewMenuPanel"),
       recordState: $("recordState"), recordTime: $("recordTime"), recordButton: $("recordButton"),
       pauseButton: $("pauseButton"), stopButton: $("stopButton"), recordMessage: $("recordMessage"),
       recordingOutput: $("recordingOutput"), audioPlayback: $("audioPlayback"),
@@ -438,6 +469,33 @@
 
     function touchStartedOnControl(target) {
       return Boolean(target?.closest?.("button, a, input, select, textarea, audio, summary, [contenteditable='true'], [role='button']"));
+    }
+
+    function setViewMenuOpen(open) {
+      elements.viewMenuPanel.hidden = !open;
+      elements.viewMenuButton.setAttribute("aria-expanded", String(open));
+      elements.viewMenuButton.setAttribute("aria-label", open ? "Hide display options" : "Show display options");
+    }
+
+    function updateModelVoiceVisibility() {
+      const visible = elements.showModelVoice.checked;
+      elements.modelVoiceSection.hidden = !visible;
+      if (!visible) {
+        elements.modelVoice.pause();
+        clearNarrationHighlight();
+      }
+    }
+
+    function updateRecorderVisibility() {
+      const recordingActive = state.mediaRecorder && state.mediaRecorder.state !== "inactive";
+      if (!elements.showRecorder.checked && recordingActive) {
+        elements.showRecorder.checked = true;
+        elements.recorderSection.hidden = false;
+        elements.recordMessage.textContent = "Stop the current recording before hiding the recording controls.";
+        elements.recordMessage.className = "message error";
+        return;
+      }
+      elements.recorderSection.hidden = !elements.showRecorder.checked;
     }
 
     function buildDeckOptions() {
@@ -574,15 +632,6 @@
       }
     }
 
-    function renderSources(sources) {
-      elements.sourceList.innerHTML = "";
-      sources.forEach((source) => {
-        const item = document.createElement("li");
-        item.textContent = source;
-        elements.sourceList.append(item);
-      });
-    }
-
     function updateRecordingView() {
       const saved = state.recordings.get(currentKey());
       if (saved) {
@@ -622,7 +671,6 @@
       elements.modelVoice.setAttribute("aria-label", `Play model voice for Category ${deck.code}, slide ${slide.number}: ${slide.title}`);
       elements.modelVoiceDetails.textContent = `Sonia · British English female neural voice · ${slide.speaker}`;
       elements.modelVoiceStatus.textContent = "Loading page narration…";
-      renderSources(slide.sources);
       elements.progressFill.style.width = `${((state.slideIndex + 1) / deck.slides.length) * 100}%`;
       elements.previousSlide.disabled = state.deckIndex === 0 && state.slideIndex === 0;
       elements.nextSlide.textContent = state.deckIndex === decks.length - 1 && state.slideIndex === deck.slides.length - 1 ? "End" : "Next →";
@@ -680,6 +728,8 @@
     }
 
     async function startRecording() {
+      elements.showRecorder.checked = true;
+      elements.recorderSection.hidden = false;
       elements.recordMessage.textContent = "";
       elements.recordMessage.className = "message";
       if (!window.isSecureContext) {
@@ -824,6 +874,19 @@
     elements.modelVoice.addEventListener("ended", clearNarrationHighlight);
     elements.modelVoice.addEventListener("error", () => {
       elements.modelVoiceStatus.textContent = "This page narration could not be loaded.";
+    });
+    elements.viewMenuButton.addEventListener("click", () => {
+      setViewMenuOpen(elements.viewMenuPanel.hidden);
+    });
+    elements.showModelVoice.addEventListener("change", updateModelVoiceVisibility);
+    elements.showRecorder.addEventListener("change", updateRecorderVisibility);
+    document.addEventListener("click", (event) => {
+      if (!elements.viewMenu.contains(event.target)) setViewMenuOpen(false);
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape" || elements.viewMenuPanel.hidden) return;
+      setViewMenuOpen(false);
+      elements.viewMenuButton.focus();
     });
     elements.scriptCopy.addEventListener("dblclick", (event) => {
       if (performance.now() - state.lastTouchNarrationSeekAt < 700) return;
