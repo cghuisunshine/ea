@@ -185,6 +185,7 @@
       padding-top: 10px;
       font-size: 17px;
       line-height: 1.7;
+      touch-action: manipulation;
     }
     .script-copy p { margin: 14px 0; }
     .tts-word {
@@ -393,6 +394,9 @@
       narrationActiveWord: -1,
       narrationAnimationFrame: null,
       touchNavigation: null,
+      lastScriptTapWord: -1,
+      lastScriptTapAt: 0,
+      lastTouchNarrationSeekAt: 0,
     };
 
     const $ = (id) => document.getElementById(id);
@@ -522,6 +526,33 @@
       }
     }
 
+    function narrationWordIndex(target) {
+      const span = target?.closest?.(".tts-word");
+      if (!span || !elements.scriptCopy.contains(span)) return -1;
+      const index = Number(span.dataset.narrationWord);
+      return Number.isInteger(index) ? index : -1;
+    }
+
+    function playNarrationFromWord(index) {
+      const word = state.narrationWords[index];
+      if (!word) return;
+
+      const beginPlayback = () => {
+        elements.modelVoice.currentTime = word.start;
+        elements.modelVoice.play().then(() => {
+          elements.modelVoiceStatus.textContent = `Playing from “${word.text}” · ${formatTime(word.start * 1000)}`;
+        }).catch(() => {
+          elements.modelVoiceStatus.textContent = "Playback could not start automatically. Press Play to continue from the selected word.";
+        });
+      };
+
+      if (elements.modelVoice.readyState === 0) {
+        elements.modelVoice.addEventListener("loadedmetadata", beginPlayback, { once: true });
+      } else {
+        beginPlayback();
+      }
+    }
+
     function renderSources(sources) {
       elements.sourceList.innerHTML = "";
       sources.forEach((source) => {
@@ -561,6 +592,8 @@
       elements.scriptDetails.textContent = `${slide.speaker} · Suggested timing ${slide.timing}`;
       elements.modelVoice.pause();
       clearNarrationHighlight();
+      state.lastScriptTapWord = -1;
+      state.lastScriptTapAt = 0;
       scriptParagraphs(slide.script, narrationWords);
       elements.modelVoice.src = narrationSource;
       elements.modelVoice.load();
@@ -759,7 +792,7 @@
     elements.copyScript.addEventListener("click", copyCurrentScript);
     elements.modelVoice.addEventListener("loadedmetadata", () => {
       const duration = Number.isFinite(elements.modelVoice.duration) ? formatTime(elements.modelVoice.duration * 1000) : "ready";
-      elements.modelVoiceStatus.textContent = `Page narration ready · ${duration} · Word highlighting enabled`;
+      elements.modelVoiceStatus.textContent = `Page narration ready · ${duration} · Double-click or double-tap a word to start there`;
     });
     elements.modelVoice.addEventListener("play", () => {
       clearNarrationHighlight();
@@ -769,6 +802,38 @@
     elements.modelVoice.addEventListener("ended", clearNarrationHighlight);
     elements.modelVoice.addEventListener("error", () => {
       elements.modelVoiceStatus.textContent = "This page narration could not be loaded.";
+    });
+    elements.scriptCopy.addEventListener("dblclick", (event) => {
+      if (performance.now() - state.lastTouchNarrationSeekAt < 700) return;
+      const index = narrationWordIndex(event.target);
+      if (index < 0) return;
+      event.preventDefault();
+      playNarrationFromWord(index);
+    });
+    elements.scriptCopy.addEventListener("touchend", (event) => {
+      const index = narrationWordIndex(event.target);
+      const start = state.touchNavigation;
+      if (index < 0 || !start || event.changedTouches.length !== 1) return;
+
+      const touch = event.changedTouches[0];
+      const moved = Math.hypot(touch.clientX - start.x, touch.clientY - start.y);
+      if (moved > 20) {
+        state.lastScriptTapWord = -1;
+        state.lastScriptTapAt = 0;
+        return;
+      }
+
+      const now = performance.now();
+      const isDoubleTap = index === state.lastScriptTapWord && now - state.lastScriptTapAt <= 400;
+      state.lastScriptTapWord = index;
+      state.lastScriptTapAt = now;
+      if (!isDoubleTap) return;
+
+      event.preventDefault();
+      state.lastTouchNarrationSeekAt = now;
+      state.lastScriptTapWord = -1;
+      state.lastScriptTapAt = 0;
+      playNarrationFromWord(index);
     });
     elements.fullScreen.addEventListener("click", async () => {
       if (!document.fullscreenElement) await document.documentElement.requestFullscreen?.();
