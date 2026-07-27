@@ -393,6 +393,7 @@
       narrationSpans: [],
       narrationActiveWord: -1,
       narrationAnimationFrame: null,
+      lastNarrationAutoScrollAt: 0,
       touchNavigation: null,
       lastScriptTapWord: -1,
       lastScriptTapAt: 0,
@@ -511,6 +512,22 @@
       state.narrationActiveWord = -1;
     }
 
+    function keepNarrationWordVisible(span) {
+      if (!span) return;
+      const bounds = span.getBoundingClientRect();
+      const headerBottom = document.querySelector(".app-header")?.getBoundingClientRect().bottom || 0;
+      const safeTop = Math.max(0, headerBottom) + 20;
+      const safeBottom = window.innerHeight - 72;
+      const isVisible = bounds.top >= safeTop && bounds.bottom <= safeBottom;
+      if (isVisible) return;
+
+      const now = performance.now();
+      if (state.lastNarrationAutoScrollAt && now - state.lastNarrationAutoScrollAt < 600) return;
+      state.lastNarrationAutoScrollAt = now;
+      const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+      span.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "center", inline: "nearest" });
+    }
+
     function paintNarrationHighlight() {
       const time = elements.modelVoice.currentTime;
       const next = state.narrationWords.findIndex((word) => time >= word.start && time < word.end);
@@ -518,7 +535,11 @@
         if (state.narrationActiveWord >= 0) {
           state.narrationSpans[state.narrationActiveWord]?.classList.remove("is-speaking");
         }
-        if (next >= 0) state.narrationSpans[next]?.classList.add("is-speaking");
+        if (next >= 0) {
+          const activeSpan = state.narrationSpans[next];
+          activeSpan?.classList.add("is-speaking");
+          keepNarrationWordVisible(activeSpan);
+        }
         state.narrationActiveWord = next;
       }
       if (!elements.modelVoice.paused && !elements.modelVoice.ended) {
@@ -592,6 +613,7 @@
       elements.scriptDetails.textContent = `${slide.speaker} · Suggested timing ${slide.timing}`;
       elements.modelVoice.pause();
       clearNarrationHighlight();
+      state.lastNarrationAutoScrollAt = 0;
       state.lastScriptTapWord = -1;
       state.lastScriptTapAt = 0;
       scriptParagraphs(slide.script, narrationWords);
@@ -792,7 +814,7 @@
     elements.copyScript.addEventListener("click", copyCurrentScript);
     elements.modelVoice.addEventListener("loadedmetadata", () => {
       const duration = Number.isFinite(elements.modelVoice.duration) ? formatTime(elements.modelVoice.duration * 1000) : "ready";
-      elements.modelVoiceStatus.textContent = `Page narration ready · ${duration} · Double-click or double-tap a word to start there`;
+      elements.modelVoiceStatus.textContent = `Page narration ready · ${duration} · Auto-follow enabled · Double-click or double-tap a word to start there`;
     });
     elements.modelVoice.addEventListener("play", () => {
       clearNarrationHighlight();
