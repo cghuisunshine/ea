@@ -368,7 +368,7 @@
       </section>
     </section>
 
-    <p class="help">Keyboard: Left and Right Arrow change slides. Press R to start recording when you are not typing in a control.</p>
+    <p class="help">Keyboard: Left Arrow goes back; Right Arrow or Space advances. Mobile: at the top, swipe down to go back; at the bottom, swipe up to advance.</p>
   </main>
 
   <script src="audio/special-education/special-education-timings.js"></script>
@@ -392,6 +392,7 @@
       narrationSpans: [],
       narrationActiveWord: -1,
       narrationAnimationFrame: null,
+      touchNavigation: null,
     };
 
     const $ = (id) => document.getElementById(id);
@@ -418,6 +419,21 @@
     const currentDeck = () => decks[state.deckIndex];
     const currentSlide = () => currentDeck().slides[state.slideIndex];
     const currentKey = () => `${currentDeck().code}-${currentSlide().number}`;
+    const hasPreviousPage = () => state.deckIndex > 0 || state.slideIndex > 0;
+    const hasNextPage = () => state.deckIndex < decks.length - 1 || state.slideIndex < currentDeck().slides.length - 1;
+
+    function atPageTop() {
+      return window.scrollY <= 2;
+    }
+
+    function atPageBottom() {
+      const pageHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+      return Math.ceil(window.scrollY + window.innerHeight) >= pageHeight - 2;
+    }
+
+    function touchStartedOnControl(target) {
+      return Boolean(target?.closest?.("button, a, input, select, textarea, audio, summary, [contenteditable='true'], [role='button']"));
+    }
 
     function buildDeckOptions() {
       elements.deckSelect.innerHTML = "";
@@ -760,11 +776,45 @@
     });
     document.addEventListener("keydown", (event) => {
       const tag = event.target?.tagName;
-      if (["INPUT", "SELECT", "TEXTAREA", "BUTTON"].includes(tag)) return;
-      if (event.key === "ArrowRight") { event.preventDefault(); next(); }
-      if (event.key === "ArrowLeft") { event.preventDefault(); previous(); }
+      if (["INPUT", "SELECT", "TEXTAREA", "BUTTON", "A", "AUDIO"].includes(tag) || event.target?.isContentEditable) return;
+      if (event.key === "ArrowRight" || event.code === "Space") {
+        event.preventDefault();
+        elements.nextSlide.click();
+      }
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        elements.previousSlide.click();
+      }
       if (event.key.toLowerCase() === "r" && !elements.recordButton.disabled) startRecording();
     });
+    document.addEventListener("touchstart", (event) => {
+      if (event.touches.length !== 1 || touchStartedOnControl(event.target)) {
+        state.touchNavigation = null;
+        return;
+      }
+      const touch = event.touches[0];
+      state.touchNavigation = {
+        x: touch.clientX,
+        y: touch.clientY,
+        atTop: atPageTop(),
+        atBottom: atPageBottom(),
+      };
+    }, { passive: true });
+    document.addEventListener("touchend", (event) => {
+      const start = state.touchNavigation;
+      state.touchNavigation = null;
+      if (!start || event.changedTouches.length !== 1) return;
+
+      const touch = event.changedTouches[0];
+      const horizontalDistance = touch.clientX - start.x;
+      const verticalDistance = touch.clientY - start.y;
+      const isVerticalSwipe = Math.abs(verticalDistance) >= 64 && Math.abs(verticalDistance) > Math.abs(horizontalDistance) * 1.25;
+      if (!isVerticalSwipe) return;
+
+      if (verticalDistance > 0 && start.atTop && hasPreviousPage()) elements.previousSlide.click();
+      if (verticalDistance < 0 && start.atBottom && hasNextPage()) elements.nextSlide.click();
+    }, { passive: true });
+    document.addEventListener("touchcancel", () => { state.touchNavigation = null; }, { passive: true });
     window.addEventListener("beforeunload", (event) => {
       if (state.mediaRecorder && state.mediaRecorder.state !== "inactive") {
         event.preventDefault();
