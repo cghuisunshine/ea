@@ -206,7 +206,7 @@
     <nav class="slide-nav" aria-label="Presentation slides">
       <h2>Presentation outline</h2>
       <ol class="slide-list" id="slideList"></ol>
-      <p class="nav-tip">Keyboard: ← previous · → next · Space start or pause</p>
+      <p class="nav-tip">Keyboard: ← previous · → or Space next</p>
     </nav>
 
     <div>
@@ -234,8 +234,8 @@
         </section>
         <footer class="panel-actions">
           <div class="panel-actions-group">
-            <button class="button" id="previousSlide" type="button">Previous</button>
-            <button class="button" id="nextSlide" type="button">Next</button>
+            <button class="button" id="previousSlide" type="button">← Previous</button>
+            <button class="button" id="nextSlide" type="button">Next →</button>
           </div>
           <span class="slide-status" id="slideStatus"></span>
         </footer>
@@ -449,7 +449,7 @@
       elements.modeToggle.setAttribute("aria-pressed", String(state.cueMode));
       elements.previousSlide.disabled = state.slideIndex === 0;
       elements.nextSlide.disabled = state.slideIndex === slides.length - 1;
-      elements.nextSlide.textContent = state.slideIndex === slides.length - 1 ? "Last slide" : "Next";
+      elements.nextSlide.textContent = state.slideIndex === slides.length - 1 ? "Last slide" : "Next →";
       elements.slideStatus.textContent = `${slide.end - slide.start} seconds planned`;
       [...elements.slideList.querySelectorAll(".slide-link")].forEach((button, index) => {
         if (index === state.slideIndex) button.setAttribute("aria-current", "page");
@@ -625,7 +625,10 @@
       if (event.target.matches("button, input, audio")) return;
       if (event.key === "ArrowLeft") navigate(state.slideIndex - 1);
       if (event.key === "ArrowRight") navigate(state.slideIndex + 1);
-      if (event.code === "Space") { event.preventDefault(); toggleTimer(); }
+      if (event.code === "Space") {
+        event.preventDefault();
+        navigate(state.slideIndex + 1);
+      }
     });
     document.addEventListener("touchstart", (event) => {
       if (event.touches.length !== 1 || touchStartedOnControl(event.target)) {
