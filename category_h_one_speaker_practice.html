@@ -448,6 +448,13 @@
       return panel && panel.getBoundingClientRect().bottom <= window.innerHeight + 8;
     }
 
+    function atBeginningOfSlide() {
+      const panel = document.querySelector(".practice-panel");
+      if (!panel) return false;
+      const panelTop = panel.getBoundingClientRect().top + window.scrollY;
+      return window.scrollY <= panelTop + 8;
+    }
+
     function touchStartedOnControl(target) {
       return Boolean(target?.closest?.("button, a, input, audio, select, textarea, [role='button']"));
     }
@@ -601,7 +608,8 @@
       state.touchNavigation = {
         x: touch.clientX,
         y: touch.clientY,
-        startedAtEnd: atEndOfSlide()
+        startedAtEnd: atEndOfSlide(),
+        startedAtBeginning: atBeginningOfSlide()
       };
     }, { passive: true });
     document.addEventListener("touchend", (event) => {
@@ -612,9 +620,13 @@
       const deltaX = touch.clientX - start.x;
       const deltaY = touch.clientY - start.y;
       const isUpwardSwipe = deltaY <= -50 && Math.abs(deltaY) > Math.abs(deltaX) * 1.2;
+      const isDownwardSwipe = deltaY >= 50 && Math.abs(deltaY) > Math.abs(deltaX) * 1.2;
       if (start.startedAtEnd && isUpwardSwipe && state.slideIndex < slides.length - 1) {
         event.preventDefault();
         navigate(state.slideIndex + 1);
+      } else if (start.startedAtBeginning && isDownwardSwipe && state.slideIndex > 0) {
+        event.preventDefault();
+        navigate(state.slideIndex - 1);
       }
     }, { passive: false });
 
