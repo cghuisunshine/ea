@@ -346,6 +346,7 @@
 
     const totalSeconds = 495;
     const slideAssetVersion = "20260729-1240";
+    const viewPreferencesKey = "category-h-practice-view-options";
     const state = {
       slideIndex: 0, cueMode: false, revealedLine: -1,
       timerRunning: false, timerStartedAt: 0, elapsedBeforeStart: 0, timerFrame: null,
@@ -382,6 +383,28 @@
       elements.menuPanel.hidden = !open;
       elements.menuButton.setAttribute("aria-expanded", String(open));
       elements.menuButton.setAttribute("aria-label", open ? "Hide display menu" : "Show display menu");
+    }
+
+    function loadViewPreferences() {
+      try {
+        const saved = JSON.parse(window.localStorage.getItem(viewPreferencesKey) || "null");
+        if (!saved || typeof saved !== "object") return;
+        if (typeof saved.showPowerPoint === "boolean") elements.showPowerPoint.checked = saved.showPowerPoint;
+        if (typeof saved.scriptOnlyView === "boolean") elements.scriptOnlyView.checked = saved.scriptOnlyView;
+      } catch (error) {
+        // Keep the default options when storage is unavailable or invalid.
+      }
+    }
+
+    function saveViewPreferences() {
+      try {
+        window.localStorage.setItem(viewPreferencesKey, JSON.stringify({
+          showPowerPoint: elements.showPowerPoint.checked,
+          scriptOnlyView: elements.scriptOnlyView.checked
+        }));
+      } catch (error) {
+        // The page still works when private browsing or browser policy blocks storage.
+      }
     }
 
     function updatePowerPointVisibility() {
@@ -607,10 +630,12 @@
     elements.menuButton.addEventListener("click", () => setMenuOpen(!state.menuOpen));
     elements.showPowerPoint.addEventListener("change", () => {
       updatePowerPointVisibility();
+      saveViewPreferences();
       setMenuOpen(false);
     });
     elements.scriptOnlyView.addEventListener("change", () => {
       updateScriptOnlyView();
+      saveViewPreferences();
       setMenuOpen(false);
     });
     document.addEventListener("click", (event) => {
@@ -688,6 +713,7 @@
 
     buildNavigation();
     buildPrintSheet();
+    loadViewPreferences();
     updateScriptOnlyView();
     updatePowerPointVisibility();
     render();
