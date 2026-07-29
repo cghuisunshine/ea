@@ -74,6 +74,7 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
     }
     .menu-option { display: flex; align-items: center; gap: 9px; min-height: 36px; cursor: pointer; }
+    .menu-option + .menu-option { border-top: 1px solid var(--line); }
     .menu-option input { width: 18px; height: 18px; margin: 0; }
     .follow-timer { display: flex; align-items: center; gap: 7px; color: var(--muted); font-size: 14px; white-space: nowrap; }
     .follow-timer input { width: 17px; height: 17px; }
@@ -122,6 +123,18 @@
     .download-link { display: inline-block; margin-top: 9px; color: var(--accent); font-weight: 700; }
     .print-sheet { display: none; }
 
+    body.script-only-view .app-header,
+    body.script-only-view .slide-nav,
+    body.script-only-view .slide-preview,
+    body.script-only-view .keywords,
+    body.script-only-view .cue-practice,
+    body.script-only-view .panel-actions,
+    body.script-only-view .recording-panel,
+    body.script-only-view .timer-track,
+    body.script-only-view .toolbar-inner > :not(.view-menu) { display: none !important; }
+    body.script-only-view .toolbar-inner { min-height: 48px; justify-content: flex-end; }
+    body.script-only-view .layout { width: min(900px, calc(100% - 32px)); grid-template-columns: minmax(0, 1fr); margin-top: 16px; }
+
     @media (max-width: 780px) {
       body { font-size: 16px; }
       .toolbar { position: static; }
@@ -155,6 +168,8 @@
       .print-keywords { padding: 9px 12px; border: 1px solid #bbb; font-weight: 700; }
       .print-slide li { margin: 7px 0; }
       body.hide-powerpoint .print-slide-image { display: none; }
+      body.script-only-view .print-slide-image,
+      body.script-only-view .print-keywords { display: none; }
     }
   </style>
 </head>
@@ -177,6 +192,7 @@
         <button class="button menu-button" id="menuButton" type="button" aria-label="Show display menu" aria-expanded="false" aria-controls="menuPanel">☰</button>
         <div class="menu-panel" id="menuPanel" hidden>
           <label class="menu-option"><input id="showPowerPoint" type="checkbox" checked> Show PowerPoint slide</label>
+          <label class="menu-option"><input id="scriptOnlyView" type="checkbox"> Script-only view</label>
         </div>
       </div>
       <button class="button" id="modeToggle" type="button" aria-pressed="false">Cue mode</button>
@@ -308,7 +324,6 @@
           "Loud, crowded room — so let him use the quiet room, or headphones.",
           "Instructions only spoken — so write them down, and cut big tasks into small steps.",
           "Seen as bad behaviour — so follow the safety plan, stay calm, and talk to him in private.",
-          "The right column is a list of jobs for the adults.",
           "These are not faults. They are barriers we can remove."
         ]
       },
@@ -349,7 +364,7 @@
       recordingStatus: $("recordingStatus"), recordingPlayback: $("recordingPlayback"),
       downloadRecording: $("downloadRecording"), printSheet: $("printSheet"), slidePreview: $("slidePreview"),
       viewMenu: $("viewMenu"), menuButton: $("menuButton"), menuPanel: $("menuPanel"),
-      showPowerPoint: $("showPowerPoint")
+      showPowerPoint: $("showPowerPoint"), scriptOnlyView: $("scriptOnlyView")
     };
 
     const formatTime = (seconds) => {
@@ -370,9 +385,20 @@
     }
 
     function updatePowerPointVisibility() {
-      const visible = elements.showPowerPoint.checked;
+      const visible = elements.showPowerPoint.checked && !elements.scriptOnlyView.checked;
       elements.slidePreview.hidden = !visible;
       document.body.classList.toggle("hide-powerpoint", !visible);
+    }
+
+    function updateScriptOnlyView() {
+      const enabled = elements.scriptOnlyView.checked;
+      document.body.classList.toggle("script-only-view", enabled);
+      if (enabled && state.cueMode) {
+        state.cueMode = false;
+        state.revealedLine = -1;
+        render();
+      }
+      updatePowerPointVisibility();
     }
 
     function buildNavigation() {
@@ -583,6 +609,10 @@
       updatePowerPointVisibility();
       setMenuOpen(false);
     });
+    elements.scriptOnlyView.addEventListener("change", () => {
+      updateScriptOnlyView();
+      setMenuOpen(false);
+    });
     document.addEventListener("click", (event) => {
       if (state.menuOpen && !elements.viewMenu.contains(event.target)) setMenuOpen(false);
     });
@@ -630,6 +660,7 @@
 
     buildNavigation();
     buildPrintSheet();
+    updateScriptOnlyView();
     updatePowerPointVisibility();
     render();
     updateTimer();
