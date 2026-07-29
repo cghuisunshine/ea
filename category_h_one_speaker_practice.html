@@ -105,9 +105,17 @@
     .slide-preview a { color: var(--accent); font-weight: 700; }
     .keywords { padding: 18px 24px; border-bottom: 1px solid #dfd2a9; background: var(--cue); }
     .keyword-line { margin: 0; font-size: clamp(1.05rem, 2.1vw, 1.35rem); font-weight: 720; line-height: 1.55; }
+    .model-voice { padding: 14px 24px 16px; border-bottom: 1px solid var(--line); background: #faf8f2; }
+    .model-voice-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; margin-bottom: 9px; }
+    .model-voice-heading h3 { margin: 0; font-size: 15px; }
+    .model-voice-heading p, .model-voice-status { margin: 0; color: var(--muted); font-size: 12px; }
+    .model-voice audio { display: block; width: 100%; height: 38px; }
+    .model-voice-status { min-height: 18px; margin-top: 5px; }
     .script-area { padding: 10px 24px 18px; }
     .script-line { position: relative; margin: 0; padding: 11px 0 11px 24px; border-bottom: 1px solid #ebe6dc; }
     .script-line::before { content: ""; position: absolute; top: 1.05em; left: 3px; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+    .tts-word { border-radius: 3px; transition: background-color 120ms ease, color 120ms ease; }
+    .tts-word.is-speaking { background: #ffe08a; color: #111827; }
     .cue-practice { padding: 24px; text-align: center; }
     .cue-instruction { margin: 0 auto 18px; max-width: 650px; color: var(--muted); }
     .revealed-line { min-height: 92px; margin: 18px auto; padding: 16px 18px; border-left: 4px solid var(--cue-line); background: #fbf6e3; text-align: left; max-width: 720px; }
@@ -145,7 +153,7 @@
       .slide-list li { min-width: 122px; flex: 1 0 122px; }
       .slide-list li + li { border-top: 0; border-left: 1px solid var(--line); }
       .slide-link[aria-current="page"] { box-shadow: inset 0 -3px var(--accent); }
-      .slide-heading, .keywords, .script-area, .cue-practice, .panel-actions { padding-left: 18px; padding-right: 18px; }
+      .slide-heading, .keywords, .model-voice, .script-area, .cue-practice, .panel-actions { padding-left: 18px; padding-right: 18px; }
       .slide-status { display: none; }
     }
     @media (max-width: 520px) {
@@ -173,7 +181,7 @@
     }
   </style>
 </head>
-<body>
+<body class="script-only-view">
   <header class="app-header">
     <div class="header-inner">
       <h1>Category H — One-Speaker Practice</h1>
@@ -192,7 +200,7 @@
         <button class="button menu-button" id="menuButton" type="button" aria-label="Show display menu" aria-expanded="false" aria-controls="menuPanel">☰</button>
         <div class="menu-panel" id="menuPanel" hidden>
           <label class="menu-option"><input id="showPowerPoint" type="checkbox" checked> Show PowerPoint slide</label>
-          <label class="menu-option"><input id="scriptOnlyView" type="checkbox"> Script-only view</label>
+          <label class="menu-option"><input id="scriptOnlyView" type="checkbox" checked> Script-only view</label>
         </div>
       </div>
       <button class="button" id="modeToggle" type="button" aria-pressed="false">Cue mode</button>
@@ -225,6 +233,14 @@
         <section class="keywords" aria-label="Keyword prompts">
           <p class="keyword-line" id="keywordLine"></p>
         </section>
+        <section class="model-voice" aria-labelledby="modelVoiceTitle">
+          <div class="model-voice-heading">
+            <h3 id="modelVoiceTitle">Model voice</h3>
+            <p>Sonia · UK English female voice</p>
+          </div>
+          <audio id="modelVoice" controls preload="metadata"></audio>
+          <p class="model-voice-status" id="modelVoiceStatus" aria-live="polite">Loading slide narration…</p>
+        </section>
         <section class="script-area" id="scriptArea" aria-label="What to say"></section>
         <section class="cue-practice" id="cuePractice" hidden>
           <p class="cue-instruction">Say this slide in your own words using only the prompts above. Reveal one line at a time when you want to check yourself.</p>
@@ -253,6 +269,7 @@
 
   <section class="print-sheet" id="printSheet" aria-label="Printable speaker script"></section>
 
+  <script src="audio/category-h-one-speaker/category-h-one-speaker-timings.js"></script>
   <script>
     const slides = [
       {
@@ -346,12 +363,13 @@
 
     const totalSeconds = 495;
     const slideAssetVersion = "20260729-1240";
-    const viewPreferencesKey = "category-h-practice-view-options";
+    const viewPreferencesKey = "category-h-practice-view-options-v2";
     const state = {
       slideIndex: 0, cueMode: false, revealedLine: -1,
       timerRunning: false, timerStartedAt: 0, elapsedBeforeStart: 0, timerFrame: null,
       recorder: null, stream: null, chunks: [], recordingUrl: null,
-      touchNavigation: null, edgeTap: null, menuOpen: false
+      touchNavigation: null, edgeTap: null, menuOpen: false,
+      narrationWords: [], narrationSpans: [], narrationActiveWord: -1, narrationFrame: null
     };
     const $ = (id) => document.getElementById(id);
     const elements = {
@@ -365,7 +383,8 @@
       recordingStatus: $("recordingStatus"), recordingPlayback: $("recordingPlayback"),
       downloadRecording: $("downloadRecording"), printSheet: $("printSheet"), slidePreview: $("slidePreview"),
       viewMenu: $("viewMenu"), menuButton: $("menuButton"), menuPanel: $("menuPanel"),
-      showPowerPoint: $("showPowerPoint"), scriptOnlyView: $("scriptOnlyView")
+      showPowerPoint: $("showPowerPoint"), scriptOnlyView: $("scriptOnlyView"),
+      modelVoice: $("modelVoice"), modelVoiceStatus: $("modelVoiceStatus")
     };
 
     const formatTime = (seconds) => {
@@ -438,6 +457,97 @@
       });
     }
 
+    function clearNarrationHighlight() {
+      if (state.narrationFrame) cancelAnimationFrame(state.narrationFrame);
+      state.narrationFrame = null;
+      if (state.narrationActiveWord >= 0) {
+        state.narrationSpans[state.narrationActiveWord]?.classList.remove("is-speaking");
+      }
+      state.narrationActiveWord = -1;
+    }
+
+    function appendTimedRange(container, text, words, rangeStart, rangeEnd) {
+      let cursor = rangeStart;
+      words.forEach((word, index) => {
+        if (word.end_char <= rangeStart || word.start_char >= rangeEnd) return;
+        const wordStart = Math.max(word.start_char, rangeStart);
+        const wordEnd = Math.min(word.end_char, rangeEnd);
+        if (wordStart > cursor) container.append(document.createTextNode(text.slice(cursor, wordStart)));
+        const span = document.createElement("span");
+        span.className = "tts-word";
+        span.dataset.narrationWord = String(index);
+        span.textContent = text.slice(wordStart, wordEnd);
+        container.append(span);
+        cursor = wordEnd;
+      });
+      if (cursor < rangeEnd) container.append(document.createTextNode(text.slice(cursor, rangeEnd)));
+    }
+
+    function renderTimedScript(slide) {
+      clearNarrationHighlight();
+      elements.scriptArea.innerHTML = "";
+      const text = slide.lines.join("\n\n");
+      const timing = window.categoryHOneSpeakerNarrationTimings?.[state.slideIndex + 1];
+      const words = timing?.text === text ? timing.words : [];
+      let cursor = 0;
+
+      slide.lines.forEach((line) => {
+        const paragraph = document.createElement("p");
+        paragraph.className = "script-line";
+        const lineEnd = cursor + line.length;
+        if (words.length) appendTimedRange(paragraph, text, words, cursor, lineEnd);
+        else paragraph.textContent = line;
+        elements.scriptArea.append(paragraph);
+        cursor = lineEnd + 2;
+      });
+
+      state.narrationWords = words;
+      state.narrationSpans = [...elements.scriptArea.querySelectorAll(".tts-word")];
+      if (!elements.modelVoice.paused) paintNarrationHighlight();
+    }
+
+    function configureModelVoice() {
+      const slideNumber = state.slideIndex + 1;
+      if (elements.modelVoice.dataset.slide === String(slideNumber)) return;
+      elements.modelVoice.pause();
+      clearNarrationHighlight();
+      const number = String(slideNumber).padStart(2, "0");
+      elements.modelVoice.src = `audio/category-h-one-speaker/category-h-slide-${number}.mp3`;
+      elements.modelVoice.dataset.slide = String(slideNumber);
+      elements.modelVoice.setAttribute("aria-label", `Model voice for slide ${slideNumber}: ${slides[state.slideIndex].title}`);
+      elements.modelVoice.load();
+      elements.modelVoiceStatus.textContent = `Loading model voice for slide ${slideNumber}…`;
+    }
+
+    function keepNarrationWordVisible(span) {
+      if (!span || elements.scriptArea.hidden) return;
+      const bounds = span.getBoundingClientRect();
+      const toolbarBottom = document.querySelector(".toolbar")?.getBoundingClientRect().bottom || 0;
+      if (bounds.top >= toolbarBottom + 16 && bounds.bottom <= window.innerHeight - 24) return;
+      const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+      span.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "center" });
+    }
+
+    function paintNarrationHighlight() {
+      if (state.narrationFrame) cancelAnimationFrame(state.narrationFrame);
+      const time = elements.modelVoice.currentTime;
+      const next = state.narrationWords.findIndex((word) => time >= word.start && time < word.end);
+      if (next !== state.narrationActiveWord) {
+        if (state.narrationActiveWord >= 0) state.narrationSpans[state.narrationActiveWord]?.classList.remove("is-speaking");
+        if (next >= 0) {
+          const activeSpan = state.narrationSpans[next];
+          activeSpan?.classList.add("is-speaking");
+          keepNarrationWordVisible(activeSpan);
+        }
+        state.narrationActiveWord = next;
+      }
+      if (!elements.modelVoice.paused && !elements.modelVoice.ended) {
+        state.narrationFrame = requestAnimationFrame(paintNarrationHighlight);
+      } else {
+        state.narrationFrame = null;
+      }
+    }
+
     function renderReveal() {
       const slide = slides[state.slideIndex];
       if (state.revealedLine < 0) {
@@ -459,13 +569,8 @@
       elements.slideImage.src = `assets/category_h_ujjwal/slide-${state.slideIndex + 1}.png?v=${slideAssetVersion}`;
       elements.slideImage.alt = `Category H PowerPoint slide ${state.slideIndex + 1}: ${slide.title}`;
       elements.keywordLine.textContent = slide.keywords.join("  •  ");
-      elements.scriptArea.innerHTML = "";
-      slide.lines.forEach((line) => {
-        const paragraph = document.createElement("p");
-        paragraph.className = "script-line";
-        paragraph.textContent = line;
-        elements.scriptArea.append(paragraph);
-      });
+      configureModelVoice();
+      renderTimedScript(slide);
       elements.scriptArea.hidden = state.cueMode;
       elements.cuePractice.hidden = !state.cueMode;
       elements.modeToggle.textContent = state.cueMode ? "Show full script" : "Cue mode";
@@ -627,6 +732,27 @@
     elements.timerToggle.addEventListener("click", toggleTimer);
     elements.timerReset.addEventListener("click", resetTimer);
     elements.recordToggle.addEventListener("click", toggleRecording);
+    elements.modelVoice.addEventListener("loadedmetadata", () => {
+      elements.modelVoiceStatus.textContent = `Ready · ${formatTime(elements.modelVoice.duration)} · Sonia, UK English`;
+    });
+    elements.modelVoice.addEventListener("play", () => {
+      elements.modelVoiceStatus.textContent = `Playing model voice for slide ${state.slideIndex + 1}`;
+      paintNarrationHighlight();
+    });
+    elements.modelVoice.addEventListener("pause", () => {
+      clearNarrationHighlight();
+      if (!elements.modelVoice.ended && elements.modelVoice.currentTime > 0) {
+        elements.modelVoiceStatus.textContent = `Paused · ${formatTime(elements.modelVoice.currentTime)}`;
+      }
+    });
+    elements.modelVoice.addEventListener("ended", () => {
+      clearNarrationHighlight();
+      elements.modelVoiceStatus.textContent = `Finished slide ${state.slideIndex + 1}`;
+    });
+    elements.modelVoice.addEventListener("error", () => {
+      clearNarrationHighlight();
+      elements.modelVoiceStatus.textContent = "The model voice could not be loaded.";
+    });
     elements.menuButton.addEventListener("click", () => setMenuOpen(!state.menuOpen));
     elements.showPowerPoint.addEventListener("change", () => {
       updatePowerPointVisibility();
