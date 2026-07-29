@@ -201,6 +201,7 @@
         <div class="menu-panel" id="menuPanel" hidden>
           <label class="menu-option"><input id="showPowerPoint" type="checkbox" checked> Show PowerPoint slide</label>
           <label class="menu-option"><input id="scriptOnlyView" type="checkbox" checked> Script-only view</label>
+          <label class="menu-option"><input id="showModelVoice" type="checkbox" aria-controls="modelVoiceSection"> Show model voice</label>
         </div>
       </div>
       <button class="button" id="modeToggle" type="button" aria-pressed="false">Cue mode</button>
@@ -233,7 +234,7 @@
         <section class="keywords" aria-label="Keyword prompts">
           <p class="keyword-line" id="keywordLine"></p>
         </section>
-        <section class="model-voice" aria-labelledby="modelVoiceTitle">
+        <section class="model-voice" id="modelVoiceSection" aria-labelledby="modelVoiceTitle" hidden>
           <div class="model-voice-heading">
             <h3 id="modelVoiceTitle">Model voice</h3>
             <p>Sonia · UK English female voice</p>
@@ -383,7 +384,8 @@
       recordingStatus: $("recordingStatus"), recordingPlayback: $("recordingPlayback"),
       downloadRecording: $("downloadRecording"), printSheet: $("printSheet"), slidePreview: $("slidePreview"),
       viewMenu: $("viewMenu"), menuButton: $("menuButton"), menuPanel: $("menuPanel"),
-      showPowerPoint: $("showPowerPoint"), scriptOnlyView: $("scriptOnlyView"),
+      showPowerPoint: $("showPowerPoint"), scriptOnlyView: $("scriptOnlyView"), showModelVoice: $("showModelVoice"),
+      modelVoiceSection: $("modelVoiceSection"),
       modelVoice: $("modelVoice"), modelVoiceStatus: $("modelVoiceStatus")
     };
 
@@ -410,6 +412,7 @@
         if (!saved || typeof saved !== "object") return;
         if (typeof saved.showPowerPoint === "boolean") elements.showPowerPoint.checked = saved.showPowerPoint;
         if (typeof saved.scriptOnlyView === "boolean") elements.scriptOnlyView.checked = saved.scriptOnlyView;
+        if (typeof saved.showModelVoice === "boolean") elements.showModelVoice.checked = saved.showModelVoice;
       } catch (error) {
         // Keep the default options when storage is unavailable or invalid.
       }
@@ -419,7 +422,8 @@
       try {
         window.localStorage.setItem(viewPreferencesKey, JSON.stringify({
           showPowerPoint: elements.showPowerPoint.checked,
-          scriptOnlyView: elements.scriptOnlyView.checked
+          scriptOnlyView: elements.scriptOnlyView.checked,
+          showModelVoice: elements.showModelVoice.checked
         }));
       } catch (error) {
         // The page still works when private browsing or browser policy blocks storage.
@@ -430,6 +434,17 @@
       const visible = elements.showPowerPoint.checked && !elements.scriptOnlyView.checked;
       elements.slidePreview.hidden = !visible;
       document.body.classList.toggle("hide-powerpoint", !visible);
+    }
+
+    function updateModelVoiceVisibility() {
+      const visible = elements.showModelVoice.checked;
+      elements.modelVoiceSection.hidden = !visible;
+      if (visible) {
+        configureModelVoice();
+      } else {
+        elements.modelVoice.pause();
+        clearNarrationHighlight();
+      }
     }
 
     function updateScriptOnlyView() {
@@ -569,7 +584,7 @@
       elements.slideImage.src = `assets/category_h_ujjwal/slide-${state.slideIndex + 1}.png?v=${slideAssetVersion}`;
       elements.slideImage.alt = `Category H PowerPoint slide ${state.slideIndex + 1}: ${slide.title}`;
       elements.keywordLine.textContent = slide.keywords.join("  •  ");
-      configureModelVoice();
+      if (elements.showModelVoice.checked) configureModelVoice();
       renderTimedScript(slide);
       elements.scriptArea.hidden = state.cueMode;
       elements.cuePractice.hidden = !state.cueMode;
@@ -764,6 +779,11 @@
       saveViewPreferences();
       setMenuOpen(false);
     });
+    elements.showModelVoice.addEventListener("change", () => {
+      updateModelVoiceVisibility();
+      saveViewPreferences();
+      setMenuOpen(false);
+    });
     document.addEventListener("click", (event) => {
       if (state.menuOpen && !elements.viewMenu.contains(event.target)) setMenuOpen(false);
     });
@@ -842,6 +862,7 @@
     loadViewPreferences();
     updateScriptOnlyView();
     updatePowerPointVisibility();
+    updateModelVoiceVisibility();
     render();
     updateTimer();
   </script>
