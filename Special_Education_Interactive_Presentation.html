@@ -95,6 +95,7 @@
     }
     .view-menu-panel[hidden] { display: none; }
     .view-menu-panel fieldset { margin: 0; padding: 0; border: 0; }
+    .view-menu-panel fieldset + fieldset { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--line); }
     .view-menu-panel legend { margin-bottom: 7px; color: var(--muted); font-size: 13px; font-weight: 650; }
     .view-option { display: flex; align-items: center; gap: 9px; min-height: 34px; cursor: pointer; }
     .view-option input { width: 17px; height: 17px; margin: 0; }
@@ -324,6 +325,10 @@
               <label class="view-option"><input type="checkbox" id="showModelVoice" checked> Model audio</label>
               <label class="view-option"><input type="checkbox" id="showRecorder" checked> Voice recording</label>
             </fieldset>
+            <fieldset>
+              <legend>Keyboard</legend>
+              <label class="view-option"><input type="checkbox" id="spaceNextPage"> Space advances page</label>
+            </fieldset>
           </div>
         </div>
       </div>
@@ -397,7 +402,7 @@
       </section>
     </section>
 
-    <p class="help">Keyboard: Left Arrow goes back; Right Arrow or Space advances. Mobile: at the top, swipe down to go back; at the bottom, swipe up to advance.</p>
+    <p class="help">Keyboard: Left Arrow goes back; Right Arrow advances. Space advances when enabled in the ☰ menu. Mobile: at the top, swipe down to go back; at the bottom, swipe up to advance.</p>
   </main>
 
   <script src="audio/special-education/special-education-timings.js"></script>
@@ -437,6 +442,7 @@
       modelVoiceSection: $("modelVoiceSection"), modelVoice: $("modelVoice"),
       modelVoiceDetails: $("modelVoiceDetails"), modelVoiceStatus: $("modelVoiceStatus"),
       recorderSection: $("recorderSection"), showModelVoice: $("showModelVoice"), showRecorder: $("showRecorder"),
+      spaceNextPage: $("spaceNextPage"),
       viewMenu: $("viewMenu"), viewMenuButton: $("viewMenuButton"), viewMenuPanel: $("viewMenuPanel"),
       recordState: $("recordState"), recordTime: $("recordTime"), recordButton: $("recordButton"),
       pauseButton: $("pauseButton"), stopButton: $("stopButton"), recordMessage: $("recordMessage"),
@@ -927,7 +933,7 @@
     document.addEventListener("keydown", (event) => {
       const tag = event.target?.tagName;
       if (["INPUT", "SELECT", "TEXTAREA", "BUTTON", "A", "AUDIO"].includes(tag) || event.target?.isContentEditable) return;
-      if (event.key === "ArrowRight" || event.code === "Space") {
+      if (event.key === "ArrowRight" || (event.code === "Space" && elements.spaceNextPage.checked)) {
         event.preventDefault();
         elements.nextSlide.click();
       }
