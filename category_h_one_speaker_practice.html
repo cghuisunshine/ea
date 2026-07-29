@@ -206,7 +206,7 @@
     <nav class="slide-nav" aria-label="Presentation slides">
       <h2>Presentation outline</h2>
       <ol class="slide-list" id="slideList"></ol>
-      <p class="nav-tip">Keyboard: ← previous · → or Space next</p>
+      <p class="nav-tip">Keyboard: ← previous · → or Space next · Tap page edges</p>
     </nav>
 
     <div>
@@ -350,7 +350,7 @@
       slideIndex: 0, cueMode: false, revealedLine: -1,
       timerRunning: false, timerStartedAt: 0, elapsedBeforeStart: 0, timerFrame: null,
       recorder: null, stream: null, chunks: [], recordingUrl: null,
-      touchNavigation: null, menuOpen: false
+      touchNavigation: null, edgeTap: null, menuOpen: false
     };
     const $ = (id) => document.getElementById(id);
     const elements = {
@@ -630,6 +630,31 @@
         navigate(state.slideIndex + 1);
       }
     });
+    document.addEventListener("pointerdown", (event) => {
+      if (!event.isPrimary || event.button !== 0 || state.menuOpen || touchStartedOnControl(event.target)) {
+        state.edgeTap = null;
+        return;
+      }
+      state.edgeTap = { x: event.clientX, y: event.clientY };
+    });
+    document.addEventListener("pointerup", (event) => {
+      const start = state.edgeTap;
+      state.edgeTap = null;
+      if (!start || !event.isPrimary || event.button !== 0) return;
+      const movedX = Math.abs(event.clientX - start.x);
+      const movedY = Math.abs(event.clientY - start.y);
+      if (movedX > 14 || movedY > 14) return;
+
+      const edgeWidth = Math.max(44, Math.min(96, window.innerWidth * 0.14));
+      if (start.x <= edgeWidth && state.slideIndex > 0) {
+        event.preventDefault();
+        navigate(state.slideIndex - 1);
+      } else if (start.x >= window.innerWidth - edgeWidth && state.slideIndex < slides.length - 1) {
+        event.preventDefault();
+        navigate(state.slideIndex + 1);
+      }
+    });
+    document.addEventListener("pointercancel", () => { state.edgeTap = null; });
     document.addEventListener("touchstart", (event) => {
       if (event.touches.length !== 1 || touchStartedOnControl(event.target)) {
         state.touchNavigation = null;
