@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="One-speaker rehearsal page for a six-slide Category H presentation about Liam O'Connor.">
+  <title>Category H — One-Speaker Practice</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f6f3ec;
+      --paper: #fffdf8;
+      --ink: #242522;
+      --muted: #696a64;
+      --line: #d9d3c7;
+      --line-strong: #aaa397;
+      --accent: #7d4037;
+      --accent-soft: #f2e4df;
+      --cue: #f4edcf;
+      --cue-line: #b08a2e;
+      --danger: #a23b32;
+      --focus: #c77d18;
+      --radius: 8px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font: 17px/1.6 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    }
+    button, input { font: inherit; }
+    button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+    [hidden] { display: none !important; }
+
+    .app-header { background: var(--paper); border-bottom: 1px solid var(--line); }
+    .header-inner, .toolbar-inner, .layout { width: min(1180px, calc(100% - 32px)); margin-inline: auto; }
+    .header-inner { padding: 20px 0 18px; }
+    h1 { margin: 0; font-size: clamp(1.45rem, 3vw, 2rem); line-height: 1.25; }
+    .subtitle { margin: 5px 0 0; color: var(--muted); }
+
+    .toolbar { position: sticky; z-index: 20; top: 0; background: rgba(255, 253, 248, .98); border-bottom: 1px solid var(--line); }
+    .toolbar-inner { min-height: 58px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 9px 0; }
+    .toolbar-spacer { flex: 1; }
+    .timer { min-width: 74px; font-size: 19px; font-variant-numeric: tabular-nums; font-weight: 750; text-align: center; }
+    .timer.is-over { color: var(--danger); }
+    .button {
+      min-height: 38px;
+      padding: 7px 12px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      background: var(--paper);
+      color: var(--ink);
+      cursor: pointer;
+      transition: background-color 140ms ease, border-color 140ms ease;
+    }
+    .button:hover:not(:disabled) { background: #eee9df; border-color: #827b70; }
+    .button.primary { background: var(--ink); border-color: var(--ink); color: white; }
+    .button.primary:hover:not(:disabled) { background: #41423e; }
+    .button.recording { background: var(--danger); border-color: var(--danger); color: white; }
+    .button:disabled { cursor: not-allowed; opacity: .5; }
+    .follow-timer { display: flex; align-items: center; gap: 7px; color: var(--muted); font-size: 14px; white-space: nowrap; }
+    .follow-timer input { width: 17px; height: 17px; }
+    .timer-track { height: 4px; background: #ded8cd; }
+    .timer-fill { width: 0; height: 100%; background: var(--accent); transition: width 250ms linear; }
+
+    .layout { margin-top: 24px; margin-bottom: 64px; display: grid; grid-template-columns: 225px minmax(0, 1fr); gap: 24px; align-items: start; }
+    .slide-nav, .practice-panel, .practice-note, .recording-panel { border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
+    .slide-nav { overflow: hidden; }
+    .slide-nav h2 { margin: 0; padding: 14px 15px 12px; border-bottom: 1px solid var(--line); font-size: 15px; }
+    .slide-list { list-style: none; margin: 0; padding: 0; }
+    .slide-list li + li { border-top: 1px solid var(--line); }
+    .slide-link { width: 100%; padding: 11px 13px; border: 0; background: transparent; color: var(--ink); cursor: pointer; text-align: left; }
+    .slide-link:hover { background: #f0ece3; }
+    .slide-link[aria-current="page"] { background: var(--accent-soft); box-shadow: inset 3px 0 var(--accent); }
+    .slide-number { display: block; color: var(--muted); font-size: 12px; }
+    .slide-name { display: block; margin-top: 1px; font-size: 14px; font-weight: 680; line-height: 1.35; }
+    .nav-tip { margin: 0; padding: 13px 15px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+
+    .practice-panel { overflow: hidden; }
+    .slide-heading { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: start; padding: 22px 24px 18px; border-bottom: 1px solid var(--line); }
+    .slide-heading h2 { margin: 0; font-size: clamp(1.3rem, 2.5vw, 1.75rem); line-height: 1.25; }
+    .slide-position { margin: 5px 0 0; color: var(--muted); font-size: 14px; }
+    .slide-time { color: var(--accent); font-variant-numeric: tabular-nums; font-weight: 750; white-space: nowrap; }
+    .slide-preview { margin: 0; border-bottom: 1px solid var(--line); background: #ece9e2; }
+    .slide-preview img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: white; }
+    .slide-preview figcaption { display: flex; justify-content: space-between; gap: 16px; padding: 8px 12px; color: var(--muted); font-size: 12px; }
+    .slide-preview a { color: var(--accent); font-weight: 700; }
+    .keywords { padding: 18px 24px; border-bottom: 1px solid #dfd2a9; background: var(--cue); }
+    .keywords h3 { margin: 0 0 7px; font-size: 14px; }
+    .keyword-line { margin: 0; font-size: clamp(1.05rem, 2.1vw, 1.35rem); font-weight: 720; line-height: 1.55; }
+    .script-area { padding: 10px 24px 18px; }
+    .script-line { position: relative; margin: 0; padding: 11px 0 11px 24px; border-bottom: 1px solid #ebe6dc; }
+    .script-line::before { content: ""; position: absolute; top: 1.05em; left: 3px; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+    .cue-practice { padding: 24px; text-align: center; }
+    .cue-instruction { margin: 0 auto 18px; max-width: 650px; color: var(--muted); }
+    .revealed-line { min-height: 92px; margin: 18px auto; padding: 16px 18px; border-left: 4px solid var(--cue-line); background: #fbf6e3; text-align: left; max-width: 720px; }
+    .reveal-count { color: var(--muted); font-size: 13px; }
+    .panel-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 24px; border-top: 1px solid var(--line); background: #faf8f2; }
+    .panel-actions-group { display: flex; gap: 8px; }
+    .slide-status { color: var(--muted); font-size: 14px; text-align: center; }
+
+    .practice-note, .recording-panel { margin-top: 18px; padding: 18px 20px; }
+    .practice-note h2, .recording-panel h2 { margin: 0 0 7px; font-size: 17px; }
+    .practice-note p, .recording-panel p { margin: 0; color: var(--muted); }
+    .recording-panel audio { display: block; width: 100%; margin-top: 12px; }
+    .download-link { display: inline-block; margin-top: 9px; color: var(--accent); font-weight: 700; }
+    .print-sheet { display: none; }
+
+    @media (max-width: 780px) {
+      body { font-size: 16px; }
+      .toolbar { position: static; }
+      .toolbar-spacer { display: none; }
+      .layout { grid-template-columns: 1fr; margin-top: 16px; }
+      .slide-nav h2, .nav-tip { display: none; }
+      .slide-list { display: flex; overflow-x: auto; }
+      .slide-list li { min-width: 122px; flex: 1 0 122px; }
+      .slide-list li + li { border-top: 0; border-left: 1px solid var(--line); }
+      .slide-link[aria-current="page"] { box-shadow: inset 0 -3px var(--accent); }
+      .slide-heading, .keywords, .script-area, .cue-practice, .panel-actions { padding-left: 18px; padding-right: 18px; }
+      .slide-status { display: none; }
+    }
+    @media (max-width: 520px) {
+      .header-inner, .toolbar-inner, .layout { width: min(100% - 20px, 1180px); }
+      .follow-timer { width: 100%; order: 2; }
+      .slide-heading { grid-template-columns: 1fr; gap: 6px; }
+      .panel-actions { flex-wrap: wrap; }
+      .panel-actions-group { width: 100%; }
+      .panel-actions .button { flex: 1; }
+    }
+    @media print {
+      body { background: white; color: black; font-size: 11pt; }
+      .app-header, .toolbar, .layout { display: none !important; }
+      .print-sheet { display: block; }
+      .print-slide { break-after: page; padding: 12mm; }
+      .print-slide:last-child { break-after: auto; }
+      .print-slide h2 { margin: 0 0 4px; }
+      .print-meta { margin: 0 0 12px; color: #555; }
+      .print-slide-image { display: block; width: 100%; margin: 0 0 12px; border: 1px solid #bbb; }
+      .print-keywords { padding: 9px 12px; border: 1px solid #bbb; font-weight: 700; }
+      .print-slide li { margin: 7px 0; }
+      .print-tip { padding: 12mm; border-top: 1px solid #bbb; }
+    }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <h1>Category H — One-Speaker Practice</h1>
+      <p class="subtitle">Liam O'Connor · Grade 10 · 6 slides · about 8 minutes</p>
+    </div>
+  </header>
+
+  <div class="toolbar" aria-label="Practice controls">
+    <div class="toolbar-inner">
+      <span class="timer" id="timer" aria-live="polite">00:00</span>
+      <button class="button primary" id="timerToggle" type="button">Start</button>
+      <button class="button" id="timerReset" type="button">Reset</button>
+      <label class="follow-timer"><input id="followTimer" type="checkbox" checked> Follow slide timings</label>
+      <span class="toolbar-spacer"></span>
+      <button class="button" id="modeToggle" type="button" aria-pressed="false">Cue mode</button>
+      <button class="button" id="recordToggle" type="button">Record voice</button>
+      <button class="button" type="button" onclick="window.print()">Print</button>
+    </div>
+    <div class="timer-track" aria-hidden="true"><div class="timer-fill" id="timerFill"></div></div>
+  </div>
+
+  <main class="layout">
+    <nav class="slide-nav" aria-label="Presentation slides">
+      <h2>Presentation outline</h2>
+      <ol class="slide-list" id="slideList"></ol>
+      <p class="nav-tip">Keyboard: ← previous · → next · Space start or pause</p>
+    </nav>
+
+    <div>
+      <article class="practice-panel" aria-labelledby="slideTitle">
+        <header class="slide-heading">
+          <div><h2 id="slideTitle"></h2><p class="slide-position" id="slidePosition"></p></div>
+          <span class="slide-time" id="slideTime"></span>
+        </header>
+        <figure class="slide-preview">
+          <img id="slideImage" src="assets/category_h_ujjwal/slide-1.png" alt="Category H PowerPoint slide 1">
+          <figcaption>
+            <span>Matching slide from Ujjwal Vashisht's PowerPoint</span>
+            <a href="Special_Education_Category_H_Liam_OConnor%20-%20Ujjwal%20Vashisht.pptx">Open PowerPoint</a>
+          </figcaption>
+        </figure>
+        <section class="keywords" aria-labelledby="keywordsTitle">
+          <h3 id="keywordsTitle">Key words — glance, then speak</h3>
+          <p class="keyword-line" id="keywordLine"></p>
+        </section>
+        <section class="script-area" id="scriptArea" aria-label="What to say"></section>
+        <section class="cue-practice" id="cuePractice" hidden>
+          <p class="cue-instruction">Say this slide in your own words using only the prompts above. Reveal one line at a time when you want to check yourself.</p>
+          <button class="button primary" id="revealNext" type="button">Reveal first line</button>
+          <div class="revealed-line" id="revealedLine" aria-live="polite">No lines revealed yet.</div>
+          <span class="reveal-count" id="revealCount"></span>
+        </section>
+        <footer class="panel-actions">
+          <div class="panel-actions-group">
+            <button class="button" id="previousSlide" type="button">Previous</button>
+            <button class="button" id="nextSlide" type="button">Next</button>
+          </div>
+          <span class="slide-status" id="slideStatus"></span>
+        </footer>
+      </article>
+
+      <section class="recording-panel" id="recordingPanel" hidden>
+        <h2>Your recording</h2>
+        <p id="recordingStatus">Your recording stays in this browser unless you download it.</p>
+        <audio id="recordingPlayback" controls></audio>
+        <a class="download-link" id="downloadRecording" href="#" download="category-h-practice.webm">Download recording</a>
+      </section>
+
+      <section class="practice-note">
+        <h2>Before you present</h2>
+        <p>Read it through twice with a timer. Pause after each slide changes. Look up at the end of every line — the pictures are doing half the work.</p>
+      </section>
+    </div>
+  </main>
+
+  <section class="print-sheet" id="printSheet" aria-label="Printable speaker script"></section>
+
+  <script>
+    const slides = [
+      {
+        title: "Title", timing: "0:00 – 0:45", start: 0, end: 45,
+        keywords: ["Category H", "not a real student", "four parts"],
+        lines: [
+          "Good morning. Our topic is Category H — Intensive Behaviour Intervention or Serious Mental Illness.",
+          "Our student is Liam O'Connor. He is in Grade 10.",
+          "Liam is not a real student. We made him up for this project.",
+          "I will cover four things: the category, his profile, how he learns, and his program.",
+          "One idea to hold on to. A category never tells you everything about a student."
+        ]
+      },
+      {
+        title: "Category H", timing: "0:45 – 2:15", start: 45, end: 135,
+        keywords: ["most support", "effect on learning", "three questions", "one plan"],
+        lines: [
+          "Category H is for students who need the most support at school.",
+          "It is used when a serious mental illness, or behaviour that keeps happening, makes learning very hard.",
+          "The category is about the effect on learning. It is not about how smart the student is.",
+          "Liam has bipolar I disorder. A psychiatrist made the diagnosis.",
+          "His mood, his sleep and his energy change a lot. Some weeks he is very low. Some weeks he is very high.",
+          "This affects his attendance, his focus and the choices he makes.",
+          "The school, his family and his doctors work from one plan.",
+          "We ask three questions. What can he already do? What is getting in the way? What support will help?",
+          "One more thing. A profile is short — one or two pages. It is for staff who help him now and then. It does not replace the IEP or the safety plan."
+        ]
+      },
+      {
+        title: "Strengths and Preferences, and Play", timing: "2:15 – 3:30", start: 135, end: 210,
+        keywords: ["writing", "guitar", "small team", "quiet space", "short lists"],
+        lines: [
+          "Start with what he can do.",
+          "Liam is a good writer. Writing shows what he knows better than speaking does.",
+          "He plays guitar and writes his own songs.",
+          "He works well with a small, steady team of adults he trusts.",
+          "He likes a quiet work space, the same adults, and the same routine.",
+          "He likes short lists. Two or three jobs, not a long one.",
+          "Play means his own time. He records songs at home, and music through headphones helps him settle.",
+          "He likes one or two friends, not a big group. He does not enjoy loud events like dances or assemblies.",
+          "So invite him to the small things, not the loud ones."
+        ]
+      },
+      {
+        title: "Communication", timing: "3:30 – 5:15", start: 210, end: 315,
+        keywords: ["receptive", "expressive", "1 to 5 scale", "break card"],
+        lines: [
+          "Communication has two sides.",
+          "Receptive is how he takes information in.",
+          "When he is well, he understands Grade 10 language easily. When he is tired or unwell, he understands less.",
+          "So use short, calm sentences. One instruction at a time. Write it down as well as saying it.",
+          "Give him time to answer.",
+          "No jokes or sarcasm when he is upset. He can take them the wrong way.",
+          "Expressive is how he tells us what he needs.",
+          "He talks and he writes. Writing is usually clearer for him.",
+          "He uses a scale from 1 to 5. One means he needs to leave now. Five means he is doing well.",
+          "He uses a break card. When it goes on his desk, say yes straight away.",
+          "When he is low he says very little. When he is high he talks fast.",
+          "Speak to Liam, not about him. Do not speak for him."
+        ]
+      },
+      {
+        title: "Learning Style", timing: "5:15 – 6:45", start: 315, end: 405,
+        keywords: ["struggle", "answer", "a plan, not a fault"],
+        lines: [
+          "Read this slide across. The struggle is on the left. What we do is on the right.",
+          "Has not slept well — so give him two or three jobs, not a long list.",
+          "Missed work all at once — so give it back a bit at a time, at his own speed.",
+          "Loud, crowded room — so let him use the quiet room, or headphones.",
+          "Instructions only spoken — so write them down, and cut big tasks into small steps.",
+          "Seen as bad behaviour — so follow the safety plan, stay calm, and talk to him in private.",
+          "The right column is a list of jobs for the adults.",
+          "These are not faults. They are barriers we can remove."
+        ]
+      },
+      {
+        title: "Other, and the program", timing: "6:45 – 8:15", start: 405, end: 495,
+        keywords: ["safety plan", "medicine", "EA role", "adapted"],
+        lines: [
+          "Other holds only the information that changes how we help him.",
+          "His doctors and the school work together.",
+          "He has a safety plan, and a plan for coming back to class.",
+          "His family and his doctors manage his medicine. School staff do not.",
+          "Risk is checked using his plan, not by a staff member guessing.",
+          "Now the EA. The EA does not diagnose and does not change the program.",
+          "The EA follows the teacher, the IEP and the safety plan.",
+          "Follow the plan and tell the named staff member. Stay calm. Write down what you saw, not what you think it meant.",
+          "Last question. Is his program adapted or modified?",
+          "Adapted keeps the same Grade 10 goals. What changes is how he learns.",
+          "Modified changes the goals themselves, and progress is measured against his own IEP goals.",
+          "Liam is on an adapted program. He gets a flexible timetable, extra time after he has been unwell, and a quiet room for tests.",
+          "We decide this by his learning goals in each subject, not by his category.",
+          "To finish. A good profile is short, clear and useful. It keeps high expectations and gives the right help. Thank you."
+        ]
+      }
+    ];
+
+    const totalSeconds = 495;
+    const state = {
+      slideIndex: 0, cueMode: false, revealedLine: -1,
+      timerRunning: false, timerStartedAt: 0, elapsedBeforeStart: 0, timerFrame: null,
+      recorder: null, stream: null, chunks: [], recordingUrl: null
+    };
+    const $ = (id) => document.getElementById(id);
+    const elements = {
+      slideList: $("slideList"), slideTitle: $("slideTitle"), slidePosition: $("slidePosition"),
+      slideTime: $("slideTime"), slideImage: $("slideImage"), keywordLine: $("keywordLine"), scriptArea: $("scriptArea"),
+      cuePractice: $("cuePractice"), revealedLine: $("revealedLine"), revealCount: $("revealCount"),
+      revealNext: $("revealNext"), previousSlide: $("previousSlide"), nextSlide: $("nextSlide"),
+      slideStatus: $("slideStatus"), modeToggle: $("modeToggle"), timer: $("timer"),
+      timerFill: $("timerFill"), timerToggle: $("timerToggle"), timerReset: $("timerReset"),
+      followTimer: $("followTimer"), recordToggle: $("recordToggle"), recordingPanel: $("recordingPanel"),
+      recordingStatus: $("recordingStatus"), recordingPlayback: $("recordingPlayback"),
+      downloadRecording: $("downloadRecording"), printSheet: $("printSheet")
+    };
+
+    const formatTime = (seconds) => {
+      const whole = Math.max(0, Math.floor(seconds));
+      return `${String(Math.floor(whole / 60)).padStart(2, "0")}:${String(whole % 60).padStart(2, "0")}`;
+    };
+    const currentElapsed = () => state.elapsedBeforeStart + (state.timerRunning ? (performance.now() - state.timerStartedAt) / 1000 : 0);
+    const slideForTime = (seconds) => {
+      const found = slides.findIndex((slide) => seconds >= slide.start && seconds < slide.end);
+      return found === -1 ? slides.length - 1 : found;
+    };
+
+    function buildNavigation() {
+      slides.forEach((slide, index) => {
+        const item = document.createElement("li");
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "slide-link";
+        button.innerHTML = `<span class="slide-number">Slide ${index + 1} · ${slide.timing}</span><span class="slide-name"></span>`;
+        button.querySelector(".slide-name").textContent = slide.title;
+        button.addEventListener("click", () => navigate(index));
+        item.append(button);
+        elements.slideList.append(item);
+      });
+    }
+
+    function renderReveal() {
+      const slide = slides[state.slideIndex];
+      if (state.revealedLine < 0) {
+        elements.revealedLine.textContent = "No lines revealed yet.";
+        elements.revealCount.textContent = `${slide.lines.length} lines to check`;
+        elements.revealNext.textContent = "Reveal first line";
+      } else {
+        elements.revealedLine.textContent = slide.lines[state.revealedLine];
+        elements.revealCount.textContent = `Line ${state.revealedLine + 1} of ${slide.lines.length}`;
+        elements.revealNext.textContent = state.revealedLine === slide.lines.length - 1 ? "Start lines again" : "Reveal next line";
+      }
+    }
+
+    function render() {
+      const slide = slides[state.slideIndex];
+      elements.slideTitle.textContent = slide.title;
+      elements.slidePosition.textContent = `Slide ${state.slideIndex + 1} of ${slides.length}`;
+      elements.slideTime.textContent = slide.timing;
+      elements.slideImage.src = `assets/category_h_ujjwal/slide-${state.slideIndex + 1}.png`;
+      elements.slideImage.alt = `Category H PowerPoint slide ${state.slideIndex + 1}: ${slide.title}`;
+      elements.keywordLine.textContent = slide.keywords.join("  •  ");
+      elements.scriptArea.innerHTML = "";
+      slide.lines.forEach((line) => {
+        const paragraph = document.createElement("p");
+        paragraph.className = "script-line";
+        paragraph.textContent = line;
+        elements.scriptArea.append(paragraph);
+      });
+      elements.scriptArea.hidden = state.cueMode;
+      elements.cuePractice.hidden = !state.cueMode;
+      elements.modeToggle.textContent = state.cueMode ? "Show full script" : "Cue mode";
+      elements.modeToggle.setAttribute("aria-pressed", String(state.cueMode));
+      elements.previousSlide.disabled = state.slideIndex === 0;
+      elements.nextSlide.disabled = state.slideIndex === slides.length - 1;
+      elements.nextSlide.textContent = state.slideIndex === slides.length - 1 ? "Last slide" : "Next";
+      elements.slideStatus.textContent = `${slide.end - slide.start} seconds planned`;
+      [...elements.slideList.querySelectorAll(".slide-link")].forEach((button, index) => {
+        if (index === state.slideIndex) button.setAttribute("aria-current", "page");
+        else button.removeAttribute("aria-current");
+      });
+      renderReveal();
+      document.title = `Slide ${state.slideIndex + 1}: ${slide.title} — Category H Practice`;
+    }
+
+    function navigate(index, fromTimer = false) {
+      if (index < 0 || index >= slides.length || index === state.slideIndex) return;
+      state.slideIndex = index;
+      state.revealedLine = -1;
+      render();
+      if (!fromTimer) document.querySelector(".practice-panel").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function updateTimer() {
+      const elapsed = currentElapsed();
+      elements.timer.textContent = formatTime(elapsed);
+      elements.timer.classList.toggle("is-over", elapsed > totalSeconds);
+      elements.timerFill.style.width = `${Math.min(100, elapsed / totalSeconds * 100)}%`;
+      if (elements.followTimer.checked && state.timerRunning) navigate(slideForTime(elapsed), true);
+      if (state.timerRunning) state.timerFrame = requestAnimationFrame(updateTimer);
+    }
+
+    function toggleTimer() {
+      if (state.timerRunning) {
+        state.elapsedBeforeStart = currentElapsed();
+        state.timerRunning = false;
+        cancelAnimationFrame(state.timerFrame);
+        elements.timerToggle.textContent = "Resume";
+        elements.timerToggle.classList.remove("primary");
+      } else {
+        state.timerStartedAt = performance.now();
+        state.timerRunning = true;
+        elements.timerToggle.textContent = "Pause";
+        elements.timerToggle.classList.add("primary");
+        updateTimer();
+      }
+    }
+
+    function resetTimer() {
+      state.timerRunning = false;
+      cancelAnimationFrame(state.timerFrame);
+      state.elapsedBeforeStart = 0;
+      elements.timerToggle.textContent = "Start";
+      elements.timerToggle.classList.add("primary");
+      if (elements.followTimer.checked) navigate(0, true);
+      updateTimer();
+    }
+
+    async function toggleRecording() {
+      if (state.recorder && state.recorder.state !== "inactive") {
+        state.recorder.stop();
+        elements.recordToggle.textContent = "Record voice";
+        elements.recordToggle.classList.remove("recording");
+        return;
+      }
+      if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
+        elements.recordingPanel.hidden = false;
+        elements.recordingStatus.textContent = "Voice recording is not supported in this browser.";
+        return;
+      }
+      try {
+        state.stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        state.chunks = [];
+        state.recorder = new MediaRecorder(state.stream);
+        state.recorder.addEventListener("dataavailable", (event) => { if (event.data.size) state.chunks.push(event.data); });
+        state.recorder.addEventListener("stop", saveRecording, { once: true });
+        state.recorder.start();
+        elements.recordToggle.textContent = "Stop recording";
+        elements.recordToggle.classList.add("recording");
+        elements.recordingPanel.hidden = false;
+        elements.recordingStatus.textContent = "Recording now. Present all six slides, then press Stop recording.";
+      } catch (error) {
+        elements.recordingPanel.hidden = false;
+        elements.recordingStatus.textContent = "Microphone access was not available. Check the browser permission and try again.";
+      }
+    }
+
+    function saveRecording() {
+      const mimeType = state.recorder?.mimeType || "audio/webm";
+      const extension = mimeType.includes("mp4") ? "m4a" : "webm";
+      const blob = new Blob(state.chunks, { type: mimeType });
+      if (state.recordingUrl) URL.revokeObjectURL(state.recordingUrl);
+      state.recordingUrl = URL.createObjectURL(blob);
+      elements.recordingPlayback.src = state.recordingUrl;
+      elements.downloadRecording.href = state.recordingUrl;
+      elements.downloadRecording.download = `category-h-practice.${extension}`;
+      elements.recordingStatus.textContent = "Recording ready. Listen here or download a copy.";
+      elements.recordingPanel.hidden = false;
+      state.stream?.getTracks().forEach((track) => track.stop());
+      state.stream = null;
+    }
+
+    function buildPrintSheet() {
+      const heading = document.createElement("section");
+      heading.className = "print-slide";
+      heading.innerHTML = "<h1>Category H — One-Speaker Script</h1><p>Liam O'Connor · Grade 10 · 6 slides · about 8 minutes</p><p><strong>How to use this:</strong> The key words are your prompt — glance at them, then speak. The lines underneath are what to say. Say them in your own words. Do not read the slide out loud; the slide has the pictures, you have the words.</p>";
+      elements.printSheet.append(heading);
+      slides.forEach((slide, index) => {
+        const section = document.createElement("section");
+        section.className = "print-slide";
+        const title = document.createElement("h2");
+        title.textContent = `Slide ${index + 1} — ${slide.title}`;
+        const meta = document.createElement("p");
+        meta.className = "print-meta";
+        meta.textContent = slide.timing;
+        const keywords = document.createElement("p");
+        keywords.className = "print-keywords";
+        keywords.textContent = `Key words: ${slide.keywords.join(" • ")}`;
+        const image = document.createElement("img");
+        image.className = "print-slide-image";
+        image.src = `assets/category_h_ujjwal/slide-${index + 1}.png`;
+        image.alt = `PowerPoint slide ${index + 1}: ${slide.title}`;
+        const list = document.createElement("ul");
+        slide.lines.forEach((line) => {
+          const item = document.createElement("li");
+          item.textContent = line;
+          list.append(item);
+        });
+        section.append(title, meta, image, keywords, list);
+        elements.printSheet.append(section);
+      });
+      const tip = document.createElement("p");
+      tip.className = "print-tip";
+      tip.textContent = "Before you present: read it through twice with a timer. Pause after each slide changes. Look up at the end of every line — the pictures are doing half the work.";
+      elements.printSheet.append(tip);
+    }
+
+    elements.previousSlide.addEventListener("click", () => navigate(state.slideIndex - 1));
+    elements.nextSlide.addEventListener("click", () => navigate(state.slideIndex + 1));
+    elements.modeToggle.addEventListener("click", () => { state.cueMode = !state.cueMode; state.revealedLine = -1; render(); });
+    elements.revealNext.addEventListener("click", () => {
+      const lastIndex = slides[state.slideIndex].lines.length - 1;
+      state.revealedLine = state.revealedLine >= lastIndex ? 0 : state.revealedLine + 1;
+      renderReveal();
+    });
+    elements.timerToggle.addEventListener("click", toggleTimer);
+    elements.timerReset.addEventListener("click", resetTimer);
+    elements.recordToggle.addEventListener("click", toggleRecording);
+    document.addEventListener("keydown", (event) => {
+      if (event.target.matches("button, input, audio")) return;
+      if (event.key === "ArrowLeft") navigate(state.slideIndex - 1);
+      if (event.key === "ArrowRight") navigate(state.slideIndex + 1);
+      if (event.code === "Space") { event.preventDefault(); toggleTimer(); }
+    });
+
+    buildNavigation();
+    buildPrintSheet();
+    render();
+    updateTimer();
+  </script>
+</body>
+</html>
