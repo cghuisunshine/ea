@@ -355,12 +355,25 @@
       max-width: 1180px;
       margin: 0 auto;
       padding: 12px 24px;
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
       gap: 12px;
     }
 
     .page-navigation button {
+      min-width: 132px;
+    }
+
+    .page-navigation #prevBtn {
+      justify-self: start;
+    }
+
+    .page-navigation #nextBtn {
+      justify-self: end;
+    }
+
+    .page-navigation #viewMode {
       min-width: 132px;
     }
 
@@ -389,7 +402,10 @@
         padding: 10px 12px;
       }
       .page-navigation button {
-        flex: 1;
+        width: 100%;
+        min-width: 0;
+      }
+      .page-navigation #viewMode {
         min-width: 0;
       }
     }
@@ -440,8 +456,6 @@
           <option value="2026-11-01">November 2026</option>
           <option value="2026-12-01">December 2026</option>
         </select>
-        <button id="weekMode" aria-pressed="false">Week view</button>
-        <button id="monthMode" aria-pressed="true">Month view</button>
         <button onclick="window.print()">Print</button>
       </div>
     </header>
@@ -470,6 +484,10 @@
   <nav class="page-navigation" aria-label="Calendar period navigation">
     <div class="page-navigation-inner">
       <button id="prevBtn">‹ Previous</button>
+      <select id="viewMode" aria-label="Calendar view">
+        <option value="month" selected>Month view</option>
+        <option value="week">Week view</option>
+      </select>
       <button id="nextBtn">Next ›</button>
     </div>
   </nav>
@@ -1678,8 +1696,7 @@
     }
 
     function render() {
-      document.getElementById("weekMode").setAttribute("aria-pressed", String(view === "week"));
-      document.getElementById("monthMode").setAttribute("aria-pressed", String(view === "month"));
+      document.getElementById("viewMode").value = view;
       document.getElementById("todayLabel").textContent = `Today: ${formatFullDate(getDefaultDate())}`;
 
       if (view === "week") {
@@ -1798,13 +1815,8 @@
       render();
     });
 
-    document.getElementById("weekMode").addEventListener("click", () => {
-      view = "week";
-      render();
-    });
-
-    document.getElementById("monthMode").addEventListener("click", () => {
-      view = "month";
+    document.getElementById("viewMode").addEventListener("change", (event) => {
+      view = event.target.value;
       render();
     });
 
