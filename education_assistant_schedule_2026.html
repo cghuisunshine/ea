@@ -487,6 +487,7 @@
       <select id="viewMode" aria-label="Calendar view">
         <option value="month" selected>Month view</option>
         <option value="week">Week view</option>
+        <option value="today-week">Today's week</option>
       </select>
       <button id="nextBtn">Next ›</button>
     </div>
@@ -1816,7 +1817,12 @@
     });
 
     document.getElementById("viewMode").addEventListener("change", (event) => {
-      view = event.target.value;
+      if (event.target.value === "today-week") {
+        anchorDate = getDefaultDate();
+        view = "week";
+      } else {
+        view = event.target.value;
+      }
       render();
     });
 
