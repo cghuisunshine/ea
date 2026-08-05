@@ -38,7 +38,7 @@
         radial-gradient(circle at top left, rgba(111, 29, 27, 0.08), transparent 32rem),
         linear-gradient(180deg, var(--bg), #ede6dc);
       min-height: 100vh;
-      padding: 24px;
+      padding: 24px 24px 96px;
     }
 
     .app {
@@ -340,8 +340,32 @@
       line-height: 1.5;
     }
 
+    .page-navigation {
+      position: fixed;
+      z-index: 20;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-top: 1px solid var(--line);
+      background: rgba(255, 253, 249, 0.96);
+      box-shadow: 0 -2px 8px rgba(44, 36, 26, 0.08);
+    }
+
+    .page-navigation-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .page-navigation button {
+      min-width: 132px;
+    }
+
     @media (max-width: 840px) {
-      body { padding: 12px; }
+      body { padding: 12px 12px 88px; }
       header { padding: 16px; }
       .week-grid, .month-grid {
         grid-template-columns: 1fr;
@@ -361,6 +385,13 @@
       select {
         width: 100%;
       }
+      .page-navigation-inner {
+        padding: 10px 12px;
+      }
+      .page-navigation button {
+        flex: 1;
+        min-width: 0;
+      }
     }
 
     @media print {
@@ -371,7 +402,7 @@
       header, .day {
         box-shadow: none;
       }
-      .controls, .legend, .footer {
+      .controls, .legend, .footer, .page-navigation {
         display: none;
       }
       .day.today {
@@ -401,8 +432,6 @@
 
       <div class="controls" aria-label="Calendar controls">
         <button class="primary" id="todayBtn">Today / Current Week</button>
-        <button id="prevBtn">‹ Previous</button>
-        <button id="nextBtn">Next ›</button>
         <select id="monthSelect" aria-label="Jump to month">
           <option value="2026-07-01">July 2026</option>
           <option value="2026-08-01">August 2026</option>
@@ -411,8 +440,8 @@
           <option value="2026-11-01">November 2026</option>
           <option value="2026-12-01">December 2026</option>
         </select>
-        <button id="weekMode" aria-pressed="true">Week view</button>
-        <button id="monthMode" aria-pressed="false">Month view</button>
+        <button id="weekMode" aria-pressed="false">Week view</button>
+        <button id="monthMode" aria-pressed="true">Month view</button>
         <button onclick="window.print()">Print</button>
       </div>
     </header>
@@ -434,9 +463,16 @@
     </div>
 
     <p class="footer">
-      Converted from the photographed monthly CCE schedules. The page opens to the current week by default and highlights today's date automatically.
+      Converted from the photographed monthly CCE schedules. The page opens to the current month by default and highlights today's date automatically.
     </p>
   </div>
+
+  <nav class="page-navigation" aria-label="Calendar period navigation">
+    <div class="page-navigation-inner">
+      <button id="prevBtn">‹ Previous</button>
+      <button id="nextBtn">Next ›</button>
+    </div>
+  </nav>
 
   <script>
     const EVENTS = [
@@ -1574,7 +1610,7 @@
       "July", "August", "September", "October", "November", "December"
     ];
 
-    let view = "week";
+    let view = "month";
     let anchorDate = getDefaultDate();
 
     function getDefaultDate() {
