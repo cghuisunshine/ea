@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A classroom presentation script explaining Andy's visual support for loud or overwhelming situations.">
+  <title>Andy’s Visual Support — Presentation Script</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #faf8f5;
+      --paper: #ffffff;
+      --ink: #35281f;
+      --muted: #695a50;
+      --line: #ded5cc;
+      --primary: #8a4b20;
+      --primary-dark: #623315;
+      --soft: #f6ede4;
+      --soft-strong: #eddcc9;
+      --focus: #8a4b20;
+      --content-size: 1.08rem;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: ui-rounded, "SF Pro Rounded", "Avenir Next", Avenir, system-ui, sans-serif;
+      font-size: var(--content-size);
+      line-height: 1.68;
+      text-rendering: optimizeLegibility;
+    }
+
+    body.large-text {
+      --content-size: 1.27rem;
+    }
+
+    a {
+      color: var(--primary-dark);
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 10;
+      top: 12px;
+      left: 12px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      background: var(--ink);
+      color: #fff;
+      transform: translateY(-160%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .page-header {
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .header-inner,
+    main {
+      width: min(100% - 40px, 900px);
+      margin-inline: auto;
+    }
+
+    .header-inner {
+      padding: 44px 0 36px;
+    }
+
+    h1,
+    h2 {
+      margin-top: 0;
+      color: var(--ink);
+      line-height: 1.22;
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 14px;
+      font-size: clamp(2rem, 5vw, 3.35rem);
+      letter-spacing: -0.035em;
+    }
+
+    h2 {
+      margin-bottom: 14px;
+      font-size: clamp(1.42rem, 3vw, 1.9rem);
+      letter-spacing: -0.018em;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    .intro {
+      max-width: 720px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.1em;
+    }
+
+    .toolbar {
+      border-bottom: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .toolbar-inner {
+      display: flex;
+      width: min(100% - 40px, 900px);
+      min-height: 58px;
+      margin-inline: auto;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .section-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      font-size: 0.88em;
+    }
+
+    .section-links a {
+      color: var(--ink);
+      font-weight: 650;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+
+    .tools {
+      display: flex;
+      flex: 0 0 auto;
+      gap: 8px;
+    }
+
+    .tool-button {
+      min-height: 38px;
+      padding: 7px 11px;
+      border: 1px solid #9c8a7c;
+      border-radius: 8px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.84em;
+      font-weight: 650;
+      cursor: pointer;
+    }
+
+    .tool-button:hover {
+      border-color: var(--primary);
+      color: var(--primary-dark);
+    }
+
+    main {
+      padding: 20px 0 64px;
+    }
+
+    section {
+      padding: 34px 0;
+      border-bottom: 1px solid var(--line);
+      scroll-margin-top: 20px;
+    }
+
+    section:last-child {
+      border-bottom: 0;
+    }
+
+    .lead {
+      max-width: 790px;
+      font-size: 1.08em;
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .choice-group {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--paper);
+    }
+
+    .choice-group h3 {
+      margin: 0 0 12px;
+      font-size: 1.05em;
+      line-height: 1.3;
+    }
+
+    ul,
+    ol {
+      margin: 0;
+      padding-left: 1.4em;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    .examples {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 24px 0 0;
+    }
+
+    .phrase {
+      margin: 0;
+      padding: 16px 18px;
+      border-left: 5px solid var(--primary);
+      background: var(--soft);
+      font-size: 1.05em;
+      font-weight: 720;
+      line-height: 1.45;
+    }
+
+    .note {
+      margin-top: 22px;
+      padding: 18px 20px;
+      border: 1px solid #d2b491;
+      border-radius: 8px;
+      background: #fff8ec;
+    }
+
+    .note strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--primary-dark);
+    }
+
+    .steps {
+      display: grid;
+      gap: 10px;
+      margin-top: 22px;
+      padding: 0;
+      list-style: none;
+      counter-reset: steps;
+    }
+
+    .steps li {
+      display: grid;
+      grid-template-columns: 2.2rem 1fr;
+      gap: 12px;
+      align-items: start;
+      margin: 0;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+      counter-increment: steps;
+    }
+
+    .steps li:last-child {
+      border-bottom: 0;
+    }
+
+    .steps li::before {
+      display: grid;
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 50%;
+      background: var(--soft-strong);
+      color: var(--primary-dark);
+      content: counter(steps);
+      font-weight: 750;
+      place-items: center;
+    }
+
+    .goal-statement {
+      margin: 22px 0 14px;
+      padding: 22px;
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      background: var(--paper);
+      color: var(--primary-dark);
+      font-size: clamp(1.15em, 3vw, 1.35em);
+      font-weight: 750;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .closing {
+      color: var(--muted);
+    }
+
+    @media (max-width: 720px) {
+      .header-inner,
+      main,
+      .toolbar-inner {
+        width: min(100% - 28px, 900px);
+      }
+
+      .header-inner {
+        padding: 32px 0 28px;
+      }
+
+      .toolbar-inner {
+        padding: 10px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .choice-grid,
+      .examples {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 28px 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 16mm;
+      }
+
+      :root,
+      body.large-text {
+        --content-size: 11.5pt;
+      }
+
+      body {
+        background: #fff;
+        color: #000;
+      }
+
+      .toolbar,
+      .skip-link {
+        display: none;
+      }
+
+      .page-header {
+        border-bottom: 2px solid #000;
+      }
+
+      .header-inner,
+      main {
+        width: 100%;
+      }
+
+      .header-inner {
+        padding: 0 0 20px;
+      }
+
+      main {
+        padding: 0;
+      }
+
+      section {
+        padding: 22px 0;
+        break-inside: avoid;
+      }
+
+      .choice-group,
+      .note,
+      .goal-statement,
+      .phrase {
+        background: #fff;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to the presentation script</a>
+
+  <header class="page-header">
+    <div class="header-inner">
+      <h1>Visual Support for Andy – “It’s Too Loud!”</h1>
+      <p class="intro">A presentation script about helping Andy identify his feelings, communicate what he needs, and choose a safe support option.</p>
+    </div>
+  </header>
+
+  <div class="toolbar" aria-label="Presentation tools">
+    <div class="toolbar-inner">
+      <nav class="section-links" aria-label="Page sections">
+        <a href="#how">How Andy uses it</a>
+        <a href="#why">Why it helps</a>
+        <a href="#implementation">Implementation</a>
+        <a href="#goal">Goal</a>
+      </nav>
+      <div class="tools">
+        <button class="tool-button" id="text-size-button" type="button" aria-pressed="false">Larger text</button>
+        <button class="tool-button" id="print-button" type="button">Print</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <section id="how" aria-labelledby="how-heading">
+      <h2 id="how-heading">How Andy uses it</h2>
+      <p class="lead">When Andy is upset or overwhelmed, he can first point to how he is feeling. Then, instead of leaving the classroom without asking, he can choose one of the support options.</p>
+
+      <div class="choice-grid">
+        <div class="choice-group">
+          <h3>1. Choose a feeling</h3>
+          <ul>
+            <li>Bored</li>
+            <li>Happy</li>
+            <li>Nervous</li>
+            <li>Mad</li>
+            <li>Sad</li>
+          </ul>
+        </div>
+
+        <div class="choice-group">
+          <h3>2. Choose what would help</h3>
+          <ul>
+            <li>Take a break</li>
+            <li>Go for a walk</li>
+            <li>Have a snack</li>
+            <li>Use headphones</li>
+            <li>Read a superhero book</li>
+            <li>Ask for support</li>
+            <li>Use the bathroom</li>
+            <li>Go to the sensory room</li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="margin-top: 22px;">The large box in the middle of the visual can show the feeling and the option Andy chooses. For example:</p>
+
+      <div class="examples" aria-label="Example phrases">
+        <p class="phrase">“I feel nervous → I need headphones.”</p>
+        <p class="phrase">“I feel mad → I need a break.”</p>
+      </div>
+
+      <aside class="note" aria-label="Suggested communication button">
+        <strong>Helpful addition</strong>
+        Add one clear, easy-to-find button that says <b>“I need a break”</b> or <b>“Too loud.”</b> This gives Andy a quick way to communicate when choosing from several options feels difficult.
+      </aside>
+    </section>
+
+    <section id="why" aria-labelledby="why-heading">
+      <h2 id="why-heading">Why it will help Andy</h2>
+      <p>Andy uses an iPad to communicate, becomes nervous when many people are around him, and may leave the room when it becomes too loud. This visual gives him an easy way to communicate before he becomes overwhelmed.</p>
+      <p>It also includes things Andy already likes. Cucumbers and cheese can be represented in the snack option, and superheroes are included as a calming activity. These familiar choices make the visual more personal and meaningful to him.</p>
+    </section>
+
+    <section id="implementation" aria-labelledby="implementation-heading">
+      <h2 id="implementation-heading">How we would implement it</h2>
+      <p>We would teach Andy how to use the board while he is calm, rather than introducing it only when he is already upset.</p>
+
+      <ol class="steps">
+        <li><span>An adult models the first question: <b>“Andy, how are you feeling? Choose one.”</b></span></li>
+        <li><span>The adult asks: <b>“What would help you?”</b></span></li>
+        <li><span>Andy chooses a feeling and then selects a support option.</span></li>
+        <li><span>The adult acknowledges his choice and helps him access the appropriate support.</span></li>
+        <li><span>We practise the routine regularly so Andy can use it more independently over time.</span></li>
+      </ol>
+    </section>
+
+    <section id="goal" aria-labelledby="goal-heading">
+      <h2 id="goal-heading">Goal</h2>
+      <p>The goal is for Andy to recognize when he is becoming overwhelmed and use communication before leaving the room.</p>
+      <p class="goal-statement">“I’m becoming overwhelmed → I communicate how I feel → I choose what I need → I stay safe.”</p>
+      <p class="closing">This approach respects Andy’s need for relief from noise while teaching a safe, clear, and socially appropriate way to ask for help.</p>
+    </section>
+  </main>
+
+  <script>
+    const textSizeButton = document.querySelector('#text-size-button');
+    const printButton = document.querySelector('#print-button');
+
+    textSizeButton.addEventListener('click', () => {
+      const isLarge = document.body.classList.toggle('large-text');
+      textSizeButton.setAttribute('aria-pressed', String(isLarge));
+      textSizeButton.textContent = isLarge ? 'Standard text' : 'Larger text';
+    });
+
+    printButton.addEventListener('click', () => window.print());
+  </script>
+</body>
+</html>
