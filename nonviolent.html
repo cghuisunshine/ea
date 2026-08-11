@@ -1,0 +1,727 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nonviolent Crisis Intervention® 3rd Edition — Detailed Study Tutorial</title>
+<style>
+:root{
+  --bg:#f6f8fc; --panel:#ffffff; --ink:#172033; --muted:#5d687c;
+  --navy:#263f8f; --blue:#2ba7d8; --orange:#f39a22; --green:#2f8f62;
+  --red:#b74f57; --line:#dce3ee; --soft:#edf3fb; --shadow:0 12px 35px rgba(31,52,110,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+a{color:var(--navy)}
+.hero{background:linear-gradient(135deg,#243b86,#3153b8);color:white;padding:54px 24px 42px}
+.hero-inner{max-width:1180px;margin:auto}
+.eyebrow{font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#aee5f8;font-size:.82rem}
+h1{font-size:clamp(2rem,4vw,3.7rem);line-height:1.05;margin:.3rem 0 1rem;max-width:1000px}
+.hero p{font-size:1.08rem;max-width:950px;color:#eef4ff}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.badge{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);padding:7px 11px;border-radius:999px;font-size:.88rem}
+.wrap{max-width:1180px;margin:0 auto;padding:24px}
+.layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:24px;align-items:start}
+aside{position:sticky;top:16px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow);max-height:calc(100vh - 32px);overflow:auto}
+aside h3{margin:0 0 10px;font-size:1rem;color:var(--navy)}
+aside a{display:block;text-decoration:none;color:var(--ink);padding:7px 8px;border-radius:8px;font-size:.92rem}
+aside a:hover{background:var(--soft);color:var(--navy)}
+main{min-width:0}
+section{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px;margin-bottom:22px;box-shadow:var(--shadow)}
+h2{font-size:1.7rem;color:var(--navy);margin:.1rem 0 1rem;line-height:1.2}
+h3{color:#243b86;margin:1.4rem 0 .55rem}
+h4{margin:1.1rem 0 .45rem}
+p{margin:.55rem 0}
+.lead{font-size:1.05rem;color:#33415d}
+.callout{border-left:5px solid var(--blue);background:#eff9fd;padding:14px 16px;border-radius:0 12px 12px 0;margin:16px 0}
+.warn{border-left-color:var(--orange);background:#fff7eb}
+.safe{border-left-color:var(--green);background:#eef9f4}
+.danger{border-left-color:var(--red);background:#fff1f2}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:14px 0}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:14px 0}
+.card{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff}
+.card strong{color:var(--navy)}
+.small{font-size:.9rem;color:var(--muted)}
+.key{display:inline-block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#eef1f7;border:1px solid #d7deea;padding:1px 6px;border-radius:6px;font-size:.9em}
+.flow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:16px 0}
+.flow span{background:#eef3ff;border:1px solid #ccd8fb;padding:8px 11px;border-radius:10px;font-weight:700;color:#243b86}
+.flow b{color:#8390a8}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:11px;vertical-align:top;text-align:left}
+th{background:#edf3fb;color:#243b86}
+tr:nth-child(even) td{background:#fbfcff}
+.example{border:1px solid #d9e6f4;background:#fbfdff;border-radius:14px;padding:16px;margin:14px 0}
+.example h4{margin-top:0;color:#243b86}
+.dialogue{margin:8px 0;padding-left:12px;border-left:3px solid #d4dceb}
+.dialogue .person{font-weight:800}
+.good{color:#1d7b51;font-weight:700}
+.poor{color:#a24049;font-weight:700}
+.quiz{border:1px solid #dfe4ed;background:#fafbfe;border-radius:14px;padding:16px;margin:16px 0}
+.quiz button{border:0;border-radius:9px;background:var(--navy);color:white;padding:9px 13px;cursor:pointer;font-weight:700}
+.answer{display:none;margin-top:12px;padding:12px;border-radius:10px;background:#eef8f3;border-left:4px solid var(--green)}
+.answer.show{display:block}
+.checklist{columns:2;column-gap:28px}
+.checklist li{break-inside:avoid;margin:.35rem 0}
+.progress{height:9px;background:#e7ebf2;border-radius:99px;overflow:hidden;margin:12px 0 18px}
+.progress div{height:100%;width:0;background:linear-gradient(90deg,#2ba7d8,#263f8f);transition:.25s}
+.topbtn{position:fixed;right:18px;bottom:18px;background:#263f8f;color:white;text-decoration:none;padding:10px 13px;border-radius:999px;box-shadow:var(--shadow);font-size:.9rem}
+footer{max-width:1180px;margin:12px auto 50px;padding:0 24px;color:#606a7d;font-size:.9rem}
+.module-tag{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:#66728b;font-weight:800}
+.term{border-bottom:1px dotted #8090aa;cursor:help}
+@media(max-width:900px){
+  .layout{grid-template-columns:1fr}
+  aside{position:static;max-height:none}
+  .grid2,.grid3{grid-template-columns:1fr}
+  .checklist{columns:1}
+}
+@media print{
+  aside,.topbtn,.quiz button{display:none!important}
+  body{background:white}
+  section{box-shadow:none;break-inside:avoid}
+  .answer{display:block!important}
+}
+</style>
+</head>
+<body id="top">
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Independent study tutorial • based on the CPI content outline</div>
+    <h1>Nonviolent Crisis Intervention® Training, 3rd Edition</h1>
+    <p>A detailed, example-rich tutorial for understanding the seven core modules, applying de-escalation concepts, assessing risk, responding to defensive behavior, and learning after a crisis.</p>
+    <div class="badges">
+      <span class="badge">7 core modules</span>
+      <span class="badge">Worked scenarios + solutions</span>
+      <span class="badge">Education / support-work examples</span>
+      <span class="badge">Interactive self-checks</span>
+      <span class="badge">Physical skills kept non-procedural</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="layout">
+    <aside>
+      <h3>Study Navigation</h3>
+      <a href="#how">How to use this tutorial</a>
+      <a href="#big-picture">Big picture</a>
+      <a href="#m1">1. Behavior & Risk</a>
+      <a href="#m2">2. Crisis Development Model</a>
+      <a href="#m3">3. Integrated Experience</a>
+      <a href="#m4">4. Supportive Communication</a>
+      <a href="#m5">5. Defensive Behaviors</a>
+      <a href="#m6">6. Safety Interventions</a>
+      <a href="#m7">7. Post-Crisis</a>
+      <a href="#physical">Physical Skills: what to know</a>
+      <a href="#instructor">Instructor-training outline</a>
+      <a href="#cases">Integrated case studies</a>
+      <a href="#exam">Practice assessment</a>
+      <a href="#cheat">One-page mental model</a>
+      <a href="#sources">Sources & disclaimer</a>
+    </aside>
+
+    <main>
+      <section id="how">
+        <h2>How to use this tutorial</h2>
+        <p class="lead">The goal is not to memorize isolated definitions. The goal is to learn a decision process you can apply while another person is distressed.</p>
+        <div class="flow">
+          <span>Observe behavior</span><b>→</b><span>Look for causes</span><b>→</b><span>Assess risk</span><b>→</b><span>Match your response</span><b>→</b><span>Reassess</span><b>→</b><span>Recover & learn</span>
+        </div>
+        <div class="callout warn">
+          <strong>Important:</strong> This page is an independent study aid, not an official CPI course, certification, or substitute for employer policy. It intentionally does not teach physical disengagement or restraint maneuvers. Those require authorized hands-on instruction, competency assessment, local policy, and legal/professional oversight.
+        </div>
+        <h3>Three study passes</h3>
+        <div class="grid3">
+          <div class="card"><strong>Pass 1 — Recognition</strong><p>Learn the vocabulary and identify the behavior level.</p></div>
+          <div class="card"><strong>Pass 2 — Response</strong><p>For every example, decide what staff should do and what they should avoid.</p></div>
+          <div class="card"><strong>Pass 3 — Reasoning</strong><p>Explain <em>why</em> the response fits the risk and the person’s current level.</p></div>
+        </div>
+      </section>
+
+      <section id="big-picture">
+        <h2>The big picture: prevention before reaction</h2>
+        <p>The official outline describes a framework for preventing, de-escalating, and safely responding to crisis behavior. It emphasizes understanding distress, assessing behavioral risk, managing your own emotional response, using supportive and directive communication, and choosing the least restrictive response appropriate to the actual risk.</p>
+        <h3>Core philosophy translated into everyday behavior</h3>
+        <table>
+          <tr><th>Principle</th><th>What it looks like in practice</th><th>What it is not</th></tr>
+          <tr><td><strong>Care</strong></td><td>Protect dignity, communicate respectfully, seek the reason behind distress.</td><td>Rewarding unsafe behavior or removing all expectations.</td></tr>
+          <tr><td><strong>Welfare</strong></td><td>Consider emotional, physical, sensory, medical, developmental, and environmental needs.</td><td>Focusing only on rule compliance.</td></tr>
+          <tr><td><strong>Safety</strong></td><td>Notice hazards, reduce stimulation, create space, call appropriate support early.</td><td>Waiting until someone is already being hurt.</td></tr>
+          <tr><td><strong>Security</strong></td><td>Use predictable boundaries, plans, roles, and organizational procedures.</td><td>Using control for its own sake.</td></tr>
+        </table>
+        <div class="callout safe"><strong>Master question:</strong> “What response is most likely to reduce risk while preserving dignity and using no more restriction than the situation actually requires?”</div>
+      </section>
+
+      <section id="m1">
+        <div class="module-tag">Module 1</div>
+        <h2>Understanding Behavior and Its Risk</h2>
+        <p class="lead">Before deciding what to do, separate three things: <strong>what you observe</strong>, <strong>what might be causing it</strong>, and <strong>how much risk it actually presents</strong>.</p>
+
+        <h3>1. Behavior is observable; causes are hypotheses</h3>
+        <div class="grid2">
+          <div class="card">
+            <strong>Observation</strong>
+            <p>“Jordan is pacing, breathing quickly, checking the door, and asking when class ends every two minutes.”</p>
+          </div>
+          <div class="card">
+            <strong>Possible causes</strong>
+            <p>Fear, sensory overload, uncertainty, pain, previous trauma, hunger, worry about transportation, difficulty with the task.</p>
+          </div>
+        </div>
+        <p>Notice that the cause is not stated as fact until you have evidence. Saying “Jordan is manipulating us” is an interpretation, not an observation.</p>
+
+        <h3>2. Threat responses can narrow thinking</h3>
+        <p>When a person perceives threat, their ability to process complex language, delay gratification, consider multiple options, and regulate emotion may decrease. In practice, that means a long lecture can become less effective exactly when you feel most tempted to give one.</p>
+        <div class="callout"><strong>Practical translation:</strong> As distress rises, simplify. Use fewer words, more processing time, a calmer tone, and clearer choices.</div>
+
+        <h3>3. Risk = likelihood + severity</h3>
+        <p>CPI’s Decision-Making Matrix focuses attention on two dimensions: the <strong>likelihood</strong> that harm may occur and the <strong>severity</strong> of the potential outcome. For studying, you can think in low / moderate / high terms; use your official course materials for CPI’s exact presentation.</p>
+        <table>
+          <tr><th>Scenario</th><th>Likelihood</th><th>Severity</th><th>Reasoning</th></tr>
+          <tr><td>A student quietly says “no” and puts their head down.</td><td>Possible</td><td>Low</td><td>Noncompliance may be disruptive but does not by itself indicate imminent physical harm.</td></tr>
+          <tr><td>A person repeatedly throws paper cups toward an empty wall.</td><td>Likely to continue</td><td>Usually low</td><td>Frequent behavior does not automatically equal high physical risk.</td></tr>
+          <tr><td>A person is swinging a heavy metal object toward nearby people.</td><td>High</td><td>High</td><td>Both probability and potential injury are substantial; safety becomes urgent.</td></tr>
+          <tr><td>A person calmly makes a specific credible threat with access to a dangerous means.</td><td>May be uncertain</td><td>Potentially severe</td><td>Low emotional intensity does not eliminate serious risk; follow emergency policy.</td></tr>
+        </table>
+
+        <h3>4. Risk of behavior vs. risk of intervention</h3>
+        <p>A useful professional habit is to consider both sides. An intervention can introduce its own risks: fear, injury, escalation, trauma, loss of trust, or legal/professional consequences. Therefore, “more control” is not automatically “more safe.”</p>
+
+        <div class="example">
+          <h4>Worked example: pencil case</h4>
+          <p><strong>Situation:</strong> Andy shouts, “Leave me alone!” and throws a soft pencil case onto an empty floor.</p>
+          <p><strong>Poor reasoning:</strong> “He threw something, so he is violent.”</p>
+          <p><strong>Better reasoning:</strong> Describe precisely: one soft object, directed at the floor, no person nearby, no immediate injury. The behavior shows escalation, but the physical risk may still be limited.</p>
+          <p><strong>Response:</strong> Increase space, reduce audience, use calm concise communication, avoid arguing, and continue reassessing. Do not automatically jump to a restrictive intervention.</p>
+        </div>
+
+        <div class="quiz">
+          <strong>Self-check 1</strong>
+          <p>A learner tears a worksheet into pieces, says “I hate this,” and sits under the desk. No one is being struck and there are no dangerous objects nearby. What should guide your first response?</p>
+          <button onclick="toggleAnswer(this)">Show solution</button>
+          <div class="answer"><strong>Solution:</strong> Assess the actual likelihood and severity of harm, not how annoying or dramatic the behavior appears. Reduce demands/stimulation if appropriate, maintain safe space, use supportive/directive communication, and investigate the cause. The behavior does not automatically require a physical response.</div>
+        </div>
+      </section>
+
+      <section id="m2">
+        <div class="module-tag">Module 2</div>
+        <h2>The CPI Crisis Development Model</h2>
+        <p class="lead">The model pairs a person’s level of behavior with a staff approach designed to reduce further escalation.</p>
+        <table>
+          <tr><th>Behavior level</th><th>What you may observe</th><th>Staff approach</th><th>Main aim</th></tr>
+          <tr><td><strong>Anxiety</strong></td><td>Change from baseline: pacing, withdrawal, repeated questions, fidgeting, worry.</td><td><strong>Supportive</strong></td><td>Reduce distress early.</td></tr>
+          <tr><td><strong>Defensive</strong></td><td>Arguing, refusing, challenging, blaming, verbal escalation, testing limits.</td><td><strong>Directive</strong></td><td>Give clear, respectful structure.</td></tr>
+          <tr><td><strong>Risk Behavior</strong></td><td>Behavior creating imminent/immediate danger to self or others.</td><td><strong>Safety Interventions</strong></td><td>Maximize safety and minimize harm.</td></tr>
+          <tr><td><strong>Tension Reduction</strong></td><td>Decrease in energy after crisis: quietness, fatigue, crying, remorse, withdrawal.</td><td><strong>Therapeutic Rapport</strong></td><td>Reconnect, recover, and learn.</td></tr>
+        </table>
+
+        <h3>Anxiety → Supportive</h3>
+        <div class="example">
+          <h4>Example A: repeated reassurance seeking</h4>
+          <div class="dialogue"><span class="person">Student:</span> “Is my mom coming? What time? Are you sure? What time?”</div>
+          <div class="dialogue"><span class="poor">Less helpful:</span> “I already told you five times. Stop asking.”</div>
+          <div class="dialogue"><span class="good">More helpful:</span> “You’re worried about pickup. The schedule says 3:00. Let’s put it on this visual card so you can check it.”</div>
+          <p><strong>Why:</strong> The response addresses uncertainty and reduces the need to repeatedly seek reassurance.</p>
+        </div>
+
+        <h3>Defensive → Directive</h3>
+        <p>“Directive” means clear, respectful, and purposeful—not louder, harsher, or dominating.</p>
+        <div class="example">
+          <h4>Example B: refusal</h4>
+          <div class="dialogue"><span class="person">Student:</span> “No. I’m not doing math. You can’t make me.”</div>
+          <div class="dialogue"><span class="poor">Power struggle:</span> “Yes, I can. You are doing it now.”</div>
+          <div class="dialogue"><span class="good">Directive:</span> “You need to complete part of the assignment. You can start questions 1–3 with me, or take a five-minute break and then start questions 1–3.”</div>
+          <p><strong>Why:</strong> The expectation remains, but the student has a manageable choice and a path to regain control.</p>
+        </div>
+
+        <h3>Risk Behavior → Safety Interventions</h3>
+        <p>The response should be based on real-time risk and should remain reasonable, proportionate, least restrictive, and last resort. Non-restrictive environmental and verbal strategies remain important whenever they can be used safely.</p>
+
+        <h3>Tension Reduction → Therapeutic Rapport</h3>
+        <div class="example">
+          <h4>Example C: after the peak</h4>
+          <p>After yelling and knocking over a chair, the person is now sitting quietly, breathing more slowly, looking exhausted.</p>
+          <p><span class="poor">Less helpful:</span> immediately demanding an apology and a detailed explanation.</p>
+          <p><span class="good">More helpful:</span> restore calm first: “You’ve had a difficult few minutes. We can sit quietly. When you’re ready, we’ll figure out what would help next.”</p>
+        </div>
+
+        <div class="quiz">
+          <strong>Self-check 2</strong>
+          <p>A person who was arguing loudly is now silent, slumped in a chair, and tearful. What is the likely level and staff approach?</p>
+          <button onclick="toggleAnswer(this)">Show solution</button>
+          <div class="answer"><strong>Solution:</strong> Likely <strong>Tension Reduction</strong>; respond with <strong>Therapeutic Rapport</strong>. Focus first on recovery and reconnection, then debrief when the person has enough regulation and capacity to participate.</div>
+        </div>
+      </section>
+
+      <section id="m3">
+        <div class="module-tag">Module 3</div>
+        <h2>Integrated Experience</h2>
+        <p class="lead">Behavior influences behavior. You cannot fully control the other person’s response, but you can control your own contribution to the interaction.</p>
+
+        <h3>The escalation loop</h3>
+        <div class="grid2">
+          <div class="card">
+            <strong>Negative loop</strong>
+            <p>Person raises voice → staff feels disrespected → staff raises voice → person feels threatened → person escalates → staff becomes more controlling.</p>
+          </div>
+          <div class="card">
+            <strong>Regulating loop</strong>
+            <p>Person raises voice → staff notices own tension → staff lowers voice and increases space → person receives fewer threat cues → conversation becomes more manageable.</p>
+          </div>
+        </div>
+
+        <h3>Rational Detachment</h3>
+        <p>CPI describes Rational Detachment as managing your behavior and attitude without taking another person’s actions personally. It does not mean being cold or indifferent. It means staying professional enough to choose your response.</p>
+
+        <h4>A 10-second internal reset</h4>
+        <ol>
+          <li><strong>Notice:</strong> “My shoulders are tight; I want to argue.”</li>
+          <li><strong>Name:</strong> “I’m feeling challenged.”</li>
+          <li><strong>Reframe:</strong> “This behavior may be about distress, not about me.”</li>
+          <li><strong>Choose:</strong> lower volume, slower pace, fewer words, more space.</li>
+          <li><strong>Reassess:</strong> did risk decrease, stay the same, or increase?</li>
+        </ol>
+
+        <h3>Precipitating factors: what might be driving behavior?</h3>
+        <p>Useful categories to investigate include pain or illness, sleep loss, hunger, trauma reminders, sensory overload, communication difficulty, unexpected changes, perceived loss of control, conflict, embarrassment, fear, or demands that exceed current ability.</p>
+        <div class="callout warn"><strong>Avoid mind-reading:</strong> “Attention seeking,” “manipulative,” and “lazy” often close inquiry too early. Replace labels with observable facts and testable hypotheses.</div>
+
+        <div class="example">
+          <h4>Worked example: “You’re the worst staff here!”</h4>
+          <p><strong>Your first impulse:</strong> defend yourself: “That’s not true. I’ve done everything for you.”</p>
+          <p><strong>Rationally detached response:</strong> “You’re very frustrated with me right now. Tell me the main thing you need me to understand.”</p>
+          <p><strong>Reasoning:</strong> You are not agreeing with the insult. You are refusing the invitation to fight and redirecting toward usable information.</p>
+        </div>
+
+        <div class="quiz">
+          <strong>Self-check 3</strong>
+          <p>Which statement best reflects Integrated Experience?</p>
+          <p>A. “If I stay calm, the other person will definitely calm down.”<br>
+             B. “My behavior can influence the interaction, even though I cannot guarantee the other person’s behavior.”<br>
+             C. “The person in crisis controls what staff do.”</p>
+          <button onclick="toggleAnswer(this)">Show solution</button>
+          <div class="answer"><strong>Solution: B.</strong> Integrated Experience is about mutual influence, not guaranteed control. Staying calm improves the conditions for de-escalation but does not promise a particular outcome.</div>
+        </div>
+      </section>
+
+      <section id="m4">
+        <div class="module-tag">Module 4</div>
+        <h2>Supportive Communication Skills</h2>
+        <p class="lead">Communication is not only the words you choose. The person is also receiving your posture, distance, facial expression, tone, volume, cadence, timing, and willingness to listen.</p>
+
+        <h3>Three channels</h3>
+        <div class="grid3">
+          <div class="card"><strong>Verbal</strong><p>The actual words: clear, concrete, respectful, brief.</p></div>
+          <div class="card"><strong>Paraverbal</strong><p>How the words sound: tone, volume, pace, rhythm, emphasis.</p></div>
+          <div class="card"><strong>Nonverbal</strong><p>Posture, facial expression, gestures, space, orientation, movement.</p></div>
+        </div>
+
+        <h3>Empathic listening: five practical moves</h3>
+        <ol>
+          <li><strong>Give attention:</strong> stop multitasking when safe to do so.</li>
+          <li><strong>Listen for the message underneath:</strong> fear? confusion? unfairness? loss of control?</li>
+          <li><strong>Reflect briefly:</strong> “You’re upset because the plan changed.”</li>
+          <li><strong>Clarify:</strong> “What part is most difficult right now?”</li>
+          <li><strong>Move toward action:</strong> “Here are the two things I can do.”</li>
+        </ol>
+
+        <h3>Use short, concrete language when arousal is high</h3>
+        <table>
+          <tr><th>Instead of</th><th>Try</th><th>Why</th></tr>
+          <tr><td>“You need to calm down and start making better choices because this is becoming completely inappropriate.”</td><td>“Step back. I’ll give you space. We can talk when voices are lower.”</td><td>Fewer processing demands.</td></tr>
+          <tr><td>“Why are you doing this again?”</td><td>“What happened just before you got upset?”</td><td>Less accusatory; more information-seeking.</td></tr>
+          <tr><td>“Stop being disrespectful.”</td><td>“I’ll listen. I need you to speak without threatening me.”</td><td>Defines the usable boundary.</td></tr>
+          <tr><td>“No.”</td><td>“I can’t do X. I can offer Y or Z.”</td><td>Pairs the limit with an alternative.</td></tr>
+        </table>
+
+        <h3>Preparing for a difficult conversation</h3>
+        <ul class="checklist">
+          <li>Choose a time when the person is able to process.</li>
+          <li>Know your non-negotiable safety boundary.</li>
+          <li>Identify what choices are genuinely available.</li>
+          <li>Reduce unnecessary audience.</li>
+          <li>Plan your first sentence.</li>
+          <li>Know how you will exit or seek help if risk rises.</li>
+          <li>Consider sensory and communication needs.</li>
+          <li>Check your own emotional state first.</li>
+        </ul>
+
+        <div class="example">
+          <h4>Worked example: changed schedule</h4>
+          <p><strong>Person:</strong> “You promised we were going to the gym! You always lie!”</p>
+          <p><strong>Step 1 — validate the real issue:</strong> “You expected the gym, and the change is frustrating.”</p>
+          <p><strong>Step 2 — state reality simply:</strong> “The gym is closed today.”</p>
+          <p><strong>Step 3 — give real choices:</strong> “We can walk outside now, or use the exercise room after lunch.”</p>
+          <p><strong>Step 4 — wait:</strong> allow processing time instead of filling silence with more persuasion.</p>
+        </div>
+
+        <div class="quiz">
+          <strong>Self-check 4</strong>
+          <p>You say, “I’m here to help,” but you are standing inches away, pointing a finger, and speaking sharply. What is the problem?</p>
+          <button onclick="toggleAnswer(this)">Show solution</button>
+          <div class="answer"><strong>Solution:</strong> Your verbal message and your paraverbal/nonverbal message conflict. Under stress, the threatening cues may dominate. Increase appropriate space, neutralize posture, lower volume, and make your behavior consistent with the words.</div>
+        </div>
+      </section>
+
+      <section id="m5">
+        <div class="module-tag">Module 5</div>
+        <h2>Responding to Defensive Behaviors</h2>
+        <p class="lead">“Defensive” is not one single behavior. The intervention should match what the person is doing now, rather than using the same response for every escalation.</p>
+
+        <p class="small">The official 3rd-edition outline names the Verbal Escalation Continuum but does not list its stages. Related CPI materials commonly describe stages such as Questioning, Refusal, Release, Intimidation, and Tension Reduction. The descriptions below are a study-oriented paraphrase; use your official learner materials for exact course language.</p>
+
+        <h3>1. Questioning</h3>
+        <p>First distinguish an <strong>information-seeking question</strong> from a <strong>challenging question</strong>.</p>
+        <div class="grid2">
+          <div class="card">
+            <strong>Information-seeking</strong>
+            <p>“Why do I have to leave at 4:00?”</p>
+            <p><span class="good">Response:</span> answer briefly and factually.</p>
+          </div>
+          <div class="card">
+            <strong>Challenging</strong>
+            <p>“Who are you to tell me what to do?”</p>
+            <p><span class="good">Response:</span> avoid debating status; redirect to the immediate issue.</p>
+          </div>
+        </div>
+        <div class="dialogue"><span class="good">Example:</span> “You don’t have to agree with me. Right now we need a safe plan for leaving the room.”</div>
+
+        <h3>2. Refusal</h3>
+        <p>Refusal often invites a power struggle. Your job is to set a reasonable, enforceable limit while preserving as much choice as possible.</p>
+        <h4>A useful limit-setting structure</h4>
+        <div class="flow"><span>State expectation</span><b>→</b><span>Offer choices</span><b>→</b><span>State outcome</span><b>→</b><span>Allow time</span></div>
+        <div class="example">
+          <p><strong>Person:</strong> “I’m not putting the tablet away.”</p>
+          <p><strong>Staff:</strong> “Tablet time is finished. You can put it on the desk yourself, or I can hold the case while you place it inside. After it is away, you can choose music or drawing.”</p>
+          <p><strong>Why it works better:</strong> clear expectation, limited choices, no insult, no empty threat.</p>
+        </div>
+
+        <h3>3. Release</h3>
+        <p>Release may involve high emotional energy: yelling, swearing, crying, or intense venting. If it is safe, avoid competing with the person’s volume. Reduce audience and stimulation, protect dignity, and wait for enough regulation before trying to solve the entire problem.</p>
+        <div class="callout"><strong>Key distinction:</strong> Venting that is loud but not dangerous is not identical to behavior that creates imminent physical risk. Continue assessing.</div>
+
+        <h3>4. Intimidation</h3>
+        <p>Threats, threatening gestures, invasion of space, or statements suggesting violence require serious attention. Do not try to “win” the confrontation. Increase safety, obtain assistance according to policy, create distance when possible, and follow organizational emergency procedures.</p>
+        <div class="callout danger"><strong>Never downgrade a threat just because the person becomes quiet.</strong> Risk assessment is about likelihood and severity, not only emotional volume.</div>
+
+        <h3>5. Tension Reduction</h3>
+        <p>As the person’s physical and emotional energy decreases, shift from confrontation/limit-setting toward recovery and Therapeutic Rapport. Do not keep pushing merely because you finally have the upper hand.</p>
+
+        <table>
+          <tr><th>Behavior</th><th>Helpful direction</th><th>Common mistake</th></tr>
+          <tr><td>Information question</td><td>Give a concise answer.</td><td>Assuming every question is defiance.</td></tr>
+          <tr><td>Challenging question</td><td>Redirect to the issue; avoid power struggle.</td><td>Arguing about authority.</td></tr>
+          <tr><td>Refusal</td><td>Set simple, reasonable, enforceable limits.</td><td>Threatening consequences you cannot or should not enforce.</td></tr>
+          <tr><td>Release</td><td>Allow safe venting, reduce stimulation/audience, stay calm.</td><td>Lecturing or shouting over the person.</td></tr>
+          <tr><td>Intimidation</td><td>Take threats seriously; seek support; prioritize safety.</td><td>Taunting, daring, or minimizing the threat.</td></tr>
+          <tr><td>Tension reduction</td><td>Reconnect and recover.</td><td>Re-starting the conflict immediately.</td></tr>
+        </table>
+
+        <div class="quiz">
+          <strong>Self-check 5</strong>
+          <p>A student says, “This rule is stupid. What are you going to do about it?” What is a better response?</p>
+          <button onclick="toggleAnswer(this)">Show solution</button>
+          <div class="answer"><strong>Solution:</strong> Treat it as a challenging question rather than an invitation to prove authority. For example: “You don’t have to like the rule. Right now, you can finish here quietly or move to the study table.” Keep the focus on behavior and available choices.</div>
+        </div>
+      </section>
+
+      <section id="m6">
+        <div class="module-tag">Module 6</div>
+        <h2>Safety Interventions</h2>
+        <p class="lead">When behavior presents imminent or immediate danger, the goal is to protect everyone while using a response that is justified by the actual risk.</p>
+
+        <h3>Four decision tests</h3>
+        <div class="grid2">
+          <div class="card"><strong>Last resort</strong><p>Have less restrictive, reasonably available options been used or ruled out by immediate danger?</p></div>
+          <div class="card"><strong>Reasonable</strong><p>Would a trained professional be able to explain why this response made sense given what was happening?</p></div>
+          <div class="card"><strong>Proportionate</strong><p>Does the intensity of the intervention match the seriousness of the risk?</p></div>
+          <div class="card"><strong>Least restrictive</strong><p>Is there a safer, less restrictive way to manage the same risk effectively?</p></div>
+        </div>
+
+        <h3>Non-restrictive safety options</h3>
+        <p>Depending on the setting and policy, examples may include increasing distance, removing bystanders, clearing dangerous objects, reducing sensory stimulation, providing an exit route, changing staff communicators, calling trained support, pausing demands, using clear safety directions, or activating an emergency plan.</p>
+
+        <div class="example">
+          <h4>Worked example: escalating object throwing</h4>
+          <p><strong>Phase 1:</strong> A person throws paper onto the floor. Risk is low. Staff reduces demands and uses concise direction.</p>
+          <p><strong>Phase 2:</strong> The person begins sweeping light objects from a table. Staff increases space and clears others from the immediate area.</p>
+          <p><strong>Phase 3:</strong> The person reaches for a heavy object and attempts to throw it toward another person. The risk picture changes sharply; staff activates the setting’s trained safety response.</p>
+          <p><strong>Lesson:</strong> The same person can move through different risk levels quickly. Intervention should track current risk, not a label attached to the person.</p>
+        </div>
+
+        <h3>What this tutorial intentionally does not teach</h3>
+        <p>It does not describe grips, releases, holds, body positioning for restraint, takedowns, or escape mechanics. The official outline assigns substantial classroom time to demonstration, practice, a Physical Skills Review Framework, restraint-risk considerations, and competency assessment. Reading a webpage cannot substitute for that process.</p>
+
+        <div class="quiz">
+          <strong>Self-check 6</strong>
+          <p>A person is screaming and swearing but is stationary, has no weapon, is not striking anyone, and has space around them. Is loudness alone enough to justify restrictive intervention?</p>
+          <button onclick="toggleAnswer(this)">Show solution</button>
+          <div class="answer"><strong>Solution:</strong> No. Continue to assess actual likelihood and severity of harm. Use safe verbal/environmental de-escalation as appropriate. A restrictive response must be based on risk, not on loudness, disrespect, inconvenience, or staff frustration.</div>
+        </div>
+      </section>
+
+      <section id="m7">
+        <div class="module-tag">Module 7</div>
+        <h2>Post-Crisis: Therapeutic Rapport and Learning</h2>
+        <p class="lead">The end of dangerous behavior is not the end of crisis work. Post-crisis work helps restore safety, rebuild the relationship, identify triggers and successful supports, and improve the plan for next time.</p>
+
+        <h3>Recovery before analysis</h3>
+        <p>Immediately after a peak, the person may be tired, ashamed, tearful, quiet, confused, or physiologically depleted. A detailed interrogation at that moment may be ineffective. First stabilize the environment and the relationship.</p>
+
+        <h3>A practical debrief structure</h3>
+        <ol>
+          <li><strong>Regulate:</strong> ensure immediate safety and allow recovery.</li>
+          <li><strong>Reconnect:</strong> communicate respect; separate the person from the behavior.</li>
+          <li><strong>Reconstruct:</strong> what happened before, during, and after?</li>
+          <li><strong>Identify:</strong> triggers, needs, early warning signs, successful supports.</li>
+          <li><strong>Plan:</strong> what should the person and staff do earlier next time?</li>
+          <li><strong>Document:</strong> objective facts and required post-event information according to policy.</li>
+          <li><strong>Support staff resilience:</strong> review impact, coping, teamwork, and learning without blame.</li>
+        </ol>
+
+        <h3>Objective documentation</h3>
+        <table>
+          <tr><th>Weak / judgmental</th><th>Stronger / observable</th></tr>
+          <tr><td>“Client went crazy for no reason.”</td><td>“At 2:14 p.m., after being told the community outing was cancelled, the client shouted, pushed two plastic chairs over, and moved toward the exit.”</td></tr>
+          <tr><td>“Student was manipulative.”</td><td>“Student asked to call home four times after being told the test would begin in ten minutes.”</td></tr>
+          <tr><td>“Staff had to restrain them because they were out of control.”</td><td>Document the specific behaviors, observed risk, alternatives attempted, staff response, duration, monitoring, outcome, and follow-up required by policy.</td></tr>
+        </table>
+
+        <div class="example">
+          <h4>Worked debrief</h4>
+          <p><strong>Before:</strong> schedule changed without warning.</p>
+          <p><strong>Early signs:</strong> repeated questions, pacing, refusal.</p>
+          <p><strong>What worsened it:</strong> three staff giving instructions at the same time.</p>
+          <p><strong>What helped:</strong> one familiar staff member, visual schedule, reduced audience, 10 minutes of quiet space.</p>
+          <p><strong>Future plan:</strong> preview schedule changes visually, designate one communicator, offer a planned break at first signs of pacing.</p>
+        </div>
+
+        <div class="quiz">
+          <strong>Self-check 7</strong>
+          <p>Why is “What did we miss earlier?” often more useful than “Who caused this?” after a crisis?</p>
+          <button onclick="toggleAnswer(this)">Show solution</button>
+          <div class="answer"><strong>Solution:</strong> The first question promotes prevention and systems learning: triggers, communication, environment, timing, unmet needs, and staff responses. The second can turn a review into blame and may obscure modifiable factors.</div>
+        </div>
+      </section>
+
+      <section id="physical">
+        <h2>Safety Interventions: Disengagement and Holding Skills — what you should know conceptually</h2>
+        <p>The official outline includes separate competency-based blocks for disengagement and holding skills, use of a Physical Skills Review Framework, consideration of restraint risks, and an Opt-Out Sequence. These are practical skills taught and assessed in person.</p>
+        <h3>Conceptual study points</h3>
+        <ul>
+          <li>Physical intervention is not a punishment or behavior-management shortcut.</li>
+          <li>Risk must justify the intervention.</li>
+          <li>Less restrictive strategies remain preferable when they can safely manage the risk.</li>
+          <li>Staff need training, role clarity, monitoring, and organizational authorization.</li>
+          <li>Physical intervention carries physical and psychological risks that must be considered.</li>
+          <li>After any restrictive intervention, follow required monitoring, documentation, notification, and debrief procedures.</li>
+          <li>Your jurisdiction and organization may impose stricter rules than a training framework.</li>
+        </ul>
+        <div class="callout danger"><strong>Do not practice physical crisis techniques from text or video alone.</strong> Use only skills for which you are currently trained, competent, authorized, and operating within policy and law.</div>
+      </section>
+
+      <section id="instructor">
+        <h2>Instructor Certification portion of the outline</h2>
+        <p>The content outline does not stop at the seven participant modules. It also prepares Certified Instructors to teach adult learners, maintain program fidelity, facilitate practice, and assess competency.</p>
+
+        <h3>Blended delivery structure in the official outline</h3>
+        <table>
+          <tr><th>Component</th><th>Purpose</th></tr>
+          <tr><td>Part 1: online core</td><td>Introduces the seven core modules and assessment before classroom work.</td></tr>
+          <tr><td>Classroom application</td><td>Case studies, practice, safety skills, discussion, and competency-based assessment.</td></tr>
+          <tr><td>Instructor orientation</td><td>Defines the Certified Instructor role and professional resources.</td></tr>
+          <tr><td>Adult-learning & facilitation strategies</td><td>How to organize training, use activities, engage adult learners, and maintain continuity.</td></tr>
+          <tr><td>Purpose of content</td><td>Review each module from the instructor’s lens and connect concepts into a coherent learning sequence.</td></tr>
+          <tr><td>Practicum / teach-back</td><td>Practice facilitating assigned content and adapting examples to the work setting while preserving program requirements.</td></tr>
+          <tr><td>Program quality standards</td><td>Renewal, refresher processes, training as an ongoing process, and instructor responsibilities.</td></tr>
+          <tr><td>Safety skills teaching assessment</td><td>Demonstrate competence teaching authorized disengagement/holding skills with CPI’s framework.</td></tr>
+        </table>
+
+        <h3>If you are preparing to teach</h3>
+        <ul class="checklist">
+          <li>Start with a realistic workplace example.</li>
+          <li>Ask learners to identify behavior before giving the label.</li>
+          <li>Ask “What is the risk?” before “What would you do?”</li>
+          <li>Use teach-backs rather than lecture alone.</li>
+          <li>Correct unsafe reasoning, not just wrong terminology.</li>
+          <li>Connect every module to the previous one.</li>
+          <li>Invite examples without allowing confidential details to identify people.</li>
+          <li>End scenarios with post-crisis learning, not only the peak event.</li>
+        </ul>
+      </section>
+
+      <section id="cases">
+        <h2>Integrated case studies with worked solutions</h2>
+
+        <div class="example">
+          <h4>Case 1 — Andy refuses a transition</h4>
+          <p><strong>Background:</strong> Andy uses a visual schedule. A preferred activity ends 15 minutes earlier than expected because the room is needed for another group.</p>
+          <p><strong>Behavior:</strong> Andy freezes, holds the iPad tightly, says “No, no, no,” and turns away.</p>
+          <p><strong>Questions:</strong> What level? What might be precipitating it? What should staff do?</p>
+          <p><strong>Solution:</strong> The behavior may begin at <strong>Anxiety</strong> and move toward <strong>Defensive/Refusal</strong>. A likely precipitating factor is an unexpected change/loss of predictability. Use one calm communicator, show the revised visual schedule, acknowledge the disappointment, offer two acceptable next-step choices, and allow processing time. Avoid multiple staff repeating the demand or physically taking the device merely to obtain immediate compliance.</p>
+        </div>
+
+        <div class="example">
+          <h4>Case 2 — “You can’t tell me what to do”</h4>
+          <p><strong>Behavior:</strong> A teenager raises their voice after being told to leave the common area: “Who do you think you are? You can’t tell me anything!”</p>
+          <p><strong>Solution:</strong> This resembles a challenging-question/defensive pattern. Do not answer the status challenge. Redirect: “You’re upset about leaving. The common room is closing. You can go to the lounge or your room.” If they refuse, set a clear, reasonable limit. Continue assessing for movement toward threats or Risk Behavior.</p>
+        </div>
+
+        <div class="example">
+          <h4>Case 3 — loud but not yet dangerous</h4>
+          <p><strong>Behavior:</strong> A person paces in a large empty area, swears loudly, and complains about a cancelled appointment. They are not approaching others or damaging objects.</p>
+          <p><strong>Solution:</strong> High intensity does not automatically equal high physical risk. Maintain distance, reduce audience, use a calm tone, allow safe venting, and offer concise practical information when the person is ready. Do not crowd the person or turn the interaction into a contest over respectful language while arousal is high.</p>
+        </div>
+
+        <div class="example">
+          <h4>Case 4 — risk changes</h4>
+          <p><strong>Behavior:</strong> During the same event, the person suddenly grabs a heavy chair and begins moving toward another individual while threatening to hit them.</p>
+          <p><strong>Solution:</strong> The risk assessment changes: likelihood and potential severity are now much higher. Prioritize immediate safety, get others out of the area if possible, activate trained support/emergency procedures, and use only authorized interventions proportionate to the danger. This is no longer merely a “verbal de-escalation” problem.</p>
+        </div>
+
+        <div class="example">
+          <h4>Case 5 — post-crisis shame</h4>
+          <p><strong>Behavior:</strong> Twenty minutes later, the person says quietly, “I’m sorry. I ruin everything.”</p>
+          <p><strong>Solution:</strong> Likely Tension Reduction. Use Therapeutic Rapport. Avoid shaming or over-reassuring. A grounded response might be: “That was a hard situation. We’ll work through what happened and make a plan for next time.” Later, explore early warning signs, the cancelled appointment trigger, which staff responses helped, and what can be changed.</p>
+        </div>
+
+        <div class="example">
+          <h4>Case 6 — staff becomes triggered</h4>
+          <p><strong>Situation:</strong> A person calls you incompetent in front of coworkers. You notice anger and an urge to “put them in their place.”</p>
+          <p><strong>Solution:</strong> This is an Integrated Experience/Rational Detachment moment. Your priority is managing your own contribution. Slow your speech, avoid defending your reputation, redirect to the immediate concern, and if needed have another appropriate staff member take over. A handoff can be a skilled intervention, not a defeat.</p>
+        </div>
+      </section>
+
+      <section id="exam">
+        <h2>Practice assessment</h2>
+        <p>Try answering each question aloud before revealing the solution. A strong answer names both the <strong>concept</strong> and the <strong>reasoning</strong>.</p>
+
+        <div class="quiz"><strong>1.</strong> What two factors are central to CPI’s Decision-Making Matrix?
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer"><strong>Likelihood and severity.</strong> Consider both the chance of harm and how serious the outcome could be.</div>
+        </div>
+
+        <div class="quiz"><strong>2.</strong> Match: Anxiety → ?
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer"><strong>Supportive.</strong></div>
+        </div>
+
+        <div class="quiz"><strong>3.</strong> Match: Defensive → ?
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer"><strong>Directive.</strong> Clear, respectful structure and limits—not aggression.</div>
+        </div>
+
+        <div class="quiz"><strong>4.</strong> Match: Risk Behavior → ?
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer"><strong>Safety Interventions.</strong> Match the intervention to the immediate risk, prioritizing least restrictive and proportionate responses.</div>
+        </div>
+
+        <div class="quiz"><strong>5.</strong> Match: Tension Reduction → ?
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer"><strong>Therapeutic Rapport.</strong></div>
+        </div>
+
+        <div class="quiz"><strong>6.</strong> Define Integrated Experience in practical terms.
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer">Your behavior and the other person’s behavior influence each other. You cannot guarantee their actions, but you can deliberately manage your own response to reduce escalation.</div>
+        </div>
+
+        <div class="quiz"><strong>7.</strong> What is Rational Detachment?
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer">Managing your own behavior and attitude without taking another person’s challenging behavior personally.</div>
+        </div>
+
+        <div class="quiz"><strong>8.</strong> Why is “directive” different from “controlling”?
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer">Directive communication supplies clear boundaries, expectations, and choices while preserving dignity. Controlling behavior may rely on power, threats, humiliation, or unnecessary restriction.</div>
+        </div>
+
+        <div class="quiz"><strong>9.</strong> A person says “no” but creates no immediate danger. What common error should you avoid?
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer">Do not confuse noncompliance with high physical risk. Use appropriate limit-setting and de-escalation before considering more restrictive responses.</div>
+        </div>
+
+        <div class="quiz"><strong>10.</strong> What is one sign that a limit is poorly designed?
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer">It is unreasonable, unclear, unrelated to safety/expectations, or cannot actually be enforced appropriately. Good limits are simple, reasonable, and enforceable.</div>
+        </div>
+
+        <div class="quiz"><strong>11.</strong> When can safe venting be useful?
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer">During high emotional release when the behavior is not creating immediate danger. Staff can reduce stimulation and avoid arguing while continuing to assess risk.</div>
+        </div>
+
+        <div class="quiz"><strong>12.</strong> Why should threats be assessed rather than dismissed as “just words”?
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer">Because severity may be high even if the person is not loud or visibly agitated. Consider specificity, context, means/access, behavior, and follow your organization’s threat/emergency procedures.</div>
+        </div>
+
+        <div class="quiz"><strong>13.</strong> What is the first goal in Tension Reduction?
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer">Recovery and reconnection. Detailed problem-solving works better after enough regulation has returned.</div>
+        </div>
+
+        <div class="quiz"><strong>14.</strong> Why does post-crisis documentation emphasize observable facts?
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer">Objective facts support accurate risk review, continuity of care/support, accountability, and future prevention; judgmental labels can obscure what actually occurred.</div>
+        </div>
+
+        <div class="quiz"><strong>15.</strong> What is the overall purpose of the seven modules?
+          <br><button onclick="toggleAnswer(this)">Show answer</button>
+          <div class="answer">To help staff understand distress behavior, recognize escalation, manage themselves, communicate effectively, assess risk, choose proportionate safety responses, and learn after crisis so future events can be prevented or reduced.</div>
+        </div>
+      </section>
+
+      <section id="cheat">
+        <h2>One-page mental model</h2>
+        <h3>Memorize these pairings</h3>
+        <div class="flow">
+          <span>Anxiety → Supportive</span>
+          <span>Defensive → Directive</span>
+          <span>Risk Behavior → Safety</span>
+          <span>Tension Reduction → Therapeutic Rapport</span>
+        </div>
+        <h3>Ask these six questions in order</h3>
+        <ol>
+          <li><strong>What am I actually observing?</strong> Describe behavior without labels.</li>
+          <li><strong>What might be driving it?</strong> Look for needs, triggers, threat, communication, environment.</li>
+          <li><strong>What is the risk?</strong> Likelihood + severity.</li>
+          <li><strong>What level is the person showing?</strong> Anxiety, Defensive, Risk Behavior, or Tension Reduction.</li>
+          <li><strong>What is my own behavior doing to the interaction?</strong> Use Rational Detachment.</li>
+          <li><strong>What is the least restrictive effective response right now?</strong> Then reassess.</li>
+        </ol>
+        <div class="callout safe"><strong>Exam-style reasoning sentence:</strong> “I would choose ___ because the person is showing ___, the current risk is ___, and this response is the least restrictive reasonable action likely to reduce escalation while maintaining safety.”</div>
+      </section>
+
+      <section id="sources">
+        <h2>Sources, scope, and disclaimer</h2>
+        <p>This tutorial was created from the publicly available <em>Nonviolent Crisis Intervention® Training, 3rd Edition — Instructor Certification Program Content Outline</em> and supporting educational pages published by Crisis Prevention Institute (CPI), including CPI explanations of the Crisis Development Model, Decision-Making Matrix, Integrated Experience, Rational Detachment, and de-escalation concepts.</p>
+        <ul>
+          <li><a href="https://www.crisisprevention.com/globalassets/us-ca/our-programs/nci/nci_icp_3e_content_outline_r0124.pdf" target="_blank" rel="noopener">Official 3rd Edition Content Outline (PDF)</a></li>
+          <li><a href="https://www.crisisprevention.com/en-GB/blog/general/cpi-crisis-development-model/" target="_blank" rel="noopener">CPI: Crisis Development Model</a></li>
+          <li><a href="https://www.crisisprevention.com/blog/behavioral-health/risk-behaviors/" target="_blank" rel="noopener">CPI: Decision-Making Matrix / behavioral risk</a></li>
+          <li><a href="https://www.crisisprevention.com/blog/human-services/what-does-rational-detachment-mean-10-reminders-from-the-clients-perspective/" target="_blank" rel="noopener">CPI: Rational Detachment</a></li>
+          <li><a href="https://www.crisisprevention.com/en-IE/blog/health-care/understanding-the-importance-of-integrated-experience/" target="_blank" rel="noopener">CPI: Integrated Experience</a></li>
+        </ul>
+        <p class="small"><strong>Trademark / authorship note:</strong> CPI, Nonviolent Crisis Intervention®, Crisis Development Model℠, Decision-Making Matrix℠, Verbal Escalation Continuum℠, Care, Welfare, Safety, and Security℠, and other named CPI program terms belong to Crisis Prevention Institute. This page is an independent explanatory study aid and is not produced, endorsed, or certified by CPI.</p>
+        <p class="small"><strong>Safety note:</strong> Follow your organization’s current policy, your scope of training, applicable law/regulation, individual support plans, and emergency procedures. Physical crisis intervention must be learned and assessed through authorized hands-on training.</p>
+      </section>
+    </main>
+  </div>
+</div>
+
+<a class="topbtn" href="#top">↑ Top</a>
+
+<footer>
+  Detailed NCI 3rd Edition study tutorial • designed for browser study and printing.
+</footer>
+
+<script>
+function toggleAnswer(btn){
+  const ans = btn.nextElementSibling;
+  ans.classList.toggle('show');
+  btn.textContent = ans.classList.contains('show') ? 'Hide solution' : 'Show solution';
+}
+</script>
+</body>
+</html>
+
