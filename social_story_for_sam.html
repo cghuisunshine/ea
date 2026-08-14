@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Story for Sam — My Morning Classroom Routine</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #5f6b7a;
+      --primary: #2f6fed;
+      --primary-soft: #eaf1ff;
+      --green: #2f855a;
+      --green-soft: #edf8f2;
+      --border: #dce4ee;
+      --shadow: 0 8px 28px rgba(31, 41, 55, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 36px 20px 56px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #2f6fed, #5a8cf5);
+      color: #fff;
+      padding: 34px 36px;
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+
+    .hero .eyebrow {
+      margin: 0 0 6px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.15;
+    }
+
+    .hero p {
+      margin: 10px 0 0;
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px 30px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: 1.55rem;
+      color: var(--primary);
+    }
+
+    h3 {
+      margin: 24px 0 10px;
+      font-size: 1.15rem;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    .story p {
+      font-size: 1.08rem;
+    }
+
+    .support-box {
+      background: var(--primary-soft);
+      border-left: 5px solid var(--primary);
+      padding: 18px 20px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .support-box h3 {
+      margin-top: 0;
+      color: #204fba;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .sequence {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .step {
+      background: var(--green-soft);
+      border: 1px solid #cbe8d8;
+      color: #245d43;
+      font-weight: 700;
+      padding: 8px 12px;
+      border-radius: 999px;
+    }
+
+    .arrow {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .strategy-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .strategy-list li {
+      position: relative;
+      padding: 14px 16px 14px 46px;
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fbfcfe;
+    }
+
+    .strategy-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 16px;
+      top: 13px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--green-soft);
+      color: var(--green);
+      font-weight: 800;
+    }
+
+    .strategy-list strong {
+      color: #243b67;
+    }
+
+    .quote {
+      margin-top: 8px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: #f7f9fc;
+      color: #374151;
+      font-style: italic;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding-top: 4px;
+    }
+
+    @media (max-width: 640px) {
+      .page { padding: 18px 12px 36px; }
+      .hero, .card { padding: 22px 20px; border-radius: 16px; }
+      .story p { font-size: 1rem; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { max-width: none; padding: 0; }
+      .hero {
+        background: #fff !important;
+        color: #000;
+        box-shadow: none;
+        border: 1px solid #bbb;
+      }
+      .card {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+      .footer { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">Social Story for Sam</p>
+      <h1>My Morning Classroom Routine</h1>
+      <p>A clear routine to help me feel safe, ready, and successful at school.</p>
+    </header>
+
+    <section class="card story">
+      <h2>a) Social Story for Sam</h2>
+
+      <p>When I come to school in the morning, I may want to go to the centres. Centres are fun, but they are not open yet.</p>
+
+      <p>First, I enter the classroom and look at the morning schedule.</p>
+
+      <p>I go to my place at the whiteboard. The teacher may give me a special job, such as changing the day’s visual or turning the class light on.</p>
+
+      <p>I keep the teacher’s magnets and the light switch safe. I use classroom materials only when the teacher says they are ready.</p>
+
+      <div class="support-box">
+        <h3>If waiting feels difficult, I can:</h3>
+        <ul>
+          <li>Look at my visual schedule.</li>
+          <li>Ask, “When are centres?”</li>
+          <li>Choose a waiting activity.</li>
+          <li>Ask for a short break.</li>
+          <li>Use a calming tool.</li>
+        </ul>
+      </div>
+
+      <p>When the morning activity is finished, I check my schedule again. The schedule will show me when it is time for centres.</p>
+
+      <p>Following the morning routine helps everyone feel safe and ready to learn. I can be proud of myself for completing my morning routine.</p>
+    </section>
+
+    <section class="card">
+      <h2>b) Strategies to Accompany the Social Story</h2>
+
+      <ul class="strategy-list">
+        <li>
+          <strong>Visual schedule:</strong> Show a clear sequence such as:
+          <div class="sequence" aria-label="Morning routine sequence">
+            <span class="step">Enter classroom</span>
+            <span class="arrow">→</span>
+            <span class="step">Morning job</span>
+            <span class="arrow">→</span>
+            <span class="step">Whiteboard activity</span>
+            <span class="arrow">→</span>
+            <span class="step">Centres</span>
+          </div>
+        </li>
+
+        <li><strong>First–Then board:</strong> “First whiteboard, then centres.”</li>
+
+        <li><strong>Choice of classroom jobs:</strong> Let Sam choose between two appropriate jobs, such as changing the date or handing out materials.</li>
+
+        <li><strong>Replacement activities:</strong> Provide safe magnets, a mini whiteboard, a sensory item, or another hands-on waiting activity.</li>
+
+        <li><strong>Functional communication:</strong> Teach Sam to say or show cards for “Centres, please,” “When are centres?” “Help,” or “Break.”</li>
+
+        <li><strong>Countdown and timer:</strong> Give advance notice of when centres will begin.</li>
+
+        <li><strong>Environmental adjustments:</strong> Keep the teacher’s magnets out of reach and use a light-switch cover if necessary.</li>
+
+        <li><strong>Modelling and practice:</strong> Read and role-play the story when Sam is calm, not only after challenging behaviour.</li>
+
+        <li>
+          <strong>Positive reinforcement:</strong> Give immediate, specific feedback.
+          <div class="quote">“You checked your schedule and kept the magnets safe—great morning routine.”</div>
+        </li>
+
+        <li><strong>Consistent staff response:</strong> All staff should use the same short prompts and avoid lengthy explanations during escalation.</li>
+
+        <li><strong>Regulation support:</strong> Offer movement or sensory input before the morning instructional activity if Sam needs it.</li>
+
+        <li><strong>Data collection:</strong> Record what happens before and after the behaviour to determine whether its purpose is gaining access, escaping or delaying work, seeking sensory input, or gaining adult attention.</li>
+      </ul>
+    </section>
+
+    <div class="footer">Classroom Support Resource</div>
+  </main>
+</body>
+</html>
