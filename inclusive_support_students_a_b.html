@@ -3,25 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Classroom adaptations for Students A and B in Inclusive Supports in Education.">
-  <title>Inclusive Supports - Students A and B</title>
+  <meta name="description" content="Profile-based classroom adaptations for Terry and Josh.">
+  <title>Classroom Adaptations - Students A and B</title>
   <style>
     :root {
-      --navy: #16324f;
-      --blue: #2b6cb0;
-      --blue-soft: #eaf4ff;
-      --orange: #c05621;
-      --orange-soft: #fff3e8;
-      --ink: #1f2937;
-      --muted: #5b6573;
-      --line: #dce3eb;
-      --paper: #ffffff;
-      --page: #f4f7fa;
-      --success: #176b4d;
+      --navy: #14324a;
+      --ink: #223042;
+      --muted: #5b6877;
+      --line: #dce4eb;
+      --page: #f3f6f8;
+      --white: #ffffff;
+      --a: #2563a8;
+      --a-soft: #eaf4ff;
+      --b: #a65025;
+      --b-soft: #fff2e8;
+      --green: #166b50;
+      --green-soft: #eaf8f2;
+      --source: #eef2f5;
     }
 
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -30,226 +31,303 @@
       background: var(--page);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
         "Segoe UI", sans-serif;
-      line-height: 1.55;
+      line-height: 1.6;
     }
 
     header {
-      padding: 56px 22px 72px;
+      position: relative;
+      overflow: hidden;
+      padding: 58px 20px 76px;
       color: #fff;
-      background:
-        radial-gradient(circle at 86% 15%, rgba(255,255,255,.18), transparent 22%),
-        linear-gradient(130deg, #102a43, #245d8c 65%, #2f80a8);
+      background: linear-gradient(135deg, #102a43, #1f567e 64%, #257493);
+    }
+
+    header::after {
+      position: absolute;
+      top: -120px;
+      right: -80px;
+      width: 360px;
+      height: 360px;
+      border: 70px solid rgba(255,255,255,.08);
+      border-radius: 50%;
+      content: "";
     }
 
     .wrap {
-      width: min(1060px, calc(100% - 36px));
+      position: relative;
+      width: min(1120px, calc(100% - 36px));
       margin: 0 auto;
     }
 
     .eyebrow {
       margin: 0 0 8px;
-      font-size: .8rem;
+      font-size: .78rem;
       font-weight: 800;
-      letter-spacing: .13em;
+      letter-spacing: .14em;
       text-transform: uppercase;
-      opacity: .82;
+      opacity: .8;
     }
 
     h1 {
-      max-width: 760px;
+      max-width: 800px;
       margin: 0;
-      font-size: clamp(2rem, 5vw, 3.7rem);
-      line-height: 1.06;
-      letter-spacing: -.035em;
+      font-size: clamp(2.2rem, 5vw, 4.1rem);
+      line-height: 1.04;
+      letter-spacing: -.04em;
     }
 
     .subtitle {
-      max-width: 700px;
+      max-width: 720px;
       margin: 18px 0 0;
-      font-size: clamp(1rem, 2vw, 1.2rem);
       color: rgba(255,255,255,.86);
+      font-size: clamp(1rem, 2vw, 1.18rem);
     }
 
+    .quick-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .quick-nav a {
+      padding: 9px 14px;
+      border: 1px solid rgba(255,255,255,.38);
+      border-radius: 999px;
+      color: #fff;
+      background: rgba(255,255,255,.10);
+      font-size: .9rem;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .quick-nav a:hover,
+    .quick-nav a:focus-visible { background: rgba(255,255,255,.2); }
+
     main {
-      margin-top: -36px;
-      padding-bottom: 64px;
+      margin-top: -38px;
+      padding-bottom: 60px;
     }
 
     .student {
-      margin-bottom: 28px;
+      margin-bottom: 30px;
       padding: clamp(24px, 4vw, 42px);
-      background: var(--paper);
       border: 1px solid var(--line);
-      border-radius: 22px;
-      box-shadow: 0 14px 35px rgba(23, 43, 77, .08);
+      border-radius: 24px;
+      background: var(--white);
+      box-shadow: 0 16px 38px rgba(25, 45, 70, .08);
+      scroll-margin-top: 18px;
     }
 
-    .student-heading {
+    .student-title {
       display: flex;
       align-items: center;
       gap: 14px;
       margin-bottom: 14px;
     }
 
-    .student-letter {
+    .letter {
       display: grid;
-      width: 52px;
-      height: 52px;
+      width: 54px;
+      height: 54px;
       flex: 0 0 auto;
       place-items: center;
-      border-radius: 15px;
+      border-radius: 16px;
       color: #fff;
-      font-size: 1.3rem;
+      font-size: 1.35rem;
       font-weight: 900;
     }
 
-    .student-a .student-letter { background: var(--blue); }
-    .student-b .student-letter { background: var(--orange); }
+    .student-a .letter { background: var(--a); }
+    .student-b .letter { background: var(--b); }
 
     h2 {
       margin: 0;
       color: var(--navy);
-      font-size: clamp(1.45rem, 3vw, 2rem);
-      line-height: 1.15;
+      font-size: clamp(1.55rem, 3vw, 2.2rem);
+      line-height: 1.16;
     }
 
     .profile {
       margin: 0 0 24px;
-      padding: 16px 18px;
+      padding: 17px 19px;
       border-left: 5px solid;
-      border-radius: 0 12px 12px 0;
-      color: #374151;
+      border-radius: 0 13px 13px 0;
+      font-size: 1.04rem;
     }
 
-    .student-a .profile {
-      border-color: var(--blue);
-      background: var(--blue-soft);
-    }
-
-    .student-b .profile {
-      border-color: var(--orange);
-      background: var(--orange-soft);
-    }
-
-    .profile strong { color: var(--navy); }
-
-    .strategies {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .strategy {
-      position: relative;
-      min-height: 220px;
-      padding: 22px;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      background: #fff;
-    }
-
-    .number {
-      position: absolute;
-      top: 10px;
-      right: 16px;
-      color: #e8edf3;
-      font-size: 3.8rem;
-      font-weight: 900;
-      line-height: 1;
-    }
-
-    .tag {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 12px;
-      padding: 5px 9px;
-      border-radius: 999px;
-      font-size: .72rem;
-      font-weight: 800;
-      letter-spacing: .04em;
+    .profile-label {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--navy);
+      font-size: .76rem;
+      font-weight: 850;
+      letter-spacing: .1em;
       text-transform: uppercase;
     }
 
-    .student-a .tag {
-      color: #1d4f80;
-      background: var(--blue-soft);
+    .profile p { margin: 0; }
+
+    .focus {
+      margin: -10px 0 24px;
+      color: var(--muted);
+      font-size: .97rem;
     }
 
-    .student-b .tag {
-      color: #8c3c18;
-      background: var(--orange-soft);
+    .student-a .profile {
+      border-color: var(--a);
+      background: var(--a-soft);
     }
+
+    .student-b .profile {
+      border-color: var(--b);
+      background: var(--b-soft);
+    }
+
+    .supports {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+      counter-reset: support;
+    }
+
+    .support {
+      position: relative;
+      padding: 21px 21px 20px 66px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      counter-increment: support;
+    }
+
+    .support::before {
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border-radius: 10px;
+      color: #fff;
+      content: counter(support);
+      font-weight: 850;
+    }
+
+    .student-a .support::before { background: var(--a); }
+    .student-b .support::before { background: var(--b); }
 
     h3 {
-      position: relative;
-      margin: 0 0 10px;
+      margin: 0 0 8px;
       color: var(--navy);
-      font-size: 1.12rem;
-      line-height: 1.3;
+      font-size: 1.08rem;
+      line-height: 1.32;
     }
 
-    .strategy p {
-      position: relative;
+    .support p {
       margin: 0;
       color: var(--muted);
     }
 
-    .key-point {
-      display: flex;
-      gap: 11px;
-      align-items: flex-start;
-      margin-top: 22px;
-      padding-top: 18px;
-      border-top: 1px dashed var(--line);
-      color: var(--success);
-      font-weight: 700;
+    .source {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 12px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: #58616c;
+      background: var(--source);
+      font-size: .72rem;
+      font-weight: 750;
+      letter-spacing: .01em;
+      white-space: nowrap;
     }
 
-    .check {
+    .source::before {
+      content: "↗";
+      font-size: .78rem;
+    }
+
+    .goal {
+      display: flex;
+      gap: 13px;
+      align-items: flex-start;
+      margin: 22px 0 0;
+      padding: 18px 20px;
+      border: 1px solid #bfe4d5;
+      border-radius: 15px;
+      color: #14533f;
+      background: var(--green-soft);
+    }
+
+    .goal-icon {
       display: grid;
-      width: 24px;
-      height: 24px;
+      width: 29px;
+      height: 29px;
       flex: 0 0 auto;
       place-items: center;
       border-radius: 50%;
       color: #fff;
-      background: var(--success);
-      font-size: .84rem;
+      background: var(--green);
+      font-weight: 900;
+    }
+
+    .goal p { margin: 0; }
+    .goal strong { color: #0e4936; }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      justify-content: center;
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: .82rem;
     }
 
     footer {
-      padding: 0 22px 34px;
+      padding: 0 20px 34px;
       color: var(--muted);
       text-align: center;
       font-size: .88rem;
     }
 
-    @media (max-width: 820px) {
-      .strategies { grid-template-columns: 1fr; }
-      .strategy { min-height: auto; }
+    @media (max-width: 780px) {
       header { padding-top: 42px; }
+      .supports { grid-template-columns: 1fr; }
+      .student { border-radius: 18px; }
+    }
+
+    @media (max-width: 470px) {
+      .wrap { width: min(100% - 22px, 1120px); }
+      .support { padding: 64px 18px 19px; }
+      .support::before { top: 17px; }
     }
 
     @media print {
-      @page { margin: 12mm; }
+      @page { margin: 11mm; }
       body { background: #fff; }
       header {
-        padding: 24px 28px 42px;
+        padding: 24px 26px 42px;
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
       }
-      main { margin-top: -22px; padding-bottom: 0; }
+      .quick-nav { display: none; }
+      main { margin-top: -24px; padding-bottom: 0; }
       .wrap { width: 100%; }
       .student {
-        break-inside: avoid;
         margin-bottom: 14px;
-        padding: 24px;
+        padding: 22px;
+        border-radius: 14px;
         box-shadow: none;
+        break-before: page;
       }
-      .strategies { gap: 10px; }
-      .strategy { min-height: 190px; padding: 16px; }
-      footer { padding: 10px 0 0; }
+      .student:first-child { break-before: auto; }
+      .support, .goal { break-inside: avoid; }
+      .support { padding: 15px 15px 15px 56px; }
+      .support::before { top: 14px; left: 14px; }
+      .legend, footer { display: none; }
     }
   </style>
 </head>
@@ -257,87 +335,133 @@
   <header>
     <div class="wrap">
       <p class="eyebrow">Inclusive Supports in Education</p>
-      <h1>Adaptations in the Classroom</h1>
-      <p class="subtitle">Selected supports and reasons based on the profiles of Students A and B.</p>
+      <h1>Classroom Adaptations</h1>
+      <p class="subtitle">Profile-based supports that preserve meaningful learning while improving access, participation, and success.</p>
+      <nav class="quick-nav" aria-label="Student sections">
+        <a href="#terry">Student A - Terry</a>
+        <a href="#josh">Student B - Josh</a>
+      </nav>
     </div>
   </header>
 
   <main class="wrap">
-    <section class="student student-a" aria-labelledby="student-a-title">
-      <div class="student-heading">
-        <div class="student-letter" aria-hidden="true">A</div>
-        <h2 id="student-a-title">Terry - Grade 5</h2>
+    <section class="student student-a" id="terry" aria-labelledby="terry-title">
+      <div class="student-title">
+        <div class="letter" aria-hidden="true">A</div>
+        <h2 id="terry-title">Terry, Grade 5</h2>
       </div>
 
-      <p class="profile"><strong>Profile:</strong> Terry works at Grade 5 level in all core subjects except reading. Decoding is difficult, but his comprehension is strong.</p>
+      <div class="profile">
+        <span class="profile-label">Student profile</span>
+        <p>Terry is in Grade 5 and receives special education services for reading for 30 minutes each day. He spends the remainder of the day in the regular classroom. He receives Grade 5 instruction in all core curriculum areas except reading. Decoding is difficult for him, but comprehension is not a significant problem.</p>
+      </div>
 
-      <div class="strategies">
-        <article class="strategy">
-          <span class="number" aria-hidden="true">1</span>
-          <span class="tag">Access</span>
-          <h3>Audiobooks or text-to-speech</h3>
-          <p>This allows Terry to access Grade 5 content without decoding difficulties limiting his understanding.</p>
+      <p class="focus"><strong>Support focus:</strong> Because Terry understands what he reads once words are decoded, keep the <strong>Grade 5 learning outcomes the same</strong> and adapt how he accesses written information.</p>
+
+      <div class="supports">
+        <article class="support">
+          <h3>Provide audio or read-aloud support</h3>
+          <p>A teacher, peer, or text-to-speech tool can read longer questions, instructions, and content aloud. His decoding difficulty will not prevent him from demonstrating comprehension.</p>
+          <span class="source">Classroom Adaptations Article</span>
         </article>
 
-        <article class="strategy">
-          <span class="number" aria-hidden="true">2</span>
-          <span class="tag">Time</span>
-          <h3>Extra time for reading tasks</h3>
-          <p>Terry may need additional time to decode words accurately and complete reading activities successfully.</p>
+        <article class="support">
+          <h3>Use differentiated or supported reading materials</h3>
+          <p>When appropriate, provide more accessible text or enhance the original text by highlighting important information and adding pictures.</p>
+          <span class="source">Brookes Blog</span>
         </article>
 
-        <article class="strategy">
-          <span class="number" aria-hidden="true">3</span>
-          <span class="tag">Instruction</span>
-          <h3>Direct phonics and decoding support</h3>
-          <p>Targeted instruction addresses his specific reading need while keeping other learning at Grade 5 level.</p>
+        <article class="support">
+          <h3>Use visuals and graphic organizers</h3>
+          <p>Pictures, diagrams, maps, and organizers help Terry access information without relying entirely on decoding written text.</p>
+          <span class="source">Brookes Blog</span>
+        </article>
+
+        <article class="support">
+          <h3>Allow alternative ways of getting information</h3>
+          <p>For example, Terry can listen to a chapter while following along with the written text instead of decoding everything independently.</p>
+        </article>
+
+        <article class="support">
+          <h3>Support lengthy reading assignments</h3>
+          <p>Break longer reading into smaller sections. This makes the task more manageable and allows Terry to experience success along the way.</p>
+          <span class="source">Classroom Adaptations Article</span>
         </article>
       </div>
 
-      <div class="key-point">
-        <span class="check" aria-hidden="true">✓</span>
-        <span>Main goal: Remove the decoding barrier while maintaining Grade 5 learning expectations.</span>
+      <div class="goal">
+        <span class="goal-icon" aria-hidden="true">✓</span>
+        <p><strong>Main goal for Terry:</strong> Do not make the academic content easier just because decoding is difficult; make the content more accessible.</p>
+      </div>
+    </section>
+
+    <section class="student student-b" id="josh" aria-labelledby="josh-title">
+      <div class="student-title">
+        <div class="letter" aria-hidden="true">B</div>
+        <h2 id="josh-title">Josh, Grade 8</h2>
+      </div>
+
+      <div class="profile">
+        <span class="profile-label">Student profile</span>
+        <p>Josh is in Grade 8 and has a Category H designation: Severe Behaviour Disorder. His academics are well below grade level in all areas. He receives instruction at the Grade 5 level in reading and the Grade 6 level in math. His reading difficulties make the science and social studies curriculum difficult to access; however, he is successful when someone helps him read the content and when assignments and tests are given orally. He has difficulty staying on task and may become aggressive when frustrated.</p>
+      </div>
+
+      <p class="focus"><strong>Support focus:</strong> Josh needs more substantial adaptation because he is working below Grade 8 level academically, has difficulty maintaining attention, and becomes frustrated.</p>
+
+      <div class="supports">
+        <article class="support">
+          <h3>Use reading material at his instructional level</h3>
+          <p>For science and social studies, provide simplified or differentiated text while still teaching the important concepts.</p>
+          <span class="source">Brookes Blog</span>
+        </article>
+
+        <article class="support">
+          <h3>Continue oral assignments and testing</h3>
+          <p>Josh succeeds when content is read to him and he can respond orally. He may give oral answers, presentations, charts, or other demonstrations instead of completing every assignment in writing.</p>
+          <span class="source">Brookes Blog</span>
+        </article>
+
+        <article class="support">
+          <h3>Break assignments into manageable chunks</h3>
+          <p>Give Josh one short section at a time instead of a long worksheet or assignment all at once. This reduces overwhelm and creates frequent opportunities for success.</p>
+          <span class="source">Classroom Adaptations Article</span>
+        </article>
+
+        <article class="support">
+          <h3>Reduce the amount of work when appropriate</h3>
+          <p>Josh might complete fewer questions that demonstrate the same skill rather than completing an entire worksheet.</p>
+          <span class="source">Brookes Blog</span>
+        </article>
+
+        <article class="support">
+          <h3>Provide a low-distraction seating area</h3>
+          <p>Seat Josh near the teacher and away from high-traffic or distracting areas to help him maintain attention.</p>
+          <span class="source">Classroom Adaptations Article + Brookes Blog</span>
+        </article>
+
+        <article class="support">
+          <h3>Use a checklist and predictable routine</h3>
+          <p>Provide a short visual sequence: <strong>1.</strong> Read or listen to directions → <strong>2.</strong> Complete three questions → <strong>3.</strong> Check work → <strong>4.</strong> Ask for help.</p>
+          <span class="source">Classroom Adaptations Article</span>
+        </article>
+
+        <article class="support">
+          <h3>Increase assistance and immediate feedback</h3>
+          <p>A teacher, peer, special educator, or educational assistant can model the first step, prompt Josh when he becomes off-task, and provide immediate feedback.</p>
+        </article>
+      </div>
+
+      <div class="goal">
+        <span class="goal-icon" aria-hidden="true">✓</span>
+        <p><strong>Main goal for Josh:</strong> Match support to his instructional level, make tasks predictable, and reduce frustration so he can participate successfully.</p>
       </div>
     </section>
 
-    <section class="student student-b" aria-labelledby="student-b-title">
-      <div class="student-heading">
-        <div class="student-letter" aria-hidden="true">B</div>
-        <h2 id="student-b-title">Josh - Grade 8</h2>
-      </div>
-
-      <p class="profile"><strong>Profile:</strong> Josh works below Grade 8 level, has reading difficulties, struggles to stay on task, and may become aggressive when frustrated. He succeeds with reading assistance and oral work.</p>
-
-      <div class="strategies">
-        <article class="strategy">
-          <span class="number" aria-hidden="true">1</span>
-          <span class="tag">Access</span>
-          <h3>Audio materials and reading assistance</h3>
-          <p>This helps Josh understand science and social studies content without reading difficulties blocking access.</p>
-        </article>
-
-        <article class="strategy">
-          <span class="number" aria-hidden="true">2</span>
-          <span class="tag">Response</span>
-          <h3>Oral assignments and oral testing</h3>
-          <p>Josh can demonstrate his knowledge without being unfairly limited by reading and writing demands.</p>
-        </article>
-
-        <article class="strategy">
-          <span class="number" aria-hidden="true">3</span>
-          <span class="tag">Behaviour</span>
-          <h3>Short tasks, planned breaks and encouragement</h3>
-          <p>Clear steps, brief breaks and positive reinforcement can improve attention and reduce frustration.</p>
-        </article>
-      </div>
-
-      <div class="key-point">
-        <span class="check" aria-hidden="true">✓</span>
-        <span>Main goal: Provide accessible academic work and enough structure to support regulation and success.</span>
-      </div>
-    </section>
+    <div class="legend" aria-label="Source-label explanation">
+      <span>Source labels reflect the references shown in the supplied material.</span>
+    </div>
   </main>
 
-  <footer>Inclusive Supports in Education - Classroom Activity</footer>
+  <footer>Inclusive Supports in Education - Adaptations in Class Activity</footer>
 </body>
 </html>
