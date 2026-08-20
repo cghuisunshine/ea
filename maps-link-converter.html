@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Google ↔ Apple 导航链接转换</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--text:#17181c;--muted:#6b7280;--line:#e5e7eb;--accent:#111827;--ok:#0f766e;--warn:#b45309;--bad:#b91c1c}
+*{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text)}
+.wrap{max-width:760px;margin:auto;padding:28px 16px 56px} h1{font-size:28px;margin:0 0 8px}.sub{color:var(--muted);line-height:1.6;margin-bottom:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 8px 28px rgba(0,0,0,.04)}
+label{font-weight:700;display:block;margin-bottom:8px} textarea,select{width:100%;font:inherit;border:1px solid #cfd3da;border-radius:12px;padding:12px;background:#fff;color:var(--text)}
+textarea{min-height:120px;resize:vertical}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+button,a.btn{appearance:none;border:0;border-radius:12px;padding:11px 15px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.primary{background:var(--accent);color:#fff}.secondary{background:#eef0f4;color:#111827}.output{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+.status{font-size:14px;margin-bottom:10px;color:var(--muted)}.status.ok{color:var(--ok)}.status.warn{color:var(--warn)}.status.bad{color:var(--bad)}
+.urlbox{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;word-break:break-all;background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:12px;min-height:52px}
+.meta{display:grid;grid-template-columns:120px 1fr;gap:8px 12px;font-size:14px;margin:14px 0}.meta div:nth-child(odd){color:var(--muted)}
+.note{font-size:13px;color:var(--muted);line-height:1.55;margin-top:16px}.examples{margin-top:18px}.example{font-size:13px;background:#f8fafc;border:1px dashed #d1d5db;border-radius:12px;padding:10px;margin-top:8px;word-break:break-all;cursor:pointer}
+@media(max-width:560px){.row{grid-template-columns:1fr}.meta{grid-template-columns:90px 1fr}.actions>*{flex:1 1 45%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Google ↔ Apple 导航链接转换</h1>
+<div class="sub">粘贴 Google Maps 或 Apple Maps 的导航链接，或直接粘贴 Google Maps 的分享文字。页面会识别地点并生成另一家的导航链接。无需 API Key。</div>
+<div class="card">
+<label for="src">地图分享内容 / 导航链接</label>
+<textarea id="src" placeholder="例如：
+University of British Columbia
+https://maps.app.goo.gl/xxxxx
+
+或者粘贴完整 Google / Apple Maps 导航链接"></textarea>
+<div class="actions"><button class="secondary" id="paste">从剪贴板粘贴</button></div>
+
+<div class="row">
+<div><label for="mode">交通方式</label><select id="mode"><option value="auto">自动识别</option><option value="driving">驾车</option><option value="walking">步行</option><option value="transit">公交</option><option value="bicycling">骑行</option></select></div>
+<div><label for="target">输出</label><select id="target"><option value="auto">自动转换到另一家</option><option value="google">Google Maps</option><option value="apple">Apple Maps</option></select></div>
+</div>
+
+<div class="actions"><button class="primary" id="convert">转换</button><button class="secondary" id="clear">清空</button></div>
+
+<div class="output">
+<div id="status" class="status">等待输入</div>
+<div id="result" class="urlbox">—</div>
+<div class="meta" id="meta" hidden>
+<div>识别来源</div><div id="mSource"></div><div>起点</div><div id="mOrigin"></div><div>终点</div><div id="mDest"></div><div>方式</div><div id="mMode"></div>
+</div>
+<div class="actions"><button class="secondary" id="copy" disabled>复制链接</button><a class="btn primary" id="open" href="#" target="_blank" rel="noopener" style="pointer-events:none;opacity:.45">打开导航</a></div>
+
+<div class="note">Google 的 <b>maps.app.goo.gl</b> 短链接本身不包含可直接读取的地点信息，而且静态 GitHub Pages 不能跨域读取它最终跳转到哪里。但如果你从 Google Maps 点“分享”后，把<b>地点名称 + 短链接整段文字</b>一起粘贴，本页会用地点名称直接生成 Apple Maps 导航链接。</div>
+
+<div class="examples"><b>点击示例试用</b>
+<div class="example" data-value="https://www.google.com/maps/dir/?api=1&destination=49.2606,-123.2460&travelmode=driving">Google：当前位置 → UBC 坐标</div>
+<div class="example" data-value="https://maps.apple.com/?saddr=Vancouver%2C%20BC&daddr=UBC%2C%20Vancouver%2C%20BC&dirflg=d">Apple：Vancouver → UBC</div>
+<div class="example" data-value="University of British Columbia&#10;https://maps.app.goo.gl/example">Google 分享文字 + 短链接</div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id); let outputURL='';
+const safeDecode=s=>{try{return decodeURIComponent(String(s||'').replace(/\+/g,' '))}catch{return String(s||'')}};
+const clean=s=>safeDecode(String(s||'').replace(/^\/+|\/+$/g,''));
+const g2m=v=>({driving:'driving',walking:'walking',transit:'transit',bicycling:'bicycling'})[v]||'';
+const a2m=v=>({d:'driving',w:'walking',r:'transit'})[v]||'';
+const m2a=v=>({driving:'d',walking:'w',transit:'r'})[v]||'';
+
+function parseGoogle(u){
+ const o={source:'Google Maps',origin:'',dest:'',mode:''},p=u.searchParams;
+ o.origin=clean(p.get('origin')); o.dest=clean(p.get('destination')); o.mode=g2m(p.get('travelmode'));
+ const path=safeDecode(u.pathname);
+ if(path.includes('/maps/dir/')){
+   const parts=(path.split('/maps/dir/')[1]||'').split('/').filter(Boolean).filter(x=>!x.startsWith('@'));
+   if(!o.origin&&parts[0])o.origin=clean(parts[0]); if(!o.dest&&parts[1])o.dest=clean(parts[1]);
+ }
+ if(!o.dest){const full=safeDecode(u.href),m=full.match(/!3d(-?\d+(?:\.\d+)?)!4d(-?\d+(?:\.\d+)?)/);if(m)o.dest=`${m[1]},${m[2]}`}
+ return o;
+}
+function parseApple(u){
+ const p=u.searchParams;
+ return {source:'Apple Maps',origin:clean(p.get('saddr')),dest:clean(p.get('daddr')||p.get('q')||p.get('ll')),mode:a2m(p.get('dirflg'))};
+}
+function firstURL(raw){const m=String(raw).match(/https?:\/\/[^\s<>"']+/i);return m?m[0].replace(/[)\],.;，。；]+$/,''):''}
+function sharePlace(raw,url){
+ return String(raw).replace(url,' ').split(/\r?\n/).map(x=>x.trim()).filter(Boolean)
+ .filter(x=>!/^https?:\/\//i.test(x)).filter(x=>!/^shared from google maps/i.test(x)).filter(x=>!/^在 google 地图/i.test(x)).join(', ').trim();
+}
+function detect(raw){
+ raw=String(raw||'').trim(); if(!raw)throw Error('请先粘贴地图分享内容或导航链接。');
+ const urlText=firstURL(raw)||raw; let u; try{u=new URL(urlText)}catch{throw Error('没有找到有效的网址。')}
+ const h=u.hostname.toLowerCase();
+ if(h.includes('maps.app.goo.gl')||h==='goo.gl'){
+   const dest=sharePlace(raw,urlText);
+   if(dest)return {source:'Google Maps 短链接 + 分享文字',origin:'',dest,mode:''};
+   throw Error('只有 Google 短链接，无法读取目的地。请从 Google Maps 点“分享”，复制地点名称和短链接整段内容后再粘贴。');
+ }
+ if(h.includes('google.'))return parseGoogle(u);
+ if(h==='maps.apple.com'||h.endsWith('.maps.apple.com'))return parseApple(u);
+ throw Error('暂时无法识别。请粘贴 Google Maps 或 maps.apple.com 的内容。');
+}
+function buildGoogle(x,mode){const u=new URL('https://www.google.com/maps/dir/');u.searchParams.set('api','1');if(x.origin)u.searchParams.set('origin',x.origin);if(x.dest)u.searchParams.set('destination',x.dest);if(mode)u.searchParams.set('travelmode',mode);return u.toString()}
+function buildApple(x,mode){const u=new URL('https://maps.apple.com/');if(x.origin)u.searchParams.set('saddr',x.origin);if(x.dest)u.searchParams.set('daddr',x.dest);const f=m2a(mode);if(f)u.searchParams.set('dirflg',f);return u.toString()}
+
+function render(){
+ try{
+  const x=detect($('src').value); if(!x.dest)throw Error('没有识别到目的地。');
+  const mode=$('mode').value==='auto'?(x.mode||'driving'):$('mode').value;
+  let target=$('target').value;if(target==='auto')target=x.source.startsWith('Google')?'apple':'google';
+  const buildMode=(target==='apple'&&mode==='bicycling')?'':mode;
+  outputURL=target==='google'?buildGoogle(x,buildMode):buildApple(x,buildMode);
+  $('status').textContent=`已转换为 ${target==='google'?'Google Maps':'Apple Maps'}`;$('status').className='status ok';
+  $('result').textContent=outputURL;$('meta').hidden=false;$('mSource').textContent=x.source;$('mOrigin').textContent=x.origin||'当前位置 / 未指定';$('mDest').textContent=x.dest;
+  $('mMode').textContent=mode+(target==='apple'&&mode==='bicycling'?'（Apple 链接不强制指定骑行模式）':'');
+  $('copy').disabled=false;$('open').href=outputURL;$('open').style.pointerEvents='auto';$('open').style.opacity='1';
+ }catch(e){
+  outputURL='';$('status').textContent=e.message;$('status').className='status bad';$('result').textContent='—';$('meta').hidden=true;$('copy').disabled=true;$('open').href='#';$('open').style.pointerEvents='none';$('open').style.opacity='.45';
+ }
+}
+$('paste').onclick=async()=>{try{const t=await navigator.clipboard.readText();if(t){$('src').value=t;render()}}catch{$('status').textContent='浏览器未允许读取剪贴板，请长按输入框后选择“粘贴”。';$('status').className='status warn'}};
+$('convert').onclick=render;
+$('clear').onclick=()=>{ $('src').value='';outputURL='';$('status').textContent='等待输入';$('status').className='status';$('result').textContent='—';$('meta').hidden=true;$('copy').disabled=true;$('open').href='#';$('open').style.pointerEvents='none';$('open').style.opacity='.45'};
+$('copy').onclick=async()=>{if(!outputURL)return;try{await navigator.clipboard.writeText(outputURL);const b=$('copy'),old=b.textContent;b.textContent='已复制';setTimeout(()=>b.textContent=old,1200)}catch{window.prompt('复制下面的链接：',outputURL)}};
+document.querySelectorAll('.example').forEach(el=>el.onclick=()=>{$('src').value=el.dataset.value;render()});
+$('src').addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key==='Enter')render()});
+</script>
+</body>
+</html>
