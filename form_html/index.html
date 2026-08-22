@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning &amp; Communication Workbook</title>
+  <style>
+    :root {
+      --bg: #f4f1eb;
+      --surface: #fffdf9;
+      --surface-2: #eee9df;
+      --ink: #25231f;
+      --muted: #69645b;
+      --border: #d3cdc1;
+      --accent: #485949;
+      --accent-2: #7a5334;
+      --focus: #b77b3f;
+      --danger: #9c3e32;
+      --sidebar: #242822;
+      --sidebar-text: #ebe9e2;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: Avenir, "Avenir Next", Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    button, input, select, textarea { font: inherit; }
+    button { cursor: pointer; }
+    a { color: var(--accent-2); }
+    [hidden] { display: none !important; }
+
+    .app { min-height: 100vh; }
+    .sidebar {
+      position: fixed;
+      inset: 0 auto 0 0;
+      width: 258px;
+      overflow-y: auto;
+      padding: 22px 14px;
+      color: var(--sidebar-text);
+      background: var(--sidebar);
+      border-right: 1px solid #171a16;
+    }
+    .brand { padding: 0 10px 18px; border-bottom: 1px solid #41483e; }
+    .brand h1 { margin: 0; font-size: 19px; line-height: 1.25; }
+    .brand p { margin: 7px 0 0; color: #b9beb5; font-size: 13px; }
+    .nav-group { margin-top: 18px; }
+    .nav-group h2 {
+      margin: 0 10px 7px;
+      color: #aeb4aa;
+      font-size: 12px;
+      font-weight: 650;
+    }
+    .nav-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 9px 10px;
+      border: 0;
+      border-radius: 7px;
+      color: #d9ddd5;
+      background: transparent;
+      text-align: left;
+    }
+    .nav-button:hover { background: #30352e; }
+    .nav-button[aria-current="page"] { color: #fff; background: #3d463b; }
+    .nav-button .done { color: #aeb4aa; font-size: 12px; }
+
+    .main { margin-left: 258px; min-width: 0; }
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 58px;
+      padding: 9px 24px;
+      background: rgba(244, 241, 235, .96);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+    }
+    .toolbar-left { min-width: 0; }
+    .toolbar-title { margin: 0; font-size: 17px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .save-status { color: var(--muted); font-size: 12px; }
+    .toolbar-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+    .button {
+      min-height: 36px;
+      padding: 7px 12px;
+      color: var(--ink);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .button:hover { border-color: #aaa293; background: #fff; }
+    .button.primary { color: #fff; background: var(--accent); border-color: var(--accent); }
+    .button.danger { color: var(--danger); }
+    .mobile-select { display: none; }
+
+    .content { width: min(1060px, calc(100% - 48px)); margin: 28px auto 72px; }
+    .page-header { margin-bottom: 22px; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
+    .page-header h2 { margin: 0; font-size: 28px; line-height: 1.2; }
+    .page-header p { max-width: 760px; margin: 8px 0 0; color: var(--muted); }
+    .source-link { display: inline-block; margin-top: 8px; font-size: 13px; }
+    .section { margin-top: 22px; padding: 20px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; }
+    .section h3 { margin: 0 0 12px; font-size: 18px; }
+    .section h4 { margin: 18px 0 8px; font-size: 15px; }
+    .section > :last-child { margin-bottom: 0; }
+    .notice { padding: 12px 14px; color: #554f45; background: #eee8dc; border-left: 3px solid #9b876b; }
+    .meta-grid, .score-grid, .two-col, .three-col { display: grid; gap: 14px; }
+    .meta-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .score-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .two-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .three-col { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .field label, .field-label { display: block; margin-bottom: 6px; font-weight: 650; }
+    input[type="text"], input[type="date"], input[type="number"], select, textarea {
+      width: 100%;
+      padding: 9px 10px;
+      color: var(--ink);
+      background: #fff;
+      border: 1px solid #bbb4a8;
+      border-radius: 7px;
+    }
+    textarea { min-height: 92px; resize: vertical; }
+    input:focus, select:focus, textarea:focus, button:focus-visible {
+      outline: 3px solid color-mix(in srgb, var(--focus) 35%, transparent);
+      outline-offset: 1px;
+      border-color: var(--focus);
+    }
+    .question-list { display: grid; gap: 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .question-row { display: grid; grid-template-columns: minmax(260px, 1fr) minmax(330px, auto); gap: 18px; align-items: center; padding: 14px; background: #fff; border-bottom: 1px solid var(--border); }
+    .question-row:last-child { border-bottom: 0; }
+    .question-text { min-width: 0; }
+    .question-number { display: inline-block; width: 26px; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .radio-scale { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
+    .radio-scale label {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      min-height: 34px;
+      padding: 5px 8px;
+      background: #f7f5f0;
+      border: 1px solid #d5d0c7;
+      border-radius: 7px;
+      white-space: nowrap;
+    }
+    .radio-scale label:has(input:checked) { background: #e5eadf; border-color: #7d8d78; }
+    input[type="radio"], input[type="checkbox"] { accent-color: var(--accent); }
+    .choice-stack { display: grid; gap: 7px; margin-top: 9px; }
+    .choice-stack label, .check-list label { display: flex; gap: 9px; align-items: flex-start; }
+    .choice-stack input, .check-list input { margin-top: 4px; flex: 0 0 auto; }
+    .inventory-card { padding: 16px 0; border-bottom: 1px solid var(--border); }
+    .inventory-card:last-child { border-bottom: 0; }
+    .inventory-card p { margin: 0; font-weight: 650; }
+    .score-box { padding: 13px; background: #f1eee7; border: 1px solid var(--border); border-radius: 8px; }
+    .score-box strong { display: block; font-size: 22px; font-variant-numeric: tabular-nums; }
+    .score-box span { color: var(--muted); font-size: 13px; }
+    .result-line { margin-top: 12px; padding: 11px 13px; background: #e8ede3; border: 1px solid #bbc5b5; border-radius: 8px; }
+    .strategy-list { margin: 0; padding-left: 20px; }
+    .strategy-list li { margin: 5px 0; }
+    details { border-top: 1px solid var(--border); }
+    details:first-of-type { border-top: 0; }
+    summary { padding: 13px 0; font-weight: 700; cursor: pointer; }
+    details[open] summary { color: var(--accent); }
+    .detail-body { padding: 0 0 16px; }
+    .detail-body h4:first-child { margin-top: 0; }
+    .planner-options { display: grid; gap: 8px; }
+    .planner-options label { display: flex; align-items: flex-start; gap: 9px; padding: 9px 10px; background: #f7f5f0; border: 1px solid var(--border); border-radius: 7px; }
+    .planner-options input { margin-top: 4px; }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
+    table { width: 100%; border-collapse: collapse; background: #fff; }
+    th, td { padding: 10px 11px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+    th { color: #4d493f; background: #eeeae1; font-size: 13px; }
+    tr:last-child td { border-bottom: 0; }
+    .disc-row { display: grid; grid-template-columns: 40px repeat(4, minmax(0, 1fr)); border-bottom: 1px solid var(--border); }
+    .disc-row:last-child { border-bottom: 0; }
+    .disc-row > * { padding: 9px; border-right: 1px solid var(--border); }
+    .disc-row > *:last-child { border-right: 0; }
+    .disc-row.header { background: #eeeae1; font-weight: 700; }
+    .disc-choice { display: flex; align-items: center; gap: 7px; margin: 0; cursor: pointer; }
+    .source-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .source-card { margin: 0; padding: 9px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+    .source-card img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: top; background: #ddd; }
+    .source-card figcaption { padding: 8px 2px 1px; color: var(--muted); font-size: 13px; }
+    .source-card a { color: inherit; text-decoration: none; }
+    .muted { color: var(--muted); }
+    .compact { font-size: 13px; }
+    .split-label { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+
+    @media (max-width: 880px) {
+      .sidebar { display: none; }
+      .main { margin-left: 0; }
+      .mobile-select { display: block; width: min(52vw, 310px); }
+      .toolbar-title, .save-status { display: none; }
+      .question-row { grid-template-columns: 1fr; gap: 10px; }
+      .radio-scale { justify-content: flex-start; }
+      .source-grid, .three-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 600px) {
+      .toolbar { align-items: flex-start; padding: 9px 12px; }
+      .toolbar-actions .button:not(.primary) { display: none; }
+      .content { width: calc(100% - 24px); margin-top: 18px; }
+      .page-header h2 { font-size: 23px; }
+      .section { padding: 15px; }
+      .meta-grid, .score-grid, .two-col, .three-col, .source-grid { grid-template-columns: 1fr; }
+      .radio-scale label { font-size: 13px; }
+      .disc-row { grid-template-columns: 32px repeat(4, minmax(105px, 1fr)); }
+      .disc-grid-wrap { overflow-x: auto; }
+    }
+    @media print {
+      body { background: #fff; font-size: 12px; }
+      .sidebar, .toolbar, .source-link, .notice, .button { display: none !important; }
+      .main { margin: 0; }
+      .content { width: 100%; margin: 0; }
+      .page { display: block !important; }
+      .page:not(.print-target) { display: none !important; }
+      .section { break-inside: avoid; border-color: #aaa; }
+      .question-row { grid-template-columns: 1fr auto; break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <h1>Learning &amp; Communication Workbook</h1>
+        <p>28 photographed pages, organized for online use</p>
+      </div>
+      <nav id="sideNav" aria-label="Workbook pages"></nav>
+    </aside>
+
+    <main class="main">
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <select id="mobileNav" class="mobile-select" aria-label="Choose a workbook page"></select>
+          <p id="toolbarTitle" class="toolbar-title">Listening Questionnaire</p>
+          <span id="saveStatus" class="save-status">Answers save automatically on this device</span>
+        </div>
+        <div class="toolbar-actions">
+          <button class="button" id="printButton" type="button">Print page</button>
+          <button class="button" id="exportButton" type="button">Export answers</button>
+          <label class="button" for="importFile">Import</label>
+          <input id="importFile" type="file" accept="application/json" hidden>
+          <button class="button danger" id="resetButton" type="button">Reset</button>
+          <button class="button primary" id="nextButton" type="button">Next page</button>
+        </div>
+      </div>
+
+      <div class="content">
+        <article class="page" id="listening" data-title="Listening Questionnaire"></article>
+        <article class="page" id="learning" data-title="Learning Style Inventory" hidden></article>
+        <article class="page" id="study" data-title="Study Strategies" hidden></article>
+        <article class="page" id="executive" data-title="Executive Skills Questionnaire" hidden></article>
+        <article class="page" id="executive-reference" data-title="Executive Skills Reference" hidden></article>
+        <article class="page" id="planner" data-title="Intervention Planner" hidden></article>
+        <article class="page" id="teaching" data-title="Teaching Strategies" hidden></article>
+        <article class="page" id="dope" data-title="DOPE Behaviour Indicator" hidden></article>
+        <article class="page" id="disc" data-title="DISC Personality Worksheet" hidden></article>
+        <article class="page" id="conflict" data-title="Conflict Management Styles" hidden></article>
+        <article class="page" id="tk" data-title="Modified Thomas–Kilmann Instrument" hidden></article>
+        <article class="page" id="resources" data-title="Resources &amp; References" hidden></article>
+        <article class="page" id="sources" data-title="Original Photographs" hidden></article>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const pages = [
+      { id: 'listening', title: 'Listening Questionnaire', group: 'Assessments' },
+      { id: 'learning', title: 'Learning Style Inventory', group: 'Assessments' },
+      { id: 'executive', title: 'Executive Skills', group: 'Assessments' },
+      { id: 'dope', title: 'DOPE Behaviour Indicator', group: 'Assessments' },
+      { id: 'disc', title: 'DISC Personality', group: 'Assessments' },
+      { id: 'conflict', title: 'Conflict Management', group: 'Assessments' },
+      { id: 'tk', title: 'Thomas–Kilmann', group: 'Assessments' },
+      { id: 'study', title: 'Study Strategies', group: 'Guides & planners' },
+      { id: 'executive-reference', title: 'Executive Skills Reference', group: 'Guides & planners' },
+      { id: 'planner', title: 'Intervention Planner', group: 'Guides & planners' },
+      { id: 'teaching', title: 'Teaching Strategies', group: 'Guides & planners' },
+      { id: 'resources', title: 'Resources & References', group: 'Reference' },
+      { id: 'sources', title: 'Original Photographs', group: 'Reference' }
+    ];
+
+    const sourceLink = (...nums) => `<a class="source-link" href="#" data-source="${nums[0]}">View source photo${nums.length > 1 ? 's' : ''}: ${nums.map(n => 'IMG_' + n).join(', ')}</a>`;
+    const header = (title, text, ...sources) => `<header class="page-header"><h2>${title}</h2><p>${text}</p>${sourceLink(...sources)}</header>`;
+    const scale = (name, labels, values = labels.map((_, i) => i + 1)) => `<div class="radio-scale">${labels.map((label, i) => `<label><input type="radio" name="${name}" value="${values[i]}"> ${label}</label>`).join('')}</div>`;
+    const field = (label, name, type = 'text') => `<div class="field"><label for="${name}">${label}</label><input id="${name}" name="${name}" type="${type}"></div>`;
+
+    const listeningItems = [
+      'Get distracted', 'Listen only to facts', 'Interrupt', 'Assume the other person already knows',
+      'Prejudge', 'Tune out', 'Ignore nonverbal clues'
+    ];
+
+    const learningItems = [
+      ['If I have to learn how to do something, I learn best when I:', ['Watch someone show me how.', 'Hear someone tell me how.', 'Try to do it myself.']],
+      ['When I read, I often find that I:', ['Visualize what I am reading in my mind’s eye.', 'Read out loud or hear the words inside my head.', 'Fidget and try to “feel” the content.']],
+      ['When asked to give directions, I:', ['See the actual places in my mind.', 'Have no difficulty giving them verbally.', 'Have to point or move my body as I give them.']],
+      ['If I am unsure how to spell a word, I:', ['Write it to determine if it looks right.', 'Spell it aloud to determine if it sounds right.', 'Write it to determine if it feels right.']],
+      ['When I write, I:', ['Am concerned with how neat and well-spaced my letters and words appear.', 'Often say the letters and words to myself.', 'Push hard on my pen or pencil and can feel the flow of the words.']],
+      ['If I had to remember a list of items, I would remember it best if I:', ['Wrote them down.', 'Said them over and over to myself.', 'Moved around and used my fingers to name each item.']],
+      ['I prefer teachers who:', ['Use a board or overhead projector while they lecture.', 'Talk with lots of expression.', 'Use hands-on activities.']],
+      ['When trying to concentrate, I have a difficult time when:', ['There is a lot of clutter or movement in the room.', 'There is a lot of noise in the room.', 'I have to sit still for any length of time.']],
+      ['When solving a problem, I:', ['Write or draw diagrams to see it.', 'Talk myself through it.', 'Use my entire body or move objects to help me think.']],
+      ['When given written instructions on how to build something, I:', ['Read them silently and try to visualize how the parts fit together.', 'Read them aloud and talk to myself as I put the parts together.', 'Try to put the parts together first and read later.']],
+      ['To keep occupied while waiting, I:', ['Look around, stare, or read.', 'Talk or listen to others.', 'Walk around, manipulate things with my hands, or move my feet as I sit.']],
+      ['If I had to verbally describe something to another person, I would:', ['Be brief because I do not like to talk at length.', 'Go into great detail because I like to talk.', 'Gesture and move around while talking.']],
+      ['If someone were verbally describing something to me, I would:', ['Try to visualize what they were saying.', 'Enjoy listening but want to interrupt and talk myself.', 'Become bored if the description got too long and detailed.']],
+      ['When trying to recall names, I remember:', ['Faces but forget names.', 'Names but forget faces.', 'The situation where I met the person rather than the person’s name or face.']]
+    ];
+
+    const studyStrategies = {
+      Visual: [
+        'Organize work and living space to avoid distractions.', 'Sit near the front and away from windows or busy wall displays.',
+        'Use neatly organized or typed material.', 'Use visual association, imagery, written repetition, flash cards, and clustering.',
+        'Try different spatial arrangements and use blank space.', 'Use note pads, sticky notes, to-do lists, and other reminders.',
+        'Outline notes; use underlining, highlighting, symbols, flow charts, graphs, and pictures.',
+        'Practice turning visual cues back into words.', 'Plan and record thoughts before problem-solving or essay questions.'
+      ],
+      Auditory: [
+        'Work in quiet areas and sit away from doors or windows where noise enters.', 'Rehearse information orally and read notes aloud.',
+        'Attend lectures and tutorials; discuss topics with other learners or instructors.',
+        'Use mnemonics, rhymes, jingles, and spoken repetition.', 'Record lectures or reading material when permitted.',
+        'Turn illustrations into verbal descriptions.', 'Read long directions aloud or ask someone to read them.',
+        'Use verbal brainstorming and speak practice answers.'
+      ],
+      Kinesthetic: [
+        'Keep verbal discussion short and to the point.', 'Participate actively and use sight, touch, taste, smell, and hearing.',
+        'Use direct involvement, physical manipulation, imagery, and hands-on activities.',
+        'Organize information into the steps used to complete a task.', 'Seek laboratories, field trips, and real-life examples.',
+        'Use case studies and applications for abstract concepts.', 'Allow physical action, movement, and periodic breaks.',
+        'Use practice, role play, modeling, and teaching the material to someone else.', 'Write practice answers, paragraphs, or essays.'
+      ]
+    };
+
+    const executiveGroups = [
+      ['Response Inhibition', ['I don’t jump to conclusions.', 'I think before I speak.', 'I don’t take action without having all the facts.']],
+      ['Working Memory', ['I have a good memory for facts, dates, and details.', 'I am very good at remembering the things I have committed to do.', 'I seldom need reminders to complete tasks.']],
+      ['Emotional Control', ['My emotions seldom get in the way when performing on the job.', 'Little things do not affect me emotionally or distract me from the task at hand.', 'I can defer my personal feelings until after a task has been completed.']],
+      ['Task Initiation', ['No matter what the task, I believe in getting started as soon as possible.', 'Procrastination is usually not a problem for me.', 'I seldom leave tasks to the last minute.']],
+      ['Sustained Attention', ['I find it easy to stay focused on my work.', 'Once I start an assignment, I work diligently until it’s completed.', 'Even when interrupted, I find it easy to get back and complete the job at hand.']],
+      ['Planning / Prioritization', ['When I plan out my day, I identify priorities and stick to them.', 'When I have a lot to do, I can easily focus on the most important things.', 'I typically break big tasks down into subtasks and timelines.']],
+      ['Organization', ['I am an organized person.', 'It is natural for me to keep my work area neat and organized.', 'I am good at maintaining systems for organizing my work.']],
+      ['Time Management', ['At the end of the day, I’ve usually finished what I set out to do.', 'I am good at estimating how long it takes to do something.', 'I am usually on time for appointments and activities.']],
+      ['Flexibility', ['I take unexpected events in stride.', 'I easily adjust to changes in plans and priorities.', 'I consider myself to be flexible and adaptive to change.']],
+      ['Metacognition', ['I routinely evaluate my performance and devise methods for personal improvement.', 'I am able to step back from a situation in order to make objective decisions.', 'I “read” situations well and can adjust my behavior based on the reactions of others.']],
+      ['Goal-Directed Persistence', ['I think of myself as being driven to meet my goals.', 'I easily give up immediate pleasures to work on long-term goals.', 'I believe in setting and achieving high levels of performance.']],
+      ['Stress Tolerance', ['I enjoy working in a highly demanding, fast-paced environment.', 'A certain amount of pressure helps me to perform at my best.', 'Jobs that include a fair degree of unpredictability appeal to me.']]
+    ];
+
+    const executiveDefinitions = {
+      'Response Inhibition': 'The capacity to think before acting and resist an urge long enough to evaluate how a response may affect a situation.',
+      'Working Memory': 'The ability to hold information in memory while performing complex tasks and to apply past learning to the situation at hand.',
+      'Emotional Control': 'The ability to manage emotions in order to achieve goals, complete tasks, and direct behaviour.',
+      'Sustained Attention': 'The capacity to maintain attention to a situation or task despite distractibility, fatigue, or boredom.',
+      'Task Initiation': 'The ability to begin projects efficiently and without undue procrastination.',
+      'Planning / Prioritization': 'The ability to create a roadmap to reach a goal and decide what is important to focus on.',
+      'Organization': 'The ability to create and maintain systems that keep track of information and materials.',
+      'Time Management': 'The capacity to estimate available time, allocate it, and stay within limits and deadlines.',
+      'Goal-Directed Persistence': 'The capacity to set a goal, follow through to completion, and resist competing interests.',
+      'Flexibility': 'The ability to revise plans in response to obstacles, setbacks, new information, or mistakes.',
+      'Metacognition': 'The ability to step back, observe how you solve problems, and monitor or evaluate your own performance.',
+      'Stress Tolerance': 'The ability to thrive in stressful situations and cope with uncertainty, change, and performance demands.'
+    };
+
+    const teachingStrategies = {
+      'Response Inhibition': [['Post and review rules; increase external controls; restrict access when needed; discourage multitasking and schedule technology breaks.'], ['Prompt the child, then gradually shift from external to internal cues; teach wait/stop; use delayed gratification and rehearsal.']],
+      'Working Memory': [['Use calendars, posted to-do lists, pictures, electronic reminders, and the principle of “off-loading.”'], ['Prompt recall of directions or past experience; offer reminder options; rehearse the connection between a cue and what must be remembered.']],
+      'Emotional Control': [['Reduce or remove triggers; provide a script; step away from a problem situation.'], ['Teach early-warning signs, coping strategies, graded exposure, repeated rehearsal, and mindfulness.']],
+      'Flexibility': [['Limit flexibility demands at first; reduce novelty; highlight similarities; offer templates; turn open-ended work into clear steps.'], ['Increase support, preview situations, provide plans or rules, normalize errors, and introduce change gradually.']],
+      'Task Initiation': [['Provide cues and prompts; walk through the first step; reduce perceived effort; make help available; set a specific start time.'], ['Let the learner choose a cueing system and reinforcer; make a task plan; use a first-then approach and a visual schedule.']],
+      'Sustained Attention': [['Reduce distractions; prompt look/listen/respond; limit task length; build in choice; choose the best time of day; use timers or fidgets.'], ['Teach self-monitoring or peer coaching; identify something to look forward to; teach mindfulness.']],
+      'Planning / Prioritization': [['Make a plan visible, provide a template, and use planning tools or step-by-step apps.'], ['Demonstrate the planning process; apply the plan to a simple task; gradually shift more planning to the learner; ask what comes first.']],
+      'Organization': [['Demonstrate off-loading; help create a visual system; photograph the finished setup; provide organizational tools and structure the environment.'], ['Practise the system, monitor it initially, offer choices, and evaluate or improve the system over time.']],
+      'Time Management': [['Make schedules and limits explicit; prompt each step; use picture schedules, clocks, alarms, timers, and calendar tools.'], ['Mark time visibly; practise estimating task duration; teach the learner to follow schedules for daily events and homework.']],
+      'Goal-Directed Persistence': [['Set goals together; keep the goal or benchmark visible; reward persistence, emphasizing verbal reinforcement where possible.'], ['Define goals as something to improve or change; set small achievable goals connected to the learner’s own interests.']],
+      'Metacognition': [['Specify what and how performance will be evaluated; provide a model, objective, or checklist; embed reflective questions.'], ['Let the learner choose evaluation criteria, self-evaluate, compare evaluations, and ask: What is my problem? What is my plan? Am I following it? How did I do?']]
+    };
+
+    const dopeStatements = [
+      ['Eagle','I like people who are direct and to the point.'],['Owl','I pride myself in being cautious.'],['Dove','I could be considered contented, loyal, accommodating and mild.'],['Peacock','I can sometimes be subjective in my description of things.'],
+      ['Dove','When getting other people to do things, I am patient.'],['Peacock','I could be considered popular, social, trusting and responsive.'],['Dove','I can sometimes be slow to offer an opinion.'],['Eagle','I don’t care that I’m an impatient person.'],
+      ['Peacock','I could be considered cordial, affectionate, friendly and joyful.'],['Peacock','I like people who are friendly.'],['Dove','People think I’m a good listener.'],['Dove','I could be considered considerate, earnest, sympathetic and generous.'],
+      ['Dove','People think that I am dependable.'],['Peacock','I generally need to be with people.'],['Dove','I do my best work when doing what I am told.'],['Eagle','One of my biggest fears is that someone will take advantage of me.'],
+      ['Peacock','People think I’m a good talker.'],['Owl','I could be considered logical, systematic, objective and disciplined.'],['Owl','One of my biggest fears is being criticised for my mistakes.'],['Eagle','People think I get results.'],
+      ['Owl','I could be considered calculating, exacting, accurate and precise.'],['Dove','One of my biggest fears is change.'],['Peacock','I feel good when I am smooth and poised.'],['Owl','I could be considered cautious, conforming, consistent and adherent.'],
+      ['Peacock','When I am under pressure, I think that positive thinking helps.'],['Peacock','I work best with other people.'],['Eagle','I see life as a competitive process.'],['Dove','One of my biggest fears is hurting people’s feelings.'],
+      ['Eagle','I feel good when I am in control.'],['Dove','I could be considered calm, devout, contemplating and organised.'],['Peacock','I am a positive thinker.'],['Owl','I feel good when I am following an agenda.'],
+      ['Eagle','I could be considered outspoken, self-reliant, daring and restless.'],['Dove','I am generous.'],['Dove','I feel good when I am listening to others.'],['Eagle','I could be considered determined, stubborn, persistent and forceful.'],
+      ['Eagle','My friends sometimes accuse me of not listening.'],['Eagle','When getting other people to do things, I want action in a hurry.'],['Owl','My friends sometimes accuse me of being overly cautious.'],['Owl','When getting other people to do things, I want a quality job.'],
+      ['Owl','I think systematically.'],['Owl','I work best when things are organised.'],['Eagle','I could be considered firm, decisive, bold and assertive.'],['Eagle','I am self-reliant.'],
+      ['Peacock','I work best in a pleasant environment.'],['Eagle','I could be considered eager, inquisitive, direct and adventurous.'],['Owl','People think that I am accurate with facts and figures.'],['Dove','My friends sometimes accuse me of procrastinating.'],
+      ['Peacock','I do my best work when working with others.'],['Peacock','People think that I am enthusiastic.'],['Dove','I generally need to be given time to adjust to change.'],['Owl','I do my best work when following the rules.'],
+      ['Owl','I like people who are accurate.'],['Owl','People think I’m a perfectionist.'],['Dove','I could be considered willing, manageable and serving.'],['Owl','When I am under pressure, I think that a logical approach is necessary.'],
+      ['Dove','I generally need to be encouraged.'],['Dove','I see life as an exercise in patience and tolerance.'],['Dove','When I am under pressure, I remain calm.'],['Eagle','I work best in an environment that is free.'],
+      ['Dove','I see life as helping others.'],['Owl','I can sometimes be too precise in my interpretations.'],['Dove','When getting other people to do things, I help as much as possible.'],['Peacock','I could be considered optimistic, jovial, playful and enthusiastic.'],
+      ['Eagle','People think that I am direct and to the point.'],['Peacock','My friends sometimes accuse me of talking too much.'],['Owl','I do my best work when working by myself.'],['Eagle','I can sometimes be blunt.'],
+      ['Dove','I am generally satisfied with my lot in life.'],['Peacock','I could be considered expressive, talkative, participating and convincing.'],['Eagle','When I am under pressure, I feel challenged and I love it.'],['Eagle','I generally need to be given frank directions.'],
+      ['Owl','I see life as a step-by-step process.'],['Dove','I like people who are loyal.'],['Peacock','I pride myself in being optimistic.'],['Dove','I could be considered kind, modest, obedient and unselfish.']
+    ];
+
+    const discRows = [
+      ['Restrained','Forceful','Careful','Expressive'],['Pioneering','Correct','Exciting','Satisfied'],['Willing','Animated','Bold','Precise'],['Argumentative','Doubting','Indecisive','Unpredictable'],
+      ['Respectful','Out-going','Patient','Daring'],['Persuasive','Self-reliant','Logical','Gentle'],['Cautious','Even-tempered','Decisive','Life-of-the-party'],['Popular','Assertive','Perfectionist','Generous'],
+      ['Colorful','Modest','Easy-going','Unyielding'],['Systematic','Optimistic','Persistent','Accommodating'],['Relentless','Humble','Neighborly','Talkative'],['Friendly','Observant','Playful','Strong-willed'],
+      ['Charming','Adventurous','Disciplined','Deliberate'],['Restrained','Steady','Aggressive','Attractive'],['Enthusiastic','Analytical','Sympathetic','Determined'],['Commanding','Impulsive','Slow-paced','Critical'],
+      ['Consistent','Force-of-character','Lively','Laid-back'],['Influential','Kind','Independent','Orderly'],['Idealistic','Popular','Pleasant','Out-spoken'],['Impatient','Serious','Procrastinator','Emotional'],
+      ['Competitive','Spontaneous','Loyal','Thoughtful'],['Self-sacrificing','Considerate','Convincing','Courageous'],['Dependent','Flighty','Stoic','Pushy'],['Tolerant','Conventional','Stimulating','Directing']
+    ];
+
+    const discMap = [
+      ['B','D','A','C'],['A','C','D','B'],['C','B','A','D'],['A','D','C','B'],['D','B','C','A'],['B','A','D','C'],
+      ['C','D','B','A'],['B','A','D','C'],['D','A','C','B'],['C','B','D','A'],['A','D','C','B'],['D','C','A','B'],
+      ['B','A','D','C'],['C','D','B','A'],['D','A','C','B'],['A','B','C','D'],['B','C','D','A'],['C','A','B','D'],
+      ['D','B','C','A'],['A','D','C','B'],['A','B','C','D'],['D','C','B','A'],['D','B','A','C'],['D','C','A','B']
+    ];
+
+    const conflictItems = [
+      'I discuss issues with others to try to find solutions that meet everyone’s needs.',
+      'I try to negotiate and use a give-and-take approach to problem situations.',
+      'I try to meet the expectations of others.',
+      'I would argue my case and insist on the advantages of my point of view.',
+      'When there is a disagreement, I gather as much information as I can and keep the lines of communication open.',
+      'When I find myself in an argument, I usually say very little and try to leave as soon as possible.',
+      'I try to see conflicts from both sides: What do I need? What does the other person need? What issues are involved?',
+      'I prefer to compromise when solving problems and just move on.',
+      'I find conflicts exhilarating; I enjoy the battle of wits that usually follows.',
+      'Being in a disagreement with other people makes me feel uncomfortable and anxious.',
+      'I try to meet the wishes of my friends and family.',
+      'I can figure out what needs to be done and I am usually right.',
+      'To break deadlocks, I would meet people halfway.',
+      'I may not get what I want, but it’s a small price to pay for keeping the peace.',
+      'I avoid hard feelings by keeping my disagreements with others to myself.'
+    ];
+
+    const tkItems = [
+      'Avoid the person.','Admit that I am wrong even if I do not believe I am.','Threaten to fight the other person.','Look for a middle ground.','Try to understand the other person’s point of view.',
+      'Change the subject.','Give in.','Firmly pursue my goals.','Try to reach a compromise.','Try to find out what we agree and disagree on.',
+      'Try to turn the conflict into a joke.','Pretend to agree.','Whine or complain until I get my way.','Give in a little and encourage the other party to do the same.','Try to get all concerns out into the open.'
+    ];
+
+    function renderListening() {
+      document.querySelector('#listening').innerHTML = header('Listening Questionnaire', 'Choose how often each behaviour happens when you listen to another person. Lower totals indicate fewer listening barriers.', 2371) + `
+        <section class="section">
+          <div class="question-list">${listeningItems.map((q,i) => `<div class="question-row"><div class="question-text"><span class="question-number">${i+1}.</span>${q}</div>${scale('listen_'+i,['Always','Usually','Often','Rarely','Never'],[1,2,3,4,5])}</div>`).join('')}</div>
+          <div class="result-line"><strong>Total: <span id="listeningTotal">0</span> / 35</strong></div>
+        </section>`;
+    }
+
+    function renderLearning() {
+      const letters = ['V','A','K'];
+      document.querySelector('#learning').innerHTML = header('Learning Style Inventory', 'Choose the statement that best describes you. Your Visual, Auditory, and Kinesthetic totals update automatically.', 2372, 2373) + `
+        <section class="section">${learningItems.map((q,i) => `<div class="inventory-card"><p>${i+1}. ${q[0]}</p><div class="choice-stack">${q[1].map((a,j) => `<label><input type="radio" name="learn_${i}" value="${letters[j]}"><strong>${letters[j]}</strong> — ${a}</label>`).join('')}</div></div>`).join('')}</section>
+        <section class="section"><h3>Scores</h3><div class="three-col">${letters.map(l => `<div class="score-box"><strong id="learn${l}">0</strong><span>${l === 'V' ? 'Visual' : l === 'A' ? 'Auditory' : 'Kinesthetic'}</span></div>`).join('')}</div><div class="result-line" id="learningResult">Answer the inventory to see your primary mode.</div></section>`;
+    }
+
+    function renderStudy() {
+      document.querySelector('#study').innerHTML = header('Learning Style Study Strategies', 'Browse the strategies from the photographed guide. Check any ideas you want to try; your selections are saved.', 2374, 2375) +
+        `<div class="notice">These are study suggestions, not rules. Many people benefit from a mixture of all three approaches.</div>` +
+        `<section class="section">${Object.entries(studyStrategies).map(([type,items]) => `<details open><summary>${type} learner</summary><div class="detail-body check-list">${items.map((x,i) => `<label><input type="checkbox" name="strategy_${type}_${i}"> <span>${x}</span></label>`).join('')}</div></details>`).join('')}</section>
+        <section class="section"><div class="field"><label for="study_notes">My study plan</label><textarea id="study_notes" name="study_notes" placeholder="Write down the strategies you want to test and when you will try them."></textarea></div></section>`;
+    }
+
+    function renderExecutive() {
+      let n = 0;
+      const rows = executiveGroups.map(([group,items],gi) => `<section class="section exec-group" data-group="${gi}"><h3 class="split-label"><span>${group}</span><span class="muted compact">Subtotal: <strong id="execSubtotal${gi}">0</strong> / 21</span></h3><div class="question-list">${items.map(q => { n++; return `<div class="question-row"><div><span class="question-number">${n}.</span>${q}</div>${scale('exec_'+(n-1),['1','2','3','4','5','6','7'])}</div>`; }).join('')}</div></section>`).join('');
+      document.querySelector('#executive').innerHTML = header('Executive Skills Questionnaire', 'Rate how strongly you agree with each statement: 1 = strongly disagree, 4 = neutral, 7 = strongly agree. Your highest totals are relative strengths; your lowest totals are areas for support.', 2376, 2377) +
+        `<div class="notice">This is a self-reflection questionnaire from the photographed packet, not a diagnostic test.</div><div class="meta-grid section">${field('Name','exec_name')}${field('Date','exec_date','date')}</div>${rows}
+        <section class="section"><h3>Executive skill profile</h3><div id="execScores" class="score-grid"></div><div class="two-col" style="margin-top:14px"><div class="field"><label for="exec_strengths">Strongest skills</label><input id="exec_strengths" name="exec_strengths" type="text"></div><div class="field"><label for="exec_growth">Skills to strengthen</label><input id="exec_growth" name="exec_growth" type="text"></div></div></section>`;
+    }
+
+    function renderExecutiveReference() {
+      document.querySelector('#executive-reference').innerHTML = header('Executive Skills Reference', 'Plain-language descriptions of the executive skills named in the questionnaire.', 2378) +
+        `<section class="section">${Object.entries(executiveDefinitions).map(([k,v]) => `<details><summary>${k}</summary><div class="detail-body"><p>${v}</p></div></details>`).join('')}</section>`;
+    }
+
+    function renderPlanner() {
+      document.querySelector('#planner').innerHTML = header('Checklist for Designing Interventions', 'Use this planner to define a behavioural goal, choose supports, teach the skill, select incentives, and measure the outcome.', 2379) + `
+        <section class="section"><h3>1. Establish the behavioural goal</h3><div class="meta-grid"><div class="field"><label for="plan_skill">Executive skill involved</label><select id="plan_skill" name="plan_skill"><option value="">Choose a skill</option>${executiveGroups.map(g => `<option>${g[0]}</option>`).join('')}</select></div><div></div><div class="field"><label for="plan_problem">Problem behaviour</label><textarea id="plan_problem" name="plan_problem"></textarea></div><div class="field"><label for="plan_goal">Goal behaviour</label><textarea id="plan_goal" name="plan_goal"></textarea></div></div></section>
+        <section class="section"><h3>2. Environmental supports</h3><div class="planner-options">${[
+          'Change the physical or social environment (for example: barriers, fewer distractions, organizational structure, lower social complexity).',
+          'Change the nature of the task (for example: shorten it, build in breaks or choice, use a schedule, or make it more engaging).',
+          'Change how adults interact with the child (for example: rehearsal, prompts, reminders, coaching, praise, debriefing, or feedback).'
+        ].map((x,i) => `<label><input type="checkbox" name="plan_support_${i}"><span>${x}</span></label>`).join('')}</div><div class="field" style="margin-top:12px"><label for="plan_support_notes">Support details</label><textarea id="plan_support_notes" name="plan_support_notes"></textarea></div></section>
+        <section class="section"><h3>3. Procedure for teaching the skill</h3><div class="field"><label for="plan_who">Who will teach or supervise?</label><input id="plan_who" name="plan_who" type="text"></div><div class="field" style="margin-top:12px"><label for="plan_steps">Steps the child will follow</label><textarea id="plan_steps" name="plan_steps"></textarea></div></section>
+        <section class="section"><h3>4. Incentives</h3><div class="planner-options">${['Specific praise','Something to look forward to when the task (or part) is complete','A menu of rewards and penalties'].map((x,i) => `<label><input type="checkbox" name="plan_incentive_${i}"><span>${x}</span></label>`).join('')}</div><div class="three-col" style="margin-top:14px"><div class="field"><label for="reward_daily">Daily possibilities</label><textarea id="reward_daily" name="reward_daily"></textarea></div><div class="field"><label for="reward_weekly">Weekly possibilities</label><textarea id="reward_weekly" name="reward_weekly"></textarea></div><div class="field"><label for="reward_long">Long-term possibilities</label><textarea id="reward_long" name="reward_long"></textarea></div></div></section>
+        <section class="section"><h3>5. Outcome measure</h3><div class="field"><label for="plan_measure">How will you know the intervention is successful?</label><textarea id="plan_measure" name="plan_measure"></textarea></div></section>`;
+    }
+
+    function renderTeaching() {
+      document.querySelector('#teaching').innerHTML = header('Environmental Modifications & Teaching Strategies', 'Browse the packet’s support ideas by executive skill and note which approaches you want to try.', 2380, 2381, 2382, 2383, 2384, 2385) +
+        `<section class="section">${Object.entries(teachingStrategies).map(([skill,cols],i) => `<details><summary>${skill}</summary><div class="detail-body two-col"><div><h4>Environmental modifications</h4><ul class="strategy-list">${cols[0].map(x => `<li>${x}</li>`).join('')}</ul></div><div><h4>Teaching strategies</h4><ul class="strategy-list">${cols[1].map(x => `<li>${x}</li>`).join('')}</ul></div></div><label class="field-label" for="teach_${i}">Notes for ${skill}</label><textarea id="teach_${i}" name="teach_${i}"></textarea></details>`).join('')}</section>`;
+    }
+
+    function renderDope() {
+      document.querySelector('#dope').innerHTML = header('DOPE Test — Personal Behaviour Indicator', 'Answer quickly and honestly. Choose Yes only when a statement definitely applies; otherwise choose No. Scores are calculated as Yes minus No for each behaviour type.', 2389, 2390, 2391, 2392) +
+        `<div class="notice">The four behaviour labels are descriptive categories from the worksheet, not diagnoses. Read all four descriptions before drawing conclusions.</div>
+        <section class="section"><div class="question-list">${dopeStatements.map((x,i) => `<div class="question-row"><div><span class="question-number">${i+1}.</span>${x[1]}</div>${scale('dope_'+i,['Yes','No'],['y','n'])}</div>`).join('')}</div></section>
+        <section class="section"><h3>Results</h3><div class="score-grid" id="dopeScores"></div><div class="field" style="margin-top:14px"><label for="dope_reflection">Do the descriptions fit? What stands out?</label><textarea id="dope_reflection" name="dope_reflection"></textarea></div></section>`;
+    }
+
+    function renderDisc() {
+      document.querySelector('#disc').innerHTML = header('Understanding Yourself (DISC)', 'Choose the one word in each row that best describes you right now. The original scoring key is applied automatically.', 2393, 2394) +
+        `<section class="section"><div class="disc-grid-wrap"><div class="table-wrap"><div class="disc-row header"><div>#</div><div>A</div><div>B</div><div>C</div><div>D</div></div>${discRows.map((row,i) => `<div class="disc-row"><div>${i+1}</div>${row.map((word,j) => `<label class="disc-choice"><input type="radio" name="disc_${i}" value="${j}"> ${word}</label>`).join('')}</div>`).join('')}</div></div></section>
+        <section class="section"><h3>DISC totals</h3><div class="score-grid" id="discScores"></div><div class="result-line" id="discResult">Choose one word in each row to see your predominant type.</div></section>`;
+    }
+
+    function renderConflict() {
+      document.querySelector('#conflict').innerHTML = header('Conflict Management Styles Assessment', 'Choose the response that best describes you. There are no right or wrong answers.', 2395, 2396, 2397) +
+        `<section class="section"><div class="meta-grid">${field('Name','conflict_name')}${field('Date','conflict_date','date')}</div></section>
+        <section class="section"><div class="question-list">${conflictItems.map((q,i) => `<div class="question-row"><div><span class="question-number">${i+1}.</span>${q}</div>${scale('conflict_'+i,['Rarely','Sometimes','Often','Always'],[1,2,3,4])}</div>`).join('')}</div></section>
+        <section class="section"><h3>Style totals</h3><div class="score-grid" id="conflictScores"></div><div class="two-col" style="margin-top:14px"><div class="field"><label for="conflict_preferred">My preferred style</label><input id="conflict_preferred" name="conflict_preferred" type="text"></div><div class="field"><label for="conflict_work">Style I would like to work on</label><input id="conflict_work" name="conflict_work" type="text"></div></div><div class="field" style="margin-top:12px"><label for="conflict_practice">How can I practise this style?</label><textarea id="conflict_practice" name="conflict_practice"></textarea></div></section>
+        <section class="section"><h3>Five styles at a glance</h3>${[
+          ['Owl — Collaborating','Values both goals and relationships; treats conflict as a shared problem and seeks a solution that satisfies both sides.'],
+          ['Turtle — Avoiding','Withdraws from confrontation and may give up goals or relationships associated with the conflict.'],
+          ['Shark — Competing','Prioritizes goals over relationships and may try to make others accept a preferred solution.'],
+          ['Teddy Bear — Accommodating','Prioritizes relationships over personal goals and may smooth over conflict to preserve the relationship.'],
+          ['Fox — Compromising','Balances concern for goals and relationships by seeking a middle ground in which each side gives up something.']
+        ].map(x => `<details><summary>${x[0]}</summary><div class="detail-body"><p>${x[1]}</p></div></details>`).join('')}</section>`;
+    }
+
+    function renderTk() {
+      const letters = 'ABCDEFGHIJKLMNO'.split('');
+      document.querySelector('#tk').innerHTML = header('Modified Thomas–Kilmann Conflict Mode Instrument', 'Rate how much each response is like you in a conflict: 1 = not like me, 2 = somewhat like me, 3 = very much like me.', 2398) +
+        `<section class="section"><div class="question-list">${tkItems.map((q,i) => `<div class="question-row"><div><span class="question-number">${letters[i]}.</span>${q}</div>${scale('tk_'+i,['Not like me','Somewhat','Very much'],[1,2,3])}</div>`).join('')}</div></section>
+        <section class="section"><h3>Mode totals</h3><div class="score-grid" id="tkScores"></div></section>`;
+    }
+
+    function renderResources() {
+      document.querySelector('#resources').innerHTML = header('Resources & References', 'The packet includes books, articles, educator and therapist resources, executive-function workbooks, and useful websites.', 2386, 2387, 2388) + `
+        <section class="section"><h3>Books on executive skills</h3><ul class="strategy-list">
+          <li>Dawson &amp; Guare — <em>Executive Skills in Children and Adolescents</em>; <em>Coaching Students with Executive Skills Deficits</em>; <em>Smart but Scattered</em>.</li>
+          <li>Cooper-Kahn &amp; Foster — <em>Boosting Executive Skills in the Classroom</em>; <em>Late, Lost, and Unprepared</em>.</li>
+          <li>Kaufman — <em>Executive Functions in the Classroom</em>.</li>
+          <li>Meltzer — <em>Promoting Executive Function in the Classroom</em>.</li>
+          <li>McCloskey, Perkins &amp; Van Divner — <em>Assessment and Intervention for Executive Function Difficulties</em>.</li>
+        </ul></section>
+        <section class="section"><h3>Teen and student resources</h3><ul class="strategy-list">
+          <li>Hanson — <em>The Executive Function Workbook for Teens</em>.</li><li>Kulman — <em>Train Your Brain for Success</em>.</li>
+          <li>Kruger — <em>SOAR Study Skills</em>.</li><li>Langberg — <em>Homework, Organization, and Planning (HOPS) Skills</em>.</li>
+          <li>Moss &amp; Schwartz — <em>Where’s My Stuff?</em>.</li><li>Mullin &amp; Fried — <em>Executive Functioning Workbook</em>.</li>
+        </ul></section>
+        <section class="section"><h3>Websites from the packet</h3><ul class="strategy-list">
+          <li><a href="https://smartbutscatteredkids.com" target="_blank" rel="noreferrer">smartbutscatteredkids.com</a></li>
+          <li><a href="https://developingchild.harvard.edu" target="_blank" rel="noreferrer">Center on the Developing Child at Harvard University</a></li>
+          <li><a href="https://www.brainfacts.org" target="_blank" rel="noreferrer">BrainFacts.org</a></li>
+          <li><a href="https://www.toolsofthemind.org" target="_blank" rel="noreferrer">Tools of the Mind</a></li>
+          <li><a href="https://www.gonoodle.com" target="_blank" rel="noreferrer">GoNoodle</a></li>
+        </ul><p class="muted compact">For the complete research-article bibliography and remaining titles, open the original photographs linked above.</p></section>`;
+    }
+
+    function renderSources() {
+      const imgs = Array.from({length: 28}, (_,i) => 2371 + i);
+      document.querySelector('#sources').innerHTML = header('Original Photographs', 'Open any photograph at full size to verify wording or review diagrams and reference material that is not interactive.', 2371) +
+        `<div class="source-grid">${imgs.map(n => `<figure class="source-card" id="source-${n}"><a href="source_jpg/IMG_${n}.jpg" target="_blank"><img src="source_jpg/IMG_${n}.jpg" alt="Original photographed page IMG_${n}" loading="lazy"><figcaption>IMG_${n}.HEIC</figcaption></a></figure>`).join('')}</div>`;
+    }
+
+    function renderAll() {
+      renderListening(); renderLearning(); renderStudy(); renderExecutive(); renderExecutiveReference();
+      renderPlanner(); renderTeaching(); renderDope(); renderDisc(); renderConflict(); renderTk(); renderResources(); renderSources();
+    }
+
+    function buildNavigation() {
+      const groups = [...new Set(pages.map(p => p.group))];
+      document.querySelector('#sideNav').innerHTML = groups.map(group => `<div class="nav-group"><h2>${group}</h2>${pages.filter(p => p.group === group).map(p => `<button type="button" class="nav-button" data-view="${p.id}"><span>${p.title}</span><span class="done" data-progress="${p.id}"></span></button>`).join('')}</div>`).join('');
+      document.querySelector('#mobileNav').innerHTML = pages.map(p => `<option value="${p.id}">${p.title}</option>`).join('');
+    }
+
+    let activePage = 'listening';
+    function showPage(id, scroll = true) {
+      if (!pages.some(p => p.id === id)) id = 'listening';
+      activePage = id;
+      document.querySelectorAll('.page').forEach(p => { p.hidden = p.id !== id; p.classList.toggle('print-target', p.id === id); });
+      document.querySelectorAll('[data-view]').forEach(b => b.setAttribute('aria-current', b.dataset.view === id ? 'page' : 'false'));
+      const page = pages.find(p => p.id === id);
+      document.querySelector('#toolbarTitle').textContent = page.title;
+      document.querySelector('#mobileNav').value = id;
+      history.replaceState(null, '', '#' + id);
+      if (scroll) window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    const storageKey = 'learningCommunicationWorkbook.v1';
+    function collectState() {
+      const state = {};
+      document.querySelectorAll('input[name], select[name], textarea[name]').forEach(el => {
+        if (el.type === 'radio') { if (el.checked) state[el.name] = el.value; }
+        else if (el.type === 'checkbox') state[el.name] = el.checked;
+        else state[el.name] = el.value;
+      });
+      return state;
+    }
+
+    let saveTimer;
+    function saveState() {
+      localStorage.setItem(storageKey, JSON.stringify(collectState()));
+      document.querySelector('#saveStatus').textContent = 'Saved just now';
+      clearTimeout(saveTimer);
+      saveTimer = setTimeout(() => document.querySelector('#saveStatus').textContent = 'Answers save automatically on this device', 1800);
+    }
+
+    function applyState(state) {
+      Object.entries(state || {}).forEach(([name,value]) => {
+        const nodes = document.querySelectorAll(`[name="${CSS.escape(name)}"]`);
+        nodes.forEach(el => {
+          if (el.type === 'radio') el.checked = el.value === String(value);
+          else if (el.type === 'checkbox') el.checked = Boolean(value);
+          else el.value = value;
+        });
+      });
+    }
+
+    const radioValue = name => Number(document.querySelector(`input[name="${name}"]:checked`)?.value || 0);
+    function updateScores() {
+      document.querySelector('#listeningTotal').textContent = listeningItems.reduce((s,_,i) => s + radioValue('listen_'+i), 0);
+
+      const learn = {V:0,A:0,K:0};
+      learningItems.forEach((_,i) => { const v = document.querySelector(`input[name="learn_${i}"]:checked`)?.value; if(v) learn[v]++; });
+      Object.keys(learn).forEach(k => document.querySelector('#learn'+k).textContent = learn[k]);
+      const learnMax = Math.max(...Object.values(learn));
+      const names = {V:'Visual',A:'Auditory',K:'Kinesthetic'};
+      document.querySelector('#learningResult').textContent = learnMax ? `Primary mode: ${Object.keys(learn).filter(k => learn[k] === learnMax).map(k => names[k]).join(' / ')}` : 'Answer the inventory to see your primary mode.';
+
+      const execScores = executiveGroups.map((g,gi) => g[1].reduce((s,_,j) => s + radioValue('exec_'+(gi*3+j)),0));
+      execScores.forEach((s,i) => document.querySelector('#execSubtotal'+i).textContent = s);
+      document.querySelector('#execScores').innerHTML = executiveGroups.map((g,i) => `<div class="score-box"><strong>${execScores[i]}</strong><span>${g[0]}</span></div>`).join('');
+      if (execScores.some(Boolean)) {
+        const ranked = executiveGroups.map((g,i) => [g[0],execScores[i]]).sort((a,b) => b[1]-a[1]);
+        if (!document.querySelector('#exec_strengths').value) document.querySelector('#exec_strengths').placeholder = ranked.slice(0,3).map(x=>x[0]).join(', ');
+        if (!document.querySelector('#exec_growth').value) document.querySelector('#exec_growth').placeholder = ranked.slice(-3).reverse().map(x=>x[0]).join(', ');
+      }
+
+      const animals = ['Dove','Owl','Peacock','Eagle'];
+      const animalScores = Object.fromEntries(animals.map(a => [a,{y:0,n:0}]));
+      dopeStatements.forEach((x,i) => { const v = document.querySelector(`input[name="dope_${i}"]:checked`)?.value; if(v) animalScores[x[0]][v]++; });
+      document.querySelector('#dopeScores').innerHTML = animals.map(a => `<div class="score-box"><strong>${animalScores[a].y - animalScores[a].n}</strong><span>${a} · ${animalScores[a].y} yes, ${animalScores[a].n} no</span></div>`).join('');
+
+      const discTotals = {D:0,I:0,S:0,C:0};
+      discRows.forEach((_,i) => { const choice = document.querySelector(`input[name="disc_${i}"]:checked`)?.value; if(choice !== undefined) { const letter = discMap[i].find((_,col) => Number(choice) === 'ABCD'.indexOf(discMap[i][col])); const selectedCol = Number(choice); const type = ['D','I','S','C'].find(t => discMap[i][['D','I','S','C'].indexOf(t)] === 'ABCD'[selectedCol]); if(type) discTotals[type]++; } });
+      document.querySelector('#discScores').innerHTML = Object.entries(discTotals).map(([k,v]) => `<div class="score-box"><strong>${v}</strong><span>${k}</span></div>`).join('');
+      const discMax = Math.max(...Object.values(discTotals));
+      document.querySelector('#discResult').textContent = discMax ? `Highest score: ${Object.keys(discTotals).filter(k => discTotals[k] === discMax).join(' / ')}` : 'Choose one word in each row to see your predominant type.';
+
+      const conflictGroups = {Collaborating:[0,4,6],Competing:[3,8,11],Avoiding:[5,9,14],Accommodating:[2,10,13],Compromising:[1,7,12]};
+      const conflictScores = Object.fromEntries(Object.entries(conflictGroups).map(([k,idxs]) => [k,idxs.reduce((s,i)=>s+radioValue('conflict_'+i),0)]));
+      document.querySelector('#conflictScores').innerHTML = Object.entries(conflictScores).map(([k,v]) => `<div class="score-box"><strong>${v}</strong><span>${k}</span></div>`).join('');
+      if (Object.values(conflictScores).some(Boolean)) {
+        const highest = Math.max(...Object.values(conflictScores));
+        document.querySelector('#conflict_preferred').placeholder = Object.keys(conflictScores).filter(k => conflictScores[k] === highest).join(' / ');
+      }
+
+      const tkGroups = {Avoiding:[0,5,10],Accommodating:[1,6,11],Competing:[2,7,12],Compromising:[3,8,13],Collaborating:[4,9,14]};
+      const tkScores = Object.fromEntries(Object.entries(tkGroups).map(([k,idxs]) => [k,idxs.reduce((s,i)=>s+radioValue('tk_'+i),0)]));
+      document.querySelector('#tkScores').innerHTML = Object.entries(tkScores).map(([k,v]) => `<div class="score-box"><strong>${v}</strong><span>${k}</span></div>`).join('');
+      updateProgress();
+    }
+
+    function answered(prefix) { return [...document.querySelectorAll(`input[type="radio"][name^="${prefix}"]:checked`)].length; }
+    function updateProgress() {
+      const progress = {
+        listening: [answered('listen_'), listeningItems.length], learning: [answered('learn_'), learningItems.length],
+        executive: [answered('exec_'),36], dope:[answered('dope_'),dopeStatements.length], disc:[answered('disc_'),24],
+        conflict:[answered('conflict_'),15], tk:[answered('tk_'),15]
+      };
+      Object.entries(progress).forEach(([id,[a,t]]) => { const el = document.querySelector(`[data-progress="${id}"]`); if(el) el.textContent = a ? `${a}/${t}` : ''; });
+    }
+
+    function exportAnswers() {
+      const payload = { title: 'Learning & Communication Workbook answers', exportedAt: new Date().toISOString(), answers: collectState() };
+      const blob = new Blob([JSON.stringify(payload,null,2)], {type:'application/json'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = `workbook-answers-${new Date().toISOString().slice(0,10)}.json`; a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 500);
+    }
+
+    renderAll();
+    buildNavigation();
+    try { applyState(JSON.parse(localStorage.getItem(storageKey) || '{}')); } catch (e) { console.warn('Saved answers could not be read.', e); }
+    updateScores();
+    showPage(location.hash.slice(1) || 'listening', false);
+    setTimeout(() => window.scrollTo(0, 0), 0);
+
+    document.addEventListener('change', e => {
+      if (e.target.matches('input, select, textarea')) { updateScores(); saveState(); }
+    });
+    document.addEventListener('input', e => { if (e.target.matches('input[type="text"], input[type="date"], textarea')) saveState(); });
+    document.addEventListener('click', e => {
+      const nav = e.target.closest('[data-view]'); if (nav) showPage(nav.dataset.view);
+      const source = e.target.closest('[data-source]'); if (source) { e.preventDefault(); showPage('sources'); setTimeout(() => document.querySelector('#source-'+source.dataset.source)?.scrollIntoView({behavior:'smooth',block:'center'}),150); }
+    });
+    document.querySelector('#mobileNav').addEventListener('change', e => showPage(e.target.value));
+    document.querySelector('#nextButton').addEventListener('click', () => { const i = pages.findIndex(p => p.id === activePage); showPage(pages[(i+1)%pages.length].id); });
+    document.querySelector('#printButton').addEventListener('click', () => window.print());
+    document.querySelector('#exportButton').addEventListener('click', exportAnswers);
+    document.querySelector('#importFile').addEventListener('change', async e => {
+      const file = e.target.files[0]; if (!file) return;
+      try { const data = JSON.parse(await file.text()); applyState(data.answers || data); updateScores(); saveState(); alert('Answers imported.'); }
+      catch { alert('That file could not be imported. Please choose a JSON export from this workbook.'); }
+      e.target.value = '';
+    });
+    document.querySelector('#resetButton').addEventListener('click', () => {
+      if (!confirm('Clear every saved answer in this workbook? This cannot be undone unless you exported a copy.')) return;
+      localStorage.removeItem(storageKey);
+      document.querySelectorAll('input, textarea, select').forEach(el => { if (el.type === 'radio' || el.type === 'checkbox') el.checked = false; else if (el.id !== 'mobileNav') el.value = ''; });
+      updateScores(); showPage(activePage, false);
+    });
+  </script>
+</body>
+</html>
