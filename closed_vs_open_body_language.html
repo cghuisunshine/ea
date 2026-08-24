@@ -11,7 +11,6 @@
       --page: #f7f5f2;
       --paper: #fffefd;
       --ink: #272522;
-      --muted: #706a63;
       --rule: #d7d1ca;
       --rule-strong: #9b938a;
       --closed: #774c52;
@@ -75,8 +74,7 @@
       color: var(--open);
     }
 
-    button:focus-visible,
-    a:focus-visible {
+    button:focus-visible {
       outline: 3px solid var(--open-soft);
       outline-offset: 2px;
     }
@@ -125,17 +123,6 @@
 
     tbody td:last-child {
       box-shadow: inset 3px 0 0 var(--open-soft);
-    }
-
-    footer {
-      padding: 16px 30px 18px;
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: var(--open);
-      text-underline-offset: 2px;
     }
 
     @media (max-width: 620px) {
@@ -195,9 +182,6 @@
         color: var(--open);
       }
 
-      footer {
-        padding: 16px 18px 24px;
-      }
     }
 
     @media print {
@@ -300,11 +284,6 @@
         </tr>
       </tbody>
     </table>
-
-    <footer>
-      Sample from Big Talk, available at
-      <a href="https://www.towerofpower.com.au/bigtalk">www.towerofpower.com.au/bigtalk</a>.
-    </footer>
   </main>
 </body>
 </html>
