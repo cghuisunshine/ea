@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A reference table that reframes common challenging behaviours by considering what may really be happening.">
+  <title>Common Challenging Behaviours — What’s Really Happening?</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f5f5f1;
+      --paper: #ffffff;
+      --ink: #202522;
+      --muted: #66706a;
+      --rule: #d6dbd7;
+      --strong-rule: #9aa59e;
+      --accent: #27675e;
+      --accent-soft: #e3efec;
+      --row-hover: #f7faf8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: Avenir, Montserrat, "Helvetica Neue", sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 48px auto;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+    }
+
+    header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 28px 32px 24px;
+      border-bottom: 3px solid var(--accent);
+    }
+
+    h1 {
+      max-width: 820px;
+      margin: 0;
+      font-size: clamp(1.45rem, 3vw, 2.15rem);
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    h1 span {
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    button {
+      flex: 0 0 auto;
+      padding: 9px 14px;
+      border: 1px solid var(--strong-rule);
+      border-radius: 8px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 650;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    button:focus-visible {
+      outline: 3px solid var(--accent-soft);
+      outline-offset: 2px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    col.behaviour {
+      width: 22%;
+    }
+
+    col.appearance {
+      width: 34%;
+    }
+
+    col.possibility {
+      width: 44%;
+    }
+
+    th,
+    td {
+      padding: 18px 22px;
+      border-right: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: 0;
+    }
+
+    thead th {
+      background: var(--accent-soft);
+      color: #173d37;
+      font-size: 0.84rem;
+      letter-spacing: 0.035em;
+      text-transform: uppercase;
+    }
+
+    tbody th {
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    tbody tr:hover {
+      background: var(--row-hover);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.15rem;
+    }
+
+    li + li {
+      margin-top: 0.35rem;
+    }
+
+    li::marker {
+      color: var(--accent);
+    }
+
+    footer {
+      padding: 16px 32px 18px;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: 100%;
+        margin: 0;
+        border: 0;
+      }
+
+      header {
+        padding: 24px 20px 20px;
+      }
+
+      h1 span {
+        white-space: normal;
+      }
+
+      .table-wrap {
+        overflow: visible;
+      }
+
+      table,
+      tbody,
+      tr,
+      th,
+      td {
+        display: block;
+      }
+
+      colgroup,
+      thead {
+        display: none;
+      }
+
+      tbody tr {
+        padding: 22px 20px;
+        border-bottom: 1px solid var(--strong-rule);
+      }
+
+      tbody th,
+      tbody td {
+        padding: 0;
+        border: 0;
+      }
+
+      tbody th {
+        margin-bottom: 16px;
+        color: var(--accent);
+        font-size: 1.12rem;
+      }
+
+      tbody td + td {
+        margin-top: 18px;
+      }
+
+      tbody td::before {
+        display: block;
+        margin-bottom: 6px;
+        color: var(--muted);
+        content: attr(data-label);
+        font-size: 0.76rem;
+        font-weight: 750;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      footer {
+        padding: 16px 20px 24px;
+      }
+    }
+
+    @media print {
+      @page {
+        size: landscape;
+        margin: 10mm;
+      }
+
+      body {
+        background: white;
+        font-size: 10pt;
+      }
+
+      .page {
+        width: 100%;
+        margin: 0;
+        border: 0;
+      }
+
+      header {
+        padding: 0 0 12px;
+      }
+
+      h1 {
+        font-size: 18pt;
+      }
+
+      button,
+      footer {
+        display: none;
+      }
+
+      th,
+      td {
+        padding: 8px 10px;
+      }
+
+      tbody tr {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Common Challenging Behaviours <span>→ What’s Really Happening?</span></h1>
+      <button type="button" onclick="window.print()">Print</button>
+    </header>
+
+    <div class="table-wrap">
+      <table>
+        <colgroup>
+          <col class="behaviour">
+          <col class="appearance">
+          <col class="possibility">
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">Behaviour</th>
+            <th scope="col">May look like</th>
+            <th scope="col">May be</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Non-compliance</th>
+            <td data-label="May look like">
+              <ul>
+                <li>Willful misconduct</li>
+                <li>Attention seeking</li>
+                <li>Stubbornness</li>
+              </ul>
+            </td>
+            <td data-label="May be">
+              <ul>
+                <li>Difficulty translating verbal directions into action</li>
+                <li>Difficulty understanding</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Repetition of mistakes</th>
+            <td data-label="May look like">
+              <ul>
+                <li>Willful misconduct</li>
+                <li>Being manipulative</li>
+              </ul>
+            </td>
+            <td data-label="May be">
+              <ul>
+                <li>Difficulty linking cause to effect</li>
+                <li>Difficulty seeing similarities</li>
+                <li>Difficulty generalizing</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Failure to sit still</th>
+            <td data-label="May look like">
+              <ul>
+                <li>Attention seeking</li>
+                <li>Interference with others</li>
+                <li>Willful misconduct</li>
+              </ul>
+            </td>
+            <td data-label="May be">
+              <ul>
+                <li>Neurologically may need to move while learning</li>
+                <li>Sensory overload</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Failure to work independently</th>
+            <td data-label="May look like">
+              <ul>
+                <li>Willful misconduct</li>
+                <li>Poor parenting</li>
+              </ul>
+            </td>
+            <td data-label="May be">
+              <ul>
+                <li>Chronic memory problems</li>
+                <li>Difficulty translating verbal directions into action</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Failure to complete homework</th>
+            <td data-label="May look like">
+              <ul>
+                <li>Irresponsibility</li>
+                <li>Laziness</li>
+                <li>Unsupportive parenting</li>
+              </ul>
+            </td>
+            <td data-label="May be">
+              <ul>
+                <li>Memory deficits</li>
+                <li>Difficulty transferring what is learned in class to a homework assignment</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Lack of punctuality</th>
+            <td data-label="May look like">
+              <ul>
+                <li>Laziness, dawdling</li>
+                <li>Poor parenting</li>
+                <li>Willful misconduct</li>
+              </ul>
+            </td>
+            <td data-label="May be">
+              <ul>
+                <li>Difficulty understanding the abstract concept of time</li>
+                <li>Need for assistance to organize</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Poor social judgment</th>
+            <td data-label="May look like">
+              <ul>
+                <li>Poor parenting</li>
+                <li>Willful misconduct</li>
+                <li>Effects of child abuse</li>
+              </ul>
+            </td>
+            <td data-label="May be">
+              <ul>
+                <li>Difficulty interpreting social cues from peers</li>
+                <li>Lack of knowledge of what to do</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Physical intrusiveness</th>
+            <td data-label="May look like">
+              <ul>
+                <li>Willful misconduct</li>
+                <li>Deviancy</li>
+              </ul>
+            </td>
+            <td data-label="May be">
+              <ul>
+                <li>Hyper or hypo sensitivity to touch</li>
+                <li>Difficulty understanding social cues re: boundaries</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Stealing</th>
+            <td data-label="May look like">
+              <ul>
+                <li>Deliberate dishonesty</li>
+                <li>Lack of conscience</li>
+              </ul>
+            </td>
+            <td data-label="May be">
+              <ul>
+                <li>Difficulty understanding concept of ownership over time and space</li>
+                <li>Immature thinking (“finders keepers”)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Lying</th>
+            <td data-label="May look like">
+              <ul>
+                <li>Deliberate lying</li>
+                <li>Sociopathic behavior</li>
+                <li>Lack of conscience</li>
+              </ul>
+            </td>
+            <td data-label="May be">
+              <ul>
+                <li>Problems with memory and/or sequencing</li>
+                <li>Difficulty accurately recalling events</li>
+                <li>Attempt to please by telling you what you presumably want to hear</li>
+                <li>Confabulation (creating false memories — see glossary)</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>Extracted and reformatted from the supplied image.</footer>
+  </main>
+</body>
+</html>
