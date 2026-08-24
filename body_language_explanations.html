@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A visual guide explaining 24 examples of body language shown in the supplied collage.">
+  <title>Body Language — Visual Guide</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f5f5f1;
+      --paper: #fffefb;
+      --ink: #242724;
+      --muted: #646a64;
+      --rule: #d6d9d3;
+      --rule-strong: #9ba39b;
+      --accent: #22675f;
+      --accent-soft: #e2efeb;
+      --warm: #9a6800;
+      --note: #f5f0df;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: Avenir, Montserrat, "Helvetica Neue", sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .page {
+      width: min(1120px, calc(100% - 32px));
+      margin: 40px auto;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 28px 32px;
+      border-bottom: 3px solid var(--accent);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 0;
+      font-size: clamp(1.6rem, 3.5vw, 2.35rem);
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+    }
+
+    button {
+      flex: 0 0 auto;
+      padding: 9px 14px;
+      border: 1px solid var(--rule-strong);
+      border-radius: 8px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    button:focus-visible,
+    a:focus-visible {
+      outline: 3px solid var(--accent-soft);
+      outline-offset: 2px;
+    }
+
+    .overview {
+      display: grid;
+      grid-template-columns: minmax(280px, 680px) 1fr;
+      gap: 28px;
+      padding: 32px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--rule);
+    }
+
+    figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .reading-note {
+      align-self: start;
+      padding: 18px 20px;
+      border-left: 4px solid var(--warm);
+      background: var(--note);
+    }
+
+    .reading-note h2 {
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .reading-note p {
+      margin-bottom: 12px;
+    }
+
+    .reading-note p:last-child {
+      margin-bottom: 0;
+    }
+
+    .reading-note a {
+      color: var(--warm);
+      font-weight: 700;
+      text-underline-offset: 3px;
+    }
+
+    .explanations {
+      padding: 8px 32px 36px;
+    }
+
+    .pose-row {
+      padding-top: 28px;
+    }
+
+    .pose-row + .pose-row {
+      margin-top: 10px;
+      border-top: 1px solid var(--rule-strong);
+    }
+
+    .pose-row h2 {
+      margin-bottom: 10px;
+      color: var(--accent);
+      font-size: 1.25rem;
+    }
+
+    .pose-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--rule);
+    }
+
+    .pose-list li {
+      position: relative;
+      min-height: 160px;
+      padding: 20px 22px 20px 64px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .pose-list li:nth-child(odd) {
+      border-right: 1px solid var(--rule);
+    }
+
+    .pose-number {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 28px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid var(--accent);
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .pose-list h3 {
+      margin-bottom: 8px;
+      font-size: 1.03rem;
+      line-height: 1.3;
+    }
+
+    .pose-list p {
+      margin-bottom: 7px;
+      color: #3f4540;
+      font-size: 0.93rem;
+    }
+
+    .pose-list p:last-child {
+      margin-bottom: 0;
+    }
+
+    .pose-list strong {
+      color: var(--ink);
+    }
+
+    @media (max-width: 850px) {
+      .overview {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .page {
+        width: 100%;
+        margin: 0;
+        border: 0;
+      }
+
+      header {
+        align-items: flex-start;
+        padding: 22px 18px;
+      }
+
+      .overview {
+        gap: 20px;
+        padding: 22px 18px;
+      }
+
+      .explanations {
+        padding: 4px 18px 28px;
+      }
+
+      .pose-list {
+        grid-template-columns: 1fr;
+      }
+
+      .pose-list li {
+        min-height: 0;
+        padding: 18px 0 18px 44px;
+      }
+
+      .pose-list li:nth-child(odd) {
+        border-right: 0;
+      }
+
+      .pose-number {
+        top: 18px;
+        left: 0;
+      }
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 12mm;
+      }
+
+      body {
+        background: white;
+        font-size: 10pt;
+      }
+
+      .page {
+        width: 100%;
+        margin: 0;
+        border: 0;
+      }
+
+      header {
+        padding: 0 0 10px;
+      }
+
+      h1 {
+        font-size: 19pt;
+      }
+
+      button {
+        display: none;
+      }
+
+      .overview {
+        grid-template-columns: 58% 42%;
+        gap: 14px;
+        padding: 14px 0;
+      }
+
+      .reading-note {
+        padding: 10px 12px;
+      }
+
+      .explanations {
+        padding: 0;
+      }
+
+      .pose-row {
+        padding-top: 16px;
+      }
+
+      .pose-list li {
+        min-height: 0;
+        padding: 10px 10px 10px 42px;
+        break-inside: avoid;
+      }
+
+      .pose-number {
+        top: 10px;
+        left: 8px;
+      }
+
+      .pose-list p {
+        font-size: 8.5pt;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Body Language: Visual Guide</h1>
+      <button type="button" onclick="window.print()">Print</button>
+    </header>
+
+    <section class="overview" aria-labelledby="how-to-read">
+      <figure>
+        <img src="assets/body-language-collage-source.png" alt="A four-row collage showing 24 different facial expressions and gestures">
+        <figcaption>Poses are numbered from left to right, beginning with the top row.</figcaption>
+      </figure>
+
+      <aside class="reading-note">
+        <h2 id="how-to-read">Interpret with care</h2>
+        <p>Body language offers clues, not proof. A gesture can have several meanings depending on the situation, culture, disability, sensory needs, personality, and what happened just before it.</p>
+        <p>Look for several cues together, notice changes from the person’s usual behaviour, and ask respectfully rather than assuming.</p>
+        <p><a href="https://www.youtube.com/watch?v=Ks-_Mh1QhMc">Watch the video linked in the source slide</a></p>
+      </aside>
+    </section>
+
+    <div class="explanations">
+      <section class="pose-row" aria-labelledby="row-1">
+        <h2 id="row-1">Row 1</h2>
+        <ol class="pose-list">
+          <li>
+            <span class="pose-number" aria-hidden="true">1</span>
+            <h3>Relaxed and approachable</h3>
+            <p><strong>Visible cues:</strong> Upright posture, relaxed shoulders, direct gaze, and a small smile.</p>
+            <p><strong>May suggest:</strong> Calm attention, comfort, friendliness, or readiness to engage.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">2</span>
+            <h3>Alarm or intense stress</h3>
+            <p><strong>Visible cues:</strong> Both hands grip the head; the eyes are wide and the mouth is open.</p>
+            <p><strong>May suggest:</strong> Shock, panic, sudden worry, or feeling unable to manage what is happening.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">3</span>
+            <h3>Presenting or inviting</h3>
+            <p><strong>Visible cues:</strong> A tilted head, soft smile, and one palm turned upward.</p>
+            <p><strong>May suggest:</strong> Offering an idea, welcoming a response, introducing something, or playful confidence.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">4</span>
+            <h3>Thinking or disengaging</h3>
+            <p><strong>Visible cues:</strong> The cheek rests on one hand while the eyes look upward and away.</p>
+            <p><strong>May suggest:</strong> Reflection, daydreaming, trying to remember, tiredness, or boredom.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">5</span>
+            <h3>Startled or saying “wait”</h3>
+            <p><strong>Visible cues:</strong> Raised open palms near the face, lifted eyebrows, and an open mouth.</p>
+            <p><strong>May suggest:</strong> Surprise, self-protection, refusal, or an urgent wish for something to stop.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">6</span>
+            <h3>Dreamy or delighted</h3>
+            <p><strong>Visible cues:</strong> The head tilts into both hands and the gaze turns upward with a soft expression.</p>
+            <p><strong>May suggest:</strong> Affection, admiration, pleasant imagining, contentment, or playful posing.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="pose-row" aria-labelledby="row-2">
+        <h2 id="row-2">Row 2</h2>
+        <ol class="pose-list" start="7">
+          <li>
+            <span class="pose-number" aria-hidden="true">7</span>
+            <h3>Hopeful or imagining</h3>
+            <p><strong>Visible cues:</strong> The eyes look upward while both hands lightly frame the face.</p>
+            <p><strong>May suggest:</strong> Anticipation, wishing, recalling an idea, or searching for an answer.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">8</span>
+            <h3>Animated surprise</h3>
+            <p><strong>Visible cues:</strong> Open palms lift beside the shoulders; the eyes and mouth are wide.</p>
+            <p><strong>May suggest:</strong> Excitement, disbelief, amazement, or an expressive “What happened?”</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">9</span>
+            <h3>Composed and confident</h3>
+            <p><strong>Visible cues:</strong> Balanced upright posture, direct gaze, relaxed face, and a slight smile.</p>
+            <p><strong>May suggest:</strong> Comfort, steady attention, confidence, or a neutral listening position.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">10</span>
+            <h3>Overwhelmed</h3>
+            <p><strong>Visible cues:</strong> Both hands cover the ears or sides of the head while the mouth is open.</p>
+            <p><strong>May suggest:</strong> Sensory overload, frustration, distress, or wanting to block out sound or information.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">11</span>
+            <h3>Sleepy or content</h3>
+            <p><strong>Visible cues:</strong> Closed eyes, tilted head, and hands placed together like a pillow.</p>
+            <p><strong>May suggest:</strong> Sleep, tiredness, peacefulness, rest, or a playful request for a break.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">12</span>
+            <h3>Uncertain or unimpressed</h3>
+            <p><strong>Visible cues:</strong> The cheek rests on one hand; the eyes glance sideways and the mouth is tense.</p>
+            <p><strong>May suggest:</strong> Doubt, impatience, concern, boredom, or careful evaluation.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="pose-row" aria-labelledby="row-3">
+        <h2 id="row-3">Row 3</h2>
+        <ol class="pose-list" start="13">
+          <li>
+            <span class="pose-number" aria-hidden="true">13</span>
+            <h3>Angry or guarded</h3>
+            <p><strong>Visible cues:</strong> Crossed arms, lowered eyebrows, direct stare, and a tightly closed mouth.</p>
+            <p><strong>May suggest:</strong> Displeasure, defensiveness, resistance, or simply feeling cold or physically comfortable that way.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">14</span>
+            <h3>Sad or disappointed</h3>
+            <p><strong>Visible cues:</strong> Lowered head and eyes, collapsed posture, and a hand near the face.</p>
+            <p><strong>May suggest:</strong> Sadness, embarrassment, disappointment, fatigue, or avoiding attention.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">15</span>
+            <h3>Shocked</h3>
+            <p><strong>Visible cues:</strong> Raised eyebrows, wide eyes, open mouth, and the body leaning slightly forward.</p>
+            <p><strong>May suggest:</strong> Sudden surprise, disbelief, fear, or strong interest in unexpected news.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">16</span>
+            <h3>Amused or joyful</h3>
+            <p><strong>Visible cues:</strong> Head tipped back, broad open smile, and a relaxed upper body.</p>
+            <p><strong>May suggest:</strong> Laughter, enjoyment, relief, excitement, or social connection.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">17</span>
+            <h3>Worried or tense</h3>
+            <p><strong>Visible cues:</strong> Hands press into the cheeks; the lips are pursed and the gaze turns downward.</p>
+            <p><strong>May suggest:</strong> Anxiety, strain, deep concentration, waiting, or physical discomfort.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">18</span>
+            <h3>Confused or protesting</h3>
+            <p><strong>Visible cues:</strong> Both palms turn upward, the head turns to the side, and the mouth is open.</p>
+            <p><strong>May suggest:</strong> A question, confusion, frustration, disagreement, or asking for an explanation.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="pose-row" aria-labelledby="row-4">
+        <h2 id="row-4">Row 4</h2>
+        <ol class="pose-list" start="19">
+          <li>
+            <span class="pose-number" aria-hidden="true">19</span>
+            <h3>Panic or disbelief</h3>
+            <p><strong>Visible cues:</strong> Hands clasp behind the head, elbows spread wide, eyes lifted, and mouth open.</p>
+            <p><strong>May suggest:</strong> Strong shock, helplessness, panic, or an intense reaction to an outcome.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">20</span>
+            <h3>Distressed or exhausted</h3>
+            <p><strong>Visible cues:</strong> Both hands hold the face; the eyelids are heavy and the posture droops.</p>
+            <p><strong>May suggest:</strong> Fatigue, sadness, worry, headache, sensory strain, or emotional overload.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">21</span>
+            <h3>Requesting quiet</h3>
+            <p><strong>Visible cues:</strong> One index finger is held vertically in front of closed lips.</p>
+            <p><strong>May suggest:</strong> “Please be quiet,” secrecy, careful listening, or a reminder not to interrupt.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">22</span>
+            <h3>Happy and engaged</h3>
+            <p><strong>Visible cues:</strong> Broad smile, bright eyes, lifted cheeks, and an upright relaxed posture.</p>
+            <p><strong>May suggest:</strong> Enjoyment, enthusiasm, friendliness, pride, or positive connection.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">23</span>
+            <h3>Worried or under pressure</h3>
+            <p><strong>Visible cues:</strong> Both hands press on top of the head; the eyebrows lift and draw together.</p>
+            <p><strong>May suggest:</strong> Stress, fear, frustration, headache, or trying to process a difficult situation.</p>
+          </li>
+          <li>
+            <span class="pose-number" aria-hidden="true">24</span>
+            <h3>Friendly or explaining</h3>
+            <p><strong>Visible cues:</strong> Soft smile, tilted head, relaxed shoulders, and one hand gesturing outward.</p>
+            <p><strong>May suggest:</strong> Welcoming conversation, offering an idea, reassurance, or a playful invitation.</p>
+          </li>
+        </ol>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
