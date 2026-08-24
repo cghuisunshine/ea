@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A comparison of closed and open body language.">
+  <title>Closed and Open Body Language</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f7f5f2;
+      --paper: #fffefd;
+      --ink: #272522;
+      --muted: #706a63;
+      --rule: #d7d1ca;
+      --rule-strong: #9b938a;
+      --closed: #774c52;
+      --closed-soft: #f4e5e7;
+      --open: #37654e;
+      --open-soft: #e4eee8;
+      --row-hover: #faf8f4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: Avenir, Montserrat, "Helvetica Neue", sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .page {
+      width: min(940px, calc(100% - 32px));
+      margin: 48px auto;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 26px 30px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.55rem, 3.5vw, 2.2rem);
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    button {
+      flex: 0 0 auto;
+      padding: 9px 14px;
+      border: 1px solid var(--rule-strong);
+      border-radius: 8px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 650;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border-color: var(--open);
+      color: var(--open);
+    }
+
+    button:focus-visible,
+    a:focus-visible {
+      outline: 3px solid var(--open-soft);
+      outline-offset: 2px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    th,
+    td {
+      width: 50%;
+      padding: 15px 22px;
+      border-bottom: 1px solid var(--rule);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th + th,
+    td + td {
+      border-left: 1px solid var(--rule);
+    }
+
+    thead th {
+      font-size: 1.05rem;
+    }
+
+    thead th:first-child {
+      background: var(--closed-soft);
+      color: var(--closed);
+    }
+
+    thead th:last-child {
+      background: var(--open-soft);
+      color: var(--open);
+    }
+
+    tbody tr:hover {
+      background: var(--row-hover);
+    }
+
+    tbody td:first-child {
+      box-shadow: inset 3px 0 0 var(--closed-soft);
+    }
+
+    tbody td:last-child {
+      box-shadow: inset 3px 0 0 var(--open-soft);
+    }
+
+    footer {
+      padding: 16px 30px 18px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--open);
+      text-underline-offset: 2px;
+    }
+
+    @media (max-width: 620px) {
+      .page {
+        width: 100%;
+        margin: 0;
+        border: 0;
+      }
+
+      header {
+        align-items: flex-start;
+        padding: 22px 18px;
+      }
+
+      table,
+      thead,
+      tbody,
+      tr,
+      th,
+      td {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tbody tr {
+        padding: 18px;
+        border-bottom: 1px solid var(--rule-strong);
+      }
+
+      tbody td {
+        width: 100%;
+        padding: 0 0 0 14px;
+        border: 0;
+      }
+
+      tbody td + td {
+        margin-top: 16px;
+        border-left: 0;
+      }
+
+      tbody td::before {
+        display: block;
+        margin-bottom: 4px;
+        content: attr(data-label);
+        font-size: 0.78rem;
+        font-weight: 750;
+      }
+
+      tbody td:first-child::before {
+        color: var(--closed);
+      }
+
+      tbody td:last-child::before {
+        color: var(--open);
+      }
+
+      footer {
+        padding: 16px 18px 24px;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 14mm;
+      }
+
+      body {
+        background: white;
+        font-size: 11pt;
+      }
+
+      .page {
+        width: 100%;
+        margin: 0;
+        border: 0;
+      }
+
+      header {
+        padding: 0 0 12px;
+      }
+
+      h1 {
+        font-size: 20pt;
+      }
+
+      button {
+        display: none;
+      }
+
+      th,
+      td {
+        padding: 9px 12px;
+      }
+
+      tr {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Closed and Open Body Language</h1>
+      <button type="button" onclick="window.print()">Print</button>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Closed Body Language</th>
+          <th scope="col">Open Body Language</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Closed Body Language">Crossed arms or legs</td>
+          <td data-label="Open Body Language">Uncrossed arms and legs</td>
+        </tr>
+        <tr>
+          <td data-label="Closed Body Language">Body turns away from the person</td>
+          <td data-label="Open Body Language">Body faces the person</td>
+        </tr>
+        <tr>
+          <td data-label="Closed Body Language">Body leans back</td>
+          <td data-label="Open Body Language">Body leans forward</td>
+        </tr>
+        <tr>
+          <td data-label="Closed Body Language">Head faces away from the person as the eyes look at the ground or stagnate elsewhere</td>
+          <td data-label="Open Body Language">Head faces the person as the eyes either look at the person or surroundings</td>
+        </tr>
+        <tr>
+          <td data-label="Closed Body Language">Eyes are tense</td>
+          <td data-label="Open Body Language">Eyes are relaxed</td>
+        </tr>
+        <tr>
+          <td data-label="Closed Body Language">Lowered eyebrows</td>
+          <td data-label="Open Body Language">Raised eyebrows</td>
+        </tr>
+        <tr>
+          <td data-label="Closed Body Language">Frowns</td>
+          <td data-label="Open Body Language">Smile</td>
+        </tr>
+        <tr>
+          <td data-label="Closed Body Language">Mouth is closed</td>
+          <td data-label="Open Body Language">Mouth is slightly opened</td>
+        </tr>
+        <tr>
+          <td data-label="Closed Body Language">Muscles are tense</td>
+          <td data-label="Open Body Language">Muscles are relaxed</td>
+        </tr>
+        <tr>
+          <td data-label="Closed Body Language">Tight clothing</td>
+          <td data-label="Open Body Language">Loose clothing</td>
+        </tr>
+        <tr>
+          <td data-label="Closed Body Language">Expressionless face</td>
+          <td data-label="Open Body Language">Expressive face</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <footer>
+      Sample from Big Talk, available at
+      <a href="https://www.towerofpower.com.au/bigtalk">www.towerofpower.com.au/bigtalk</a>.
+    </footer>
+  </main>
+</body>
+</html>
