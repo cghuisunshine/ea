@@ -983,6 +983,21 @@ html&gt;body{padding:0}&lt;/style&gt;
     }
     #name-association-report .primary-action:hover { background: var(--focus); }
     #name-association-report .group-summary { margin-top: 10px; color: var(--muted); }
+    #name-association-report .picker-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 760px;
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    #name-association-report .picker-copy { min-width: 220px; }
+    #name-association-report .picker-copy h3 { margin-bottom: 3px; }
+    #name-association-report .picker-result { min-height: 31px; font-size: 22px; line-height: 1.35; font-weight: 600; }
+    #name-association-report .picker-status { color: var(--muted); font-size: 13px; }
     #name-association-report .group-results {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -1044,6 +1059,8 @@ html&gt;body{padding:0}&lt;/style&gt;
       #name-association-report .toolbar button { width: 100%; }
       #name-association-report .group-controls { grid-template-columns: 1fr; }
       #name-association-report .group-controls button { width: 100%; }
+      #name-association-report .picker-row { align-items: stretch; }
+      #name-association-report .picker-row button { width: 100%; }
     }
     @media (prefers-reduced-motion: reduce) {
       #name-association-report .bar-fill { transition: none; }
@@ -1052,6 +1069,7 @@ html&gt;body{padding:0}&lt;/style&gt;
       #name-association-report .page { max-width: none; padding: 0; }
       #name-association-report .toolbar { display: none; }
       #name-association-report .group-controls { display: none; }
+      #name-association-report .picker-row button { display: none; }
       #name-association-report .table-wrap { overflow: visible; }
       #name-association-report table { min-width: 0; font-size: 11px; }
       #name-association-report input,
@@ -1107,6 +1125,14 @@ html&gt;body{padding:0}&lt;/style&gt;
         &lt;button type=&quot;button&quot; id=&quot;make-groups&quot; class=&quot;primary-action&quot;&gt;Make random groups&lt;/button&gt;
       &lt;/div&gt;
       &lt;p id=&quot;group-summary&quot; class=&quot;group-summary&quot; aria-live=&quot;polite&quot;&gt;30 people available. No groups made yet.&lt;/p&gt;
+      &lt;div class=&quot;picker-row&quot;&gt;
+        &lt;div class=&quot;picker-copy&quot;&gt;
+          &lt;h3&gt;Random person&lt;/h3&gt;
+          &lt;p id=&quot;picker-result&quot; class=&quot;picker-result&quot; aria-live=&quot;polite&quot;&gt;No one selected yet&lt;/p&gt;
+          &lt;p id=&quot;picker-status&quot; class=&quot;picker-status&quot;&gt;All 30 people are available.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;button type=&quot;button&quot; id=&quot;pick-person&quot;&gt;Pick one person&lt;/button&gt;
+      &lt;/div&gt;
       &lt;div id=&quot;group-results&quot; class=&quot;group-results&quot; aria-live=&quot;polite&quot; hidden&gt;&lt;/div&gt;
     &lt;/section&gt;
 
@@ -1262,6 +1288,11 @@ html&gt;body{padding:0}&lt;/style&gt;
       const groupValueLabel = root.querySelector(&#x27;#group-value-label&#x27;);
       const groupSummary = root.querySelector(&#x27;#group-summary&#x27;);
       const groupResults = root.querySelector(&#x27;#group-results&#x27;);
+      const pickerResult = root.querySelector(&#x27;#picker-result&#x27;);
+      const pickerStatus = root.querySelector(&#x27;#picker-status&#x27;);
+      const pickPersonButton = root.querySelector(&#x27;#pick-person&#x27;);
+      let pickerPool = [];
+      let pickedThisRound = 0;
 
       function counts() {
         return categories.map(category =&gt; ({
@@ -1452,6 +1483,20 @@ html&gt;body{padding:0}&lt;/style&gt;
         return names;
       }
 
+      function pickRandomPerson() {
+        if (!pickerPool.length) {
+          pickerPool = shuffleNames();
+          pickedThisRound = 0;
+        }
+        const selectedName = pickerPool.pop();
+        pickedThisRound += 1;
+        pickerResult.textContent = selectedName;
+        pickPersonButton.textContent = &#x27;Pick next person&#x27;;
+        pickerStatus.textContent = pickerPool.length
+          ? `${pickedThisRound} selected · ${pickerPool.length} remaining in this round.`
+          : &#x27;Everyone has been selected. The next pick starts a new round.&#x27;;
+      }
+
       function renderRandomGroups() {
         const requestedValue = Number.parseInt(groupValue.value, 10);
         if (!Number.isInteger(requestedValue) || requestedValue &lt; 1 || requestedValue &gt; entries.length) {
@@ -1514,6 +1559,7 @@ html&gt;body{padding:0}&lt;/style&gt;
       search.addEventListener(&#x27;input&#x27;, renderTable);
       groupMode.addEventListener(&#x27;change&#x27;, updateGroupMode);
       root.querySelector(&#x27;#make-groups&#x27;).addEventListener(&#x27;click&#x27;, renderRandomGroups);
+      pickPersonButton.addEventListener(&#x27;click&#x27;, pickRandomPerson);
       groupValue.addEventListener(&#x27;keydown&#x27;, event =&gt; {
         if (event.key === &#x27;Enter&#x27;) renderRandomGroups();
       });
