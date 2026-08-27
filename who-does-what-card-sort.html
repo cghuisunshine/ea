@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who does what? — Teacher / Shared / EA card sort</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ground:#DCE2DA;
+    --ground-2:#CED6CB;
+    --paper:#FBFAF6;
+    --ink:#1B2620;
+    --ink-soft:#55635A;
+    --teacher:#1F5C63;
+    --ea:#5B4A8A;
+    --gold:#A8761C;
+    --flag:#9C3B2E;
+    --rule:rgba(27,38,32,.18);
+    --shadow:0 1px 0 rgba(27,38,32,.10), 0 6px 14px -10px rgba(27,38,32,.55);
+    --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+    --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  }
+
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--ground);
+    background-image:
+      radial-gradient(circle at 18% 12%, rgba(255,255,255,.55), transparent 55%),
+      radial-gradient(circle at 85% 80%, rgba(27,38,32,.07), transparent 60%);
+    color:var(--ink);
+    font-family:var(--body);
+    font-size:16px;
+    line-height:1.45;
+    padding:22px 16px 132px;
+    -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:1080px;margin:0 auto}
+
+  /* ---------- header ---------- */
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink-soft);margin:0 0 10px;
+  }
+  h1{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:clamp(30px,8.5vw,54px);
+    line-height:.98;
+    letter-spacing:-.02em;
+    margin:0 0 12px;
+  }
+  h1 .rule{display:block;width:64px;height:5px;background:var(--ink);margin-top:14px}
+  .lede{margin:0;max-width:52ch;color:var(--ink-soft);font-size:15px}
+  .lede b{color:var(--ink);font-weight:600}
+
+  /* ---------- section headings ---------- */
+  .band{
+    display:flex;align-items:baseline;gap:10px;
+    margin:30px 0 12px;padding-bottom:7px;
+    border-bottom:1px solid var(--rule);
+  }
+  .band h2{
+    font-family:var(--display);font-weight:700;
+    font-size:19px;letter-spacing:-.01em;margin:0;
+  }
+  .band .count{font-family:var(--mono);font-size:12px;color:var(--ink-soft)}
+
+  /* ---------- strips ---------- */
+  .stack{display:flex;flex-direction:column;gap:9px;min-height:8px}
+  .strip{
+    display:block;width:100%;text-align:left;
+    font:inherit;color:inherit;
+    background:var(--paper);
+    border:0;border-left:4px solid var(--ground-2);
+    border-radius:1px;
+    padding:11px 13px 11px 12px;
+    box-shadow:var(--shadow);
+    cursor:pointer;
+    transition:transform .16s ease, box-shadow .16s ease;
+  }
+  .strip:nth-child(3n+1){transform:rotate(-.35deg)}
+  .strip:nth-child(3n+2){transform:rotate(.28deg)}
+  .strip:nth-child(4n+3){transform:rotate(.5deg)}
+  .strip:hover{transform:rotate(0) translateY(-1px);box-shadow:0 1px 0 rgba(27,38,32,.10),0 12px 20px -12px rgba(27,38,32,.6)}
+  .strip:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+  .strip .n{font-family:var(--mono);font-size:12px;color:var(--ink-soft);margin-right:8px}
+  .strip .t{font-size:15px}
+  .strip.is-open{transform:rotate(0) translateY(-2px);box-shadow:0 1px 0 rgba(27,38,32,.1),0 16px 26px -14px rgba(27,38,32,.7);border-left-color:var(--ink)}
+
+  .col-teacher .strip{border-left-color:var(--teacher)}
+  .col-ea .strip{border-left-color:var(--ea)}
+  .col-shared .strip{
+    border-left-color:transparent;
+    border-image:repeating-linear-gradient(45deg,var(--teacher) 0 4px,var(--ea) 4px 8px) 1;
+    border-left-width:4px;border-left-style:solid;
+  }
+
+  /* placement controls inside an opened strip */
+  .actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+  .chip{
+    font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+    padding:8px 11px;border-radius:2px;cursor:pointer;
+    border:1px solid var(--ink);background:transparent;color:var(--ink);
+  }
+  .chip:hover{background:var(--ink);color:var(--paper)}
+  .chip.t{border-color:var(--teacher);color:var(--teacher)}
+  .chip.t:hover{background:var(--teacher);color:var(--paper)}
+  .chip.s{border-color:var(--gold);color:var(--gold)}
+  .chip.s:hover{background:var(--gold);color:var(--paper)}
+  .chip.e{border-color:var(--ea);color:var(--ea)}
+  .chip.e:hover{background:var(--ea);color:var(--paper)}
+  .chip.ghost{border-style:dashed;border-color:var(--ink-soft);color:var(--ink-soft)}
+  .chip:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+  /* ---------- board ---------- */
+  .board{display:grid;gap:16px;margin-top:8px}
+  @media (min-width:820px){ .board{grid-template-columns:repeat(3,1fr);gap:14px} }
+  .col{
+    background:rgba(251,250,246,.42);
+    border:1px solid var(--rule);
+    border-radius:2px;
+    padding:12px;
+  }
+  .col > header{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:11px}
+  .col h3{
+    font-family:var(--display);font-weight:700;font-size:15px;
+    letter-spacing:.02em;text-transform:uppercase;margin:0;
+  }
+  .col .tally{font-family:var(--mono);font-size:12px;color:var(--ink-soft)}
+  .swatch{height:7px;margin:-12px -12px 11px;}
+  .col-teacher .swatch{background:var(--teacher)}
+  .col-ea .swatch{background:var(--ea)}
+  .col-shared .swatch{background:repeating-linear-gradient(45deg,var(--teacher) 0 6px,var(--ea) 6px 12px)}
+  .empty{
+    font-size:13px;color:var(--ink-soft);font-style:italic;
+    border:1px dashed var(--rule);border-radius:2px;padding:14px 12px;text-align:center;
+  }
+
+  /* ---------- marking ---------- */
+  .strip .verdict{
+    display:none;margin-top:8px;font-family:var(--mono);font-size:11px;
+    letter-spacing:.06em;text-transform:uppercase;
+  }
+  .marked .strip .verdict{display:block}
+  .strip.right .verdict{color:var(--teacher)}
+  .strip.wrong{background:#FCF4F2;box-shadow:0 0 0 1px var(--flag) inset, var(--shadow)}
+  .strip.wrong .verdict{color:var(--flag)}
+
+  /* ---------- action bar ---------- */
+  .bar{
+    position:fixed;left:0;right:0;bottom:0;z-index:20;
+    background:var(--ink);color:var(--paper);
+    padding:11px 16px calc(11px + env(safe-area-inset-bottom));
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  }
+  .bar .progress{font-family:var(--mono);font-size:12px;letter-spacing:.06em;margin-right:auto}
+  .bar .progress b{color:#F2C46A;font-weight:600}
+  .btn{
+    font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+    padding:10px 14px;border-radius:2px;cursor:pointer;
+    background:var(--paper);color:var(--ink);border:1px solid var(--paper);
+  }
+  .btn.hollow{background:transparent;color:var(--paper);border-color:rgba(251,250,246,.45)}
+  .btn:disabled{opacity:.4;cursor:not-allowed}
+  .btn:focus-visible{outline:3px solid #F2C46A;outline-offset:2px}
+
+  .note{
+    margin:26px 0 0;padding:14px 15px;
+    border-left:3px solid var(--gold);
+    background:rgba(168,118,28,.08);
+    font-size:13.5px;color:var(--ink-soft);max-width:62ch;
+  }
+  .note b{color:var(--ink)}
+
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none!important}
+    .strip{transform:none!important}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">Card sort · 16 responsibilities</p>
+  <h1>Who does what?<span class="rule"></span></h1>
+  <p class="lede">Sort each strip into <b>Teacher</b>, <b>Shared</b>, or <b>EA</b>. Tap a strip to open it, then choose a column. Tap a placed strip to move it again.</p>
+
+  <div class="band">
+    <h2>Strips to sort</h2>
+    <span class="count" id="trayCount"></span>
+  </div>
+  <div class="stack" id="tray"></div>
+
+  <div class="board">
+    <section class="col col-teacher" id="col-teacher">
+      <div class="swatch"></div>
+      <header><h3>Teacher</h3><span class="tally" id="tally-teacher">0</span></header>
+      <div class="stack" data-stack="teacher"></div>
+    </section>
+    <section class="col col-shared" id="col-shared">
+      <div class="swatch"></div>
+      <header><h3>Shared</h3><span class="tally" id="tally-shared">0</span></header>
+      <div class="stack" data-stack="shared"></div>
+    </section>
+    <section class="col col-ea" id="col-ea">
+      <div class="swatch"></div>
+      <header><h3>EA</h3><span class="tally" id="tally-ea">0</span></header>
+      <div class="stack" data-stack="ea"></div>
+    </section>
+  </div>
+
+  <p class="note"><b>About the answer key.</b> Checking compares your sort against one common split of teacher and EA responsibilities. Schools and districts word these differently, and several strips sit reasonably in more than one column — treat a mismatch as a discussion point, not a wrong answer.</p>
+
+</div>
+
+<div class="bar">
+  <span class="progress" id="progress"></span>
+  <button class="btn hollow" id="resetBtn" type="button">Start over</button>
+  <button class="btn" id="checkBtn" type="button">Check my sort</button>
+</div>
+
+<script>
+const CARDS = [
+  {n:1,  t:"Support specialists (OT, PT, nurses etc) in the delivery of required services", key:"teacher"},
+  {n:2,  t:"Discuss concerns to facilitate early problem solving through regularly scheduled meetings.", key:"shared"},
+  {n:3,  t:"Discuss what instructional learning resources are needed to reach IEP goals.", key:"shared"},
+  {n:4,  t:"Plans learning activities.", key:"teacher"},
+  {n:5,  t:"Produces materials and implements strategies", key:"teacher"},
+  {n:6,  t:"Develops learning goals for individuals and groups", key:"teacher"},
+  {n:7,  t:"Gathers information to provide feedback into the planning process", key:"ea"},
+  {n:8,  t:"Determines appropriate modifications and adaptations in line with the IEP", key:"teacher"},
+  {n:9,  t:"Maintain confidentiality", key:"shared"},
+  {n:10, t:"Ensures assessment and learner profiles are current", key:"teacher"},
+  {n:11, t:"Review plan daily and weekly", key:"shared"},
+  {n:12, t:"Carries out personal and health care routines as directed", key:"ea"},
+  {n:13, t:"Assists students with learning activities", key:"ea"},
+  {n:14, t:"Evaluates progress according to goals of IEP", key:"teacher"},
+  {n:15, t:"Reports to parents (informal and formal reports)", key:"teacher"},
+  {n:16, t:"Provides information to teacher for home/school communications", key:"ea"}
+];
+
+const LABEL = {teacher:"Teacher", shared:"Shared", ea:"EA"};
+const placed = new Map(CARDS.map(c => [c.n, null]));
+let open = null;
+let marked = false;
+
+const tray = document.getElementById('tray');
+const stacks = {
+  teacher: document.querySelector('[data-stack="teacher"]'),
+  shared:  document.querySelector('[data-stack="shared"]'),
+  ea:      document.querySelector('[data-stack="ea"]')
+};
+
+function makeStrip(card){
+  const where = placed.get(card.n);
+  const el = document.createElement('button');
+  el.type = 'button';
+  el.className = 'strip';
+  el.dataset.n = card.n;
+  el.setAttribute('aria-expanded', open === card.n ? 'true' : 'false');
+  if (open === card.n) el.classList.add('is-open');
+
+  if (marked && where){
+    el.classList.add(where === card.key ? 'right' : 'wrong');
+  }
+
+  const line = document.createElement('div');
+  line.innerHTML = '<span class="n">' + card.n + '</span><span class="t"></span>';
+  line.querySelector('.t').textContent = card.t;
+  el.appendChild(line);
+
+  if (marked && where){
+    const v = document.createElement('div');
+    v.className = 'verdict';
+    v.textContent = where === card.key ? '✓ Matches the key' : '→ Key says ' + LABEL[card.key];
+    el.appendChild(v);
+  }
+
+  if (open === card.n){
+    const row = document.createElement('div');
+    row.className = 'actions';
+    [['teacher','t'],['shared','s'],['ea','e']].forEach(([dest, cls]) => {
+      if (dest === where) return;
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'chip ' + cls;
+      b.textContent = LABEL[dest];
+      b.addEventListener('click', e => { e.stopPropagation(); place(card.n, dest); });
+      row.appendChild(b);
+    });
+    if (where){
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'chip ghost';
+      b.textContent = 'Back to strips';
+      b.addEventListener('click', e => { e.stopPropagation(); place(card.n, null); });
+      row.appendChild(b);
+    }
+    el.appendChild(row);
+  }
+
+  el.addEventListener('click', () => { open = (open === card.n) ? null : card.n; render(); });
+  return el;
+}
+
+function place(n, dest){
+  placed.set(n, dest);
+  open = null;
+  render();
+}
+
+function render(){
+  tray.innerHTML = '';
+  Object.values(stacks).forEach(s => s.innerHTML = '');
+
+  CARDS.forEach(card => {
+    const where = placed.get(card.n);
+    (where ? stacks[where] : tray).appendChild(makeStrip(card));
+  });
+
+  const left = CARDS.filter(c => !placed.get(c.n)).length;
+  document.getElementById('trayCount').textContent = left + ' left';
+  if (left === 0){
+    const p = document.createElement('p');
+    p.className = 'empty';
+    p.textContent = 'All 16 placed.';
+    tray.appendChild(p);
+  }
+
+  Object.keys(stacks).forEach(k => {
+    const count = CARDS.filter(c => placed.get(c.n) === k).length;
+    document.getElementById('tally-' + k).textContent = count;
+    if (count === 0){
+      const p = document.createElement('p');
+      p.className = 'empty';
+      p.textContent = 'Nothing here yet';
+      stacks[k].appendChild(p);
+    }
+  });
+
+  document.body.classList.toggle('marked', marked);
+  document.getElementById('checkBtn').disabled = left > 0;
+
+  const prog = document.getElementById('progress');
+  if (marked){
+    const right = CARDS.filter(c => placed.get(c.n) === c.key).length;
+    prog.innerHTML = '<b>' + right + '</b> of 16 match the key';
+  } else {
+    prog.innerHTML = '<b>' + (16 - left) + '</b> of 16 placed';
+  }
+}
+
+document.getElementById('checkBtn').addEventListener('click', () => {
+  marked = true; open = null; render();
+  window.scrollTo({top:0, behavior:'smooth'});
+});
+
+document.getElementById('resetBtn').addEventListener('click', () => {
+  CARDS.forEach(c => placed.set(c.n, null));
+  marked = false; open = null; render();
+  window.scrollTo({top:0, behavior:'smooth'});
+});
+
+render();
+</script>
+</body>
+</html>
