@@ -222,6 +222,7 @@
 <div class="bar">
   <span class="progress" id="progress"></span>
   <button class="btn hollow" id="resetBtn" type="button">Start over</button>
+  <button class="btn hollow" id="showAnswerBtn" type="button">Show Answer</button>
   <button class="btn" id="checkBtn" type="button">Check my sort</button>
 </div>
 
@@ -357,6 +358,12 @@ function render(){
 }
 
 document.getElementById('checkBtn').addEventListener('click', () => {
+  marked = true; open = null; render();
+  window.scrollTo({top:0, behavior:'smooth'});
+});
+
+document.getElementById('showAnswerBtn').addEventListener('click', () => {
+  CARDS.forEach(c => placed.set(c.n, c.key));
   marked = true; open = null; render();
   window.scrollTo({top:0, behavior:'smooth'});
 });
