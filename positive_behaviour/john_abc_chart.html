@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John ABC Observation Chart</title>
+  <style>
+    :root {
+      --ink: #211f1b;
+      --muted: #625f58;
+      --line: #aaa69d;
+      --line-strong: #4c4942;
+      --paper: #fffefb;
+      --canvas: #eeeae2;
+      --header: #e3dfd5;
+      --accent: #6b5947;
+      --focus: #fff4c7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--canvas);
+      font-family: Avenir, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.42;
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      max-width: 1380px;
+      margin: 20px auto 0;
+      padding: 0 20px;
+    }
+
+    .toolbar p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    button {
+      border: 1px solid var(--line-strong);
+      border-radius: 6px;
+      padding: 9px 15px;
+      color: #fff;
+      background: var(--accent);
+      font: inherit;
+      font-weight: 650;
+      cursor: pointer;
+    }
+
+    button:hover { background: #564738; }
+    button:focus-visible { outline: 3px solid #d4ad74; outline-offset: 2px; }
+
+    main {
+      max-width: 1380px;
+      margin: 16px auto 32px;
+      padding: 0 20px;
+    }
+
+    .sheet {
+      background: var(--paper);
+      border: 1px solid #d0ccc3;
+      box-shadow: 0 2px 8px rgba(40, 35, 28, 0.08);
+      padding: 30px;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: 26px;
+      line-height: 1.2;
+      text-align: center;
+      font-weight: 720;
+    }
+
+    .student-details {
+      display: grid;
+      grid-template-columns: 1.35fr 0.55fr 0.55fr 1fr 1.5fr;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .field {
+      min-width: 0;
+      border-bottom: 1px solid var(--line-strong);
+      padding: 5px 2px 6px;
+    }
+
+    .field-label {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .field-value { font-weight: 650; }
+
+    .table-wrap { overflow-x: auto; }
+
+    table {
+      width: 100%;
+      min-width: 1040px;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    col.date { width: 12%; }
+    col.setting { width: 19%; }
+    col.antecedent { width: 22%; }
+    col.behaviour { width: 25%; }
+    col.consequence { width: 22%; }
+
+    th,
+    td {
+      border: 1px solid var(--line);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--header);
+      border-color: var(--line-strong);
+      font-size: 14px;
+      line-height: 1.25;
+    }
+
+    th strong {
+      display: block;
+      margin-bottom: 2px;
+      font-size: 16px;
+    }
+
+    th span {
+      display: block;
+      font-size: 11px;
+      font-weight: 500;
+    }
+
+    td {
+      height: 125px;
+      background: var(--paper);
+      font-size: 13px;
+    }
+
+    td:first-child { font-weight: 650; }
+
+    [contenteditable="true"]:focus {
+      outline: 2px solid #a7773b;
+      outline-offset: -2px;
+      background: var(--focus);
+    }
+
+    .note {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .student-details { grid-template-columns: 1fr 1fr; }
+      .field:last-child { grid-column: 1 / -1; }
+      .sheet { padding: 20px; }
+      h1 { text-align: left; font-size: 22px; }
+    }
+
+    @media print {
+      @page { size: letter landscape; margin: 0.38in; }
+
+      body { background: #fff; font-size: 10pt; }
+      .toolbar { display: none; }
+      main { max-width: none; margin: 0; padding: 0; }
+      .sheet { border: 0; box-shadow: none; padding: 0; }
+      h1 { margin-bottom: 10px; font-size: 18pt; }
+      .student-details { gap: 9px; margin-bottom: 10px; }
+      .field { padding: 2px 1px 4px; }
+      .field-label { font-size: 7.5pt; }
+      .table-wrap { overflow: visible; }
+      table { min-width: 0; }
+      th, td { padding: 6px; }
+      th { font-size: 8.5pt; }
+      th strong { font-size: 10pt; }
+      th span { font-size: 7pt; }
+      td { height: auto; font-size: 7.7pt; line-height: 1.28; }
+      .note { margin-top: 6px; font-size: 7.5pt; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar" aria-label="Page controls">
+    <p>Click any student detail or table cell to edit it before printing.</p>
+    <button type="button" onclick="window.print()">Print chart</button>
+  </div>
+
+  <main>
+    <section class="sheet" aria-labelledby="page-title">
+      <h1 id="page-title">Antecedents Behaviour Consequences ABC Chart</h1>
+
+      <div class="student-details" aria-label="Student details">
+        <div class="field">
+          <span class="field-label">Student</span>
+          <span class="field-value" contenteditable="true">John</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Grade</span>
+          <span class="field-value" contenteditable="true">6</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Age</span>
+          <span class="field-value" contenteditable="true">11</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Teacher</span>
+          <span class="field-value" contenteditable="true">David</span>
+        </div>
+        <div class="field">
+          <span class="field-label">School</span>
+          <span class="field-value" contenteditable="true">Norma Rose Point</span>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table aria-describedby="chart-note">
+          <colgroup>
+            <col class="date">
+            <col class="setting">
+            <col class="antecedent">
+            <col class="behaviour">
+            <col class="consequence">
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col"><strong>Date</strong>Data collected by</th>
+              <th scope="col"><strong>SE</strong>Setting Events</th>
+              <th scope="col"><strong>A</strong>Antecedents<span>Describe what happens before the behaviour</span></th>
+              <th scope="col"><strong>B</strong>Behaviour<span>Describe what the student does</span></th>
+              <th scope="col"><strong>C</strong>Consequences<span>Describe what happens after the behaviour</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td contenteditable="true">January 2026<br>Peter, EA</td>
+              <td contenteditable="true">John had recently participated in a stimulating group activity and remained highly energetic during the transition to independent work.</td>
+              <td contenteditable="true">David directed the class to begin a 20-minute independent writing assignment.</td>
+              <td contenteditable="true">John began writing. After about five minutes, he stopped, manipulated the object, looked around the room, and shifted his attention to nearby activity.</td>
+              <td contenteditable="true">David gave a quiet reminder, divided the assignment into smaller steps, and checked in after each step. John returned to writing with support.</td>
+            </tr>
+            <tr>
+              <td contenteditable="true">February 2026<br>Peter, EA</td>
+              <td contenteditable="true">Noise and movement in the classroom had remained elevated throughout the morning.</td>
+              <td contenteditable="true">A mathematics worksheet was placed on John's desk with a direction to complete it independently.</td>
+              <td contenteditable="true">John completed the first few questions accurately, then watched other students, played with his pencil, and left several questions unfinished.</td>
+              <td contenteditable="true">John moved to a quieter workspace. With fewer distractions and brief check-ins, he completed more of the worksheet.</td>
+            </tr>
+            <tr>
+              <td contenteditable="true">March 2026<br>Peter, EA</td>
+              <td contenteditable="true">John had just returned from an active recess and had not yet had quiet transition time to settle.</td>
+              <td contenteditable="true">David began giving whole-class instructions for a multistep science activity.</td>
+              <td contenteditable="true">John handled classroom materials while instructions were being given and missed some steps. He began the activity incorrectly and asked what to do.</td>
+              <td contenteditable="true">David repeated the directions privately, provided one step at a time, and asked John to repeat the next step before beginning.</td>
+            </tr>
+            <tr>
+              <td contenteditable="true">April–May 2026<br>Peter, EA</td>
+              <td contenteditable="true">John had completed several demanding class periods, and fatigue and restlessness had gradually increased.</td>
+              <td contenteditable="true">David asked students to revise and finish a written assignment.</td>
+              <td contenteditable="true">John worked for about four minutes, then switched between pages, looked around, and began talking about an unrelated topic.</td>
+              <td contenteditable="true">David offered a short movement break and then used a timer for a brief work interval. John resumed the assignment and completed one section.</td>
+            </tr>
+            <tr>
+              <td contenteditable="true">June 2026<br>Peter, EA</td>
+              <td contenteditable="true">John had been seated for an extended period, while background noise and movement continued in the classroom.</td>
+              <td contenteditable="true">David placed the test in front of John and told students to begin working independently.</td>
+              <td contenteditable="true">John frequently looked away from the test, manipulated his eraser, and paused for extended periods despite answering attempted questions correctly.</td>
+              <td contenteditable="true">John was offered a quiet, low-distraction room. He continued the test there with scheduled time reminders and completed additional questions.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="note" id="chart-note">Sample anonymized entries. Confirm dates, durations, and outcomes against direct observations before using this chart as an official record.</p>
+    </section>
+  </main>
+</body>
+</html>
