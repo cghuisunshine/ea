@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brooklyn Behaviour Support Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
+<style>
+  :root {
+    --ground: #F6F7F5;
+    --surface: #FFFFFF;
+    --surface-2: #EDF1EE;
+    --ink: #17211D;
+    --ink-2: #46554E;
+    --muted: #6E7C76;
+    --line: #DBE3DE;
+    --line-strong: #C3CFC9;
+    --accent: #146B5B;
+    --accent-soft: #E2F0EB;
+    --p1: #A9521D;
+    --p2: #3B569F;
+    --p3: #764A96;
+    --shadow: 0 1px 2px rgba(23,33,29,.05), 0 8px 24px -16px rgba(23,33,29,.28);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #111514;
+      --surface: #19201D;
+      --surface-2: #212A26;
+      --ink: #E9EFEB;
+      --ink-2: #B4C1BB;
+      --muted: #8B9A93;
+      --line: #2B3632;
+      --line-strong: #3A4741;
+      --accent: #63C9AF;
+      --accent-soft: #1A2F2A;
+      --p1: #E28F55;
+      --p2: #8FA6EA;
+      --p3: #BC93E2;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #111514;
+    --surface: #19201D;
+    --surface-2: #212A26;
+    --ink: #E9EFEB;
+    --ink-2: #B4C1BB;
+    --muted: #8B9A93;
+    --line: #2B3632;
+    --line-strong: #3A4741;
+    --accent: #63C9AF;
+    --accent-soft: #1A2F2A;
+    --p1: #E28F55;
+    --p2: #8FA6EA;
+    --p3: #BC93E2;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-inline: 20px;
+    padding-block: 0 64px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 980px; margin: 0 auto; }
+
+  /* ---------- masthead ---------- */
+  .masthead {
+    padding-block: 56px 28px;
+    border-bottom: 2px solid var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11.5px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  h1 {
+    font-family: Newsreader, Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    font-size: clamp(2.2rem, 6vw, 3.35rem);
+    line-height: 1.06;
+    letter-spacing: -.015em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(1.05rem, 2.6vw, 1.35rem);
+    font-style: italic;
+    color: var(--ink-2);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .credits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 28px;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12.5px;
+    color: var(--ink-2);
+    margin-top: 4px;
+  }
+  .credits b { color: var(--muted); font-weight: 500; }
+
+  /* ---------- sections ---------- */
+  section { margin-top: 54px; }
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    border-bottom: 1px solid var(--line-strong);
+    padding-bottom: 10px;
+    margin-bottom: 26px;
+  }
+  .sec-num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: .1em;
+    padding-top: 4px;
+  }
+  h2 {
+    font-family: Newsreader, Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(1.5rem, 3.6vw, 1.95rem);
+    letter-spacing: -.01em;
+    margin: 0;
+    flex: 1 1 auto;
+    text-wrap: balance;
+  }
+  .marks {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11.5px;
+    color: var(--ink-2);
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 3px 11px;
+    white-space: nowrap;
+  }
+
+  p { margin: 0 0 1em; max-width: 68ch; color: var(--ink-2); }
+  p:last-child { margin-bottom: 0; }
+  .lede { color: var(--ink); font-size: 1.06rem; }
+
+  /* ---------- school info ---------- */
+  .facets { display: grid; gap: 18px; margin-bottom: 26px; }
+  @media (min-width: 760px) { .facets { grid-template-columns: repeat(3, 1fr); } }
+  .facet {
+    border-top: 3px solid var(--accent);
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .facet h3 {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11.5px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0;
+    font-weight: 500;
+  }
+  .facet p { font-size: .95rem; margin: 0; }
+
+  .concerns {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .concerns li {
+    background: var(--surface);
+    padding: 14px 18px;
+    font-size: .95rem;
+    color: var(--ink-2);
+  }
+  .concerns li::before {
+    content: "↳";
+    color: var(--accent);
+    margin-right: 10px;
+    font-family: "IBM Plex Mono", monospace;
+  }
+
+  /* ---------- pathway ---------- */
+  .pathway {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .pathway-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 22px;
+    border-bottom: 1px solid var(--line);
+    border-top: 4px solid var(--hue);
+  }
+  .pathway-tag {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--hue);
+  }
+  .pathway-head h3 {
+    font-family: Newsreader, Georgia, serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  .chain {
+    display: grid;
+    gap: 1px;
+    background: var(--line);
+  }
+  @media (min-width: 820px) { .chain { grid-template-columns: repeat(4, 1fr); } }
+  .link {
+    background: var(--surface);
+    padding: 18px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .link > .label {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10.5px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .link > .label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+  .link ul { margin: 0; padding-left: 1.1em; display: flex; flex-direction: column; gap: 7px; }
+  .link li, .link p { font-size: .92rem; color: var(--ink-2); margin: 0; }
+  .link.is-behaviour { background: var(--surface-2); }
+  .link.is-behaviour p { color: var(--ink); font-weight: 500; }
+
+  .analysis {
+    border-top: 1px solid var(--line);
+    padding: 20px 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field > .label {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10.5px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--hue);
+  }
+  .field p { font-size: .95rem; margin: 0; max-width: 78ch; }
+  .goal { color: var(--ink); }
+  .draft {
+    font-size: .85rem;
+    color: var(--muted);
+    border-left: 2px solid var(--line-strong);
+    padding-left: 12px;
+    max-width: 78ch;
+    font-style: italic;
+  }
+  .draft b {
+    font-style: normal;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 9.5px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 500;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    color: var(--ink-2);
+    border-radius: 3px;
+    padding: 2px 9px;
+  }
+
+  /* ---------- strategies ---------- */
+  .strat-group { margin-bottom: 38px; }
+  .strat-title {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .strat-title h3 {
+    font-family: Newsreader, Georgia, serif;
+    font-weight: 500;
+    font-size: 1.35rem;
+    margin: 0;
+  }
+  .rule { flex: 1; height: 1px; background: var(--hue); opacity: .45; }
+
+  .block { margin-bottom: 20px; }
+  .block > h4 {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--hue);
+    margin: 0 0 12px;
+    font-weight: 500;
+  }
+  .cols { display: grid; gap: 16px; }
+  @media (min-width: 720px) { .cols { grid-template-columns: 1fr 1fr; } }
+  .col {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .col > .label {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10.5px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .col ol, .col ul { margin: 0; padding-left: 1.25em; display: flex; flex-direction: column; gap: 8px; }
+  .col li { font-size: .92rem; color: var(--ink-2); }
+  .col li b { color: var(--ink); font-weight: 600; }
+
+  dl.steps { margin: 0; display: flex; flex-direction: column; gap: 12px; }
+  dl.steps > div {
+    display: grid;
+    gap: 2px 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  dl.steps > div:last-child { border-bottom: 0; padding-bottom: 0; }
+  @media (min-width: 760px) { dl.steps > div { grid-template-columns: 200px 1fr; } }
+  dl.steps dt {
+    font-weight: 600;
+    color: var(--ink);
+    font-size: .92rem;
+  }
+  dl.steps dd { margin: 0; font-size: .92rem; color: var(--ink-2); }
+
+  /* ---------- monitoring ---------- */
+  .prompts {
+    display: grid;
+    gap: 12px;
+    counter-reset: q;
+  }
+  @media (min-width: 720px) { .prompts { grid-template-columns: 1fr 1fr; } }
+  .prompt {
+    border: 1px dashed var(--line-strong);
+    border-radius: 5px;
+    padding: 16px 18px;
+    background: var(--surface);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 118px;
+  }
+  .prompt .q { font-size: .95rem; color: var(--ink); font-weight: 500; margin: 0; }
+  .prompt .a {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 10.5px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .prompt.wide { grid-column: 1 / -1; }
+
+  /* ---------- footer ---------- */
+  .notes {
+    margin-top: 48px;
+    border-top: 1px solid var(--line-strong);
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .notes h4 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0;
+    font-weight: 500;
+  }
+  .note { font-size: .9rem; color: var(--ink-2); margin: 0; }
+  .note sup { color: var(--accent); font-family: "IBM Plex Mono", monospace; }
+
+  .mark-final {
+    margin-top: 34px;
+    background: var(--accent-soft);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 18px 22px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--ink-2);
+  }
+  .mark-final .total { font-size: 1.3rem; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+  /* ---------- audio player ---------- */
+  .player {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    margin: 0 -20px;
+    padding: 10px 20px 12px;
+    background: color-mix(in srgb, var(--ground) 88%, transparent);
+    backdrop-filter: saturate(1.4) blur(10px);
+    -webkit-backdrop-filter: saturate(1.4) blur(10px);
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .player-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .player button.play {
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    color: var(--ground);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    transition: transform .12s ease;
+  }
+  .player button.play:hover { transform: scale(1.06); }
+  .player button.play svg { width: 15px; height: 15px; fill: currentColor; display: block; }
+  .player input[type="range"] {
+    flex: 1 1 180px;
+    min-width: 120px;
+    accent-color: var(--accent);
+    height: 4px;
+    cursor: pointer;
+  }
+  .player .time {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11.5px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    flex: 0 0 auto;
+  }
+  .player select {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11.5px;
+    color: var(--ink-2);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 6px 8px;
+    max-width: 100%;
+    cursor: pointer;
+  }
+  .player .follow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    cursor: pointer;
+    user-select: none;
+    flex: 0 0 auto;
+  }
+  .player .follow input { accent-color: var(--accent); cursor: pointer; }
+  .caption {
+    font-family: Newsreader, Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--ink);
+    min-height: 1.4em;
+    border-left: 2px solid var(--accent);
+    padding-left: 12px;
+    text-wrap: pretty;
+  }
+  .caption:empty::before {
+    content: "Press play to hear the plan read aloud.";
+    color: var(--muted);
+    font-style: italic;
+    font-size: .92rem;
+  }
+  .player .warn {
+    font-size: .85rem;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  [id] { scroll-margin-top: 132px; }
+
+  .sec-head.is-playing,
+  .pathway-head.is-playing,
+  .strat-title.is-playing {
+    position: relative;
+  }
+  .sec-head.is-playing::before,
+  .pathway-head.is-playing::before,
+  .strat-title.is-playing::before {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 2px;
+    bottom: 6px;
+    width: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+  }
+  .pathway-head.is-playing::before { left: 8px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
+  @media print { .player { display: none; } }
+</style>
+<style>html{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="player" id="player" hidden>
+    <div class="player-row">
+      <button class="play" id="playBtn" type="button" aria-label="Play narration">
+        <svg id="playIcon" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z"></path></svg>
+      </button>
+      <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="Seek through narration">
+      <span class="time" id="time">0:00 / 18:30</span>
+      <select id="chapters" aria-label="Jump to a section"></select>
+      <label class="follow" for="followChk"><input type="checkbox" id="followChk" checked> Follow along</label>
+    </div>
+    <p class="caption" id="caption"></p>
+  </div>
+  <audio id="narration" preload="metadata" src="brooklyn-pbs-final-assignment.mp3"></audio>
+
+  <header class="masthead" id="top">
+    <div class="eyebrow">SD 41 Education Assistant Program &middot; Positive Behaviour Support Final Assignment</div>
+    <h1>Brooklyn Case Study<span class="sub">A positive behaviour support plan across three behaviour pathways</span></h1>
+    <div class="credits">
+      <span><b>Names</b> &nbsp;Peter, Sue, Sarah</span>
+      <span><b>Date</b> &nbsp;September 6, 2026</span>
+      <span><b>Marks</b> &nbsp;30 total</span>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head" id="sec-1">
+      <span class="sec-num">01</span>
+      <h2>Background Information</h2>
+      <span class="marks">/ 1</span>
+    </div>
+    <p class="lede">Brooklyn is 16 and lives with foster parents and their children, who include him in family and community activities. Monthly visits with his biological mother are difficult for him and may be followed by more intense behaviour at home and a more difficult week at school. Both his foster family and school team are supportive and want what is best for Brooklyn.</p>
+  </section>
+
+  <section>
+    <div class="sec-head" id="sec-2">
+      <span class="sec-num">02</span>
+      <h2>School Information</h2>
+      <span class="marks">/ 3</span>
+    </div>
+    <div class="facets">
+      <div class="facet">
+        <h3>Preferred activities</h3>
+        <p>Brooklyn enjoys community outings, his weekly recycling job and the Slurpee that follows, cooking and laundry activities, business cards and brochures, and carrying his daily planner to classes.</p>
+      </div>
+      <div class="facet">
+        <h3>Strengths</h3>
+        <p>Brooklyn is successful with repetitive tasks such as folding laundry, stocking shelves, wiping tables, and sorting recycling. He takes responsibility for the weekly recycling job, participates in community activities, and is learning to use a daily planner to organize his school day.</p>
+      </div>
+      <div class="facet">
+        <h3>Areas of difficulty</h3>
+        <p>Brooklyn has difficulty regulating strong emotions following stressful family contact. At school, he has difficulty accepting limits around business cards, interacting with Teddy during reading, and completing handwriting tasks because of poor fine-motor skills. He may avoid journal writing by staying in the washroom for up to 25 minutes.</p>
+      </div>
+    </div>
+    <ul class="concerns">
+      <li>Strong emotions after visits with his biological mother <em>(self-regulation)</em>.</li>
+      <li>Taking all the business cards when the display is full, and sometimes becoming angry when escorted out <em>(self-regulation; communication)</em>.</li>
+      <li>Appearing anxious around Teddy and yelling when Teddy asks what is wrong <em>(self-regulation; social skills and communication)</em>.</li>
+      <li>Holding a pen or pencil because of poor fine motor skills. When asked to write, he may spend 25 minutes or more in the washroom and miss much of journal time <em>(fine motor skills; task management)</em>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sec-head" id="sec-3">
+      <span class="sec-num">03</span>
+      <h2>Behaviour Pathways</h2>
+      <span class="marks">/ 12</span>
+    </div>
+
+    <!-- PATHWAY 1 -->
+    <article class="pathway" style="--hue: var(--p1)">
+      <div class="pathway-head" id="pw-1">
+        <span class="pathway-tag">Pathway 1</span>
+        <h3>Business cards</h3>
+      </div>
+      <div class="chain">
+        <div class="link">
+          <span class="label">Setting event</span>
+          <ul>
+            <li>Brooklyn is on a community walk and visits the town&rsquo;s visitor centre.</li>
+            <li>He has a strong interest in business cards and brochures. He spends a long time looking at and reading them and likes the idea of a job where he can hand out a card.</li>
+            <li>A difficult week after a visit with his biological mother.</li>
+          </ul>
+        </div>
+        <div class="link">
+          <span class="label">Antecedent</span>
+          <p>Brooklyn enters the visitor centre and sees a full display of business cards.</p>
+        </div>
+        <div class="link is-behaviour">
+          <span class="label">Behaviour</span>
+          <p>Brooklyn takes many or all of the business cards and puts them in his pockets.</p>
+        </div>
+        <div class="link">
+          <span class="label">Consequence</span>
+          <p>The EA escorts Brooklyn out of the visitor centre. This can sometimes make him very angry.</p>
+        </div>
+      </div>
+      <div class="analysis">
+        <div class="field">
+          <span class="label">Possible function</span>
+          <p>Seeking business cards.</p>
+        </div>
+        <div class="field">
+          <span class="label">Lagging skills</span>
+          <div class="chips">
+            <span class="chip">social skills</span>
+            <span class="chip">communication</span>
+            <span class="chip">self-regulation</span>
+            <span class="chip">self-control</span>
+          </div>
+        </div>
+        <div class="field">
+          <span class="label">Alternative behaviour</span>
+          <p class="goal">Brooklyn will ask, &ldquo;May I choose three cards?&rdquo; or show a request card to get three business cards, with safe hands, calmly, and leave the booth without being escorted outside of the visitor centre, 100% of the time by February 2027.</p>
+        </div>
+        <div class="field">
+          <span class="label">Desired behaviour</span>
+          <p class="goal">Brooklyn will independently participate in the visitor centre visit by browsing the displays, following the centre&rsquo;s rules about taking materials, and leaving with the group at the scheduled time&mdash;even when business cards are unavailable or permission to take them is not given&mdash;without grabbing cards or requiring an individual EA escort, in at least 4 out of 5 consecutive visits by June 2027.</p>
+          <p class="draft"><b>Working note</b>Brooklyn will follow independently: ask first from the business owner to take the card, take only the three business cards, and leave the visitor centre without being escorted, calmly with the group.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- PATHWAY 2 -->
+    <article class="pathway" style="--hue: var(--p2)">
+      <div class="pathway-head" id="pw-2">
+        <span class="pathway-tag">Pathway 2</span>
+        <h3>Reading group with Teddy</h3>
+      </div>
+      <div class="chain">
+        <div class="link">
+          <span class="label">Setting event</span>
+          <ul>
+            <li>Brooklyn and Teddy are placed in the same reading group. Brooklyn appears anxious when they are together.</li>
+            <li>Monthly visit with his biological mother.</li>
+          </ul>
+        </div>
+        <div class="link">
+          <span class="label">Antecedent</span>
+          <p>Teddy asks Brooklyn what is wrong during reading time.</p>
+        </div>
+        <div class="link is-behaviour">
+          <span class="label">Behaviour</span>
+          <p>Brooklyn yells at Teddy at a very high volume.</p>
+        </div>
+        <div class="link">
+          <span class="label">Consequence</span>
+          <p>The EA or teacher separates Brooklyn and Teddy, breaks up the group, and reads to them separately.</p>
+        </div>
+      </div>
+      <div class="analysis">
+        <div class="field">
+          <span class="label">Possible function</span>
+          <p>Avoiding Teddy and seeking EA attention.</p>
+        </div>
+        <div class="field">
+          <span class="label">Lagging skills</span>
+          <div class="chips">
+            <span class="chip">social skills</span>
+            <span class="chip">self-regulation</span>
+            <span class="chip">communication</span>
+            <span class="chip">executive function</span>
+          </div>
+        </div>
+        <div class="field">
+          <span class="label">Alternative behaviour</span>
+          <p class="goal">When Teddy asks Brooklyn what is wrong during reading time, Brooklyn will calmly say, &ldquo;I need space,&rdquo; show a space or break card, or ask an adult for help to obtain space or a brief break from the interaction, 100% of the time by February 2027.</p>
+          <p class="draft"><b>Working note</b>Take a breath and calmly say &ldquo;I need space,&rdquo; show a space or break card, or ask an adult for help.</p>
+        </div>
+        <div class="field">
+          <span class="label">Desired behaviour</span>
+          <p class="goal">During reading group with Teddy, Brooklyn will independently respond to Teddy&rsquo;s question by answering or saying, &ldquo;I don&rsquo;t want to answer,&rdquo; using a conversational voice, and complete his assigned portion of the reading task while remaining in the group, 85% of the time by June 2027.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- PATHWAY 3 -->
+    <article class="pathway" style="--hue: var(--p3)">
+      <div class="pathway-head" id="pw-3">
+        <span class="pathway-tag">Pathway 3</span>
+        <h3>Journal writing</h3>
+      </div>
+      <div class="chain">
+        <div class="link">
+          <span class="label">Setting event</span>
+          <ul>
+            <li>It is hard for Brooklyn to hold the pencil &mdash; poor fine motor skills.</li>
+            <li>Monthly visit with his biological mother.</li>
+          </ul>
+        </div>
+        <div class="link">
+          <span class="label">Antecedent</span>
+          <p>Brooklyn is asked to write his journal daily.</p>
+        </div>
+        <div class="link is-behaviour">
+          <span class="label">Behaviour</span>
+          <p>Brooklyn asks to use the washroom and may stay there for up to 25 minutes.</p>
+        </div>
+        <div class="link">
+          <span class="label">Consequence</span>
+          <p>The EA knocks and tells him to hurry, and Brooklyn misses a large portion of the journal block.</p>
+        </div>
+      </div>
+      <div class="analysis">
+        <div class="field">
+          <span class="label">Possible function</span>
+          <p>Avoiding journal writing.</p>
+        </div>
+        <div class="field">
+          <span class="label">Lagging skills</span>
+          <div class="chips">
+            <span class="chip">fine motor skills</span>
+            <span class="chip">self-regulation</span>
+            <span class="chip">communication</span>
+            <span class="chip">executive function</span>
+          </div>
+        </div>
+        <div class="field">
+          <span class="label">Alternative behaviour</span>
+          <p class="goal">When asked to write in his journal, Brooklyn will say, &ldquo;I need help&rdquo; or &ldquo;I need a break,&rdquo; or show a help or break card to request assistance, an adapted writing option such as typing, or a brief break, 100% of the time by February 2027.</p>
+          <p class="draft"><b>Working note</b>Leave the washroom when the EA counts down, and ask for help &mdash; typing, a different location, a different colour, a smaller portion of work, or a favourite peer to sit with &mdash; and ask for a break.</p>
+        </div>
+        <div class="field">
+          <span class="label">Desired behaviour</span>
+          <p class="goal">During journal writing, Brooklyn will independently begin and complete his agreed-upon portions of the task using an accessible writing method, such as typing or an adapted pencil, and return to the task after planned breaks, 85% of the time by June 2027.</p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <div class="sec-head" id="sec-4">
+      <span class="sec-num">04</span>
+      <h2>Strategies and Interventions</h2>
+      <span class="marks">/ 12</span>
+    </div>
+
+    <!-- STRATEGIES 1 -->
+    <div class="strat-group" style="--hue: var(--p1)">
+      <div class="strat-title" id="st-1">
+        <h3>Pathway 1 &middot; Business cards</h3>
+        <span class="rule"></span>
+      </div>
+
+      <div class="block">
+        <h4>Preventative and antecedent strategies</h4>
+        <div class="cols">
+          <div class="col">
+            <span class="label">Setting event</span>
+            <ul>
+              <li>Consider not visiting the visitor centre on difficult weeks.</li>
+              <li>Frontload with a social story about not grabbing all the cards.</li>
+              <li>Frontload with a contingency map.</li>
+              <li>Frontload about the location being visited, with pictures of the visitor centre.</li>
+              <li>Use &ldquo;first / then&rdquo; for calming down and asking for more, with an agreed-upon number of cards.</li>
+              <li>&ldquo;First take the agreed-upon number of cards, then leave the booth.&rdquo;</li>
+              <li>He can take three cards at the centre and print more at school.</li>
+            </ul>
+          </div>
+          <div class="col">
+            <span class="label">Antecedent</span>
+            <ul>
+              <li>Token board rewarding.</li>
+              <li>Calming-down strategy.</li>
+              <li>Choice of location.</li>
+              <li>Choice of the number of cards he is allowed to collect.</li>
+              <li>Frontload about how others feel and behave.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <h4>Teaching strategies</h4>
+        <dl class="steps">
+          <div><dt>Teach requesting and waiting</dt><dd>Model saying, &ldquo;May I choose three cards?&rdquo; or showing a request card. Use role-play to practise asking before touching the display and waiting for permission.</dd></div>
+          <div><dt>Teach the collection limit</dt><dd>Use a three-space counting mat to practise selecting up to three permitted cards and leaving the remaining cards in the display.</dd></div>
+          <div><dt>Teach flexibility</dt><dd>Practise situations where cards are available, fewer cards are permitted, or no cards are available. Model requesting a brief break or choosing to make personal business cards later.</dd></div>
+          <div><dt>Teach the transition</dt><dd>Practise following the visual sequence &ldquo;Ask &rarr; Wait &rarr; Choose &rarr; Rejoin the group.&rdquo; Begin with adult modelling and prompts, then gradually reduce assistance.</dd></div>
+          <div><dt>Materials and example</dt><dd>Use practice business cards, a request card, a counting mat, and a visual sequence. During practice, the adult says, &ldquo;You may take two.&rdquo; Brooklyn selects two cards and rejoins the activity.</dd></div>
+        </dl>
+      </div>
+
+      <div class="block">
+        <h4>Consequence strategies</h4>
+        <dl class="steps">
+          <div><dt>Reinforce appropriate requests</dt><dd>Respond promptly when Brooklyn asks or uses his request card. If staff give permission, allow him to collect the permitted cards.</dd></div>
+          <div><dt>Give specific praise</dt><dd>&ldquo;You waited for permission and took two cards.&rdquo;</dd></div>
+          <div><dt>Reinforce broader participation</dt><dd>If using a token board, award tokens for agreed skills such as following the limit and leaving with the group. Provide the agreed reward when earned.</dd></div>
+          <div><dt>Respond calmly to grabbing</dt><dd>Support Brooklyn to return extra cards and prompt the request routine. Keep language brief.</dd></div>
+          <div><dt>Support recovery</dt><dd>If Brooklyn becomes upset, offer space and regulation support. Practise the skill again when he is calm and ready.</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <!-- STRATEGIES 2 -->
+    <div class="strat-group" style="--hue: var(--p2)">
+      <div class="strat-title" id="st-2">
+        <h3>Pathway 2 &middot; Reading group with Teddy</h3>
+        <span class="rule"></span>
+      </div>
+
+      <div class="block">
+        <h4>Preventative and antecedent strategies</h4>
+        <div class="cols">
+          <div class="col">
+            <span class="label">Setting event</span>
+            <ol>
+              <li><b>Choice of group members.</b> Where possible, allow Brooklyn to choose a reading partner. Gradually introduce short, supported reading activities with Teddy.</li>
+              <li><b>Plan breaks.</b> Arrange a brief break option and practise requesting space before reading time.</li>
+              <li><b>Reduce the initial demand.</b> Start with a smaller reading portion or a shorter period of group work with Teddy.</li>
+              <li><b>Frontload with a social story.</b> Review how to respond when someone asks a question or disagrees. Explain that Brooklyn can answer, respectfully decline to answer, or request space.</li>
+            </ol>
+          </div>
+          <div class="col">
+            <span class="label">Antecedent</span>
+            <ol>
+              <li><b>Review a contingency map.</b> Before the interaction, show: &ldquo;Use words or a card to ask for space &rarr; Receive space &rarr; Return to the reading task when ready.&rdquo;</li>
+              <li><b>Offer a choice of location.</b> Let Brooklyn choose between suitable seats with enough personal space.</li>
+              <li><b>Use a soft start.</b> Begin group work with a short, familiar or preferred reading activity.</li>
+              <li><b>Provide a familiar support.</b> Make a favourite calming object available if it helps Brooklyn participate.</li>
+              <li><b>Prompt communication early.</b> If Teddy asks a question and Brooklyn appears uncomfortable, point to his space card or remind him that he can say, &ldquo;I don&rsquo;t want to answer&rdquo; or &ldquo;I need space.&rdquo;</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <h4>Teaching strategies</h4>
+        <dl class="steps">
+          <div><dt>Teach requesting space or help</dt><dd>Model &ldquo;I need space,&rdquo; &ldquo;I need a break,&rdquo; and &ldquo;Can you help me?&rdquo; Practise using the matching cards as communication options.</dd></div>
+          <div><dt>Teach responding to questions</dt><dd>Role-play answering a question or saying, &ldquo;I don&rsquo;t want to answer,&rdquo; using a conversational voice. Make clear that Brooklyn does not have to disclose personal feelings.</dd></div>
+          <div><dt>Teach recognizing discomfort</dt><dd>Help Brooklyn identify his own early signs of discomfort and choose a familiar strategy, such as breathing slowly or requesting space.</dd></div>
+          <div><dt>Teach returning to reading</dt><dd>Practise a short sequence: request a break, take the break, and return to the next manageable reading portion. Gradually reduce prompts.</dd></div>
+          <div><dt>Materials and example</dt><dd>Use communication cards, a voice-volume visual, a timer, and a reading checklist. A trusted adult asks, &ldquo;What&rsquo;s wrong?&rdquo; Brooklyn practises declining to answer and continuing to read, or requesting space.</dd></div>
+        </dl>
+      </div>
+
+      <div class="block">
+        <h4>Consequence strategies</h4>
+        <dl class="steps">
+          <div><dt>Honour appropriate communication</dt><dd>Provide space, a brief break, or adult assistance when Brooklyn requests it. Respect his decision not to answer.</dd></div>
+          <div><dt>Give specific praise</dt><dd>&ldquo;You used your words to ask for space.&rdquo;</dd></div>
+          <div><dt>Reinforce participation</dt><dd>Acknowledge returning after a break and completing his reading portion. If a token system is used, award tokens for these agreed actions.</dd></div>
+          <div><dt>Respond calmly to yelling</dt><dd>Reduce verbal demands and help both students obtain enough space. Offer a familiar communication option when Brooklyn can use it.</dd></div>
+          <div><dt>Support re-entry</dt><dd>Once Brooklyn is ready, offer an achievable reading step and support his return to the group. Review the interaction privately after he has settled.</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <!-- STRATEGIES 3 -->
+    <div class="strat-group" style="--hue: var(--p3)">
+      <div class="strat-title" id="st-3">
+        <h3>Pathway 3 &middot; Journal writing</h3>
+        <span class="rule"></span>
+      </div>
+
+      <div class="block">
+        <h4>Preventative and antecedent strategies</h4>
+        <div class="cols">
+          <div class="col">
+            <span class="label">Setting event</span>
+            <ol>
+              <li><b>Prepare a choice of materials.</b> Provide accessible options, such as typing or using an adapted pencil.</li>
+              <li><b>Allow additional time.</b> Plan enough time for Brooklyn to complete his agreed-upon writing portions without rushing.</li>
+              <li><b>Plan seating and support choices.</b> Offer suitable options for where Brooklyn works and whom he sits beside.</li>
+              <li><b>Include preferred materials.</b> Make preferred pencil or text colours available to encourage engagement.</li>
+              <li><b>Adjust the workload.</b> Plan a small, achievable starting portion and brief breaks between portions.</li>
+              <li><b>Frontload with a social story.</b> Before journal time, review starting work, asking for help, taking a break, and returning to the task.</li>
+            </ol>
+          </div>
+          <div class="col">
+            <span class="label">Antecedent</span>
+            <ol>
+              <li><b>Show a visual schedule.</b> At the start of journal time, review: &ldquo;Write one part &rarr; Brief break &rarr; Write the next part &rarr; Finished.&rdquo;</li>
+              <li><b>Confirm his choices.</b> Ask Brooklyn to select his writing method, colour, and work location from the available options.</li>
+              <li><b>Present one portion at a time.</b> Give a manageable instruction, such as &ldquo;Write one sentence,&rdquo; with a sentence starter if needed.</li>
+              <li><b>Preview the token board.</b> Explain the specific action that earns a token, such as beginning or completing an agreed-upon portion. Award the token after the action occurs.</li>
+              <li><b>Remind him how to request support.</b> Keep help and break cards within reach and say, &ldquo;You can ask for help or a brief break.&rdquo; Keep washroom access available.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <h4>Teaching strategies</h4>
+        <dl class="steps">
+          <div><dt>Teach requesting support</dt><dd>Model saying, &ldquo;I need help&rdquo; or &ldquo;I need a break,&rdquo; or showing the matching card. Practise during easy tasks before using the skill during journal writing.</dd></div>
+          <div><dt>Teach an accessible writing method</dt><dd>Explicitly teach the steps Brooklyn needs to type or use an adapted pencil. Model one step, practise together, and gradually reduce assistance.</dd></div>
+          <div><dt>Teach task initiation and completion</dt><dd>Use a checklist: &ldquo;Choose a topic &rarr; Say my idea &rarr; Write or type one part &rarr; Check it off.&rdquo; Begin with a manageable portion.</dd></div>
+          <div><dt>Teach returning after breaks</dt><dd>Practise checking the visual schedule and restarting at the next step after a planned break.</dd></div>
+          <div><dt>Materials and example</dt><dd>Use a keyboard or adapted pencil, communication cards, sentence starters, a visual schedule, and a timer. Brooklyn types one sentence, requests a brief break, and returns to the next agreed portion.</dd></div>
+        </dl>
+      </div>
+
+      <div class="block">
+        <h4>Consequence strategies</h4>
+        <dl class="steps">
+          <div><dt>Respond to requests</dt><dd>Provide help, an adapted writing option, or a brief break when Brooklyn appropriately requests support.</dd></div>
+          <div><dt>Give specific praise</dt><dd>&ldquo;You asked for help and completed your sentence.&rdquo;</dd></div>
+          <div><dt>Reinforce achievable progress</dt><dd>If using a token board, award tokens for agreed actions such as starting, completing a portion, or returning after a break. Provide the agreed reward when earned.</dd></div>
+          <div><dt>Respond to difficulty supportively</dt><dd>If Brooklyn avoids or stops writing, check whether the task or writing tool needs adjustment and prompt an appropriate request.</dd></div>
+          <div><dt>Respond discreetly to extended washroom visits</dt><dd>Keep washroom access available. Check on his wellbeing according to school procedures, without repeated pressure to hurry. After he returns, provide a manageable next step and the support needed to complete it.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head" id="sec-5">
+      <span class="sec-num">05</span>
+      <h2>Progress Monitoring &amp; Data Collection</h2>
+      <span class="marks">/ 2</span>
+    </div>
+    <div class="prompts">
+      <div class="prompt wide">
+        <p class="q">What would you use to track data?</p>
+        <span class="a">Not yet answered</span>
+      </div>
+      <div class="prompt">
+        <p class="q">What would you do if the student was making progress?</p>
+        <span class="a">Not yet answered</span>
+      </div>
+      <div class="prompt">
+        <p class="q">What would you do if the student was making little progress?</p>
+        <span class="a">Not yet answered</span>
+      </div>
+      <div class="prompt wide">
+        <p class="q">What would you do if the student was making no progress?</p>
+        <span class="a">Not yet answered</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="mark-final">
+    <span>Final mark</span>
+    <span class="total">______ / 30</span>
+  </div>
+
+  <div class="notes">
+    <h4>Margin comments from the document</h4>
+    <p class="note"><sup>[a]</sup> &ldquo;Not going to visitor centre&rdquo; &mdash; is it EXTRA?</p>
+    <p class="note"><sup>[b]</sup> &ldquo;Front loading about others&rsquo; feelings and behaviour&rdquo; &mdash; could be a part of social skill lagging?</p>
+  </div>
+</div>
+
+<script src="brooklyn-pbs-narration-cues.js"></script>
+<script>
+(function () {
+  var cues = window.NARRATION_CUES;
+  var chapters = window.NARRATION_CHAPTERS;
+  if (!cues || !cues.length) return;
+
+  var audio = document.getElementById("narration");
+  var player = document.getElementById("player");
+  var playBtn = document.getElementById("playBtn");
+  var playIcon = document.getElementById("playIcon");
+  var seek = document.getElementById("seek");
+  var timeEl = document.getElementById("time");
+  var capEl = document.getElementById("caption");
+  var chapSel = document.getElementById("chapters");
+  var followChk = document.getElementById("followChk");
+
+  var PLAY = "M0 0l12 7-12 7z";
+  var PAUSE = "M0 0h4v14H0zM8 0h4v14H8z";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  player.hidden = false;
+
+  chapters.forEach(function (ch, i) {
+    if (ch.t == null) return;
+    var o = document.createElement("option");
+    o.value = String(i);
+    o.textContent = ch.label;
+    chapSel.appendChild(o);
+  });
+
+  function fmt(s) {
+    if (!isFinite(s)) return "0:00";
+    s = Math.max(0, Math.floor(s));
+    return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+  }
+
+  function cueAt(t) {
+    var lo = 0, hi = cues.length - 1, best = -1;
+    while (lo <= hi) {
+      var mid = (lo + hi) >> 1;
+      if (cues[mid][0] <= t) { best = mid; lo = mid + 1; } else { hi = mid - 1; }
+    }
+    return best;
+  }
+
+  function chapterAt(t) {
+    var best = -1;
+    for (var i = 0; i < chapters.length; i++) {
+      if (chapters[i].t != null && chapters[i].t <= t + 0.05) best = i;
+    }
+    return best;
+  }
+
+  var lastCue = -1, lastChap = -1, seeking = false;
+
+  function markChapter(i) {
+    if (i === lastChap) return;
+    lastChap = i;
+    var prev = document.querySelector(".is-playing");
+    if (prev) prev.classList.remove("is-playing");
+    if (i < 0) return;
+    var el = document.getElementById(chapters[i].id);
+    if (!el) return;
+    el.classList.add("is-playing");
+    chapSel.value = String(i);
+    if (followChk.checked) {
+      el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    }
+  }
+
+  audio.addEventListener("timeupdate", function () {
+    var t = audio.currentTime;
+    var ci = cueAt(t);
+    if (ci !== lastCue) {
+      lastCue = ci;
+      capEl.textContent = ci >= 0 ? cues[ci][2] : "";
+    }
+    markChapter(chapterAt(t));
+    if (!seeking && audio.duration) {
+      seek.value = String(Math.round((t / audio.duration) * 1000));
+      timeEl.textContent = fmt(t) + " / " + fmt(audio.duration);
+    }
+  });
+
+  audio.addEventListener("loadedmetadata", function () {
+    timeEl.textContent = "0:00 / " + fmt(audio.duration);
+  });
+
+  audio.addEventListener("play", function () { playIcon.firstElementChild.setAttribute("d", PAUSE); playBtn.setAttribute("aria-label", "Pause narration"); });
+  audio.addEventListener("pause", function () { playIcon.firstElementChild.setAttribute("d", PLAY); playBtn.setAttribute("aria-label", "Play narration"); });
+  audio.addEventListener("ended", function () { playIcon.firstElementChild.setAttribute("d", PLAY); });
+
+  audio.addEventListener("error", function () {
+    capEl.textContent = "";
+    if (document.getElementById("audioWarn")) return;
+    var p = document.createElement("p");
+    p.className = "warn";
+    p.id = "audioWarn";
+    p.textContent = "Audio file not found. Keep brooklyn-pbs-final-assignment.mp3 in the same folder as this page.";
+    player.appendChild(p);
+  });
+
+  playBtn.addEventListener("click", function () {
+    if (audio.paused) { audio.play().catch(function () {}); } else { audio.pause(); }
+  });
+
+  seek.addEventListener("input", function () {
+    seeking = true;
+    if (audio.duration) timeEl.textContent = fmt((seek.value / 1000) * audio.duration) + " / " + fmt(audio.duration);
+  });
+  seek.addEventListener("change", function () {
+    if (audio.duration) audio.currentTime = (seek.value / 1000) * audio.duration;
+    seeking = false;
+  });
+
+  chapSel.addEventListener("change", function () {
+    var ch = chapters[Number(chapSel.value)];
+    if (!ch || ch.t == null) return;
+    audio.currentTime = ch.t;
+    lastChap = -1;
+    markChapter(Number(chapSel.value));
+    if (audio.paused) audio.play().catch(function () {});
+  });
+})();
+</script>
+</body>
+</html>
