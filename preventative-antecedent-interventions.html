@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antecedent Interventions</title>
+<style>
+  :root {
+    --bg: #f4f1ea;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --muted: #5c5c5c;
+    --line: #1a1a1a;
+    --panel: #e6e6e6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161616; --card: #202020; --ink: #f0f0f0; --muted: #a8a8a8; --line: #d8d8d8; --panel: #2c2c2c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #161616; --card: #202020; --ink: #f0f0f0; --muted: #a8a8a8; --line: #d8d8d8; --panel: #2c2c2c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", Calibri, system-ui, -apple-system, sans-serif;
+    padding: 32px 16px;
+  }
+  .card {
+    max-width: 880px;
+    margin: 0 auto;
+    background: var(--card);
+    border-radius: 10px;
+    padding: 28px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+  }
+  h1 {
+    margin: 0 0 24px;
+    padding: 12px 16px;
+    border: 2px solid var(--line);
+    text-align: center;
+    font-size: clamp(1.1rem, 3vw, 1.6rem);
+    font-weight: 700;
+  }
+  .transition {
+    display: grid;
+    grid-template-columns: 1fr auto 2fr;
+    gap: 16px;
+    align-items: stretch;
+    margin-bottom: 20px;
+  }
+  .box {
+    border: 2px solid var(--line);
+    padding: 20px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.15rem;
+    min-height: 110px;
+  }
+  .arrow {
+    align-self: center;
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .examples {
+    border: 2px dashed var(--line);
+    background: var(--panel);
+    padding: 16px 20px;
+  }
+  .examples ul {
+    margin: 0;
+    padding-left: 1.2em;
+    columns: 2;
+    column-gap: 24px;
+  }
+  .examples li { margin: 4px 0; break-inside: avoid; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  @media (max-width: 600px) {
+    .card { padding: 18px; }
+    .transition { grid-template-columns: 1fr; }
+    .arrow { transform: rotate(90deg); justify-self: center; }
+    .examples ul { columns: 1; }
+    .grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .box { font-size: 1rem; min-height: 90px; }
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <h1>Types of Preventative &amp; Antecedent Interventions</h1>
+
+    <section class="transition">
+      <div class="box">Transition Supports</div>
+      <div class="arrow" aria-hidden="true">&#10132;</div>
+      <div class="examples">
+        <ul>
+          <li>Schedules</li>
+          <li>First / Then</li>
+          <li>Count Down Strip</li>
+          <li>Timer</li>
+          <li>Frontloading</li>
+          <li>Contingency Maps</li>
+          <li>Social Narratives</li>
+          <li>Safety and Signal Warning</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="box">Preference</div>
+      <div class="box">Choice</div>
+      <div class="box">Rapport Building &amp; Pairing</div>
+      <div class="box">Environmental Supports</div>
+      <div class="box">Changes to Task Demands</div>
+      <div class="box">Modify Setting Events</div>
+    </section>
+  </main>
+</body>
+</html>
