@@ -1,0 +1,442 @@
+{
+  "digest": "2c84cf3a5a26cfca6a1c90bf40a0b93069b1fef2f21a95a08c3399a4ea6df6e5",
+  "voice": "en-US-AriaNeural",
+  "text": "ABA · Before Day 1 Supplemental Reading Selected chapters from  Teaching Students with Autism: A Resource Guide for Schools  (B.C. Ministry of Education), reformatted for easier reading. Reading note:  This guide dates from around 2000 and uses DSM-IV terms (e.g., \"PDD,\" \"Asperger's Disorder\"). Since the DSM-5 (2013), these are grouped under a single diagnosis,  Autism Spectrum Disorder . The teaching strategies remain broadly useful.",
+  "audio": "intro.mp3",
+  "words": [
+    {
+      "text": "ABA",
+      "start": 0.1,
+      "end": 0.6375,
+      "start_char": 0,
+      "end_char": 3
+    },
+    {
+      "text": "Before",
+      "start": 0.65,
+      "end": 1.0375,
+      "start_char": 6,
+      "end_char": 12
+    },
+    {
+      "text": "Day",
+      "start": 1.05,
+      "end": 1.2875,
+      "start_char": 13,
+      "end_char": 16
+    },
+    {
+      "text": "1",
+      "start": 1.3,
+      "end": 1.6,
+      "start_char": 17,
+      "end_char": 18
+    },
+    {
+      "text": "Supplemental",
+      "start": 1.6125,
+      "end": 2.3125,
+      "start_char": 19,
+      "end_char": 31
+    },
+    {
+      "text": "Reading",
+      "start": 2.325,
+      "end": 2.6875,
+      "start_char": 32,
+      "end_char": 39
+    },
+    {
+      "text": "Selected",
+      "start": 2.7,
+      "end": 3.225,
+      "start_char": 40,
+      "end_char": 48
+    },
+    {
+      "text": "chapters",
+      "start": 3.2375,
+      "end": 3.775,
+      "start_char": 49,
+      "end_char": 57
+    },
+    {
+      "text": "from",
+      "start": 3.7875,
+      "end": 3.9625,
+      "start_char": 58,
+      "end_char": 62
+    },
+    {
+      "text": "Teaching",
+      "start": 3.975,
+      "end": 4.3625,
+      "start_char": 64,
+      "end_char": 72
+    },
+    {
+      "text": "Students",
+      "start": 4.375,
+      "end": 4.85,
+      "start_char": 73,
+      "end_char": 81
+    },
+    {
+      "text": "with",
+      "start": 4.8625,
+      "end": 5.0,
+      "start_char": 82,
+      "end_char": 86
+    },
+    {
+      "text": "Autism",
+      "start": 5.0125,
+      "end": 5.575,
+      "start_char": 87,
+      "end_char": 93
+    },
+    {
+      "text": "A",
+      "start": 5.9375,
+      "end": 5.975,
+      "start_char": 95,
+      "end_char": 96
+    },
+    {
+      "text": "Resource",
+      "start": 5.9875,
+      "end": 6.5,
+      "start_char": 97,
+      "end_char": 105
+    },
+    {
+      "text": "Guide",
+      "start": 6.5125,
+      "end": 6.7875,
+      "start_char": 106,
+      "end_char": 111
+    },
+    {
+      "text": "for",
+      "start": 6.8,
+      "end": 6.925,
+      "start_char": 112,
+      "end_char": 115
+    },
+    {
+      "text": "Schools",
+      "start": 6.9375,
+      "end": 7.425,
+      "start_char": 116,
+      "end_char": 123
+    },
+    {
+      "text": "B.C.",
+      "start": 7.7,
+      "end": 8.075,
+      "start_char": 126,
+      "end_char": 130
+    },
+    {
+      "text": "Ministry",
+      "start": 8.0875,
+      "end": 8.5875,
+      "start_char": 131,
+      "end_char": 139
+    },
+    {
+      "text": "of",
+      "start": 8.6,
+      "end": 8.675,
+      "start_char": 140,
+      "end_char": 142
+    },
+    {
+      "text": "Education",
+      "start": 8.6875,
+      "end": 9.375,
+      "start_char": 143,
+      "end_char": 152
+    },
+    {
+      "text": "reformatted",
+      "start": 9.75,
+      "end": 10.45,
+      "start_char": 155,
+      "end_char": 166
+    },
+    {
+      "text": "for",
+      "start": 10.4625,
+      "end": 10.6,
+      "start_char": 167,
+      "end_char": 170
+    },
+    {
+      "text": "easier",
+      "start": 10.6125,
+      "end": 11.0375,
+      "start_char": 171,
+      "end_char": 177
+    },
+    {
+      "text": "reading",
+      "start": 11.05,
+      "end": 11.4875,
+      "start_char": 178,
+      "end_char": 185
+    },
+    {
+      "text": "Reading",
+      "start": 12.35,
+      "end": 12.7625,
+      "start_char": 187,
+      "end_char": 194
+    },
+    {
+      "text": "note",
+      "start": 12.775,
+      "end": 13.0875,
+      "start_char": 195,
+      "end_char": 199
+    },
+    {
+      "text": "This",
+      "start": 13.35,
+      "end": 13.5625,
+      "start_char": 202,
+      "end_char": 206
+    },
+    {
+      "text": "guide",
+      "start": 13.575,
+      "end": 13.8625,
+      "start_char": 207,
+      "end_char": 212
+    },
+    {
+      "text": "dates",
+      "start": 13.875,
+      "end": 14.175,
+      "start_char": 213,
+      "end_char": 218
+    },
+    {
+      "text": "from",
+      "start": 14.1875,
+      "end": 14.325,
+      "start_char": 219,
+      "end_char": 223
+    },
+    {
+      "text": "around",
+      "start": 14.3375,
+      "end": 14.7375,
+      "start_char": 224,
+      "end_char": 230
+    },
+    {
+      "text": "2000",
+      "start": 14.75,
+      "end": 15.325,
+      "start_char": 231,
+      "end_char": 235
+    },
+    {
+      "text": "and",
+      "start": 15.3375,
+      "end": 15.425,
+      "start_char": 236,
+      "end_char": 239
+    },
+    {
+      "text": "uses",
+      "start": 15.4375,
+      "end": 15.7875,
+      "start_char": 240,
+      "end_char": 244
+    },
+    {
+      "text": "DSM-IV",
+      "start": 15.8,
+      "end": 16.55,
+      "start_char": 245,
+      "end_char": 251
+    },
+    {
+      "text": "terms",
+      "start": 16.5625,
+      "end": 17.0,
+      "start_char": 252,
+      "end_char": 257
+    },
+    {
+      "text": "e.g.",
+      "start": 17.175,
+      "end": 17.6625,
+      "start_char": 259,
+      "end_char": 263
+    },
+    {
+      "text": "PDD",
+      "start": 17.8375,
+      "end": 18.5875,
+      "start_char": 266,
+      "end_char": 269
+    },
+    {
+      "text": "Asperger's",
+      "start": 18.7875,
+      "end": 19.3375,
+      "start_char": 273,
+      "end_char": 283
+    },
+    {
+      "text": "Disorder",
+      "start": 19.35,
+      "end": 19.9375,
+      "start_char": 284,
+      "end_char": 292
+    },
+    {
+      "text": "Since",
+      "start": 20.8125,
+      "end": 21.175,
+      "start_char": 296,
+      "end_char": 301
+    },
+    {
+      "text": "the",
+      "start": 21.1875,
+      "end": 21.3,
+      "start_char": 302,
+      "end_char": 305
+    },
+    {
+      "text": "DSM-5",
+      "start": 21.3125,
+      "end": 22.2875,
+      "start_char": 306,
+      "end_char": 311
+    },
+    {
+      "text": "2013",
+      "start": 22.525,
+      "end": 23.675,
+      "start_char": 313,
+      "end_char": 317
+    },
+    {
+      "text": "these",
+      "start": 23.9125,
+      "end": 24.0875,
+      "start_char": 320,
+      "end_char": 325
+    },
+    {
+      "text": "are",
+      "start": 24.1,
+      "end": 24.2,
+      "start_char": 326,
+      "end_char": 329
+    },
+    {
+      "text": "grouped",
+      "start": 24.2125,
+      "end": 24.5625,
+      "start_char": 330,
+      "end_char": 337
+    },
+    {
+      "text": "under",
+      "start": 24.575,
+      "end": 24.7875,
+      "start_char": 338,
+      "end_char": 343
+    },
+    {
+      "text": "a",
+      "start": 24.8,
+      "end": 24.8625,
+      "start_char": 344,
+      "end_char": 345
+    },
+    {
+      "text": "single",
+      "start": 24.875,
+      "end": 25.225,
+      "start_char": 346,
+      "end_char": 352
+    },
+    {
+      "text": "diagnosis",
+      "start": 25.2375,
+      "end": 26.0,
+      "start_char": 353,
+      "end_char": 362
+    },
+    {
+      "text": "Autism",
+      "start": 26.225,
+      "end": 26.725,
+      "start_char": 365,
+      "end_char": 371
+    },
+    {
+      "text": "Spectrum",
+      "start": 26.7375,
+      "end": 27.1625,
+      "start_char": 372,
+      "end_char": 380
+    },
+    {
+      "text": "Disorder",
+      "start": 27.175,
+      "end": 27.7375,
+      "start_char": 381,
+      "end_char": 389
+    },
+    {
+      "text": "The",
+      "start": 28.6,
+      "end": 28.7625,
+      "start_char": 392,
+      "end_char": 395
+    },
+    {
+      "text": "teaching",
+      "start": 28.775,
+      "end": 29.175,
+      "start_char": 396,
+      "end_char": 404
+    },
+    {
+      "text": "strategies",
+      "start": 29.1875,
+      "end": 29.825,
+      "start_char": 405,
+      "end_char": 415
+    },
+    {
+      "text": "remain",
+      "start": 29.8375,
+      "end": 30.1875,
+      "start_char": 416,
+      "end_char": 422
+    },
+    {
+      "text": "broadly",
+      "start": 30.2,
+      "end": 30.575,
+      "start_char": 423,
+      "end_char": 430
+    },
+    {
+      "text": "useful",
+      "start": 30.5875,
+      "end": 31.1375,
+      "start_char": 431,
+      "end_char": 437
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+.narration{position:fixed;bottom:0;left:0;right:0;z-index:22;background:var(--surface);border-top:1px solid var(--line);padding:10px 16px;font: .8rem/1.4 Inter,system-ui,sans-serif;box-shadow:0 -3px 16px #0001}
+.narration-controls{max-width:1120px;margin:auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.narration label{display:flex;gap:6px;align-items:center}
+.narration select{max-width:300px;min-width:0;padding:6px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--text);font:inherit}
+.narration audio{height:36px;flex:1;min-width:230px}
+.narration-help{max-width:1120px;margin:5px auto 0;color:var(--muted);font-size:.72rem}
+.tts-word{border-radius:3px}
+.tts-word.is-speaking{background:#ffe08a;color:#111827;box-shadow:0 0 0 2px #ffe08a}
+main{padding-bottom:220px}
+@media(max-width:600px){.narration-controls{gap:6px}.narration-controls>label:first-child{width:100%}.narration select#narrationTrack{flex:1;max-width:none}.narration audio{width:100%;flex-basis:100%}.narration-help{font-size:.68rem}}
+@media print{.narration{display:none}.tts-word.is-speaking{background:none;color:inherit;box-shadow:none}}
