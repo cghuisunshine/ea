@@ -3,8 +3,6 @@
   const tracks=window.ABA_NARRATION || [];
   const player=document.getElementById('narrationAudio');
   const select=document.getElementById('narrationTrack');
-  const speed=document.getElementById('narrationSpeed');
-  const follow=document.getElementById('narrationFollow');
   const status=document.getElementById('narrationStatus');
   let current=0, active=-1, frame=0;
   const spans=tracks.map(()=>[]);
@@ -45,21 +43,20 @@
       clear();active=next;
       const group=spans[current][active] || [];
       group.forEach(span=>span.classList.add('is-speaking'));
-      if(follow.checked && group.length){
+      if(group.length){
         const rect=group[0].getBoundingClientRect();
-        if(rect.top<90 || rect.bottom>innerHeight-170) group[0].scrollIntoView({block:'center',behavior:'auto'});
+        if(rect.top<90 || rect.bottom>innerHeight-document.querySelector('.narration').offsetHeight-20) group[0].scrollIntoView({block:'center',behavior:'auto'});
       }
     }
   }
   function tick(){paint();if(!player.paused && !player.ended) frame=requestAnimationFrame(tick);}
   function load(index){
     player.pause();clear();current=index;select.value=String(index);
-    player.src=tracks[index].audio;player.playbackRate=Number(speed.value);
+    player.src=tracks[index].audio;
     status.textContent='Ready — '+tracks[index].title;
   }
   function play(){player.play().catch(()=>{status.textContent='Press Play to start narration.';});}
   select.addEventListener('change',()=>load(Number(select.value)));
-  speed.addEventListener('change',()=>{player.playbackRate=Number(speed.value);});
   player.addEventListener('play',()=>{cancelAnimationFrame(frame);status.textContent='Playing — '+tracks[current].title;tick();});
   player.addEventListener('pause',()=>{cancelAnimationFrame(frame);clear();status.textContent='Paused — '+tracks[current].title;});
   player.addEventListener('seeked',()=>{if(!player.paused) paint();});
