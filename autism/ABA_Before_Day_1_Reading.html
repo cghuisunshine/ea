@@ -133,6 +133,7 @@ footer{font-family:Inter,system-ui,sans-serif;font-size:.8rem;color:var(--muted)
 <div id="progress"></div>
 <div class="bar">
   <button id="tocBtn" aria-label="Hide contents" aria-controls="toc" aria-expanded="true">☰ Contents</button>
+  <button id="audioToggle" aria-controls="narrationPanel" aria-expanded="true" style="white-space:nowrap">Hide audio</button>
   <span class="title">ABA · Before Day 1 · Supplemental Reading</span>
   <button id="smaller" aria-label="Smaller text">A−</button>
   <button id="bigger" aria-label="Larger text">A+</button>
@@ -834,7 +835,7 @@ footer{font-family:Inter,system-ui,sans-serif;font-size:.8rem;color:var(--muted)
   addEventListener('scroll',onScroll,{passive:true}); onScroll();
 })();
 </script>
-<aside class="narration" aria-label="Reading narration">
+<aside class="narration" id="narrationPanel" aria-label="Reading narration">
   <div class="narration-controls">
     <label for="narrationTrack">Chapter <select id="narrationTrack"></select></label>
     <audio id="narrationAudio" controls preload="metadata" aria-label="Reading audio"></audio>

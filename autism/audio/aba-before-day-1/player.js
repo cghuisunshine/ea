@@ -4,6 +4,21 @@
   const player=document.getElementById('narrationAudio');
   const select=document.getElementById('narrationTrack');
   const status=document.getElementById('narrationStatus');
+  const panel=document.getElementById('narrationPanel');
+  const toggle=document.getElementById('audioToggle');
+  let audioHidden=false;
+  try{audioHidden=localStorage.getItem('aba-audio-hidden')==='true';}catch(e){}
+  function syncPanel(){
+    panel.hidden=audioHidden;
+    document.body.classList.toggle('audio-hidden',audioHidden);
+    toggle.setAttribute('aria-expanded',String(!audioHidden));
+    toggle.textContent=audioHidden?'Show audio':'Hide audio';
+  }
+  toggle.addEventListener('click',()=>{
+    audioHidden=!audioHidden;syncPanel();
+    try{localStorage.setItem('aba-audio-hidden',String(audioHidden));}catch(e){}
+  });
+  syncPanel();
   let current=0, active=-1, frame=0;
   const spans=tracks.map(()=>[]);
   if(!tracks.length){status.textContent='Narration is unavailable. Please reload the page.';return;}
