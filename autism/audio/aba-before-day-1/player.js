@@ -12,7 +12,9 @@
     panel.hidden=audioHidden;
     document.body.classList.toggle('audio-hidden',audioHidden);
     toggle.setAttribute('aria-expanded',String(!audioHidden));
-    toggle.textContent=audioHidden?'Show audio':'Hide audio';
+    const label=audioHidden?'Show audio':'Hide audio';
+    toggle.setAttribute('aria-label',label);
+    toggle.title=label;
   }
   toggle.addEventListener('click',()=>{
     audioHidden=!audioHidden;syncPanel();

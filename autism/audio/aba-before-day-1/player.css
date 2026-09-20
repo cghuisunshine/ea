@@ -8,6 +8,8 @@
 .tts-word.is-speaking{background:#ffe08a;color:#111827;box-shadow:0 0 0 2px #ffe08a}
 main{padding-bottom:160px}
 .narration[hidden]{display:none}
+#audioToggle svg{display:block}
+#audioToggle[aria-expanded="true"]{background:var(--accent-soft);color:var(--accent);border-color:var(--accent)}
 body.audio-hidden main{padding-bottom:120px}
 @media(max-width:600px){.narration-controls{gap:6px}.narration-controls>label:first-child{width:100%}.narration select#narrationTrack{flex:1;max-width:none}.narration audio{width:100%;flex-basis:100%}}
 @media print{.narration{display:none}.tts-word.is-speaking{background:none;color:inherit;box-shadow:none}}
