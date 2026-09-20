@@ -127,7 +127,7 @@ footer{font-family:Inter,system-ui,sans-serif;font-size:.8rem;color:var(--muted)
   details{display:block}
 }
 </style>
-<link rel="stylesheet" href="audio/aba-before-day-1/player.css?v=audio-playing-4">
+<link rel="stylesheet" href="audio/aba-before-day-1/player.css?v=audio-mobile-6">
 </head>
 <body>
 <div id="progress"></div>
@@ -839,10 +839,11 @@ footer{font-family:Inter,system-ui,sans-serif;font-size:.8rem;color:var(--muted)
   <div class="narration-controls">
     <label for="narrationTrack">Chapter <select id="narrationTrack"></select></label>
     <audio id="narrationAudio" controls preload="metadata" aria-label="Reading audio"></audio>
+    <button id="narrationPause" type="button" aria-label="Pause narration" title="Pause narration"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg></button>
   </div>
   <span class="narration-status" id="narrationStatus" role="status" aria-live="polite">Loading narration…</span>
 </aside>
 <script src="audio/aba-before-day-1/narration.js"></script>
-<script src="audio/aba-before-day-1/player.js?v=audio-resume-5"></script>
+<script src="audio/aba-before-day-1/player.js?v=audio-mobile-6"></script>
 </body>
 </html>

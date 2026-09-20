@@ -6,6 +6,12 @@
   const status=document.getElementById('narrationStatus');
   const panel=document.getElementById('narrationPanel');
   const toggle=document.getElementById('audioToggle');
+  const pauseButton=document.getElementById('narrationPause');
+  pauseButton.addEventListener('click',()=>{
+    player.pause();
+    syncChapterSelection();
+    player.focus({preventScroll:true});
+  });
   function syncChapterSelection(){
     panel.classList.toggle('is-playing',!player.paused && !player.ended && !player.error);
   }
