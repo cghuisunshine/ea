@@ -32,8 +32,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:"Source Serif 4
 .bar .title{font-weight:600;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bar button{font:inherit;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 10px;cursor:pointer;min-width:36px}
 .bar button:hover{border-color:var(--accent)}
-#tocBtn{display:none}
+#tocBtn{white-space:nowrap}
 .layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:48px;max-width:1180px;margin:0 auto;padding:0 24px}
+@media (min-width:901px){
+  .layout.toc-folded{grid-template-columns:minmax(0,1fr);gap:0}
+  .layout.toc-folded nav.toc{display:none}
+  .layout.toc-folded main{width:100%;margin-inline:auto}
+}
 nav.toc{position:sticky;top:64px;align-self:start;max-height:calc(100vh - 80px);overflow:auto;padding:28px 0;font-size:.86rem}
 nav.toc .ch{margin:0 0 18px}
 nav.toc .ch>a{display:block;font-weight:600;color:var(--text);text-decoration:none;padding:4px 10px;border-radius:6px}
@@ -126,7 +131,7 @@ footer{font-family:Inter,system-ui,sans-serif;font-size:.8rem;color:var(--muted)
 <body>
 <div id="progress"></div>
 <div class="bar">
-  <button id="tocBtn" aria-label="Contents">☰</button>
+  <button id="tocBtn" aria-label="Hide contents" aria-controls="toc" aria-expanded="true">☰ Contents</button>
   <span class="title">ABA · Before Day 1 · Supplemental Reading</span>
   <button id="smaller" aria-label="Smaller text">A−</button>
   <button id="bigger" aria-label="Larger text">A+</button>
@@ -867,8 +872,30 @@ footer{font-family:Inter,system-ui,sans-serif;font-size:.8rem;color:var(--muted)
     var next=cur==='dark'?'light':'dark'; root.setAttribute('data-theme',next); st.theme=next; save();
   };
   var toc=document.getElementById('toc');
-  document.getElementById('tocBtn').onclick=function(){toc.classList.toggle('open')};
-  toc.addEventListener('click',function(e){if(e.target.closest('a')) toc.classList.remove('open')});
+  var tocBtn=document.getElementById('tocBtn'), layout=document.querySelector('.layout');
+  var narrow=matchMedia('(max-width:900px)');
+  function syncToc(){
+    layout.classList.toggle('toc-folded',!!st.tocFolded);
+    var expanded=narrow.matches?toc.classList.contains('open'):!st.tocFolded;
+    tocBtn.setAttribute('aria-expanded',String(expanded));
+    tocBtn.setAttribute('aria-label',expanded?'Hide contents':'Show contents');
+    tocBtn.title=expanded?'Hide contents':'Show contents';
+  }
+  tocBtn.onclick=function(){
+    if(narrow.matches) toc.classList.toggle('open');
+    else{st.tocFolded=!st.tocFolded;save()}
+    syncToc();onScroll();
+  };
+  toc.addEventListener('click',function(e){
+    if(e.target.closest('a') && narrow.matches){toc.classList.remove('open');syncToc()}
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape' && narrow.matches && toc.classList.contains('open')){
+      toc.classList.remove('open');syncToc();tocBtn.focus();
+    }
+  });
+  narrow.addEventListener('change',function(){toc.classList.remove('open');syncToc()});
+  syncToc();
   var bar=document.getElementById('progress');
   var links=[].slice.call(toc.querySelectorAll('a'));
   var targets=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
