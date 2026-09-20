@@ -13,3 +13,6 @@ main{padding-bottom:160px}
 body.audio-hidden main{padding-bottom:120px}
 @media(max-width:600px){.narration-controls{gap:6px}.narration-controls>label:first-child{width:100%}.narration select#narrationTrack{flex:1;max-width:none}.narration audio{width:100%;flex-basis:100%}}
 @media print{.narration{display:none}.tts-word.is-speaking{background:none;color:inherit;box-shadow:none}}
+
+#audioToggle .audio-icon-slash{display:none}
+#audioToggle[aria-expanded="false"] .audio-icon-slash{display:block}
