@@ -29,6 +29,28 @@
   let current=0, active=-1, frame=0;
   const spans=tracks.map(()=>[]);
   if(!tracks.length){status.textContent='Narration is unavailable. Please reload the page.';return;}
+  const progressKey='aba-reading-progress';
+  let saved={};
+  try{const value=JSON.parse(localStorage.getItem(progressKey));if(value && typeof value==='object') saved=value;}catch(e){}
+  if('scrollRestoration' in history) history.scrollRestoration='manual';
+  let pendingSeek=null, scrollRestored=false, saveTimer=0;
+  function saveProgress(){
+    clearTimeout(saveTimer);saveTimer=0;
+    const progress={track:tracks[current].id,time:pendingSeek===null?player.currentTime:pendingSeek,
+      scroll:scrollRestored?window.scrollY:(Number.isFinite(saved.scroll)?saved.scroll:0)};
+    try{localStorage.setItem(progressKey,JSON.stringify(progress));}catch(e){}
+  }
+  function scheduleSave(){if(!saveTimer) saveTimer=setTimeout(saveProgress,500);}
+  ['timeupdate','pause','seeked'].forEach(event=>player.addEventListener(event,scheduleSave));
+  window.addEventListener('scroll',scheduleSave,{passive:true});
+  window.addEventListener('pagehide',saveProgress);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden) saveProgress();});
+  function applyPendingSeek(){
+    if(pendingSeek===null || player.readyState<1) return;
+    const time=Number.isFinite(player.duration)?Math.min(pendingSeek,player.duration):pendingSeek;
+    player.currentTime=time;pendingSeek=null;
+  }
+  player.addEventListener('loadedmetadata',applyPendingSeek);
   tracks.forEach((track,trackIndex)=>{
     select.add(new Option((track.id==='intro'?'Introduction': 'Chapter '+track.id.slice(2))+': '+track.title, String(trackIndex)));
     track.nodes.forEach(node=>{
@@ -72,10 +94,12 @@
     }
   }
   function tick(){paint();if(!player.paused && !player.ended) frame=requestAnimationFrame(tick);}
-  function load(index){
+  function load(index,time=0){
     player.pause();clear();current=index;select.value=String(index);
+    pendingSeek=time;
     player.src=tracks[index].audio;
     status.textContent='Ready — '+tracks[index].title;
+    saveProgress();
   }
   function play(){player.play().catch(()=>{status.textContent='Press Play to start narration.';});}
   select.addEventListener('change',()=>load(Number(select.value)));
@@ -91,7 +115,15 @@
     const word=event.target.closest('.tts-word');if(!word) return;
     const index=Number(word.dataset.track), time=tracks[index].words[Number(word.dataset.word)].start;
     if(index!==current) load(index);
-    player.currentTime=time;play();
+    pendingSeek=time;applyPendingSeek();play();
   });
-  load(0);
+  const savedIndex=tracks.findIndex(track=>track.id===saved.track);
+  load(savedIndex>=0?savedIndex:0,savedIndex>=0 && Number.isFinite(saved.time)?Math.max(0,saved.time):0);
+  async function restoreScroll(){
+    if(document.fonts) await document.fonts.ready;
+    if(!location.hash && Number.isFinite(saved.scroll)) window.scrollTo({top:Math.max(0,saved.scroll),behavior:'instant'});
+    scrollRestored=true;
+  }
+  if(document.readyState==='complete') restoreScroll();
+  else window.addEventListener('load',restoreScroll,{once:true});
 })();
