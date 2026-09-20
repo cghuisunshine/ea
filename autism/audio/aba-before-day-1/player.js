@@ -6,6 +6,11 @@
   const status=document.getElementById('narrationStatus');
   const panel=document.getElementById('narrationPanel');
   const toggle=document.getElementById('audioToggle');
+  function syncChapterSelection(){
+    panel.classList.toggle('is-playing',!player.paused && !player.ended && !player.error);
+  }
+  ['play','pause','ended','emptied','error'].forEach(event=>player.addEventListener(event,syncChapterSelection));
+  syncChapterSelection();
   let audioHidden=false;
   try{audioHidden=localStorage.getItem('aba-audio-hidden')==='true';}catch(e){}
   function syncPanel(){
