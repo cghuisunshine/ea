@@ -25,3 +25,6 @@ body.audio-hidden main{padding-bottom:120px}
 
 #audioToggle .audio-icon-slash{display:none}
 #audioToggle[aria-expanded="false"] .audio-icon-slash{display:block}
+
+.narration.has-problem .narration-status{position:static;width:auto;height:auto;padding:6px 0 0;margin:0;overflow:visible;clip-path:none;white-space:normal;display:block;max-width:1120px;margin-inline:auto;color:var(--warn);font-weight:600}
+.narration.has-problem{border-top:2px solid var(--warn)}

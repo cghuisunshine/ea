@@ -17,6 +17,7 @@
   }
   ['play','pause','ended','emptied','error'].forEach(event=>player.addEventListener(event,syncChapterSelection));
   syncChapterSelection();
+  const pageKey=(location.pathname.split('/').pop()||'page').replace(/\.html?$/,'');
   let audioHidden=false;
   try{audioHidden=localStorage.getItem('aba-audio-hidden')==='true';}catch(e){}
   function syncPanel(){
@@ -34,8 +35,16 @@
   syncPanel();
   let current=0, active=-1, frame=0;
   const spans=tracks.map(()=>[]);
-  if(!tracks.length){status.textContent='Narration is unavailable. Please reload the page.';return;}
-  const progressKey='aba-reading-progress';
+  function showProblem(message){
+    status.textContent=message;
+    panel.classList.add('has-problem');
+    panel.hidden=false;
+  }
+  if(!tracks.length){
+    showProblem('Narration has not loaded. If the audio was generated after this page was opened, reload the page (Cmd+Shift+R).');
+    return;
+  }
+  const progressKey='aba-reading-progress:'+pageKey;
   let saved={};
   try{const value=JSON.parse(localStorage.getItem(progressKey));if(value && typeof value==='object') saved=value;}catch(e){}
   if('scrollRestoration' in history) history.scrollRestoration='manual';
@@ -58,7 +67,7 @@
   }
   player.addEventListener('loadedmetadata',applyPendingSeek);
   tracks.forEach((track,trackIndex)=>{
-    select.add(new Option((track.id==='intro'?'Introduction': 'Chapter '+track.id.slice(2))+': '+track.title, String(trackIndex)));
+    select.add(new Option((track.label || (track.id==='intro'?'Introduction':'Chapter '+track.id.slice(2)))+': '+track.title, String(trackIndex)));
     track.nodes.forEach(node=>{
       const host=document.querySelector('[data-tts-node="'+node.id+'"]');
       if(!host) return;
@@ -109,14 +118,16 @@
   }
   function play(){player.play().catch(()=>{status.textContent='Press Play to start narration.';});}
   select.addEventListener('change',()=>load(Number(select.value)));
-  player.addEventListener('play',()=>{cancelAnimationFrame(frame);status.textContent='Playing — '+tracks[current].title;tick();});
+  player.addEventListener('play',()=>{panel.classList.remove('has-problem');cancelAnimationFrame(frame);status.textContent='Playing — '+tracks[current].title;tick();});
   player.addEventListener('pause',()=>{cancelAnimationFrame(frame);clear();status.textContent='Paused — '+tracks[current].title;});
   player.addEventListener('seeked',()=>{if(!player.paused) paint();});
   player.addEventListener('ended',()=>{
     cancelAnimationFrame(frame);clear();
     if(current+1<tracks.length){load(current+1);play();}else status.textContent='Reading complete.';
   });
-  player.addEventListener('error',()=>{status.textContent='Could not load the audio. Please reload and try again.';});
+  player.addEventListener('error',()=>{
+    showProblem('Could not load '+tracks[current].audio+' — check that the audio folder sits next to this page, then reload.');
+  });
   document.querySelector('main').addEventListener('dblclick',event=>{
     if(audioHidden) return;
     const word=event.target.closest('.tts-word');if(!word) return;
