@@ -1,0 +1,736 @@
+{
+  "digest": "b9140226711c4c3f76f25b2c592324f7b6a5cfcdce6e2edabe27af53b1164c0d",
+  "voice": "en-US-AriaNeural",
+  "text": "ABA · Module 4 Supplemental Readings Six readings on teaching procedures: discrete trial training, errorless learning, generalization, naturalistic teaching, prompting, and response prompting. Reading note:  Sources are three TARGET Texas Guide entries (discrete trial training, errorless learning and prompting, 2009); Burt and Whitney on generalization and Collins, Lo, Park and Haughney on response prompting, both  TEACHING Exceptional Children , 2018; and Allen and Shaw's chapter on naturalistic teaching (Luiselli, ed., Oxford, 2011). Reference lists sit in collapsible sections and are not read aloud. Where the original guides list dozens of study abstracts, the citations are given here and the full abstracts remain in the source PDF.",
+  "audio": "intro.mp3",
+  "words": [
+    {
+      "text": "ABA",
+      "start": 0.1,
+      "end": 0.6,
+      "start_char": 0,
+      "end_char": 3
+    },
+    {
+      "text": "Module",
+      "start": 0.6125,
+      "end": 1.0875,
+      "start_char": 6,
+      "end_char": 12
+    },
+    {
+      "text": "4",
+      "start": 1.1,
+      "end": 1.375,
+      "start_char": 13,
+      "end_char": 14
+    },
+    {
+      "text": "Supplemental",
+      "start": 1.3875,
+      "end": 2.0625,
+      "start_char": 15,
+      "end_char": 27
+    },
+    {
+      "text": "Readings",
+      "start": 2.075,
+      "end": 2.475,
+      "start_char": 28,
+      "end_char": 36
+    },
+    {
+      "text": "Six",
+      "start": 2.4875,
+      "end": 2.775,
+      "start_char": 37,
+      "end_char": 40
+    },
+    {
+      "text": "readings",
+      "start": 2.7875,
+      "end": 3.2125,
+      "start_char": 41,
+      "end_char": 49
+    },
+    {
+      "text": "on",
+      "start": 3.225,
+      "end": 3.3625,
+      "start_char": 50,
+      "end_char": 52
+    },
+    {
+      "text": "teaching",
+      "start": 3.375,
+      "end": 3.75,
+      "start_char": 53,
+      "end_char": 61
+    },
+    {
+      "text": "procedures",
+      "start": 3.7625,
+      "end": 4.4125,
+      "start_char": 62,
+      "end_char": 72
+    },
+    {
+      "text": "discrete",
+      "start": 4.7,
+      "end": 5.1375,
+      "start_char": 74,
+      "end_char": 82
+    },
+    {
+      "text": "trial",
+      "start": 5.15,
+      "end": 5.5,
+      "start_char": 83,
+      "end_char": 88
+    },
+    {
+      "text": "training",
+      "start": 5.5125,
+      "end": 5.9375,
+      "start_char": 89,
+      "end_char": 97
+    },
+    {
+      "text": "errorless",
+      "start": 6.15,
+      "end": 6.5625,
+      "start_char": 99,
+      "end_char": 108
+    },
+    {
+      "text": "learning",
+      "start": 6.575,
+      "end": 6.9625,
+      "start_char": 109,
+      "end_char": 117
+    },
+    {
+      "text": "generalization",
+      "start": 7.15,
+      "end": 8.05,
+      "start_char": 119,
+      "end_char": 133
+    },
+    {
+      "text": "naturalistic",
+      "start": 8.2375,
+      "end": 8.9375,
+      "start_char": 135,
+      "end_char": 147
+    },
+    {
+      "text": "teaching",
+      "start": 8.95,
+      "end": 9.45,
+      "start_char": 148,
+      "end_char": 156
+    },
+    {
+      "text": "prompting",
+      "start": 9.6125,
+      "end": 10.175,
+      "start_char": 158,
+      "end_char": 167
+    },
+    {
+      "text": "and",
+      "start": 10.35,
+      "end": 10.475,
+      "start_char": 169,
+      "end_char": 172
+    },
+    {
+      "text": "response",
+      "start": 10.4875,
+      "end": 10.9875,
+      "start_char": 173,
+      "end_char": 181
+    },
+    {
+      "text": "prompting",
+      "start": 11.0,
+      "end": 11.5875,
+      "start_char": 182,
+      "end_char": 191
+    },
+    {
+      "text": "Reading",
+      "start": 12.4625,
+      "end": 12.8875,
+      "start_char": 193,
+      "end_char": 200
+    },
+    {
+      "text": "note",
+      "start": 12.9,
+      "end": 13.2125,
+      "start_char": 201,
+      "end_char": 205
+    },
+    {
+      "text": "Sources",
+      "start": 13.4375,
+      "end": 13.9625,
+      "start_char": 208,
+      "end_char": 215
+    },
+    {
+      "text": "are",
+      "start": 13.975,
+      "end": 14.1,
+      "start_char": 216,
+      "end_char": 219
+    },
+    {
+      "text": "three",
+      "start": 14.1125,
+      "end": 14.3875,
+      "start_char": 220,
+      "end_char": 225
+    },
+    {
+      "text": "TARGET",
+      "start": 14.4,
+      "end": 14.7875,
+      "start_char": 226,
+      "end_char": 232
+    },
+    {
+      "text": "Texas",
+      "start": 14.8,
+      "end": 15.2,
+      "start_char": 233,
+      "end_char": 238
+    },
+    {
+      "text": "Guide",
+      "start": 15.2125,
+      "end": 15.5,
+      "start_char": 239,
+      "end_char": 244
+    },
+    {
+      "text": "entries",
+      "start": 15.5125,
+      "end": 16.0125,
+      "start_char": 245,
+      "end_char": 252
+    },
+    {
+      "text": "discrete",
+      "start": 16.275,
+      "end": 16.7125,
+      "start_char": 254,
+      "end_char": 262
+    },
+    {
+      "text": "trial",
+      "start": 16.725,
+      "end": 17.0875,
+      "start_char": 263,
+      "end_char": 268
+    },
+    {
+      "text": "training",
+      "start": 17.1,
+      "end": 17.525,
+      "start_char": 269,
+      "end_char": 277
+    },
+    {
+      "text": "errorless",
+      "start": 17.75,
+      "end": 18.1625,
+      "start_char": 279,
+      "end_char": 288
+    },
+    {
+      "text": "learning",
+      "start": 18.175,
+      "end": 18.5625,
+      "start_char": 289,
+      "end_char": 297
+    },
+    {
+      "text": "and",
+      "start": 18.65,
+      "end": 18.775,
+      "start_char": 298,
+      "end_char": 301
+    },
+    {
+      "text": "prompting",
+      "start": 18.7875,
+      "end": 19.375,
+      "start_char": 302,
+      "end_char": 311
+    },
+    {
+      "text": "2009",
+      "start": 19.6875,
+      "end": 20.6125,
+      "start_char": 313,
+      "end_char": 317
+    },
+    {
+      "text": "Burt",
+      "start": 20.875,
+      "end": 21.1125,
+      "start_char": 320,
+      "end_char": 324
+    },
+    {
+      "text": "and",
+      "start": 21.125,
+      "end": 21.25,
+      "start_char": 325,
+      "end_char": 328
+    },
+    {
+      "text": "Whitney",
+      "start": 21.2625,
+      "end": 21.5875,
+      "start_char": 329,
+      "end_char": 336
+    },
+    {
+      "text": "on",
+      "start": 21.6,
+      "end": 21.7375,
+      "start_char": 337,
+      "end_char": 339
+    },
+    {
+      "text": "generalization",
+      "start": 21.75,
+      "end": 22.5375,
+      "start_char": 340,
+      "end_char": 354
+    },
+    {
+      "text": "and",
+      "start": 22.55,
+      "end": 22.6625,
+      "start_char": 355,
+      "end_char": 358
+    },
+    {
+      "text": "Collins",
+      "start": 22.675,
+      "end": 23.2,
+      "start_char": 359,
+      "end_char": 366
+    },
+    {
+      "text": "Lo",
+      "start": 23.45,
+      "end": 23.6875,
+      "start_char": 368,
+      "end_char": 370
+    },
+    {
+      "text": "Park",
+      "start": 23.875,
+      "end": 24.225,
+      "start_char": 372,
+      "end_char": 376
+    },
+    {
+      "text": "and",
+      "start": 24.3125,
+      "end": 24.4125,
+      "start_char": 377,
+      "end_char": 380
+    },
+    {
+      "text": "Haughney",
+      "start": 24.425,
+      "end": 24.875,
+      "start_char": 381,
+      "end_char": 389
+    },
+    {
+      "text": "on",
+      "start": 24.8875,
+      "end": 25.0125,
+      "start_char": 390,
+      "end_char": 392
+    },
+    {
+      "text": "response",
+      "start": 25.025,
+      "end": 25.5,
+      "start_char": 393,
+      "end_char": 401
+    },
+    {
+      "text": "prompting",
+      "start": 25.5125,
+      "end": 26.0125,
+      "start_char": 402,
+      "end_char": 411
+    },
+    {
+      "text": "both",
+      "start": 26.25,
+      "end": 26.4875,
+      "start_char": 413,
+      "end_char": 417
+    },
+    {
+      "text": "TEACHING",
+      "start": 26.5,
+      "end": 26.9,
+      "start_char": 419,
+      "end_char": 427
+    },
+    {
+      "text": "Exceptional",
+      "start": 26.9125,
+      "end": 27.4625,
+      "start_char": 428,
+      "end_char": 439
+    },
+    {
+      "text": "Children",
+      "start": 27.475,
+      "end": 27.9625,
+      "start_char": 440,
+      "end_char": 448
+    },
+    {
+      "text": "2018",
+      "start": 28.2875,
+      "end": 29.45,
+      "start_char": 451,
+      "end_char": 455
+    },
+    {
+      "text": "and",
+      "start": 29.6625,
+      "end": 29.8375,
+      "start_char": 457,
+      "end_char": 460
+    },
+    {
+      "text": "Allen",
+      "start": 29.85,
+      "end": 30.175,
+      "start_char": 461,
+      "end_char": 466
+    },
+    {
+      "text": "and",
+      "start": 30.1875,
+      "end": 30.2875,
+      "start_char": 467,
+      "end_char": 470
+    },
+    {
+      "text": "Shaw's",
+      "start": 30.3,
+      "end": 30.65,
+      "start_char": 471,
+      "end_char": 477
+    },
+    {
+      "text": "chapter",
+      "start": 30.6625,
+      "end": 31.1375,
+      "start_char": 478,
+      "end_char": 485
+    },
+    {
+      "text": "on",
+      "start": 31.15,
+      "end": 31.2875,
+      "start_char": 486,
+      "end_char": 488
+    },
+    {
+      "text": "naturalistic",
+      "start": 31.3,
+      "end": 32.025,
+      "start_char": 489,
+      "end_char": 501
+    },
+    {
+      "text": "teaching",
+      "start": 32.0375,
+      "end": 32.4625,
+      "start_char": 502,
+      "end_char": 510
+    },
+    {
+      "text": "Luiselli",
+      "start": 32.625,
+      "end": 33.2875,
+      "start_char": 512,
+      "end_char": 520
+    },
+    {
+      "text": "ed.",
+      "start": 33.4375,
+      "end": 33.8875,
+      "start_char": 522,
+      "end_char": 525
+    },
+    {
+      "text": "Oxford",
+      "start": 34.0375,
+      "end": 34.5375,
+      "start_char": 527,
+      "end_char": 533
+    },
+    {
+      "text": "2011",
+      "start": 34.7375,
+      "end": 35.7625,
+      "start_char": 535,
+      "end_char": 539
+    },
+    {
+      "text": "Reference",
+      "start": 36.6375,
+      "end": 37.175,
+      "start_char": 542,
+      "end_char": 551
+    },
+    {
+      "text": "lists",
+      "start": 37.1875,
+      "end": 37.55,
+      "start_char": 552,
+      "end_char": 557
+    },
+    {
+      "text": "sit",
+      "start": 37.5625,
+      "end": 37.7625,
+      "start_char": 558,
+      "end_char": 561
+    },
+    {
+      "text": "in",
+      "start": 37.775,
+      "end": 37.9,
+      "start_char": 562,
+      "end_char": 564
+    },
+    {
+      "text": "collapsible",
+      "start": 37.9125,
+      "end": 38.5125,
+      "start_char": 565,
+      "end_char": 576
+    },
+    {
+      "text": "sections",
+      "start": 38.525,
+      "end": 39.1375,
+      "start_char": 577,
+      "end_char": 585
+    },
+    {
+      "text": "and",
+      "start": 39.15,
+      "end": 39.3375,
+      "start_char": 586,
+      "end_char": 589
+    },
+    {
+      "text": "are",
+      "start": 39.35,
+      "end": 39.425,
+      "start_char": 590,
+      "end_char": 593
+    },
+    {
+      "text": "not",
+      "start": 39.4375,
+      "end": 39.7375,
+      "start_char": 594,
+      "end_char": 597
+    },
+    {
+      "text": "read",
+      "start": 39.75,
+      "end": 39.9,
+      "start_char": 598,
+      "end_char": 602
+    },
+    {
+      "text": "aloud",
+      "start": 39.9125,
+      "end": 40.4375,
+      "start_char": 603,
+      "end_char": 608
+    },
+    {
+      "text": "Where",
+      "start": 41.3,
+      "end": 41.5,
+      "start_char": 610,
+      "end_char": 615
+    },
+    {
+      "text": "the",
+      "start": 41.5125,
+      "end": 41.5875,
+      "start_char": 616,
+      "end_char": 619
+    },
+    {
+      "text": "original",
+      "start": 41.6,
+      "end": 42.1,
+      "start_char": 620,
+      "end_char": 628
+    },
+    {
+      "text": "guides",
+      "start": 42.1125,
+      "end": 42.4875,
+      "start_char": 629,
+      "end_char": 635
+    },
+    {
+      "text": "list",
+      "start": 42.5,
+      "end": 42.7875,
+      "start_char": 636,
+      "end_char": 640
+    },
+    {
+      "text": "dozens",
+      "start": 42.8,
+      "end": 43.1625,
+      "start_char": 641,
+      "end_char": 647
+    },
+    {
+      "text": "of",
+      "start": 43.175,
+      "end": 43.2625,
+      "start_char": 648,
+      "end_char": 650
+    },
+    {
+      "text": "study",
+      "start": 43.275,
+      "end": 43.6125,
+      "start_char": 651,
+      "end_char": 656
+    },
+    {
+      "text": "abstracts",
+      "start": 43.625,
+      "end": 44.35,
+      "start_char": 657,
+      "end_char": 666
+    },
+    {
+      "text": "the",
+      "start": 44.625,
+      "end": 44.7375,
+      "start_char": 668,
+      "end_char": 671
+    },
+    {
+      "text": "citations",
+      "start": 44.75,
+      "end": 45.4125,
+      "start_char": 672,
+      "end_char": 681
+    },
+    {
+      "text": "are",
+      "start": 45.425,
+      "end": 45.5125,
+      "start_char": 682,
+      "end_char": 685
+    },
+    {
+      "text": "given",
+      "start": 45.525,
+      "end": 45.8375,
+      "start_char": 686,
+      "end_char": 691
+    },
+    {
+      "text": "here",
+      "start": 45.85,
+      "end": 46.2625,
+      "start_char": 692,
+      "end_char": 696
+    },
+    {
+      "text": "and",
+      "start": 46.275,
+      "end": 46.35,
+      "start_char": 697,
+      "end_char": 700
+    },
+    {
+      "text": "the",
+      "start": 46.3625,
+      "end": 46.4625,
+      "start_char": 701,
+      "end_char": 704
+    },
+    {
+      "text": "full",
+      "start": 46.475,
+      "end": 46.8,
+      "start_char": 705,
+      "end_char": 709
+    },
+    {
+      "text": "abstracts",
+      "start": 46.8125,
+      "end": 47.475,
+      "start_char": 710,
+      "end_char": 719
+    },
+    {
+      "text": "remain",
+      "start": 47.4875,
+      "end": 47.85,
+      "start_char": 720,
+      "end_char": 726
+    },
+    {
+      "text": "in",
+      "start": 47.8625,
+      "end": 47.95,
+      "start_char": 727,
+      "end_char": 729
+    },
+    {
+      "text": "the",
+      "start": 47.9625,
+      "end": 48.0375,
+      "start_char": 730,
+      "end_char": 733
+    },
+    {
+      "text": "source",
+      "start": 48.05,
+      "end": 48.375,
+      "start_char": 734,
+      "end_char": 740
+    },
+    {
+      "text": "PDF",
+      "start": 48.3875,
+      "end": 49.1,
+      "start_char": 741,
+      "end_char": 744
+    }
+  ]
+}

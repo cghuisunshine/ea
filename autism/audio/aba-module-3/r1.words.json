@@ -1,0 +1,4236 @@
+{
+  "digest": "4bd8807d33d84687a3e0e9e949f65c742e9599d3d87fec39aab183401811508f",
+  "voice": "en-US-AriaNeural",
+  "text": "Reading One · TARGET Texas Guide Chaining Verbal skills Grade levels Cognitive level Areas addressed Nonverbal · Mixed · Verbal PK · Elementary · Middle/High Classic Adaptive behaviour and daily living · Behaviour · Social/emotional Chaining is an instructional strategy grounded in applied behavior analysis theory. Chaining is based on task analysis, whereby sub-behaviors are recognized as requirements for task mastery. Description Chaining breaks a task down into small steps and then teaches each step within the sequence by itself. For example, a child learning to wash her hands independently may start with learning to turn on the faucet; once this skill is learned, the next step may be rinsing hands, and so on. This technique is helpful in assisting children to learn a routine task that is repetitive, such as using the bathroom, brushing teeth, putting on clothes and shoes, or completing a work task. In utilizing chaining, the teacher must (a) analyze the desired behavior, (b) break it into steps, and (c) plan for the teaching. There are two types of chaining techniques: Forward chaining.  The forward chaining technique moves a child from the first part of the task to the end. In short, each step must be mastered before the next step in the skill series is added. Backward chaining.  The backward chaining technique involves the same process as forward chaining, except in reverse — the teaching process moves from the last part of the task to the beginning. This technique is used when it is easier to teach a child a task from the last step than from the beginning. Steps Forward chaining The teacher teaches the child the first step in the chain. When the first step is learned, the teacher adds the second step. The child is learning the second step in the routine and attaching it to the first step. The third step is taught in conjunction with the first two steps once the child is able to demonstrate the first two steps. Backward chaining The steps mirror those of forward chaining except they occur in reverse. The teacher provides the child assistance throughout the process until the last step. The child is encouraged to complete the last step independently. When the last step is mastered, the teacher provides assistance until the child is able to perform the step before the last one. The child completes more and more ending steps independently until he masters all steps and is able to complete the task without assistance. Brief example One of 6-year-old Tommy's goals was to learn to brush his teeth. In order to teach Tommy this skill, his teacher decided to use backward chaining. First, the teacher conducted a task analysis to identify all the steps of tooth-brushing. In the beginning, the teacher guided and prompted Tommy to perform all steps except the last one: looking at the mirror and wiping his mouth with a towel. Tommy learned to perform this last step first, with prompts and reinforcement. After mastering this last step, the next teaching target was the second-to-last step, turning off the faucet. With backward chaining, Tommy learned to brush his teeth by working on the last step first. Summary Chaining is a behavioral strategy used to teach children with autism complex behaviors by breaking them down into smaller sequential steps. One of two methods, forward chaining or backward chaining, is selected based on the nature of the task or the skill levels of the child. Research Number of studies Ages (years) Sample size Areas addressed Outcome 6 3 to adult 20 Daily-living skills (drinking from a cup, Internet skills, making a snack, independent eating), escape behavior, sharing +",
+  "audio": "r1.mp3",
+  "words": [
+    {
+      "text": "Reading",
+      "start": 0.1,
+      "end": 0.5375,
+      "start_char": 0,
+      "end_char": 7
+    },
+    {
+      "text": "One",
+      "start": 0.55,
+      "end": 0.7875,
+      "start_char": 8,
+      "end_char": 11
+    },
+    {
+      "text": "TARGET",
+      "start": 0.8,
+      "end": 1.2125,
+      "start_char": 14,
+      "end_char": 20
+    },
+    {
+      "text": "Texas",
+      "start": 1.225,
+      "end": 1.6375,
+      "start_char": 21,
+      "end_char": 26
+    },
+    {
+      "text": "Guide",
+      "start": 1.65,
+      "end": 1.9875,
+      "start_char": 27,
+      "end_char": 32
+    },
+    {
+      "text": "Chaining",
+      "start": 2.0,
+      "end": 2.3625,
+      "start_char": 33,
+      "end_char": 41
+    },
+    {
+      "text": "Verbal",
+      "start": 2.375,
+      "end": 2.7125,
+      "start_char": 42,
+      "end_char": 48
+    },
+    {
+      "text": "skills",
+      "start": 2.725,
+      "end": 3.1125,
+      "start_char": 49,
+      "end_char": 55
+    },
+    {
+      "text": "Grade",
+      "start": 3.125,
+      "end": 3.4625,
+      "start_char": 56,
+      "end_char": 61
+    },
+    {
+      "text": "levels",
+      "start": 3.475,
+      "end": 3.8125,
+      "start_char": 62,
+      "end_char": 68
+    },
+    {
+      "text": "Cognitive",
+      "start": 3.825,
+      "end": 4.35,
+      "start_char": 69,
+      "end_char": 78
+    },
+    {
+      "text": "level",
+      "start": 4.3625,
+      "end": 4.725,
+      "start_char": 79,
+      "end_char": 84
+    },
+    {
+      "text": "Areas",
+      "start": 4.7375,
+      "end": 5.1375,
+      "start_char": 85,
+      "end_char": 90
+    },
+    {
+      "text": "addressed",
+      "start": 5.15,
+      "end": 5.6,
+      "start_char": 91,
+      "end_char": 100
+    },
+    {
+      "text": "Nonverbal",
+      "start": 5.6125,
+      "end": 6.2625,
+      "start_char": 101,
+      "end_char": 110
+    },
+    {
+      "text": "Mixed",
+      "start": 6.275,
+      "end": 6.6125,
+      "start_char": 113,
+      "end_char": 118
+    },
+    {
+      "text": "Verbal",
+      "start": 6.625,
+      "end": 6.975,
+      "start_char": 121,
+      "end_char": 127
+    },
+    {
+      "text": "PK",
+      "start": 6.9875,
+      "end": 7.5,
+      "start_char": 128,
+      "end_char": 130
+    },
+    {
+      "text": "Elementary",
+      "start": 7.5125,
+      "end": 8.125,
+      "start_char": 133,
+      "end_char": 143
+    },
+    {
+      "text": "Middle",
+      "start": 8.1375,
+      "end": 8.4875,
+      "start_char": 146,
+      "end_char": 152
+    },
+    {
+      "text": "/",
+      "start": 8.5,
+      "end": 8.85,
+      "start_char": 152,
+      "end_char": 153
+    },
+    {
+      "text": "High",
+      "start": 8.8625,
+      "end": 9.0875,
+      "start_char": 153,
+      "end_char": 157
+    },
+    {
+      "text": "Classic",
+      "start": 9.1,
+      "end": 9.5875,
+      "start_char": 158,
+      "end_char": 165
+    },
+    {
+      "text": "Adaptive",
+      "start": 9.6,
+      "end": 10.0625,
+      "start_char": 166,
+      "end_char": 174
+    },
+    {
+      "text": "behaviour",
+      "start": 10.075,
+      "end": 10.7,
+      "start_char": 175,
+      "end_char": 184
+    },
+    {
+      "text": "and",
+      "start": 10.7125,
+      "end": 10.825,
+      "start_char": 185,
+      "end_char": 188
+    },
+    {
+      "text": "daily",
+      "start": 10.8375,
+      "end": 11.1625,
+      "start_char": 189,
+      "end_char": 194
+    },
+    {
+      "text": "living",
+      "start": 11.175,
+      "end": 11.4875,
+      "start_char": 195,
+      "end_char": 201
+    },
+    {
+      "text": "Behaviour",
+      "start": 11.5,
+      "end": 11.95,
+      "start_char": 204,
+      "end_char": 213
+    },
+    {
+      "text": "Social",
+      "start": 11.9625,
+      "end": 12.3625,
+      "start_char": 216,
+      "end_char": 222
+    },
+    {
+      "text": "/",
+      "start": 12.375,
+      "end": 12.7,
+      "start_char": 222,
+      "end_char": 223
+    },
+    {
+      "text": "emotional",
+      "start": 12.7125,
+      "end": 13.1875,
+      "start_char": 223,
+      "end_char": 232
+    },
+    {
+      "text": "Chaining",
+      "start": 13.2,
+      "end": 13.625,
+      "start_char": 233,
+      "end_char": 241
+    },
+    {
+      "text": "is",
+      "start": 13.6375,
+      "end": 13.775,
+      "start_char": 242,
+      "end_char": 244
+    },
+    {
+      "text": "an",
+      "start": 13.7875,
+      "end": 14.075,
+      "start_char": 245,
+      "end_char": 247
+    },
+    {
+      "text": "instructional",
+      "start": 14.2375,
+      "end": 14.9875,
+      "start_char": 248,
+      "end_char": 261
+    },
+    {
+      "text": "strategy",
+      "start": 15.0,
+      "end": 15.5625,
+      "start_char": 262,
+      "end_char": 270
+    },
+    {
+      "text": "grounded",
+      "start": 15.575,
+      "end": 16.025,
+      "start_char": 271,
+      "end_char": 279
+    },
+    {
+      "text": "in",
+      "start": 16.0375,
+      "end": 16.15,
+      "start_char": 280,
+      "end_char": 282
+    },
+    {
+      "text": "applied",
+      "start": 16.1625,
+      "end": 16.575,
+      "start_char": 283,
+      "end_char": 290
+    },
+    {
+      "text": "behavior",
+      "start": 16.5875,
+      "end": 17.0375,
+      "start_char": 291,
+      "end_char": 299
+    },
+    {
+      "text": "analysis",
+      "start": 17.05,
+      "end": 17.6125,
+      "start_char": 300,
+      "end_char": 308
+    },
+    {
+      "text": "theory",
+      "start": 17.625,
+      "end": 18.075,
+      "start_char": 309,
+      "end_char": 315
+    },
+    {
+      "text": "Chaining",
+      "start": 18.9375,
+      "end": 19.3625,
+      "start_char": 317,
+      "end_char": 325
+    },
+    {
+      "text": "is",
+      "start": 19.375,
+      "end": 19.5,
+      "start_char": 326,
+      "end_char": 328
+    },
+    {
+      "text": "based",
+      "start": 19.5125,
+      "end": 19.85,
+      "start_char": 329,
+      "end_char": 334
+    },
+    {
+      "text": "on",
+      "start": 19.8625,
+      "end": 19.9875,
+      "start_char": 335,
+      "end_char": 337
+    },
+    {
+      "text": "task",
+      "start": 20.0,
+      "end": 20.325,
+      "start_char": 338,
+      "end_char": 342
+    },
+    {
+      "text": "analysis",
+      "start": 20.3375,
+      "end": 21.0,
+      "start_char": 343,
+      "end_char": 351
+    },
+    {
+      "text": "whereby",
+      "start": 21.325,
+      "end": 21.6875,
+      "start_char": 353,
+      "end_char": 360
+    },
+    {
+      "text": "sub-behaviors",
+      "start": 21.7,
+      "end": 22.4875,
+      "start_char": 361,
+      "end_char": 374
+    },
+    {
+      "text": "are",
+      "start": 22.5,
+      "end": 22.675,
+      "start_char": 375,
+      "end_char": 378
+    },
+    {
+      "text": "recognized",
+      "start": 22.6875,
+      "end": 23.35,
+      "start_char": 379,
+      "end_char": 389
+    },
+    {
+      "text": "as",
+      "start": 23.3625,
+      "end": 23.5,
+      "start_char": 390,
+      "end_char": 392
+    },
+    {
+      "text": "requirements",
+      "start": 23.5125,
+      "end": 24.225,
+      "start_char": 393,
+      "end_char": 405
+    },
+    {
+      "text": "for",
+      "start": 24.2375,
+      "end": 24.35,
+      "start_char": 406,
+      "end_char": 409
+    },
+    {
+      "text": "task",
+      "start": 24.3625,
+      "end": 24.7125,
+      "start_char": 410,
+      "end_char": 414
+    },
+    {
+      "text": "mastery",
+      "start": 24.725,
+      "end": 25.325,
+      "start_char": 415,
+      "end_char": 422
+    },
+    {
+      "text": "Description",
+      "start": 26.1875,
+      "end": 26.8625,
+      "start_char": 424,
+      "end_char": 435
+    },
+    {
+      "text": "Chaining",
+      "start": 26.875,
+      "end": 27.2625,
+      "start_char": 436,
+      "end_char": 444
+    },
+    {
+      "text": "breaks",
+      "start": 27.275,
+      "end": 27.5625,
+      "start_char": 445,
+      "end_char": 451
+    },
+    {
+      "text": "a",
+      "start": 27.575,
+      "end": 27.6375,
+      "start_char": 452,
+      "end_char": 453
+    },
+    {
+      "text": "task",
+      "start": 27.65,
+      "end": 28.0125,
+      "start_char": 454,
+      "end_char": 458
+    },
+    {
+      "text": "down",
+      "start": 28.025,
+      "end": 28.2875,
+      "start_char": 459,
+      "end_char": 463
+    },
+    {
+      "text": "into",
+      "start": 28.3,
+      "end": 28.4625,
+      "start_char": 464,
+      "end_char": 468
+    },
+    {
+      "text": "small",
+      "start": 28.475,
+      "end": 28.825,
+      "start_char": 469,
+      "end_char": 474
+    },
+    {
+      "text": "steps",
+      "start": 28.8375,
+      "end": 29.2625,
+      "start_char": 475,
+      "end_char": 480
+    },
+    {
+      "text": "and",
+      "start": 29.275,
+      "end": 29.4375,
+      "start_char": 481,
+      "end_char": 484
+    },
+    {
+      "text": "then",
+      "start": 29.45,
+      "end": 29.65,
+      "start_char": 485,
+      "end_char": 489
+    },
+    {
+      "text": "teaches",
+      "start": 29.6625,
+      "end": 30.0375,
+      "start_char": 490,
+      "end_char": 497
+    },
+    {
+      "text": "each",
+      "start": 30.05,
+      "end": 30.3,
+      "start_char": 498,
+      "end_char": 502
+    },
+    {
+      "text": "step",
+      "start": 30.3125,
+      "end": 30.65,
+      "start_char": 503,
+      "end_char": 507
+    },
+    {
+      "text": "within",
+      "start": 30.6625,
+      "end": 30.925,
+      "start_char": 508,
+      "end_char": 514
+    },
+    {
+      "text": "the",
+      "start": 30.9375,
+      "end": 31.025,
+      "start_char": 515,
+      "end_char": 518
+    },
+    {
+      "text": "sequence",
+      "start": 31.0375,
+      "end": 31.5,
+      "start_char": 519,
+      "end_char": 527
+    },
+    {
+      "text": "by",
+      "start": 31.5125,
+      "end": 31.6875,
+      "start_char": 528,
+      "end_char": 530
+    },
+    {
+      "text": "itself",
+      "start": 31.7,
+      "end": 32.2875,
+      "start_char": 531,
+      "end_char": 537
+    },
+    {
+      "text": "For",
+      "start": 33.15,
+      "end": 33.425,
+      "start_char": 539,
+      "end_char": 542
+    },
+    {
+      "text": "example",
+      "start": 33.4375,
+      "end": 33.9875,
+      "start_char": 543,
+      "end_char": 550
+    },
+    {
+      "text": "a",
+      "start": 34.1625,
+      "end": 34.225,
+      "start_char": 552,
+      "end_char": 553
+    },
+    {
+      "text": "child",
+      "start": 34.2375,
+      "end": 34.65,
+      "start_char": 554,
+      "end_char": 559
+    },
+    {
+      "text": "learning",
+      "start": 34.6625,
+      "end": 34.9625,
+      "start_char": 560,
+      "end_char": 568
+    },
+    {
+      "text": "to",
+      "start": 34.975,
+      "end": 35.0875,
+      "start_char": 569,
+      "end_char": 571
+    },
+    {
+      "text": "wash",
+      "start": 35.1,
+      "end": 35.4,
+      "start_char": 572,
+      "end_char": 576
+    },
+    {
+      "text": "her",
+      "start": 35.4125,
+      "end": 35.525,
+      "start_char": 577,
+      "end_char": 580
+    },
+    {
+      "text": "hands",
+      "start": 35.5375,
+      "end": 35.8875,
+      "start_char": 581,
+      "end_char": 586
+    },
+    {
+      "text": "independently",
+      "start": 35.9,
+      "end": 36.6375,
+      "start_char": 587,
+      "end_char": 600
+    },
+    {
+      "text": "may",
+      "start": 36.65,
+      "end": 36.8375,
+      "start_char": 601,
+      "end_char": 604
+    },
+    {
+      "text": "start",
+      "start": 36.85,
+      "end": 37.225,
+      "start_char": 605,
+      "end_char": 610
+    },
+    {
+      "text": "with",
+      "start": 37.2375,
+      "end": 37.375,
+      "start_char": 611,
+      "end_char": 615
+    },
+    {
+      "text": "learning",
+      "start": 37.3875,
+      "end": 37.725,
+      "start_char": 616,
+      "end_char": 624
+    },
+    {
+      "text": "to",
+      "start": 37.7375,
+      "end": 37.8125,
+      "start_char": 625,
+      "end_char": 627
+    },
+    {
+      "text": "turn",
+      "start": 37.825,
+      "end": 38.125,
+      "start_char": 628,
+      "end_char": 632
+    },
+    {
+      "text": "on",
+      "start": 38.1375,
+      "end": 38.2375,
+      "start_char": 633,
+      "end_char": 635
+    },
+    {
+      "text": "the",
+      "start": 38.25,
+      "end": 38.3125,
+      "start_char": 636,
+      "end_char": 639
+    },
+    {
+      "text": "faucet",
+      "start": 38.325,
+      "end": 38.8375,
+      "start_char": 640,
+      "end_char": 646
+    },
+    {
+      "text": "once",
+      "start": 39.1125,
+      "end": 39.4125,
+      "start_char": 648,
+      "end_char": 652
+    },
+    {
+      "text": "this",
+      "start": 39.425,
+      "end": 39.6,
+      "start_char": 653,
+      "end_char": 657
+    },
+    {
+      "text": "skill",
+      "start": 39.6125,
+      "end": 39.8625,
+      "start_char": 658,
+      "end_char": 663
+    },
+    {
+      "text": "is",
+      "start": 39.875,
+      "end": 40.0125,
+      "start_char": 664,
+      "end_char": 666
+    },
+    {
+      "text": "learned",
+      "start": 40.025,
+      "end": 40.325,
+      "start_char": 667,
+      "end_char": 674
+    },
+    {
+      "text": "the",
+      "start": 40.5625,
+      "end": 40.65,
+      "start_char": 676,
+      "end_char": 679
+    },
+    {
+      "text": "next",
+      "start": 40.6625,
+      "end": 40.975,
+      "start_char": 680,
+      "end_char": 684
+    },
+    {
+      "text": "step",
+      "start": 40.9875,
+      "end": 41.275,
+      "start_char": 685,
+      "end_char": 689
+    },
+    {
+      "text": "may",
+      "start": 41.2875,
+      "end": 41.475,
+      "start_char": 690,
+      "end_char": 693
+    },
+    {
+      "text": "be",
+      "start": 41.4875,
+      "end": 41.6375,
+      "start_char": 694,
+      "end_char": 696
+    },
+    {
+      "text": "rinsing",
+      "start": 41.65,
+      "end": 41.975,
+      "start_char": 697,
+      "end_char": 704
+    },
+    {
+      "text": "hands",
+      "start": 41.9875,
+      "end": 42.4625,
+      "start_char": 705,
+      "end_char": 710
+    },
+    {
+      "text": "and",
+      "start": 42.65,
+      "end": 42.8125,
+      "start_char": 712,
+      "end_char": 715
+    },
+    {
+      "text": "so",
+      "start": 42.825,
+      "end": 43.0875,
+      "start_char": 716,
+      "end_char": 718
+    },
+    {
+      "text": "on",
+      "start": 43.1,
+      "end": 43.425,
+      "start_char": 719,
+      "end_char": 721
+    },
+    {
+      "text": "This",
+      "start": 44.2875,
+      "end": 44.5875,
+      "start_char": 723,
+      "end_char": 727
+    },
+    {
+      "text": "technique",
+      "start": 44.6,
+      "end": 45.1125,
+      "start_char": 728,
+      "end_char": 737
+    },
+    {
+      "text": "is",
+      "start": 45.125,
+      "end": 45.25,
+      "start_char": 738,
+      "end_char": 740
+    },
+    {
+      "text": "helpful",
+      "start": 45.2625,
+      "end": 45.6875,
+      "start_char": 741,
+      "end_char": 748
+    },
+    {
+      "text": "in",
+      "start": 45.7,
+      "end": 45.8125,
+      "start_char": 749,
+      "end_char": 751
+    },
+    {
+      "text": "assisting",
+      "start": 45.825,
+      "end": 46.325,
+      "start_char": 752,
+      "end_char": 761
+    },
+    {
+      "text": "children",
+      "start": 46.3375,
+      "end": 46.7375,
+      "start_char": 762,
+      "end_char": 770
+    },
+    {
+      "text": "to",
+      "start": 46.75,
+      "end": 46.85,
+      "start_char": 771,
+      "end_char": 773
+    },
+    {
+      "text": "learn",
+      "start": 46.8625,
+      "end": 47.1,
+      "start_char": 774,
+      "end_char": 779
+    },
+    {
+      "text": "a",
+      "start": 47.1125,
+      "end": 47.15,
+      "start_char": 780,
+      "end_char": 781
+    },
+    {
+      "text": "routine",
+      "start": 47.1625,
+      "end": 47.625,
+      "start_char": 782,
+      "end_char": 789
+    },
+    {
+      "text": "task",
+      "start": 47.6375,
+      "end": 48.0375,
+      "start_char": 790,
+      "end_char": 794
+    },
+    {
+      "text": "that",
+      "start": 48.05,
+      "end": 48.1625,
+      "start_char": 795,
+      "end_char": 799
+    },
+    {
+      "text": "is",
+      "start": 48.175,
+      "end": 48.2875,
+      "start_char": 800,
+      "end_char": 802
+    },
+    {
+      "text": "repetitive",
+      "start": 48.3,
+      "end": 48.9,
+      "start_char": 803,
+      "end_char": 813
+    },
+    {
+      "text": "such",
+      "start": 49.2375,
+      "end": 49.4375,
+      "start_char": 815,
+      "end_char": 819
+    },
+    {
+      "text": "as",
+      "start": 49.45,
+      "end": 49.5625,
+      "start_char": 820,
+      "end_char": 822
+    },
+    {
+      "text": "using",
+      "start": 49.575,
+      "end": 49.875,
+      "start_char": 823,
+      "end_char": 828
+    },
+    {
+      "text": "the",
+      "start": 49.8875,
+      "end": 49.975,
+      "start_char": 829,
+      "end_char": 832
+    },
+    {
+      "text": "bathroom",
+      "start": 49.9875,
+      "end": 50.5125,
+      "start_char": 833,
+      "end_char": 841
+    },
+    {
+      "text": "brushing",
+      "start": 50.7,
+      "end": 51.0875,
+      "start_char": 843,
+      "end_char": 851
+    },
+    {
+      "text": "teeth",
+      "start": 51.1,
+      "end": 51.475,
+      "start_char": 852,
+      "end_char": 857
+    },
+    {
+      "text": "putting",
+      "start": 51.7625,
+      "end": 52.05,
+      "start_char": 859,
+      "end_char": 866
+    },
+    {
+      "text": "on",
+      "start": 52.0625,
+      "end": 52.2125,
+      "start_char": 867,
+      "end_char": 869
+    },
+    {
+      "text": "clothes",
+      "start": 52.225,
+      "end": 52.6625,
+      "start_char": 870,
+      "end_char": 877
+    },
+    {
+      "text": "and",
+      "start": 52.675,
+      "end": 52.7875,
+      "start_char": 878,
+      "end_char": 881
+    },
+    {
+      "text": "shoes",
+      "start": 52.8,
+      "end": 53.3,
+      "start_char": 882,
+      "end_char": 887
+    },
+    {
+      "text": "or",
+      "start": 53.5375,
+      "end": 53.6875,
+      "start_char": 889,
+      "end_char": 891
+    },
+    {
+      "text": "completing",
+      "start": 53.7,
+      "end": 54.1625,
+      "start_char": 892,
+      "end_char": 902
+    },
+    {
+      "text": "a",
+      "start": 54.175,
+      "end": 54.2375,
+      "start_char": 903,
+      "end_char": 904
+    },
+    {
+      "text": "work",
+      "start": 54.25,
+      "end": 54.475,
+      "start_char": 905,
+      "end_char": 909
+    },
+    {
+      "text": "task",
+      "start": 54.4875,
+      "end": 55.0375,
+      "start_char": 910,
+      "end_char": 914
+    },
+    {
+      "text": "In",
+      "start": 55.9,
+      "end": 56.075,
+      "start_char": 916,
+      "end_char": 918
+    },
+    {
+      "text": "utilizing",
+      "start": 56.0875,
+      "end": 56.7375,
+      "start_char": 919,
+      "end_char": 928
+    },
+    {
+      "text": "chaining",
+      "start": 56.75,
+      "end": 57.1875,
+      "start_char": 929,
+      "end_char": 937
+    },
+    {
+      "text": "the",
+      "start": 57.3625,
+      "end": 57.45,
+      "start_char": 939,
+      "end_char": 942
+    },
+    {
+      "text": "teacher",
+      "start": 57.4625,
+      "end": 57.8125,
+      "start_char": 943,
+      "end_char": 950
+    },
+    {
+      "text": "must",
+      "start": 57.825,
+      "end": 58.2,
+      "start_char": 951,
+      "end_char": 955
+    },
+    {
+      "text": "a",
+      "start": 58.4125,
+      "end": 58.7,
+      "start_char": 957,
+      "end_char": 958
+    },
+    {
+      "text": "analyze",
+      "start": 58.875,
+      "end": 59.4125,
+      "start_char": 960,
+      "end_char": 967
+    },
+    {
+      "text": "the",
+      "start": 59.425,
+      "end": 59.5125,
+      "start_char": 968,
+      "end_char": 971
+    },
+    {
+      "text": "desired",
+      "start": 59.525,
+      "end": 59.975,
+      "start_char": 972,
+      "end_char": 979
+    },
+    {
+      "text": "behavior",
+      "start": 59.9875,
+      "end": 60.525,
+      "start_char": 980,
+      "end_char": 988
+    },
+    {
+      "text": "b",
+      "start": 60.725,
+      "end": 61.0375,
+      "start_char": 991,
+      "end_char": 992
+    },
+    {
+      "text": "break",
+      "start": 61.275,
+      "end": 61.525,
+      "start_char": 994,
+      "end_char": 999
+    },
+    {
+      "text": "it",
+      "start": 61.5375,
+      "end": 61.6375,
+      "start_char": 1000,
+      "end_char": 1002
+    },
+    {
+      "text": "into",
+      "start": 61.65,
+      "end": 61.85,
+      "start_char": 1003,
+      "end_char": 1007
+    },
+    {
+      "text": "steps",
+      "start": 61.8625,
+      "end": 62.3375,
+      "start_char": 1008,
+      "end_char": 1013
+    },
+    {
+      "text": "and",
+      "start": 62.5,
+      "end": 62.8375,
+      "start_char": 1015,
+      "end_char": 1018
+    },
+    {
+      "text": "c",
+      "start": 63.0625,
+      "end": 63.35,
+      "start_char": 1020,
+      "end_char": 1021
+    },
+    {
+      "text": "plan",
+      "start": 63.5375,
+      "end": 63.85,
+      "start_char": 1023,
+      "end_char": 1027
+    },
+    {
+      "text": "for",
+      "start": 63.8625,
+      "end": 63.975,
+      "start_char": 1028,
+      "end_char": 1031
+    },
+    {
+      "text": "the",
+      "start": 63.9875,
+      "end": 64.075,
+      "start_char": 1032,
+      "end_char": 1035
+    },
+    {
+      "text": "teaching",
+      "start": 64.0875,
+      "end": 64.625,
+      "start_char": 1036,
+      "end_char": 1044
+    },
+    {
+      "text": "There",
+      "start": 65.4875,
+      "end": 65.7125,
+      "start_char": 1046,
+      "end_char": 1051
+    },
+    {
+      "text": "are",
+      "start": 65.725,
+      "end": 65.8375,
+      "start_char": 1052,
+      "end_char": 1055
+    },
+    {
+      "text": "two",
+      "start": 65.85,
+      "end": 66.0875,
+      "start_char": 1056,
+      "end_char": 1059
+    },
+    {
+      "text": "types",
+      "start": 66.1,
+      "end": 66.45,
+      "start_char": 1060,
+      "end_char": 1065
+    },
+    {
+      "text": "of",
+      "start": 66.4625,
+      "end": 66.55,
+      "start_char": 1066,
+      "end_char": 1068
+    },
+    {
+      "text": "chaining",
+      "start": 66.5625,
+      "end": 66.9375,
+      "start_char": 1069,
+      "end_char": 1077
+    },
+    {
+      "text": "techniques",
+      "start": 66.95,
+      "end": 67.5625,
+      "start_char": 1078,
+      "end_char": 1088
+    },
+    {
+      "text": "Forward",
+      "start": 67.8125,
+      "end": 68.1875,
+      "start_char": 1090,
+      "end_char": 1097
+    },
+    {
+      "text": "chaining",
+      "start": 68.2,
+      "end": 68.6875,
+      "start_char": 1098,
+      "end_char": 1106
+    },
+    {
+      "text": "The",
+      "start": 69.55,
+      "end": 69.725,
+      "start_char": 1109,
+      "end_char": 1112
+    },
+    {
+      "text": "forward",
+      "start": 69.7375,
+      "end": 70.125,
+      "start_char": 1113,
+      "end_char": 1120
+    },
+    {
+      "text": "chaining",
+      "start": 70.1375,
+      "end": 70.5,
+      "start_char": 1121,
+      "end_char": 1129
+    },
+    {
+      "text": "technique",
+      "start": 70.5125,
+      "end": 71.0,
+      "start_char": 1130,
+      "end_char": 1139
+    },
+    {
+      "text": "moves",
+      "start": 71.0125,
+      "end": 71.3125,
+      "start_char": 1140,
+      "end_char": 1145
+    },
+    {
+      "text": "a",
+      "start": 71.325,
+      "end": 71.4,
+      "start_char": 1146,
+      "end_char": 1147
+    },
+    {
+      "text": "child",
+      "start": 71.4125,
+      "end": 71.825,
+      "start_char": 1148,
+      "end_char": 1153
+    },
+    {
+      "text": "from",
+      "start": 71.8375,
+      "end": 72.0,
+      "start_char": 1154,
+      "end_char": 1158
+    },
+    {
+      "text": "the",
+      "start": 72.0125,
+      "end": 72.1125,
+      "start_char": 1159,
+      "end_char": 1162
+    },
+    {
+      "text": "first",
+      "start": 72.125,
+      "end": 72.45,
+      "start_char": 1163,
+      "end_char": 1168
+    },
+    {
+      "text": "part",
+      "start": 72.4625,
+      "end": 72.6625,
+      "start_char": 1169,
+      "end_char": 1173
+    },
+    {
+      "text": "of",
+      "start": 72.675,
+      "end": 72.75,
+      "start_char": 1174,
+      "end_char": 1176
+    },
+    {
+      "text": "the",
+      "start": 72.7625,
+      "end": 72.8625,
+      "start_char": 1177,
+      "end_char": 1180
+    },
+    {
+      "text": "task",
+      "start": 72.875,
+      "end": 73.3,
+      "start_char": 1181,
+      "end_char": 1185
+    },
+    {
+      "text": "to",
+      "start": 73.3125,
+      "end": 73.4,
+      "start_char": 1186,
+      "end_char": 1188
+    },
+    {
+      "text": "the",
+      "start": 73.4125,
+      "end": 73.525,
+      "start_char": 1189,
+      "end_char": 1192
+    },
+    {
+      "text": "end",
+      "start": 73.5375,
+      "end": 73.9875,
+      "start_char": 1193,
+      "end_char": 1196
+    },
+    {
+      "text": "In",
+      "start": 74.85,
+      "end": 75.05,
+      "start_char": 1198,
+      "end_char": 1200
+    },
+    {
+      "text": "short",
+      "start": 75.0625,
+      "end": 75.45,
+      "start_char": 1201,
+      "end_char": 1206
+    },
+    {
+      "text": "each",
+      "start": 75.725,
+      "end": 75.925,
+      "start_char": 1208,
+      "end_char": 1212
+    },
+    {
+      "text": "step",
+      "start": 75.9375,
+      "end": 76.225,
+      "start_char": 1213,
+      "end_char": 1217
+    },
+    {
+      "text": "must",
+      "start": 76.2375,
+      "end": 76.475,
+      "start_char": 1218,
+      "end_char": 1222
+    },
+    {
+      "text": "be",
+      "start": 76.4875,
+      "end": 76.5875,
+      "start_char": 1223,
+      "end_char": 1225
+    },
+    {
+      "text": "mastered",
+      "start": 76.6,
+      "end": 77.0875,
+      "start_char": 1226,
+      "end_char": 1234
+    },
+    {
+      "text": "before",
+      "start": 77.1,
+      "end": 77.4,
+      "start_char": 1235,
+      "end_char": 1241
+    },
+    {
+      "text": "the",
+      "start": 77.4125,
+      "end": 77.4875,
+      "start_char": 1242,
+      "end_char": 1245
+    },
+    {
+      "text": "next",
+      "start": 77.5,
+      "end": 77.8125,
+      "start_char": 1246,
+      "end_char": 1250
+    },
+    {
+      "text": "step",
+      "start": 77.825,
+      "end": 78.1375,
+      "start_char": 1251,
+      "end_char": 1255
+    },
+    {
+      "text": "in",
+      "start": 78.15,
+      "end": 78.225,
+      "start_char": 1256,
+      "end_char": 1258
+    },
+    {
+      "text": "the",
+      "start": 78.2375,
+      "end": 78.3125,
+      "start_char": 1259,
+      "end_char": 1262
+    },
+    {
+      "text": "skill",
+      "start": 78.325,
+      "end": 78.6,
+      "start_char": 1263,
+      "end_char": 1268
+    },
+    {
+      "text": "series",
+      "start": 78.6125,
+      "end": 78.9875,
+      "start_char": 1269,
+      "end_char": 1275
+    },
+    {
+      "text": "is",
+      "start": 79.0,
+      "end": 79.15,
+      "start_char": 1276,
+      "end_char": 1278
+    },
+    {
+      "text": "added",
+      "start": 79.1625,
+      "end": 79.6375,
+      "start_char": 1279,
+      "end_char": 1284
+    },
+    {
+      "text": "Backward",
+      "start": 80.5,
+      "end": 80.9875,
+      "start_char": 1286,
+      "end_char": 1294
+    },
+    {
+      "text": "chaining",
+      "start": 81.0,
+      "end": 81.5125,
+      "start_char": 1295,
+      "end_char": 1303
+    },
+    {
+      "text": "The",
+      "start": 82.3875,
+      "end": 82.5625,
+      "start_char": 1306,
+      "end_char": 1309
+    },
+    {
+      "text": "backward",
+      "start": 82.575,
+      "end": 83.0125,
+      "start_char": 1310,
+      "end_char": 1318
+    },
+    {
+      "text": "chaining",
+      "start": 83.025,
+      "end": 83.375,
+      "start_char": 1319,
+      "end_char": 1327
+    },
+    {
+      "text": "technique",
+      "start": 83.3875,
+      "end": 83.8875,
+      "start_char": 1328,
+      "end_char": 1337
+    },
+    {
+      "text": "involves",
+      "start": 83.9,
+      "end": 84.3125,
+      "start_char": 1338,
+      "end_char": 1346
+    },
+    {
+      "text": "the",
+      "start": 84.325,
+      "end": 84.4375,
+      "start_char": 1347,
+      "end_char": 1350
+    },
+    {
+      "text": "same",
+      "start": 84.45,
+      "end": 84.75,
+      "start_char": 1351,
+      "end_char": 1355
+    },
+    {
+      "text": "process",
+      "start": 84.7625,
+      "end": 85.2875,
+      "start_char": 1356,
+      "end_char": 1363
+    },
+    {
+      "text": "as",
+      "start": 85.3,
+      "end": 85.45,
+      "start_char": 1364,
+      "end_char": 1366
+    },
+    {
+      "text": "forward",
+      "start": 85.4625,
+      "end": 85.8375,
+      "start_char": 1367,
+      "end_char": 1374
+    },
+    {
+      "text": "chaining",
+      "start": 85.85,
+      "end": 86.2875,
+      "start_char": 1375,
+      "end_char": 1383
+    },
+    {
+      "text": "except",
+      "start": 86.55,
+      "end": 86.9625,
+      "start_char": 1385,
+      "end_char": 1391
+    },
+    {
+      "text": "in",
+      "start": 86.975,
+      "end": 87.0625,
+      "start_char": 1392,
+      "end_char": 1394
+    },
+    {
+      "text": "reverse",
+      "start": 87.075,
+      "end": 87.625,
+      "start_char": 1395,
+      "end_char": 1402
+    },
+    {
+      "text": "the",
+      "start": 87.95,
+      "end": 88.05,
+      "start_char": 1405,
+      "end_char": 1408
+    },
+    {
+      "text": "teaching",
+      "start": 88.0625,
+      "end": 88.45,
+      "start_char": 1409,
+      "end_char": 1417
+    },
+    {
+      "text": "process",
+      "start": 88.4625,
+      "end": 88.95,
+      "start_char": 1418,
+      "end_char": 1425
+    },
+    {
+      "text": "moves",
+      "start": 88.9625,
+      "end": 89.3375,
+      "start_char": 1426,
+      "end_char": 1431
+    },
+    {
+      "text": "from",
+      "start": 89.35,
+      "end": 89.475,
+      "start_char": 1432,
+      "end_char": 1436
+    },
+    {
+      "text": "the",
+      "start": 89.4875,
+      "end": 89.5875,
+      "start_char": 1437,
+      "end_char": 1440
+    },
+    {
+      "text": "last",
+      "start": 89.6,
+      "end": 89.9625,
+      "start_char": 1441,
+      "end_char": 1445
+    },
+    {
+      "text": "part",
+      "start": 89.975,
+      "end": 90.175,
+      "start_char": 1446,
+      "end_char": 1450
+    },
+    {
+      "text": "of",
+      "start": 90.1875,
+      "end": 90.25,
+      "start_char": 1451,
+      "end_char": 1453
+    },
+    {
+      "text": "the",
+      "start": 90.2625,
+      "end": 90.3625,
+      "start_char": 1454,
+      "end_char": 1457
+    },
+    {
+      "text": "task",
+      "start": 90.375,
+      "end": 90.8,
+      "start_char": 1458,
+      "end_char": 1462
+    },
+    {
+      "text": "to",
+      "start": 90.8125,
+      "end": 90.9125,
+      "start_char": 1463,
+      "end_char": 1465
+    },
+    {
+      "text": "the",
+      "start": 90.925,
+      "end": 91.0125,
+      "start_char": 1466,
+      "end_char": 1469
+    },
+    {
+      "text": "beginning",
+      "start": 91.025,
+      "end": 91.55,
+      "start_char": 1470,
+      "end_char": 1479
+    },
+    {
+      "text": "This",
+      "start": 92.4125,
+      "end": 92.7125,
+      "start_char": 1481,
+      "end_char": 1485
+    },
+    {
+      "text": "technique",
+      "start": 92.725,
+      "end": 93.225,
+      "start_char": 1486,
+      "end_char": 1495
+    },
+    {
+      "text": "is",
+      "start": 93.2375,
+      "end": 93.4,
+      "start_char": 1496,
+      "end_char": 1498
+    },
+    {
+      "text": "used",
+      "start": 93.4125,
+      "end": 93.8,
+      "start_char": 1499,
+      "end_char": 1503
+    },
+    {
+      "text": "when",
+      "start": 93.8125,
+      "end": 93.9375,
+      "start_char": 1504,
+      "end_char": 1508
+    },
+    {
+      "text": "it",
+      "start": 93.95,
+      "end": 94.05,
+      "start_char": 1509,
+      "end_char": 1511
+    },
+    {
+      "text": "is",
+      "start": 94.0625,
+      "end": 94.1625,
+      "start_char": 1512,
+      "end_char": 1514
+    },
+    {
+      "text": "easier",
+      "start": 94.175,
+      "end": 94.625,
+      "start_char": 1515,
+      "end_char": 1521
+    },
+    {
+      "text": "to",
+      "start": 94.6375,
+      "end": 94.7375,
+      "start_char": 1522,
+      "end_char": 1524
+    },
+    {
+      "text": "teach",
+      "start": 94.75,
+      "end": 95.025,
+      "start_char": 1525,
+      "end_char": 1530
+    },
+    {
+      "text": "a",
+      "start": 95.0375,
+      "end": 95.1,
+      "start_char": 1531,
+      "end_char": 1532
+    },
+    {
+      "text": "child",
+      "start": 95.1125,
+      "end": 95.475,
+      "start_char": 1533,
+      "end_char": 1538
+    },
+    {
+      "text": "a",
+      "start": 95.4875,
+      "end": 95.5375,
+      "start_char": 1539,
+      "end_char": 1540
+    },
+    {
+      "text": "task",
+      "start": 95.55,
+      "end": 95.9875,
+      "start_char": 1541,
+      "end_char": 1545
+    },
+    {
+      "text": "from",
+      "start": 96.0,
+      "end": 96.1375,
+      "start_char": 1546,
+      "end_char": 1550
+    },
+    {
+      "text": "the",
+      "start": 96.15,
+      "end": 96.25,
+      "start_char": 1551,
+      "end_char": 1554
+    },
+    {
+      "text": "last",
+      "start": 96.2625,
+      "end": 96.575,
+      "start_char": 1555,
+      "end_char": 1559
+    },
+    {
+      "text": "step",
+      "start": 96.5875,
+      "end": 96.95,
+      "start_char": 1560,
+      "end_char": 1564
+    },
+    {
+      "text": "than",
+      "start": 96.9625,
+      "end": 97.1375,
+      "start_char": 1565,
+      "end_char": 1569
+    },
+    {
+      "text": "from",
+      "start": 97.15,
+      "end": 97.3,
+      "start_char": 1570,
+      "end_char": 1574
+    },
+    {
+      "text": "the",
+      "start": 97.3125,
+      "end": 97.3875,
+      "start_char": 1575,
+      "end_char": 1578
+    },
+    {
+      "text": "beginning",
+      "start": 97.4,
+      "end": 97.9375,
+      "start_char": 1579,
+      "end_char": 1588
+    },
+    {
+      "text": "Steps",
+      "start": 98.8,
+      "end": 99.2625,
+      "start_char": 1590,
+      "end_char": 1595
+    },
+    {
+      "text": "Forward",
+      "start": 99.275,
+      "end": 99.6625,
+      "start_char": 1596,
+      "end_char": 1603
+    },
+    {
+      "text": "chaining",
+      "start": 99.675,
+      "end": 100.025,
+      "start_char": 1604,
+      "end_char": 1612
+    },
+    {
+      "text": "The",
+      "start": 100.0375,
+      "end": 100.125,
+      "start_char": 1613,
+      "end_char": 1616
+    },
+    {
+      "text": "teacher",
+      "start": 100.1375,
+      "end": 100.575,
+      "start_char": 1617,
+      "end_char": 1624
+    },
+    {
+      "text": "teaches",
+      "start": 100.5875,
+      "end": 100.9875,
+      "start_char": 1625,
+      "end_char": 1632
+    },
+    {
+      "text": "the",
+      "start": 101.0,
+      "end": 101.0875,
+      "start_char": 1633,
+      "end_char": 1636
+    },
+    {
+      "text": "child",
+      "start": 101.1,
+      "end": 101.475,
+      "start_char": 1637,
+      "end_char": 1642
+    },
+    {
+      "text": "the",
+      "start": 101.4875,
+      "end": 101.5625,
+      "start_char": 1643,
+      "end_char": 1646
+    },
+    {
+      "text": "first",
+      "start": 101.575,
+      "end": 101.8875,
+      "start_char": 1647,
+      "end_char": 1652
+    },
+    {
+      "text": "step",
+      "start": 101.9,
+      "end": 102.2125,
+      "start_char": 1653,
+      "end_char": 1657
+    },
+    {
+      "text": "in",
+      "start": 102.225,
+      "end": 102.3,
+      "start_char": 1658,
+      "end_char": 1660
+    },
+    {
+      "text": "the",
+      "start": 102.3125,
+      "end": 102.375,
+      "start_char": 1661,
+      "end_char": 1664
+    },
+    {
+      "text": "chain",
+      "start": 102.3875,
+      "end": 102.8625,
+      "start_char": 1665,
+      "end_char": 1670
+    },
+    {
+      "text": "When",
+      "start": 103.725,
+      "end": 103.9125,
+      "start_char": 1672,
+      "end_char": 1676
+    },
+    {
+      "text": "the",
+      "start": 103.925,
+      "end": 104.0125,
+      "start_char": 1677,
+      "end_char": 1680
+    },
+    {
+      "text": "first",
+      "start": 104.025,
+      "end": 104.35,
+      "start_char": 1681,
+      "end_char": 1686
+    },
+    {
+      "text": "step",
+      "start": 104.3625,
+      "end": 104.65,
+      "start_char": 1687,
+      "end_char": 1691
+    },
+    {
+      "text": "is",
+      "start": 104.6625,
+      "end": 104.7875,
+      "start_char": 1692,
+      "end_char": 1694
+    },
+    {
+      "text": "learned",
+      "start": 104.8,
+      "end": 105.1375,
+      "start_char": 1695,
+      "end_char": 1702
+    },
+    {
+      "text": "the",
+      "start": 105.3625,
+      "end": 105.475,
+      "start_char": 1704,
+      "end_char": 1707
+    },
+    {
+      "text": "teacher",
+      "start": 105.4875,
+      "end": 105.9375,
+      "start_char": 1708,
+      "end_char": 1715
+    },
+    {
+      "text": "adds",
+      "start": 105.95,
+      "end": 106.225,
+      "start_char": 1716,
+      "end_char": 1720
+    },
+    {
+      "text": "the",
+      "start": 106.2375,
+      "end": 106.35,
+      "start_char": 1721,
+      "end_char": 1724
+    },
+    {
+      "text": "second",
+      "start": 106.3625,
+      "end": 106.7125,
+      "start_char": 1725,
+      "end_char": 1731
+    },
+    {
+      "text": "step",
+      "start": 106.725,
+      "end": 107.2125,
+      "start_char": 1732,
+      "end_char": 1736
+    },
+    {
+      "text": "The",
+      "start": 108.075,
+      "end": 108.2375,
+      "start_char": 1738,
+      "end_char": 1741
+    },
+    {
+      "text": "child",
+      "start": 108.25,
+      "end": 108.65,
+      "start_char": 1742,
+      "end_char": 1747
+    },
+    {
+      "text": "is",
+      "start": 108.6625,
+      "end": 108.775,
+      "start_char": 1748,
+      "end_char": 1750
+    },
+    {
+      "text": "learning",
+      "start": 108.7875,
+      "end": 109.075,
+      "start_char": 1751,
+      "end_char": 1759
+    },
+    {
+      "text": "the",
+      "start": 109.0875,
+      "end": 109.1875,
+      "start_char": 1760,
+      "end_char": 1763
+    },
+    {
+      "text": "second",
+      "start": 109.2,
+      "end": 109.5625,
+      "start_char": 1764,
+      "end_char": 1770
+    },
+    {
+      "text": "step",
+      "start": 109.575,
+      "end": 109.9,
+      "start_char": 1771,
+      "end_char": 1775
+    },
+    {
+      "text": "in",
+      "start": 109.9125,
+      "end": 109.9875,
+      "start_char": 1776,
+      "end_char": 1778
+    },
+    {
+      "text": "the",
+      "start": 110.0,
+      "end": 110.0875,
+      "start_char": 1779,
+      "end_char": 1782
+    },
+    {
+      "text": "routine",
+      "start": 110.1,
+      "end": 110.625,
+      "start_char": 1783,
+      "end_char": 1790
+    },
+    {
+      "text": "and",
+      "start": 110.6375,
+      "end": 110.75,
+      "start_char": 1791,
+      "end_char": 1794
+    },
+    {
+      "text": "attaching",
+      "start": 110.7625,
+      "end": 111.275,
+      "start_char": 1795,
+      "end_char": 1804
+    },
+    {
+      "text": "it",
+      "start": 111.2875,
+      "end": 111.4125,
+      "start_char": 1805,
+      "end_char": 1807
+    },
+    {
+      "text": "to",
+      "start": 111.425,
+      "end": 111.5125,
+      "start_char": 1808,
+      "end_char": 1810
+    },
+    {
+      "text": "the",
+      "start": 111.525,
+      "end": 111.625,
+      "start_char": 1811,
+      "end_char": 1814
+    },
+    {
+      "text": "first",
+      "start": 111.6375,
+      "end": 111.9375,
+      "start_char": 1815,
+      "end_char": 1820
+    },
+    {
+      "text": "step",
+      "start": 111.95,
+      "end": 112.45,
+      "start_char": 1821,
+      "end_char": 1825
+    },
+    {
+      "text": "The",
+      "start": 113.3125,
+      "end": 113.4875,
+      "start_char": 1827,
+      "end_char": 1830
+    },
+    {
+      "text": "third",
+      "start": 113.5,
+      "end": 113.8,
+      "start_char": 1831,
+      "end_char": 1836
+    },
+    {
+      "text": "step",
+      "start": 113.8125,
+      "end": 114.1375,
+      "start_char": 1837,
+      "end_char": 1841
+    },
+    {
+      "text": "is",
+      "start": 114.15,
+      "end": 114.275,
+      "start_char": 1842,
+      "end_char": 1844
+    },
+    {
+      "text": "taught",
+      "start": 114.2875,
+      "end": 114.5875,
+      "start_char": 1845,
+      "end_char": 1851
+    },
+    {
+      "text": "in",
+      "start": 114.6,
+      "end": 114.7125,
+      "start_char": 1852,
+      "end_char": 1854
+    },
+    {
+      "text": "conjunction",
+      "start": 114.725,
+      "end": 115.3125,
+      "start_char": 1855,
+      "end_char": 1866
+    },
+    {
+      "text": "with",
+      "start": 115.325,
+      "end": 115.45,
+      "start_char": 1867,
+      "end_char": 1871
+    },
+    {
+      "text": "the",
+      "start": 115.4625,
+      "end": 115.55,
+      "start_char": 1872,
+      "end_char": 1875
+    },
+    {
+      "text": "first",
+      "start": 115.5625,
+      "end": 115.875,
+      "start_char": 1876,
+      "end_char": 1881
+    },
+    {
+      "text": "two",
+      "start": 115.8875,
+      "end": 116.0625,
+      "start_char": 1882,
+      "end_char": 1885
+    },
+    {
+      "text": "steps",
+      "start": 116.075,
+      "end": 116.5,
+      "start_char": 1886,
+      "end_char": 1891
+    },
+    {
+      "text": "once",
+      "start": 116.5125,
+      "end": 116.7875,
+      "start_char": 1892,
+      "end_char": 1896
+    },
+    {
+      "text": "the",
+      "start": 116.8,
+      "end": 116.8875,
+      "start_char": 1897,
+      "end_char": 1900
+    },
+    {
+      "text": "child",
+      "start": 116.9,
+      "end": 117.2875,
+      "start_char": 1901,
+      "end_char": 1906
+    },
+    {
+      "text": "is",
+      "start": 117.3,
+      "end": 117.425,
+      "start_char": 1907,
+      "end_char": 1909
+    },
+    {
+      "text": "able",
+      "start": 117.4375,
+      "end": 117.675,
+      "start_char": 1910,
+      "end_char": 1914
+    },
+    {
+      "text": "to",
+      "start": 117.6875,
+      "end": 117.7875,
+      "start_char": 1915,
+      "end_char": 1917
+    },
+    {
+      "text": "demonstrate",
+      "start": 117.8,
+      "end": 118.4375,
+      "start_char": 1918,
+      "end_char": 1929
+    },
+    {
+      "text": "the",
+      "start": 118.45,
+      "end": 118.5375,
+      "start_char": 1930,
+      "end_char": 1933
+    },
+    {
+      "text": "first",
+      "start": 118.55,
+      "end": 118.875,
+      "start_char": 1934,
+      "end_char": 1939
+    },
+    {
+      "text": "two",
+      "start": 118.8875,
+      "end": 119.0625,
+      "start_char": 1940,
+      "end_char": 1943
+    },
+    {
+      "text": "steps",
+      "start": 119.075,
+      "end": 119.65,
+      "start_char": 1944,
+      "end_char": 1949
+    },
+    {
+      "text": "Backward",
+      "start": 120.525,
+      "end": 121.025,
+      "start_char": 1951,
+      "end_char": 1959
+    },
+    {
+      "text": "chaining",
+      "start": 121.0375,
+      "end": 121.4,
+      "start_char": 1960,
+      "end_char": 1968
+    },
+    {
+      "text": "The",
+      "start": 121.4125,
+      "end": 121.5125,
+      "start_char": 1969,
+      "end_char": 1972
+    },
+    {
+      "text": "steps",
+      "start": 121.525,
+      "end": 121.9125,
+      "start_char": 1973,
+      "end_char": 1978
+    },
+    {
+      "text": "mirror",
+      "start": 121.925,
+      "end": 122.2375,
+      "start_char": 1979,
+      "end_char": 1985
+    },
+    {
+      "text": "those",
+      "start": 122.25,
+      "end": 122.4875,
+      "start_char": 1986,
+      "end_char": 1991
+    },
+    {
+      "text": "of",
+      "start": 122.5,
+      "end": 122.5875,
+      "start_char": 1992,
+      "end_char": 1994
+    },
+    {
+      "text": "forward",
+      "start": 122.6,
+      "end": 122.9875,
+      "start_char": 1995,
+      "end_char": 2002
+    },
+    {
+      "text": "chaining",
+      "start": 123.0,
+      "end": 123.4875,
+      "start_char": 2003,
+      "end_char": 2011
+    },
+    {
+      "text": "except",
+      "start": 123.5,
+      "end": 123.9125,
+      "start_char": 2012,
+      "end_char": 2018
+    },
+    {
+      "text": "they",
+      "start": 123.925,
+      "end": 124.0375,
+      "start_char": 2019,
+      "end_char": 2023
+    },
+    {
+      "text": "occur",
+      "start": 124.05,
+      "end": 124.3625,
+      "start_char": 2024,
+      "end_char": 2029
+    },
+    {
+      "text": "in",
+      "start": 124.375,
+      "end": 124.5,
+      "start_char": 2030,
+      "end_char": 2032
+    },
+    {
+      "text": "reverse",
+      "start": 124.5125,
+      "end": 125.1,
+      "start_char": 2033,
+      "end_char": 2040
+    },
+    {
+      "text": "The",
+      "start": 125.9625,
+      "end": 126.125,
+      "start_char": 2042,
+      "end_char": 2045
+    },
+    {
+      "text": "teacher",
+      "start": 126.1375,
+      "end": 126.5125,
+      "start_char": 2046,
+      "end_char": 2053
+    },
+    {
+      "text": "provides",
+      "start": 126.525,
+      "end": 126.975,
+      "start_char": 2054,
+      "end_char": 2062
+    },
+    {
+      "text": "the",
+      "start": 126.9875,
+      "end": 127.0875,
+      "start_char": 2063,
+      "end_char": 2066
+    },
+    {
+      "text": "child",
+      "start": 127.1,
+      "end": 127.475,
+      "start_char": 2067,
+      "end_char": 2072
+    },
+    {
+      "text": "assistance",
+      "start": 127.4875,
+      "end": 128.075,
+      "start_char": 2073,
+      "end_char": 2083
+    },
+    {
+      "text": "throughout",
+      "start": 128.0875,
+      "end": 128.4125,
+      "start_char": 2084,
+      "end_char": 2094
+    },
+    {
+      "text": "the",
+      "start": 128.425,
+      "end": 128.5125,
+      "start_char": 2095,
+      "end_char": 2098
+    },
+    {
+      "text": "process",
+      "start": 128.525,
+      "end": 129.075,
+      "start_char": 2099,
+      "end_char": 2106
+    },
+    {
+      "text": "until",
+      "start": 129.0875,
+      "end": 129.3625,
+      "start_char": 2107,
+      "end_char": 2112
+    },
+    {
+      "text": "the",
+      "start": 129.375,
+      "end": 129.4875,
+      "start_char": 2113,
+      "end_char": 2116
+    },
+    {
+      "text": "last",
+      "start": 129.5,
+      "end": 129.825,
+      "start_char": 2117,
+      "end_char": 2121
+    },
+    {
+      "text": "step",
+      "start": 129.8375,
+      "end": 130.3375,
+      "start_char": 2122,
+      "end_char": 2126
+    },
+    {
+      "text": "The",
+      "start": 131.2,
+      "end": 131.3625,
+      "start_char": 2128,
+      "end_char": 2131
+    },
+    {
+      "text": "child",
+      "start": 131.375,
+      "end": 131.7625,
+      "start_char": 2132,
+      "end_char": 2137
+    },
+    {
+      "text": "is",
+      "start": 131.775,
+      "end": 131.875,
+      "start_char": 2138,
+      "end_char": 2140
+    },
+    {
+      "text": "encouraged",
+      "start": 131.8875,
+      "end": 132.4875,
+      "start_char": 2141,
+      "end_char": 2151
+    },
+    {
+      "text": "to",
+      "start": 132.5,
+      "end": 132.6,
+      "start_char": 2152,
+      "end_char": 2154
+    },
+    {
+      "text": "complete",
+      "start": 132.6125,
+      "end": 133.0375,
+      "start_char": 2155,
+      "end_char": 2163
+    },
+    {
+      "text": "the",
+      "start": 133.05,
+      "end": 133.15,
+      "start_char": 2164,
+      "end_char": 2167
+    },
+    {
+      "text": "last",
+      "start": 133.1625,
+      "end": 133.5125,
+      "start_char": 2168,
+      "end_char": 2172
+    },
+    {
+      "text": "step",
+      "start": 133.525,
+      "end": 133.875,
+      "start_char": 2173,
+      "end_char": 2177
+    },
+    {
+      "text": "independently",
+      "start": 133.8875,
+      "end": 134.7625,
+      "start_char": 2178,
+      "end_char": 2191
+    },
+    {
+      "text": "When",
+      "start": 135.6375,
+      "end": 135.8125,
+      "start_char": 2193,
+      "end_char": 2197
+    },
+    {
+      "text": "the",
+      "start": 135.825,
+      "end": 135.925,
+      "start_char": 2198,
+      "end_char": 2201
+    },
+    {
+      "text": "last",
+      "start": 135.9375,
+      "end": 136.2625,
+      "start_char": 2202,
+      "end_char": 2206
+    },
+    {
+      "text": "step",
+      "start": 136.275,
+      "end": 136.5625,
+      "start_char": 2207,
+      "end_char": 2211
+    },
+    {
+      "text": "is",
+      "start": 136.575,
+      "end": 136.675,
+      "start_char": 2212,
+      "end_char": 2214
+    },
+    {
+      "text": "mastered",
+      "start": 136.6875,
+      "end": 137.175,
+      "start_char": 2215,
+      "end_char": 2223
+    },
+    {
+      "text": "the",
+      "start": 137.475,
+      "end": 137.575,
+      "start_char": 2225,
+      "end_char": 2228
+    },
+    {
+      "text": "teacher",
+      "start": 137.5875,
+      "end": 137.9625,
+      "start_char": 2229,
+      "end_char": 2236
+    },
+    {
+      "text": "provides",
+      "start": 137.975,
+      "end": 138.4,
+      "start_char": 2237,
+      "end_char": 2245
+    },
+    {
+      "text": "assistance",
+      "start": 138.4125,
+      "end": 138.9875,
+      "start_char": 2246,
+      "end_char": 2256
+    },
+    {
+      "text": "until",
+      "start": 139.0,
+      "end": 139.275,
+      "start_char": 2257,
+      "end_char": 2262
+    },
+    {
+      "text": "the",
+      "start": 139.2875,
+      "end": 139.375,
+      "start_char": 2263,
+      "end_char": 2266
+    },
+    {
+      "text": "child",
+      "start": 139.3875,
+      "end": 139.7875,
+      "start_char": 2267,
+      "end_char": 2272
+    },
+    {
+      "text": "is",
+      "start": 139.8,
+      "end": 139.975,
+      "start_char": 2273,
+      "end_char": 2275
+    },
+    {
+      "text": "able",
+      "start": 139.9875,
+      "end": 140.225,
+      "start_char": 2276,
+      "end_char": 2280
+    },
+    {
+      "text": "to",
+      "start": 140.2375,
+      "end": 140.3375,
+      "start_char": 2281,
+      "end_char": 2283
+    },
+    {
+      "text": "perform",
+      "start": 140.35,
+      "end": 140.8,
+      "start_char": 2284,
+      "end_char": 2291
+    },
+    {
+      "text": "the",
+      "start": 140.8125,
+      "end": 140.9125,
+      "start_char": 2292,
+      "end_char": 2295
+    },
+    {
+      "text": "step",
+      "start": 140.925,
+      "end": 141.25,
+      "start_char": 2296,
+      "end_char": 2300
+    },
+    {
+      "text": "before",
+      "start": 141.2625,
+      "end": 141.5625,
+      "start_char": 2301,
+      "end_char": 2307
+    },
+    {
+      "text": "the",
+      "start": 141.575,
+      "end": 141.675,
+      "start_char": 2308,
+      "end_char": 2311
+    },
+    {
+      "text": "last",
+      "start": 141.6875,
+      "end": 142.0375,
+      "start_char": 2312,
+      "end_char": 2316
+    },
+    {
+      "text": "one",
+      "start": 142.05,
+      "end": 142.3875,
+      "start_char": 2317,
+      "end_char": 2320
+    },
+    {
+      "text": "The",
+      "start": 143.25,
+      "end": 143.425,
+      "start_char": 2322,
+      "end_char": 2325
+    },
+    {
+      "text": "child",
+      "start": 143.4375,
+      "end": 143.8125,
+      "start_char": 2326,
+      "end_char": 2331
+    },
+    {
+      "text": "completes",
+      "start": 143.825,
+      "end": 144.3,
+      "start_char": 2332,
+      "end_char": 2341
+    },
+    {
+      "text": "more",
+      "start": 144.3125,
+      "end": 144.575,
+      "start_char": 2342,
+      "end_char": 2346
+    },
+    {
+      "text": "and",
+      "start": 144.5875,
+      "end": 144.6625,
+      "start_char": 2347,
+      "end_char": 2350
+    },
+    {
+      "text": "more",
+      "start": 144.675,
+      "end": 144.975,
+      "start_char": 2351,
+      "end_char": 2355
+    },
+    {
+      "text": "ending",
+      "start": 144.9875,
+      "end": 145.2875,
+      "start_char": 2356,
+      "end_char": 2362
+    },
+    {
+      "text": "steps",
+      "start": 145.3,
+      "end": 145.6625,
+      "start_char": 2363,
+      "end_char": 2368
+    },
+    {
+      "text": "independently",
+      "start": 145.675,
+      "end": 146.4375,
+      "start_char": 2369,
+      "end_char": 2382
+    },
+    {
+      "text": "until",
+      "start": 146.45,
+      "end": 146.725,
+      "start_char": 2383,
+      "end_char": 2388
+    },
+    {
+      "text": "he",
+      "start": 146.7375,
+      "end": 146.8375,
+      "start_char": 2389,
+      "end_char": 2391
+    },
+    {
+      "text": "masters",
+      "start": 146.85,
+      "end": 147.375,
+      "start_char": 2392,
+      "end_char": 2399
+    },
+    {
+      "text": "all",
+      "start": 147.3875,
+      "end": 147.5875,
+      "start_char": 2400,
+      "end_char": 2403
+    },
+    {
+      "text": "steps",
+      "start": 147.6,
+      "end": 148.0375,
+      "start_char": 2404,
+      "end_char": 2409
+    },
+    {
+      "text": "and",
+      "start": 148.05,
+      "end": 148.225,
+      "start_char": 2410,
+      "end_char": 2413
+    },
+    {
+      "text": "is",
+      "start": 148.2375,
+      "end": 148.3875,
+      "start_char": 2414,
+      "end_char": 2416
+    },
+    {
+      "text": "able",
+      "start": 148.4,
+      "end": 148.6375,
+      "start_char": 2417,
+      "end_char": 2421
+    },
+    {
+      "text": "to",
+      "start": 148.65,
+      "end": 148.75,
+      "start_char": 2422,
+      "end_char": 2424
+    },
+    {
+      "text": "complete",
+      "start": 148.7625,
+      "end": 149.175,
+      "start_char": 2425,
+      "end_char": 2433
+    },
+    {
+      "text": "the",
+      "start": 149.1875,
+      "end": 149.275,
+      "start_char": 2434,
+      "end_char": 2437
+    },
+    {
+      "text": "task",
+      "start": 149.2875,
+      "end": 149.6875,
+      "start_char": 2438,
+      "end_char": 2442
+    },
+    {
+      "text": "without",
+      "start": 149.7,
+      "end": 150.0,
+      "start_char": 2443,
+      "end_char": 2450
+    },
+    {
+      "text": "assistance",
+      "start": 150.0125,
+      "end": 150.7625,
+      "start_char": 2451,
+      "end_char": 2461
+    },
+    {
+      "text": "Brief",
+      "start": 151.625,
+      "end": 151.925,
+      "start_char": 2463,
+      "end_char": 2468
+    },
+    {
+      "text": "example",
+      "start": 151.9375,
+      "end": 152.475,
+      "start_char": 2469,
+      "end_char": 2476
+    },
+    {
+      "text": "One",
+      "start": 152.4875,
+      "end": 152.65,
+      "start_char": 2477,
+      "end_char": 2480
+    },
+    {
+      "text": "of",
+      "start": 152.6625,
+      "end": 152.75,
+      "start_char": 2481,
+      "end_char": 2483
+    },
+    {
+      "text": "6-year-old",
+      "start": 152.7625,
+      "end": 153.4125,
+      "start_char": 2484,
+      "end_char": 2494
+    },
+    {
+      "text": "Tommy's",
+      "start": 153.425,
+      "end": 153.775,
+      "start_char": 2495,
+      "end_char": 2502
+    },
+    {
+      "text": "goals",
+      "start": 153.7875,
+      "end": 154.175,
+      "start_char": 2503,
+      "end_char": 2508
+    },
+    {
+      "text": "was",
+      "start": 154.1875,
+      "end": 154.3625,
+      "start_char": 2509,
+      "end_char": 2512
+    },
+    {
+      "text": "to",
+      "start": 154.375,
+      "end": 154.4875,
+      "start_char": 2513,
+      "end_char": 2515
+    },
+    {
+      "text": "learn",
+      "start": 154.5,
+      "end": 154.75,
+      "start_char": 2516,
+      "end_char": 2521
+    },
+    {
+      "text": "to",
+      "start": 154.7625,
+      "end": 154.8625,
+      "start_char": 2522,
+      "end_char": 2524
+    },
+    {
+      "text": "brush",
+      "start": 154.875,
+      "end": 155.1375,
+      "start_char": 2525,
+      "end_char": 2530
+    },
+    {
+      "text": "his",
+      "start": 155.15,
+      "end": 155.3,
+      "start_char": 2531,
+      "end_char": 2534
+    },
+    {
+      "text": "teeth",
+      "start": 155.3125,
+      "end": 155.7625,
+      "start_char": 2535,
+      "end_char": 2540
+    },
+    {
+      "text": "In",
+      "start": 156.6375,
+      "end": 156.8375,
+      "start_char": 2542,
+      "end_char": 2544
+    },
+    {
+      "text": "order",
+      "start": 156.85,
+      "end": 157.1125,
+      "start_char": 2545,
+      "end_char": 2550
+    },
+    {
+      "text": "to",
+      "start": 157.125,
+      "end": 157.225,
+      "start_char": 2551,
+      "end_char": 2553
+    },
+    {
+      "text": "teach",
+      "start": 157.2375,
+      "end": 157.5625,
+      "start_char": 2554,
+      "end_char": 2559
+    },
+    {
+      "text": "Tommy",
+      "start": 157.575,
+      "end": 157.9,
+      "start_char": 2560,
+      "end_char": 2565
+    },
+    {
+      "text": "this",
+      "start": 157.9125,
+      "end": 158.1,
+      "start_char": 2566,
+      "end_char": 2570
+    },
+    {
+      "text": "skill",
+      "start": 158.1125,
+      "end": 158.5,
+      "start_char": 2571,
+      "end_char": 2576
+    },
+    {
+      "text": "his",
+      "start": 158.7875,
+      "end": 158.9625,
+      "start_char": 2578,
+      "end_char": 2581
+    },
+    {
+      "text": "teacher",
+      "start": 158.975,
+      "end": 159.325,
+      "start_char": 2582,
+      "end_char": 2589
+    },
+    {
+      "text": "decided",
+      "start": 159.3375,
+      "end": 159.825,
+      "start_char": 2590,
+      "end_char": 2597
+    },
+    {
+      "text": "to",
+      "start": 159.8375,
+      "end": 159.9125,
+      "start_char": 2598,
+      "end_char": 2600
+    },
+    {
+      "text": "use",
+      "start": 159.925,
+      "end": 160.2,
+      "start_char": 2601,
+      "end_char": 2604
+    },
+    {
+      "text": "backward",
+      "start": 160.2125,
+      "end": 160.65,
+      "start_char": 2605,
+      "end_char": 2613
+    },
+    {
+      "text": "chaining",
+      "start": 160.6625,
+      "end": 161.15,
+      "start_char": 2614,
+      "end_char": 2622
+    },
+    {
+      "text": "First",
+      "start": 162.0125,
+      "end": 162.5125,
+      "start_char": 2624,
+      "end_char": 2629
+    },
+    {
+      "text": "the",
+      "start": 162.6875,
+      "end": 162.8,
+      "start_char": 2631,
+      "end_char": 2634
+    },
+    {
+      "text": "teacher",
+      "start": 162.8125,
+      "end": 163.175,
+      "start_char": 2635,
+      "end_char": 2642
+    },
+    {
+      "text": "conducted",
+      "start": 163.1875,
+      "end": 163.65,
+      "start_char": 2643,
+      "end_char": 2652
+    },
+    {
+      "text": "a",
+      "start": 163.6625,
+      "end": 163.725,
+      "start_char": 2653,
+      "end_char": 2654
+    },
+    {
+      "text": "task",
+      "start": 163.7375,
+      "end": 164.1,
+      "start_char": 2655,
+      "end_char": 2659
+    },
+    {
+      "text": "analysis",
+      "start": 164.1125,
+      "end": 164.7,
+      "start_char": 2660,
+      "end_char": 2668
+    },
+    {
+      "text": "to",
+      "start": 164.7125,
+      "end": 164.825,
+      "start_char": 2669,
+      "end_char": 2671
+    },
+    {
+      "text": "identify",
+      "start": 164.8375,
+      "end": 165.4625,
+      "start_char": 2672,
+      "end_char": 2680
+    },
+    {
+      "text": "all",
+      "start": 165.475,
+      "end": 165.7,
+      "start_char": 2681,
+      "end_char": 2684
+    },
+    {
+      "text": "the",
+      "start": 165.7125,
+      "end": 165.8125,
+      "start_char": 2685,
+      "end_char": 2688
+    },
+    {
+      "text": "steps",
+      "start": 165.825,
+      "end": 166.1875,
+      "start_char": 2689,
+      "end_char": 2694
+    },
+    {
+      "text": "of",
+      "start": 166.2,
+      "end": 166.275,
+      "start_char": 2695,
+      "end_char": 2697
+    },
+    {
+      "text": "tooth-brushing",
+      "start": 166.2875,
+      "end": 167.025,
+      "start_char": 2698,
+      "end_char": 2712
+    },
+    {
+      "text": "In",
+      "start": 167.9,
+      "end": 168.0625,
+      "start_char": 2714,
+      "end_char": 2716
+    },
+    {
+      "text": "the",
+      "start": 168.075,
+      "end": 168.15,
+      "start_char": 2717,
+      "end_char": 2720
+    },
+    {
+      "text": "beginning",
+      "start": 168.1625,
+      "end": 168.6375,
+      "start_char": 2721,
+      "end_char": 2730
+    },
+    {
+      "text": "the",
+      "start": 168.85,
+      "end": 168.95,
+      "start_char": 2732,
+      "end_char": 2735
+    },
+    {
+      "text": "teacher",
+      "start": 168.9625,
+      "end": 169.3375,
+      "start_char": 2736,
+      "end_char": 2743
+    },
+    {
+      "text": "guided",
+      "start": 169.35,
+      "end": 169.725,
+      "start_char": 2744,
+      "end_char": 2750
+    },
+    {
+      "text": "and",
+      "start": 169.7375,
+      "end": 169.85,
+      "start_char": 2751,
+      "end_char": 2754
+    },
+    {
+      "text": "prompted",
+      "start": 169.8625,
+      "end": 170.3125,
+      "start_char": 2755,
+      "end_char": 2763
+    },
+    {
+      "text": "Tommy",
+      "start": 170.325,
+      "end": 170.7,
+      "start_char": 2764,
+      "end_char": 2769
+    },
+    {
+      "text": "to",
+      "start": 170.7125,
+      "end": 170.825,
+      "start_char": 2770,
+      "end_char": 2772
+    },
+    {
+      "text": "perform",
+      "start": 170.8375,
+      "end": 171.3125,
+      "start_char": 2773,
+      "end_char": 2780
+    },
+    {
+      "text": "all",
+      "start": 171.325,
+      "end": 171.5375,
+      "start_char": 2781,
+      "end_char": 2784
+    },
+    {
+      "text": "steps",
+      "start": 171.55,
+      "end": 171.9625,
+      "start_char": 2785,
+      "end_char": 2790
+    },
+    {
+      "text": "except",
+      "start": 171.975,
+      "end": 172.35,
+      "start_char": 2791,
+      "end_char": 2797
+    },
+    {
+      "text": "the",
+      "start": 172.3625,
+      "end": 172.4625,
+      "start_char": 2798,
+      "end_char": 2801
+    },
+    {
+      "text": "last",
+      "start": 172.475,
+      "end": 172.8,
+      "start_char": 2802,
+      "end_char": 2806
+    },
+    {
+      "text": "one",
+      "start": 172.8125,
+      "end": 173.075,
+      "start_char": 2807,
+      "end_char": 2810
+    },
+    {
+      "text": "looking",
+      "start": 173.3875,
+      "end": 173.6625,
+      "start_char": 2812,
+      "end_char": 2819
+    },
+    {
+      "text": "at",
+      "start": 173.675,
+      "end": 173.7625,
+      "start_char": 2820,
+      "end_char": 2822
+    },
+    {
+      "text": "the",
+      "start": 173.775,
+      "end": 173.85,
+      "start_char": 2823,
+      "end_char": 2826
+    },
+    {
+      "text": "mirror",
+      "start": 173.8625,
+      "end": 174.275,
+      "start_char": 2827,
+      "end_char": 2833
+    },
+    {
+      "text": "and",
+      "start": 174.2875,
+      "end": 174.4125,
+      "start_char": 2834,
+      "end_char": 2837
+    },
+    {
+      "text": "wiping",
+      "start": 174.425,
+      "end": 174.7875,
+      "start_char": 2838,
+      "end_char": 2844
+    },
+    {
+      "text": "his",
+      "start": 174.8,
+      "end": 174.95,
+      "start_char": 2845,
+      "end_char": 2848
+    },
+    {
+      "text": "mouth",
+      "start": 174.9625,
+      "end": 175.275,
+      "start_char": 2849,
+      "end_char": 2854
+    },
+    {
+      "text": "with",
+      "start": 175.2875,
+      "end": 175.425,
+      "start_char": 2855,
+      "end_char": 2859
+    },
+    {
+      "text": "a",
+      "start": 175.4375,
+      "end": 175.4875,
+      "start_char": 2860,
+      "end_char": 2861
+    },
+    {
+      "text": "towel",
+      "start": 175.5,
+      "end": 175.9375,
+      "start_char": 2862,
+      "end_char": 2867
+    },
+    {
+      "text": "Tommy",
+      "start": 176.8,
+      "end": 177.175,
+      "start_char": 2869,
+      "end_char": 2874
+    },
+    {
+      "text": "learned",
+      "start": 177.1875,
+      "end": 177.4875,
+      "start_char": 2875,
+      "end_char": 2882
+    },
+    {
+      "text": "to",
+      "start": 177.5,
+      "end": 177.575,
+      "start_char": 2883,
+      "end_char": 2885
+    },
+    {
+      "text": "perform",
+      "start": 177.5875,
+      "end": 178.0375,
+      "start_char": 2886,
+      "end_char": 2893
+    },
+    {
+      "text": "this",
+      "start": 178.05,
+      "end": 178.2375,
+      "start_char": 2894,
+      "end_char": 2898
+    },
+    {
+      "text": "last",
+      "start": 178.25,
+      "end": 178.5875,
+      "start_char": 2899,
+      "end_char": 2903
+    },
+    {
+      "text": "step",
+      "start": 178.6,
+      "end": 178.8875,
+      "start_char": 2904,
+      "end_char": 2908
+    },
+    {
+      "text": "first",
+      "start": 178.9,
+      "end": 179.3625,
+      "start_char": 2909,
+      "end_char": 2914
+    },
+    {
+      "text": "with",
+      "start": 179.55,
+      "end": 179.7125,
+      "start_char": 2916,
+      "end_char": 2920
+    },
+    {
+      "text": "prompts",
+      "start": 179.725,
+      "end": 180.15,
+      "start_char": 2921,
+      "end_char": 2928
+    },
+    {
+      "text": "and",
+      "start": 180.1625,
+      "end": 180.3625,
+      "start_char": 2929,
+      "end_char": 2932
+    },
+    {
+      "text": "reinforcement",
+      "start": 180.375,
+      "end": 181.2875,
+      "start_char": 2933,
+      "end_char": 2946
+    },
+    {
+      "text": "After",
+      "start": 182.1625,
+      "end": 182.5125,
+      "start_char": 2948,
+      "end_char": 2953
+    },
+    {
+      "text": "mastering",
+      "start": 182.525,
+      "end": 183.025,
+      "start_char": 2954,
+      "end_char": 2963
+    },
+    {
+      "text": "this",
+      "start": 183.0375,
+      "end": 183.2125,
+      "start_char": 2964,
+      "end_char": 2968
+    },
+    {
+      "text": "last",
+      "start": 183.225,
+      "end": 183.55,
+      "start_char": 2969,
+      "end_char": 2973
+    },
+    {
+      "text": "step",
+      "start": 183.5625,
+      "end": 183.9375,
+      "start_char": 2974,
+      "end_char": 2978
+    },
+    {
+      "text": "the",
+      "start": 184.25,
+      "end": 184.3625,
+      "start_char": 2980,
+      "end_char": 2983
+    },
+    {
+      "text": "next",
+      "start": 184.375,
+      "end": 184.6875,
+      "start_char": 2984,
+      "end_char": 2988
+    },
+    {
+      "text": "teaching",
+      "start": 184.7,
+      "end": 185.0625,
+      "start_char": 2989,
+      "end_char": 2997
+    },
+    {
+      "text": "target",
+      "start": 185.075,
+      "end": 185.525,
+      "start_char": 2998,
+      "end_char": 3004
+    },
+    {
+      "text": "was",
+      "start": 185.5375,
+      "end": 185.6875,
+      "start_char": 3005,
+      "end_char": 3008
+    },
+    {
+      "text": "the",
+      "start": 185.7,
+      "end": 185.8125,
+      "start_char": 3009,
+      "end_char": 3012
+    },
+    {
+      "text": "second-to-last",
+      "start": 185.825,
+      "end": 186.625,
+      "start_char": 3013,
+      "end_char": 3027
+    },
+    {
+      "text": "step",
+      "start": 186.6375,
+      "end": 187.0375,
+      "start_char": 3028,
+      "end_char": 3032
+    },
+    {
+      "text": "turning",
+      "start": 187.2625,
+      "end": 187.6,
+      "start_char": 3034,
+      "end_char": 3041
+    },
+    {
+      "text": "off",
+      "start": 187.6125,
+      "end": 187.7875,
+      "start_char": 3042,
+      "end_char": 3045
+    },
+    {
+      "text": "the",
+      "start": 187.8,
+      "end": 187.9,
+      "start_char": 3046,
+      "end_char": 3049
+    },
+    {
+      "text": "faucet",
+      "start": 187.9125,
+      "end": 188.5125,
+      "start_char": 3050,
+      "end_char": 3056
+    },
+    {
+      "text": "With",
+      "start": 189.375,
+      "end": 189.6125,
+      "start_char": 3058,
+      "end_char": 3062
+    },
+    {
+      "text": "backward",
+      "start": 189.625,
+      "end": 190.1,
+      "start_char": 3063,
+      "end_char": 3071
+    },
+    {
+      "text": "chaining",
+      "start": 190.1125,
+      "end": 190.5625,
+      "start_char": 3072,
+      "end_char": 3080
+    },
+    {
+      "text": "Tommy",
+      "start": 190.775,
+      "end": 191.1125,
+      "start_char": 3082,
+      "end_char": 3087
+    },
+    {
+      "text": "learned",
+      "start": 191.125,
+      "end": 191.425,
+      "start_char": 3088,
+      "end_char": 3095
+    },
+    {
+      "text": "to",
+      "start": 191.4375,
+      "end": 191.525,
+      "start_char": 3096,
+      "end_char": 3098
+    },
+    {
+      "text": "brush",
+      "start": 191.5375,
+      "end": 191.8,
+      "start_char": 3099,
+      "end_char": 3104
+    },
+    {
+      "text": "his",
+      "start": 191.8125,
+      "end": 191.9625,
+      "start_char": 3105,
+      "end_char": 3108
+    },
+    {
+      "text": "teeth",
+      "start": 191.975,
+      "end": 192.325,
+      "start_char": 3109,
+      "end_char": 3114
+    },
+    {
+      "text": "by",
+      "start": 192.3375,
+      "end": 192.4625,
+      "start_char": 3115,
+      "end_char": 3117
+    },
+    {
+      "text": "working",
+      "start": 192.475,
+      "end": 192.8625,
+      "start_char": 3118,
+      "end_char": 3125
+    },
+    {
+      "text": "on",
+      "start": 192.875,
+      "end": 192.975,
+      "start_char": 3126,
+      "end_char": 3128
+    },
+    {
+      "text": "the",
+      "start": 192.9875,
+      "end": 193.075,
+      "start_char": 3129,
+      "end_char": 3132
+    },
+    {
+      "text": "last",
+      "start": 193.0875,
+      "end": 193.4375,
+      "start_char": 3133,
+      "end_char": 3137
+    },
+    {
+      "text": "step",
+      "start": 193.45,
+      "end": 193.7375,
+      "start_char": 3138,
+      "end_char": 3142
+    },
+    {
+      "text": "first",
+      "start": 193.75,
+      "end": 194.275,
+      "start_char": 3143,
+      "end_char": 3148
+    },
+    {
+      "text": "Summary",
+      "start": 195.1375,
+      "end": 195.625,
+      "start_char": 3150,
+      "end_char": 3157
+    },
+    {
+      "text": "Chaining",
+      "start": 195.6375,
+      "end": 196.0625,
+      "start_char": 3158,
+      "end_char": 3166
+    },
+    {
+      "text": "is",
+      "start": 196.075,
+      "end": 196.1625,
+      "start_char": 3167,
+      "end_char": 3169
+    },
+    {
+      "text": "a",
+      "start": 196.175,
+      "end": 196.225,
+      "start_char": 3170,
+      "end_char": 3171
+    },
+    {
+      "text": "behavioral",
+      "start": 196.2375,
+      "end": 196.8125,
+      "start_char": 3172,
+      "end_char": 3182
+    },
+    {
+      "text": "strategy",
+      "start": 196.825,
+      "end": 197.375,
+      "start_char": 3183,
+      "end_char": 3191
+    },
+    {
+      "text": "used",
+      "start": 197.3875,
+      "end": 197.65,
+      "start_char": 3192,
+      "end_char": 3196
+    },
+    {
+      "text": "to",
+      "start": 197.6625,
+      "end": 197.75,
+      "start_char": 3197,
+      "end_char": 3199
+    },
+    {
+      "text": "teach",
+      "start": 197.7625,
+      "end": 198.125,
+      "start_char": 3200,
+      "end_char": 3205
+    },
+    {
+      "text": "children",
+      "start": 198.1375,
+      "end": 198.55,
+      "start_char": 3206,
+      "end_char": 3214
+    },
+    {
+      "text": "with",
+      "start": 198.5625,
+      "end": 198.7125,
+      "start_char": 3215,
+      "end_char": 3219
+    },
+    {
+      "text": "autism",
+      "start": 198.725,
+      "end": 199.3,
+      "start_char": 3220,
+      "end_char": 3226
+    },
+    {
+      "text": "complex",
+      "start": 199.3125,
+      "end": 199.8375,
+      "start_char": 3227,
+      "end_char": 3234
+    },
+    {
+      "text": "behaviors",
+      "start": 199.85,
+      "end": 200.4875,
+      "start_char": 3235,
+      "end_char": 3244
+    },
+    {
+      "text": "by",
+      "start": 200.5,
+      "end": 200.65,
+      "start_char": 3245,
+      "end_char": 3247
+    },
+    {
+      "text": "breaking",
+      "start": 200.6625,
+      "end": 201.0375,
+      "start_char": 3248,
+      "end_char": 3256
+    },
+    {
+      "text": "them",
+      "start": 201.05,
+      "end": 201.2,
+      "start_char": 3257,
+      "end_char": 3261
+    },
+    {
+      "text": "down",
+      "start": 201.2125,
+      "end": 201.5125,
+      "start_char": 3262,
+      "end_char": 3266
+    },
+    {
+      "text": "into",
+      "start": 201.525,
+      "end": 201.7125,
+      "start_char": 3267,
+      "end_char": 3271
+    },
+    {
+      "text": "smaller",
+      "start": 201.725,
+      "end": 202.175,
+      "start_char": 3272,
+      "end_char": 3279
+    },
+    {
+      "text": "sequential",
+      "start": 202.1875,
+      "end": 202.7125,
+      "start_char": 3280,
+      "end_char": 3290
+    },
+    {
+      "text": "steps",
+      "start": 202.725,
+      "end": 203.3125,
+      "start_char": 3291,
+      "end_char": 3296
+    },
+    {
+      "text": "One",
+      "start": 204.175,
+      "end": 204.45,
+      "start_char": 3298,
+      "end_char": 3301
+    },
+    {
+      "text": "of",
+      "start": 204.4625,
+      "end": 204.575,
+      "start_char": 3302,
+      "end_char": 3304
+    },
+    {
+      "text": "two",
+      "start": 204.5875,
+      "end": 204.7625,
+      "start_char": 3305,
+      "end_char": 3308
+    },
+    {
+      "text": "methods",
+      "start": 204.775,
+      "end": 205.2875,
+      "start_char": 3309,
+      "end_char": 3316
+    },
+    {
+      "text": "forward",
+      "start": 205.4875,
+      "end": 205.85,
+      "start_char": 3318,
+      "end_char": 3325
+    },
+    {
+      "text": "chaining",
+      "start": 205.8625,
+      "end": 206.275,
+      "start_char": 3326,
+      "end_char": 3334
+    },
+    {
+      "text": "or",
+      "start": 206.2875,
+      "end": 206.4,
+      "start_char": 3335,
+      "end_char": 3337
+    },
+    {
+      "text": "backward",
+      "start": 206.4125,
+      "end": 206.8375,
+      "start_char": 3338,
+      "end_char": 3346
+    },
+    {
+      "text": "chaining",
+      "start": 206.85,
+      "end": 207.3,
+      "start_char": 3347,
+      "end_char": 3355
+    },
+    {
+      "text": "is",
+      "start": 207.575,
+      "end": 207.7,
+      "start_char": 3357,
+      "end_char": 3359
+    },
+    {
+      "text": "selected",
+      "start": 207.7125,
+      "end": 208.2,
+      "start_char": 3360,
+      "end_char": 3368
+    },
+    {
+      "text": "based",
+      "start": 208.2125,
+      "end": 208.5375,
+      "start_char": 3369,
+      "end_char": 3374
+    },
+    {
+      "text": "on",
+      "start": 208.55,
+      "end": 208.6375,
+      "start_char": 3375,
+      "end_char": 3377
+    },
+    {
+      "text": "the",
+      "start": 208.65,
+      "end": 208.7125,
+      "start_char": 3378,
+      "end_char": 3381
+    },
+    {
+      "text": "nature",
+      "start": 208.725,
+      "end": 209.1375,
+      "start_char": 3382,
+      "end_char": 3388
+    },
+    {
+      "text": "of",
+      "start": 209.15,
+      "end": 209.225,
+      "start_char": 3389,
+      "end_char": 3391
+    },
+    {
+      "text": "the",
+      "start": 209.2375,
+      "end": 209.3375,
+      "start_char": 3392,
+      "end_char": 3395
+    },
+    {
+      "text": "task",
+      "start": 209.35,
+      "end": 209.85,
+      "start_char": 3396,
+      "end_char": 3400
+    },
+    {
+      "text": "or",
+      "start": 209.8625,
+      "end": 209.9875,
+      "start_char": 3401,
+      "end_char": 3403
+    },
+    {
+      "text": "the",
+      "start": 210.0,
+      "end": 210.1,
+      "start_char": 3404,
+      "end_char": 3407
+    },
+    {
+      "text": "skill",
+      "start": 210.1125,
+      "end": 210.3875,
+      "start_char": 3408,
+      "end_char": 3413
+    },
+    {
+      "text": "levels",
+      "start": 210.4,
+      "end": 210.75,
+      "start_char": 3414,
+      "end_char": 3420
+    },
+    {
+      "text": "of",
+      "start": 210.7625,
+      "end": 210.8375,
+      "start_char": 3421,
+      "end_char": 3423
+    },
+    {
+      "text": "the",
+      "start": 210.85,
+      "end": 210.925,
+      "start_char": 3424,
+      "end_char": 3427
+    },
+    {
+      "text": "child",
+      "start": 210.9375,
+      "end": 211.5,
+      "start_char": 3428,
+      "end_char": 3433
+    },
+    {
+      "text": "Research",
+      "start": 212.3625,
+      "end": 212.9125,
+      "start_char": 3435,
+      "end_char": 3443
+    },
+    {
+      "text": "Number",
+      "start": 212.925,
+      "end": 213.2125,
+      "start_char": 3444,
+      "end_char": 3450
+    },
+    {
+      "text": "of",
+      "start": 213.225,
+      "end": 213.3125,
+      "start_char": 3451,
+      "end_char": 3453
+    },
+    {
+      "text": "studies",
+      "start": 213.325,
+      "end": 213.7625,
+      "start_char": 3454,
+      "end_char": 3461
+    },
+    {
+      "text": "Ages",
+      "start": 213.775,
+      "end": 214.1375,
+      "start_char": 3462,
+      "end_char": 3466
+    },
+    {
+      "text": "years",
+      "start": 214.3125,
+      "end": 214.7,
+      "start_char": 3468,
+      "end_char": 3473
+    },
+    {
+      "text": "Sample",
+      "start": 214.8875,
+      "end": 215.2625,
+      "start_char": 3475,
+      "end_char": 3481
+    },
+    {
+      "text": "size",
+      "start": 215.275,
+      "end": 215.65,
+      "start_char": 3482,
+      "end_char": 3486
+    },
+    {
+      "text": "Areas",
+      "start": 215.6625,
+      "end": 216.025,
+      "start_char": 3487,
+      "end_char": 3492
+    },
+    {
+      "text": "addressed",
+      "start": 216.0375,
+      "end": 216.525,
+      "start_char": 3493,
+      "end_char": 3502
+    },
+    {
+      "text": "Outcome",
+      "start": 216.5375,
+      "end": 216.975,
+      "start_char": 3503,
+      "end_char": 3510
+    },
+    {
+      "text": "6",
+      "start": 216.9875,
+      "end": 217.35,
+      "start_char": 3511,
+      "end_char": 3512
+    },
+    {
+      "text": "3",
+      "start": 217.3625,
+      "end": 217.65,
+      "start_char": 3513,
+      "end_char": 3514
+    },
+    {
+      "text": "to",
+      "start": 217.6625,
+      "end": 217.8,
+      "start_char": 3515,
+      "end_char": 3517
+    },
+    {
+      "text": "adult",
+      "start": 217.8125,
+      "end": 218.125,
+      "start_char": 3518,
+      "end_char": 3523
+    },
+    {
+      "text": "20",
+      "start": 218.1375,
+      "end": 218.4875,
+      "start_char": 3524,
+      "end_char": 3526
+    },
+    {
+      "text": "Daily-living",
+      "start": 218.5,
+      "end": 219.1625,
+      "start_char": 3527,
+      "end_char": 3539
+    },
+    {
+      "text": "skills",
+      "start": 219.175,
+      "end": 219.6875,
+      "start_char": 3540,
+      "end_char": 3546
+    },
+    {
+      "text": "drinking",
+      "start": 220.0,
+      "end": 220.3875,
+      "start_char": 3548,
+      "end_char": 3556
+    },
+    {
+      "text": "from",
+      "start": 220.4,
+      "end": 220.55,
+      "start_char": 3557,
+      "end_char": 3561
+    },
+    {
+      "text": "a",
+      "start": 220.5625,
+      "end": 220.625,
+      "start_char": 3562,
+      "end_char": 3563
+    },
+    {
+      "text": "cup",
+      "start": 220.6375,
+      "end": 220.9625,
+      "start_char": 3564,
+      "end_char": 3567
+    },
+    {
+      "text": "Internet",
+      "start": 221.1125,
+      "end": 221.575,
+      "start_char": 3569,
+      "end_char": 3577
+    },
+    {
+      "text": "skills",
+      "start": 221.5875,
+      "end": 222.05,
+      "start_char": 3578,
+      "end_char": 3584
+    },
+    {
+      "text": "making",
+      "start": 222.3625,
+      "end": 222.675,
+      "start_char": 3586,
+      "end_char": 3592
+    },
+    {
+      "text": "a",
+      "start": 222.6875,
+      "end": 222.75,
+      "start_char": 3593,
+      "end_char": 3594
+    },
+    {
+      "text": "snack",
+      "start": 222.7625,
+      "end": 223.225,
+      "start_char": 3595,
+      "end_char": 3600
+    },
+    {
+      "text": "independent",
+      "start": 223.4375,
+      "end": 224.0375,
+      "start_char": 3602,
+      "end_char": 3613
+    },
+    {
+      "text": "eating",
+      "start": 224.05,
+      "end": 224.4,
+      "start_char": 3614,
+      "end_char": 3620
+    },
+    {
+      "text": "escape",
+      "start": 224.575,
+      "end": 224.9375,
+      "start_char": 3623,
+      "end_char": 3629
+    },
+    {
+      "text": "behavior",
+      "start": 224.95,
+      "end": 225.5375,
+      "start_char": 3630,
+      "end_char": 3638
+    },
+    {
+      "text": "sharing",
+      "start": 225.7125,
+      "end": 226.0875,
+      "start_char": 3640,
+      "end_char": 3647
+    },
+    {
+      "text": "+",
+      "start": 226.1,
+      "end": 226.625,
+      "start_char": 3648,
+      "end_char": 3649
+    }
+  ]
+}

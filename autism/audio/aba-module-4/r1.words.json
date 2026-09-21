@@ -1,0 +1,6357 @@
+{
+  "digest": "a50b92511691f854300aef84e53320ad4695ddd424204e2edab88f4ee2bd301a",
+  "voice": "en-US-AriaNeural",
+  "text": "Reading One · TARGET Texas Guide Discrete Trial Training Verbal skills Grade levels Cognitive level Areas addressed Nonverbal · Mixed · Verbal PK · Elementary · Middle/High Classic · High functioning (Pre)academic/cognitive/academic · Adaptive behaviour and daily living · Behaviour · Communication/speech · Social/emotional Discrete trial training (DTT) is an applied behavior analysis strategy that focuses on skill acquisition by manipulating the sequence of antecedents and consequences. The main components of discrete trial training include instruction, prompting, response, consequence, and inter-trial interval. Description Discrete trial training is a method of teaching new skills, consisting of a series of distinct repeated lessons or trials taught one-to-one. Lovaas (1981) defined a trial as a \"single teaching unit.\" A particular trial typically consists of four parts: (a) the discriminative stimulus (S D ) — the instruction; (b) the response (R); (c) the consequence or reinforcing stimulus (S R ); and (d) the inter-trial interval (ITI), or presentation wait time. In addition, an optional prompt (S P ) may be used to help the child respond correctly. S D → R → S R → ITI Essentially, first the teacher's instruction is given. A prompt, cue, or model from the teacher may be provided to help the child respond correctly. Then the child responds to the instruction, either with help or without. The child's response is evaluated as correct, incorrect, or no response. Last, a consequence based on the child's response relative to a predetermined criterion follows. Afterward the teacher pauses a little while before continuing, to let the child know that they have completed one set and have moved on to the next. Why it suits learners with autism A significant amount of research supports the use of discrete trial training with individuals with autism in a variety of settings. Discrete trial training can help to compensate for challenges faced by this population, and is beneficial for the following reasons: Tasks are broken down into short and simple trials that accommodate the needs of individuals with short attention spans. It attempts to build motivation by rewarding performance of desired behavior and completion of tasks with tangible or external reinforcement. Stimuli presented are clear and relatively consistent. The child is given rewards only for behaviors in response to those stimuli. It teaches skills and behaviors explicitly (cause-effect learning). The instructions given are simple, concrete, and clearly provide only the most salient information. It can be designed to teach perspective taking and social cognition skills explicitly. Cautions Discrete trial training must be individually and carefully applied, since each child with autism exhibits unique combinations of deficits and excesses in various areas (Lovaas, 1987; Smith, 2001). Furthermore, caution must be exercised not to adopt this strategy to the exclusion of all other interventions. In addition, if discrete trial training is used as an instructional strategy, generalization of the skill must be considered. Steps Instruction.  A teacher gives succinct and clear instruction to a student. The use of few and consistent words is preferred. Prompting.  Based on the student's learning level and the complexity of the task, the teacher gives appropriate prompts to trigger the desired response. Response.  The student responds to the teaching and prompting. The responding behavior must be measurable. Consequence.  The teacher gives immediate feedback and reinforcement after the student's response to enhance skill acquisition. Inter-trial interval.  A clear wait time is inserted after a trial completion before moving on to the next trial. Brief example To teach 4-year-old Jin to identify colors, Jin and her teacher sat down at a table in a quiet corner of the classroom. After getting Jin's attention on task, the teacher presented Jin's \"penny board,\" which Jin was familiar with, and told her clearly that if she got five correct answers, she would be allowed to choose a desired activity. Three cards of different colors were presented on the table. The teacher stated the color of each card while pointing to the card. After repeating this sequence, the teacher scrambled the three cards and put them on the table for Jin to practice. The teacher pointed to a card and said, \"What color is it?\" Waiting a couple of seconds, the teacher prompted Jin by exaggerating the first sound of \"blue,\" for example. When Jin gave the right answer, she received a \"penny\" and verbal praise from the teacher. The practice continued to follow this structure of steps until Jin mastered the skill. The teacher recorded data on every response and administered reinforcement for each correct answer. When finishing the trial, they counted the \"pennies\" Jin had earned. Because she had earned five \"pennies,\" she earned five minutes of play with a toy she had selected from her reinforcement menu. Summary Discrete trial training is aimed at manipulating the sequences of antecedents and consequences in a structured setting. Most often used in a one-to-one setting, discrete trial training contains five distinct steps for skills acquisition. Regular data collection provides detailed information to guide future instruction. Research Number of studies Ages (years) Sample size Areas addressed Outcome 28* 3–13 346 Communication, behavior generalization, parent training, object matching, PECS, vocal imitation, motor and person/social functioning, cognitive functioning, stereotypic behaviors, parent education, social-emotional functioning, out-of-seat behavior, motor imitation, daily living skills, identifying emotions and objects, IQ, joint attention, spontaneous responses, social interaction, social quotients, listener skills, adaptive behavior, play responses, math and language arts content, following directions to choose + *Includes a review of literature by Eldevik et al. (2009).",
+  "audio": "r1.mp3",
+  "words": [
+    {
+      "text": "Reading",
+      "start": 0.1,
+      "end": 0.525,
+      "start_char": 0,
+      "end_char": 7
+    },
+    {
+      "text": "One",
+      "start": 0.5375,
+      "end": 0.7875,
+      "start_char": 8,
+      "end_char": 11
+    },
+    {
+      "text": "TARGET",
+      "start": 0.8,
+      "end": 1.2125,
+      "start_char": 14,
+      "end_char": 20
+    },
+    {
+      "text": "Texas",
+      "start": 1.225,
+      "end": 1.65,
+      "start_char": 21,
+      "end_char": 26
+    },
+    {
+      "text": "Guide",
+      "start": 1.6625,
+      "end": 2.0,
+      "start_char": 27,
+      "end_char": 32
+    },
+    {
+      "text": "Discrete",
+      "start": 2.0125,
+      "end": 2.475,
+      "start_char": 33,
+      "end_char": 41
+    },
+    {
+      "text": "Trial",
+      "start": 2.4875,
+      "end": 2.8625,
+      "start_char": 42,
+      "end_char": 47
+    },
+    {
+      "text": "Training",
+      "start": 2.875,
+      "end": 3.2375,
+      "start_char": 48,
+      "end_char": 56
+    },
+    {
+      "text": "Verbal",
+      "start": 3.25,
+      "end": 3.5875,
+      "start_char": 57,
+      "end_char": 63
+    },
+    {
+      "text": "skills",
+      "start": 3.6,
+      "end": 4.0125,
+      "start_char": 64,
+      "end_char": 70
+    },
+    {
+      "text": "Grade",
+      "start": 4.025,
+      "end": 4.3625,
+      "start_char": 71,
+      "end_char": 76
+    },
+    {
+      "text": "levels",
+      "start": 4.375,
+      "end": 4.75,
+      "start_char": 77,
+      "end_char": 83
+    },
+    {
+      "text": "Cognitive",
+      "start": 4.7625,
+      "end": 5.3,
+      "start_char": 84,
+      "end_char": 93
+    },
+    {
+      "text": "level",
+      "start": 5.3125,
+      "end": 5.6625,
+      "start_char": 94,
+      "end_char": 99
+    },
+    {
+      "text": "Areas",
+      "start": 5.675,
+      "end": 6.0625,
+      "start_char": 100,
+      "end_char": 105
+    },
+    {
+      "text": "addressed",
+      "start": 6.075,
+      "end": 6.5125,
+      "start_char": 106,
+      "end_char": 115
+    },
+    {
+      "text": "Nonverbal",
+      "start": 6.525,
+      "end": 7.15,
+      "start_char": 116,
+      "end_char": 125
+    },
+    {
+      "text": "Mixed",
+      "start": 7.1625,
+      "end": 7.525,
+      "start_char": 128,
+      "end_char": 133
+    },
+    {
+      "text": "Verbal",
+      "start": 7.5375,
+      "end": 7.8625,
+      "start_char": 136,
+      "end_char": 142
+    },
+    {
+      "text": "PK",
+      "start": 7.875,
+      "end": 8.375,
+      "start_char": 143,
+      "end_char": 145
+    },
+    {
+      "text": "Elementary",
+      "start": 8.3875,
+      "end": 9.0125,
+      "start_char": 148,
+      "end_char": 158
+    },
+    {
+      "text": "Middle",
+      "start": 9.025,
+      "end": 9.3625,
+      "start_char": 161,
+      "end_char": 167
+    },
+    {
+      "text": "/",
+      "start": 9.375,
+      "end": 9.7,
+      "start_char": 167,
+      "end_char": 168
+    },
+    {
+      "text": "High",
+      "start": 9.7125,
+      "end": 9.9375,
+      "start_char": 168,
+      "end_char": 172
+    },
+    {
+      "text": "Classic",
+      "start": 9.95,
+      "end": 10.3875,
+      "start_char": 173,
+      "end_char": 180
+    },
+    {
+      "text": "High",
+      "start": 10.4,
+      "end": 10.5875,
+      "start_char": 183,
+      "end_char": 187
+    },
+    {
+      "text": "functioning",
+      "start": 10.6,
+      "end": 11.1875,
+      "start_char": 188,
+      "end_char": 199
+    },
+    {
+      "text": "Pre",
+      "start": 11.55,
+      "end": 11.925,
+      "start_char": 201,
+      "end_char": 204
+    },
+    {
+      "text": "academic",
+      "start": 12.3125,
+      "end": 12.9875,
+      "start_char": 205,
+      "end_char": 213
+    },
+    {
+      "text": "/",
+      "start": 13.0,
+      "end": 13.375,
+      "start_char": 213,
+      "end_char": 214
+    },
+    {
+      "text": "cognitive",
+      "start": 13.3875,
+      "end": 13.925,
+      "start_char": 214,
+      "end_char": 223
+    },
+    {
+      "text": "/",
+      "start": 13.9375,
+      "end": 14.275,
+      "start_char": 223,
+      "end_char": 224
+    },
+    {
+      "text": "academic",
+      "start": 14.2875,
+      "end": 14.85,
+      "start_char": 224,
+      "end_char": 232
+    },
+    {
+      "text": "Adaptive",
+      "start": 14.8625,
+      "end": 15.325,
+      "start_char": 235,
+      "end_char": 243
+    },
+    {
+      "text": "behaviour",
+      "start": 15.3375,
+      "end": 15.925,
+      "start_char": 244,
+      "end_char": 253
+    },
+    {
+      "text": "and",
+      "start": 15.9375,
+      "end": 16.05,
+      "start_char": 254,
+      "end_char": 257
+    },
+    {
+      "text": "daily",
+      "start": 16.0625,
+      "end": 16.3875,
+      "start_char": 258,
+      "end_char": 263
+    },
+    {
+      "text": "living",
+      "start": 16.4,
+      "end": 16.725,
+      "start_char": 264,
+      "end_char": 270
+    },
+    {
+      "text": "Behaviour",
+      "start": 16.7375,
+      "end": 17.2125,
+      "start_char": 273,
+      "end_char": 282
+    },
+    {
+      "text": "Communication",
+      "start": 17.225,
+      "end": 18.05,
+      "start_char": 285,
+      "end_char": 298
+    },
+    {
+      "text": "/",
+      "start": 18.0625,
+      "end": 18.4125,
+      "start_char": 298,
+      "end_char": 299
+    },
+    {
+      "text": "speech",
+      "start": 18.425,
+      "end": 18.7625,
+      "start_char": 299,
+      "end_char": 305
+    },
+    {
+      "text": "Social",
+      "start": 18.775,
+      "end": 19.1875,
+      "start_char": 308,
+      "end_char": 314
+    },
+    {
+      "text": "/",
+      "start": 19.2,
+      "end": 19.5375,
+      "start_char": 314,
+      "end_char": 315
+    },
+    {
+      "text": "emotional",
+      "start": 19.55,
+      "end": 20.1125,
+      "start_char": 315,
+      "end_char": 324
+    },
+    {
+      "text": "Discrete",
+      "start": 20.125,
+      "end": 20.55,
+      "start_char": 325,
+      "end_char": 333
+    },
+    {
+      "text": "trial",
+      "start": 20.5625,
+      "end": 20.9,
+      "start_char": 334,
+      "end_char": 339
+    },
+    {
+      "text": "training",
+      "start": 20.9125,
+      "end": 21.3375,
+      "start_char": 340,
+      "end_char": 348
+    },
+    {
+      "text": "DTT",
+      "start": 21.525,
+      "end": 22.1125,
+      "start_char": 350,
+      "end_char": 353
+    },
+    {
+      "text": "is",
+      "start": 22.425,
+      "end": 22.5875,
+      "start_char": 355,
+      "end_char": 357
+    },
+    {
+      "text": "an",
+      "start": 22.6,
+      "end": 22.6875,
+      "start_char": 358,
+      "end_char": 360
+    },
+    {
+      "text": "applied",
+      "start": 22.7,
+      "end": 23.0875,
+      "start_char": 361,
+      "end_char": 368
+    },
+    {
+      "text": "behavior",
+      "start": 23.1,
+      "end": 23.5625,
+      "start_char": 369,
+      "end_char": 377
+    },
+    {
+      "text": "analysis",
+      "start": 23.575,
+      "end": 24.125,
+      "start_char": 378,
+      "end_char": 386
+    },
+    {
+      "text": "strategy",
+      "start": 24.1375,
+      "end": 24.6625,
+      "start_char": 387,
+      "end_char": 395
+    },
+    {
+      "text": "that",
+      "start": 24.675,
+      "end": 24.85,
+      "start_char": 396,
+      "end_char": 400
+    },
+    {
+      "text": "focuses",
+      "start": 24.8625,
+      "end": 25.3625,
+      "start_char": 401,
+      "end_char": 408
+    },
+    {
+      "text": "on",
+      "start": 25.375,
+      "end": 25.55,
+      "start_char": 409,
+      "end_char": 411
+    },
+    {
+      "text": "skill",
+      "start": 25.5625,
+      "end": 25.925,
+      "start_char": 412,
+      "end_char": 417
+    },
+    {
+      "text": "acquisition",
+      "start": 25.9375,
+      "end": 26.6125,
+      "start_char": 418,
+      "end_char": 429
+    },
+    {
+      "text": "by",
+      "start": 26.625,
+      "end": 26.7625,
+      "start_char": 430,
+      "end_char": 432
+    },
+    {
+      "text": "manipulating",
+      "start": 26.775,
+      "end": 27.4875,
+      "start_char": 433,
+      "end_char": 445
+    },
+    {
+      "text": "the",
+      "start": 27.5,
+      "end": 27.6,
+      "start_char": 446,
+      "end_char": 449
+    },
+    {
+      "text": "sequence",
+      "start": 27.6125,
+      "end": 28.075,
+      "start_char": 450,
+      "end_char": 458
+    },
+    {
+      "text": "of",
+      "start": 28.0875,
+      "end": 28.175,
+      "start_char": 459,
+      "end_char": 461
+    },
+    {
+      "text": "antecedents",
+      "start": 28.1875,
+      "end": 28.9,
+      "start_char": 462,
+      "end_char": 473
+    },
+    {
+      "text": "and",
+      "start": 28.9125,
+      "end": 29.1125,
+      "start_char": 474,
+      "end_char": 477
+    },
+    {
+      "text": "consequences",
+      "start": 29.125,
+      "end": 30.15,
+      "start_char": 478,
+      "end_char": 490
+    },
+    {
+      "text": "The",
+      "start": 31.025,
+      "end": 31.2,
+      "start_char": 492,
+      "end_char": 495
+    },
+    {
+      "text": "main",
+      "start": 31.2125,
+      "end": 31.475,
+      "start_char": 496,
+      "end_char": 500
+    },
+    {
+      "text": "components",
+      "start": 31.4875,
+      "end": 32.0625,
+      "start_char": 501,
+      "end_char": 511
+    },
+    {
+      "text": "of",
+      "start": 32.075,
+      "end": 32.15,
+      "start_char": 512,
+      "end_char": 514
+    },
+    {
+      "text": "discrete",
+      "start": 32.1625,
+      "end": 32.5875,
+      "start_char": 515,
+      "end_char": 523
+    },
+    {
+      "text": "trial",
+      "start": 32.6,
+      "end": 32.95,
+      "start_char": 524,
+      "end_char": 529
+    },
+    {
+      "text": "training",
+      "start": 32.9625,
+      "end": 33.375,
+      "start_char": 530,
+      "end_char": 538
+    },
+    {
+      "text": "include",
+      "start": 33.3875,
+      "end": 33.775,
+      "start_char": 539,
+      "end_char": 546
+    },
+    {
+      "text": "instruction",
+      "start": 33.7875,
+      "end": 34.4625,
+      "start_char": 547,
+      "end_char": 558
+    },
+    {
+      "text": "prompting",
+      "start": 34.6875,
+      "end": 35.2125,
+      "start_char": 560,
+      "end_char": 569
+    },
+    {
+      "text": "response",
+      "start": 35.3875,
+      "end": 36.0,
+      "start_char": 571,
+      "end_char": 579
+    },
+    {
+      "text": "consequence",
+      "start": 36.1625,
+      "end": 36.9125,
+      "start_char": 581,
+      "end_char": 592
+    },
+    {
+      "text": "and",
+      "start": 37.0875,
+      "end": 37.2625,
+      "start_char": 594,
+      "end_char": 597
+    },
+    {
+      "text": "inter-trial",
+      "start": 37.275,
+      "end": 37.9625,
+      "start_char": 598,
+      "end_char": 609
+    },
+    {
+      "text": "interval",
+      "start": 37.975,
+      "end": 38.5625,
+      "start_char": 610,
+      "end_char": 618
+    },
+    {
+      "text": "Description",
+      "start": 39.4375,
+      "end": 40.1125,
+      "start_char": 620,
+      "end_char": 631
+    },
+    {
+      "text": "Discrete",
+      "start": 40.125,
+      "end": 40.5375,
+      "start_char": 632,
+      "end_char": 640
+    },
+    {
+      "text": "trial",
+      "start": 40.55,
+      "end": 40.9,
+      "start_char": 641,
+      "end_char": 646
+    },
+    {
+      "text": "training",
+      "start": 40.9125,
+      "end": 41.3625,
+      "start_char": 647,
+      "end_char": 655
+    },
+    {
+      "text": "is",
+      "start": 41.375,
+      "end": 41.475,
+      "start_char": 656,
+      "end_char": 658
+    },
+    {
+      "text": "a",
+      "start": 41.4875,
+      "end": 41.5375,
+      "start_char": 659,
+      "end_char": 660
+    },
+    {
+      "text": "method",
+      "start": 41.55,
+      "end": 41.9125,
+      "start_char": 661,
+      "end_char": 667
+    },
+    {
+      "text": "of",
+      "start": 41.925,
+      "end": 42.025,
+      "start_char": 668,
+      "end_char": 670
+    },
+    {
+      "text": "teaching",
+      "start": 42.0375,
+      "end": 42.4625,
+      "start_char": 671,
+      "end_char": 679
+    },
+    {
+      "text": "new",
+      "start": 42.475,
+      "end": 42.6375,
+      "start_char": 680,
+      "end_char": 683
+    },
+    {
+      "text": "skills",
+      "start": 42.65,
+      "end": 43.2,
+      "start_char": 684,
+      "end_char": 690
+    },
+    {
+      "text": "consisting",
+      "start": 43.525,
+      "end": 44.0875,
+      "start_char": 692,
+      "end_char": 702
+    },
+    {
+      "text": "of",
+      "start": 44.1,
+      "end": 44.1625,
+      "start_char": 703,
+      "end_char": 705
+    },
+    {
+      "text": "a",
+      "start": 44.175,
+      "end": 44.25,
+      "start_char": 706,
+      "end_char": 707
+    },
+    {
+      "text": "series",
+      "start": 44.2625,
+      "end": 44.675,
+      "start_char": 708,
+      "end_char": 714
+    },
+    {
+      "text": "of",
+      "start": 44.6875,
+      "end": 44.75,
+      "start_char": 715,
+      "end_char": 717
+    },
+    {
+      "text": "distinct",
+      "start": 44.7625,
+      "end": 45.225,
+      "start_char": 718,
+      "end_char": 726
+    },
+    {
+      "text": "repeated",
+      "start": 45.2375,
+      "end": 45.675,
+      "start_char": 727,
+      "end_char": 735
+    },
+    {
+      "text": "lessons",
+      "start": 45.6875,
+      "end": 46.2125,
+      "start_char": 736,
+      "end_char": 743
+    },
+    {
+      "text": "or",
+      "start": 46.225,
+      "end": 46.3625,
+      "start_char": 744,
+      "end_char": 746
+    },
+    {
+      "text": "trials",
+      "start": 46.375,
+      "end": 46.8625,
+      "start_char": 747,
+      "end_char": 753
+    },
+    {
+      "text": "taught",
+      "start": 46.875,
+      "end": 47.1375,
+      "start_char": 754,
+      "end_char": 760
+    },
+    {
+      "text": "one-to-one",
+      "start": 47.15,
+      "end": 47.825,
+      "start_char": 761,
+      "end_char": 771
+    },
+    {
+      "text": "Lovaas",
+      "start": 48.6875,
+      "end": 49.225,
+      "start_char": 773,
+      "end_char": 779
+    },
+    {
+      "text": "1981",
+      "start": 49.3375,
+      "end": 50.4125,
+      "start_char": 781,
+      "end_char": 785
+    },
+    {
+      "text": "defined",
+      "start": 50.675,
+      "end": 51.0875,
+      "start_char": 787,
+      "end_char": 794
+    },
+    {
+      "text": "a",
+      "start": 51.1,
+      "end": 51.15,
+      "start_char": 795,
+      "end_char": 796
+    },
+    {
+      "text": "trial",
+      "start": 51.1625,
+      "end": 51.6625,
+      "start_char": 797,
+      "end_char": 802
+    },
+    {
+      "text": "as",
+      "start": 51.675,
+      "end": 51.7625,
+      "start_char": 803,
+      "end_char": 805
+    },
+    {
+      "text": "a",
+      "start": 51.775,
+      "end": 51.85,
+      "start_char": 806,
+      "end_char": 807
+    },
+    {
+      "text": "single",
+      "start": 51.9,
+      "end": 52.25,
+      "start_char": 809,
+      "end_char": 815
+    },
+    {
+      "text": "teaching",
+      "start": 52.2625,
+      "end": 52.65,
+      "start_char": 816,
+      "end_char": 824
+    },
+    {
+      "text": "unit",
+      "start": 52.6625,
+      "end": 53.15,
+      "start_char": 825,
+      "end_char": 829
+    },
+    {
+      "text": "A",
+      "start": 54.0125,
+      "end": 54.15,
+      "start_char": 832,
+      "end_char": 833
+    },
+    {
+      "text": "particular",
+      "start": 54.1625,
+      "end": 54.6875,
+      "start_char": 834,
+      "end_char": 844
+    },
+    {
+      "text": "trial",
+      "start": 54.7,
+      "end": 55.1,
+      "start_char": 845,
+      "end_char": 850
+    },
+    {
+      "text": "typically",
+      "start": 55.1125,
+      "end": 55.55,
+      "start_char": 851,
+      "end_char": 860
+    },
+    {
+      "text": "consists",
+      "start": 55.5625,
+      "end": 56.0375,
+      "start_char": 861,
+      "end_char": 869
+    },
+    {
+      "text": "of",
+      "start": 56.05,
+      "end": 56.1375,
+      "start_char": 870,
+      "end_char": 872
+    },
+    {
+      "text": "four",
+      "start": 56.15,
+      "end": 56.4,
+      "start_char": 873,
+      "end_char": 877
+    },
+    {
+      "text": "parts",
+      "start": 56.4125,
+      "end": 56.8375,
+      "start_char": 878,
+      "end_char": 883
+    },
+    {
+      "text": "a",
+      "start": 57.0875,
+      "end": 57.325,
+      "start_char": 886,
+      "end_char": 887
+    },
+    {
+      "text": "the",
+      "start": 57.575,
+      "end": 57.675,
+      "start_char": 889,
+      "end_char": 892
+    },
+    {
+      "text": "discriminative",
+      "start": 57.6875,
+      "end": 58.3375,
+      "start_char": 893,
+      "end_char": 907
+    },
+    {
+      "text": "stimulus",
+      "start": 58.35,
+      "end": 58.95,
+      "start_char": 908,
+      "end_char": 916
+    },
+    {
+      "text": "S",
+      "start": 59.1125,
+      "end": 59.275,
+      "start_char": 918,
+      "end_char": 919
+    },
+    {
+      "text": "D",
+      "start": 59.2875,
+      "end": 59.6125,
+      "start_char": 920,
+      "end_char": 921
+    },
+    {
+      "text": "the",
+      "start": 59.825,
+      "end": 59.9,
+      "start_char": 926,
+      "end_char": 929
+    },
+    {
+      "text": "instruction",
+      "start": 59.9125,
+      "end": 60.6125,
+      "start_char": 930,
+      "end_char": 941
+    },
+    {
+      "text": "b",
+      "start": 60.8125,
+      "end": 61.1,
+      "start_char": 944,
+      "end_char": 945
+    },
+    {
+      "text": "the",
+      "start": 61.3125,
+      "end": 61.4125,
+      "start_char": 947,
+      "end_char": 950
+    },
+    {
+      "text": "response",
+      "start": 61.425,
+      "end": 62.025,
+      "start_char": 951,
+      "end_char": 959
+    },
+    {
+      "text": "R",
+      "start": 62.2,
+      "end": 62.4875,
+      "start_char": 961,
+      "end_char": 962
+    },
+    {
+      "text": "c",
+      "start": 62.675,
+      "end": 63.025,
+      "start_char": 966,
+      "end_char": 967
+    },
+    {
+      "text": "the",
+      "start": 63.275,
+      "end": 63.3625,
+      "start_char": 969,
+      "end_char": 972
+    },
+    {
+      "text": "consequence",
+      "start": 63.375,
+      "end": 64.0875,
+      "start_char": 973,
+      "end_char": 984
+    },
+    {
+      "text": "or",
+      "start": 64.1,
+      "end": 64.275,
+      "start_char": 985,
+      "end_char": 987
+    },
+    {
+      "text": "reinforcing",
+      "start": 64.2875,
+      "end": 65.0,
+      "start_char": 988,
+      "end_char": 999
+    },
+    {
+      "text": "stimulus",
+      "start": 65.0125,
+      "end": 65.6125,
+      "start_char": 1000,
+      "end_char": 1008
+    },
+    {
+      "text": "S",
+      "start": 65.775,
+      "end": 65.9375,
+      "start_char": 1010,
+      "end_char": 1011
+    },
+    {
+      "text": "R",
+      "start": 65.95,
+      "end": 66.25,
+      "start_char": 1012,
+      "end_char": 1013
+    },
+    {
+      "text": "and",
+      "start": 66.4375,
+      "end": 66.75,
+      "start_char": 1017,
+      "end_char": 1020
+    },
+    {
+      "text": "d",
+      "start": 66.9625,
+      "end": 67.2625,
+      "start_char": 1022,
+      "end_char": 1023
+    },
+    {
+      "text": "the",
+      "start": 67.4875,
+      "end": 67.575,
+      "start_char": 1025,
+      "end_char": 1028
+    },
+    {
+      "text": "inter-trial",
+      "start": 67.5875,
+      "end": 68.2375,
+      "start_char": 1029,
+      "end_char": 1040
+    },
+    {
+      "text": "interval",
+      "start": 68.25,
+      "end": 68.7625,
+      "start_char": 1041,
+      "end_char": 1049
+    },
+    {
+      "text": "ITI",
+      "start": 68.9125,
+      "end": 69.4875,
+      "start_char": 1051,
+      "end_char": 1054
+    },
+    {
+      "text": "or",
+      "start": 69.8125,
+      "end": 70.0,
+      "start_char": 1057,
+      "end_char": 1059
+    },
+    {
+      "text": "presentation",
+      "start": 70.0125,
+      "end": 70.7375,
+      "start_char": 1060,
+      "end_char": 1072
+    },
+    {
+      "text": "wait",
+      "start": 70.75,
+      "end": 70.9875,
+      "start_char": 1073,
+      "end_char": 1077
+    },
+    {
+      "text": "time",
+      "start": 71.0,
+      "end": 71.4375,
+      "start_char": 1078,
+      "end_char": 1082
+    },
+    {
+      "text": "In",
+      "start": 72.3,
+      "end": 72.4875,
+      "start_char": 1084,
+      "end_char": 1086
+    },
+    {
+      "text": "addition",
+      "start": 72.5,
+      "end": 72.9625,
+      "start_char": 1087,
+      "end_char": 1095
+    },
+    {
+      "text": "an",
+      "start": 73.1375,
+      "end": 73.275,
+      "start_char": 1097,
+      "end_char": 1099
+    },
+    {
+      "text": "optional",
+      "start": 73.2875,
+      "end": 73.725,
+      "start_char": 1100,
+      "end_char": 1108
+    },
+    {
+      "text": "prompt",
+      "start": 73.7375,
+      "end": 74.125,
+      "start_char": 1109,
+      "end_char": 1115
+    },
+    {
+      "text": "S",
+      "start": 74.2875,
+      "end": 74.475,
+      "start_char": 1117,
+      "end_char": 1118
+    },
+    {
+      "text": "P",
+      "start": 74.4875,
+      "end": 74.7625,
+      "start_char": 1119,
+      "end_char": 1120
+    },
+    {
+      "text": "may",
+      "start": 74.9625,
+      "end": 75.1,
+      "start_char": 1123,
+      "end_char": 1126
+    },
+    {
+      "text": "be",
+      "start": 75.1125,
+      "end": 75.2375,
+      "start_char": 1127,
+      "end_char": 1129
+    },
+    {
+      "text": "used",
+      "start": 75.25,
+      "end": 75.5,
+      "start_char": 1130,
+      "end_char": 1134
+    },
+    {
+      "text": "to",
+      "start": 75.5125,
+      "end": 75.575,
+      "start_char": 1135,
+      "end_char": 1137
+    },
+    {
+      "text": "help",
+      "start": 75.5875,
+      "end": 75.8375,
+      "start_char": 1138,
+      "end_char": 1142
+    },
+    {
+      "text": "the",
+      "start": 75.85,
+      "end": 75.95,
+      "start_char": 1143,
+      "end_char": 1146
+    },
+    {
+      "text": "child",
+      "start": 75.9625,
+      "end": 76.3375,
+      "start_char": 1147,
+      "end_char": 1152
+    },
+    {
+      "text": "respond",
+      "start": 76.35,
+      "end": 76.8125,
+      "start_char": 1153,
+      "end_char": 1160
+    },
+    {
+      "text": "correctly",
+      "start": 76.825,
+      "end": 77.475,
+      "start_char": 1161,
+      "end_char": 1170
+    },
+    {
+      "text": "S",
+      "start": 78.35,
+      "end": 78.6125,
+      "start_char": 1172,
+      "end_char": 1173
+    },
+    {
+      "text": "D",
+      "start": 78.625,
+      "end": 78.8375,
+      "start_char": 1174,
+      "end_char": 1175
+    },
+    {
+      "text": "R",
+      "start": 78.85,
+      "end": 79.025,
+      "start_char": 1178,
+      "end_char": 1179
+    },
+    {
+      "text": "S",
+      "start": 79.0375,
+      "end": 79.275,
+      "start_char": 1182,
+      "end_char": 1183
+    },
+    {
+      "text": "R",
+      "start": 79.2875,
+      "end": 79.45,
+      "start_char": 1184,
+      "end_char": 1185
+    },
+    {
+      "text": "ITI",
+      "start": 79.4625,
+      "end": 79.9625,
+      "start_char": 1188,
+      "end_char": 1191
+    },
+    {
+      "text": "Essentially",
+      "start": 79.975,
+      "end": 80.675,
+      "start_char": 1192,
+      "end_char": 1203
+    },
+    {
+      "text": "first",
+      "start": 81.0,
+      "end": 81.3125,
+      "start_char": 1205,
+      "end_char": 1210
+    },
+    {
+      "text": "the",
+      "start": 81.325,
+      "end": 81.4125,
+      "start_char": 1211,
+      "end_char": 1214
+    },
+    {
+      "text": "teacher's",
+      "start": 81.425,
+      "end": 81.825,
+      "start_char": 1215,
+      "end_char": 1224
+    },
+    {
+      "text": "instruction",
+      "start": 81.8375,
+      "end": 82.4125,
+      "start_char": 1225,
+      "end_char": 1236
+    },
+    {
+      "text": "is",
+      "start": 82.425,
+      "end": 82.55,
+      "start_char": 1237,
+      "end_char": 1239
+    },
+    {
+      "text": "given",
+      "start": 82.5625,
+      "end": 83.0125,
+      "start_char": 1240,
+      "end_char": 1245
+    },
+    {
+      "text": "A",
+      "start": 83.875,
+      "end": 84.0125,
+      "start_char": 1247,
+      "end_char": 1248
+    },
+    {
+      "text": "prompt",
+      "start": 84.025,
+      "end": 84.4375,
+      "start_char": 1249,
+      "end_char": 1255
+    },
+    {
+      "text": "cue",
+      "start": 84.6,
+      "end": 84.9625,
+      "start_char": 1257,
+      "end_char": 1260
+    },
+    {
+      "text": "or",
+      "start": 85.1,
+      "end": 85.25,
+      "start_char": 1262,
+      "end_char": 1264
+    },
+    {
+      "text": "model",
+      "start": 85.2625,
+      "end": 85.6125,
+      "start_char": 1265,
+      "end_char": 1270
+    },
+    {
+      "text": "from",
+      "start": 85.625,
+      "end": 85.775,
+      "start_char": 1271,
+      "end_char": 1275
+    },
+    {
+      "text": "the",
+      "start": 85.7875,
+      "end": 85.875,
+      "start_char": 1276,
+      "end_char": 1279
+    },
+    {
+      "text": "teacher",
+      "start": 85.8875,
+      "end": 86.3375,
+      "start_char": 1280,
+      "end_char": 1287
+    },
+    {
+      "text": "may",
+      "start": 86.35,
+      "end": 86.525,
+      "start_char": 1288,
+      "end_char": 1291
+    },
+    {
+      "text": "be",
+      "start": 86.5375,
+      "end": 86.65,
+      "start_char": 1292,
+      "end_char": 1294
+    },
+    {
+      "text": "provided",
+      "start": 86.6625,
+      "end": 87.1375,
+      "start_char": 1295,
+      "end_char": 1303
+    },
+    {
+      "text": "to",
+      "start": 87.15,
+      "end": 87.2125,
+      "start_char": 1304,
+      "end_char": 1306
+    },
+    {
+      "text": "help",
+      "start": 87.225,
+      "end": 87.4875,
+      "start_char": 1307,
+      "end_char": 1311
+    },
+    {
+      "text": "the",
+      "start": 87.5,
+      "end": 87.5875,
+      "start_char": 1312,
+      "end_char": 1315
+    },
+    {
+      "text": "child",
+      "start": 87.6,
+      "end": 87.975,
+      "start_char": 1316,
+      "end_char": 1321
+    },
+    {
+      "text": "respond",
+      "start": 87.9875,
+      "end": 88.4625,
+      "start_char": 1322,
+      "end_char": 1329
+    },
+    {
+      "text": "correctly",
+      "start": 88.475,
+      "end": 89.125,
+      "start_char": 1330,
+      "end_char": 1339
+    },
+    {
+      "text": "Then",
+      "start": 89.9875,
+      "end": 90.2375,
+      "start_char": 1341,
+      "end_char": 1345
+    },
+    {
+      "text": "the",
+      "start": 90.25,
+      "end": 90.325,
+      "start_char": 1346,
+      "end_char": 1349
+    },
+    {
+      "text": "child",
+      "start": 90.3375,
+      "end": 90.7,
+      "start_char": 1350,
+      "end_char": 1355
+    },
+    {
+      "text": "responds",
+      "start": 90.7125,
+      "end": 91.2125,
+      "start_char": 1356,
+      "end_char": 1364
+    },
+    {
+      "text": "to",
+      "start": 91.225,
+      "end": 91.3125,
+      "start_char": 1365,
+      "end_char": 1367
+    },
+    {
+      "text": "the",
+      "start": 91.325,
+      "end": 91.4125,
+      "start_char": 1368,
+      "end_char": 1371
+    },
+    {
+      "text": "instruction",
+      "start": 91.425,
+      "end": 92.1125,
+      "start_char": 1372,
+      "end_char": 1383
+    },
+    {
+      "text": "either",
+      "start": 92.3,
+      "end": 92.5,
+      "start_char": 1385,
+      "end_char": 1391
+    },
+    {
+      "text": "with",
+      "start": 92.5125,
+      "end": 92.6375,
+      "start_char": 1392,
+      "end_char": 1396
+    },
+    {
+      "text": "help",
+      "start": 92.65,
+      "end": 92.975,
+      "start_char": 1397,
+      "end_char": 1401
+    },
+    {
+      "text": "or",
+      "start": 92.9875,
+      "end": 93.1125,
+      "start_char": 1402,
+      "end_char": 1404
+    },
+    {
+      "text": "without",
+      "start": 93.125,
+      "end": 93.6875,
+      "start_char": 1405,
+      "end_char": 1412
+    },
+    {
+      "text": "The",
+      "start": 94.5625,
+      "end": 94.725,
+      "start_char": 1414,
+      "end_char": 1417
+    },
+    {
+      "text": "child's",
+      "start": 94.7375,
+      "end": 95.1625,
+      "start_char": 1418,
+      "end_char": 1425
+    },
+    {
+      "text": "response",
+      "start": 95.175,
+      "end": 95.6625,
+      "start_char": 1426,
+      "end_char": 1434
+    },
+    {
+      "text": "is",
+      "start": 95.675,
+      "end": 95.775,
+      "start_char": 1435,
+      "end_char": 1437
+    },
+    {
+      "text": "evaluated",
+      "start": 95.7875,
+      "end": 96.5125,
+      "start_char": 1438,
+      "end_char": 1447
+    },
+    {
+      "text": "as",
+      "start": 96.525,
+      "end": 96.6875,
+      "start_char": 1448,
+      "end_char": 1450
+    },
+    {
+      "text": "correct",
+      "start": 96.7,
+      "end": 97.225,
+      "start_char": 1451,
+      "end_char": 1458
+    },
+    {
+      "text": "incorrect",
+      "start": 97.4,
+      "end": 98.0625,
+      "start_char": 1460,
+      "end_char": 1469
+    },
+    {
+      "text": "or",
+      "start": 98.2375,
+      "end": 98.375,
+      "start_char": 1471,
+      "end_char": 1473
+    },
+    {
+      "text": "no",
+      "start": 98.3875,
+      "end": 98.5875,
+      "start_char": 1474,
+      "end_char": 1476
+    },
+    {
+      "text": "response",
+      "start": 98.6,
+      "end": 99.3125,
+      "start_char": 1477,
+      "end_char": 1485
+    },
+    {
+      "text": "Last",
+      "start": 100.175,
+      "end": 100.7125,
+      "start_char": 1487,
+      "end_char": 1491
+    },
+    {
+      "text": "a",
+      "start": 100.9375,
+      "end": 100.9875,
+      "start_char": 1493,
+      "end_char": 1494
+    },
+    {
+      "text": "consequence",
+      "start": 101.0,
+      "end": 101.7,
+      "start_char": 1495,
+      "end_char": 1506
+    },
+    {
+      "text": "based",
+      "start": 101.7125,
+      "end": 102.0625,
+      "start_char": 1507,
+      "end_char": 1512
+    },
+    {
+      "text": "on",
+      "start": 102.075,
+      "end": 102.175,
+      "start_char": 1513,
+      "end_char": 1515
+    },
+    {
+      "text": "the",
+      "start": 102.1875,
+      "end": 102.2625,
+      "start_char": 1516,
+      "end_char": 1519
+    },
+    {
+      "text": "child's",
+      "start": 102.275,
+      "end": 102.725,
+      "start_char": 1520,
+      "end_char": 1527
+    },
+    {
+      "text": "response",
+      "start": 102.7375,
+      "end": 103.2375,
+      "start_char": 1528,
+      "end_char": 1536
+    },
+    {
+      "text": "relative",
+      "start": 103.25,
+      "end": 103.7875,
+      "start_char": 1537,
+      "end_char": 1545
+    },
+    {
+      "text": "to",
+      "start": 103.8,
+      "end": 103.925,
+      "start_char": 1546,
+      "end_char": 1548
+    },
+    {
+      "text": "a",
+      "start": 103.9375,
+      "end": 104.025,
+      "start_char": 1549,
+      "end_char": 1550
+    },
+    {
+      "text": "predetermined",
+      "start": 104.0375,
+      "end": 104.775,
+      "start_char": 1551,
+      "end_char": 1564
+    },
+    {
+      "text": "criterion",
+      "start": 104.7875,
+      "end": 105.4375,
+      "start_char": 1565,
+      "end_char": 1574
+    },
+    {
+      "text": "follows",
+      "start": 105.45,
+      "end": 106.125,
+      "start_char": 1575,
+      "end_char": 1582
+    },
+    {
+      "text": "Afterward",
+      "start": 107.0,
+      "end": 107.5875,
+      "start_char": 1584,
+      "end_char": 1593
+    },
+    {
+      "text": "the",
+      "start": 107.6,
+      "end": 107.6875,
+      "start_char": 1594,
+      "end_char": 1597
+    },
+    {
+      "text": "teacher",
+      "start": 107.7,
+      "end": 108.0875,
+      "start_char": 1598,
+      "end_char": 1605
+    },
+    {
+      "text": "pauses",
+      "start": 108.1,
+      "end": 108.4875,
+      "start_char": 1606,
+      "end_char": 1612
+    },
+    {
+      "text": "a",
+      "start": 108.5,
+      "end": 108.5625,
+      "start_char": 1613,
+      "end_char": 1614
+    },
+    {
+      "text": "little",
+      "start": 108.575,
+      "end": 108.8375,
+      "start_char": 1615,
+      "end_char": 1621
+    },
+    {
+      "text": "while",
+      "start": 108.85,
+      "end": 109.1625,
+      "start_char": 1622,
+      "end_char": 1627
+    },
+    {
+      "text": "before",
+      "start": 109.175,
+      "end": 109.5125,
+      "start_char": 1628,
+      "end_char": 1634
+    },
+    {
+      "text": "continuing",
+      "start": 109.525,
+      "end": 110.175,
+      "start_char": 1635,
+      "end_char": 1645
+    },
+    {
+      "text": "to",
+      "start": 110.5625,
+      "end": 110.675,
+      "start_char": 1647,
+      "end_char": 1649
+    },
+    {
+      "text": "let",
+      "start": 110.6875,
+      "end": 110.8875,
+      "start_char": 1650,
+      "end_char": 1653
+    },
+    {
+      "text": "the",
+      "start": 110.9,
+      "end": 110.9875,
+      "start_char": 1654,
+      "end_char": 1657
+    },
+    {
+      "text": "child",
+      "start": 111.0,
+      "end": 111.425,
+      "start_char": 1658,
+      "end_char": 1663
+    },
+    {
+      "text": "know",
+      "start": 111.4375,
+      "end": 111.675,
+      "start_char": 1664,
+      "end_char": 1668
+    },
+    {
+      "text": "that",
+      "start": 111.6875,
+      "end": 111.8125,
+      "start_char": 1669,
+      "end_char": 1673
+    },
+    {
+      "text": "they",
+      "start": 111.825,
+      "end": 111.9125,
+      "start_char": 1674,
+      "end_char": 1678
+    },
+    {
+      "text": "have",
+      "start": 111.925,
+      "end": 112.0625,
+      "start_char": 1679,
+      "end_char": 1683
+    },
+    {
+      "text": "completed",
+      "start": 112.075,
+      "end": 112.5875,
+      "start_char": 1684,
+      "end_char": 1693
+    },
+    {
+      "text": "one",
+      "start": 112.6,
+      "end": 112.8625,
+      "start_char": 1694,
+      "end_char": 1697
+    },
+    {
+      "text": "set",
+      "start": 112.875,
+      "end": 113.25,
+      "start_char": 1698,
+      "end_char": 1701
+    },
+    {
+      "text": "and",
+      "start": 113.2625,
+      "end": 113.3625,
+      "start_char": 1702,
+      "end_char": 1705
+    },
+    {
+      "text": "have",
+      "start": 113.375,
+      "end": 113.5,
+      "start_char": 1706,
+      "end_char": 1710
+    },
+    {
+      "text": "moved",
+      "start": 113.5125,
+      "end": 113.8125,
+      "start_char": 1711,
+      "end_char": 1716
+    },
+    {
+      "text": "on",
+      "start": 113.825,
+      "end": 114.025,
+      "start_char": 1717,
+      "end_char": 1719
+    },
+    {
+      "text": "to",
+      "start": 114.0375,
+      "end": 114.1125,
+      "start_char": 1720,
+      "end_char": 1722
+    },
+    {
+      "text": "the",
+      "start": 114.125,
+      "end": 114.225,
+      "start_char": 1723,
+      "end_char": 1726
+    },
+    {
+      "text": "next",
+      "start": 114.2375,
+      "end": 114.7625,
+      "start_char": 1727,
+      "end_char": 1731
+    },
+    {
+      "text": "Why",
+      "start": 115.625,
+      "end": 115.9375,
+      "start_char": 1733,
+      "end_char": 1736
+    },
+    {
+      "text": "it",
+      "start": 115.95,
+      "end": 116.0875,
+      "start_char": 1737,
+      "end_char": 1739
+    },
+    {
+      "text": "suits",
+      "start": 116.1,
+      "end": 116.4,
+      "start_char": 1740,
+      "end_char": 1745
+    },
+    {
+      "text": "learners",
+      "start": 116.4125,
+      "end": 116.8375,
+      "start_char": 1746,
+      "end_char": 1754
+    },
+    {
+      "text": "with",
+      "start": 116.85,
+      "end": 116.975,
+      "start_char": 1755,
+      "end_char": 1759
+    },
+    {
+      "text": "autism",
+      "start": 116.9875,
+      "end": 117.5875,
+      "start_char": 1760,
+      "end_char": 1766
+    },
+    {
+      "text": "A",
+      "start": 117.6,
+      "end": 117.6625,
+      "start_char": 1767,
+      "end_char": 1768
+    },
+    {
+      "text": "significant",
+      "start": 117.675,
+      "end": 118.3125,
+      "start_char": 1769,
+      "end_char": 1780
+    },
+    {
+      "text": "amount",
+      "start": 118.325,
+      "end": 118.6625,
+      "start_char": 1781,
+      "end_char": 1787
+    },
+    {
+      "text": "of",
+      "start": 118.675,
+      "end": 118.7625,
+      "start_char": 1788,
+      "end_char": 1790
+    },
+    {
+      "text": "research",
+      "start": 118.775,
+      "end": 119.2875,
+      "start_char": 1791,
+      "end_char": 1799
+    },
+    {
+      "text": "supports",
+      "start": 119.3,
+      "end": 119.8,
+      "start_char": 1800,
+      "end_char": 1808
+    },
+    {
+      "text": "the",
+      "start": 119.8125,
+      "end": 119.8875,
+      "start_char": 1809,
+      "end_char": 1812
+    },
+    {
+      "text": "use",
+      "start": 119.9,
+      "end": 120.2375,
+      "start_char": 1813,
+      "end_char": 1816
+    },
+    {
+      "text": "of",
+      "start": 120.25,
+      "end": 120.3375,
+      "start_char": 1817,
+      "end_char": 1819
+    },
+    {
+      "text": "discrete",
+      "start": 120.35,
+      "end": 120.8,
+      "start_char": 1820,
+      "end_char": 1828
+    },
+    {
+      "text": "trial",
+      "start": 120.8125,
+      "end": 121.1625,
+      "start_char": 1829,
+      "end_char": 1834
+    },
+    {
+      "text": "training",
+      "start": 121.175,
+      "end": 121.5625,
+      "start_char": 1835,
+      "end_char": 1843
+    },
+    {
+      "text": "with",
+      "start": 121.575,
+      "end": 121.725,
+      "start_char": 1844,
+      "end_char": 1848
+    },
+    {
+      "text": "individuals",
+      "start": 121.7375,
+      "end": 122.4375,
+      "start_char": 1849,
+      "end_char": 1860
+    },
+    {
+      "text": "with",
+      "start": 122.45,
+      "end": 122.575,
+      "start_char": 1861,
+      "end_char": 1865
+    },
+    {
+      "text": "autism",
+      "start": 122.5875,
+      "end": 123.2125,
+      "start_char": 1866,
+      "end_char": 1872
+    },
+    {
+      "text": "in",
+      "start": 123.225,
+      "end": 123.3375,
+      "start_char": 1873,
+      "end_char": 1875
+    },
+    {
+      "text": "a",
+      "start": 123.35,
+      "end": 123.4,
+      "start_char": 1876,
+      "end_char": 1877
+    },
+    {
+      "text": "variety",
+      "start": 123.4125,
+      "end": 123.9375,
+      "start_char": 1878,
+      "end_char": 1885
+    },
+    {
+      "text": "of",
+      "start": 123.95,
+      "end": 124.025,
+      "start_char": 1886,
+      "end_char": 1888
+    },
+    {
+      "text": "settings",
+      "start": 124.0375,
+      "end": 124.6625,
+      "start_char": 1889,
+      "end_char": 1897
+    },
+    {
+      "text": "Discrete",
+      "start": 125.525,
+      "end": 126.0625,
+      "start_char": 1899,
+      "end_char": 1907
+    },
+    {
+      "text": "trial",
+      "start": 126.075,
+      "end": 126.45,
+      "start_char": 1908,
+      "end_char": 1913
+    },
+    {
+      "text": "training",
+      "start": 126.4625,
+      "end": 126.8375,
+      "start_char": 1914,
+      "end_char": 1922
+    },
+    {
+      "text": "can",
+      "start": 126.85,
+      "end": 127.0,
+      "start_char": 1923,
+      "end_char": 1926
+    },
+    {
+      "text": "help",
+      "start": 127.0125,
+      "end": 127.275,
+      "start_char": 1927,
+      "end_char": 1931
+    },
+    {
+      "text": "to",
+      "start": 127.2875,
+      "end": 127.375,
+      "start_char": 1932,
+      "end_char": 1934
+    },
+    {
+      "text": "compensate",
+      "start": 127.3875,
+      "end": 128.0125,
+      "start_char": 1935,
+      "end_char": 1945
+    },
+    {
+      "text": "for",
+      "start": 128.025,
+      "end": 128.15,
+      "start_char": 1946,
+      "end_char": 1949
+    },
+    {
+      "text": "challenges",
+      "start": 128.1625,
+      "end": 128.775,
+      "start_char": 1950,
+      "end_char": 1960
+    },
+    {
+      "text": "faced",
+      "start": 128.7875,
+      "end": 129.1125,
+      "start_char": 1961,
+      "end_char": 1966
+    },
+    {
+      "text": "by",
+      "start": 129.125,
+      "end": 129.25,
+      "start_char": 1967,
+      "end_char": 1969
+    },
+    {
+      "text": "this",
+      "start": 129.2625,
+      "end": 129.425,
+      "start_char": 1970,
+      "end_char": 1974
+    },
+    {
+      "text": "population",
+      "start": 129.4375,
+      "end": 130.2,
+      "start_char": 1975,
+      "end_char": 1985
+    },
+    {
+      "text": "and",
+      "start": 130.5875,
+      "end": 130.7125,
+      "start_char": 1987,
+      "end_char": 1990
+    },
+    {
+      "text": "is",
+      "start": 130.725,
+      "end": 130.8375,
+      "start_char": 1991,
+      "end_char": 1993
+    },
+    {
+      "text": "beneficial",
+      "start": 130.85,
+      "end": 131.45,
+      "start_char": 1994,
+      "end_char": 2004
+    },
+    {
+      "text": "for",
+      "start": 131.4625,
+      "end": 131.5625,
+      "start_char": 2005,
+      "end_char": 2008
+    },
+    {
+      "text": "the",
+      "start": 131.575,
+      "end": 131.6625,
+      "start_char": 2009,
+      "end_char": 2012
+    },
+    {
+      "text": "following",
+      "start": 131.675,
+      "end": 132.1,
+      "start_char": 2013,
+      "end_char": 2022
+    },
+    {
+      "text": "reasons",
+      "start": 132.1125,
+      "end": 132.625,
+      "start_char": 2023,
+      "end_char": 2030
+    },
+    {
+      "text": "Tasks",
+      "start": 132.975,
+      "end": 133.4125,
+      "start_char": 2032,
+      "end_char": 2037
+    },
+    {
+      "text": "are",
+      "start": 133.425,
+      "end": 133.525,
+      "start_char": 2038,
+      "end_char": 2041
+    },
+    {
+      "text": "broken",
+      "start": 133.5375,
+      "end": 133.9125,
+      "start_char": 2042,
+      "end_char": 2048
+    },
+    {
+      "text": "down",
+      "start": 133.925,
+      "end": 134.175,
+      "start_char": 2049,
+      "end_char": 2053
+    },
+    {
+      "text": "into",
+      "start": 134.1875,
+      "end": 134.375,
+      "start_char": 2054,
+      "end_char": 2058
+    },
+    {
+      "text": "short",
+      "start": 134.3875,
+      "end": 134.75,
+      "start_char": 2059,
+      "end_char": 2064
+    },
+    {
+      "text": "and",
+      "start": 134.7625,
+      "end": 134.8875,
+      "start_char": 2065,
+      "end_char": 2068
+    },
+    {
+      "text": "simple",
+      "start": 134.9,
+      "end": 135.2125,
+      "start_char": 2069,
+      "end_char": 2075
+    },
+    {
+      "text": "trials",
+      "start": 135.225,
+      "end": 135.725,
+      "start_char": 2076,
+      "end_char": 2082
+    },
+    {
+      "text": "that",
+      "start": 135.7375,
+      "end": 135.85,
+      "start_char": 2083,
+      "end_char": 2087
+    },
+    {
+      "text": "accommodate",
+      "start": 135.8625,
+      "end": 136.4,
+      "start_char": 2088,
+      "end_char": 2099
+    },
+    {
+      "text": "the",
+      "start": 136.4125,
+      "end": 136.5,
+      "start_char": 2100,
+      "end_char": 2103
+    },
+    {
+      "text": "needs",
+      "start": 136.5125,
+      "end": 136.8375,
+      "start_char": 2104,
+      "end_char": 2109
+    },
+    {
+      "text": "of",
+      "start": 136.85,
+      "end": 136.925,
+      "start_char": 2110,
+      "end_char": 2112
+    },
+    {
+      "text": "individuals",
+      "start": 136.9375,
+      "end": 137.6625,
+      "start_char": 2113,
+      "end_char": 2124
+    },
+    {
+      "text": "with",
+      "start": 137.675,
+      "end": 137.8125,
+      "start_char": 2125,
+      "end_char": 2129
+    },
+    {
+      "text": "short",
+      "start": 137.825,
+      "end": 138.1125,
+      "start_char": 2130,
+      "end_char": 2135
+    },
+    {
+      "text": "attention",
+      "start": 138.125,
+      "end": 138.6,
+      "start_char": 2136,
+      "end_char": 2145
+    },
+    {
+      "text": "spans",
+      "start": 138.6125,
+      "end": 139.2125,
+      "start_char": 2146,
+      "end_char": 2151
+    },
+    {
+      "text": "It",
+      "start": 140.075,
+      "end": 140.2375,
+      "start_char": 2153,
+      "end_char": 2155
+    },
+    {
+      "text": "attempts",
+      "start": 140.25,
+      "end": 140.675,
+      "start_char": 2156,
+      "end_char": 2164
+    },
+    {
+      "text": "to",
+      "start": 140.6875,
+      "end": 140.8,
+      "start_char": 2165,
+      "end_char": 2167
+    },
+    {
+      "text": "build",
+      "start": 140.8125,
+      "end": 141.0875,
+      "start_char": 2168,
+      "end_char": 2173
+    },
+    {
+      "text": "motivation",
+      "start": 141.1,
+      "end": 141.7875,
+      "start_char": 2174,
+      "end_char": 2184
+    },
+    {
+      "text": "by",
+      "start": 141.8,
+      "end": 141.9375,
+      "start_char": 2185,
+      "end_char": 2187
+    },
+    {
+      "text": "rewarding",
+      "start": 141.95,
+      "end": 142.4375,
+      "start_char": 2188,
+      "end_char": 2197
+    },
+    {
+      "text": "performance",
+      "start": 142.45,
+      "end": 143.0125,
+      "start_char": 2198,
+      "end_char": 2209
+    },
+    {
+      "text": "of",
+      "start": 143.025,
+      "end": 143.1125,
+      "start_char": 2210,
+      "end_char": 2212
+    },
+    {
+      "text": "desired",
+      "start": 143.125,
+      "end": 143.5875,
+      "start_char": 2213,
+      "end_char": 2220
+    },
+    {
+      "text": "behavior",
+      "start": 143.6,
+      "end": 144.225,
+      "start_char": 2221,
+      "end_char": 2229
+    },
+    {
+      "text": "and",
+      "start": 144.2375,
+      "end": 144.35,
+      "start_char": 2230,
+      "end_char": 2233
+    },
+    {
+      "text": "completion",
+      "start": 144.3625,
+      "end": 144.9,
+      "start_char": 2234,
+      "end_char": 2244
+    },
+    {
+      "text": "of",
+      "start": 144.9125,
+      "end": 145.0,
+      "start_char": 2245,
+      "end_char": 2247
+    },
+    {
+      "text": "tasks",
+      "start": 145.0125,
+      "end": 145.525,
+      "start_char": 2248,
+      "end_char": 2253
+    },
+    {
+      "text": "with",
+      "start": 145.5375,
+      "end": 145.7125,
+      "start_char": 2254,
+      "end_char": 2258
+    },
+    {
+      "text": "tangible",
+      "start": 145.725,
+      "end": 146.3375,
+      "start_char": 2259,
+      "end_char": 2267
+    },
+    {
+      "text": "or",
+      "start": 146.35,
+      "end": 146.475,
+      "start_char": 2268,
+      "end_char": 2270
+    },
+    {
+      "text": "external",
+      "start": 146.4875,
+      "end": 146.975,
+      "start_char": 2271,
+      "end_char": 2279
+    },
+    {
+      "text": "reinforcement",
+      "start": 146.9875,
+      "end": 147.8625,
+      "start_char": 2280,
+      "end_char": 2293
+    },
+    {
+      "text": "Stimuli",
+      "start": 148.725,
+      "end": 149.375,
+      "start_char": 2295,
+      "end_char": 2302
+    },
+    {
+      "text": "presented",
+      "start": 149.3875,
+      "end": 149.9375,
+      "start_char": 2303,
+      "end_char": 2312
+    },
+    {
+      "text": "are",
+      "start": 149.95,
+      "end": 150.0875,
+      "start_char": 2313,
+      "end_char": 2316
+    },
+    {
+      "text": "clear",
+      "start": 150.1,
+      "end": 150.55,
+      "start_char": 2317,
+      "end_char": 2322
+    },
+    {
+      "text": "and",
+      "start": 150.5625,
+      "end": 150.7,
+      "start_char": 2323,
+      "end_char": 2326
+    },
+    {
+      "text": "relatively",
+      "start": 150.7125,
+      "end": 151.275,
+      "start_char": 2327,
+      "end_char": 2337
+    },
+    {
+      "text": "consistent",
+      "start": 151.2875,
+      "end": 152.0125,
+      "start_char": 2338,
+      "end_char": 2348
+    },
+    {
+      "text": "The",
+      "start": 152.875,
+      "end": 153.0375,
+      "start_char": 2350,
+      "end_char": 2353
+    },
+    {
+      "text": "child",
+      "start": 153.05,
+      "end": 153.4625,
+      "start_char": 2354,
+      "end_char": 2359
+    },
+    {
+      "text": "is",
+      "start": 153.475,
+      "end": 153.575,
+      "start_char": 2360,
+      "end_char": 2362
+    },
+    {
+      "text": "given",
+      "start": 153.5875,
+      "end": 153.8625,
+      "start_char": 2363,
+      "end_char": 2368
+    },
+    {
+      "text": "rewards",
+      "start": 153.875,
+      "end": 154.4125,
+      "start_char": 2369,
+      "end_char": 2376
+    },
+    {
+      "text": "only",
+      "start": 154.425,
+      "end": 154.6875,
+      "start_char": 2377,
+      "end_char": 2381
+    },
+    {
+      "text": "for",
+      "start": 154.7,
+      "end": 154.85,
+      "start_char": 2382,
+      "end_char": 2385
+    },
+    {
+      "text": "behaviors",
+      "start": 154.8625,
+      "end": 155.45,
+      "start_char": 2386,
+      "end_char": 2395
+    },
+    {
+      "text": "in",
+      "start": 155.4625,
+      "end": 155.6375,
+      "start_char": 2396,
+      "end_char": 2398
+    },
+    {
+      "text": "response",
+      "start": 155.65,
+      "end": 156.1625,
+      "start_char": 2399,
+      "end_char": 2407
+    },
+    {
+      "text": "to",
+      "start": 156.175,
+      "end": 156.2625,
+      "start_char": 2408,
+      "end_char": 2410
+    },
+    {
+      "text": "those",
+      "start": 156.275,
+      "end": 156.5125,
+      "start_char": 2411,
+      "end_char": 2416
+    },
+    {
+      "text": "stimuli",
+      "start": 156.525,
+      "end": 157.225,
+      "start_char": 2417,
+      "end_char": 2424
+    },
+    {
+      "text": "It",
+      "start": 158.1,
+      "end": 158.3125,
+      "start_char": 2426,
+      "end_char": 2428
+    },
+    {
+      "text": "teaches",
+      "start": 158.325,
+      "end": 158.7375,
+      "start_char": 2429,
+      "end_char": 2436
+    },
+    {
+      "text": "skills",
+      "start": 158.75,
+      "end": 159.1875,
+      "start_char": 2437,
+      "end_char": 2443
+    },
+    {
+      "text": "and",
+      "start": 159.2,
+      "end": 159.3,
+      "start_char": 2444,
+      "end_char": 2447
+    },
+    {
+      "text": "behaviors",
+      "start": 159.3125,
+      "end": 159.85,
+      "start_char": 2448,
+      "end_char": 2457
+    },
+    {
+      "text": "explicitly",
+      "start": 159.8625,
+      "end": 160.6375,
+      "start_char": 2458,
+      "end_char": 2468
+    },
+    {
+      "text": "cause-effect",
+      "start": 160.8,
+      "end": 161.4375,
+      "start_char": 2470,
+      "end_char": 2482
+    },
+    {
+      "text": "learning",
+      "start": 161.45,
+      "end": 161.875,
+      "start_char": 2483,
+      "end_char": 2491
+    },
+    {
+      "text": "The",
+      "start": 162.75,
+      "end": 162.8875,
+      "start_char": 2494,
+      "end_char": 2497
+    },
+    {
+      "text": "instructions",
+      "start": 162.9,
+      "end": 163.6375,
+      "start_char": 2498,
+      "end_char": 2510
+    },
+    {
+      "text": "given",
+      "start": 163.65,
+      "end": 163.9625,
+      "start_char": 2511,
+      "end_char": 2516
+    },
+    {
+      "text": "are",
+      "start": 163.975,
+      "end": 164.0875,
+      "start_char": 2517,
+      "end_char": 2520
+    },
+    {
+      "text": "simple",
+      "start": 164.1,
+      "end": 164.5625,
+      "start_char": 2521,
+      "end_char": 2527
+    },
+    {
+      "text": "concrete",
+      "start": 164.7375,
+      "end": 165.35,
+      "start_char": 2529,
+      "end_char": 2537
+    },
+    {
+      "text": "and",
+      "start": 165.6375,
+      "end": 165.775,
+      "start_char": 2539,
+      "end_char": 2542
+    },
+    {
+      "text": "clearly",
+      "start": 165.7875,
+      "end": 166.1875,
+      "start_char": 2543,
+      "end_char": 2550
+    },
+    {
+      "text": "provide",
+      "start": 166.2,
+      "end": 166.7375,
+      "start_char": 2551,
+      "end_char": 2558
+    },
+    {
+      "text": "only",
+      "start": 166.75,
+      "end": 167.025,
+      "start_char": 2559,
+      "end_char": 2563
+    },
+    {
+      "text": "the",
+      "start": 167.0375,
+      "end": 167.1375,
+      "start_char": 2564,
+      "end_char": 2567
+    },
+    {
+      "text": "most",
+      "start": 167.15,
+      "end": 167.425,
+      "start_char": 2568,
+      "end_char": 2572
+    },
+    {
+      "text": "salient",
+      "start": 167.4375,
+      "end": 167.9625,
+      "start_char": 2573,
+      "end_char": 2580
+    },
+    {
+      "text": "information",
+      "start": 167.975,
+      "end": 168.7125,
+      "start_char": 2581,
+      "end_char": 2592
+    },
+    {
+      "text": "It",
+      "start": 169.575,
+      "end": 169.7625,
+      "start_char": 2594,
+      "end_char": 2596
+    },
+    {
+      "text": "can",
+      "start": 169.775,
+      "end": 169.925,
+      "start_char": 2597,
+      "end_char": 2600
+    },
+    {
+      "text": "be",
+      "start": 169.9375,
+      "end": 170.0625,
+      "start_char": 2601,
+      "end_char": 2603
+    },
+    {
+      "text": "designed",
+      "start": 170.075,
+      "end": 170.55,
+      "start_char": 2604,
+      "end_char": 2612
+    },
+    {
+      "text": "to",
+      "start": 170.5625,
+      "end": 170.65,
+      "start_char": 2613,
+      "end_char": 2615
+    },
+    {
+      "text": "teach",
+      "start": 170.6625,
+      "end": 170.9875,
+      "start_char": 2616,
+      "end_char": 2621
+    },
+    {
+      "text": "perspective",
+      "start": 171.0,
+      "end": 171.5625,
+      "start_char": 2622,
+      "end_char": 2633
+    },
+    {
+      "text": "taking",
+      "start": 171.575,
+      "end": 171.9875,
+      "start_char": 2634,
+      "end_char": 2640
+    },
+    {
+      "text": "and",
+      "start": 172.0,
+      "end": 172.1125,
+      "start_char": 2641,
+      "end_char": 2644
+    },
+    {
+      "text": "social",
+      "start": 172.125,
+      "end": 172.5125,
+      "start_char": 2645,
+      "end_char": 2651
+    },
+    {
+      "text": "cognition",
+      "start": 172.525,
+      "end": 173.0875,
+      "start_char": 2652,
+      "end_char": 2661
+    },
+    {
+      "text": "skills",
+      "start": 173.1,
+      "end": 173.45,
+      "start_char": 2662,
+      "end_char": 2668
+    },
+    {
+      "text": "explicitly",
+      "start": 173.4625,
+      "end": 174.275,
+      "start_char": 2669,
+      "end_char": 2679
+    },
+    {
+      "text": "Cautions",
+      "start": 175.15,
+      "end": 175.675,
+      "start_char": 2681,
+      "end_char": 2689
+    },
+    {
+      "text": "Discrete",
+      "start": 175.6875,
+      "end": 176.1125,
+      "start_char": 2690,
+      "end_char": 2698
+    },
+    {
+      "text": "trial",
+      "start": 176.125,
+      "end": 176.5,
+      "start_char": 2699,
+      "end_char": 2704
+    },
+    {
+      "text": "training",
+      "start": 176.5125,
+      "end": 176.9,
+      "start_char": 2705,
+      "end_char": 2713
+    },
+    {
+      "text": "must",
+      "start": 176.9125,
+      "end": 177.15,
+      "start_char": 2714,
+      "end_char": 2718
+    },
+    {
+      "text": "be",
+      "start": 177.1625,
+      "end": 177.3125,
+      "start_char": 2719,
+      "end_char": 2721
+    },
+    {
+      "text": "individually",
+      "start": 177.325,
+      "end": 178.025,
+      "start_char": 2722,
+      "end_char": 2734
+    },
+    {
+      "text": "and",
+      "start": 178.0375,
+      "end": 178.2125,
+      "start_char": 2735,
+      "end_char": 2738
+    },
+    {
+      "text": "carefully",
+      "start": 178.225,
+      "end": 178.6625,
+      "start_char": 2739,
+      "end_char": 2748
+    },
+    {
+      "text": "applied",
+      "start": 178.675,
+      "end": 179.1375,
+      "start_char": 2749,
+      "end_char": 2756
+    },
+    {
+      "text": "since",
+      "start": 179.4875,
+      "end": 179.7125,
+      "start_char": 2758,
+      "end_char": 2763
+    },
+    {
+      "text": "each",
+      "start": 179.725,
+      "end": 180.025,
+      "start_char": 2764,
+      "end_char": 2768
+    },
+    {
+      "text": "child",
+      "start": 180.0375,
+      "end": 180.3875,
+      "start_char": 2769,
+      "end_char": 2774
+    },
+    {
+      "text": "with",
+      "start": 180.4,
+      "end": 180.525,
+      "start_char": 2775,
+      "end_char": 2779
+    },
+    {
+      "text": "autism",
+      "start": 180.5375,
+      "end": 181.1,
+      "start_char": 2780,
+      "end_char": 2786
+    },
+    {
+      "text": "exhibits",
+      "start": 181.1125,
+      "end": 181.6125,
+      "start_char": 2787,
+      "end_char": 2795
+    },
+    {
+      "text": "unique",
+      "start": 181.625,
+      "end": 181.975,
+      "start_char": 2796,
+      "end_char": 2802
+    },
+    {
+      "text": "combinations",
+      "start": 181.9875,
+      "end": 182.725,
+      "start_char": 2803,
+      "end_char": 2815
+    },
+    {
+      "text": "of",
+      "start": 182.7375,
+      "end": 182.8125,
+      "start_char": 2816,
+      "end_char": 2818
+    },
+    {
+      "text": "deficits",
+      "start": 182.825,
+      "end": 183.4125,
+      "start_char": 2819,
+      "end_char": 2827
+    },
+    {
+      "text": "and",
+      "start": 183.425,
+      "end": 183.625,
+      "start_char": 2828,
+      "end_char": 2831
+    },
+    {
+      "text": "excesses",
+      "start": 183.6375,
+      "end": 184.15,
+      "start_char": 2832,
+      "end_char": 2840
+    },
+    {
+      "text": "in",
+      "start": 184.1625,
+      "end": 184.2875,
+      "start_char": 2841,
+      "end_char": 2843
+    },
+    {
+      "text": "various",
+      "start": 184.3,
+      "end": 184.7125,
+      "start_char": 2844,
+      "end_char": 2851
+    },
+    {
+      "text": "areas",
+      "start": 184.725,
+      "end": 185.2,
+      "start_char": 2852,
+      "end_char": 2857
+    },
+    {
+      "text": "Lovaas",
+      "start": 185.4625,
+      "end": 185.925,
+      "start_char": 2859,
+      "end_char": 2865
+    },
+    {
+      "text": "1987",
+      "start": 186.1875,
+      "end": 187.2625,
+      "start_char": 2867,
+      "end_char": 2871
+    },
+    {
+      "text": "Smith",
+      "start": 187.525,
+      "end": 187.925,
+      "start_char": 2873,
+      "end_char": 2878
+    },
+    {
+      "text": "2001",
+      "start": 188.175,
+      "end": 189.1125,
+      "start_char": 2880,
+      "end_char": 2884
+    },
+    {
+      "text": "Furthermore",
+      "start": 189.9875,
+      "end": 190.7,
+      "start_char": 2887,
+      "end_char": 2898
+    },
+    {
+      "text": "caution",
+      "start": 190.9875,
+      "end": 191.4,
+      "start_char": 2900,
+      "end_char": 2907
+    },
+    {
+      "text": "must",
+      "start": 191.4125,
+      "end": 191.65,
+      "start_char": 2908,
+      "end_char": 2912
+    },
+    {
+      "text": "be",
+      "start": 191.6625,
+      "end": 191.8,
+      "start_char": 2913,
+      "end_char": 2915
+    },
+    {
+      "text": "exercised",
+      "start": 191.8125,
+      "end": 192.5625,
+      "start_char": 2916,
+      "end_char": 2925
+    },
+    {
+      "text": "not",
+      "start": 192.575,
+      "end": 192.8375,
+      "start_char": 2926,
+      "end_char": 2929
+    },
+    {
+      "text": "to",
+      "start": 192.85,
+      "end": 192.9625,
+      "start_char": 2930,
+      "end_char": 2932
+    },
+    {
+      "text": "adopt",
+      "start": 192.975,
+      "end": 193.3875,
+      "start_char": 2933,
+      "end_char": 2938
+    },
+    {
+      "text": "this",
+      "start": 193.4,
+      "end": 193.5625,
+      "start_char": 2939,
+      "end_char": 2943
+    },
+    {
+      "text": "strategy",
+      "start": 193.575,
+      "end": 194.1,
+      "start_char": 2944,
+      "end_char": 2952
+    },
+    {
+      "text": "to",
+      "start": 194.1125,
+      "end": 194.225,
+      "start_char": 2953,
+      "end_char": 2955
+    },
+    {
+      "text": "the",
+      "start": 194.2375,
+      "end": 194.3125,
+      "start_char": 2956,
+      "end_char": 2959
+    },
+    {
+      "text": "exclusion",
+      "start": 194.325,
+      "end": 195.0,
+      "start_char": 2960,
+      "end_char": 2969
+    },
+    {
+      "text": "of",
+      "start": 195.0125,
+      "end": 195.125,
+      "start_char": 2970,
+      "end_char": 2972
+    },
+    {
+      "text": "all",
+      "start": 195.1375,
+      "end": 195.425,
+      "start_char": 2973,
+      "end_char": 2976
+    },
+    {
+      "text": "other",
+      "start": 195.4375,
+      "end": 195.65,
+      "start_char": 2977,
+      "end_char": 2982
+    },
+    {
+      "text": "interventions",
+      "start": 195.6625,
+      "end": 196.5875,
+      "start_char": 2983,
+      "end_char": 2996
+    },
+    {
+      "text": "In",
+      "start": 197.4625,
+      "end": 197.65,
+      "start_char": 2998,
+      "end_char": 3000
+    },
+    {
+      "text": "addition",
+      "start": 197.6625,
+      "end": 198.15,
+      "start_char": 3001,
+      "end_char": 3009
+    },
+    {
+      "text": "if",
+      "start": 198.35,
+      "end": 198.475,
+      "start_char": 3011,
+      "end_char": 3013
+    },
+    {
+      "text": "discrete",
+      "start": 198.4875,
+      "end": 198.925,
+      "start_char": 3014,
+      "end_char": 3022
+    },
+    {
+      "text": "trial",
+      "start": 198.9375,
+      "end": 199.3,
+      "start_char": 3023,
+      "end_char": 3028
+    },
+    {
+      "text": "training",
+      "start": 199.3125,
+      "end": 199.7,
+      "start_char": 3029,
+      "end_char": 3037
+    },
+    {
+      "text": "is",
+      "start": 199.7125,
+      "end": 199.85,
+      "start_char": 3038,
+      "end_char": 3040
+    },
+    {
+      "text": "used",
+      "start": 199.8625,
+      "end": 200.2,
+      "start_char": 3041,
+      "end_char": 3045
+    },
+    {
+      "text": "as",
+      "start": 200.2125,
+      "end": 200.2875,
+      "start_char": 3046,
+      "end_char": 3048
+    },
+    {
+      "text": "an",
+      "start": 200.3,
+      "end": 200.3875,
+      "start_char": 3049,
+      "end_char": 3051
+    },
+    {
+      "text": "instructional",
+      "start": 200.4,
+      "end": 201.0125,
+      "start_char": 3052,
+      "end_char": 3065
+    },
+    {
+      "text": "strategy",
+      "start": 201.025,
+      "end": 201.625,
+      "start_char": 3066,
+      "end_char": 3074
+    },
+    {
+      "text": "generalization",
+      "start": 201.925,
+      "end": 202.7375,
+      "start_char": 3076,
+      "end_char": 3090
+    },
+    {
+      "text": "of",
+      "start": 202.75,
+      "end": 202.825,
+      "start_char": 3091,
+      "end_char": 3093
+    },
+    {
+      "text": "the",
+      "start": 202.8375,
+      "end": 202.925,
+      "start_char": 3094,
+      "end_char": 3097
+    },
+    {
+      "text": "skill",
+      "start": 202.9375,
+      "end": 203.3,
+      "start_char": 3098,
+      "end_char": 3103
+    },
+    {
+      "text": "must",
+      "start": 203.3125,
+      "end": 203.5875,
+      "start_char": 3104,
+      "end_char": 3108
+    },
+    {
+      "text": "be",
+      "start": 203.6,
+      "end": 203.7125,
+      "start_char": 3109,
+      "end_char": 3111
+    },
+    {
+      "text": "considered",
+      "start": 203.725,
+      "end": 204.375,
+      "start_char": 3112,
+      "end_char": 3122
+    },
+    {
+      "text": "Steps",
+      "start": 205.2375,
+      "end": 205.675,
+      "start_char": 3124,
+      "end_char": 3129
+    },
+    {
+      "text": "Instruction",
+      "start": 205.6875,
+      "end": 206.4375,
+      "start_char": 3130,
+      "end_char": 3141
+    },
+    {
+      "text": "A",
+      "start": 207.3125,
+      "end": 207.4625,
+      "start_char": 3144,
+      "end_char": 3145
+    },
+    {
+      "text": "teacher",
+      "start": 207.475,
+      "end": 207.9,
+      "start_char": 3146,
+      "end_char": 3153
+    },
+    {
+      "text": "gives",
+      "start": 207.9125,
+      "end": 208.1625,
+      "start_char": 3154,
+      "end_char": 3159
+    },
+    {
+      "text": "succinct",
+      "start": 208.175,
+      "end": 208.725,
+      "start_char": 3160,
+      "end_char": 3168
+    },
+    {
+      "text": "and",
+      "start": 208.7375,
+      "end": 208.8625,
+      "start_char": 3169,
+      "end_char": 3172
+    },
+    {
+      "text": "clear",
+      "start": 208.875,
+      "end": 209.1375,
+      "start_char": 3173,
+      "end_char": 3178
+    },
+    {
+      "text": "instruction",
+      "start": 209.15,
+      "end": 209.7375,
+      "start_char": 3179,
+      "end_char": 3190
+    },
+    {
+      "text": "to",
+      "start": 209.75,
+      "end": 209.8625,
+      "start_char": 3191,
+      "end_char": 3193
+    },
+    {
+      "text": "a",
+      "start": 209.875,
+      "end": 209.9625,
+      "start_char": 3194,
+      "end_char": 3195
+    },
+    {
+      "text": "student",
+      "start": 209.975,
+      "end": 210.5375,
+      "start_char": 3196,
+      "end_char": 3203
+    },
+    {
+      "text": "The",
+      "start": 211.4,
+      "end": 211.525,
+      "start_char": 3205,
+      "end_char": 3208
+    },
+    {
+      "text": "use",
+      "start": 211.5375,
+      "end": 211.85,
+      "start_char": 3209,
+      "end_char": 3212
+    },
+    {
+      "text": "of",
+      "start": 211.8625,
+      "end": 211.9625,
+      "start_char": 3213,
+      "end_char": 3215
+    },
+    {
+      "text": "few",
+      "start": 211.975,
+      "end": 212.225,
+      "start_char": 3216,
+      "end_char": 3219
+    },
+    {
+      "text": "and",
+      "start": 212.2375,
+      "end": 212.35,
+      "start_char": 3220,
+      "end_char": 3223
+    },
+    {
+      "text": "consistent",
+      "start": 212.3625,
+      "end": 212.9375,
+      "start_char": 3224,
+      "end_char": 3234
+    },
+    {
+      "text": "words",
+      "start": 212.95,
+      "end": 213.3,
+      "start_char": 3235,
+      "end_char": 3240
+    },
+    {
+      "text": "is",
+      "start": 213.3125,
+      "end": 213.425,
+      "start_char": 3241,
+      "end_char": 3243
+    },
+    {
+      "text": "preferred",
+      "start": 213.4375,
+      "end": 214.05,
+      "start_char": 3244,
+      "end_char": 3253
+    },
+    {
+      "text": "Prompting",
+      "start": 214.9125,
+      "end": 215.6125,
+      "start_char": 3255,
+      "end_char": 3264
+    },
+    {
+      "text": "Based",
+      "start": 216.475,
+      "end": 216.8625,
+      "start_char": 3267,
+      "end_char": 3272
+    },
+    {
+      "text": "on",
+      "start": 216.875,
+      "end": 216.9625,
+      "start_char": 3273,
+      "end_char": 3275
+    },
+    {
+      "text": "the",
+      "start": 216.975,
+      "end": 217.0625,
+      "start_char": 3276,
+      "end_char": 3279
+    },
+    {
+      "text": "student's",
+      "start": 217.075,
+      "end": 217.5375,
+      "start_char": 3280,
+      "end_char": 3289
+    },
+    {
+      "text": "learning",
+      "start": 217.55,
+      "end": 217.9,
+      "start_char": 3290,
+      "end_char": 3298
+    },
+    {
+      "text": "level",
+      "start": 217.9125,
+      "end": 218.275,
+      "start_char": 3299,
+      "end_char": 3304
+    },
+    {
+      "text": "and",
+      "start": 218.2875,
+      "end": 218.3875,
+      "start_char": 3305,
+      "end_char": 3308
+    },
+    {
+      "text": "the",
+      "start": 218.4,
+      "end": 218.4875,
+      "start_char": 3309,
+      "end_char": 3312
+    },
+    {
+      "text": "complexity",
+      "start": 218.5,
+      "end": 219.1375,
+      "start_char": 3313,
+      "end_char": 3323
+    },
+    {
+      "text": "of",
+      "start": 219.15,
+      "end": 219.2125,
+      "start_char": 3324,
+      "end_char": 3326
+    },
+    {
+      "text": "the",
+      "start": 219.225,
+      "end": 219.3125,
+      "start_char": 3327,
+      "end_char": 3330
+    },
+    {
+      "text": "task",
+      "start": 219.325,
+      "end": 219.8125,
+      "start_char": 3331,
+      "end_char": 3335
+    },
+    {
+      "text": "the",
+      "start": 220.125,
+      "end": 220.2375,
+      "start_char": 3337,
+      "end_char": 3340
+    },
+    {
+      "text": "teacher",
+      "start": 220.25,
+      "end": 220.6375,
+      "start_char": 3341,
+      "end_char": 3348
+    },
+    {
+      "text": "gives",
+      "start": 220.65,
+      "end": 220.8625,
+      "start_char": 3349,
+      "end_char": 3354
+    },
+    {
+      "text": "appropriate",
+      "start": 220.875,
+      "end": 221.475,
+      "start_char": 3355,
+      "end_char": 3366
+    },
+    {
+      "text": "prompts",
+      "start": 221.4875,
+      "end": 221.9,
+      "start_char": 3367,
+      "end_char": 3374
+    },
+    {
+      "text": "to",
+      "start": 221.9125,
+      "end": 222.0125,
+      "start_char": 3375,
+      "end_char": 3377
+    },
+    {
+      "text": "trigger",
+      "start": 222.025,
+      "end": 222.3625,
+      "start_char": 3378,
+      "end_char": 3385
+    },
+    {
+      "text": "the",
+      "start": 222.375,
+      "end": 222.4625,
+      "start_char": 3386,
+      "end_char": 3389
+    },
+    {
+      "text": "desired",
+      "start": 222.475,
+      "end": 222.925,
+      "start_char": 3390,
+      "end_char": 3397
+    },
+    {
+      "text": "response",
+      "start": 222.9375,
+      "end": 223.6375,
+      "start_char": 3398,
+      "end_char": 3406
+    },
+    {
+      "text": "Response",
+      "start": 224.5,
+      "end": 225.3625,
+      "start_char": 3408,
+      "end_char": 3416
+    },
+    {
+      "text": "The",
+      "start": 226.225,
+      "end": 226.4125,
+      "start_char": 3419,
+      "end_char": 3422
+    },
+    {
+      "text": "student",
+      "start": 226.425,
+      "end": 226.7875,
+      "start_char": 3423,
+      "end_char": 3430
+    },
+    {
+      "text": "responds",
+      "start": 226.8,
+      "end": 227.3,
+      "start_char": 3431,
+      "end_char": 3439
+    },
+    {
+      "text": "to",
+      "start": 227.3125,
+      "end": 227.4,
+      "start_char": 3440,
+      "end_char": 3442
+    },
+    {
+      "text": "the",
+      "start": 227.4125,
+      "end": 227.525,
+      "start_char": 3443,
+      "end_char": 3446
+    },
+    {
+      "text": "teaching",
+      "start": 227.5375,
+      "end": 227.9875,
+      "start_char": 3447,
+      "end_char": 3455
+    },
+    {
+      "text": "and",
+      "start": 228.0,
+      "end": 228.0875,
+      "start_char": 3456,
+      "end_char": 3459
+    },
+    {
+      "text": "prompting",
+      "start": 228.1,
+      "end": 228.725,
+      "start_char": 3460,
+      "end_char": 3469
+    },
+    {
+      "text": "The",
+      "start": 229.5875,
+      "end": 229.7625,
+      "start_char": 3471,
+      "end_char": 3474
+    },
+    {
+      "text": "responding",
+      "start": 229.775,
+      "end": 230.35,
+      "start_char": 3475,
+      "end_char": 3485
+    },
+    {
+      "text": "behavior",
+      "start": 230.3625,
+      "end": 230.8625,
+      "start_char": 3486,
+      "end_char": 3494
+    },
+    {
+      "text": "must",
+      "start": 230.875,
+      "end": 231.15,
+      "start_char": 3495,
+      "end_char": 3499
+    },
+    {
+      "text": "be",
+      "start": 231.1625,
+      "end": 231.275,
+      "start_char": 3500,
+      "end_char": 3502
+    },
+    {
+      "text": "measurable",
+      "start": 231.2875,
+      "end": 231.925,
+      "start_char": 3503,
+      "end_char": 3513
+    },
+    {
+      "text": "Consequence",
+      "start": 232.8,
+      "end": 233.7625,
+      "start_char": 3515,
+      "end_char": 3526
+    },
+    {
+      "text": "The",
+      "start": 234.625,
+      "end": 234.8,
+      "start_char": 3529,
+      "end_char": 3532
+    },
+    {
+      "text": "teacher",
+      "start": 234.8125,
+      "end": 235.225,
+      "start_char": 3533,
+      "end_char": 3540
+    },
+    {
+      "text": "gives",
+      "start": 235.2375,
+      "end": 235.4625,
+      "start_char": 3541,
+      "end_char": 3546
+    },
+    {
+      "text": "immediate",
+      "start": 235.475,
+      "end": 235.95,
+      "start_char": 3547,
+      "end_char": 3556
+    },
+    {
+      "text": "feedback",
+      "start": 235.9625,
+      "end": 236.5125,
+      "start_char": 3557,
+      "end_char": 3565
+    },
+    {
+      "text": "and",
+      "start": 236.525,
+      "end": 236.6375,
+      "start_char": 3566,
+      "end_char": 3569
+    },
+    {
+      "text": "reinforcement",
+      "start": 236.65,
+      "end": 237.4875,
+      "start_char": 3570,
+      "end_char": 3583
+    },
+    {
+      "text": "after",
+      "start": 237.5,
+      "end": 237.7625,
+      "start_char": 3584,
+      "end_char": 3589
+    },
+    {
+      "text": "the",
+      "start": 237.775,
+      "end": 237.875,
+      "start_char": 3590,
+      "end_char": 3593
+    },
+    {
+      "text": "student's",
+      "start": 237.8875,
+      "end": 238.2875,
+      "start_char": 3594,
+      "end_char": 3603
+    },
+    {
+      "text": "response",
+      "start": 238.3,
+      "end": 238.85,
+      "start_char": 3604,
+      "end_char": 3612
+    },
+    {
+      "text": "to",
+      "start": 238.8625,
+      "end": 238.975,
+      "start_char": 3613,
+      "end_char": 3615
+    },
+    {
+      "text": "enhance",
+      "start": 238.9875,
+      "end": 239.4125,
+      "start_char": 3616,
+      "end_char": 3623
+    },
+    {
+      "text": "skill",
+      "start": 239.425,
+      "end": 239.7625,
+      "start_char": 3624,
+      "end_char": 3629
+    },
+    {
+      "text": "acquisition",
+      "start": 239.775,
+      "end": 240.525,
+      "start_char": 3630,
+      "end_char": 3641
+    },
+    {
+      "text": "Inter-trial",
+      "start": 241.4,
+      "end": 242.1,
+      "start_char": 3643,
+      "end_char": 3654
+    },
+    {
+      "text": "interval",
+      "start": 242.1125,
+      "end": 242.675,
+      "start_char": 3655,
+      "end_char": 3663
+    },
+    {
+      "text": "A",
+      "start": 243.55,
+      "end": 243.6875,
+      "start_char": 3666,
+      "end_char": 3667
+    },
+    {
+      "text": "clear",
+      "start": 243.7,
+      "end": 244.025,
+      "start_char": 3668,
+      "end_char": 3673
+    },
+    {
+      "text": "wait",
+      "start": 244.0375,
+      "end": 244.275,
+      "start_char": 3674,
+      "end_char": 3678
+    },
+    {
+      "text": "time",
+      "start": 244.2875,
+      "end": 244.575,
+      "start_char": 3679,
+      "end_char": 3683
+    },
+    {
+      "text": "is",
+      "start": 244.5875,
+      "end": 244.6875,
+      "start_char": 3684,
+      "end_char": 3686
+    },
+    {
+      "text": "inserted",
+      "start": 244.7,
+      "end": 245.2375,
+      "start_char": 3687,
+      "end_char": 3695
+    },
+    {
+      "text": "after",
+      "start": 245.25,
+      "end": 245.575,
+      "start_char": 3696,
+      "end_char": 3701
+    },
+    {
+      "text": "a",
+      "start": 245.5875,
+      "end": 245.65,
+      "start_char": 3702,
+      "end_char": 3703
+    },
+    {
+      "text": "trial",
+      "start": 245.6625,
+      "end": 246.05,
+      "start_char": 3704,
+      "end_char": 3709
+    },
+    {
+      "text": "completion",
+      "start": 246.0625,
+      "end": 246.6625,
+      "start_char": 3710,
+      "end_char": 3720
+    },
+    {
+      "text": "before",
+      "start": 246.675,
+      "end": 247.025,
+      "start_char": 3721,
+      "end_char": 3727
+    },
+    {
+      "text": "moving",
+      "start": 247.0375,
+      "end": 247.375,
+      "start_char": 3728,
+      "end_char": 3734
+    },
+    {
+      "text": "on",
+      "start": 247.3875,
+      "end": 247.5875,
+      "start_char": 3735,
+      "end_char": 3737
+    },
+    {
+      "text": "to",
+      "start": 247.6,
+      "end": 247.675,
+      "start_char": 3738,
+      "end_char": 3740
+    },
+    {
+      "text": "the",
+      "start": 247.6875,
+      "end": 247.7875,
+      "start_char": 3741,
+      "end_char": 3744
+    },
+    {
+      "text": "next",
+      "start": 247.8,
+      "end": 248.1,
+      "start_char": 3745,
+      "end_char": 3749
+    },
+    {
+      "text": "trial",
+      "start": 248.1125,
+      "end": 248.5875,
+      "start_char": 3750,
+      "end_char": 3755
+    },
+    {
+      "text": "Brief",
+      "start": 249.4625,
+      "end": 249.775,
+      "start_char": 3757,
+      "end_char": 3762
+    },
+    {
+      "text": "example",
+      "start": 249.7875,
+      "end": 250.2875,
+      "start_char": 3763,
+      "end_char": 3770
+    },
+    {
+      "text": "To",
+      "start": 250.3,
+      "end": 250.3875,
+      "start_char": 3771,
+      "end_char": 3773
+    },
+    {
+      "text": "teach",
+      "start": 250.4,
+      "end": 250.75,
+      "start_char": 3774,
+      "end_char": 3779
+    },
+    {
+      "text": "4-year-old",
+      "start": 250.7625,
+      "end": 251.3625,
+      "start_char": 3780,
+      "end_char": 3790
+    },
+    {
+      "text": "Jin",
+      "start": 251.375,
+      "end": 251.7,
+      "start_char": 3791,
+      "end_char": 3794
+    },
+    {
+      "text": "to",
+      "start": 251.7125,
+      "end": 251.8375,
+      "start_char": 3795,
+      "end_char": 3797
+    },
+    {
+      "text": "identify",
+      "start": 251.85,
+      "end": 252.425,
+      "start_char": 3798,
+      "end_char": 3806
+    },
+    {
+      "text": "colors",
+      "start": 252.4375,
+      "end": 252.9125,
+      "start_char": 3807,
+      "end_char": 3813
+    },
+    {
+      "text": "Jin",
+      "start": 253.225,
+      "end": 253.575,
+      "start_char": 3815,
+      "end_char": 3818
+    },
+    {
+      "text": "and",
+      "start": 253.65,
+      "end": 253.6875,
+      "start_char": 3819,
+      "end_char": 3822
+    },
+    {
+      "text": "her",
+      "start": 253.7,
+      "end": 253.825,
+      "start_char": 3823,
+      "end_char": 3826
+    },
+    {
+      "text": "teacher",
+      "start": 253.8375,
+      "end": 254.2875,
+      "start_char": 3827,
+      "end_char": 3834
+    },
+    {
+      "text": "sat",
+      "start": 254.3,
+      "end": 254.575,
+      "start_char": 3835,
+      "end_char": 3838
+    },
+    {
+      "text": "down",
+      "start": 254.5875,
+      "end": 254.875,
+      "start_char": 3839,
+      "end_char": 3843
+    },
+    {
+      "text": "at",
+      "start": 254.8875,
+      "end": 254.9625,
+      "start_char": 3844,
+      "end_char": 3846
+    },
+    {
+      "text": "a",
+      "start": 254.975,
+      "end": 255.025,
+      "start_char": 3847,
+      "end_char": 3848
+    },
+    {
+      "text": "table",
+      "start": 255.0375,
+      "end": 255.45,
+      "start_char": 3849,
+      "end_char": 3854
+    },
+    {
+      "text": "in",
+      "start": 255.4625,
+      "end": 255.5875,
+      "start_char": 3855,
+      "end_char": 3857
+    },
+    {
+      "text": "a",
+      "start": 255.6,
+      "end": 255.6625,
+      "start_char": 3858,
+      "end_char": 3859
+    },
+    {
+      "text": "quiet",
+      "start": 255.675,
+      "end": 256.075,
+      "start_char": 3860,
+      "end_char": 3865
+    },
+    {
+      "text": "corner",
+      "start": 256.0875,
+      "end": 256.4375,
+      "start_char": 3866,
+      "end_char": 3872
+    },
+    {
+      "text": "of",
+      "start": 256.45,
+      "end": 256.525,
+      "start_char": 3873,
+      "end_char": 3875
+    },
+    {
+      "text": "the",
+      "start": 256.5375,
+      "end": 256.6125,
+      "start_char": 3876,
+      "end_char": 3879
+    },
+    {
+      "text": "classroom",
+      "start": 256.625,
+      "end": 257.2875,
+      "start_char": 3880,
+      "end_char": 3889
+    },
+    {
+      "text": "After",
+      "start": 258.1625,
+      "end": 258.5375,
+      "start_char": 3891,
+      "end_char": 3896
+    },
+    {
+      "text": "getting",
+      "start": 258.55,
+      "end": 258.85,
+      "start_char": 3897,
+      "end_char": 3904
+    },
+    {
+      "text": "Jin's",
+      "start": 258.8625,
+      "end": 259.1375,
+      "start_char": 3905,
+      "end_char": 3910
+    },
+    {
+      "text": "attention",
+      "start": 259.15,
+      "end": 259.5875,
+      "start_char": 3911,
+      "end_char": 3920
+    },
+    {
+      "text": "on",
+      "start": 259.6,
+      "end": 259.7625,
+      "start_char": 3921,
+      "end_char": 3923
+    },
+    {
+      "text": "task",
+      "start": 259.775,
+      "end": 260.25,
+      "start_char": 3924,
+      "end_char": 3928
+    },
+    {
+      "text": "the",
+      "start": 260.4625,
+      "end": 260.55,
+      "start_char": 3930,
+      "end_char": 3933
+    },
+    {
+      "text": "teacher",
+      "start": 260.5625,
+      "end": 260.9375,
+      "start_char": 3934,
+      "end_char": 3941
+    },
+    {
+      "text": "presented",
+      "start": 260.95,
+      "end": 261.4375,
+      "start_char": 3942,
+      "end_char": 3951
+    },
+    {
+      "text": "Jin's",
+      "start": 261.45,
+      "end": 261.775,
+      "start_char": 3952,
+      "end_char": 3957
+    },
+    {
+      "text": "penny",
+      "start": 261.7875,
+      "end": 262.0625,
+      "start_char": 3959,
+      "end_char": 3964
+    },
+    {
+      "text": "board",
+      "start": 262.075,
+      "end": 262.4125,
+      "start_char": 3965,
+      "end_char": 3970
+    },
+    {
+      "text": "which",
+      "start": 262.675,
+      "end": 262.9,
+      "start_char": 3973,
+      "end_char": 3978
+    },
+    {
+      "text": "Jin",
+      "start": 262.9125,
+      "end": 263.2,
+      "start_char": 3979,
+      "end_char": 3982
+    },
+    {
+      "text": "was",
+      "start": 263.2125,
+      "end": 263.375,
+      "start_char": 3983,
+      "end_char": 3986
+    },
+    {
+      "text": "familiar",
+      "start": 263.3875,
+      "end": 263.825,
+      "start_char": 3987,
+      "end_char": 3995
+    },
+    {
+      "text": "with",
+      "start": 263.8375,
+      "end": 264.125,
+      "start_char": 3996,
+      "end_char": 4000
+    },
+    {
+      "text": "and",
+      "start": 264.45,
+      "end": 264.6,
+      "start_char": 4002,
+      "end_char": 4005
+    },
+    {
+      "text": "told",
+      "start": 264.6125,
+      "end": 264.85,
+      "start_char": 4006,
+      "end_char": 4010
+    },
+    {
+      "text": "her",
+      "start": 264.8625,
+      "end": 264.9875,
+      "start_char": 4011,
+      "end_char": 4014
+    },
+    {
+      "text": "clearly",
+      "start": 265.0,
+      "end": 265.4125,
+      "start_char": 4015,
+      "end_char": 4022
+    },
+    {
+      "text": "that",
+      "start": 265.425,
+      "end": 265.5625,
+      "start_char": 4023,
+      "end_char": 4027
+    },
+    {
+      "text": "if",
+      "start": 265.575,
+      "end": 265.65,
+      "start_char": 4028,
+      "end_char": 4030
+    },
+    {
+      "text": "she",
+      "start": 265.6625,
+      "end": 265.7875,
+      "start_char": 4031,
+      "end_char": 4034
+    },
+    {
+      "text": "got",
+      "start": 265.8,
+      "end": 266.025,
+      "start_char": 4035,
+      "end_char": 4038
+    },
+    {
+      "text": "five",
+      "start": 266.0375,
+      "end": 266.35,
+      "start_char": 4039,
+      "end_char": 4043
+    },
+    {
+      "text": "correct",
+      "start": 266.3625,
+      "end": 266.7625,
+      "start_char": 4044,
+      "end_char": 4051
+    },
+    {
+      "text": "answers",
+      "start": 266.775,
+      "end": 267.2625,
+      "start_char": 4052,
+      "end_char": 4059
+    },
+    {
+      "text": "she",
+      "start": 267.45,
+      "end": 267.625,
+      "start_char": 4061,
+      "end_char": 4064
+    },
+    {
+      "text": "would",
+      "start": 267.6375,
+      "end": 267.8125,
+      "start_char": 4065,
+      "end_char": 4070
+    },
+    {
+      "text": "be",
+      "start": 267.825,
+      "end": 268.15,
+      "start_char": 4071,
+      "end_char": 4073
+    },
+    {
+      "text": "allowed",
+      "start": 269.14,
+      "end": 269.5775,
+      "start_char": 4074,
+      "end_char": 4081
+    },
+    {
+      "text": "to",
+      "start": 269.59,
+      "end": 269.69,
+      "start_char": 4082,
+      "end_char": 4084
+    },
+    {
+      "text": "choose",
+      "start": 269.7025,
+      "end": 270.015,
+      "start_char": 4085,
+      "end_char": 4091
+    },
+    {
+      "text": "a",
+      "start": 270.0275,
+      "end": 270.0775,
+      "start_char": 4092,
+      "end_char": 4093
+    },
+    {
+      "text": "desired",
+      "start": 270.09,
+      "end": 270.5275,
+      "start_char": 4094,
+      "end_char": 4101
+    },
+    {
+      "text": "activity",
+      "start": 270.54,
+      "end": 271.2025,
+      "start_char": 4102,
+      "end_char": 4110
+    },
+    {
+      "text": "Three",
+      "start": 272.0775,
+      "end": 272.3775,
+      "start_char": 4112,
+      "end_char": 4117
+    },
+    {
+      "text": "cards",
+      "start": 272.39,
+      "end": 272.7775,
+      "start_char": 4118,
+      "end_char": 4123
+    },
+    {
+      "text": "of",
+      "start": 272.79,
+      "end": 272.865,
+      "start_char": 4124,
+      "end_char": 4126
+    },
+    {
+      "text": "different",
+      "start": 272.8775,
+      "end": 273.265,
+      "start_char": 4127,
+      "end_char": 4136
+    },
+    {
+      "text": "colors",
+      "start": 273.2775,
+      "end": 273.6775,
+      "start_char": 4137,
+      "end_char": 4143
+    },
+    {
+      "text": "were",
+      "start": 273.69,
+      "end": 273.8025,
+      "start_char": 4144,
+      "end_char": 4148
+    },
+    {
+      "text": "presented",
+      "start": 273.815,
+      "end": 274.29,
+      "start_char": 4149,
+      "end_char": 4158
+    },
+    {
+      "text": "on",
+      "start": 274.3025,
+      "end": 274.415,
+      "start_char": 4159,
+      "end_char": 4161
+    },
+    {
+      "text": "the",
+      "start": 274.4275,
+      "end": 274.5025,
+      "start_char": 4162,
+      "end_char": 4165
+    },
+    {
+      "text": "table",
+      "start": 274.515,
+      "end": 274.99,
+      "start_char": 4166,
+      "end_char": 4171
+    },
+    {
+      "text": "The",
+      "start": 275.8525,
+      "end": 276.015,
+      "start_char": 4173,
+      "end_char": 4176
+    },
+    {
+      "text": "teacher",
+      "start": 276.0275,
+      "end": 276.4275,
+      "start_char": 4177,
+      "end_char": 4184
+    },
+    {
+      "text": "stated",
+      "start": 276.44,
+      "end": 276.8025,
+      "start_char": 4185,
+      "end_char": 4191
+    },
+    {
+      "text": "the",
+      "start": 276.815,
+      "end": 276.9025,
+      "start_char": 4192,
+      "end_char": 4195
+    },
+    {
+      "text": "color",
+      "start": 276.915,
+      "end": 277.2275,
+      "start_char": 4196,
+      "end_char": 4201
+    },
+    {
+      "text": "of",
+      "start": 277.24,
+      "end": 277.3275,
+      "start_char": 4202,
+      "end_char": 4204
+    },
+    {
+      "text": "each",
+      "start": 277.34,
+      "end": 277.59,
+      "start_char": 4205,
+      "end_char": 4209
+    },
+    {
+      "text": "card",
+      "start": 277.6025,
+      "end": 277.9775,
+      "start_char": 4210,
+      "end_char": 4214
+    },
+    {
+      "text": "while",
+      "start": 277.99,
+      "end": 278.1775,
+      "start_char": 4215,
+      "end_char": 4220
+    },
+    {
+      "text": "pointing",
+      "start": 278.19,
+      "end": 278.6025,
+      "start_char": 4221,
+      "end_char": 4229
+    },
+    {
+      "text": "to",
+      "start": 278.615,
+      "end": 278.69,
+      "start_char": 4230,
+      "end_char": 4232
+    },
+    {
+      "text": "the",
+      "start": 278.7025,
+      "end": 278.8025,
+      "start_char": 4233,
+      "end_char": 4236
+    },
+    {
+      "text": "card",
+      "start": 278.815,
+      "end": 279.2775,
+      "start_char": 4237,
+      "end_char": 4241
+    },
+    {
+      "text": "After",
+      "start": 280.14,
+      "end": 280.515,
+      "start_char": 4243,
+      "end_char": 4248
+    },
+    {
+      "text": "repeating",
+      "start": 280.5275,
+      "end": 280.965,
+      "start_char": 4249,
+      "end_char": 4258
+    },
+    {
+      "text": "this",
+      "start": 280.9775,
+      "end": 281.14,
+      "start_char": 4259,
+      "end_char": 4263
+    },
+    {
+      "text": "sequence",
+      "start": 281.1525,
+      "end": 281.69,
+      "start_char": 4264,
+      "end_char": 4272
+    },
+    {
+      "text": "the",
+      "start": 281.9525,
+      "end": 282.065,
+      "start_char": 4274,
+      "end_char": 4277
+    },
+    {
+      "text": "teacher",
+      "start": 282.0775,
+      "end": 282.44,
+      "start_char": 4278,
+      "end_char": 4285
+    },
+    {
+      "text": "scrambled",
+      "start": 282.4525,
+      "end": 282.915,
+      "start_char": 4286,
+      "end_char": 4295
+    },
+    {
+      "text": "the",
+      "start": 282.9275,
+      "end": 283.015,
+      "start_char": 4296,
+      "end_char": 4299
+    },
+    {
+      "text": "three",
+      "start": 283.0275,
+      "end": 283.3025,
+      "start_char": 4300,
+      "end_char": 4305
+    },
+    {
+      "text": "cards",
+      "start": 283.315,
+      "end": 283.74,
+      "start_char": 4306,
+      "end_char": 4311
+    },
+    {
+      "text": "and",
+      "start": 283.7525,
+      "end": 283.94,
+      "start_char": 4312,
+      "end_char": 4315
+    },
+    {
+      "text": "put",
+      "start": 283.9525,
+      "end": 284.1525,
+      "start_char": 4316,
+      "end_char": 4319
+    },
+    {
+      "text": "them",
+      "start": 284.165,
+      "end": 284.3025,
+      "start_char": 4320,
+      "end_char": 4324
+    },
+    {
+      "text": "on",
+      "start": 284.315,
+      "end": 284.4275,
+      "start_char": 4325,
+      "end_char": 4327
+    },
+    {
+      "text": "the",
+      "start": 284.44,
+      "end": 284.515,
+      "start_char": 4328,
+      "end_char": 4331
+    },
+    {
+      "text": "table",
+      "start": 284.5275,
+      "end": 284.865,
+      "start_char": 4332,
+      "end_char": 4337
+    },
+    {
+      "text": "for",
+      "start": 284.8775,
+      "end": 285.0275,
+      "start_char": 4338,
+      "end_char": 4341
+    },
+    {
+      "text": "Jin",
+      "start": 285.04,
+      "end": 285.34,
+      "start_char": 4342,
+      "end_char": 4345
+    },
+    {
+      "text": "to",
+      "start": 285.3525,
+      "end": 285.4525,
+      "start_char": 4346,
+      "end_char": 4348
+    },
+    {
+      "text": "practice",
+      "start": 285.465,
+      "end": 286.1525,
+      "start_char": 4349,
+      "end_char": 4357
+    },
+    {
+      "text": "The",
+      "start": 287.015,
+      "end": 287.19,
+      "start_char": 4359,
+      "end_char": 4362
+    },
+    {
+      "text": "teacher",
+      "start": 287.2025,
+      "end": 287.5525,
+      "start_char": 4363,
+      "end_char": 4370
+    },
+    {
+      "text": "pointed",
+      "start": 287.565,
+      "end": 287.915,
+      "start_char": 4371,
+      "end_char": 4378
+    },
+    {
+      "text": "to",
+      "start": 287.9275,
+      "end": 288.04,
+      "start_char": 4379,
+      "end_char": 4381
+    },
+    {
+      "text": "a",
+      "start": 288.0525,
+      "end": 288.1275,
+      "start_char": 4382,
+      "end_char": 4383
+    },
+    {
+      "text": "card",
+      "start": 288.14,
+      "end": 288.4775,
+      "start_char": 4384,
+      "end_char": 4388
+    },
+    {
+      "text": "and",
+      "start": 288.49,
+      "end": 288.615,
+      "start_char": 4389,
+      "end_char": 4392
+    },
+    {
+      "text": "said",
+      "start": 288.6275,
+      "end": 288.9775,
+      "start_char": 4393,
+      "end_char": 4397
+    },
+    {
+      "text": "What",
+      "start": 289.1775,
+      "end": 289.4025,
+      "start_char": 4400,
+      "end_char": 4404
+    },
+    {
+      "text": "color",
+      "start": 289.415,
+      "end": 289.715,
+      "start_char": 4405,
+      "end_char": 4410
+    },
+    {
+      "text": "is",
+      "start": 289.7275,
+      "end": 289.8775,
+      "start_char": 4411,
+      "end_char": 4413
+    },
+    {
+      "text": "it",
+      "start": 289.89,
+      "end": 290.1775,
+      "start_char": 4414,
+      "end_char": 4416
+    },
+    {
+      "text": "Waiting",
+      "start": 291.04,
+      "end": 291.465,
+      "start_char": 4419,
+      "end_char": 4426
+    },
+    {
+      "text": "a",
+      "start": 291.4775,
+      "end": 291.54,
+      "start_char": 4427,
+      "end_char": 4428
+    },
+    {
+      "text": "couple",
+      "start": 291.5525,
+      "end": 291.865,
+      "start_char": 4429,
+      "end_char": 4435
+    },
+    {
+      "text": "of",
+      "start": 291.8775,
+      "end": 291.9775,
+      "start_char": 4436,
+      "end_char": 4438
+    },
+    {
+      "text": "seconds",
+      "start": 291.99,
+      "end": 292.515,
+      "start_char": 4439,
+      "end_char": 4446
+    },
+    {
+      "text": "the",
+      "start": 292.715,
+      "end": 292.8275,
+      "start_char": 4448,
+      "end_char": 4451
+    },
+    {
+      "text": "teacher",
+      "start": 292.84,
+      "end": 293.2275,
+      "start_char": 4452,
+      "end_char": 4459
+    },
+    {
+      "text": "prompted",
+      "start": 293.24,
+      "end": 293.69,
+      "start_char": 4460,
+      "end_char": 4468
+    },
+    {
+      "text": "Jin",
+      "start": 293.7025,
+      "end": 294.0275,
+      "start_char": 4469,
+      "end_char": 4472
+    },
+    {
+      "text": "by",
+      "start": 294.04,
+      "end": 294.2025,
+      "start_char": 4473,
+      "end_char": 4475
+    },
+    {
+      "text": "exaggerating",
+      "start": 294.215,
+      "end": 294.94,
+      "start_char": 4476,
+      "end_char": 4488
+    },
+    {
+      "text": "the",
+      "start": 294.9525,
+      "end": 295.0525,
+      "start_char": 4489,
+      "end_char": 4492
+    },
+    {
+      "text": "first",
+      "start": 295.065,
+      "end": 295.3775,
+      "start_char": 4493,
+      "end_char": 4498
+    },
+    {
+      "text": "sound",
+      "start": 295.39,
+      "end": 295.69,
+      "start_char": 4499,
+      "end_char": 4504
+    },
+    {
+      "text": "of",
+      "start": 295.7025,
+      "end": 295.79,
+      "start_char": 4505,
+      "end_char": 4507
+    },
+    {
+      "text": "blue",
+      "start": 295.8025,
+      "end": 296.0525,
+      "start_char": 4509,
+      "end_char": 4513
+    },
+    {
+      "text": "for",
+      "start": 296.24,
+      "end": 296.4025,
+      "start_char": 4516,
+      "end_char": 4519
+    },
+    {
+      "text": "example",
+      "start": 296.415,
+      "end": 296.99,
+      "start_char": 4520,
+      "end_char": 4527
+    },
+    {
+      "text": "When",
+      "start": 297.8525,
+      "end": 298.115,
+      "start_char": 4529,
+      "end_char": 4533
+    },
+    {
+      "text": "Jin",
+      "start": 298.1275,
+      "end": 298.4275,
+      "start_char": 4534,
+      "end_char": 4537
+    },
+    {
+      "text": "gave",
+      "start": 298.44,
+      "end": 298.69,
+      "start_char": 4538,
+      "end_char": 4542
+    },
+    {
+      "text": "the",
+      "start": 298.7025,
+      "end": 298.79,
+      "start_char": 4543,
+      "end_char": 4546
+    },
+    {
+      "text": "right",
+      "start": 298.8025,
+      "end": 299.0275,
+      "start_char": 4547,
+      "end_char": 4552
+    },
+    {
+      "text": "answer",
+      "start": 299.04,
+      "end": 299.49,
+      "start_char": 4553,
+      "end_char": 4559
+    },
+    {
+      "text": "she",
+      "start": 299.7275,
+      "end": 299.8525,
+      "start_char": 4561,
+      "end_char": 4564
+    },
+    {
+      "text": "received",
+      "start": 299.865,
+      "end": 300.3025,
+      "start_char": 4565,
+      "end_char": 4573
+    },
+    {
+      "text": "a",
+      "start": 300.315,
+      "end": 300.3775,
+      "start_char": 4574,
+      "end_char": 4575
+    },
+    {
+      "text": "penny",
+      "start": 300.39,
+      "end": 300.74,
+      "start_char": 4577,
+      "end_char": 4582
+    },
+    {
+      "text": "and",
+      "start": 300.7525,
+      "end": 300.8525,
+      "start_char": 4584,
+      "end_char": 4587
+    },
+    {
+      "text": "verbal",
+      "start": 300.865,
+      "end": 301.2025,
+      "start_char": 4588,
+      "end_char": 4594
+    },
+    {
+      "text": "praise",
+      "start": 301.215,
+      "end": 301.59,
+      "start_char": 4595,
+      "end_char": 4601
+    },
+    {
+      "text": "from",
+      "start": 301.6025,
+      "end": 301.74,
+      "start_char": 4602,
+      "end_char": 4606
+    },
+    {
+      "text": "the",
+      "start": 301.7525,
+      "end": 301.8275,
+      "start_char": 4607,
+      "end_char": 4610
+    },
+    {
+      "text": "teacher",
+      "start": 301.84,
+      "end": 302.365,
+      "start_char": 4611,
+      "end_char": 4618
+    },
+    {
+      "text": "The",
+      "start": 303.2275,
+      "end": 303.39,
+      "start_char": 4620,
+      "end_char": 4623
+    },
+    {
+      "text": "practice",
+      "start": 303.4025,
+      "end": 303.9025,
+      "start_char": 4624,
+      "end_char": 4632
+    },
+    {
+      "text": "continued",
+      "start": 303.915,
+      "end": 304.4025,
+      "start_char": 4633,
+      "end_char": 4642
+    },
+    {
+      "text": "to",
+      "start": 304.415,
+      "end": 304.5025,
+      "start_char": 4643,
+      "end_char": 4645
+    },
+    {
+      "text": "follow",
+      "start": 304.515,
+      "end": 304.8525,
+      "start_char": 4646,
+      "end_char": 4652
+    },
+    {
+      "text": "this",
+      "start": 304.865,
+      "end": 305.0525,
+      "start_char": 4653,
+      "end_char": 4657
+    },
+    {
+      "text": "structure",
+      "start": 305.065,
+      "end": 305.4775,
+      "start_char": 4658,
+      "end_char": 4667
+    },
+    {
+      "text": "of",
+      "start": 305.49,
+      "end": 305.5775,
+      "start_char": 4668,
+      "end_char": 4670
+    },
+    {
+      "text": "steps",
+      "start": 305.59,
+      "end": 306.015,
+      "start_char": 4671,
+      "end_char": 4676
+    },
+    {
+      "text": "until",
+      "start": 306.0275,
+      "end": 306.3275,
+      "start_char": 4677,
+      "end_char": 4682
+    },
+    {
+      "text": "Jin",
+      "start": 306.34,
+      "end": 306.6525,
+      "start_char": 4683,
+      "end_char": 4686
+    },
+    {
+      "text": "mastered",
+      "start": 306.665,
+      "end": 307.0775,
+      "start_char": 4687,
+      "end_char": 4695
+    },
+    {
+      "text": "the",
+      "start": 307.09,
+      "end": 307.1775,
+      "start_char": 4696,
+      "end_char": 4699
+    },
+    {
+      "text": "skill",
+      "start": 307.19,
+      "end": 307.64,
+      "start_char": 4700,
+      "end_char": 4705
+    },
+    {
+      "text": "The",
+      "start": 308.515,
+      "end": 308.69,
+      "start_char": 4707,
+      "end_char": 4710
+    },
+    {
+      "text": "teacher",
+      "start": 308.7025,
+      "end": 309.09,
+      "start_char": 4711,
+      "end_char": 4718
+    },
+    {
+      "text": "recorded",
+      "start": 309.1025,
+      "end": 309.565,
+      "start_char": 4719,
+      "end_char": 4727
+    },
+    {
+      "text": "data",
+      "start": 309.5775,
+      "end": 309.915,
+      "start_char": 4728,
+      "end_char": 4732
+    },
+    {
+      "text": "on",
+      "start": 309.9275,
+      "end": 310.1275,
+      "start_char": 4733,
+      "end_char": 4735
+    },
+    {
+      "text": "every",
+      "start": 310.14,
+      "end": 310.415,
+      "start_char": 4736,
+      "end_char": 4741
+    },
+    {
+      "text": "response",
+      "start": 310.4275,
+      "end": 310.9775,
+      "start_char": 4742,
+      "end_char": 4750
+    },
+    {
+      "text": "and",
+      "start": 310.99,
+      "end": 311.1775,
+      "start_char": 4751,
+      "end_char": 4754
+    },
+    {
+      "text": "administered",
+      "start": 311.19,
+      "end": 311.7525,
+      "start_char": 4755,
+      "end_char": 4767
+    },
+    {
+      "text": "reinforcement",
+      "start": 311.765,
+      "end": 312.5775,
+      "start_char": 4768,
+      "end_char": 4781
+    },
+    {
+      "text": "for",
+      "start": 312.59,
+      "end": 312.74,
+      "start_char": 4782,
+      "end_char": 4785
+    },
+    {
+      "text": "each",
+      "start": 312.7525,
+      "end": 312.99,
+      "start_char": 4786,
+      "end_char": 4790
+    },
+    {
+      "text": "correct",
+      "start": 313.0025,
+      "end": 313.3775,
+      "start_char": 4791,
+      "end_char": 4798
+    },
+    {
+      "text": "answer",
+      "start": 313.39,
+      "end": 313.89,
+      "start_char": 4799,
+      "end_char": 4805
+    },
+    {
+      "text": "When",
+      "start": 314.7525,
+      "end": 314.9775,
+      "start_char": 4807,
+      "end_char": 4811
+    },
+    {
+      "text": "finishing",
+      "start": 314.99,
+      "end": 315.4525,
+      "start_char": 4812,
+      "end_char": 4821
+    },
+    {
+      "text": "the",
+      "start": 315.465,
+      "end": 315.5525,
+      "start_char": 4822,
+      "end_char": 4825
+    },
+    {
+      "text": "trial",
+      "start": 315.565,
+      "end": 316.0525,
+      "start_char": 4826,
+      "end_char": 4831
+    },
+    {
+      "text": "they",
+      "start": 316.265,
+      "end": 316.3775,
+      "start_char": 4833,
+      "end_char": 4837
+    },
+    {
+      "text": "counted",
+      "start": 316.39,
+      "end": 316.8025,
+      "start_char": 4838,
+      "end_char": 4845
+    },
+    {
+      "text": "the",
+      "start": 316.815,
+      "end": 316.89,
+      "start_char": 4846,
+      "end_char": 4849
+    },
+    {
+      "text": "pennies",
+      "start": 316.9025,
+      "end": 317.29,
+      "start_char": 4851,
+      "end_char": 4858
+    },
+    {
+      "text": "Jin",
+      "start": 317.3025,
+      "end": 317.6025,
+      "start_char": 4860,
+      "end_char": 4863
+    },
+    {
+      "text": "had",
+      "start": 317.615,
+      "end": 317.765,
+      "start_char": 4864,
+      "end_char": 4867
+    },
+    {
+      "text": "earned",
+      "start": 317.7775,
+      "end": 318.215,
+      "start_char": 4868,
+      "end_char": 4874
+    },
+    {
+      "text": "Because",
+      "start": 319.09,
+      "end": 319.465,
+      "start_char": 4876,
+      "end_char": 4883
+    },
+    {
+      "text": "she",
+      "start": 319.4775,
+      "end": 319.615,
+      "start_char": 4884,
+      "end_char": 4887
+    },
+    {
+      "text": "had",
+      "start": 319.6275,
+      "end": 319.7775,
+      "start_char": 4888,
+      "end_char": 4891
+    },
+    {
+      "text": "earned",
+      "start": 319.79,
+      "end": 320.0525,
+      "start_char": 4892,
+      "end_char": 4898
+    },
+    {
+      "text": "five",
+      "start": 320.065,
+      "end": 320.365,
+      "start_char": 4899,
+      "end_char": 4903
+    },
+    {
+      "text": "pennies",
+      "start": 320.3775,
+      "end": 320.8525,
+      "start_char": 4905,
+      "end_char": 4912
+    },
+    {
+      "text": "she",
+      "start": 321.165,
+      "end": 321.3525,
+      "start_char": 4915,
+      "end_char": 4918
+    },
+    {
+      "text": "earned",
+      "start": 321.365,
+      "end": 321.6275,
+      "start_char": 4919,
+      "end_char": 4925
+    },
+    {
+      "text": "five",
+      "start": 321.64,
+      "end": 321.965,
+      "start_char": 4926,
+      "end_char": 4930
+    },
+    {
+      "text": "minutes",
+      "start": 321.9775,
+      "end": 322.315,
+      "start_char": 4931,
+      "end_char": 4938
+    },
+    {
+      "text": "of",
+      "start": 322.3275,
+      "end": 322.415,
+      "start_char": 4939,
+      "end_char": 4941
+    },
+    {
+      "text": "play",
+      "start": 322.4275,
+      "end": 322.7025,
+      "start_char": 4942,
+      "end_char": 4946
+    },
+    {
+      "text": "with",
+      "start": 322.715,
+      "end": 322.8525,
+      "start_char": 4947,
+      "end_char": 4951
+    },
+    {
+      "text": "a",
+      "start": 322.865,
+      "end": 322.9275,
+      "start_char": 4952,
+      "end_char": 4953
+    },
+    {
+      "text": "toy",
+      "start": 322.94,
+      "end": 323.2025,
+      "start_char": 4954,
+      "end_char": 4957
+    },
+    {
+      "text": "she",
+      "start": 323.215,
+      "end": 323.415,
+      "start_char": 4958,
+      "end_char": 4961
+    },
+    {
+      "text": "had",
+      "start": 323.4275,
+      "end": 323.5775,
+      "start_char": 4962,
+      "end_char": 4965
+    },
+    {
+      "text": "selected",
+      "start": 323.59,
+      "end": 324.115,
+      "start_char": 4966,
+      "end_char": 4974
+    },
+    {
+      "text": "from",
+      "start": 324.1275,
+      "end": 324.2525,
+      "start_char": 4975,
+      "end_char": 4979
+    },
+    {
+      "text": "her",
+      "start": 324.265,
+      "end": 324.415,
+      "start_char": 4980,
+      "end_char": 4983
+    },
+    {
+      "text": "reinforcement",
+      "start": 324.4275,
+      "end": 325.1275,
+      "start_char": 4984,
+      "end_char": 4997
+    },
+    {
+      "text": "menu",
+      "start": 325.14,
+      "end": 325.615,
+      "start_char": 4998,
+      "end_char": 5002
+    },
+    {
+      "text": "Summary",
+      "start": 326.49,
+      "end": 327.0025,
+      "start_char": 5004,
+      "end_char": 5011
+    },
+    {
+      "text": "Discrete",
+      "start": 327.015,
+      "end": 327.4525,
+      "start_char": 5012,
+      "end_char": 5020
+    },
+    {
+      "text": "trial",
+      "start": 327.465,
+      "end": 327.8275,
+      "start_char": 5021,
+      "end_char": 5026
+    },
+    {
+      "text": "training",
+      "start": 327.84,
+      "end": 328.265,
+      "start_char": 5027,
+      "end_char": 5035
+    },
+    {
+      "text": "is",
+      "start": 328.2775,
+      "end": 328.4775,
+      "start_char": 5036,
+      "end_char": 5038
+    },
+    {
+      "text": "aimed",
+      "start": 328.49,
+      "end": 328.7525,
+      "start_char": 5039,
+      "end_char": 5044
+    },
+    {
+      "text": "at",
+      "start": 328.765,
+      "end": 328.8275,
+      "start_char": 5045,
+      "end_char": 5047
+    },
+    {
+      "text": "manipulating",
+      "start": 328.84,
+      "end": 329.515,
+      "start_char": 5048,
+      "end_char": 5060
+    },
+    {
+      "text": "the",
+      "start": 329.5275,
+      "end": 329.6275,
+      "start_char": 5061,
+      "end_char": 5064
+    },
+    {
+      "text": "sequences",
+      "start": 329.64,
+      "end": 330.24,
+      "start_char": 5065,
+      "end_char": 5074
+    },
+    {
+      "text": "of",
+      "start": 330.2525,
+      "end": 330.34,
+      "start_char": 5075,
+      "end_char": 5077
+    },
+    {
+      "text": "antecedents",
+      "start": 330.3525,
+      "end": 331.09,
+      "start_char": 5078,
+      "end_char": 5089
+    },
+    {
+      "text": "and",
+      "start": 331.1025,
+      "end": 331.24,
+      "start_char": 5090,
+      "end_char": 5093
+    },
+    {
+      "text": "consequences",
+      "start": 331.2525,
+      "end": 332.1025,
+      "start_char": 5094,
+      "end_char": 5106
+    },
+    {
+      "text": "in",
+      "start": 332.115,
+      "end": 332.24,
+      "start_char": 5107,
+      "end_char": 5109
+    },
+    {
+      "text": "a",
+      "start": 332.2525,
+      "end": 332.3025,
+      "start_char": 5110,
+      "end_char": 5111
+    },
+    {
+      "text": "structured",
+      "start": 332.315,
+      "end": 332.8025,
+      "start_char": 5112,
+      "end_char": 5122
+    },
+    {
+      "text": "setting",
+      "start": 332.815,
+      "end": 333.265,
+      "start_char": 5123,
+      "end_char": 5130
+    },
+    {
+      "text": "Most",
+      "start": 334.14,
+      "end": 334.5275,
+      "start_char": 5132,
+      "end_char": 5136
+    },
+    {
+      "text": "often",
+      "start": 334.54,
+      "end": 334.8775,
+      "start_char": 5137,
+      "end_char": 5142
+    },
+    {
+      "text": "used",
+      "start": 334.89,
+      "end": 335.215,
+      "start_char": 5143,
+      "end_char": 5147
+    },
+    {
+      "text": "in",
+      "start": 335.2275,
+      "end": 335.29,
+      "start_char": 5148,
+      "end_char": 5150
+    },
+    {
+      "text": "a",
+      "start": 335.3025,
+      "end": 335.365,
+      "start_char": 5151,
+      "end_char": 5152
+    },
+    {
+      "text": "one-to-one",
+      "start": 335.3775,
+      "end": 335.9275,
+      "start_char": 5153,
+      "end_char": 5163
+    },
+    {
+      "text": "setting",
+      "start": 335.94,
+      "end": 336.3275,
+      "start_char": 5164,
+      "end_char": 5171
+    },
+    {
+      "text": "discrete",
+      "start": 336.59,
+      "end": 337.0525,
+      "start_char": 5173,
+      "end_char": 5181
+    },
+    {
+      "text": "trial",
+      "start": 337.065,
+      "end": 337.44,
+      "start_char": 5182,
+      "end_char": 5187
+    },
+    {
+      "text": "training",
+      "start": 337.4525,
+      "end": 337.84,
+      "start_char": 5188,
+      "end_char": 5196
+    },
+    {
+      "text": "contains",
+      "start": 337.8525,
+      "end": 338.3525,
+      "start_char": 5197,
+      "end_char": 5205
+    },
+    {
+      "text": "five",
+      "start": 338.365,
+      "end": 338.6775,
+      "start_char": 5206,
+      "end_char": 5210
+    },
+    {
+      "text": "distinct",
+      "start": 338.69,
+      "end": 339.115,
+      "start_char": 5211,
+      "end_char": 5219
+    },
+    {
+      "text": "steps",
+      "start": 339.1275,
+      "end": 339.5775,
+      "start_char": 5220,
+      "end_char": 5225
+    },
+    {
+      "text": "for",
+      "start": 339.59,
+      "end": 339.74,
+      "start_char": 5226,
+      "end_char": 5229
+    },
+    {
+      "text": "skills",
+      "start": 339.7525,
+      "end": 340.14,
+      "start_char": 5230,
+      "end_char": 5236
+    },
+    {
+      "text": "acquisition",
+      "start": 340.1525,
+      "end": 340.915,
+      "start_char": 5237,
+      "end_char": 5248
+    },
+    {
+      "text": "Regular",
+      "start": 341.79,
+      "end": 342.365,
+      "start_char": 5250,
+      "end_char": 5257
+    },
+    {
+      "text": "data",
+      "start": 342.3775,
+      "end": 342.665,
+      "start_char": 5258,
+      "end_char": 5262
+    },
+    {
+      "text": "collection",
+      "start": 342.6775,
+      "end": 343.2525,
+      "start_char": 5263,
+      "end_char": 5273
+    },
+    {
+      "text": "provides",
+      "start": 343.265,
+      "end": 343.7525,
+      "start_char": 5274,
+      "end_char": 5282
+    },
+    {
+      "text": "detailed",
+      "start": 343.765,
+      "end": 344.29,
+      "start_char": 5283,
+      "end_char": 5291
+    },
+    {
+      "text": "information",
+      "start": 344.3025,
+      "end": 345.0525,
+      "start_char": 5292,
+      "end_char": 5303
+    },
+    {
+      "text": "to",
+      "start": 345.065,
+      "end": 345.19,
+      "start_char": 5304,
+      "end_char": 5306
+    },
+    {
+      "text": "guide",
+      "start": 345.2025,
+      "end": 345.5025,
+      "start_char": 5307,
+      "end_char": 5312
+    },
+    {
+      "text": "future",
+      "start": 345.515,
+      "end": 345.9025,
+      "start_char": 5313,
+      "end_char": 5319
+    },
+    {
+      "text": "instruction",
+      "start": 345.915,
+      "end": 346.615,
+      "start_char": 5320,
+      "end_char": 5331
+    },
+    {
+      "text": "Research",
+      "start": 347.49,
+      "end": 348.0525,
+      "start_char": 5333,
+      "end_char": 5341
+    },
+    {
+      "text": "Number",
+      "start": 348.065,
+      "end": 348.3525,
+      "start_char": 5342,
+      "end_char": 5348
+    },
+    {
+      "text": "of",
+      "start": 348.365,
+      "end": 348.4525,
+      "start_char": 5349,
+      "end_char": 5351
+    },
+    {
+      "text": "studies",
+      "start": 348.465,
+      "end": 348.9275,
+      "start_char": 5352,
+      "end_char": 5359
+    },
+    {
+      "text": "Ages",
+      "start": 348.94,
+      "end": 349.315,
+      "start_char": 5360,
+      "end_char": 5364
+    },
+    {
+      "text": "years",
+      "start": 349.515,
+      "end": 349.89,
+      "start_char": 5366,
+      "end_char": 5371
+    },
+    {
+      "text": "Sample",
+      "start": 350.09,
+      "end": 350.465,
+      "start_char": 5373,
+      "end_char": 5379
+    },
+    {
+      "text": "size",
+      "start": 350.4775,
+      "end": 350.8275,
+      "start_char": 5380,
+      "end_char": 5384
+    },
+    {
+      "text": "Areas",
+      "start": 350.84,
+      "end": 351.2025,
+      "start_char": 5385,
+      "end_char": 5390
+    },
+    {
+      "text": "addressed",
+      "start": 351.215,
+      "end": 351.69,
+      "start_char": 5391,
+      "end_char": 5400
+    },
+    {
+      "text": "Outcome",
+      "start": 351.7025,
+      "end": 352.14,
+      "start_char": 5401,
+      "end_char": 5408
+    },
+    {
+      "text": "28",
+      "start": 352.1525,
+      "end": 352.69,
+      "start_char": 5409,
+      "end_char": 5411
+    },
+    {
+      "text": "*",
+      "start": 352.7025,
+      "end": 353.3275,
+      "start_char": 5411,
+      "end_char": 5412
+    },
+    {
+      "text": "3–13",
+      "start": 353.34,
+      "end": 354.3025,
+      "start_char": 5413,
+      "end_char": 5417
+    },
+    {
+      "text": "346",
+      "start": 354.315,
+      "end": 355.49,
+      "start_char": 5418,
+      "end_char": 5421
+    },
+    {
+      "text": "Communication",
+      "start": 355.5025,
+      "end": 356.3275,
+      "start_char": 5422,
+      "end_char": 5435
+    },
+    {
+      "text": "behavior",
+      "start": 356.69,
+      "end": 357.14,
+      "start_char": 5437,
+      "end_char": 5445
+    },
+    {
+      "text": "generalization",
+      "start": 357.1525,
+      "end": 358.09,
+      "start_char": 5446,
+      "end_char": 5460
+    },
+    {
+      "text": "parent",
+      "start": 358.3525,
+      "end": 358.665,
+      "start_char": 5462,
+      "end_char": 5468
+    },
+    {
+      "text": "training",
+      "start": 358.6775,
+      "end": 359.115,
+      "start_char": 5469,
+      "end_char": 5477
+    },
+    {
+      "text": "object",
+      "start": 359.34,
+      "end": 359.79,
+      "start_char": 5479,
+      "end_char": 5485
+    },
+    {
+      "text": "matching",
+      "start": 359.8025,
+      "end": 360.2775,
+      "start_char": 5486,
+      "end_char": 5494
+    },
+    {
+      "text": "PECS",
+      "start": 360.4775,
+      "end": 360.9275,
+      "start_char": 5496,
+      "end_char": 5500
+    },
+    {
+      "text": "vocal",
+      "start": 361.14,
+      "end": 361.465,
+      "start_char": 5502,
+      "end_char": 5507
+    },
+    {
+      "text": "imitation",
+      "start": 361.4775,
+      "end": 362.165,
+      "start_char": 5508,
+      "end_char": 5517
+    },
+    {
+      "text": "motor",
+      "start": 362.465,
+      "end": 362.89,
+      "start_char": 5519,
+      "end_char": 5524
+    },
+    {
+      "text": "and",
+      "start": 362.9025,
+      "end": 363.015,
+      "start_char": 5525,
+      "end_char": 5528
+    },
+    {
+      "text": "person",
+      "start": 363.0275,
+      "end": 363.49,
+      "start_char": 5529,
+      "end_char": 5535
+    },
+    {
+      "text": "/",
+      "start": 363.5025,
+      "end": 363.8025,
+      "start_char": 5535,
+      "end_char": 5536
+    },
+    {
+      "text": "social",
+      "start": 363.815,
+      "end": 364.1775,
+      "start_char": 5536,
+      "end_char": 5542
+    },
+    {
+      "text": "functioning",
+      "start": 364.19,
+      "end": 364.765,
+      "start_char": 5543,
+      "end_char": 5554
+    },
+    {
+      "text": "cognitive",
+      "start": 365.015,
+      "end": 365.5025,
+      "start_char": 5556,
+      "end_char": 5565
+    },
+    {
+      "text": "functioning",
+      "start": 365.515,
+      "end": 366.1025,
+      "start_char": 5566,
+      "end_char": 5577
+    },
+    {
+      "text": "stereotypic",
+      "start": 366.3525,
+      "end": 367.115,
+      "start_char": 5579,
+      "end_char": 5590
+    },
+    {
+      "text": "behaviors",
+      "start": 367.1275,
+      "end": 367.765,
+      "start_char": 5591,
+      "end_char": 5600
+    },
+    {
+      "text": "parent",
+      "start": 367.9775,
+      "end": 368.3525,
+      "start_char": 5602,
+      "end_char": 5608
+    },
+    {
+      "text": "education",
+      "start": 368.365,
+      "end": 369.09,
+      "start_char": 5609,
+      "end_char": 5618
+    },
+    {
+      "text": "social-emotional",
+      "start": 369.3275,
+      "end": 370.2025,
+      "start_char": 5620,
+      "end_char": 5636
+    },
+    {
+      "text": "functioning",
+      "start": 370.215,
+      "end": 370.815,
+      "start_char": 5637,
+      "end_char": 5648
+    },
+    {
+      "text": "out-of-seat",
+      "start": 371.0275,
+      "end": 371.5275,
+      "start_char": 5650,
+      "end_char": 5661
+    },
+    {
+      "text": "behavior",
+      "start": 371.54,
+      "end": 372.1025,
+      "start_char": 5662,
+      "end_char": 5670
+    },
+    {
+      "text": "motor",
+      "start": 372.29,
+      "end": 372.5525,
+      "start_char": 5672,
+      "end_char": 5677
+    },
+    {
+      "text": "imitation",
+      "start": 372.565,
+      "end": 373.2275,
+      "start_char": 5678,
+      "end_char": 5687
+    },
+    {
+      "text": "daily",
+      "start": 373.515,
+      "end": 373.815,
+      "start_char": 5689,
+      "end_char": 5694
+    },
+    {
+      "text": "living",
+      "start": 373.8275,
+      "end": 374.165,
+      "start_char": 5695,
+      "end_char": 5701
+    },
+    {
+      "text": "skills",
+      "start": 374.1775,
+      "end": 374.6525,
+      "start_char": 5702,
+      "end_char": 5708
+    },
+    {
+      "text": "identifying",
+      "start": 374.9275,
+      "end": 375.59,
+      "start_char": 5710,
+      "end_char": 5721
+    },
+    {
+      "text": "emotions",
+      "start": 375.6025,
+      "end": 376.215,
+      "start_char": 5722,
+      "end_char": 5730
+    },
+    {
+      "text": "and",
+      "start": 376.3025,
+      "end": 376.4275,
+      "start_char": 5731,
+      "end_char": 5734
+    },
+    {
+      "text": "objects",
+      "start": 376.44,
+      "end": 377.0775,
+      "start_char": 5735,
+      "end_char": 5742
+    },
+    {
+      "text": "IQ",
+      "start": 377.29,
+      "end": 377.74,
+      "start_char": 5744,
+      "end_char": 5746
+    },
+    {
+      "text": "joint",
+      "start": 378.0525,
+      "end": 378.39,
+      "start_char": 5748,
+      "end_char": 5753
+    },
+    {
+      "text": "attention",
+      "start": 378.4025,
+      "end": 378.9775,
+      "start_char": 5754,
+      "end_char": 5763
+    },
+    {
+      "text": "spontaneous",
+      "start": 379.1775,
+      "end": 379.915,
+      "start_char": 5765,
+      "end_char": 5776
+    },
+    {
+      "text": "responses",
+      "start": 379.9275,
+      "end": 380.6025,
+      "start_char": 5777,
+      "end_char": 5786
+    },
+    {
+      "text": "social",
+      "start": 380.84,
+      "end": 381.2025,
+      "start_char": 5788,
+      "end_char": 5794
+    },
+    {
+      "text": "interaction",
+      "start": 381.215,
+      "end": 381.94,
+      "start_char": 5795,
+      "end_char": 5806
+    },
+    {
+      "text": "social",
+      "start": 382.1275,
+      "end": 382.49,
+      "start_char": 5808,
+      "end_char": 5814
+    },
+    {
+      "text": "quotients",
+      "start": 382.5025,
+      "end": 383.2025,
+      "start_char": 5815,
+      "end_char": 5824
+    },
+    {
+      "text": "listener",
+      "start": 384.0775,
+      "end": 384.565,
+      "start_char": 5826,
+      "end_char": 5834
+    },
+    {
+      "text": "skills",
+      "start": 384.5775,
+      "end": 385.0275,
+      "start_char": 5835,
+      "end_char": 5841
+    },
+    {
+      "text": "adaptive",
+      "start": 385.215,
+      "end": 385.7275,
+      "start_char": 5843,
+      "end_char": 5851
+    },
+    {
+      "text": "behavior",
+      "start": 385.74,
+      "end": 386.34,
+      "start_char": 5852,
+      "end_char": 5860
+    },
+    {
+      "text": "play",
+      "start": 386.565,
+      "end": 386.815,
+      "start_char": 5862,
+      "end_char": 5866
+    },
+    {
+      "text": "responses",
+      "start": 386.8275,
+      "end": 387.515,
+      "start_char": 5867,
+      "end_char": 5876
+    },
+    {
+      "text": "math",
+      "start": 387.7525,
+      "end": 388.0775,
+      "start_char": 5878,
+      "end_char": 5882
+    },
+    {
+      "text": "and",
+      "start": 388.165,
+      "end": 388.2775,
+      "start_char": 5883,
+      "end_char": 5886
+    },
+    {
+      "text": "language",
+      "start": 388.29,
+      "end": 388.69,
+      "start_char": 5887,
+      "end_char": 5895
+    },
+    {
+      "text": "arts",
+      "start": 388.7025,
+      "end": 389.0025,
+      "start_char": 5896,
+      "end_char": 5900
+    },
+    {
+      "text": "content",
+      "start": 389.015,
+      "end": 389.5525,
+      "start_char": 5901,
+      "end_char": 5908
+    },
+    {
+      "text": "following",
+      "start": 389.9025,
+      "end": 390.3025,
+      "start_char": 5910,
+      "end_char": 5919
+    },
+    {
+      "text": "directions",
+      "start": 390.315,
+      "end": 390.9275,
+      "start_char": 5920,
+      "end_char": 5930
+    },
+    {
+      "text": "to",
+      "start": 390.94,
+      "end": 391.04,
+      "start_char": 5931,
+      "end_char": 5933
+    },
+    {
+      "text": "choose",
+      "start": 391.0525,
+      "end": 391.4025,
+      "start_char": 5934,
+      "end_char": 5940
+    },
+    {
+      "text": "+",
+      "start": 391.415,
+      "end": 391.69,
+      "start_char": 5941,
+      "end_char": 5942
+    },
+    {
+      "text": "*",
+      "start": 391.7025,
+      "end": 392.3275,
+      "start_char": 5943,
+      "end_char": 5944
+    },
+    {
+      "text": "Includes",
+      "start": 392.34,
+      "end": 392.7775,
+      "start_char": 5944,
+      "end_char": 5952
+    },
+    {
+      "text": "a",
+      "start": 392.79,
+      "end": 392.8525,
+      "start_char": 5953,
+      "end_char": 5954
+    },
+    {
+      "text": "review",
+      "start": 392.865,
+      "end": 393.2525,
+      "start_char": 5955,
+      "end_char": 5961
+    },
+    {
+      "text": "of",
+      "start": 393.265,
+      "end": 393.3775,
+      "start_char": 5962,
+      "end_char": 5964
+    },
+    {
+      "text": "literature",
+      "start": 393.39,
+      "end": 393.94,
+      "start_char": 5965,
+      "end_char": 5975
+    },
+    {
+      "text": "by",
+      "start": 393.9525,
+      "end": 394.115,
+      "start_char": 5976,
+      "end_char": 5978
+    },
+    {
+      "text": "Eldevik",
+      "start": 394.1275,
+      "end": 394.59,
+      "start_char": 5979,
+      "end_char": 5986
+    },
+    {
+      "text": "et",
+      "start": 394.6025,
+      "end": 394.69,
+      "start_char": 5987,
+      "end_char": 5989
+    },
+    {
+      "text": "al.",
+      "start": 394.7025,
+      "end": 395.0525,
+      "start_char": 5990,
+      "end_char": 5993
+    },
+    {
+      "text": "2009",
+      "start": 395.2775,
+      "end": 396.29,
+      "start_char": 5995,
+      "end_char": 5999
+    }
+  ]
+}

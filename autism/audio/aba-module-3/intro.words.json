@@ -1,0 +1,610 @@
+{
+  "digest": "cb6bcffedb4e1991894da00ffef5b280277d1fbed9bc5be865a41b11e9955fb6",
+  "voice": "en-US-AriaNeural",
+  "text": "ABA · Module 3 Supplemental Readings Four readings on building new behaviour: chaining, differential reinforcement in practice, group contingencies, and shaping with successive approximations. Reading note:  Sources are the TARGET Texas Guide entry on chaining (2009); Wheatley and colleagues' Praise Note study ( Education and Treatment of Children , 2009); Chow and Gilmour's teacher's guide to group contingencies ( TEACHING Exceptional Children ); and an excerpt from Sundel and Sundel's chapter on shaping and response differentiation. Reference lists and study summaries are kept in collapsible sections and are not read aloud.",
+  "audio": "intro.mp3",
+  "words": [
+    {
+      "text": "ABA",
+      "start": 0.1,
+      "end": 0.6125,
+      "start_char": 0,
+      "end_char": 3
+    },
+    {
+      "text": "Module",
+      "start": 0.625,
+      "end": 1.075,
+      "start_char": 6,
+      "end_char": 12
+    },
+    {
+      "text": "3",
+      "start": 1.0875,
+      "end": 1.3625,
+      "start_char": 13,
+      "end_char": 14
+    },
+    {
+      "text": "Supplemental",
+      "start": 1.375,
+      "end": 2.05,
+      "start_char": 15,
+      "end_char": 27
+    },
+    {
+      "text": "Readings",
+      "start": 2.0625,
+      "end": 2.4625,
+      "start_char": 28,
+      "end_char": 36
+    },
+    {
+      "text": "Four",
+      "start": 2.475,
+      "end": 2.75,
+      "start_char": 37,
+      "end_char": 41
+    },
+    {
+      "text": "readings",
+      "start": 2.7625,
+      "end": 3.175,
+      "start_char": 42,
+      "end_char": 50
+    },
+    {
+      "text": "on",
+      "start": 3.1875,
+      "end": 3.3375,
+      "start_char": 51,
+      "end_char": 53
+    },
+    {
+      "text": "building",
+      "start": 3.35,
+      "end": 3.7,
+      "start_char": 54,
+      "end_char": 62
+    },
+    {
+      "text": "new",
+      "start": 3.7125,
+      "end": 3.85,
+      "start_char": 63,
+      "end_char": 66
+    },
+    {
+      "text": "behaviour",
+      "start": 3.8625,
+      "end": 4.425,
+      "start_char": 67,
+      "end_char": 76
+    },
+    {
+      "text": "chaining",
+      "start": 4.65,
+      "end": 5.0875,
+      "start_char": 78,
+      "end_char": 86
+    },
+    {
+      "text": "differential",
+      "start": 5.375,
+      "end": 6.0,
+      "start_char": 88,
+      "end_char": 100
+    },
+    {
+      "text": "reinforcement",
+      "start": 6.0125,
+      "end": 6.75,
+      "start_char": 101,
+      "end_char": 114
+    },
+    {
+      "text": "in",
+      "start": 6.7625,
+      "end": 6.85,
+      "start_char": 115,
+      "end_char": 117
+    },
+    {
+      "text": "practice",
+      "start": 6.8625,
+      "end": 7.4625,
+      "start_char": 118,
+      "end_char": 126
+    },
+    {
+      "text": "group",
+      "start": 7.7125,
+      "end": 7.95,
+      "start_char": 128,
+      "end_char": 133
+    },
+    {
+      "text": "contingencies",
+      "start": 7.9625,
+      "end": 8.85,
+      "start_char": 134,
+      "end_char": 147
+    },
+    {
+      "text": "and",
+      "start": 9.05,
+      "end": 9.2125,
+      "start_char": 149,
+      "end_char": 152
+    },
+    {
+      "text": "shaping",
+      "start": 9.225,
+      "end": 9.625,
+      "start_char": 153,
+      "end_char": 160
+    },
+    {
+      "text": "with",
+      "start": 9.6375,
+      "end": 9.775,
+      "start_char": 161,
+      "end_char": 165
+    },
+    {
+      "text": "successive",
+      "start": 9.7875,
+      "end": 10.3,
+      "start_char": 166,
+      "end_char": 176
+    },
+    {
+      "text": "approximations",
+      "start": 10.3125,
+      "end": 11.4,
+      "start_char": 177,
+      "end_char": 191
+    },
+    {
+      "text": "Reading",
+      "start": 12.2625,
+      "end": 12.7,
+      "start_char": 193,
+      "end_char": 200
+    },
+    {
+      "text": "note",
+      "start": 12.7125,
+      "end": 13.0125,
+      "start_char": 201,
+      "end_char": 205
+    },
+    {
+      "text": "Sources",
+      "start": 13.2125,
+      "end": 13.7,
+      "start_char": 208,
+      "end_char": 215
+    },
+    {
+      "text": "are",
+      "start": 13.7125,
+      "end": 13.8125,
+      "start_char": 216,
+      "end_char": 219
+    },
+    {
+      "text": "the",
+      "start": 13.825,
+      "end": 13.925,
+      "start_char": 220,
+      "end_char": 223
+    },
+    {
+      "text": "TARGET",
+      "start": 13.9375,
+      "end": 14.3375,
+      "start_char": 224,
+      "end_char": 230
+    },
+    {
+      "text": "Texas",
+      "start": 14.35,
+      "end": 14.7375,
+      "start_char": 231,
+      "end_char": 236
+    },
+    {
+      "text": "Guide",
+      "start": 14.75,
+      "end": 15.05,
+      "start_char": 237,
+      "end_char": 242
+    },
+    {
+      "text": "entry",
+      "start": 15.0625,
+      "end": 15.3875,
+      "start_char": 243,
+      "end_char": 248
+    },
+    {
+      "text": "on",
+      "start": 15.4,
+      "end": 15.5375,
+      "start_char": 249,
+      "end_char": 251
+    },
+    {
+      "text": "chaining",
+      "start": 15.55,
+      "end": 16.0125,
+      "start_char": 252,
+      "end_char": 260
+    },
+    {
+      "text": "2009",
+      "start": 16.3375,
+      "end": 17.2125,
+      "start_char": 262,
+      "end_char": 266
+    },
+    {
+      "text": "Wheatley",
+      "start": 17.475,
+      "end": 17.8,
+      "start_char": 269,
+      "end_char": 277
+    },
+    {
+      "text": "and",
+      "start": 17.8125,
+      "end": 17.9125,
+      "start_char": 278,
+      "end_char": 281
+    },
+    {
+      "text": "colleagues'",
+      "start": 17.925,
+      "end": 18.375,
+      "start_char": 282,
+      "end_char": 293
+    },
+    {
+      "text": "Praise",
+      "start": 18.3875,
+      "end": 18.7125,
+      "start_char": 294,
+      "end_char": 300
+    },
+    {
+      "text": "Note",
+      "start": 18.725,
+      "end": 18.95,
+      "start_char": 301,
+      "end_char": 305
+    },
+    {
+      "text": "study",
+      "start": 18.9625,
+      "end": 19.4,
+      "start_char": 306,
+      "end_char": 311
+    },
+    {
+      "text": "Education",
+      "start": 19.7125,
+      "end": 20.4375,
+      "start_char": 314,
+      "end_char": 323
+    },
+    {
+      "text": "and",
+      "start": 20.45,
+      "end": 20.5625,
+      "start_char": 324,
+      "end_char": 327
+    },
+    {
+      "text": "Treatment",
+      "start": 20.575,
+      "end": 21.0,
+      "start_char": 328,
+      "end_char": 337
+    },
+    {
+      "text": "of",
+      "start": 21.0125,
+      "end": 21.0875,
+      "start_char": 338,
+      "end_char": 340
+    },
+    {
+      "text": "Children",
+      "start": 21.1,
+      "end": 21.6125,
+      "start_char": 341,
+      "end_char": 349
+    },
+    {
+      "text": "2009",
+      "start": 21.9625,
+      "end": 22.9125,
+      "start_char": 352,
+      "end_char": 356
+    },
+    {
+      "text": "Chow",
+      "start": 23.2125,
+      "end": 23.5,
+      "start_char": 359,
+      "end_char": 363
+    },
+    {
+      "text": "and",
+      "start": 23.5125,
+      "end": 23.6,
+      "start_char": 364,
+      "end_char": 367
+    },
+    {
+      "text": "Gilmour's",
+      "start": 23.6125,
+      "end": 24.1125,
+      "start_char": 368,
+      "end_char": 377
+    },
+    {
+      "text": "teacher's",
+      "start": 24.125,
+      "end": 24.5625,
+      "start_char": 378,
+      "end_char": 387
+    },
+    {
+      "text": "guide",
+      "start": 24.575,
+      "end": 24.8625,
+      "start_char": 388,
+      "end_char": 393
+    },
+    {
+      "text": "to",
+      "start": 24.875,
+      "end": 24.9625,
+      "start_char": 394,
+      "end_char": 396
+    },
+    {
+      "text": "group",
+      "start": 24.975,
+      "end": 25.2125,
+      "start_char": 397,
+      "end_char": 402
+    },
+    {
+      "text": "contingencies",
+      "start": 25.225,
+      "end": 26.075,
+      "start_char": 403,
+      "end_char": 416
+    },
+    {
+      "text": "TEACHING",
+      "start": 26.3125,
+      "end": 26.7,
+      "start_char": 419,
+      "end_char": 427
+    },
+    {
+      "text": "Exceptional",
+      "start": 26.7125,
+      "end": 27.25,
+      "start_char": 428,
+      "end_char": 439
+    },
+    {
+      "text": "Children",
+      "start": 27.2625,
+      "end": 27.8,
+      "start_char": 440,
+      "end_char": 448
+    },
+    {
+      "text": "and",
+      "start": 27.975,
+      "end": 28.1625,
+      "start_char": 452,
+      "end_char": 455
+    },
+    {
+      "text": "an",
+      "start": 28.175,
+      "end": 28.35,
+      "start_char": 456,
+      "end_char": 458
+    },
+    {
+      "text": "excerpt",
+      "start": 28.3625,
+      "end": 28.825,
+      "start_char": 459,
+      "end_char": 466
+    },
+    {
+      "text": "from",
+      "start": 28.8375,
+      "end": 29.0125,
+      "start_char": 467,
+      "end_char": 471
+    },
+    {
+      "text": "Sundel",
+      "start": 29.025,
+      "end": 29.5125,
+      "start_char": 472,
+      "end_char": 478
+    },
+    {
+      "text": "and",
+      "start": 29.525,
+      "end": 29.65,
+      "start_char": 479,
+      "end_char": 482
+    },
+    {
+      "text": "Sundel's",
+      "start": 29.6625,
+      "end": 30.0625,
+      "start_char": 483,
+      "end_char": 491
+    },
+    {
+      "text": "chapter",
+      "start": 30.075,
+      "end": 30.575,
+      "start_char": 492,
+      "end_char": 499
+    },
+    {
+      "text": "on",
+      "start": 30.5875,
+      "end": 30.725,
+      "start_char": 500,
+      "end_char": 502
+    },
+    {
+      "text": "shaping",
+      "start": 30.7375,
+      "end": 31.175,
+      "start_char": 503,
+      "end_char": 510
+    },
+    {
+      "text": "and",
+      "start": 31.1875,
+      "end": 31.2875,
+      "start_char": 511,
+      "end_char": 514
+    },
+    {
+      "text": "response",
+      "start": 31.3,
+      "end": 31.7875,
+      "start_char": 515,
+      "end_char": 523
+    },
+    {
+      "text": "differentiation",
+      "start": 31.8,
+      "end": 32.7875,
+      "start_char": 524,
+      "end_char": 539
+    },
+    {
+      "text": "Reference",
+      "start": 33.6625,
+      "end": 34.1875,
+      "start_char": 541,
+      "end_char": 550
+    },
+    {
+      "text": "lists",
+      "start": 34.2,
+      "end": 34.5375,
+      "start_char": 551,
+      "end_char": 556
+    },
+    {
+      "text": "and",
+      "start": 34.55,
+      "end": 34.6875,
+      "start_char": 557,
+      "end_char": 560
+    },
+    {
+      "text": "study",
+      "start": 34.7,
+      "end": 35.0375,
+      "start_char": 561,
+      "end_char": 566
+    },
+    {
+      "text": "summaries",
+      "start": 35.05,
+      "end": 35.5875,
+      "start_char": 567,
+      "end_char": 576
+    },
+    {
+      "text": "are",
+      "start": 35.6,
+      "end": 35.7875,
+      "start_char": 577,
+      "end_char": 580
+    },
+    {
+      "text": "kept",
+      "start": 35.8,
+      "end": 36.1,
+      "start_char": 581,
+      "end_char": 585
+    },
+    {
+      "text": "in",
+      "start": 36.1125,
+      "end": 36.2125,
+      "start_char": 586,
+      "end_char": 588
+    },
+    {
+      "text": "collapsible",
+      "start": 36.225,
+      "end": 36.825,
+      "start_char": 589,
+      "end_char": 600
+    },
+    {
+      "text": "sections",
+      "start": 36.8375,
+      "end": 37.4375,
+      "start_char": 601,
+      "end_char": 609
+    },
+    {
+      "text": "and",
+      "start": 37.45,
+      "end": 37.6625,
+      "start_char": 610,
+      "end_char": 613
+    },
+    {
+      "text": "are",
+      "start": 37.675,
+      "end": 37.7625,
+      "start_char": 614,
+      "end_char": 617
+    },
+    {
+      "text": "not",
+      "start": 37.775,
+      "end": 38.0625,
+      "start_char": 618,
+      "end_char": 621
+    },
+    {
+      "text": "read",
+      "start": 38.075,
+      "end": 38.225,
+      "start_char": 622,
+      "end_char": 626
+    },
+    {
+      "text": "aloud",
+      "start": 38.2375,
+      "end": 38.775,
+      "start_char": 627,
+      "end_char": 632
+    }
+  ]
+}

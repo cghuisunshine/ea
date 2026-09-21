@@ -1,0 +1,624 @@
+{
+  "digest": "a00f31b71aacbf4791ed2b074b3737f0e2808561f19c91f092f06091806678ac",
+  "voice": "en-US-AriaNeural",
+  "text": "ABA · Module 1 Supplemental Readings Two readings on what applied behavior analysis is, what it is not, and how its methods are used in classrooms. Reading note:  Reading 1 is the  Applied Behavior Analysis  entry from TARGET: Texas Guide for Effective Teaching (Texas Statewide Leadership for Autism, 2009). Reading 2 is Trump, Pennington, Travers, Ringdahl, Whiteside and Ayres, \"Applied Behavior Analysis in Special Education: Misconceptions and Guidelines for Use,\"  TEACHING Exceptional Children , 2018. Reference lists and resource links are kept in collapsible sections and are not read aloud.",
+  "audio": "intro.mp3",
+  "words": [
+    {
+      "text": "ABA",
+      "start": 0.1,
+      "end": 0.6125,
+      "start_char": 0,
+      "end_char": 3
+    },
+    {
+      "text": "Module",
+      "start": 0.625,
+      "end": 1.125,
+      "start_char": 6,
+      "end_char": 12
+    },
+    {
+      "text": "1",
+      "start": 1.1375,
+      "end": 1.3875,
+      "start_char": 13,
+      "end_char": 14
+    },
+    {
+      "text": "Supplemental",
+      "start": 1.4,
+      "end": 2.05,
+      "start_char": 15,
+      "end_char": 27
+    },
+    {
+      "text": "Readings",
+      "start": 2.0625,
+      "end": 2.5125,
+      "start_char": 28,
+      "end_char": 36
+    },
+    {
+      "text": "Two",
+      "start": 2.525,
+      "end": 2.8,
+      "start_char": 37,
+      "end_char": 40
+    },
+    {
+      "text": "readings",
+      "start": 2.8125,
+      "end": 3.2375,
+      "start_char": 41,
+      "end_char": 49
+    },
+    {
+      "text": "on",
+      "start": 3.25,
+      "end": 3.375,
+      "start_char": 50,
+      "end_char": 52
+    },
+    {
+      "text": "what",
+      "start": 3.3875,
+      "end": 3.55,
+      "start_char": 53,
+      "end_char": 57
+    },
+    {
+      "text": "applied",
+      "start": 3.5625,
+      "end": 3.95,
+      "start_char": 58,
+      "end_char": 65
+    },
+    {
+      "text": "behavior",
+      "start": 3.9625,
+      "end": 4.4,
+      "start_char": 66,
+      "end_char": 74
+    },
+    {
+      "text": "analysis",
+      "start": 4.4125,
+      "end": 4.9875,
+      "start_char": 75,
+      "end_char": 83
+    },
+    {
+      "text": "is",
+      "start": 5.0,
+      "end": 5.3125,
+      "start_char": 84,
+      "end_char": 86
+    },
+    {
+      "text": "what",
+      "start": 5.625,
+      "end": 5.8125,
+      "start_char": 88,
+      "end_char": 92
+    },
+    {
+      "text": "it",
+      "start": 5.825,
+      "end": 5.9125,
+      "start_char": 93,
+      "end_char": 95
+    },
+    {
+      "text": "is",
+      "start": 5.925,
+      "end": 6.05,
+      "start_char": 96,
+      "end_char": 98
+    },
+    {
+      "text": "not",
+      "start": 6.0625,
+      "end": 6.425,
+      "start_char": 99,
+      "end_char": 102
+    },
+    {
+      "text": "and",
+      "start": 6.8125,
+      "end": 6.9125,
+      "start_char": 104,
+      "end_char": 107
+    },
+    {
+      "text": "how",
+      "start": 6.925,
+      "end": 7.1125,
+      "start_char": 108,
+      "end_char": 111
+    },
+    {
+      "text": "its",
+      "start": 7.125,
+      "end": 7.275,
+      "start_char": 112,
+      "end_char": 115
+    },
+    {
+      "text": "methods",
+      "start": 7.2875,
+      "end": 7.6625,
+      "start_char": 116,
+      "end_char": 123
+    },
+    {
+      "text": "are",
+      "start": 7.675,
+      "end": 7.7625,
+      "start_char": 124,
+      "end_char": 127
+    },
+    {
+      "text": "used",
+      "start": 7.775,
+      "end": 8.1125,
+      "start_char": 128,
+      "end_char": 132
+    },
+    {
+      "text": "in",
+      "start": 8.125,
+      "end": 8.225,
+      "start_char": 133,
+      "end_char": 135
+    },
+    {
+      "text": "classrooms",
+      "start": 8.2375,
+      "end": 9.05,
+      "start_char": 136,
+      "end_char": 146
+    },
+    {
+      "text": "Reading",
+      "start": 9.9125,
+      "end": 10.3375,
+      "start_char": 148,
+      "end_char": 155
+    },
+    {
+      "text": "note",
+      "start": 10.35,
+      "end": 10.6625,
+      "start_char": 156,
+      "end_char": 160
+    },
+    {
+      "text": "Reading",
+      "start": 10.875,
+      "end": 11.175,
+      "start_char": 163,
+      "end_char": 170
+    },
+    {
+      "text": "1",
+      "start": 11.1875,
+      "end": 11.475,
+      "start_char": 171,
+      "end_char": 172
+    },
+    {
+      "text": "is",
+      "start": 11.4875,
+      "end": 11.6125,
+      "start_char": 173,
+      "end_char": 175
+    },
+    {
+      "text": "the",
+      "start": 11.625,
+      "end": 11.7,
+      "start_char": 176,
+      "end_char": 179
+    },
+    {
+      "text": "Applied",
+      "start": 11.7125,
+      "end": 12.1375,
+      "start_char": 181,
+      "end_char": 188
+    },
+    {
+      "text": "Behavior",
+      "start": 12.15,
+      "end": 12.6125,
+      "start_char": 189,
+      "end_char": 197
+    },
+    {
+      "text": "Analysis",
+      "start": 12.625,
+      "end": 13.2,
+      "start_char": 198,
+      "end_char": 206
+    },
+    {
+      "text": "entry",
+      "start": 13.2125,
+      "end": 13.55,
+      "start_char": 208,
+      "end_char": 213
+    },
+    {
+      "text": "from",
+      "start": 13.5625,
+      "end": 13.7375,
+      "start_char": 214,
+      "end_char": 218
+    },
+    {
+      "text": "TARGET",
+      "start": 13.75,
+      "end": 14.2375,
+      "start_char": 219,
+      "end_char": 225
+    },
+    {
+      "text": "Texas",
+      "start": 14.5,
+      "end": 14.925,
+      "start_char": 227,
+      "end_char": 232
+    },
+    {
+      "text": "Guide",
+      "start": 14.9375,
+      "end": 15.2875,
+      "start_char": 233,
+      "end_char": 238
+    },
+    {
+      "text": "for",
+      "start": 15.3,
+      "end": 15.4625,
+      "start_char": 239,
+      "end_char": 242
+    },
+    {
+      "text": "Effective",
+      "start": 15.475,
+      "end": 15.9,
+      "start_char": 243,
+      "end_char": 252
+    },
+    {
+      "text": "Teaching",
+      "start": 15.9125,
+      "end": 16.4,
+      "start_char": 253,
+      "end_char": 261
+    },
+    {
+      "text": "Texas",
+      "start": 16.7125,
+      "end": 17.1375,
+      "start_char": 263,
+      "end_char": 268
+    },
+    {
+      "text": "Statewide",
+      "start": 17.15,
+      "end": 17.7,
+      "start_char": 269,
+      "end_char": 278
+    },
+    {
+      "text": "Leadership",
+      "start": 17.7125,
+      "end": 18.2125,
+      "start_char": 279,
+      "end_char": 289
+    },
+    {
+      "text": "for",
+      "start": 18.225,
+      "end": 18.4,
+      "start_char": 290,
+      "end_char": 293
+    },
+    {
+      "text": "Autism",
+      "start": 18.4125,
+      "end": 18.9625,
+      "start_char": 294,
+      "end_char": 300
+    },
+    {
+      "text": "2009",
+      "start": 19.2,
+      "end": 20.175,
+      "start_char": 302,
+      "end_char": 306
+    },
+    {
+      "text": "Reading",
+      "start": 21.0375,
+      "end": 21.475,
+      "start_char": 309,
+      "end_char": 316
+    },
+    {
+      "text": "2",
+      "start": 21.4875,
+      "end": 21.75,
+      "start_char": 317,
+      "end_char": 318
+    },
+    {
+      "text": "is",
+      "start": 21.7625,
+      "end": 21.925,
+      "start_char": 319,
+      "end_char": 321
+    },
+    {
+      "text": "Trump",
+      "start": 21.9375,
+      "end": 22.3,
+      "start_char": 322,
+      "end_char": 327
+    },
+    {
+      "text": "Pennington",
+      "start": 22.4875,
+      "end": 23.0625,
+      "start_char": 329,
+      "end_char": 339
+    },
+    {
+      "text": "Travers",
+      "start": 23.25,
+      "end": 23.775,
+      "start_char": 341,
+      "end_char": 348
+    },
+    {
+      "text": "Ringdahl",
+      "start": 24.0125,
+      "end": 24.525,
+      "start_char": 350,
+      "end_char": 358
+    },
+    {
+      "text": "Whiteside",
+      "start": 24.7375,
+      "end": 25.3125,
+      "start_char": 360,
+      "end_char": 369
+    },
+    {
+      "text": "and",
+      "start": 25.3875,
+      "end": 25.5625,
+      "start_char": 370,
+      "end_char": 373
+    },
+    {
+      "text": "Ayres",
+      "start": 25.575,
+      "end": 25.9625,
+      "start_char": 374,
+      "end_char": 379
+    },
+    {
+      "text": "Applied",
+      "start": 26.2,
+      "end": 26.6,
+      "start_char": 382,
+      "end_char": 389
+    },
+    {
+      "text": "Behavior",
+      "start": 26.6125,
+      "end": 27.075,
+      "start_char": 390,
+      "end_char": 398
+    },
+    {
+      "text": "Analysis",
+      "start": 27.0875,
+      "end": 27.6875,
+      "start_char": 399,
+      "end_char": 407
+    },
+    {
+      "text": "in",
+      "start": 27.7,
+      "end": 27.85,
+      "start_char": 408,
+      "end_char": 410
+    },
+    {
+      "text": "Special",
+      "start": 27.8625,
+      "end": 28.275,
+      "start_char": 411,
+      "end_char": 418
+    },
+    {
+      "text": "Education",
+      "start": 28.2875,
+      "end": 28.9625,
+      "start_char": 419,
+      "end_char": 428
+    },
+    {
+      "text": "Misconceptions",
+      "start": 29.25,
+      "end": 30.0875,
+      "start_char": 430,
+      "end_char": 444
+    },
+    {
+      "text": "and",
+      "start": 30.1,
+      "end": 30.1875,
+      "start_char": 445,
+      "end_char": 448
+    },
+    {
+      "text": "Guidelines",
+      "start": 30.2,
+      "end": 30.7875,
+      "start_char": 449,
+      "end_char": 459
+    },
+    {
+      "text": "for",
+      "start": 30.8,
+      "end": 30.9375,
+      "start_char": 460,
+      "end_char": 463
+    },
+    {
+      "text": "Use",
+      "start": 30.95,
+      "end": 31.3125,
+      "start_char": 464,
+      "end_char": 467
+    },
+    {
+      "text": "TEACHING",
+      "start": 31.5625,
+      "end": 31.95,
+      "start_char": 471,
+      "end_char": 479
+    },
+    {
+      "text": "Exceptional",
+      "start": 31.9625,
+      "end": 32.525,
+      "start_char": 480,
+      "end_char": 491
+    },
+    {
+      "text": "Children",
+      "start": 32.5375,
+      "end": 33.025,
+      "start_char": 492,
+      "end_char": 500
+    },
+    {
+      "text": "2018",
+      "start": 33.25,
+      "end": 34.3875,
+      "start_char": 503,
+      "end_char": 507
+    },
+    {
+      "text": "Reference",
+      "start": 35.2625,
+      "end": 35.7875,
+      "start_char": 509,
+      "end_char": 518
+    },
+    {
+      "text": "lists",
+      "start": 35.8,
+      "end": 36.15,
+      "start_char": 519,
+      "end_char": 524
+    },
+    {
+      "text": "and",
+      "start": 36.1625,
+      "end": 36.3375,
+      "start_char": 525,
+      "end_char": 528
+    },
+    {
+      "text": "resource",
+      "start": 36.35,
+      "end": 36.8125,
+      "start_char": 529,
+      "end_char": 537
+    },
+    {
+      "text": "links",
+      "start": 36.825,
+      "end": 37.1625,
+      "start_char": 538,
+      "end_char": 543
+    },
+    {
+      "text": "are",
+      "start": 37.175,
+      "end": 37.3375,
+      "start_char": 544,
+      "end_char": 547
+    },
+    {
+      "text": "kept",
+      "start": 37.35,
+      "end": 37.6625,
+      "start_char": 548,
+      "end_char": 552
+    },
+    {
+      "text": "in",
+      "start": 37.675,
+      "end": 37.775,
+      "start_char": 553,
+      "end_char": 555
+    },
+    {
+      "text": "collapsible",
+      "start": 37.7875,
+      "end": 38.3625,
+      "start_char": 556,
+      "end_char": 567
+    },
+    {
+      "text": "sections",
+      "start": 38.375,
+      "end": 38.975,
+      "start_char": 568,
+      "end_char": 576
+    },
+    {
+      "text": "and",
+      "start": 38.9875,
+      "end": 39.1875,
+      "start_char": 577,
+      "end_char": 580
+    },
+    {
+      "text": "are",
+      "start": 39.2,
+      "end": 39.2875,
+      "start_char": 581,
+      "end_char": 584
+    },
+    {
+      "text": "not",
+      "start": 39.3,
+      "end": 39.5875,
+      "start_char": 585,
+      "end_char": 588
+    },
+    {
+      "text": "read",
+      "start": 39.6,
+      "end": 39.75,
+      "start_char": 589,
+      "end_char": 593
+    },
+    {
+      "text": "aloud",
+      "start": 39.7625,
+      "end": 40.3125,
+      "start_char": 594,
+      "end_char": 599
+    }
+  ]
+}

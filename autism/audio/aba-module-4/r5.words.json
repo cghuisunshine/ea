@@ -1,0 +1,6063 @@
+{
+  "digest": "60cb2547d872768e90c7b1704e09667e7d6b1b3a598d857c4cda820e0095bba5",
+  "voice": "en-US-AriaNeural",
+  "text": "Reading Five · TARGET Texas Guide Prompting Prompting is extensively used in behavior shaping and skill acquisition. It provides learners with assistance to increase the probability that a desired behavior will occur. Successful performance of a desired behavior elicits positive reinforcement, therefore reinforcing learning. Prompts vary from most to least intrusive, and prompting should be faded to avoid prompt dependency. Prompting is a means to induce an individual with added stimuli (prompts) to perform a desired behavior. A prompt is like a cue or support to encourage a desired behavior that otherwise does not occur — in other words, a prompt is an antecedent that is provided when an ordinary antecedent is ineffective. The prompt hierarchy Prompt (most → least intrusive) Description and example Full physical assistance The teacher uses \"hand-over-hand\" support to aid the child in completing a task — when teaching the child to pick up a cup, the teacher takes the child's hand and guides him to pick it up. Partial physical assistance The teacher provides partial physical assistance — when teaching the child to pick up the cup, the teacher guides the child's hand to the cup by tapping his elbow. Full model The teacher models the desired behavior — when teaching the child how to clap, the teacher claps while telling the child to clap. Partial model The teacher models only part of the desired behavior — when teaching the child how to clap, the teacher puts his hands in front of himself, but does not actually clap. Full verbal prompt The teacher verbally models the desired behavior — when teaching the child to expressively label \"car,\" the teacher asks, \"What is it? Say car.\" Partial verbal model The teacher verbally models only part of the desired behavior — \"What is it? Say c___.\" Gestural prompt The teacher uses a physical gesture to encourage the desired behavior — when teaching the function of an object, the teacher says, \"What do you drink with?\" while holding his hand to his mouth, shaping it like a cup. Positional prompt The teacher places the target item in a location that is closer to the child — when teaching the child to label \"toy,\" the teacher places the toy closest to the child. Time-delay or prompt-delay techniques This instructional procedure is proven to be effective, especially for children with autism (Walker, 2008). When teaching a novel task, time delay is used to transfer the stimulus control from a controlling prompt to a natural prompt by placing varying amounts of time between a controlling prompt and a natural prompt. Given different lengths of time delay, time delay strategies are categorized into  constant time delay (CTD)  — a standard time delay — and  progressive time delay (PTD)  — a graduated delay. The procedures begin with a zero-second delay trial, meaning the controlling prompt is presented with the task instruction at the same time without any delay in between. Gradually, to fade the prompt, time delay is increased between the natural prompt (task direction) and the controlling prompt. Choosing and fading prompts Not all prompts in the hierarchy need to be used when teaching a skill. Prompts should be chosen based on which ones are most effective for a particular child. Prompts should be faded systematically and as quickly as possible to avoid prompt dependency. Overall, the goal of using prompts is to help the child independently perform the desired behavior. Steps Identify the least intrusive prompt.  Choose a prompt that is necessary for a correct response to occur. Give differential reinforcement.  After a correct response, give appropriate reinforcement that is equivalent to the level of performance independence. Fade the prompt.  After the child masters a skill, gradually move the prompt away or replace it with a less intrusive prompt. Brief example Josh was learning to match objects with names. The teacher started with verbal and gestural prompts. She said, \"It is time for drawing, and we need some crayons to draw with.\" She looked at the crayons on the table and pointed at them, saying, \"These are crayons.\" Then she pointed at the crayons and asked Josh, \"What are these?\" After Josh responded \"Crayons,\" the teacher nodded her head and said, \"These are crayons! Good job, Josh!\" To fade prompts, the teacher gradually moved from verbal and gestural prompts to only positional prompts. For example, the next time the teacher placed the crayons on the table near Josh, she said, \"We need some crayons to draw with. Josh, show me the crayons.\" Josh pointed to the crayons correctly and received a point on his token board. Summary Prompting is used to increase desired behaviors and skill acquisition. When delivering prompts, the instructor should be mindful of the student's learning level and fading considerations. Reinforcement should occur after a correct response and should be contingent upon the level of performance independence desired. Number of studies Ages (years) Sample size Areas addressed Outcome 48* 3 to adult 139 Academics, art, communication, imitative skill, generalization, social skills, daily living skills, leisure choice, Internet skills, spontaneous response, disruptive behaviors, reading comprehension, safety, writing, empathy, observation, on-task behavior, identifying numbers + *Includes an integrated review of literature by Walker (2008). The full study-by-study summaries are in the source PDF.",
+  "audio": "r5.mp3",
+  "words": [
+    {
+      "text": "Reading",
+      "start": 0.1,
+      "end": 0.525,
+      "start_char": 0,
+      "end_char": 7
+    },
+    {
+      "text": "Five",
+      "start": 0.5375,
+      "end": 0.875,
+      "start_char": 8,
+      "end_char": 12
+    },
+    {
+      "text": "TARGET",
+      "start": 0.8875,
+      "end": 1.2875,
+      "start_char": 15,
+      "end_char": 21
+    },
+    {
+      "text": "Texas",
+      "start": 1.3,
+      "end": 1.7125,
+      "start_char": 22,
+      "end_char": 27
+    },
+    {
+      "text": "Guide",
+      "start": 1.725,
+      "end": 2.0375,
+      "start_char": 28,
+      "end_char": 33
+    },
+    {
+      "text": "Prompting",
+      "start": 2.05,
+      "end": 2.5,
+      "start_char": 34,
+      "end_char": 43
+    },
+    {
+      "text": "Prompting",
+      "start": 2.5125,
+      "end": 3.05,
+      "start_char": 44,
+      "end_char": 53
+    },
+    {
+      "text": "is",
+      "start": 3.0625,
+      "end": 3.15,
+      "start_char": 54,
+      "end_char": 56
+    },
+    {
+      "text": "extensively",
+      "start": 3.1625,
+      "end": 3.8375,
+      "start_char": 57,
+      "end_char": 68
+    },
+    {
+      "text": "used",
+      "start": 3.85,
+      "end": 4.2,
+      "start_char": 69,
+      "end_char": 73
+    },
+    {
+      "text": "in",
+      "start": 4.2125,
+      "end": 4.3,
+      "start_char": 74,
+      "end_char": 76
+    },
+    {
+      "text": "behavior",
+      "start": 4.3125,
+      "end": 4.8,
+      "start_char": 77,
+      "end_char": 85
+    },
+    {
+      "text": "shaping",
+      "start": 4.8125,
+      "end": 5.3,
+      "start_char": 86,
+      "end_char": 93
+    },
+    {
+      "text": "and",
+      "start": 5.3125,
+      "end": 5.4375,
+      "start_char": 94,
+      "end_char": 97
+    },
+    {
+      "text": "skill",
+      "start": 5.45,
+      "end": 5.7625,
+      "start_char": 98,
+      "end_char": 103
+    },
+    {
+      "text": "acquisition",
+      "start": 5.775,
+      "end": 6.5125,
+      "start_char": 104,
+      "end_char": 115
+    },
+    {
+      "text": "It",
+      "start": 7.3875,
+      "end": 7.575,
+      "start_char": 117,
+      "end_char": 119
+    },
+    {
+      "text": "provides",
+      "start": 7.5875,
+      "end": 8.05,
+      "start_char": 120,
+      "end_char": 128
+    },
+    {
+      "text": "learners",
+      "start": 8.0625,
+      "end": 8.4875,
+      "start_char": 129,
+      "end_char": 137
+    },
+    {
+      "text": "with",
+      "start": 8.5,
+      "end": 8.6375,
+      "start_char": 138,
+      "end_char": 142
+    },
+    {
+      "text": "assistance",
+      "start": 8.65,
+      "end": 9.2625,
+      "start_char": 143,
+      "end_char": 153
+    },
+    {
+      "text": "to",
+      "start": 9.275,
+      "end": 9.375,
+      "start_char": 154,
+      "end_char": 156
+    },
+    {
+      "text": "increase",
+      "start": 9.3875,
+      "end": 9.825,
+      "start_char": 157,
+      "end_char": 165
+    },
+    {
+      "text": "the",
+      "start": 9.8375,
+      "end": 9.9375,
+      "start_char": 166,
+      "end_char": 169
+    },
+    {
+      "text": "probability",
+      "start": 9.95,
+      "end": 10.6625,
+      "start_char": 170,
+      "end_char": 181
+    },
+    {
+      "text": "that",
+      "start": 10.675,
+      "end": 10.8125,
+      "start_char": 182,
+      "end_char": 186
+    },
+    {
+      "text": "a",
+      "start": 10.825,
+      "end": 10.8875,
+      "start_char": 187,
+      "end_char": 188
+    },
+    {
+      "text": "desired",
+      "start": 10.9,
+      "end": 11.375,
+      "start_char": 189,
+      "end_char": 196
+    },
+    {
+      "text": "behavior",
+      "start": 11.3875,
+      "end": 11.925,
+      "start_char": 197,
+      "end_char": 205
+    },
+    {
+      "text": "will",
+      "start": 11.9375,
+      "end": 12.0875,
+      "start_char": 206,
+      "end_char": 210
+    },
+    {
+      "text": "occur",
+      "start": 12.1,
+      "end": 12.55,
+      "start_char": 211,
+      "end_char": 216
+    },
+    {
+      "text": "Successful",
+      "start": 13.425,
+      "end": 14.1125,
+      "start_char": 218,
+      "end_char": 228
+    },
+    {
+      "text": "performance",
+      "start": 14.125,
+      "end": 14.7625,
+      "start_char": 229,
+      "end_char": 240
+    },
+    {
+      "text": "of",
+      "start": 14.775,
+      "end": 14.85,
+      "start_char": 241,
+      "end_char": 243
+    },
+    {
+      "text": "a",
+      "start": 14.8625,
+      "end": 14.925,
+      "start_char": 244,
+      "end_char": 245
+    },
+    {
+      "text": "desired",
+      "start": 14.9375,
+      "end": 15.4,
+      "start_char": 246,
+      "end_char": 253
+    },
+    {
+      "text": "behavior",
+      "start": 15.4125,
+      "end": 15.875,
+      "start_char": 254,
+      "end_char": 262
+    },
+    {
+      "text": "elicits",
+      "start": 15.8875,
+      "end": 16.325,
+      "start_char": 263,
+      "end_char": 270
+    },
+    {
+      "text": "positive",
+      "start": 16.3375,
+      "end": 16.825,
+      "start_char": 271,
+      "end_char": 279
+    },
+    {
+      "text": "reinforcement",
+      "start": 16.8375,
+      "end": 17.65,
+      "start_char": 280,
+      "end_char": 293
+    },
+    {
+      "text": "therefore",
+      "start": 18.025,
+      "end": 18.4625,
+      "start_char": 295,
+      "end_char": 304
+    },
+    {
+      "text": "reinforcing",
+      "start": 18.475,
+      "end": 19.1625,
+      "start_char": 305,
+      "end_char": 316
+    },
+    {
+      "text": "learning",
+      "start": 19.175,
+      "end": 19.6,
+      "start_char": 317,
+      "end_char": 325
+    },
+    {
+      "text": "Prompts",
+      "start": 20.4625,
+      "end": 20.875,
+      "start_char": 327,
+      "end_char": 334
+    },
+    {
+      "text": "vary",
+      "start": 20.8875,
+      "end": 21.1875,
+      "start_char": 335,
+      "end_char": 339
+    },
+    {
+      "text": "from",
+      "start": 21.2,
+      "end": 21.375,
+      "start_char": 340,
+      "end_char": 344
+    },
+    {
+      "text": "most",
+      "start": 21.3875,
+      "end": 21.675,
+      "start_char": 345,
+      "end_char": 349
+    },
+    {
+      "text": "to",
+      "start": 21.6875,
+      "end": 21.7875,
+      "start_char": 350,
+      "end_char": 352
+    },
+    {
+      "text": "least",
+      "start": 21.8,
+      "end": 22.125,
+      "start_char": 353,
+      "end_char": 358
+    },
+    {
+      "text": "intrusive",
+      "start": 22.1375,
+      "end": 22.7,
+      "start_char": 359,
+      "end_char": 368
+    },
+    {
+      "text": "and",
+      "start": 23.05,
+      "end": 23.175,
+      "start_char": 370,
+      "end_char": 373
+    },
+    {
+      "text": "prompting",
+      "start": 23.1875,
+      "end": 23.725,
+      "start_char": 374,
+      "end_char": 383
+    },
+    {
+      "text": "should",
+      "start": 23.7375,
+      "end": 23.9,
+      "start_char": 384,
+      "end_char": 390
+    },
+    {
+      "text": "be",
+      "start": 23.9125,
+      "end": 24.025,
+      "start_char": 391,
+      "end_char": 393
+    },
+    {
+      "text": "faded",
+      "start": 24.0375,
+      "end": 24.4375,
+      "start_char": 394,
+      "end_char": 399
+    },
+    {
+      "text": "to",
+      "start": 24.45,
+      "end": 24.55,
+      "start_char": 400,
+      "end_char": 402
+    },
+    {
+      "text": "avoid",
+      "start": 24.5625,
+      "end": 24.9625,
+      "start_char": 403,
+      "end_char": 408
+    },
+    {
+      "text": "prompt",
+      "start": 24.975,
+      "end": 25.3375,
+      "start_char": 409,
+      "end_char": 415
+    },
+    {
+      "text": "dependency",
+      "start": 25.35,
+      "end": 26.1375,
+      "start_char": 416,
+      "end_char": 426
+    },
+    {
+      "text": "Prompting",
+      "start": 27.0125,
+      "end": 27.5375,
+      "start_char": 428,
+      "end_char": 437
+    },
+    {
+      "text": "is",
+      "start": 27.55,
+      "end": 27.6625,
+      "start_char": 438,
+      "end_char": 440
+    },
+    {
+      "text": "a",
+      "start": 27.675,
+      "end": 27.7375,
+      "start_char": 441,
+      "end_char": 442
+    },
+    {
+      "text": "means",
+      "start": 27.75,
+      "end": 28.1125,
+      "start_char": 443,
+      "end_char": 448
+    },
+    {
+      "text": "to",
+      "start": 28.125,
+      "end": 28.225,
+      "start_char": 449,
+      "end_char": 451
+    },
+    {
+      "text": "induce",
+      "start": 28.2375,
+      "end": 28.625,
+      "start_char": 452,
+      "end_char": 458
+    },
+    {
+      "text": "an",
+      "start": 28.6375,
+      "end": 28.725,
+      "start_char": 459,
+      "end_char": 461
+    },
+    {
+      "text": "individual",
+      "start": 28.7375,
+      "end": 29.4375,
+      "start_char": 462,
+      "end_char": 472
+    },
+    {
+      "text": "with",
+      "start": 29.45,
+      "end": 29.6,
+      "start_char": 473,
+      "end_char": 477
+    },
+    {
+      "text": "added",
+      "start": 29.6125,
+      "end": 29.9625,
+      "start_char": 478,
+      "end_char": 483
+    },
+    {
+      "text": "stimuli",
+      "start": 29.975,
+      "end": 30.6125,
+      "start_char": 484,
+      "end_char": 491
+    },
+    {
+      "text": "prompts",
+      "start": 30.85,
+      "end": 31.3125,
+      "start_char": 493,
+      "end_char": 500
+    },
+    {
+      "text": "to",
+      "start": 31.575,
+      "end": 31.7,
+      "start_char": 502,
+      "end_char": 504
+    },
+    {
+      "text": "perform",
+      "start": 31.7125,
+      "end": 32.175,
+      "start_char": 505,
+      "end_char": 512
+    },
+    {
+      "text": "a",
+      "start": 32.1875,
+      "end": 32.25,
+      "start_char": 513,
+      "end_char": 514
+    },
+    {
+      "text": "desired",
+      "start": 32.2625,
+      "end": 32.7,
+      "start_char": 515,
+      "end_char": 522
+    },
+    {
+      "text": "behavior",
+      "start": 32.7125,
+      "end": 33.3375,
+      "start_char": 523,
+      "end_char": 531
+    },
+    {
+      "text": "A",
+      "start": 34.2,
+      "end": 34.3375,
+      "start_char": 533,
+      "end_char": 534
+    },
+    {
+      "text": "prompt",
+      "start": 34.35,
+      "end": 34.7625,
+      "start_char": 535,
+      "end_char": 541
+    },
+    {
+      "text": "is",
+      "start": 34.775,
+      "end": 34.875,
+      "start_char": 542,
+      "end_char": 544
+    },
+    {
+      "text": "like",
+      "start": 34.8875,
+      "end": 35.0625,
+      "start_char": 545,
+      "end_char": 549
+    },
+    {
+      "text": "a",
+      "start": 35.075,
+      "end": 35.15,
+      "start_char": 550,
+      "end_char": 551
+    },
+    {
+      "text": "cue",
+      "start": 35.1625,
+      "end": 35.45,
+      "start_char": 552,
+      "end_char": 555
+    },
+    {
+      "text": "or",
+      "start": 35.4625,
+      "end": 35.625,
+      "start_char": 556,
+      "end_char": 558
+    },
+    {
+      "text": "support",
+      "start": 35.6375,
+      "end": 36.0875,
+      "start_char": 559,
+      "end_char": 566
+    },
+    {
+      "text": "to",
+      "start": 36.1,
+      "end": 36.2125,
+      "start_char": 567,
+      "end_char": 569
+    },
+    {
+      "text": "encourage",
+      "start": 36.225,
+      "end": 36.725,
+      "start_char": 570,
+      "end_char": 579
+    },
+    {
+      "text": "a",
+      "start": 36.7375,
+      "end": 36.8,
+      "start_char": 580,
+      "end_char": 581
+    },
+    {
+      "text": "desired",
+      "start": 36.8125,
+      "end": 37.275,
+      "start_char": 582,
+      "end_char": 589
+    },
+    {
+      "text": "behavior",
+      "start": 37.2875,
+      "end": 37.775,
+      "start_char": 590,
+      "end_char": 598
+    },
+    {
+      "text": "that",
+      "start": 37.7875,
+      "end": 37.9625,
+      "start_char": 599,
+      "end_char": 603
+    },
+    {
+      "text": "otherwise",
+      "start": 37.975,
+      "end": 38.525,
+      "start_char": 604,
+      "end_char": 613
+    },
+    {
+      "text": "does",
+      "start": 38.5375,
+      "end": 38.6875,
+      "start_char": 614,
+      "end_char": 618
+    },
+    {
+      "text": "not",
+      "start": 38.7,
+      "end": 38.925,
+      "start_char": 619,
+      "end_char": 622
+    },
+    {
+      "text": "occur",
+      "start": 38.9375,
+      "end": 39.35,
+      "start_char": 623,
+      "end_char": 628
+    },
+    {
+      "text": "in",
+      "start": 39.6875,
+      "end": 39.85,
+      "start_char": 631,
+      "end_char": 633
+    },
+    {
+      "text": "other",
+      "start": 39.8625,
+      "end": 40.1375,
+      "start_char": 634,
+      "end_char": 639
+    },
+    {
+      "text": "words",
+      "start": 40.15,
+      "end": 40.5125,
+      "start_char": 640,
+      "end_char": 645
+    },
+    {
+      "text": "a",
+      "start": 40.825,
+      "end": 40.9,
+      "start_char": 647,
+      "end_char": 648
+    },
+    {
+      "text": "prompt",
+      "start": 40.9125,
+      "end": 41.3,
+      "start_char": 649,
+      "end_char": 655
+    },
+    {
+      "text": "is",
+      "start": 41.3125,
+      "end": 41.4,
+      "start_char": 656,
+      "end_char": 658
+    },
+    {
+      "text": "an",
+      "start": 41.4125,
+      "end": 41.5625,
+      "start_char": 659,
+      "end_char": 661
+    },
+    {
+      "text": "antecedent",
+      "start": 41.575,
+      "end": 42.2625,
+      "start_char": 662,
+      "end_char": 672
+    },
+    {
+      "text": "that",
+      "start": 42.275,
+      "end": 42.3875,
+      "start_char": 673,
+      "end_char": 677
+    },
+    {
+      "text": "is",
+      "start": 42.4,
+      "end": 42.5125,
+      "start_char": 678,
+      "end_char": 680
+    },
+    {
+      "text": "provided",
+      "start": 42.525,
+      "end": 43.05,
+      "start_char": 681,
+      "end_char": 689
+    },
+    {
+      "text": "when",
+      "start": 43.0625,
+      "end": 43.2,
+      "start_char": 690,
+      "end_char": 694
+    },
+    {
+      "text": "an",
+      "start": 43.2125,
+      "end": 43.375,
+      "start_char": 695,
+      "end_char": 697
+    },
+    {
+      "text": "ordinary",
+      "start": 43.3875,
+      "end": 43.9125,
+      "start_char": 698,
+      "end_char": 706
+    },
+    {
+      "text": "antecedent",
+      "start": 43.925,
+      "end": 44.6375,
+      "start_char": 707,
+      "end_char": 717
+    },
+    {
+      "text": "is",
+      "start": 44.65,
+      "end": 44.775,
+      "start_char": 718,
+      "end_char": 720
+    },
+    {
+      "text": "ineffective",
+      "start": 44.7875,
+      "end": 45.6,
+      "start_char": 721,
+      "end_char": 732
+    },
+    {
+      "text": "The",
+      "start": 46.4625,
+      "end": 46.6375,
+      "start_char": 734,
+      "end_char": 737
+    },
+    {
+      "text": "prompt",
+      "start": 46.65,
+      "end": 46.975,
+      "start_char": 738,
+      "end_char": 744
+    },
+    {
+      "text": "hierarchy",
+      "start": 46.9875,
+      "end": 47.5625,
+      "start_char": 745,
+      "end_char": 754
+    },
+    {
+      "text": "Prompt",
+      "start": 47.575,
+      "end": 48.0375,
+      "start_char": 755,
+      "end_char": 761
+    },
+    {
+      "text": "most",
+      "start": 48.275,
+      "end": 48.6,
+      "start_char": 763,
+      "end_char": 767
+    },
+    {
+      "text": "least",
+      "start": 48.6125,
+      "end": 48.9125,
+      "start_char": 770,
+      "end_char": 775
+    },
+    {
+      "text": "intrusive",
+      "start": 48.925,
+      "end": 49.475,
+      "start_char": 776,
+      "end_char": 785
+    },
+    {
+      "text": "Description",
+      "start": 49.625,
+      "end": 50.175,
+      "start_char": 787,
+      "end_char": 798
+    },
+    {
+      "text": "and",
+      "start": 50.1875,
+      "end": 50.3,
+      "start_char": 799,
+      "end_char": 802
+    },
+    {
+      "text": "example",
+      "start": 50.3125,
+      "end": 50.8375,
+      "start_char": 803,
+      "end_char": 810
+    },
+    {
+      "text": "Full",
+      "start": 50.85,
+      "end": 51.1375,
+      "start_char": 811,
+      "end_char": 815
+    },
+    {
+      "text": "physical",
+      "start": 51.15,
+      "end": 51.5625,
+      "start_char": 816,
+      "end_char": 824
+    },
+    {
+      "text": "assistance",
+      "start": 51.575,
+      "end": 52.1625,
+      "start_char": 825,
+      "end_char": 835
+    },
+    {
+      "text": "The",
+      "start": 52.175,
+      "end": 52.2875,
+      "start_char": 836,
+      "end_char": 839
+    },
+    {
+      "text": "teacher",
+      "start": 52.3,
+      "end": 52.7,
+      "start_char": 840,
+      "end_char": 847
+    },
+    {
+      "text": "uses",
+      "start": 52.7125,
+      "end": 53.0625,
+      "start_char": 848,
+      "end_char": 852
+    },
+    {
+      "text": "hand-over-hand",
+      "start": 53.075,
+      "end": 53.8875,
+      "start_char": 854,
+      "end_char": 868
+    },
+    {
+      "text": "support",
+      "start": 53.9,
+      "end": 54.3375,
+      "start_char": 870,
+      "end_char": 877
+    },
+    {
+      "text": "to",
+      "start": 54.35,
+      "end": 54.4625,
+      "start_char": 878,
+      "end_char": 880
+    },
+    {
+      "text": "aid",
+      "start": 54.475,
+      "end": 54.725,
+      "start_char": 881,
+      "end_char": 884
+    },
+    {
+      "text": "the",
+      "start": 54.7375,
+      "end": 54.8125,
+      "start_char": 885,
+      "end_char": 888
+    },
+    {
+      "text": "child",
+      "start": 54.825,
+      "end": 55.2375,
+      "start_char": 889,
+      "end_char": 894
+    },
+    {
+      "text": "in",
+      "start": 55.25,
+      "end": 55.35,
+      "start_char": 895,
+      "end_char": 897
+    },
+    {
+      "text": "completing",
+      "start": 55.3625,
+      "end": 55.825,
+      "start_char": 898,
+      "end_char": 908
+    },
+    {
+      "text": "a",
+      "start": 55.8375,
+      "end": 55.9,
+      "start_char": 909,
+      "end_char": 910
+    },
+    {
+      "text": "task",
+      "start": 55.9125,
+      "end": 56.35,
+      "start_char": 911,
+      "end_char": 915
+    },
+    {
+      "text": "when",
+      "start": 56.625,
+      "end": 56.7875,
+      "start_char": 918,
+      "end_char": 922
+    },
+    {
+      "text": "teaching",
+      "start": 56.8,
+      "end": 57.1625,
+      "start_char": 923,
+      "end_char": 931
+    },
+    {
+      "text": "the",
+      "start": 57.175,
+      "end": 57.25,
+      "start_char": 932,
+      "end_char": 935
+    },
+    {
+      "text": "child",
+      "start": 57.2625,
+      "end": 57.6625,
+      "start_char": 936,
+      "end_char": 941
+    },
+    {
+      "text": "to",
+      "start": 57.675,
+      "end": 57.75,
+      "start_char": 942,
+      "end_char": 944
+    },
+    {
+      "text": "pick",
+      "start": 57.7625,
+      "end": 57.975,
+      "start_char": 945,
+      "end_char": 949
+    },
+    {
+      "text": "up",
+      "start": 57.9875,
+      "end": 58.1125,
+      "start_char": 950,
+      "end_char": 952
+    },
+    {
+      "text": "a",
+      "start": 58.125,
+      "end": 58.1875,
+      "start_char": 953,
+      "end_char": 954
+    },
+    {
+      "text": "cup",
+      "start": 58.2,
+      "end": 58.525,
+      "start_char": 955,
+      "end_char": 958
+    },
+    {
+      "text": "the",
+      "start": 58.85,
+      "end": 59.0,
+      "start_char": 960,
+      "end_char": 963
+    },
+    {
+      "text": "teacher",
+      "start": 59.0125,
+      "end": 59.4125,
+      "start_char": 964,
+      "end_char": 971
+    },
+    {
+      "text": "takes",
+      "start": 59.425,
+      "end": 59.7125,
+      "start_char": 972,
+      "end_char": 977
+    },
+    {
+      "text": "the",
+      "start": 59.725,
+      "end": 59.8125,
+      "start_char": 978,
+      "end_char": 981
+    },
+    {
+      "text": "child's",
+      "start": 59.825,
+      "end": 60.25,
+      "start_char": 982,
+      "end_char": 989
+    },
+    {
+      "text": "hand",
+      "start": 60.2625,
+      "end": 60.6125,
+      "start_char": 990,
+      "end_char": 994
+    },
+    {
+      "text": "and",
+      "start": 60.625,
+      "end": 60.7125,
+      "start_char": 995,
+      "end_char": 998
+    },
+    {
+      "text": "guides",
+      "start": 60.725,
+      "end": 61.075,
+      "start_char": 999,
+      "end_char": 1005
+    },
+    {
+      "text": "him",
+      "start": 61.0875,
+      "end": 61.25,
+      "start_char": 1006,
+      "end_char": 1009
+    },
+    {
+      "text": "to",
+      "start": 61.2625,
+      "end": 61.3625,
+      "start_char": 1010,
+      "end_char": 1012
+    },
+    {
+      "text": "pick",
+      "start": 61.375,
+      "end": 61.5875,
+      "start_char": 1013,
+      "end_char": 1017
+    },
+    {
+      "text": "it",
+      "start": 61.6,
+      "end": 61.675,
+      "start_char": 1018,
+      "end_char": 1020
+    },
+    {
+      "text": "up",
+      "start": 61.6875,
+      "end": 62.0625,
+      "start_char": 1021,
+      "end_char": 1023
+    },
+    {
+      "text": "Partial",
+      "start": 62.925,
+      "end": 63.3375,
+      "start_char": 1025,
+      "end_char": 1032
+    },
+    {
+      "text": "physical",
+      "start": 63.35,
+      "end": 63.7375,
+      "start_char": 1033,
+      "end_char": 1041
+    },
+    {
+      "text": "assistance",
+      "start": 63.75,
+      "end": 64.3625,
+      "start_char": 1042,
+      "end_char": 1052
+    },
+    {
+      "text": "The",
+      "start": 64.375,
+      "end": 64.4875,
+      "start_char": 1053,
+      "end_char": 1056
+    },
+    {
+      "text": "teacher",
+      "start": 64.5,
+      "end": 64.8875,
+      "start_char": 1057,
+      "end_char": 1064
+    },
+    {
+      "text": "provides",
+      "start": 64.9,
+      "end": 65.35,
+      "start_char": 1065,
+      "end_char": 1073
+    },
+    {
+      "text": "partial",
+      "start": 65.3625,
+      "end": 65.7625,
+      "start_char": 1074,
+      "end_char": 1081
+    },
+    {
+      "text": "physical",
+      "start": 65.775,
+      "end": 66.1625,
+      "start_char": 1082,
+      "end_char": 1090
+    },
+    {
+      "text": "assistance",
+      "start": 66.175,
+      "end": 66.8375,
+      "start_char": 1091,
+      "end_char": 1101
+    },
+    {
+      "text": "when",
+      "start": 67.125,
+      "end": 67.3,
+      "start_char": 1104,
+      "end_char": 1108
+    },
+    {
+      "text": "teaching",
+      "start": 67.3125,
+      "end": 67.675,
+      "start_char": 1109,
+      "end_char": 1117
+    },
+    {
+      "text": "the",
+      "start": 67.6875,
+      "end": 67.775,
+      "start_char": 1118,
+      "end_char": 1121
+    },
+    {
+      "text": "child",
+      "start": 67.7875,
+      "end": 68.1875,
+      "start_char": 1122,
+      "end_char": 1127
+    },
+    {
+      "text": "to",
+      "start": 68.2,
+      "end": 68.2875,
+      "start_char": 1128,
+      "end_char": 1130
+    },
+    {
+      "text": "pick",
+      "start": 68.3,
+      "end": 68.5125,
+      "start_char": 1131,
+      "end_char": 1135
+    },
+    {
+      "text": "up",
+      "start": 68.525,
+      "end": 68.65,
+      "start_char": 1136,
+      "end_char": 1138
+    },
+    {
+      "text": "the",
+      "start": 68.6625,
+      "end": 68.75,
+      "start_char": 1139,
+      "end_char": 1142
+    },
+    {
+      "text": "cup",
+      "start": 68.7625,
+      "end": 69.1125,
+      "start_char": 1143,
+      "end_char": 1146
+    },
+    {
+      "text": "the",
+      "start": 69.425,
+      "end": 69.5375,
+      "start_char": 1148,
+      "end_char": 1151
+    },
+    {
+      "text": "teacher",
+      "start": 69.55,
+      "end": 69.925,
+      "start_char": 1152,
+      "end_char": 1159
+    },
+    {
+      "text": "guides",
+      "start": 69.9375,
+      "end": 70.275,
+      "start_char": 1160,
+      "end_char": 1166
+    },
+    {
+      "text": "the",
+      "start": 70.2875,
+      "end": 70.375,
+      "start_char": 1167,
+      "end_char": 1170
+    },
+    {
+      "text": "child's",
+      "start": 70.3875,
+      "end": 70.8125,
+      "start_char": 1171,
+      "end_char": 1178
+    },
+    {
+      "text": "hand",
+      "start": 70.825,
+      "end": 71.0875,
+      "start_char": 1179,
+      "end_char": 1183
+    },
+    {
+      "text": "to",
+      "start": 71.1,
+      "end": 71.1625,
+      "start_char": 1184,
+      "end_char": 1186
+    },
+    {
+      "text": "the",
+      "start": 71.175,
+      "end": 71.275,
+      "start_char": 1187,
+      "end_char": 1190
+    },
+    {
+      "text": "cup",
+      "start": 71.2875,
+      "end": 71.6,
+      "start_char": 1191,
+      "end_char": 1194
+    },
+    {
+      "text": "by",
+      "start": 71.6125,
+      "end": 71.75,
+      "start_char": 1195,
+      "end_char": 1197
+    },
+    {
+      "text": "tapping",
+      "start": 71.7625,
+      "end": 72.1875,
+      "start_char": 1198,
+      "end_char": 1205
+    },
+    {
+      "text": "his",
+      "start": 72.2,
+      "end": 72.3875,
+      "start_char": 1206,
+      "end_char": 1209
+    },
+    {
+      "text": "elbow",
+      "start": 72.4,
+      "end": 72.875,
+      "start_char": 1210,
+      "end_char": 1215
+    },
+    {
+      "text": "Full",
+      "start": 73.7375,
+      "end": 74.0125,
+      "start_char": 1217,
+      "end_char": 1221
+    },
+    {
+      "text": "model",
+      "start": 74.025,
+      "end": 74.35,
+      "start_char": 1222,
+      "end_char": 1227
+    },
+    {
+      "text": "The",
+      "start": 74.3625,
+      "end": 74.475,
+      "start_char": 1228,
+      "end_char": 1231
+    },
+    {
+      "text": "teacher",
+      "start": 74.4875,
+      "end": 74.875,
+      "start_char": 1232,
+      "end_char": 1239
+    },
+    {
+      "text": "models",
+      "start": 74.8875,
+      "end": 75.2875,
+      "start_char": 1240,
+      "end_char": 1246
+    },
+    {
+      "text": "the",
+      "start": 75.3,
+      "end": 75.3875,
+      "start_char": 1247,
+      "end_char": 1250
+    },
+    {
+      "text": "desired",
+      "start": 75.4,
+      "end": 75.8375,
+      "start_char": 1251,
+      "end_char": 1258
+    },
+    {
+      "text": "behavior",
+      "start": 75.85,
+      "end": 76.4,
+      "start_char": 1259,
+      "end_char": 1267
+    },
+    {
+      "text": "when",
+      "start": 76.7,
+      "end": 76.8875,
+      "start_char": 1270,
+      "end_char": 1274
+    },
+    {
+      "text": "teaching",
+      "start": 76.9,
+      "end": 77.2625,
+      "start_char": 1275,
+      "end_char": 1283
+    },
+    {
+      "text": "the",
+      "start": 77.275,
+      "end": 77.3625,
+      "start_char": 1284,
+      "end_char": 1287
+    },
+    {
+      "text": "child",
+      "start": 77.375,
+      "end": 77.75,
+      "start_char": 1288,
+      "end_char": 1293
+    },
+    {
+      "text": "how",
+      "start": 77.7625,
+      "end": 77.9,
+      "start_char": 1294,
+      "end_char": 1297
+    },
+    {
+      "text": "to",
+      "start": 77.9125,
+      "end": 78.0125,
+      "start_char": 1298,
+      "end_char": 1300
+    },
+    {
+      "text": "clap",
+      "start": 78.025,
+      "end": 78.425,
+      "start_char": 1301,
+      "end_char": 1305
+    },
+    {
+      "text": "the",
+      "start": 78.65,
+      "end": 78.75,
+      "start_char": 1307,
+      "end_char": 1310
+    },
+    {
+      "text": "teacher",
+      "start": 78.7625,
+      "end": 79.1125,
+      "start_char": 1311,
+      "end_char": 1318
+    },
+    {
+      "text": "claps",
+      "start": 79.125,
+      "end": 79.55,
+      "start_char": 1319,
+      "end_char": 1324
+    },
+    {
+      "text": "while",
+      "start": 79.5625,
+      "end": 79.725,
+      "start_char": 1325,
+      "end_char": 1330
+    },
+    {
+      "text": "telling",
+      "start": 79.7375,
+      "end": 80.0625,
+      "start_char": 1331,
+      "end_char": 1338
+    },
+    {
+      "text": "the",
+      "start": 80.075,
+      "end": 80.15,
+      "start_char": 1339,
+      "end_char": 1342
+    },
+    {
+      "text": "child",
+      "start": 80.1625,
+      "end": 80.5375,
+      "start_char": 1343,
+      "end_char": 1348
+    },
+    {
+      "text": "to",
+      "start": 80.55,
+      "end": 80.625,
+      "start_char": 1349,
+      "end_char": 1351
+    },
+    {
+      "text": "clap",
+      "start": 80.6375,
+      "end": 81.15,
+      "start_char": 1352,
+      "end_char": 1356
+    },
+    {
+      "text": "Partial",
+      "start": 82.0125,
+      "end": 82.4,
+      "start_char": 1358,
+      "end_char": 1365
+    },
+    {
+      "text": "model",
+      "start": 82.4125,
+      "end": 82.75,
+      "start_char": 1366,
+      "end_char": 1371
+    },
+    {
+      "text": "The",
+      "start": 82.7625,
+      "end": 82.875,
+      "start_char": 1372,
+      "end_char": 1375
+    },
+    {
+      "text": "teacher",
+      "start": 82.8875,
+      "end": 83.25,
+      "start_char": 1376,
+      "end_char": 1383
+    },
+    {
+      "text": "models",
+      "start": 83.2625,
+      "end": 83.725,
+      "start_char": 1384,
+      "end_char": 1390
+    },
+    {
+      "text": "only",
+      "start": 83.7375,
+      "end": 83.9875,
+      "start_char": 1391,
+      "end_char": 1395
+    },
+    {
+      "text": "part",
+      "start": 84.0,
+      "end": 84.2875,
+      "start_char": 1396,
+      "end_char": 1400
+    },
+    {
+      "text": "of",
+      "start": 84.3,
+      "end": 84.3625,
+      "start_char": 1401,
+      "end_char": 1403
+    },
+    {
+      "text": "the",
+      "start": 84.375,
+      "end": 84.4625,
+      "start_char": 1404,
+      "end_char": 1407
+    },
+    {
+      "text": "desired",
+      "start": 84.475,
+      "end": 84.9125,
+      "start_char": 1408,
+      "end_char": 1415
+    },
+    {
+      "text": "behavior",
+      "start": 84.925,
+      "end": 85.4875,
+      "start_char": 1416,
+      "end_char": 1424
+    },
+    {
+      "text": "when",
+      "start": 85.8,
+      "end": 85.9875,
+      "start_char": 1427,
+      "end_char": 1431
+    },
+    {
+      "text": "teaching",
+      "start": 86.0,
+      "end": 86.3625,
+      "start_char": 1432,
+      "end_char": 1440
+    },
+    {
+      "text": "the",
+      "start": 86.375,
+      "end": 86.4625,
+      "start_char": 1441,
+      "end_char": 1444
+    },
+    {
+      "text": "child",
+      "start": 86.475,
+      "end": 86.875,
+      "start_char": 1445,
+      "end_char": 1450
+    },
+    {
+      "text": "how",
+      "start": 86.8875,
+      "end": 87.025,
+      "start_char": 1451,
+      "end_char": 1454
+    },
+    {
+      "text": "to",
+      "start": 87.0375,
+      "end": 87.1375,
+      "start_char": 1455,
+      "end_char": 1457
+    },
+    {
+      "text": "clap",
+      "start": 87.15,
+      "end": 87.575,
+      "start_char": 1458,
+      "end_char": 1462
+    },
+    {
+      "text": "the",
+      "start": 87.8125,
+      "end": 87.9125,
+      "start_char": 1464,
+      "end_char": 1467
+    },
+    {
+      "text": "teacher",
+      "start": 87.925,
+      "end": 88.3,
+      "start_char": 1468,
+      "end_char": 1475
+    },
+    {
+      "text": "puts",
+      "start": 88.3125,
+      "end": 88.525,
+      "start_char": 1476,
+      "end_char": 1480
+    },
+    {
+      "text": "his",
+      "start": 88.5375,
+      "end": 88.675,
+      "start_char": 1481,
+      "end_char": 1484
+    },
+    {
+      "text": "hands",
+      "start": 88.6875,
+      "end": 89.0375,
+      "start_char": 1485,
+      "end_char": 1490
+    },
+    {
+      "text": "in",
+      "start": 89.05,
+      "end": 89.1625,
+      "start_char": 1491,
+      "end_char": 1493
+    },
+    {
+      "text": "front",
+      "start": 89.175,
+      "end": 89.4125,
+      "start_char": 1494,
+      "end_char": 1499
+    },
+    {
+      "text": "of",
+      "start": 89.425,
+      "end": 89.4875,
+      "start_char": 1500,
+      "end_char": 1502
+    },
+    {
+      "text": "himself",
+      "start": 89.5,
+      "end": 90.0625,
+      "start_char": 1503,
+      "end_char": 1510
+    },
+    {
+      "text": "but",
+      "start": 90.3375,
+      "end": 90.5,
+      "start_char": 1512,
+      "end_char": 1515
+    },
+    {
+      "text": "does",
+      "start": 90.5125,
+      "end": 90.6875,
+      "start_char": 1516,
+      "end_char": 1520
+    },
+    {
+      "text": "not",
+      "start": 90.7,
+      "end": 90.9625,
+      "start_char": 1521,
+      "end_char": 1524
+    },
+    {
+      "text": "actually",
+      "start": 90.975,
+      "end": 91.4,
+      "start_char": 1525,
+      "end_char": 1533
+    },
+    {
+      "text": "clap",
+      "start": 91.4125,
+      "end": 91.9375,
+      "start_char": 1534,
+      "end_char": 1538
+    },
+    {
+      "text": "Full",
+      "start": 92.8,
+      "end": 93.1125,
+      "start_char": 1540,
+      "end_char": 1544
+    },
+    {
+      "text": "verbal",
+      "start": 93.125,
+      "end": 93.4875,
+      "start_char": 1545,
+      "end_char": 1551
+    },
+    {
+      "text": "prompt",
+      "start": 93.5,
+      "end": 93.85,
+      "start_char": 1552,
+      "end_char": 1558
+    },
+    {
+      "text": "The",
+      "start": 93.8625,
+      "end": 93.95,
+      "start_char": 1559,
+      "end_char": 1562
+    },
+    {
+      "text": "teacher",
+      "start": 93.9625,
+      "end": 94.3625,
+      "start_char": 1563,
+      "end_char": 1570
+    },
+    {
+      "text": "verbally",
+      "start": 94.375,
+      "end": 94.7625,
+      "start_char": 1571,
+      "end_char": 1579
+    },
+    {
+      "text": "models",
+      "start": 94.775,
+      "end": 95.1625,
+      "start_char": 1580,
+      "end_char": 1586
+    },
+    {
+      "text": "the",
+      "start": 95.175,
+      "end": 95.2625,
+      "start_char": 1587,
+      "end_char": 1590
+    },
+    {
+      "text": "desired",
+      "start": 95.275,
+      "end": 95.725,
+      "start_char": 1591,
+      "end_char": 1598
+    },
+    {
+      "text": "behavior",
+      "start": 95.7375,
+      "end": 96.3,
+      "start_char": 1599,
+      "end_char": 1607
+    },
+    {
+      "text": "when",
+      "start": 96.5875,
+      "end": 96.75,
+      "start_char": 1610,
+      "end_char": 1614
+    },
+    {
+      "text": "teaching",
+      "start": 96.7625,
+      "end": 97.125,
+      "start_char": 1615,
+      "end_char": 1623
+    },
+    {
+      "text": "the",
+      "start": 97.1375,
+      "end": 97.225,
+      "start_char": 1624,
+      "end_char": 1627
+    },
+    {
+      "text": "child",
+      "start": 97.2375,
+      "end": 97.625,
+      "start_char": 1628,
+      "end_char": 1633
+    },
+    {
+      "text": "to",
+      "start": 97.6375,
+      "end": 97.725,
+      "start_char": 1634,
+      "end_char": 1636
+    },
+    {
+      "text": "expressively",
+      "start": 97.7375,
+      "end": 98.3875,
+      "start_char": 1637,
+      "end_char": 1649
+    },
+    {
+      "text": "label",
+      "start": 98.4,
+      "end": 98.7375,
+      "start_char": 1650,
+      "end_char": 1655
+    },
+    {
+      "text": "car",
+      "start": 98.75,
+      "end": 99.0875,
+      "start_char": 1657,
+      "end_char": 1660
+    },
+    {
+      "text": "the",
+      "start": 99.35,
+      "end": 99.45,
+      "start_char": 1663,
+      "end_char": 1666
+    },
+    {
+      "text": "teacher",
+      "start": 99.4625,
+      "end": 99.85,
+      "start_char": 1667,
+      "end_char": 1674
+    },
+    {
+      "text": "asks",
+      "start": 99.8625,
+      "end": 100.3125,
+      "start_char": 1675,
+      "end_char": 1679
+    },
+    {
+      "text": "What",
+      "start": 100.45,
+      "end": 100.6625,
+      "start_char": 1682,
+      "end_char": 1686
+    },
+    {
+      "text": "is",
+      "start": 100.675,
+      "end": 100.825,
+      "start_char": 1687,
+      "end_char": 1689
+    },
+    {
+      "text": "it",
+      "start": 100.8375,
+      "end": 101.1625,
+      "start_char": 1690,
+      "end_char": 1692
+    },
+    {
+      "text": "Say",
+      "start": 102.025,
+      "end": 102.375,
+      "start_char": 1694,
+      "end_char": 1697
+    },
+    {
+      "text": "car",
+      "start": 102.3875,
+      "end": 102.9,
+      "start_char": 1698,
+      "end_char": 1701
+    },
+    {
+      "text": "Partial",
+      "start": 103.775,
+      "end": 104.2,
+      "start_char": 1704,
+      "end_char": 1711
+    },
+    {
+      "text": "verbal",
+      "start": 104.2125,
+      "end": 104.5125,
+      "start_char": 1712,
+      "end_char": 1718
+    },
+    {
+      "text": "model",
+      "start": 104.525,
+      "end": 104.8625,
+      "start_char": 1719,
+      "end_char": 1724
+    },
+    {
+      "text": "The",
+      "start": 104.875,
+      "end": 104.9875,
+      "start_char": 1725,
+      "end_char": 1728
+    },
+    {
+      "text": "teacher",
+      "start": 105.0,
+      "end": 105.4,
+      "start_char": 1729,
+      "end_char": 1736
+    },
+    {
+      "text": "verbally",
+      "start": 105.4125,
+      "end": 105.775,
+      "start_char": 1737,
+      "end_char": 1745
+    },
+    {
+      "text": "models",
+      "start": 105.7875,
+      "end": 106.2875,
+      "start_char": 1746,
+      "end_char": 1752
+    },
+    {
+      "text": "only",
+      "start": 106.3,
+      "end": 106.5625,
+      "start_char": 1753,
+      "end_char": 1757
+    },
+    {
+      "text": "part",
+      "start": 106.575,
+      "end": 106.875,
+      "start_char": 1758,
+      "end_char": 1762
+    },
+    {
+      "text": "of",
+      "start": 106.8875,
+      "end": 106.9625,
+      "start_char": 1763,
+      "end_char": 1765
+    },
+    {
+      "text": "the",
+      "start": 106.975,
+      "end": 107.0625,
+      "start_char": 1766,
+      "end_char": 1769
+    },
+    {
+      "text": "desired",
+      "start": 107.075,
+      "end": 107.5125,
+      "start_char": 1770,
+      "end_char": 1777
+    },
+    {
+      "text": "behavior",
+      "start": 107.525,
+      "end": 108.1,
+      "start_char": 1778,
+      "end_char": 1786
+    },
+    {
+      "text": "What",
+      "start": 108.3125,
+      "end": 108.5,
+      "start_char": 1790,
+      "end_char": 1794
+    },
+    {
+      "text": "is",
+      "start": 108.5125,
+      "end": 108.6625,
+      "start_char": 1795,
+      "end_char": 1797
+    },
+    {
+      "text": "it",
+      "start": 108.675,
+      "end": 108.9875,
+      "start_char": 1798,
+      "end_char": 1800
+    },
+    {
+      "text": "Say",
+      "start": 109.85,
+      "end": 110.15,
+      "start_char": 1802,
+      "end_char": 1805
+    },
+    {
+      "text": "c",
+      "start": 110.1625,
+      "end": 110.4375,
+      "start_char": 1806,
+      "end_char": 1807
+    },
+    {
+      "text": "_",
+      "start": 110.45,
+      "end": 111.075,
+      "start_char": 1807,
+      "end_char": 1808
+    },
+    {
+      "text": "_",
+      "start": 111.0875,
+      "end": 111.6625,
+      "start_char": 1808,
+      "end_char": 1809
+    },
+    {
+      "text": "_",
+      "start": 111.675,
+      "end": 112.2,
+      "start_char": 1809,
+      "end_char": 1810
+    },
+    {
+      "text": ".",
+      "start": 112.2125,
+      "end": 112.65,
+      "start_char": 1810,
+      "end_char": 1811
+    },
+    {
+      "text": "Gestural",
+      "start": 113.5125,
+      "end": 114.1125,
+      "start_char": 1813,
+      "end_char": 1821
+    },
+    {
+      "text": "prompt",
+      "start": 114.125,
+      "end": 114.4875,
+      "start_char": 1822,
+      "end_char": 1828
+    },
+    {
+      "text": "The",
+      "start": 114.5,
+      "end": 114.5875,
+      "start_char": 1829,
+      "end_char": 1832
+    },
+    {
+      "text": "teacher",
+      "start": 114.6,
+      "end": 115.0,
+      "start_char": 1833,
+      "end_char": 1840
+    },
+    {
+      "text": "uses",
+      "start": 115.0125,
+      "end": 115.3375,
+      "start_char": 1841,
+      "end_char": 1845
+    },
+    {
+      "text": "a",
+      "start": 115.35,
+      "end": 115.425,
+      "start_char": 1846,
+      "end_char": 1847
+    },
+    {
+      "text": "physical",
+      "start": 115.4375,
+      "end": 115.875,
+      "start_char": 1848,
+      "end_char": 1856
+    },
+    {
+      "text": "gesture",
+      "start": 115.8875,
+      "end": 116.3375,
+      "start_char": 1857,
+      "end_char": 1864
+    },
+    {
+      "text": "to",
+      "start": 116.35,
+      "end": 116.4875,
+      "start_char": 1865,
+      "end_char": 1867
+    },
+    {
+      "text": "encourage",
+      "start": 116.5,
+      "end": 117.0625,
+      "start_char": 1868,
+      "end_char": 1877
+    },
+    {
+      "text": "the",
+      "start": 117.075,
+      "end": 117.1625,
+      "start_char": 1878,
+      "end_char": 1881
+    },
+    {
+      "text": "desired",
+      "start": 117.175,
+      "end": 117.625,
+      "start_char": 1882,
+      "end_char": 1889
+    },
+    {
+      "text": "behavior",
+      "start": 117.6375,
+      "end": 118.175,
+      "start_char": 1890,
+      "end_char": 1898
+    },
+    {
+      "text": "when",
+      "start": 118.425,
+      "end": 118.5875,
+      "start_char": 1901,
+      "end_char": 1905
+    },
+    {
+      "text": "teaching",
+      "start": 118.6,
+      "end": 118.975,
+      "start_char": 1906,
+      "end_char": 1914
+    },
+    {
+      "text": "the",
+      "start": 118.9875,
+      "end": 119.075,
+      "start_char": 1915,
+      "end_char": 1918
+    },
+    {
+      "text": "function",
+      "start": 119.0875,
+      "end": 119.4875,
+      "start_char": 1919,
+      "end_char": 1927
+    },
+    {
+      "text": "of",
+      "start": 119.5,
+      "end": 119.5625,
+      "start_char": 1928,
+      "end_char": 1930
+    },
+    {
+      "text": "an",
+      "start": 119.575,
+      "end": 119.6875,
+      "start_char": 1931,
+      "end_char": 1933
+    },
+    {
+      "text": "object",
+      "start": 119.7,
+      "end": 120.225,
+      "start_char": 1934,
+      "end_char": 1940
+    },
+    {
+      "text": "the",
+      "start": 120.4125,
+      "end": 120.5125,
+      "start_char": 1942,
+      "end_char": 1945
+    },
+    {
+      "text": "teacher",
+      "start": 120.525,
+      "end": 120.8875,
+      "start_char": 1946,
+      "end_char": 1953
+    },
+    {
+      "text": "says",
+      "start": 120.9,
+      "end": 121.3375,
+      "start_char": 1954,
+      "end_char": 1958
+    },
+    {
+      "text": "What",
+      "start": 121.6375,
+      "end": 121.85,
+      "start_char": 1961,
+      "end_char": 1965
+    },
+    {
+      "text": "do",
+      "start": 121.8625,
+      "end": 121.925,
+      "start_char": 1966,
+      "end_char": 1968
+    },
+    {
+      "text": "you",
+      "start": 121.9375,
+      "end": 122.05,
+      "start_char": 1969,
+      "end_char": 1972
+    },
+    {
+      "text": "drink",
+      "start": 122.0625,
+      "end": 122.35,
+      "start_char": 1973,
+      "end_char": 1978
+    },
+    {
+      "text": "with",
+      "start": 122.3625,
+      "end": 122.6875,
+      "start_char": 1979,
+      "end_char": 1983
+    },
+    {
+      "text": "while",
+      "start": 122.9625,
+      "end": 123.15,
+      "start_char": 1986,
+      "end_char": 1991
+    },
+    {
+      "text": "holding",
+      "start": 123.1625,
+      "end": 123.5,
+      "start_char": 1992,
+      "end_char": 1999
+    },
+    {
+      "text": "his",
+      "start": 123.5125,
+      "end": 123.6625,
+      "start_char": 2000,
+      "end_char": 2003
+    },
+    {
+      "text": "hand",
+      "start": 123.675,
+      "end": 123.95,
+      "start_char": 2004,
+      "end_char": 2008
+    },
+    {
+      "text": "to",
+      "start": 123.9625,
+      "end": 124.05,
+      "start_char": 2009,
+      "end_char": 2011
+    },
+    {
+      "text": "his",
+      "start": 124.0625,
+      "end": 124.2125,
+      "start_char": 2012,
+      "end_char": 2015
+    },
+    {
+      "text": "mouth",
+      "start": 124.225,
+      "end": 124.625,
+      "start_char": 2016,
+      "end_char": 2021
+    },
+    {
+      "text": "shaping",
+      "start": 124.875,
+      "end": 125.275,
+      "start_char": 2023,
+      "end_char": 2030
+    },
+    {
+      "text": "it",
+      "start": 125.2875,
+      "end": 125.4,
+      "start_char": 2031,
+      "end_char": 2033
+    },
+    {
+      "text": "like",
+      "start": 125.4125,
+      "end": 125.575,
+      "start_char": 2034,
+      "end_char": 2038
+    },
+    {
+      "text": "a",
+      "start": 125.5875,
+      "end": 125.65,
+      "start_char": 2039,
+      "end_char": 2040
+    },
+    {
+      "text": "cup",
+      "start": 125.6625,
+      "end": 126.1,
+      "start_char": 2041,
+      "end_char": 2044
+    },
+    {
+      "text": "Positional",
+      "start": 126.9625,
+      "end": 127.55,
+      "start_char": 2046,
+      "end_char": 2056
+    },
+    {
+      "text": "prompt",
+      "start": 127.5625,
+      "end": 127.9375,
+      "start_char": 2057,
+      "end_char": 2063
+    },
+    {
+      "text": "The",
+      "start": 127.95,
+      "end": 128.05,
+      "start_char": 2064,
+      "end_char": 2067
+    },
+    {
+      "text": "teacher",
+      "start": 128.0625,
+      "end": 128.4375,
+      "start_char": 2068,
+      "end_char": 2075
+    },
+    {
+      "text": "places",
+      "start": 128.45,
+      "end": 128.875,
+      "start_char": 2076,
+      "end_char": 2082
+    },
+    {
+      "text": "the",
+      "start": 128.8875,
+      "end": 128.975,
+      "start_char": 2083,
+      "end_char": 2086
+    },
+    {
+      "text": "target",
+      "start": 128.9875,
+      "end": 129.3875,
+      "start_char": 2087,
+      "end_char": 2093
+    },
+    {
+      "text": "item",
+      "start": 129.4,
+      "end": 129.6875,
+      "start_char": 2094,
+      "end_char": 2098
+    },
+    {
+      "text": "in",
+      "start": 129.7,
+      "end": 129.775,
+      "start_char": 2099,
+      "end_char": 2101
+    },
+    {
+      "text": "a",
+      "start": 129.7875,
+      "end": 129.8375,
+      "start_char": 2102,
+      "end_char": 2103
+    },
+    {
+      "text": "location",
+      "start": 129.85,
+      "end": 130.475,
+      "start_char": 2104,
+      "end_char": 2112
+    },
+    {
+      "text": "that",
+      "start": 130.4875,
+      "end": 130.6,
+      "start_char": 2113,
+      "end_char": 2117
+    },
+    {
+      "text": "is",
+      "start": 130.6125,
+      "end": 130.725,
+      "start_char": 2118,
+      "end_char": 2120
+    },
+    {
+      "text": "closer",
+      "start": 130.7375,
+      "end": 131.1375,
+      "start_char": 2121,
+      "end_char": 2127
+    },
+    {
+      "text": "to",
+      "start": 131.15,
+      "end": 131.2375,
+      "start_char": 2128,
+      "end_char": 2130
+    },
+    {
+      "text": "the",
+      "start": 131.25,
+      "end": 131.35,
+      "start_char": 2131,
+      "end_char": 2134
+    },
+    {
+      "text": "child",
+      "start": 131.3625,
+      "end": 131.8,
+      "start_char": 2135,
+      "end_char": 2140
+    },
+    {
+      "text": "when",
+      "start": 132.1,
+      "end": 132.2625,
+      "start_char": 2143,
+      "end_char": 2147
+    },
+    {
+      "text": "teaching",
+      "start": 132.275,
+      "end": 132.6375,
+      "start_char": 2148,
+      "end_char": 2156
+    },
+    {
+      "text": "the",
+      "start": 132.65,
+      "end": 132.7375,
+      "start_char": 2157,
+      "end_char": 2160
+    },
+    {
+      "text": "child",
+      "start": 132.75,
+      "end": 133.15,
+      "start_char": 2161,
+      "end_char": 2166
+    },
+    {
+      "text": "to",
+      "start": 133.1625,
+      "end": 133.2375,
+      "start_char": 2167,
+      "end_char": 2169
+    },
+    {
+      "text": "label",
+      "start": 133.25,
+      "end": 133.5625,
+      "start_char": 2170,
+      "end_char": 2175
+    },
+    {
+      "text": "toy",
+      "start": 133.575,
+      "end": 133.9375,
+      "start_char": 2177,
+      "end_char": 2180
+    },
+    {
+      "text": "the",
+      "start": 134.25,
+      "end": 134.3625,
+      "start_char": 2183,
+      "end_char": 2186
+    },
+    {
+      "text": "teacher",
+      "start": 134.375,
+      "end": 134.725,
+      "start_char": 2187,
+      "end_char": 2194
+    },
+    {
+      "text": "places",
+      "start": 134.7375,
+      "end": 135.1375,
+      "start_char": 2195,
+      "end_char": 2201
+    },
+    {
+      "text": "the",
+      "start": 135.15,
+      "end": 135.2375,
+      "start_char": 2202,
+      "end_char": 2205
+    },
+    {
+      "text": "toy",
+      "start": 135.25,
+      "end": 135.5,
+      "start_char": 2206,
+      "end_char": 2209
+    },
+    {
+      "text": "closest",
+      "start": 135.5125,
+      "end": 136.0375,
+      "start_char": 2210,
+      "end_char": 2217
+    },
+    {
+      "text": "to",
+      "start": 136.05,
+      "end": 136.125,
+      "start_char": 2218,
+      "end_char": 2220
+    },
+    {
+      "text": "the",
+      "start": 136.1375,
+      "end": 136.225,
+      "start_char": 2221,
+      "end_char": 2224
+    },
+    {
+      "text": "child",
+      "start": 136.2375,
+      "end": 136.8,
+      "start_char": 2225,
+      "end_char": 2230
+    },
+    {
+      "text": "Time-delay",
+      "start": 137.6625,
+      "end": 138.375,
+      "start_char": 2232,
+      "end_char": 2242
+    },
+    {
+      "text": "or",
+      "start": 138.3875,
+      "end": 138.5625,
+      "start_char": 2243,
+      "end_char": 2245
+    },
+    {
+      "text": "prompt-delay",
+      "start": 138.575,
+      "end": 139.2375,
+      "start_char": 2246,
+      "end_char": 2258
+    },
+    {
+      "text": "techniques",
+      "start": 139.25,
+      "end": 139.8125,
+      "start_char": 2259,
+      "end_char": 2269
+    },
+    {
+      "text": "This",
+      "start": 139.825,
+      "end": 140.0,
+      "start_char": 2270,
+      "end_char": 2274
+    },
+    {
+      "text": "instructional",
+      "start": 140.0125,
+      "end": 140.6875,
+      "start_char": 2275,
+      "end_char": 2288
+    },
+    {
+      "text": "procedure",
+      "start": 140.7,
+      "end": 141.2375,
+      "start_char": 2289,
+      "end_char": 2298
+    },
+    {
+      "text": "is",
+      "start": 141.25,
+      "end": 141.4,
+      "start_char": 2299,
+      "end_char": 2301
+    },
+    {
+      "text": "proven",
+      "start": 141.4125,
+      "end": 141.7875,
+      "start_char": 2302,
+      "end_char": 2308
+    },
+    {
+      "text": "to",
+      "start": 141.8,
+      "end": 141.875,
+      "start_char": 2309,
+      "end_char": 2311
+    },
+    {
+      "text": "be",
+      "start": 141.8875,
+      "end": 142.0125,
+      "start_char": 2312,
+      "end_char": 2314
+    },
+    {
+      "text": "effective",
+      "start": 142.025,
+      "end": 142.55,
+      "start_char": 2315,
+      "end_char": 2324
+    },
+    {
+      "text": "especially",
+      "start": 142.9,
+      "end": 143.4375,
+      "start_char": 2326,
+      "end_char": 2336
+    },
+    {
+      "text": "for",
+      "start": 143.45,
+      "end": 143.5875,
+      "start_char": 2337,
+      "end_char": 2340
+    },
+    {
+      "text": "children",
+      "start": 143.6,
+      "end": 144.0,
+      "start_char": 2341,
+      "end_char": 2349
+    },
+    {
+      "text": "with",
+      "start": 144.0125,
+      "end": 144.15,
+      "start_char": 2350,
+      "end_char": 2354
+    },
+    {
+      "text": "autism",
+      "start": 144.1625,
+      "end": 144.7,
+      "start_char": 2355,
+      "end_char": 2361
+    },
+    {
+      "text": "Walker",
+      "start": 144.925,
+      "end": 145.3875,
+      "start_char": 2363,
+      "end_char": 2369
+    },
+    {
+      "text": "2008",
+      "start": 145.575,
+      "end": 146.525,
+      "start_char": 2371,
+      "end_char": 2375
+    },
+    {
+      "text": "When",
+      "start": 147.4,
+      "end": 147.625,
+      "start_char": 2378,
+      "end_char": 2382
+    },
+    {
+      "text": "teaching",
+      "start": 147.6375,
+      "end": 148.025,
+      "start_char": 2383,
+      "end_char": 2391
+    },
+    {
+      "text": "a",
+      "start": 148.0375,
+      "end": 148.075,
+      "start_char": 2392,
+      "end_char": 2393
+    },
+    {
+      "text": "novel",
+      "start": 148.0875,
+      "end": 148.4375,
+      "start_char": 2394,
+      "end_char": 2399
+    },
+    {
+      "text": "task",
+      "start": 148.45,
+      "end": 148.925,
+      "start_char": 2400,
+      "end_char": 2404
+    },
+    {
+      "text": "time",
+      "start": 149.1625,
+      "end": 149.425,
+      "start_char": 2406,
+      "end_char": 2410
+    },
+    {
+      "text": "delay",
+      "start": 149.4375,
+      "end": 149.75,
+      "start_char": 2411,
+      "end_char": 2416
+    },
+    {
+      "text": "is",
+      "start": 149.7625,
+      "end": 149.9125,
+      "start_char": 2417,
+      "end_char": 2419
+    },
+    {
+      "text": "used",
+      "start": 149.925,
+      "end": 150.1875,
+      "start_char": 2420,
+      "end_char": 2424
+    },
+    {
+      "text": "to",
+      "start": 150.2,
+      "end": 150.2625,
+      "start_char": 2425,
+      "end_char": 2427
+    },
+    {
+      "text": "transfer",
+      "start": 150.275,
+      "end": 150.8375,
+      "start_char": 2428,
+      "end_char": 2436
+    },
+    {
+      "text": "the",
+      "start": 150.85,
+      "end": 150.975,
+      "start_char": 2437,
+      "end_char": 2440
+    },
+    {
+      "text": "stimulus",
+      "start": 150.9875,
+      "end": 151.55,
+      "start_char": 2441,
+      "end_char": 2449
+    },
+    {
+      "text": "control",
+      "start": 151.5625,
+      "end": 152.025,
+      "start_char": 2450,
+      "end_char": 2457
+    },
+    {
+      "text": "from",
+      "start": 152.0375,
+      "end": 152.1875,
+      "start_char": 2458,
+      "end_char": 2462
+    },
+    {
+      "text": "a",
+      "start": 152.2,
+      "end": 152.2625,
+      "start_char": 2463,
+      "end_char": 2464
+    },
+    {
+      "text": "controlling",
+      "start": 152.275,
+      "end": 152.825,
+      "start_char": 2465,
+      "end_char": 2476
+    },
+    {
+      "text": "prompt",
+      "start": 152.8375,
+      "end": 153.275,
+      "start_char": 2477,
+      "end_char": 2483
+    },
+    {
+      "text": "to",
+      "start": 153.2875,
+      "end": 153.4,
+      "start_char": 2484,
+      "end_char": 2486
+    },
+    {
+      "text": "a",
+      "start": 153.4125,
+      "end": 153.475,
+      "start_char": 2487,
+      "end_char": 2488
+    },
+    {
+      "text": "natural",
+      "start": 153.4875,
+      "end": 153.925,
+      "start_char": 2489,
+      "end_char": 2496
+    },
+    {
+      "text": "prompt",
+      "start": 153.9375,
+      "end": 154.375,
+      "start_char": 2497,
+      "end_char": 2503
+    },
+    {
+      "text": "by",
+      "start": 154.3875,
+      "end": 154.5125,
+      "start_char": 2504,
+      "end_char": 2506
+    },
+    {
+      "text": "placing",
+      "start": 154.525,
+      "end": 155.0125,
+      "start_char": 2507,
+      "end_char": 2514
+    },
+    {
+      "text": "varying",
+      "start": 155.025,
+      "end": 155.425,
+      "start_char": 2515,
+      "end_char": 2522
+    },
+    {
+      "text": "amounts",
+      "start": 155.4375,
+      "end": 155.7875,
+      "start_char": 2523,
+      "end_char": 2530
+    },
+    {
+      "text": "of",
+      "start": 155.8,
+      "end": 155.875,
+      "start_char": 2531,
+      "end_char": 2533
+    },
+    {
+      "text": "time",
+      "start": 155.8875,
+      "end": 156.2375,
+      "start_char": 2534,
+      "end_char": 2538
+    },
+    {
+      "text": "between",
+      "start": 156.25,
+      "end": 156.575,
+      "start_char": 2539,
+      "end_char": 2546
+    },
+    {
+      "text": "a",
+      "start": 156.5875,
+      "end": 156.6375,
+      "start_char": 2547,
+      "end_char": 2548
+    },
+    {
+      "text": "controlling",
+      "start": 156.65,
+      "end": 157.2,
+      "start_char": 2549,
+      "end_char": 2560
+    },
+    {
+      "text": "prompt",
+      "start": 157.2125,
+      "end": 157.6375,
+      "start_char": 2561,
+      "end_char": 2567
+    },
+    {
+      "text": "and",
+      "start": 157.65,
+      "end": 157.775,
+      "start_char": 2568,
+      "end_char": 2571
+    },
+    {
+      "text": "a",
+      "start": 157.7875,
+      "end": 157.825,
+      "start_char": 2572,
+      "end_char": 2573
+    },
+    {
+      "text": "natural",
+      "start": 157.8375,
+      "end": 158.275,
+      "start_char": 2574,
+      "end_char": 2581
+    },
+    {
+      "text": "prompt",
+      "start": 158.2875,
+      "end": 158.825,
+      "start_char": 2582,
+      "end_char": 2588
+    },
+    {
+      "text": "Given",
+      "start": 159.6875,
+      "end": 160.0625,
+      "start_char": 2590,
+      "end_char": 2595
+    },
+    {
+      "text": "different",
+      "start": 160.075,
+      "end": 160.4125,
+      "start_char": 2596,
+      "end_char": 2605
+    },
+    {
+      "text": "lengths",
+      "start": 160.425,
+      "end": 160.7625,
+      "start_char": 2606,
+      "end_char": 2613
+    },
+    {
+      "text": "of",
+      "start": 160.775,
+      "end": 160.85,
+      "start_char": 2614,
+      "end_char": 2616
+    },
+    {
+      "text": "time",
+      "start": 160.8625,
+      "end": 161.125,
+      "start_char": 2617,
+      "end_char": 2621
+    },
+    {
+      "text": "delay",
+      "start": 161.1375,
+      "end": 161.5625,
+      "start_char": 2622,
+      "end_char": 2627
+    },
+    {
+      "text": "time",
+      "start": 161.9125,
+      "end": 162.1875,
+      "start_char": 2629,
+      "end_char": 2633
+    },
+    {
+      "text": "delay",
+      "start": 162.2,
+      "end": 162.475,
+      "start_char": 2634,
+      "end_char": 2639
+    },
+    {
+      "text": "strategies",
+      "start": 162.4875,
+      "end": 163.125,
+      "start_char": 2640,
+      "end_char": 2650
+    },
+    {
+      "text": "are",
+      "start": 163.1375,
+      "end": 163.25,
+      "start_char": 2651,
+      "end_char": 2654
+    },
+    {
+      "text": "categorized",
+      "start": 163.2625,
+      "end": 163.9875,
+      "start_char": 2655,
+      "end_char": 2666
+    },
+    {
+      "text": "into",
+      "start": 164.0,
+      "end": 164.1875,
+      "start_char": 2667,
+      "end_char": 2671
+    },
+    {
+      "text": "constant",
+      "start": 164.2,
+      "end": 164.6875,
+      "start_char": 2673,
+      "end_char": 2681
+    },
+    {
+      "text": "time",
+      "start": 164.7,
+      "end": 164.95,
+      "start_char": 2682,
+      "end_char": 2686
+    },
+    {
+      "text": "delay",
+      "start": 164.9625,
+      "end": 165.3875,
+      "start_char": 2687,
+      "end_char": 2692
+    },
+    {
+      "text": "CTD",
+      "start": 165.725,
+      "end": 166.4375,
+      "start_char": 2694,
+      "end_char": 2697
+    },
+    {
+      "text": "a",
+      "start": 166.7625,
+      "end": 166.8125,
+      "start_char": 2702,
+      "end_char": 2703
+    },
+    {
+      "text": "standard",
+      "start": 166.825,
+      "end": 167.275,
+      "start_char": 2704,
+      "end_char": 2712
+    },
+    {
+      "text": "time",
+      "start": 167.2875,
+      "end": 167.5375,
+      "start_char": 2713,
+      "end_char": 2717
+    },
+    {
+      "text": "delay",
+      "start": 167.55,
+      "end": 167.9375,
+      "start_char": 2718,
+      "end_char": 2723
+    },
+    {
+      "text": "and",
+      "start": 168.225,
+      "end": 168.3875,
+      "start_char": 2726,
+      "end_char": 2729
+    },
+    {
+      "text": "progressive",
+      "start": 168.4,
+      "end": 168.9375,
+      "start_char": 2731,
+      "end_char": 2742
+    },
+    {
+      "text": "time",
+      "start": 168.95,
+      "end": 169.2,
+      "start_char": 2743,
+      "end_char": 2747
+    },
+    {
+      "text": "delay",
+      "start": 169.2125,
+      "end": 169.6125,
+      "start_char": 2748,
+      "end_char": 2753
+    },
+    {
+      "text": "PTD",
+      "start": 169.8375,
+      "end": 170.5625,
+      "start_char": 2755,
+      "end_char": 2758
+    },
+    {
+      "text": "a",
+      "start": 170.8375,
+      "end": 170.8875,
+      "start_char": 2763,
+      "end_char": 2764
+    },
+    {
+      "text": "graduated",
+      "start": 170.9,
+      "end": 171.525,
+      "start_char": 2765,
+      "end_char": 2774
+    },
+    {
+      "text": "delay",
+      "start": 171.5375,
+      "end": 172.0375,
+      "start_char": 2775,
+      "end_char": 2780
+    },
+    {
+      "text": "The",
+      "start": 172.9125,
+      "end": 173.075,
+      "start_char": 2782,
+      "end_char": 2785
+    },
+    {
+      "text": "procedures",
+      "start": 173.0875,
+      "end": 173.7,
+      "start_char": 2786,
+      "end_char": 2796
+    },
+    {
+      "text": "begin",
+      "start": 173.7125,
+      "end": 174.0875,
+      "start_char": 2797,
+      "end_char": 2802
+    },
+    {
+      "text": "with",
+      "start": 174.1,
+      "end": 174.2125,
+      "start_char": 2803,
+      "end_char": 2807
+    },
+    {
+      "text": "a",
+      "start": 174.225,
+      "end": 174.275,
+      "start_char": 2808,
+      "end_char": 2809
+    },
+    {
+      "text": "zero-second",
+      "start": 174.2875,
+      "end": 174.9875,
+      "start_char": 2810,
+      "end_char": 2821
+    },
+    {
+      "text": "delay",
+      "start": 175.0,
+      "end": 175.275,
+      "start_char": 2822,
+      "end_char": 2827
+    },
+    {
+      "text": "trial",
+      "start": 175.2875,
+      "end": 175.775,
+      "start_char": 2828,
+      "end_char": 2833
+    },
+    {
+      "text": "meaning",
+      "start": 176.1625,
+      "end": 176.425,
+      "start_char": 2835,
+      "end_char": 2842
+    },
+    {
+      "text": "the",
+      "start": 176.4375,
+      "end": 176.5375,
+      "start_char": 2843,
+      "end_char": 2846
+    },
+    {
+      "text": "controlling",
+      "start": 176.55,
+      "end": 177.0875,
+      "start_char": 2847,
+      "end_char": 2858
+    },
+    {
+      "text": "prompt",
+      "start": 177.1,
+      "end": 177.5,
+      "start_char": 2859,
+      "end_char": 2865
+    },
+    {
+      "text": "is",
+      "start": 177.5125,
+      "end": 177.625,
+      "start_char": 2866,
+      "end_char": 2868
+    },
+    {
+      "text": "presented",
+      "start": 177.6375,
+      "end": 178.125,
+      "start_char": 2869,
+      "end_char": 2878
+    },
+    {
+      "text": "with",
+      "start": 178.1375,
+      "end": 178.25,
+      "start_char": 2879,
+      "end_char": 2883
+    },
+    {
+      "text": "the",
+      "start": 178.2625,
+      "end": 178.35,
+      "start_char": 2884,
+      "end_char": 2887
+    },
+    {
+      "text": "task",
+      "start": 178.3625,
+      "end": 178.725,
+      "start_char": 2888,
+      "end_char": 2892
+    },
+    {
+      "text": "instruction",
+      "start": 178.7375,
+      "end": 179.3875,
+      "start_char": 2893,
+      "end_char": 2904
+    },
+    {
+      "text": "at",
+      "start": 179.4,
+      "end": 179.475,
+      "start_char": 2905,
+      "end_char": 2907
+    },
+    {
+      "text": "the",
+      "start": 179.4875,
+      "end": 179.575,
+      "start_char": 2908,
+      "end_char": 2911
+    },
+    {
+      "text": "same",
+      "start": 179.5875,
+      "end": 179.875,
+      "start_char": 2912,
+      "end_char": 2916
+    },
+    {
+      "text": "time",
+      "start": 179.8875,
+      "end": 180.225,
+      "start_char": 2917,
+      "end_char": 2921
+    },
+    {
+      "text": "without",
+      "start": 180.2375,
+      "end": 180.625,
+      "start_char": 2922,
+      "end_char": 2929
+    },
+    {
+      "text": "any",
+      "start": 180.6375,
+      "end": 180.8375,
+      "start_char": 2930,
+      "end_char": 2933
+    },
+    {
+      "text": "delay",
+      "start": 180.85,
+      "end": 181.25,
+      "start_char": 2934,
+      "end_char": 2939
+    },
+    {
+      "text": "in",
+      "start": 181.2625,
+      "end": 181.3875,
+      "start_char": 2940,
+      "end_char": 2942
+    },
+    {
+      "text": "between",
+      "start": 181.4,
+      "end": 181.9625,
+      "start_char": 2943,
+      "end_char": 2950
+    },
+    {
+      "text": "Gradually",
+      "start": 182.825,
+      "end": 183.475,
+      "start_char": 2952,
+      "end_char": 2961
+    },
+    {
+      "text": "to",
+      "start": 183.6375,
+      "end": 183.7625,
+      "start_char": 2963,
+      "end_char": 2965
+    },
+    {
+      "text": "fade",
+      "start": 183.775,
+      "end": 184.075,
+      "start_char": 2966,
+      "end_char": 2970
+    },
+    {
+      "text": "the",
+      "start": 184.0875,
+      "end": 184.175,
+      "start_char": 2971,
+      "end_char": 2974
+    },
+    {
+      "text": "prompt",
+      "start": 184.1875,
+      "end": 184.6125,
+      "start_char": 2975,
+      "end_char": 2981
+    },
+    {
+      "text": "time",
+      "start": 184.875,
+      "end": 185.15,
+      "start_char": 2983,
+      "end_char": 2987
+    },
+    {
+      "text": "delay",
+      "start": 185.1625,
+      "end": 185.475,
+      "start_char": 2988,
+      "end_char": 2993
+    },
+    {
+      "text": "is",
+      "start": 185.4875,
+      "end": 185.6125,
+      "start_char": 2994,
+      "end_char": 2996
+    },
+    {
+      "text": "increased",
+      "start": 185.625,
+      "end": 186.175,
+      "start_char": 2997,
+      "end_char": 3006
+    },
+    {
+      "text": "between",
+      "start": 186.1875,
+      "end": 186.5125,
+      "start_char": 3007,
+      "end_char": 3014
+    },
+    {
+      "text": "the",
+      "start": 186.525,
+      "end": 186.5875,
+      "start_char": 3015,
+      "end_char": 3018
+    },
+    {
+      "text": "natural",
+      "start": 186.6,
+      "end": 187.0375,
+      "start_char": 3019,
+      "end_char": 3026
+    },
+    {
+      "text": "prompt",
+      "start": 187.05,
+      "end": 187.5125,
+      "start_char": 3027,
+      "end_char": 3033
+    },
+    {
+      "text": "task",
+      "start": 187.725,
+      "end": 188.0375,
+      "start_char": 3035,
+      "end_char": 3039
+    },
+    {
+      "text": "direction",
+      "start": 188.05,
+      "end": 188.6125,
+      "start_char": 3040,
+      "end_char": 3049
+    },
+    {
+      "text": "and",
+      "start": 188.775,
+      "end": 188.925,
+      "start_char": 3051,
+      "end_char": 3054
+    },
+    {
+      "text": "the",
+      "start": 188.9375,
+      "end": 189.025,
+      "start_char": 3055,
+      "end_char": 3058
+    },
+    {
+      "text": "controlling",
+      "start": 189.0375,
+      "end": 189.5625,
+      "start_char": 3059,
+      "end_char": 3070
+    },
+    {
+      "text": "prompt",
+      "start": 189.575,
+      "end": 190.075,
+      "start_char": 3071,
+      "end_char": 3077
+    },
+    {
+      "text": "Choosing",
+      "start": 190.9375,
+      "end": 191.3875,
+      "start_char": 3079,
+      "end_char": 3087
+    },
+    {
+      "text": "and",
+      "start": 191.4,
+      "end": 191.5125,
+      "start_char": 3088,
+      "end_char": 3091
+    },
+    {
+      "text": "fading",
+      "start": 191.525,
+      "end": 191.95,
+      "start_char": 3092,
+      "end_char": 3098
+    },
+    {
+      "text": "prompts",
+      "start": 191.9625,
+      "end": 192.375,
+      "start_char": 3099,
+      "end_char": 3106
+    },
+    {
+      "text": "Not",
+      "start": 192.3875,
+      "end": 192.6625,
+      "start_char": 3107,
+      "end_char": 3110
+    },
+    {
+      "text": "all",
+      "start": 192.675,
+      "end": 192.85,
+      "start_char": 3111,
+      "end_char": 3114
+    },
+    {
+      "text": "prompts",
+      "start": 192.8625,
+      "end": 193.2625,
+      "start_char": 3115,
+      "end_char": 3122
+    },
+    {
+      "text": "in",
+      "start": 193.275,
+      "end": 193.3375,
+      "start_char": 3123,
+      "end_char": 3125
+    },
+    {
+      "text": "the",
+      "start": 193.35,
+      "end": 193.425,
+      "start_char": 3126,
+      "end_char": 3129
+    },
+    {
+      "text": "hierarchy",
+      "start": 193.4375,
+      "end": 194.1125,
+      "start_char": 3130,
+      "end_char": 3139
+    },
+    {
+      "text": "need",
+      "start": 194.125,
+      "end": 194.35,
+      "start_char": 3140,
+      "end_char": 3144
+    },
+    {
+      "text": "to",
+      "start": 194.3625,
+      "end": 194.4375,
+      "start_char": 3145,
+      "end_char": 3147
+    },
+    {
+      "text": "be",
+      "start": 194.45,
+      "end": 194.575,
+      "start_char": 3148,
+      "end_char": 3150
+    },
+    {
+      "text": "used",
+      "start": 194.5875,
+      "end": 194.9625,
+      "start_char": 3151,
+      "end_char": 3155
+    },
+    {
+      "text": "when",
+      "start": 194.975,
+      "end": 195.1,
+      "start_char": 3156,
+      "end_char": 3160
+    },
+    {
+      "text": "teaching",
+      "start": 195.1125,
+      "end": 195.475,
+      "start_char": 3161,
+      "end_char": 3169
+    },
+    {
+      "text": "a",
+      "start": 195.4875,
+      "end": 195.55,
+      "start_char": 3170,
+      "end_char": 3171
+    },
+    {
+      "text": "skill",
+      "start": 195.5625,
+      "end": 196.0,
+      "start_char": 3172,
+      "end_char": 3177
+    },
+    {
+      "text": "Prompts",
+      "start": 196.875,
+      "end": 197.275,
+      "start_char": 3179,
+      "end_char": 3186
+    },
+    {
+      "text": "should",
+      "start": 197.2875,
+      "end": 197.45,
+      "start_char": 3187,
+      "end_char": 3193
+    },
+    {
+      "text": "be",
+      "start": 197.4625,
+      "end": 197.575,
+      "start_char": 3194,
+      "end_char": 3196
+    },
+    {
+      "text": "chosen",
+      "start": 197.5875,
+      "end": 198.0,
+      "start_char": 3197,
+      "end_char": 3203
+    },
+    {
+      "text": "based",
+      "start": 198.0125,
+      "end": 198.375,
+      "start_char": 3204,
+      "end_char": 3209
+    },
+    {
+      "text": "on",
+      "start": 198.3875,
+      "end": 198.4875,
+      "start_char": 3210,
+      "end_char": 3212
+    },
+    {
+      "text": "which",
+      "start": 198.5,
+      "end": 198.725,
+      "start_char": 3213,
+      "end_char": 3218
+    },
+    {
+      "text": "ones",
+      "start": 198.7375,
+      "end": 199.025,
+      "start_char": 3219,
+      "end_char": 3223
+    },
+    {
+      "text": "are",
+      "start": 199.0375,
+      "end": 199.1125,
+      "start_char": 3224,
+      "end_char": 3227
+    },
+    {
+      "text": "most",
+      "start": 199.125,
+      "end": 199.4125,
+      "start_char": 3228,
+      "end_char": 3232
+    },
+    {
+      "text": "effective",
+      "start": 199.425,
+      "end": 199.9125,
+      "start_char": 3233,
+      "end_char": 3242
+    },
+    {
+      "text": "for",
+      "start": 199.925,
+      "end": 200.0625,
+      "start_char": 3243,
+      "end_char": 3246
+    },
+    {
+      "text": "a",
+      "start": 200.075,
+      "end": 200.125,
+      "start_char": 3247,
+      "end_char": 3248
+    },
+    {
+      "text": "particular",
+      "start": 200.1375,
+      "end": 200.6625,
+      "start_char": 3249,
+      "end_char": 3259
+    },
+    {
+      "text": "child",
+      "start": 200.675,
+      "end": 201.225,
+      "start_char": 3260,
+      "end_char": 3265
+    },
+    {
+      "text": "Prompts",
+      "start": 202.0875,
+      "end": 202.4875,
+      "start_char": 3267,
+      "end_char": 3274
+    },
+    {
+      "text": "should",
+      "start": 202.5,
+      "end": 202.7,
+      "start_char": 3275,
+      "end_char": 3281
+    },
+    {
+      "text": "be",
+      "start": 202.7125,
+      "end": 202.8375,
+      "start_char": 3282,
+      "end_char": 3284
+    },
+    {
+      "text": "faded",
+      "start": 202.85,
+      "end": 203.2375,
+      "start_char": 3285,
+      "end_char": 3290
+    },
+    {
+      "text": "systematically",
+      "start": 203.25,
+      "end": 204.125,
+      "start_char": 3291,
+      "end_char": 3305
+    },
+    {
+      "text": "and",
+      "start": 204.1375,
+      "end": 204.325,
+      "start_char": 3306,
+      "end_char": 3309
+    },
+    {
+      "text": "as",
+      "start": 204.3375,
+      "end": 204.475,
+      "start_char": 3310,
+      "end_char": 3312
+    },
+    {
+      "text": "quickly",
+      "start": 204.4875,
+      "end": 204.8875,
+      "start_char": 3313,
+      "end_char": 3320
+    },
+    {
+      "text": "as",
+      "start": 204.9,
+      "end": 205.0,
+      "start_char": 3321,
+      "end_char": 3323
+    },
+    {
+      "text": "possible",
+      "start": 205.0125,
+      "end": 205.5375,
+      "start_char": 3324,
+      "end_char": 3332
+    },
+    {
+      "text": "to",
+      "start": 205.55,
+      "end": 205.6625,
+      "start_char": 3333,
+      "end_char": 3335
+    },
+    {
+      "text": "avoid",
+      "start": 205.675,
+      "end": 206.0875,
+      "start_char": 3336,
+      "end_char": 3341
+    },
+    {
+      "text": "prompt",
+      "start": 206.1,
+      "end": 206.4625,
+      "start_char": 3342,
+      "end_char": 3348
+    },
+    {
+      "text": "dependency",
+      "start": 206.475,
+      "end": 207.275,
+      "start_char": 3349,
+      "end_char": 3359
+    },
+    {
+      "text": "Overall",
+      "start": 208.1375,
+      "end": 208.8,
+      "start_char": 3361,
+      "end_char": 3368
+    },
+    {
+      "text": "the",
+      "start": 209.05,
+      "end": 209.15,
+      "start_char": 3370,
+      "end_char": 3373
+    },
+    {
+      "text": "goal",
+      "start": 209.1625,
+      "end": 209.4125,
+      "start_char": 3374,
+      "end_char": 3378
+    },
+    {
+      "text": "of",
+      "start": 209.425,
+      "end": 209.5125,
+      "start_char": 3379,
+      "end_char": 3381
+    },
+    {
+      "text": "using",
+      "start": 209.525,
+      "end": 209.9,
+      "start_char": 3382,
+      "end_char": 3387
+    },
+    {
+      "text": "prompts",
+      "start": 209.9125,
+      "end": 210.35,
+      "start_char": 3388,
+      "end_char": 3395
+    },
+    {
+      "text": "is",
+      "start": 210.3625,
+      "end": 210.475,
+      "start_char": 3396,
+      "end_char": 3398
+    },
+    {
+      "text": "to",
+      "start": 210.4875,
+      "end": 210.5625,
+      "start_char": 3399,
+      "end_char": 3401
+    },
+    {
+      "text": "help",
+      "start": 210.575,
+      "end": 210.8375,
+      "start_char": 3402,
+      "end_char": 3406
+    },
+    {
+      "text": "the",
+      "start": 210.85,
+      "end": 210.95,
+      "start_char": 3407,
+      "end_char": 3410
+    },
+    {
+      "text": "child",
+      "start": 210.9625,
+      "end": 211.3625,
+      "start_char": 3411,
+      "end_char": 3416
+    },
+    {
+      "text": "independently",
+      "start": 211.375,
+      "end": 212.1125,
+      "start_char": 3417,
+      "end_char": 3430
+    },
+    {
+      "text": "perform",
+      "start": 212.125,
+      "end": 212.6125,
+      "start_char": 3431,
+      "end_char": 3438
+    },
+    {
+      "text": "the",
+      "start": 212.625,
+      "end": 212.7125,
+      "start_char": 3439,
+      "end_char": 3442
+    },
+    {
+      "text": "desired",
+      "start": 212.725,
+      "end": 213.15,
+      "start_char": 3443,
+      "end_char": 3450
+    },
+    {
+      "text": "behavior",
+      "start": 213.1625,
+      "end": 213.8,
+      "start_char": 3451,
+      "end_char": 3459
+    },
+    {
+      "text": "Steps",
+      "start": 214.6625,
+      "end": 215.1,
+      "start_char": 3461,
+      "end_char": 3466
+    },
+    {
+      "text": "Identify",
+      "start": 215.1125,
+      "end": 215.725,
+      "start_char": 3467,
+      "end_char": 3475
+    },
+    {
+      "text": "the",
+      "start": 215.7375,
+      "end": 215.85,
+      "start_char": 3476,
+      "end_char": 3479
+    },
+    {
+      "text": "least",
+      "start": 215.8625,
+      "end": 216.1875,
+      "start_char": 3480,
+      "end_char": 3485
+    },
+    {
+      "text": "intrusive",
+      "start": 216.2,
+      "end": 216.7,
+      "start_char": 3486,
+      "end_char": 3495
+    },
+    {
+      "text": "prompt",
+      "start": 216.7125,
+      "end": 217.2625,
+      "start_char": 3496,
+      "end_char": 3502
+    },
+    {
+      "text": "Choose",
+      "start": 218.1375,
+      "end": 218.4625,
+      "start_char": 3505,
+      "end_char": 3511
+    },
+    {
+      "text": "a",
+      "start": 218.475,
+      "end": 218.5375,
+      "start_char": 3512,
+      "end_char": 3513
+    },
+    {
+      "text": "prompt",
+      "start": 218.55,
+      "end": 218.975,
+      "start_char": 3514,
+      "end_char": 3520
+    },
+    {
+      "text": "that",
+      "start": 218.9875,
+      "end": 219.1125,
+      "start_char": 3521,
+      "end_char": 3525
+    },
+    {
+      "text": "is",
+      "start": 219.125,
+      "end": 219.225,
+      "start_char": 3526,
+      "end_char": 3528
+    },
+    {
+      "text": "necessary",
+      "start": 219.2375,
+      "end": 219.8875,
+      "start_char": 3529,
+      "end_char": 3538
+    },
+    {
+      "text": "for",
+      "start": 219.9,
+      "end": 220.075,
+      "start_char": 3539,
+      "end_char": 3542
+    },
+    {
+      "text": "a",
+      "start": 220.0875,
+      "end": 220.1375,
+      "start_char": 3543,
+      "end_char": 3544
+    },
+    {
+      "text": "correct",
+      "start": 220.15,
+      "end": 220.5375,
+      "start_char": 3545,
+      "end_char": 3552
+    },
+    {
+      "text": "response",
+      "start": 220.55,
+      "end": 221.075,
+      "start_char": 3553,
+      "end_char": 3561
+    },
+    {
+      "text": "to",
+      "start": 221.0875,
+      "end": 221.2,
+      "start_char": 3562,
+      "end_char": 3564
+    },
+    {
+      "text": "occur",
+      "start": 221.2125,
+      "end": 221.7,
+      "start_char": 3565,
+      "end_char": 3570
+    },
+    {
+      "text": "Give",
+      "start": 222.575,
+      "end": 222.8375,
+      "start_char": 3572,
+      "end_char": 3576
+    },
+    {
+      "text": "differential",
+      "start": 222.85,
+      "end": 223.4625,
+      "start_char": 3577,
+      "end_char": 3589
+    },
+    {
+      "text": "reinforcement",
+      "start": 223.475,
+      "end": 224.3875,
+      "start_char": 3590,
+      "end_char": 3603
+    },
+    {
+      "text": "After",
+      "start": 225.2625,
+      "end": 225.6375,
+      "start_char": 3606,
+      "end_char": 3611
+    },
+    {
+      "text": "a",
+      "start": 225.65,
+      "end": 225.7,
+      "start_char": 3612,
+      "end_char": 3613
+    },
+    {
+      "text": "correct",
+      "start": 225.7125,
+      "end": 226.075,
+      "start_char": 3614,
+      "end_char": 3621
+    },
+    {
+      "text": "response",
+      "start": 226.0875,
+      "end": 226.7,
+      "start_char": 3622,
+      "end_char": 3630
+    },
+    {
+      "text": "give",
+      "start": 226.975,
+      "end": 227.1375,
+      "start_char": 3632,
+      "end_char": 3636
+    },
+    {
+      "text": "appropriate",
+      "start": 227.15,
+      "end": 227.75,
+      "start_char": 3637,
+      "end_char": 3648
+    },
+    {
+      "text": "reinforcement",
+      "start": 227.7625,
+      "end": 228.5625,
+      "start_char": 3649,
+      "end_char": 3662
+    },
+    {
+      "text": "that",
+      "start": 228.575,
+      "end": 228.6875,
+      "start_char": 3663,
+      "end_char": 3667
+    },
+    {
+      "text": "is",
+      "start": 228.7,
+      "end": 228.775,
+      "start_char": 3668,
+      "end_char": 3670
+    },
+    {
+      "text": "equivalent",
+      "start": 228.7875,
+      "end": 229.3375,
+      "start_char": 3671,
+      "end_char": 3681
+    },
+    {
+      "text": "to",
+      "start": 229.35,
+      "end": 229.425,
+      "start_char": 3682,
+      "end_char": 3684
+    },
+    {
+      "text": "the",
+      "start": 229.4375,
+      "end": 229.5625,
+      "start_char": 3685,
+      "end_char": 3688
+    },
+    {
+      "text": "level",
+      "start": 229.575,
+      "end": 229.8875,
+      "start_char": 3689,
+      "end_char": 3694
+    },
+    {
+      "text": "of",
+      "start": 229.9,
+      "end": 229.9875,
+      "start_char": 3695,
+      "end_char": 3697
+    },
+    {
+      "text": "performance",
+      "start": 230.0,
+      "end": 230.5375,
+      "start_char": 3698,
+      "end_char": 3709
+    },
+    {
+      "text": "independence",
+      "start": 230.55,
+      "end": 231.425,
+      "start_char": 3710,
+      "end_char": 3722
+    },
+    {
+      "text": "Fade",
+      "start": 232.3,
+      "end": 232.675,
+      "start_char": 3724,
+      "end_char": 3728
+    },
+    {
+      "text": "the",
+      "start": 232.6875,
+      "end": 232.775,
+      "start_char": 3729,
+      "end_char": 3732
+    },
+    {
+      "text": "prompt",
+      "start": 232.7875,
+      "end": 233.3375,
+      "start_char": 3733,
+      "end_char": 3739
+    },
+    {
+      "text": "After",
+      "start": 234.2,
+      "end": 234.55,
+      "start_char": 3742,
+      "end_char": 3747
+    },
+    {
+      "text": "the",
+      "start": 234.5625,
+      "end": 234.6375,
+      "start_char": 3748,
+      "end_char": 3751
+    },
+    {
+      "text": "child",
+      "start": 234.65,
+      "end": 235.0375,
+      "start_char": 3752,
+      "end_char": 3757
+    },
+    {
+      "text": "masters",
+      "start": 235.05,
+      "end": 235.5,
+      "start_char": 3758,
+      "end_char": 3765
+    },
+    {
+      "text": "a",
+      "start": 235.5125,
+      "end": 235.575,
+      "start_char": 3766,
+      "end_char": 3767
+    },
+    {
+      "text": "skill",
+      "start": 235.5875,
+      "end": 236.0125,
+      "start_char": 3768,
+      "end_char": 3773
+    },
+    {
+      "text": "gradually",
+      "start": 236.35,
+      "end": 236.8375,
+      "start_char": 3775,
+      "end_char": 3784
+    },
+    {
+      "text": "move",
+      "start": 236.85,
+      "end": 237.1375,
+      "start_char": 3785,
+      "end_char": 3789
+    },
+    {
+      "text": "the",
+      "start": 237.15,
+      "end": 237.2375,
+      "start_char": 3790,
+      "end_char": 3793
+    },
+    {
+      "text": "prompt",
+      "start": 237.25,
+      "end": 237.5875,
+      "start_char": 3794,
+      "end_char": 3800
+    },
+    {
+      "text": "away",
+      "start": 237.6,
+      "end": 237.9875,
+      "start_char": 3801,
+      "end_char": 3805
+    },
+    {
+      "text": "or",
+      "start": 238.0,
+      "end": 238.1625,
+      "start_char": 3806,
+      "end_char": 3808
+    },
+    {
+      "text": "replace",
+      "start": 238.175,
+      "end": 238.6125,
+      "start_char": 3809,
+      "end_char": 3816
+    },
+    {
+      "text": "it",
+      "start": 238.625,
+      "end": 238.775,
+      "start_char": 3817,
+      "end_char": 3819
+    },
+    {
+      "text": "with",
+      "start": 238.7875,
+      "end": 238.9125,
+      "start_char": 3820,
+      "end_char": 3824
+    },
+    {
+      "text": "a",
+      "start": 238.925,
+      "end": 238.9875,
+      "start_char": 3825,
+      "end_char": 3826
+    },
+    {
+      "text": "less",
+      "start": 239.0,
+      "end": 239.275,
+      "start_char": 3827,
+      "end_char": 3831
+    },
+    {
+      "text": "intrusive",
+      "start": 239.2875,
+      "end": 239.825,
+      "start_char": 3832,
+      "end_char": 3841
+    },
+    {
+      "text": "prompt",
+      "start": 239.8375,
+      "end": 240.4,
+      "start_char": 3842,
+      "end_char": 3848
+    },
+    {
+      "text": "Brief",
+      "start": 241.2625,
+      "end": 241.575,
+      "start_char": 3850,
+      "end_char": 3855
+    },
+    {
+      "text": "example",
+      "start": 241.5875,
+      "end": 242.075,
+      "start_char": 3856,
+      "end_char": 3863
+    },
+    {
+      "text": "Josh",
+      "start": 242.0875,
+      "end": 242.475,
+      "start_char": 3864,
+      "end_char": 3868
+    },
+    {
+      "text": "was",
+      "start": 242.4875,
+      "end": 242.675,
+      "start_char": 3869,
+      "end_char": 3872
+    },
+    {
+      "text": "learning",
+      "start": 242.6875,
+      "end": 243.0,
+      "start_char": 3873,
+      "end_char": 3881
+    },
+    {
+      "text": "to",
+      "start": 243.0125,
+      "end": 243.1125,
+      "start_char": 3882,
+      "end_char": 3884
+    },
+    {
+      "text": "match",
+      "start": 243.125,
+      "end": 243.4625,
+      "start_char": 3885,
+      "end_char": 3890
+    },
+    {
+      "text": "objects",
+      "start": 243.475,
+      "end": 244.0,
+      "start_char": 3891,
+      "end_char": 3898
+    },
+    {
+      "text": "with",
+      "start": 244.0125,
+      "end": 244.1625,
+      "start_char": 3899,
+      "end_char": 3903
+    },
+    {
+      "text": "names",
+      "start": 244.175,
+      "end": 244.75,
+      "start_char": 3904,
+      "end_char": 3909
+    },
+    {
+      "text": "The",
+      "start": 245.6125,
+      "end": 245.775,
+      "start_char": 3911,
+      "end_char": 3914
+    },
+    {
+      "text": "teacher",
+      "start": 245.7875,
+      "end": 246.2,
+      "start_char": 3915,
+      "end_char": 3922
+    },
+    {
+      "text": "started",
+      "start": 246.2125,
+      "end": 246.6125,
+      "start_char": 3923,
+      "end_char": 3930
+    },
+    {
+      "text": "with",
+      "start": 246.625,
+      "end": 246.75,
+      "start_char": 3931,
+      "end_char": 3935
+    },
+    {
+      "text": "verbal",
+      "start": 246.7625,
+      "end": 247.125,
+      "start_char": 3936,
+      "end_char": 3942
+    },
+    {
+      "text": "and",
+      "start": 247.1375,
+      "end": 247.25,
+      "start_char": 3943,
+      "end_char": 3946
+    },
+    {
+      "text": "gestural",
+      "start": 247.2625,
+      "end": 247.7,
+      "start_char": 3947,
+      "end_char": 3955
+    },
+    {
+      "text": "prompts",
+      "start": 247.7125,
+      "end": 248.325,
+      "start_char": 3956,
+      "end_char": 3963
+    },
+    {
+      "text": "She",
+      "start": 249.1875,
+      "end": 249.425,
+      "start_char": 3965,
+      "end_char": 3968
+    },
+    {
+      "text": "said",
+      "start": 249.4375,
+      "end": 249.8,
+      "start_char": 3969,
+      "end_char": 3973
+    },
+    {
+      "text": "It",
+      "start": 249.9875,
+      "end": 250.0625,
+      "start_char": 3976,
+      "end_char": 3978
+    },
+    {
+      "text": "is",
+      "start": 250.075,
+      "end": 250.1875,
+      "start_char": 3979,
+      "end_char": 3981
+    },
+    {
+      "text": "time",
+      "start": 250.2,
+      "end": 250.5125,
+      "start_char": 3982,
+      "end_char": 3986
+    },
+    {
+      "text": "for",
+      "start": 250.525,
+      "end": 250.65,
+      "start_char": 3987,
+      "end_char": 3990
+    },
+    {
+      "text": "drawing",
+      "start": 250.6625,
+      "end": 251.1,
+      "start_char": 3991,
+      "end_char": 3998
+    },
+    {
+      "text": "and",
+      "start": 251.3125,
+      "end": 251.425,
+      "start_char": 4000,
+      "end_char": 4003
+    },
+    {
+      "text": "we",
+      "start": 251.4375,
+      "end": 251.5375,
+      "start_char": 4004,
+      "end_char": 4006
+    },
+    {
+      "text": "need",
+      "start": 251.55,
+      "end": 251.7875,
+      "start_char": 4007,
+      "end_char": 4011
+    },
+    {
+      "text": "some",
+      "start": 251.8,
+      "end": 251.95,
+      "start_char": 4012,
+      "end_char": 4016
+    },
+    {
+      "text": "crayons",
+      "start": 251.9625,
+      "end": 252.4875,
+      "start_char": 4017,
+      "end_char": 4024
+    },
+    {
+      "text": "to",
+      "start": 252.5,
+      "end": 252.5875,
+      "start_char": 4025,
+      "end_char": 4027
+    },
+    {
+      "text": "draw",
+      "start": 252.6,
+      "end": 252.8375,
+      "start_char": 4028,
+      "end_char": 4032
+    },
+    {
+      "text": "with",
+      "start": 252.85,
+      "end": 253.225,
+      "start_char": 4033,
+      "end_char": 4037
+    },
+    {
+      "text": "She",
+      "start": 254.1,
+      "end": 254.3375,
+      "start_char": 4040,
+      "end_char": 4043
+    },
+    {
+      "text": "looked",
+      "start": 254.35,
+      "end": 254.6,
+      "start_char": 4044,
+      "end_char": 4050
+    },
+    {
+      "text": "at",
+      "start": 254.6125,
+      "end": 254.675,
+      "start_char": 4051,
+      "end_char": 4053
+    },
+    {
+      "text": "the",
+      "start": 254.6875,
+      "end": 254.775,
+      "start_char": 4054,
+      "end_char": 4057
+    },
+    {
+      "text": "crayons",
+      "start": 254.7875,
+      "end": 255.25,
+      "start_char": 4058,
+      "end_char": 4065
+    },
+    {
+      "text": "on",
+      "start": 255.2625,
+      "end": 255.6125,
+      "start_char": 4066,
+      "end_char": 4068
+    },
+    {
+      "text": "the",
+      "start": 256.588,
+      "end": 256.7505,
+      "start_char": 4069,
+      "end_char": 4072
+    },
+    {
+      "text": "table",
+      "start": 256.763,
+      "end": 257.1255,
+      "start_char": 4073,
+      "end_char": 4078
+    },
+    {
+      "text": "and",
+      "start": 257.138,
+      "end": 257.2505,
+      "start_char": 4079,
+      "end_char": 4082
+    },
+    {
+      "text": "pointed",
+      "start": 257.263,
+      "end": 257.6505,
+      "start_char": 4083,
+      "end_char": 4090
+    },
+    {
+      "text": "at",
+      "start": 257.663,
+      "end": 257.763,
+      "start_char": 4091,
+      "end_char": 4093
+    },
+    {
+      "text": "them",
+      "start": 257.7755,
+      "end": 258.0255,
+      "start_char": 4094,
+      "end_char": 4098
+    },
+    {
+      "text": "saying",
+      "start": 258.213,
+      "end": 258.613,
+      "start_char": 4100,
+      "end_char": 4106
+    },
+    {
+      "text": "These",
+      "start": 258.838,
+      "end": 259.0505,
+      "start_char": 4109,
+      "end_char": 4114
+    },
+    {
+      "text": "are",
+      "start": 259.063,
+      "end": 259.1505,
+      "start_char": 4115,
+      "end_char": 4118
+    },
+    {
+      "text": "crayons",
+      "start": 259.163,
+      "end": 259.838,
+      "start_char": 4119,
+      "end_char": 4126
+    },
+    {
+      "text": "Then",
+      "start": 260.7005,
+      "end": 260.963,
+      "start_char": 4129,
+      "end_char": 4133
+    },
+    {
+      "text": "she",
+      "start": 260.9755,
+      "end": 261.1255,
+      "start_char": 4134,
+      "end_char": 4137
+    },
+    {
+      "text": "pointed",
+      "start": 261.138,
+      "end": 261.5255,
+      "start_char": 4138,
+      "end_char": 4145
+    },
+    {
+      "text": "at",
+      "start": 261.538,
+      "end": 261.613,
+      "start_char": 4146,
+      "end_char": 4148
+    },
+    {
+      "text": "the",
+      "start": 261.6255,
+      "end": 261.713,
+      "start_char": 4149,
+      "end_char": 4152
+    },
+    {
+      "text": "crayons",
+      "start": 261.7255,
+      "end": 262.2005,
+      "start_char": 4153,
+      "end_char": 4160
+    },
+    {
+      "text": "and",
+      "start": 262.213,
+      "end": 262.3255,
+      "start_char": 4161,
+      "end_char": 4164
+    },
+    {
+      "text": "asked",
+      "start": 262.338,
+      "end": 262.638,
+      "start_char": 4165,
+      "end_char": 4170
+    },
+    {
+      "text": "Josh",
+      "start": 262.6505,
+      "end": 263.088,
+      "start_char": 4171,
+      "end_char": 4175
+    },
+    {
+      "text": "What",
+      "start": 263.263,
+      "end": 263.438,
+      "start_char": 4178,
+      "end_char": 4182
+    },
+    {
+      "text": "are",
+      "start": 263.4505,
+      "end": 263.5505,
+      "start_char": 4183,
+      "end_char": 4186
+    },
+    {
+      "text": "these",
+      "start": 263.563,
+      "end": 264.0255,
+      "start_char": 4187,
+      "end_char": 4192
+    },
+    {
+      "text": "After",
+      "start": 264.888,
+      "end": 265.263,
+      "start_char": 4195,
+      "end_char": 4200
+    },
+    {
+      "text": "Josh",
+      "start": 265.2755,
+      "end": 265.638,
+      "start_char": 4201,
+      "end_char": 4205
+    },
+    {
+      "text": "responded",
+      "start": 265.6505,
+      "end": 266.213,
+      "start_char": 4206,
+      "end_char": 4215
+    },
+    {
+      "text": "Crayons",
+      "start": 266.2255,
+      "end": 266.8005,
+      "start_char": 4217,
+      "end_char": 4224
+    },
+    {
+      "text": "the",
+      "start": 267.0505,
+      "end": 267.163,
+      "start_char": 4227,
+      "end_char": 4230
+    },
+    {
+      "text": "teacher",
+      "start": 267.1755,
+      "end": 267.5505,
+      "start_char": 4231,
+      "end_char": 4238
+    },
+    {
+      "text": "nodded",
+      "start": 267.563,
+      "end": 267.8755,
+      "start_char": 4239,
+      "end_char": 4245
+    },
+    {
+      "text": "her",
+      "start": 267.888,
+      "end": 268.038,
+      "start_char": 4246,
+      "end_char": 4249
+    },
+    {
+      "text": "head",
+      "start": 268.0505,
+      "end": 268.3255,
+      "start_char": 4250,
+      "end_char": 4254
+    },
+    {
+      "text": "and",
+      "start": 268.338,
+      "end": 268.463,
+      "start_char": 4255,
+      "end_char": 4258
+    },
+    {
+      "text": "said",
+      "start": 268.4755,
+      "end": 268.813,
+      "start_char": 4259,
+      "end_char": 4263
+    },
+    {
+      "text": "These",
+      "start": 269.088,
+      "end": 269.3005,
+      "start_char": 4266,
+      "end_char": 4271
+    },
+    {
+      "text": "are",
+      "start": 269.313,
+      "end": 269.413,
+      "start_char": 4272,
+      "end_char": 4275
+    },
+    {
+      "text": "crayons",
+      "start": 269.4255,
+      "end": 270.1255,
+      "start_char": 4276,
+      "end_char": 4283
+    },
+    {
+      "text": "Good",
+      "start": 270.988,
+      "end": 271.238,
+      "start_char": 4285,
+      "end_char": 4289
+    },
+    {
+      "text": "job",
+      "start": 271.2505,
+      "end": 271.613,
+      "start_char": 4290,
+      "end_char": 4293
+    },
+    {
+      "text": "Josh",
+      "start": 271.763,
+      "end": 272.338,
+      "start_char": 4295,
+      "end_char": 4299
+    },
+    {
+      "text": "To",
+      "start": 273.2005,
+      "end": 273.363,
+      "start_char": 4302,
+      "end_char": 4304
+    },
+    {
+      "text": "fade",
+      "start": 273.3755,
+      "end": 273.7005,
+      "start_char": 4305,
+      "end_char": 4309
+    },
+    {
+      "text": "prompts",
+      "start": 273.713,
+      "end": 274.1755,
+      "start_char": 4310,
+      "end_char": 4317
+    },
+    {
+      "text": "the",
+      "start": 274.363,
+      "end": 274.4755,
+      "start_char": 4319,
+      "end_char": 4322
+    },
+    {
+      "text": "teacher",
+      "start": 274.488,
+      "end": 274.863,
+      "start_char": 4323,
+      "end_char": 4330
+    },
+    {
+      "text": "gradually",
+      "start": 274.8755,
+      "end": 275.3755,
+      "start_char": 4331,
+      "end_char": 4340
+    },
+    {
+      "text": "moved",
+      "start": 275.388,
+      "end": 275.7505,
+      "start_char": 4341,
+      "end_char": 4346
+    },
+    {
+      "text": "from",
+      "start": 275.763,
+      "end": 275.9255,
+      "start_char": 4347,
+      "end_char": 4351
+    },
+    {
+      "text": "verbal",
+      "start": 275.938,
+      "end": 276.288,
+      "start_char": 4352,
+      "end_char": 4358
+    },
+    {
+      "text": "and",
+      "start": 276.3005,
+      "end": 276.413,
+      "start_char": 4359,
+      "end_char": 4362
+    },
+    {
+      "text": "gestural",
+      "start": 276.4255,
+      "end": 276.9255,
+      "start_char": 4363,
+      "end_char": 4371
+    },
+    {
+      "text": "prompts",
+      "start": 276.938,
+      "end": 277.3505,
+      "start_char": 4372,
+      "end_char": 4379
+    },
+    {
+      "text": "to",
+      "start": 277.363,
+      "end": 277.488,
+      "start_char": 4380,
+      "end_char": 4382
+    },
+    {
+      "text": "only",
+      "start": 277.5005,
+      "end": 277.8005,
+      "start_char": 4383,
+      "end_char": 4387
+    },
+    {
+      "text": "positional",
+      "start": 277.813,
+      "end": 278.338,
+      "start_char": 4388,
+      "end_char": 4398
+    },
+    {
+      "text": "prompts",
+      "start": 278.3505,
+      "end": 278.9505,
+      "start_char": 4399,
+      "end_char": 4406
+    },
+    {
+      "text": "For",
+      "start": 279.813,
+      "end": 280.063,
+      "start_char": 4408,
+      "end_char": 4411
+    },
+    {
+      "text": "example",
+      "start": 280.0755,
+      "end": 280.638,
+      "start_char": 4412,
+      "end_char": 4419
+    },
+    {
+      "text": "the",
+      "start": 280.8005,
+      "end": 280.888,
+      "start_char": 4421,
+      "end_char": 4424
+    },
+    {
+      "text": "next",
+      "start": 280.9005,
+      "end": 281.213,
+      "start_char": 4425,
+      "end_char": 4429
+    },
+    {
+      "text": "time",
+      "start": 281.2255,
+      "end": 281.488,
+      "start_char": 4430,
+      "end_char": 4434
+    },
+    {
+      "text": "the",
+      "start": 281.5005,
+      "end": 281.6005,
+      "start_char": 4435,
+      "end_char": 4438
+    },
+    {
+      "text": "teacher",
+      "start": 281.613,
+      "end": 282.0005,
+      "start_char": 4439,
+      "end_char": 4446
+    },
+    {
+      "text": "placed",
+      "start": 282.013,
+      "end": 282.338,
+      "start_char": 4447,
+      "end_char": 4453
+    },
+    {
+      "text": "the",
+      "start": 282.3505,
+      "end": 282.438,
+      "start_char": 4454,
+      "end_char": 4457
+    },
+    {
+      "text": "crayons",
+      "start": 282.4505,
+      "end": 282.913,
+      "start_char": 4458,
+      "end_char": 4465
+    },
+    {
+      "text": "on",
+      "start": 282.9255,
+      "end": 283.0255,
+      "start_char": 4466,
+      "end_char": 4468
+    },
+    {
+      "text": "the",
+      "start": 283.038,
+      "end": 283.113,
+      "start_char": 4469,
+      "end_char": 4472
+    },
+    {
+      "text": "table",
+      "start": 283.1255,
+      "end": 283.488,
+      "start_char": 4473,
+      "end_char": 4478
+    },
+    {
+      "text": "near",
+      "start": 283.5005,
+      "end": 283.7005,
+      "start_char": 4479,
+      "end_char": 4483
+    },
+    {
+      "text": "Josh",
+      "start": 283.713,
+      "end": 284.163,
+      "start_char": 4484,
+      "end_char": 4488
+    },
+    {
+      "text": "she",
+      "start": 284.3505,
+      "end": 284.513,
+      "start_char": 4490,
+      "end_char": 4493
+    },
+    {
+      "text": "said",
+      "start": 284.5255,
+      "end": 284.8755,
+      "start_char": 4494,
+      "end_char": 4498
+    },
+    {
+      "text": "We",
+      "start": 285.188,
+      "end": 285.313,
+      "start_char": 4501,
+      "end_char": 4503
+    },
+    {
+      "text": "need",
+      "start": 285.3255,
+      "end": 285.5505,
+      "start_char": 4504,
+      "end_char": 4508
+    },
+    {
+      "text": "some",
+      "start": 285.563,
+      "end": 285.738,
+      "start_char": 4509,
+      "end_char": 4513
+    },
+    {
+      "text": "crayons",
+      "start": 285.7505,
+      "end": 286.238,
+      "start_char": 4514,
+      "end_char": 4521
+    },
+    {
+      "text": "to",
+      "start": 286.2505,
+      "end": 286.3505,
+      "start_char": 4522,
+      "end_char": 4524
+    },
+    {
+      "text": "draw",
+      "start": 286.363,
+      "end": 286.613,
+      "start_char": 4525,
+      "end_char": 4529
+    },
+    {
+      "text": "with",
+      "start": 286.6255,
+      "end": 287.013,
+      "start_char": 4530,
+      "end_char": 4534
+    },
+    {
+      "text": "Josh",
+      "start": 287.888,
+      "end": 288.413,
+      "start_char": 4536,
+      "end_char": 4540
+    },
+    {
+      "text": "show",
+      "start": 288.588,
+      "end": 288.813,
+      "start_char": 4542,
+      "end_char": 4546
+    },
+    {
+      "text": "me",
+      "start": 288.8255,
+      "end": 288.963,
+      "start_char": 4547,
+      "end_char": 4549
+    },
+    {
+      "text": "the",
+      "start": 288.9755,
+      "end": 289.0755,
+      "start_char": 4550,
+      "end_char": 4553
+    },
+    {
+      "text": "crayons",
+      "start": 289.088,
+      "end": 289.7755,
+      "start_char": 4554,
+      "end_char": 4561
+    },
+    {
+      "text": "Josh",
+      "start": 290.638,
+      "end": 291.0505,
+      "start_char": 4564,
+      "end_char": 4568
+    },
+    {
+      "text": "pointed",
+      "start": 291.063,
+      "end": 291.413,
+      "start_char": 4569,
+      "end_char": 4576
+    },
+    {
+      "text": "to",
+      "start": 291.4255,
+      "end": 291.488,
+      "start_char": 4577,
+      "end_char": 4579
+    },
+    {
+      "text": "the",
+      "start": 291.5005,
+      "end": 291.613,
+      "start_char": 4580,
+      "end_char": 4583
+    },
+    {
+      "text": "crayons",
+      "start": 291.6255,
+      "end": 292.1005,
+      "start_char": 4584,
+      "end_char": 4591
+    },
+    {
+      "text": "correctly",
+      "start": 292.113,
+      "end": 292.7005,
+      "start_char": 4592,
+      "end_char": 4601
+    },
+    {
+      "text": "and",
+      "start": 292.713,
+      "end": 292.863,
+      "start_char": 4602,
+      "end_char": 4605
+    },
+    {
+      "text": "received",
+      "start": 292.8755,
+      "end": 293.288,
+      "start_char": 4606,
+      "end_char": 4614
+    },
+    {
+      "text": "a",
+      "start": 293.3005,
+      "end": 293.363,
+      "start_char": 4615,
+      "end_char": 4616
+    },
+    {
+      "text": "point",
+      "start": 293.3755,
+      "end": 293.738,
+      "start_char": 4617,
+      "end_char": 4622
+    },
+    {
+      "text": "on",
+      "start": 293.7505,
+      "end": 293.863,
+      "start_char": 4623,
+      "end_char": 4625
+    },
+    {
+      "text": "his",
+      "start": 293.8755,
+      "end": 294.013,
+      "start_char": 4626,
+      "end_char": 4629
+    },
+    {
+      "text": "token",
+      "start": 294.0255,
+      "end": 294.3755,
+      "start_char": 4630,
+      "end_char": 4635
+    },
+    {
+      "text": "board",
+      "start": 294.388,
+      "end": 294.8005,
+      "start_char": 4636,
+      "end_char": 4641
+    },
+    {
+      "text": "Summary",
+      "start": 295.663,
+      "end": 296.138,
+      "start_char": 4643,
+      "end_char": 4650
+    },
+    {
+      "text": "Prompting",
+      "start": 296.1505,
+      "end": 296.638,
+      "start_char": 4651,
+      "end_char": 4660
+    },
+    {
+      "text": "is",
+      "start": 296.6505,
+      "end": 296.7755,
+      "start_char": 4661,
+      "end_char": 4663
+    },
+    {
+      "text": "used",
+      "start": 296.788,
+      "end": 297.063,
+      "start_char": 4664,
+      "end_char": 4668
+    },
+    {
+      "text": "to",
+      "start": 297.0755,
+      "end": 297.163,
+      "start_char": 4669,
+      "end_char": 4671
+    },
+    {
+      "text": "increase",
+      "start": 297.1755,
+      "end": 297.6255,
+      "start_char": 4672,
+      "end_char": 4680
+    },
+    {
+      "text": "desired",
+      "start": 297.638,
+      "end": 298.0755,
+      "start_char": 4681,
+      "end_char": 4688
+    },
+    {
+      "text": "behaviors",
+      "start": 298.088,
+      "end": 298.7005,
+      "start_char": 4689,
+      "end_char": 4698
+    },
+    {
+      "text": "and",
+      "start": 298.713,
+      "end": 298.9255,
+      "start_char": 4699,
+      "end_char": 4702
+    },
+    {
+      "text": "skill",
+      "start": 298.938,
+      "end": 299.263,
+      "start_char": 4703,
+      "end_char": 4708
+    },
+    {
+      "text": "acquisition",
+      "start": 299.2755,
+      "end": 300.013,
+      "start_char": 4709,
+      "end_char": 4720
+    },
+    {
+      "text": "When",
+      "start": 300.8755,
+      "end": 301.088,
+      "start_char": 4722,
+      "end_char": 4726
+    },
+    {
+      "text": "delivering",
+      "start": 301.1005,
+      "end": 301.613,
+      "start_char": 4727,
+      "end_char": 4737
+    },
+    {
+      "text": "prompts",
+      "start": 301.6255,
+      "end": 302.113,
+      "start_char": 4738,
+      "end_char": 4745
+    },
+    {
+      "text": "the",
+      "start": 302.4255,
+      "end": 302.513,
+      "start_char": 4747,
+      "end_char": 4750
+    },
+    {
+      "text": "instructor",
+      "start": 302.5255,
+      "end": 303.1755,
+      "start_char": 4751,
+      "end_char": 4761
+    },
+    {
+      "text": "should",
+      "start": 303.188,
+      "end": 303.3505,
+      "start_char": 4762,
+      "end_char": 4768
+    },
+    {
+      "text": "be",
+      "start": 303.363,
+      "end": 303.4755,
+      "start_char": 4769,
+      "end_char": 4771
+    },
+    {
+      "text": "mindful",
+      "start": 303.488,
+      "end": 303.9755,
+      "start_char": 4772,
+      "end_char": 4779
+    },
+    {
+      "text": "of",
+      "start": 303.988,
+      "end": 304.088,
+      "start_char": 4780,
+      "end_char": 4782
+    },
+    {
+      "text": "the",
+      "start": 304.1005,
+      "end": 304.188,
+      "start_char": 4783,
+      "end_char": 4786
+    },
+    {
+      "text": "student's",
+      "start": 304.2005,
+      "end": 304.6755,
+      "start_char": 4787,
+      "end_char": 4796
+    },
+    {
+      "text": "learning",
+      "start": 304.688,
+      "end": 305.038,
+      "start_char": 4797,
+      "end_char": 4805
+    },
+    {
+      "text": "level",
+      "start": 305.0505,
+      "end": 305.413,
+      "start_char": 4806,
+      "end_char": 4811
+    },
+    {
+      "text": "and",
+      "start": 305.4255,
+      "end": 305.538,
+      "start_char": 4812,
+      "end_char": 4815
+    },
+    {
+      "text": "fading",
+      "start": 305.5505,
+      "end": 305.938,
+      "start_char": 4816,
+      "end_char": 4822
+    },
+    {
+      "text": "considerations",
+      "start": 305.9505,
+      "end": 306.988,
+      "start_char": 4823,
+      "end_char": 4837
+    },
+    {
+      "text": "Reinforcement",
+      "start": 307.8505,
+      "end": 308.7505,
+      "start_char": 4839,
+      "end_char": 4852
+    },
+    {
+      "text": "should",
+      "start": 308.763,
+      "end": 308.938,
+      "start_char": 4853,
+      "end_char": 4859
+    },
+    {
+      "text": "occur",
+      "start": 308.9505,
+      "end": 309.313,
+      "start_char": 4860,
+      "end_char": 4865
+    },
+    {
+      "text": "after",
+      "start": 309.3255,
+      "end": 309.638,
+      "start_char": 4866,
+      "end_char": 4871
+    },
+    {
+      "text": "a",
+      "start": 309.6505,
+      "end": 309.7005,
+      "start_char": 4872,
+      "end_char": 4873
+    },
+    {
+      "text": "correct",
+      "start": 309.713,
+      "end": 310.113,
+      "start_char": 4874,
+      "end_char": 4881
+    },
+    {
+      "text": "response",
+      "start": 310.1255,
+      "end": 310.713,
+      "start_char": 4882,
+      "end_char": 4890
+    },
+    {
+      "text": "and",
+      "start": 310.7255,
+      "end": 310.9005,
+      "start_char": 4891,
+      "end_char": 4894
+    },
+    {
+      "text": "should",
+      "start": 310.913,
+      "end": 311.1005,
+      "start_char": 4895,
+      "end_char": 4901
+    },
+    {
+      "text": "be",
+      "start": 311.113,
+      "end": 311.2255,
+      "start_char": 4902,
+      "end_char": 4904
+    },
+    {
+      "text": "contingent",
+      "start": 311.238,
+      "end": 311.8755,
+      "start_char": 4905,
+      "end_char": 4915
+    },
+    {
+      "text": "upon",
+      "start": 311.888,
+      "end": 312.138,
+      "start_char": 4916,
+      "end_char": 4920
+    },
+    {
+      "text": "the",
+      "start": 312.1505,
+      "end": 312.238,
+      "start_char": 4921,
+      "end_char": 4924
+    },
+    {
+      "text": "level",
+      "start": 312.2505,
+      "end": 312.563,
+      "start_char": 4925,
+      "end_char": 4930
+    },
+    {
+      "text": "of",
+      "start": 312.5755,
+      "end": 312.6755,
+      "start_char": 4931,
+      "end_char": 4933
+    },
+    {
+      "text": "performance",
+      "start": 312.688,
+      "end": 313.238,
+      "start_char": 4934,
+      "end_char": 4945
+    },
+    {
+      "text": "independence",
+      "start": 313.2505,
+      "end": 313.9005,
+      "start_char": 4946,
+      "end_char": 4958
+    },
+    {
+      "text": "desired",
+      "start": 313.913,
+      "end": 314.5505,
+      "start_char": 4959,
+      "end_char": 4966
+    },
+    {
+      "text": "Number",
+      "start": 315.4255,
+      "end": 315.813,
+      "start_char": 4968,
+      "end_char": 4974
+    },
+    {
+      "text": "of",
+      "start": 315.8255,
+      "end": 315.913,
+      "start_char": 4975,
+      "end_char": 4977
+    },
+    {
+      "text": "studies",
+      "start": 315.9255,
+      "end": 316.3755,
+      "start_char": 4978,
+      "end_char": 4985
+    },
+    {
+      "text": "Ages",
+      "start": 316.388,
+      "end": 316.738,
+      "start_char": 4986,
+      "end_char": 4990
+    },
+    {
+      "text": "years",
+      "start": 316.938,
+      "end": 317.313,
+      "start_char": 4992,
+      "end_char": 4997
+    },
+    {
+      "text": "Sample",
+      "start": 317.5005,
+      "end": 317.8755,
+      "start_char": 4999,
+      "end_char": 5005
+    },
+    {
+      "text": "size",
+      "start": 317.888,
+      "end": 318.238,
+      "start_char": 5006,
+      "end_char": 5010
+    },
+    {
+      "text": "Areas",
+      "start": 318.2505,
+      "end": 318.613,
+      "start_char": 5011,
+      "end_char": 5016
+    },
+    {
+      "text": "addressed",
+      "start": 318.6255,
+      "end": 319.113,
+      "start_char": 5017,
+      "end_char": 5026
+    },
+    {
+      "text": "Outcome",
+      "start": 319.1255,
+      "end": 319.563,
+      "start_char": 5027,
+      "end_char": 5034
+    },
+    {
+      "text": "48",
+      "start": 319.5755,
+      "end": 320.138,
+      "start_char": 5035,
+      "end_char": 5037
+    },
+    {
+      "text": "*",
+      "start": 320.1505,
+      "end": 320.7255,
+      "start_char": 5037,
+      "end_char": 5038
+    },
+    {
+      "text": "3",
+      "start": 320.738,
+      "end": 321.038,
+      "start_char": 5039,
+      "end_char": 5040
+    },
+    {
+      "text": "to",
+      "start": 321.0505,
+      "end": 321.188,
+      "start_char": 5041,
+      "end_char": 5043
+    },
+    {
+      "text": "adult",
+      "start": 321.2005,
+      "end": 321.5255,
+      "start_char": 5044,
+      "end_char": 5049
+    },
+    {
+      "text": "139",
+      "start": 321.538,
+      "end": 322.6255,
+      "start_char": 5050,
+      "end_char": 5053
+    },
+    {
+      "text": "Academics",
+      "start": 322.638,
+      "end": 323.3005,
+      "start_char": 5054,
+      "end_char": 5063
+    },
+    {
+      "text": "art",
+      "start": 323.5505,
+      "end": 323.963,
+      "start_char": 5065,
+      "end_char": 5068
+    },
+    {
+      "text": "communication",
+      "start": 324.163,
+      "end": 325.013,
+      "start_char": 5070,
+      "end_char": 5083
+    },
+    {
+      "text": "imitative",
+      "start": 325.2255,
+      "end": 325.7755,
+      "start_char": 5085,
+      "end_char": 5094
+    },
+    {
+      "text": "skill",
+      "start": 325.788,
+      "end": 326.213,
+      "start_char": 5095,
+      "end_char": 5100
+    },
+    {
+      "text": "generalization",
+      "start": 326.413,
+      "end": 327.338,
+      "start_char": 5102,
+      "end_char": 5116
+    },
+    {
+      "text": "social",
+      "start": 327.563,
+      "end": 327.938,
+      "start_char": 5118,
+      "end_char": 5124
+    },
+    {
+      "text": "skills",
+      "start": 327.9505,
+      "end": 328.413,
+      "start_char": 5125,
+      "end_char": 5131
+    },
+    {
+      "text": "daily",
+      "start": 328.6755,
+      "end": 328.9755,
+      "start_char": 5133,
+      "end_char": 5138
+    },
+    {
+      "text": "living",
+      "start": 328.988,
+      "end": 329.3255,
+      "start_char": 5139,
+      "end_char": 5145
+    },
+    {
+      "text": "skills",
+      "start": 329.338,
+      "end": 329.788,
+      "start_char": 5146,
+      "end_char": 5152
+    },
+    {
+      "text": "leisure",
+      "start": 329.988,
+      "end": 330.3005,
+      "start_char": 5154,
+      "end_char": 5161
+    },
+    {
+      "text": "choice",
+      "start": 330.313,
+      "end": 330.7505,
+      "start_char": 5162,
+      "end_char": 5168
+    },
+    {
+      "text": "Internet",
+      "start": 331.0255,
+      "end": 331.563,
+      "start_char": 5170,
+      "end_char": 5178
+    },
+    {
+      "text": "skills",
+      "start": 331.5755,
+      "end": 332.013,
+      "start_char": 5179,
+      "end_char": 5185
+    },
+    {
+      "text": "spontaneous",
+      "start": 332.2255,
+      "end": 332.938,
+      "start_char": 5187,
+      "end_char": 5198
+    },
+    {
+      "text": "response",
+      "start": 332.9505,
+      "end": 333.5755,
+      "start_char": 5199,
+      "end_char": 5207
+    },
+    {
+      "text": "disruptive",
+      "start": 333.763,
+      "end": 334.313,
+      "start_char": 5209,
+      "end_char": 5219
+    },
+    {
+      "text": "behaviors",
+      "start": 334.3255,
+      "end": 334.938,
+      "start_char": 5220,
+      "end_char": 5229
+    },
+    {
+      "text": "reading",
+      "start": 335.138,
+      "end": 335.4255,
+      "start_char": 5231,
+      "end_char": 5238
+    },
+    {
+      "text": "comprehension",
+      "start": 335.438,
+      "end": 336.2005,
+      "start_char": 5239,
+      "end_char": 5252
+    },
+    {
+      "text": "safety",
+      "start": 336.4255,
+      "end": 336.863,
+      "start_char": 5254,
+      "end_char": 5260
+    },
+    {
+      "text": "writing",
+      "start": 337.088,
+      "end": 337.463,
+      "start_char": 5262,
+      "end_char": 5269
+    },
+    {
+      "text": "empathy",
+      "start": 337.638,
+      "end": 338.0755,
+      "start_char": 5271,
+      "end_char": 5278
+    },
+    {
+      "text": "observation",
+      "start": 338.3255,
+      "end": 339.113,
+      "start_char": 5280,
+      "end_char": 5291
+    },
+    {
+      "text": "on-task",
+      "start": 339.313,
+      "end": 339.838,
+      "start_char": 5293,
+      "end_char": 5300
+    },
+    {
+      "text": "behavior",
+      "start": 339.8505,
+      "end": 340.388,
+      "start_char": 5301,
+      "end_char": 5309
+    },
+    {
+      "text": "identifying",
+      "start": 340.663,
+      "end": 341.338,
+      "start_char": 5311,
+      "end_char": 5322
+    },
+    {
+      "text": "numbers",
+      "start": 341.3505,
+      "end": 341.738,
+      "start_char": 5323,
+      "end_char": 5330
+    },
+    {
+      "text": "+",
+      "start": 341.7505,
+      "end": 342.0255,
+      "start_char": 5331,
+      "end_char": 5332
+    },
+    {
+      "text": "*",
+      "start": 342.038,
+      "end": 342.688,
+      "start_char": 5333,
+      "end_char": 5334
+    },
+    {
+      "text": "Includes",
+      "start": 342.7005,
+      "end": 343.138,
+      "start_char": 5334,
+      "end_char": 5342
+    },
+    {
+      "text": "an",
+      "start": 343.1505,
+      "end": 343.2505,
+      "start_char": 5343,
+      "end_char": 5345
+    },
+    {
+      "text": "integrated",
+      "start": 343.263,
+      "end": 343.8505,
+      "start_char": 5346,
+      "end_char": 5356
+    },
+    {
+      "text": "review",
+      "start": 343.863,
+      "end": 344.2255,
+      "start_char": 5357,
+      "end_char": 5363
+    },
+    {
+      "text": "of",
+      "start": 344.238,
+      "end": 344.3505,
+      "start_char": 5364,
+      "end_char": 5366
+    },
+    {
+      "text": "literature",
+      "start": 344.363,
+      "end": 344.863,
+      "start_char": 5367,
+      "end_char": 5377
+    },
+    {
+      "text": "by",
+      "start": 344.8755,
+      "end": 345.013,
+      "start_char": 5378,
+      "end_char": 5380
+    },
+    {
+      "text": "Walker",
+      "start": 345.0255,
+      "end": 345.5255,
+      "start_char": 5381,
+      "end_char": 5387
+    },
+    {
+      "text": "2008",
+      "start": 345.763,
+      "end": 346.8005,
+      "start_char": 5389,
+      "end_char": 5393
+    },
+    {
+      "text": "The",
+      "start": 347.6755,
+      "end": 347.838,
+      "start_char": 5396,
+      "end_char": 5399
+    },
+    {
+      "text": "full",
+      "start": 347.8505,
+      "end": 348.088,
+      "start_char": 5400,
+      "end_char": 5404
+    },
+    {
+      "text": "study-by-study",
+      "start": 348.1005,
+      "end": 348.9755,
+      "start_char": 5405,
+      "end_char": 5419
+    },
+    {
+      "text": "summaries",
+      "start": 348.988,
+      "end": 349.5005,
+      "start_char": 5420,
+      "end_char": 5429
+    },
+    {
+      "text": "are",
+      "start": 349.513,
+      "end": 349.688,
+      "start_char": 5430,
+      "end_char": 5433
+    },
+    {
+      "text": "in",
+      "start": 349.7005,
+      "end": 349.813,
+      "start_char": 5434,
+      "end_char": 5436
+    },
+    {
+      "text": "the",
+      "start": 349.8255,
+      "end": 349.9005,
+      "start_char": 5437,
+      "end_char": 5440
+    },
+    {
+      "text": "source",
+      "start": 349.913,
+      "end": 350.238,
+      "start_char": 5441,
+      "end_char": 5447
+    },
+    {
+      "text": "PDF",
+      "start": 350.2505,
+      "end": 350.9255,
+      "start_char": 5448,
+      "end_char": 5451
+    }
+  ]
+}
