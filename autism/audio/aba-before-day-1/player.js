@@ -118,6 +118,7 @@
   });
   player.addEventListener('error',()=>{status.textContent='Could not load the audio. Please reload and try again.';});
   document.querySelector('main').addEventListener('dblclick',event=>{
+    if(audioHidden) return;
     const word=event.target.closest('.tts-word');if(!word) return;
     const index=Number(word.dataset.track), time=tracks[index].words[Number(word.dataset.word)].start;
     if(index!==current) load(index);
