@@ -30,6 +30,8 @@
   }
   toggle.addEventListener('click',()=>{
     audioHidden=!audioHidden;syncPanel();
+    // Hiding the player stops playback: no narration from a control you can't see.
+    if(audioHidden) player.pause();
     try{localStorage.setItem('aba-audio-hidden',String(audioHidden));}catch(e){}
   });
   syncPanel();
