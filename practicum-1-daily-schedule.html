@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A suggested 15-day Practicum 1 action plan based on the program guidelines, assignments, and evaluation forms.">
+  <title>Practicum 1 Daily Schedule | EA Diploma Program</title>
+  <style>
+    :root { color-scheme:light; --ink:#1c2631; --muted:#566575; --blue:#0d5b87; --blue-dark:#073e60; --line:#dbe3e9; --paper:#fff; --canvas:#f4f7f9; --soft:#eaf4fa; --green:#12715c; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--canvas); color:var(--ink); font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--blue); }
+    a:focus-visible, button:focus-visible, input:focus-visible { outline:3px solid #efb847; outline-offset:3px; }
+    .layout { display:grid; grid-template-columns:230px minmax(0,1fr); gap:26px; max-width:1360px; margin:auto; padding:26px; }
+    .sidebar { position:sticky; top:18px; align-self:start; padding:20px; border:1px solid var(--line); border-radius:18px; background:var(--paper); box-shadow:0 8px 24px #14324a0a; }
+    .eyebrow { margin:0; color:var(--blue); font-size:.74rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    .sidebar h2 { margin:4px 0 14px; font-size:1.08rem; }
+    .sidebar nav { display:grid; gap:3px; }
+    .sidebar nav a { padding:7px 9px; border-radius:8px; color:var(--ink); text-decoration:none; font-size:.9rem; }
+    .sidebar nav a:hover { background:var(--soft); color:var(--blue); }
+    .sidebar .back { display:block; margin:16px 0; border-top:1px solid var(--line); padding-top:14px; font-size:.9rem; }
+    .progress { border-top:1px solid var(--line); padding-top:15px; }
+    .progress strong { display:block; font-size:.89rem; }
+    progress { width:100%; height:11px; margin:9px 0 2px; accent-color:var(--green); }
+    .progress small { color:var(--muted); }
+    .button { width:100%; margin-top:16px; padding:9px 12px; border:1px solid var(--line); border-radius:9px; background:#fff; color:var(--ink); font:inherit; cursor:pointer; }
+    .button:hover { border-color:var(--blue); color:var(--blue); }
+    main { min-width:0; }
+    .hero, .notice, .week, .day { border:1px solid var(--line); border-radius:18px; background:var(--paper); box-shadow:0 8px 24px #14324a0a; }
+    .hero { padding:32px 38px; border-top:5px solid var(--blue); }
+    h1 { margin:5px 0 10px; font-size:clamp(2rem,4vw,3rem); line-height:1.15; letter-spacing:-.04em; }
+    .hero > p:last-child { max-width:760px; margin-bottom:0; color:var(--muted); }
+    .notice { margin-top:18px; padding:20px 25px; background:var(--soft); border-color:#c8dfec; }
+    .notice h2 { margin:0 0 5px; font-size:1.03rem; }
+    .notice p { margin:0; font-size:.93rem; }
+    .notice p + p { margin-top:9px; }
+    .week { margin-top:24px; padding:27px 30px 30px; scroll-margin-top:18px; }
+    .week-head { display:flex; justify-content:space-between; align-items:baseline; gap:12px; border-bottom:1px solid var(--line); padding-bottom:13px; }
+    .week h2 { margin:0; font-size:1.6rem; letter-spacing:-.025em; }
+    .week-head span { color:var(--muted); font-size:.9rem; }
+    .week-intro { margin:14px 0 20px; color:var(--muted); }
+    .day { margin-top:14px; padding:21px 23px; box-shadow:none; scroll-margin-top:18px; }
+    .day-head { display:flex; justify-content:space-between; align-items:start; gap:16px; }
+    .day h3 { margin:0; font-size:1.2rem; line-height:1.3; }
+    .date { display:grid; gap:3px; flex:none; color:var(--muted); font-size:.76rem; font-weight:700; }
+    .date input { width:142px; min-height:36px; padding:4px 6px; border:1px solid #b8c8d2; border-radius:7px; background:#fff; color:var(--ink); font:inherit; font-size:.85rem; }
+    .tasks { list-style:none; margin:15px 0 0; padding:0; }
+    .tasks li + li { border-top:1px solid #e9eef2; }
+    .tasks label { display:flex; gap:11px; align-items:flex-start; padding:11px 0; cursor:pointer; }
+    .tasks input { flex:none; width:19px; height:19px; margin:3px 0 0; accent-color:var(--green); cursor:pointer; }
+    .tasks input:checked + span { color:var(--muted); text-decoration:line-through; text-decoration-color:#adbcc5; }
+    .reflection { margin:13px 0 0; padding:13px 15px; border-radius:10px; background:#f5f9fb; font-size:.92rem; }
+    .reflection strong { color:var(--blue-dark); }
+    .reflection a { white-space:nowrap; font-weight:700; }
+    .milestone { margin:19px 0 0; padding:16px 18px; border-left:4px solid var(--green); border-radius:8px; background:#eef8f5; font-size:.93rem; }
+    .milestone strong { color:#0c5a49; }
+    .source { margin:22px 5px 0; color:var(--muted); font-size:.83rem; }
+    @media (max-width:900px) { .layout { display:block; padding:14px; } .sidebar { position:static; margin-bottom:16px; } .sidebar nav { display:flex; flex-wrap:wrap; } .sidebar nav a { background:#f5f9fb; } .sidebar .back { margin:10px 0; } .progress { max-width:300px; } }
+    @media (max-width:580px) { .hero { padding:25px; } .week { padding:20px 16px; } .week-head { display:block; } .day { padding:18px 15px; } .day-head { display:block; } .date { margin-top:10px; } }
+    @media print { body { background:#fff; font-size:10pt; } .layout { display:block; max-width:none; padding:0; } .sidebar { display:none; } .hero,.notice,.week,.day { box-shadow:none; } .hero { border:0; padding:0 0 12pt; } .notice { padding:9pt; } .week { border:0; padding:0; margin-top:18pt; } .day { break-inside:avoid; padding:10pt; margin-top:8pt; } .source { display:none; } }
+  </style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" aria-label="Schedule navigation">
+    <p class="eyebrow">EA Diploma Program</p>
+    <h2>15-day schedule</h2>
+    <nav>
+      <a href="#before">Before you start</a>
+      <a href="#week-1">Week 1 · Days 1–5</a>
+      <a href="#week-2">Week 2 · Days 6–10</a>
+      <a href="#week-3">Week 3 · Days 11–15</a>
+    </nav>
+    <a class="back" href="practicum-1.html">← All Practicum 1 pages</a>
+    <div class="progress" aria-live="polite">
+      <strong>Schedule progress</strong>
+      <progress id="progress" value="0" max="1"></progress>
+      <small id="progress-label">0 tasks completed</small>
+    </div>
+    <button class="button" type="button" onclick="window.print()">Print schedule</button>
+  </aside>
+
+  <main>
+    <header class="hero">
+      <p class="eyebrow">Practicum 1 · Suggested action plan</p>
+      <h1>What to do each day</h1>
+      <p>This 15-day plan combines the weekly guidelines, the two IEP-related assignments, daily reflection prompts, and the evaluation forms. The day-by-day placement is a suggested way to pace the work; follow your EA Host and school team when they adjust it.</p>
+    </header>
+
+    <section class="notice" id="before">
+      <h2>Before you start and every day</h2>
+      <p>Read the <a href="practicum-1-guidelines.html">guidelines</a> and <a href="practicum-1-evaluation-checklist.html">evaluation criteria</a>. Arrive on time, sign in as directed, follow the school team's instructions, ask for feedback, and protect student privacy. Stay within the supervision and task limits in the guidelines.</p>
+      <p>Write one <a href="practicum-1-assignments.html#reflections">daily reflection</a> for each of the 15 days and keep it in your learning portfolio. The source leaves the assignment due date blank; confirm your meeting and submission dates with your Practicum Supervisor. Checkmarks and dates on this page save in this browser.</p>
+    </section>
+
+    <section class="week" id="week-1" aria-labelledby="week-1-title">
+      <div class="week-head"><h2 id="week-1-title">Week 1 · Observe and learn</h2><span>Days 1–5</span></div>
+      <p class="week-intro">Focus on orientation, safety, student information, relationships, and a consistent routine. Move from observing to direct support only when your school team considers it appropriate.</p>
+
+      <article class="day" id="day-1"><div class="day-head"><h3>Day 1 · Orientation</h3><label class="date">Date <input type="date" data-save="day-1-date" aria-label="Day 1 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-1-a"><span>Tour the school, meet the EA Host and key staff, and confirm your schedule, breaks, sign-in, and absence process.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-1-b"><span>Review emergency plans, relevant alerts, and the student’s IEP, care plan, safety plan, and sub file with your Host.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-1-c"><span>Start observing the classroom and ask what support is appropriate for you today.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> Who did you meet, what information was shared, and how was it helpful? <a href="practicum-1-assignments.html#day-1">Full Day 1 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-1-r"><span>Write and save the Day 1 reflection in your portfolio.</span></label></li></ul>
+      </article>
+
+      <article class="day" id="day-2"><div class="day-head"><h3>Day 2 · Classroom routines</h3><label class="date">Date <input type="date" data-save="day-2-date" aria-label="Day 2 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-2-a"><span>Shadow your EA Host and note classroom routines and norms.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-2-b"><span>Identify supports available to everyone and supports specific to the student you will help.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-2-c"><span>Ask where student documents are kept and how staff communicate about student progress.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> What routines and universal or essential supports did you see? <a href="practicum-1-assignments.html#day-2">Full Day 2 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-2-r"><span>Write and save the Day 2 reflection.</span></label></li></ul>
+      </article>
+
+      <article class="day" id="day-3"><div class="day-head"><h3>Day 3 · Student profile and IEP</h3><label class="date">Date <input type="date" data-save="day-3-date" aria-label="Day 3 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-3-a"><span>Review the student’s strengths, areas of need, and current IEP goals with your Host.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-3-b"><span>Refer to the IEP, sub file, PBS plan, or safety response plan where applicable; ask questions before trying any support strategy.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-3-c"><span>Observe the student’s interactions and start building rapport with all students.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> What are the student’s strengths, challenges, and IEP goal? <a href="practicum-1-assignments.html#day-3">Full Day 3 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-3-r"><span>Write and save the Day 3 reflection.</span></label></li></ul>
+      </article>
+
+      <article class="day" id="day-4"><div class="day-head"><h3>Day 4 · Rapport and communication</h3><label class="date">Date <input type="date" data-save="day-4-date" aria-label="Day 4 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-4-a"><span>Continue shadowing the Host and observe effective interactions with students.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-4-b"><span>Practise respectful, positive interactions with the student you support and with classmates.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-4-c"><span>Review medical and behaviour protocols and how to report injuries or emergencies; do not perform procedures reserved for trained staff.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> How did you build rapport, and what could strengthen it? <a href="practicum-1-assignments.html#day-4">Full Day 4 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-4-r"><span>Write and save the Day 4 reflection.</span></label></li></ul>
+      </article>
+
+      <article class="day" id="day-5"><div class="day-head"><h3>Day 5 · Proximity and Week 1 review</h3><label class="date">Date <input type="date" data-save="day-5-date" aria-label="Day 5 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-5-a"><span>Discuss when an EA should stay close to a student and when to allow space.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-5-b"><span>With Host approval, begin taking over a predictable routine such as the start or end of the day.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-5-c"><span>Complete your Week 1 ratings and reflection before the supervisor follow-up; identify 1–2 strategies to improve next week.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> When should you be near a student, and when can you allow space? <a href="practicum-1-assignments.html#day-5">Full Day 5 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-5-r"><span>Write and save the Day 5 reflection.</span></label></li></ul>
+      </article>
+      <p class="milestone"><strong>Week 1 milestone:</strong> Complete <a href="practicum-1-self-evaluation.html#reflection-1">Week 1 self-evaluation and reflection</a>. Keep the <a href="practicum-1-guidelines.html#week-1">Week 1 guidelines checklist</a> up to date.</p>
+    </section>
+
+    <section class="week" id="week-2" aria-labelledby="week-2-title">
+      <div class="week-head"><h2 id="week-2-title">Week 2 · Practise with support</h2><span>Days 6–10</span></div>
+      <p class="week-intro">With your Host, begin IEP support and data collection. Observe behaviour, promote independence and social inclusion, and keep building relationships.</p>
+
+      <article class="day" id="day-6"><div class="day-head"><h3>Day 6 · Effective strategies</h3><label class="date">Date <input type="date" data-save="day-6-date" aria-label="Day 6 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-6-a"><span>Identify strategies your Host uses successfully and ask why they work.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-6-b"><span>With your Host, choose a suitable IEP goal and discuss a support strategy and a data collection method.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-6-c"><span>Discuss an adaptation or visual support for Assignment 1 and get approval before creating or using it.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> Which Host strategy worked, why, and what might improve it? <a href="practicum-1-assignments.html#day-6">Full Day 6 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-6-r"><span>Write and save the Day 6 reflection.</span></label></li></ul>
+      </article>
+
+      <article class="day" id="day-7"><div class="day-head"><h3>Day 7 · Routine and independence</h3><label class="date">Date <input type="date" data-save="day-7-date" aria-label="Day 7 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-7-a"><span>Carry out the predictable routine you have begun, with support and feedback from your Host.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-7-b"><span>Use the least support needed and look for chances for the student to act independently.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-7-c"><span>Start documenting your first IEP goal, student profile, and planned strategies in the <a href="practicum-1-iep-based-assignments.html#assignment-1">IEP assignment form</a>.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> What routine did you take over, and how did you support independence? <a href="practicum-1-assignments.html#day-7">Full Day 7 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-7-r"><span>Write and save the Day 7 reflection.</span></label></li></ul>
+      </article>
+
+      <article class="day" id="day-8"><div class="day-head"><h3>Day 8 · Check progress</h3><label class="date">Date <input type="date" data-save="day-8-date" aria-label="Day 8 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-8-a"><span>Use the chosen IEP strategy with Host guidance and begin or continue approved data collection.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-8-b"><span>Ask for specific feedback on your progress and set a goal for the second half of practicum.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-8-c"><span>If your midterm meeting is scheduled now, review the <a href="practicum-1-evaluation-checklist.html">evaluation checklist</a> and discuss the feedback with your Host and supervisors.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> What have you learned, where are you doing well, and what will you improve? <a href="practicum-1-assignments.html#day-8">Full Day 8 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-8-r"><span>Write and save the Day 8 reflection.</span></label></li></ul>
+      </article>
+
+      <article class="day" id="day-9"><div class="day-head"><h3>Day 9 · Behaviour and data</h3><label class="date">Date <input type="date" data-save="day-9-date" aria-label="Day 9 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-9-a"><span>Observe behaviour in instructional and non-instructional settings; discuss possible triggers and functions with your Host.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-9-b"><span>For Assignment 2, collect data on the selected IEP goal on two occasions alongside your Host, using separate but matching sheets when arranged.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-9-c"><span>Compare your data with your Host’s, ask about differences, and record what you learned.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> What triggers or functions of behaviour did you notice, and how might you prevent problems? <a href="practicum-1-assignments.html#day-9">Full Day 9 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-9-r"><span>Write and save the Day 9 reflection.</span></label></li></ul>
+      </article>
+
+      <article class="day" id="day-10"><div class="day-head"><h3>Day 10 · Inclusion and Week 2 review</h3><label class="date">Date <input type="date" data-save="day-10-date" aria-label="Day 10 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-10-a"><span>Help the student connect with peers during class and, where appropriate, recess or lunch.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-10-b"><span>Review your IEP strategy and data with your Host; note adjustments and progress for your assignment reflection.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-10-c"><span>Complete Week 2 self-ratings and reflection before the supervisor follow-up. If the midterm meeting is arranged now, review staff feedback.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> How did you promote social inclusion, and what would you improve? <a href="practicum-1-assignments.html#day-10">Full Day 10 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-10-r"><span>Write and save the Day 10 reflection.</span></label></li></ul>
+      </article>
+      <p class="milestone"><strong>Week 2 milestone:</strong> Complete <a href="practicum-1-self-evaluation.html#reflection-2">Week 2 self-evaluation and reflection</a>. The School Supervisor and EA Host prepare the midterm evaluation before the scheduled meeting; review their feedback rather than filling in their ratings yourself.</p>
+    </section>
+
+    <section class="week" id="week-3" aria-labelledby="week-3-title">
+      <div class="week-head"><h2 id="week-3-title">Week 3 · Apply and finish</h2><span>Days 11–15</span></div>
+      <p class="week-intro">Take a fuller EA role while still supported by your Host. Finish assignment evidence and reflections, then prepare for the final evaluation and debrief.</p>
+
+      <article class="day" id="day-11"><div class="day-head"><h3>Day 11 · More independent support</h3><label class="date">Date <input type="date" data-save="day-11-date" aria-label="Day 11 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-11-a"><span>Take on more of the EA routine while continuing to receive Host support and direction from the teacher.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-11-b"><span>Use prompting and adaptations that build student independence during class and non-instructional time.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-11-c"><span>If appropriate, create or refine the adaptation or visual material for Assignment 1 with school-team approval.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> How did you help the student act independently in different settings? <a href="practicum-1-assignments.html#day-11">Full Day 11 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-11-r"><span>Write and save the Day 11 reflection.</span></label></li></ul>
+      </article>
+
+      <article class="day" id="day-12"><div class="day-head"><h3>Day 12 · Evaluate strategies</h3><label class="date">Date <input type="date" data-save="day-12-date" aria-label="Day 12 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-12-a"><span>With your Host, review the approved responses and reinforcement strategies you are using.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-12-b"><span>Record how your adaptation was introduced, how the student responded, and one way to improve it.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-12-c"><span>Continue the <a href="practicum-1-iep-based-assignments.html">IEP assignment write-ups</a>, including strategy and data reflections.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> How effective were the consequence strategies, and what could improve? <a href="practicum-1-assignments.html#day-12">Full Day 12 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-12-r"><span>Write and save the Day 12 reflection.</span></label></li></ul>
+      </article>
+
+      <article class="day" id="day-13"><div class="day-head"><h3>Day 13 · Practise and resolve</h3><label class="date">Date <input type="date" data-save="day-13-date" aria-label="Day 13 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-13-a"><span>If offered, practise following another EA’s sub file as an on-call replacement while supervised by an EA.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-13-b"><span>Ask for feedback about communication, boundaries, and handling disagreements professionally.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-13-c"><span>Check your portfolio for the two assignment reflections and copies of appropriate materials or activities.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> Describe a conflict you experienced or observed, how it was resolved, and what you learned. <a href="practicum-1-assignments.html#day-13">Full Day 13 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-13-r"><span>Write and save the Day 13 reflection.</span></label></li></ul>
+      </article>
+
+      <article class="day" id="day-14"><div class="day-head"><h3>Day 14 · Prepare to submit</h3><label class="date">Date <input type="date" data-save="day-14-date" aria-label="Day 14 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-14-a"><span>Finish and review both assignments: the adaptation and its reflection, plus data comparison and its reflection.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-14-b"><span>Check that Days 1–14 reflections and any permitted visuals or learning materials are in your portfolio.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-14-c"><span>Start your Week 3 self-evaluation and confirm the final meeting and debrief arrangements.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> How has your view of the EA role changed, and which strategies will you keep? <a href="practicum-1-assignments.html#day-14">Full Day 14 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-14-r"><span>Write and save the Day 14 reflection.</span></label></li></ul>
+      </article>
+
+      <article class="day" id="day-15"><div class="day-head"><h3>Day 15 · Finish and debrief</h3><label class="date">Date <input type="date" data-save="day-15-date" aria-label="Day 15 date"></label></div>
+        <ul class="tasks">
+          <li><label><input type="checkbox" data-save="day-15-a"><span>Complete Week 3 self-ratings and reflection, including skills to develop in Practicum 2.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-15-b"><span>Review the <a href="practicum-1-evaluation-checklist.html#signatures">final evaluation</a> with the Host and supervisors when scheduled; obtain your copy after the session.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-15-c"><span>Bring both completed assignments and all 15 daily reflections to the last practicum debrief session; confirm the actual hand-in date with your Practicum Supervisor.</span></label></li>
+          <li><label><input type="checkbox" data-save="day-15-d"><span>Ask the Host or Practicum Supervisor about the <a href="practicum-1-assignment-assessment.html">assignment assessment</a> and any final feedback.</span></label></li>
+        </ul><p class="reflection"><strong>Reflection:</strong> What succeeded, what remains challenging, and what do you want to learn next? <a href="practicum-1-assignments.html#day-15">Full Day 15 prompt</a></p>
+        <ul class="tasks"><li><label><input type="checkbox" data-save="day-15-r"><span>Write and save the Day 15 reflection.</span></label></li></ul>
+      </article>
+      <p class="milestone"><strong>Final milestone:</strong> Complete <a href="practicum-1-self-evaluation.html#reflection-3">Week 3 self-evaluation</a>, both <a href="practicum-1-iep-based-assignments.html">IEP-based assignment records</a>, and your <a href="practicum-1-assignments.html#portfolio">15-day learning portfolio</a>. The school staff prepare the final evaluation before the scheduled meeting.</p>
+    </section>
+
+    <p class="source">This schedule is an interpretation of the Practicum 1 pages. It does not set official dates or replace direction from the school team. Checklist progress is saved only in this browser.</p>
+  </main>
+</div>
+<script>
+  (() => {
+    const key = 'ea-practicum-1-daily-schedule-v1';
+    const fields = [...document.querySelectorAll('[data-save]')];
+    const boxes = fields.filter(field => field.type === 'checkbox');
+    const progress = document.getElementById('progress');
+    const label = document.getElementById('progress-label');
+    try {
+      const saved = JSON.parse(localStorage.getItem(key) || '{}');
+      fields.forEach(field => {
+        if (!(field.dataset.save in saved)) return;
+        if (field.type === 'checkbox') field.checked = saved[field.dataset.save] === true;
+        else field.value = saved[field.dataset.save];
+      });
+    } catch (_) { /* The schedule remains usable if browser storage is unavailable. */ }
+    function update() {
+      const done = boxes.filter(box => box.checked).length;
+      progress.max = boxes.length;
+      progress.value = done;
+      label.textContent = `${done} of ${boxes.length} tasks completed`;
+      const saved = Object.fromEntries(fields.map(field => [field.dataset.save, field.type === 'checkbox' ? field.checked : field.value]));
+      try { localStorage.setItem(key, JSON.stringify(saved)); } catch (_) { label.textContent += ' · browser storage unavailable'; }
+    }
+    fields.forEach(field => { field.addEventListener('input', update); field.addEventListener('change', update); });
+    update();
+  })();
+</script>
+</body>
+</html>
