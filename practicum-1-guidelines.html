@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practicum 1 Guidelines | EA Diploma Program</title>
+  <style>
+    :root { color-scheme: light; --ink:#1c2631; --muted:#566575; --line:#dbe3e9; --blue:#0d5b87; --blue-soft:#eaf4fa; --gold:#fff3c9; --paper:#fff; --canvas:#f4f7f9; --green:#12715c; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--canvas); color:var(--ink); font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--blue); }
+    .layout { display:grid; grid-template-columns:240px minmax(0,1fr); gap:28px; max-width:1360px; padding:30px; margin:auto; }
+    .sidebar { align-self:start; position:sticky; top:20px; padding:24px 18px; background:var(--paper); border:1px solid var(--line); border-radius:18px; box-shadow:0 8px 24px #14324a0a; }
+    .eyebrow { margin:0; color:var(--blue); font-size:.75rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    .sidebar h2 { margin:4px 0 14px; font-size:1rem; }
+    .sidebar nav { display:grid; gap:4px; }
+    .sidebar nav a { display:block; padding:8px 10px; border-radius:8px; text-decoration:none; color:var(--ink); font-size:.91rem; }
+    .sidebar nav a:hover,.sidebar nav a:focus-visible { background:var(--blue-soft); color:var(--blue); }
+    .progress { margin-top:22px; border-top:1px solid var(--line); padding-top:18px; }
+    .progress p { margin:0 0 7px; font-size:.85rem; font-weight:700; }
+    progress { width:100%; height:10px; accent-color:var(--green); }
+    .progress small { color:var(--muted); }
+    .button { appearance:none; border:1px solid var(--line); border-radius:9px; background:#fff; color:var(--ink); padding:8px 12px; font:inherit; cursor:pointer; }
+    .button:hover,.button:focus-visible { border-color:var(--blue); color:var(--blue); }
+    .print-button { width:100%; margin-top:17px; }
+    main { min-width:0; }
+    .hero,.section { background:var(--paper); border:1px solid var(--line); border-radius:18px; box-shadow:0 8px 24px #14324a0a; }
+    .hero { padding:32px 38px; border-top:5px solid var(--blue); }
+    h1 { margin:5px 0 8px; font-size:clamp(1.8rem,4vw,2.75rem); line-height:1.17; letter-spacing:-.035em; }
+    .subtitle { margin:0 0 22px; color:var(--muted); font-size:1.05rem; }
+    .notice { margin:0; padding:14px 18px; border-left:4px solid var(--blue); border-radius:8px; background:var(--blue-soft); font-weight:650; }
+    .section { margin-top:22px; padding:30px 38px; scroll-margin-top:20px; }
+    .section h2 { margin:0 0 20px; font-size:1.55rem; letter-spacing:-.025em; }
+    h3 { margin:24px 0 9px; font-size:1.07rem; }
+    p { margin:0 0 15px; }
+    p:last-child { margin-bottom:0; }
+    .role { padding:0 0 20px; margin:0 0 20px; border-bottom:1px solid var(--line); }
+    .role:last-child { border:0; padding:0; margin:0; }
+    .role h3 { margin:0 0 7px; color:var(--blue); }
+    .rules { margin:0; padding-left:24px; }
+    .rules li { padding:4px 0; }
+    .caution { background:#fffdf5; border-color:#eeddae; }
+    .caution h2 { color:#775109; }
+    .emphasis { background:var(--gold); padding:0 3px; }
+    .evaluations { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .eval-card { padding:20px; border:1px solid var(--line); border-radius:12px; background:#fcfdfe; }
+    .eval-card h3 { margin:0 0 12px; }
+    .eval-card p { margin-bottom:11px; }
+    .intro { color:var(--muted); }
+    .week { margin-top:30px; padding-top:24px; border-top:1px solid var(--line); scroll-margin-top:20px; }
+    .week h3 { margin-top:0; font-size:1.3rem; }
+    .task-group { margin:18px 0 26px; }
+    .task-group h4 { margin:0; padding:10px 14px; color:var(--blue); background:var(--blue-soft); border:1px solid var(--line); border-bottom:0; border-radius:10px 10px 0 0; font-size:.94rem; }
+    .task-list { list-style:none; margin:0; padding:0; border:1px solid var(--line); border-radius:0 0 10px 10px; overflow:hidden; }
+    .task-list li + li { border-top:1px solid var(--line); }
+    .task-list label { display:flex; align-items:flex-start; gap:12px; padding:13px 15px; cursor:pointer; }
+    .task-list label:hover { background:#f8fbfc; }
+    .task-list input { flex:none; width:19px; height:19px; margin:3px 0 0; accent-color:var(--green); cursor:pointer; }
+    .task-list input:checked + span { color:var(--muted); text-decoration:line-through; text-decoration-color:#aab8bf; }
+    .task-list strong { color:var(--ink); }
+    .source-note { margin:20px 4px 0; color:var(--muted); font-size:.82rem; }
+    @media (max-width:850px) { .layout { display:block; padding:14px; } .sidebar { position:static; margin-bottom:16px; padding:16px; } .sidebar nav { display:flex; gap:4px; overflow:auto; white-space:nowrap; } .sidebar nav a { padding:7px 9px; } .progress { margin-top:10px; } .hero,.section { padding:22px; } .evaluations { grid-template-columns:1fr; } }
+    @media print { body { background:#fff; font-size:10.5pt; } .layout { display:block; max-width:none; padding:0; } .sidebar { display:none; } .hero,.section { box-shadow:none; border:0; border-radius:0; padding:0; margin:0 0 18pt; } .hero { border-top:0; } .section { break-inside:avoid-page; } .week { break-inside:auto; } .task-group { break-inside:avoid-page; } .task-list label { padding:5pt 7pt; } .source-note { display:none; } }
+  </style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" aria-label="Page navigation">
+    <p class="eyebrow">EA Diploma Program</p>
+    <h2>Practicum 1</h2>
+    <nav>
+      <a href="#roles">Roles</a>
+      <a href="#may-not">May not</a>
+      <a href="#may">May</a>
+      <a href="#evaluation">Evaluation</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#orientation">Orientation</a>
+      <a href="#week-1">Week 1</a>
+      <a href="#week-2">Week 2</a>
+      <a href="#week-3">Week 3</a>
+    </nav>
+    <div class="progress" aria-live="polite">
+      <p>Checklist progress</p>
+      <progress id="task-progress" value="0" max="1"></progress>
+      <small id="progress-label">0 of 0 completed</small>
+    </div>
+    <button class="button print-button" type="button" onclick="window.print()">Print page</button>
+  </aside>
+
+  <main>
+    <header class="hero">
+      <p class="eyebrow">Guidelines for practicum students</p>
+      <h1>EA Diploma Program · Practicum 1</h1>
+      <p class="subtitle">Guidelines, evaluation information, and the orientation and weekly task checklist.</p>
+      <p class="notice">Please review this document as well as the practicum evaluation form prior to the start of the practicum.</p>
+    </header>
+
+    <section class="section" id="roles">
+      <h2>Roles</h2>
+      <div class="role">
+        <h3>School Supervisor</h3>
+        <p>The School Supervisor oversees and participates in the training and evaluation of the EA Practicum Student, in consultation with the EA Host. The School Supervisor can be an administrator, Learning Support Teacher, or Classroom Teacher.</p>
+      </div>
+      <div class="role">
+        <h3>EA Host</h3>
+        <p>The EA Host supports the daily training of the EA Practicum student, using the evaluation document as a guide. Daily the EA Host gives direct feedback, that is clear, objective and complete, so the EA Practicum Student can grow and improve their practice. Using the <strong>Practicum 1 Evaluation Checklist</strong> as a guide, the EA Host will create time to review the progress of the EA Practicum Student, challenge them to grow in their practice, share their experience and knowledge with EA Practicum Student, and answer any questions they have.</p>
+        <p>The EA Host will also guide the EA practicum student to take direction from the classroom teacher regarding classroom procedures, adapting or modifying, and supporting students to access curriculum, while also focusing on IEP goals and objectives.</p>
+      </div>
+      <div class="role">
+        <h3>Practicum Supervisor <small>(Burnaby Continuing Education staff)</small></h3>
+        <p>The Practicum Supervisor will visit each school site regularly during the practicum. They will observe the EA Practicum Student, guide the reflection and goal setting process, connect with school staff, and participate in the evaluation process along with the School Supervisor and EA Host. The Practicum Supervisor will also ensure that the EA Practicum Students and school staff are informed about the intended practicum outcomes listed in the <strong>Practicum 1 Evaluation Checklist</strong>.</p>
+      </div>
+      <div class="role">
+        <h3>EA Practicum students</h3>
+        <p>EA Practicum Students will review the intended practicum outcomes listed in the <strong>Practicum 1 Evaluation Checklist</strong> form prior to going on the practicum. They will work under the direction and supervision of the school team and ask for and receive feedback on practicum performance. They will inform the school and Practicum Supervisor right away in the event of illness or emergency that results in absence. They will be punctual and work the same hours as the Education Assistants in the school, any lost time will need to be made up. They will inform the Practicum Supervisor regarding questions or concerns as they arise and follow the same policies and procedures as employees in the school district.</p>
+      </div>
+    </section>
+
+    <section class="section caution" id="may-not">
+      <h2>EA Practicum students may not</h2>
+      <ul class="rules">
+        <li><span class="emphasis">Be out of the eyesight or earshot of a Burnaby School Board employee, either an EA or teacher, at any time, while supporting children/youth.</span></li>
+        <li>Perform intimate care duties, such as toileting or changing a child/youth.</li>
+        <li>Perform any routines or procedures that someone else is trained to do and signed off on, i.e., Care Plans, Safety Response Plans.</li>
+        <li>Use personal cell phone and/or electronic devices to take photos or record videos of children/youth. These devices are not to be visible during instructional times.</li>
+        <li>EA students <strong>can</strong> use their personal electronic device <u>if directed by the EA Host</u> for supporting students (e.g., time, looking up for a word meaning, etc.).</li>
+      </ul>
+    </section>
+
+    <section class="section" id="may">
+      <h2>EA Practicum Students may</h2>
+      <ul class="rules">
+        <li>Observe medical support procedure.</li>
+        <li>Support personal care such as hand washing, feeding (not requiring nurse/OT training).</li>
+        <li>Support a designated child/youth providing they would normally be without an EA present, for short periods of time (less than one hour), <strong>under the direct, in class supervision of the teacher.</strong></li>
+        <li>Attend meetings (e.g., EA meetings, Resource meetings, School Based Team meetings, IEP meetings, planning/collaboration meetings) as a guest observer.</li>
+        <li>Use personal cell phones and/or electronic devices during break times.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="evaluation">
+      <h2>Evaluation</h2>
+      <div class="evaluations">
+        <div class="eval-card">
+          <h3>Midterm evaluation</h3>
+          <p><strong>EA Host, School Supervisor, and Practicum Supervisor</strong></p>
+          <p>Give feedback to the practicum student that is clear, objective and complete. In advance of the midterm evaluation meeting, the School Supervisor and EA Host will complete the midterm evaluation checklist.</p>
+        </div>
+        <div class="eval-card">
+          <h3>Final evaluation</h3>
+          <p><strong>EA Host, School Supervisor, and Practicum Supervisor</strong></p>
+          <p>In advance of the final Evaluation meeting, the School Supervisor and EA Host will collaborate to complete the final evaluation, in ink, and present to the EA Practicum student, and the Practicum Supervisor at the final evaluation.</p>
+          <p>Please provide a copy of EA Practicum Student’s evaluation document to the EA Practicum Student at the end of evaluation session.</p>
+          <p><strong>EA Practicum Students:</strong> Finish the 2 practicum assignments including fifteen daily reflections and hand them in to Practicum Supervisor in the last practicum debrief session.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="timeline">
+      <h2>Timeline for the practicum</h2>
+      <p>We recognize that each individual school has its own culture and expectation for EA Practicum Students, and it is up to the school staff to determine if and when the EA Practicum Student is ready to move forward. The items listed below are a suggested framework to support the learning of the EA Practicum Student. If the EA Practicum Student has successfully completed the items listed below, with one child/youth in one setting, there may be opportunities for them to practice their skills across multiple settings, and multiple children/youth.</p>
+      <p>The EA Practicum Student is expected to move from observation to working directly with child/youth where appropriate and safe to do so.</p>
+    </section>
+
+    <section class="section" id="orientation">
+      <h2>Orientation</h2>
+      <p class="intro">In the first day of Practicum, please welcome the EA Practicum Student to the building and give them a tour including:</p>
+      <div class="task-group">
+        <h4>Tasks</h4>
+        <ul class="task-list">
+          <li><label><input type="checkbox"><span>A place to lock up or put their belongings/lunch, which washrooms to use, and parking</span></label></li>
+          <li><label><input type="checkbox"><span>Confirm daily schedule including EA Host assignment, start and end times, coffee and lunch breaks</span></label></li>
+          <li><label><input type="checkbox"><span>Introduce them to staff including principal and the learning support teacher</span></label></li>
+          <li><label><input type="checkbox"><span>Review school’s Emergency Plans: Fire, earthquake, lock down etc.</span></label></li>
+          <li><label><input type="checkbox"><span>Inform regarding any allergy or medical alerts</span></label></li>
+          <li><label><input type="checkbox"><span>Where to sign in at the office each morning, and how to report absences</span></label></li>
+        </ul>
+      </div>
+      <div class="task-group">
+        <h4>Student Support Tasks</h4>
+        <ul class="task-list">
+          <li><label><input type="checkbox"><span>Review IEP, care plan, safety plan, and sub file with the EA student</span></label></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="week-1">
+      <h2>Week 1</h2>
+      <p class="intro">During week 1, EA Practicum Student will:</p>
+      <div class="task-group">
+        <h4>Student Support Tasks</h4>
+        <ul class="task-list">
+          <li><label><input type="checkbox"><span>Observe students and their behaviours</span></label></li>
+          <li><label><input type="checkbox"><span>Observe interactions and shadow EA Host</span></label></li>
+          <li><label><input type="checkbox"><span>Discuss appropriate EA proximity, when does the EA need to be close to supported child/youth, when can EA allow space</span></label></li>
+          <li><label><input type="checkbox"><span>Regularly refer to the IEP, subfile, PBS, and SRP (if applicable)</span></label></li>
+          <li><label><input type="checkbox"><span>Partner with EA Host and become familiar with the children/youth supported. Start making a rapport with all students.</span></label></li>
+          <li><label><input type="checkbox"><span>Start making rapport with student(s) you are directly supporting</span></label></li>
+          <li><label><input type="checkbox"><span>Start taking over routines that tend to be consistent ie: start or end of day</span></label></li>
+        </ul>
+      </div>
+      <div class="task-group">
+        <h4>Administrative Tasks</h4>
+        <ul class="task-list">
+          <li><label><input type="checkbox"><span>Review medical documents/support/care plans and behaviour protocols</span></label></li>
+          <li><label><input type="checkbox"><span>Review school protocols for staff/child/youth injuries or medical emergencies and how to report/document</span></label></li>
+          <li><label><input type="checkbox"><span>Review importance of communicating with the team before implementing a program, gathering materials or collecting data.</span></label></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="week-2">
+      <h2>Week 2</h2>
+      <p class="intro">During week 2, EA Practicum Student will:</p>
+      <div class="task-group">
+        <h4>Student Support Tasks</h4>
+        <ul class="task-list">
+          <li><label><input type="checkbox"><span>With collaboration of the EA Host, choose an IEP goal and use the IEP strategies to support it (social stories, discrete trial, life skills training, task analysis, errorless learning etc.) and collect data on it</span></label></li>
+          <li><label><input type="checkbox"><span>Observe students’ behavior in instructional and non-instructional times and identified functions of behavior and behavior pathways</span></label></li>
+          <li><label><input type="checkbox"><span>Identify direct and indirect triggers for students’ behavior problems (if applicable)</span></label></li>
+          <li><label><input type="checkbox"><span>Implement strategies to promote child/youth independence, refer to prompting hierarchy</span></label></li>
+          <li><label><input type="checkbox"><span>Facilitate social inclusion throughout the day including recess/lunch</span></label></li>
+          <li><label><input type="checkbox"><span>Keep building rapport with all students during instructional and non-instructional times.</span></label></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="week-3">
+      <h2>Week 3</h2>
+      <p class="intro">During week 3, EA Practicum Student will:</p>
+      <div class="task-group">
+        <h4>Student Support Tasks</h4>
+        <ul class="task-list">
+          <li><label><input type="checkbox"><span>EA Practicum Students are fully immersed in the role of EA <strong><u>while still receiving support from the Practicum Host.</u></strong> If applicable, create adapted materials that can support the learning of the child/youth</span></label></li>
+          <li><label><input type="checkbox"><span>Practice being an “on call” replacement by filling in for another EA in the building and following their sub file. <strong><u>This needs to be supervised by an EA.</u></strong></span></label></li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="source-note">Transcribed from five photographed pages (IMG_2654–IMG_2658). The checklist boxes on this page are interactive and saved in this browser.</p>
+  </main>
+</div>
+<script>
+  const boxes = [...document.querySelectorAll('.task-list input[type="checkbox"]')];
+  const storageKey = 'ea-practicum-1-guidelines-checklist-v1';
+  try {
+    const saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
+    boxes.forEach((box, index) => { box.checked = Boolean(saved[index]); });
+  } catch (_) { /* The checklist still works when browser storage is unavailable. */ }
+  function updateProgress() {
+    const completed = boxes.filter(box => box.checked).length;
+    document.getElementById('task-progress').max = boxes.length;
+    document.getElementById('task-progress').value = completed;
+    document.getElementById('progress-label').textContent = `${completed} of ${boxes.length} completed`;
+    try { localStorage.setItem(storageKey, JSON.stringify(boxes.map(box => box.checked))); } catch (_) {}
+  }
+  boxes.forEach(box => box.addEventListener('change', updateProgress));
+  updateProgress();
+</script>
+</body>
+</html>

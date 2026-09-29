@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practicum 1 Self-Evaluation Checklist | Burnaby School District 41</title>
+  <style>
+    :root { color-scheme:light; --ink:#1c2631; --muted:#566575; --line:#dbe3e9; --blue:#0d5b87; --soft:#eaf4fa; --paper:#fff; --canvas:#f4f7f9; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--canvas); color:var(--ink); font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--blue); }
+    .layout { display:grid; grid-template-columns:240px minmax(0,1fr); gap:28px; max-width:1400px; padding:30px; margin:auto; }
+    .sidebar { position:sticky; top:20px; align-self:start; padding:24px 18px; background:var(--paper); border:1px solid var(--line); border-radius:18px; box-shadow:0 8px 24px #14324a0a; }
+    .eyebrow { margin:0; color:var(--blue); font-size:.75rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    .sidebar h2 { margin:4px 0 14px; font-size:1rem; }
+    .sidebar nav { display:grid; gap:4px; }
+    .sidebar nav a { display:block; padding:8px 10px; border-radius:8px; color:var(--ink); text-decoration:none; font-size:.9rem; }
+    .sidebar nav a:hover,.sidebar nav a:focus-visible { color:var(--blue); background:var(--soft); }
+    .sidebar .other { margin-top:18px; padding-top:15px; border-top:1px solid var(--line); font-size:.9rem; }
+    .sidebar .other a { display:block; margin:0 0 8px; }
+    .button { appearance:none; width:100%; margin-top:15px; border:1px solid var(--line); border-radius:9px; background:#fff; color:var(--ink); padding:8px 12px; font:inherit; cursor:pointer; }
+    .button:hover,.button:focus-visible { border-color:var(--blue); color:var(--blue); }
+    main { min-width:0; }
+    .hero,.section { background:var(--paper); border:1px solid var(--line); border-radius:18px; box-shadow:0 8px 24px #14324a0a; }
+    .hero { padding:32px 38px; border-top:5px solid var(--blue); }
+    h1 { margin:5px 0 20px; font-size:clamp(1.8rem,4vw,2.65rem); line-height:1.17; letter-spacing:-.035em; }
+    h2 { margin:0 0 16px; font-size:1.45rem; letter-spacing:-.025em; }
+    h3 { margin:0 0 12px; font-size:1.1rem; }
+    p { margin:0 0 15px; }
+    p:last-child { margin-bottom:0; }
+    .people { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px 16px; margin:22px 0; }
+    .field { display:grid; gap:5px; font-weight:650; font-size:.9rem; }
+    input[type="text"],select,textarea { width:100%; min-width:0; border:1px solid #bacbd5; border-radius:8px; background:#fff; color:var(--ink); padding:8px 10px; font:inherit; }
+    input:focus-visible,select:focus-visible,textarea:focus-visible { outline:2px solid var(--blue); outline-offset:1px; }
+    textarea { resize:vertical; min-height:120px; }
+    .section { margin-top:22px; padding:28px 38px; scroll-margin-top:20px; }
+    .criteria { list-style:none; margin:0; padding:0; border:1px solid var(--line); border-radius:11px; overflow:hidden; }
+    .criterion { display:grid; grid-template-columns:minmax(0,1fr) repeat(3,minmax(126px,155px)); gap:10px; align-items:start; padding:13px; }
+    .criterion + .criterion { border-top:1px solid var(--line); }
+    .criterion:nth-child(even) { background:#fbfcfd; }
+    .statement { padding-top:4px; }
+    .rating { display:grid; gap:4px; color:var(--muted); font-size:.8rem; font-weight:700; }
+    .rating select { font-size:.86rem; font-weight:400; }
+    .footnote { margin-top:12px; color:var(--muted); font-size:.86rem; }
+    .reflection { margin-top:24px; }
+    .reflection-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+    .reflection-card { display:flex; flex-direction:column; padding:15px; border:1px solid var(--line); border-radius:11px; background:#fcfdfe; }
+    .reflection-card label { display:grid; gap:8px; font-weight:650; }
+    .reflection-card textarea { min-height:220px; }
+    .initial { display:grid; gap:6px; margin-top:16px; font-size:.84rem; font-weight:700; }
+    .initial span { display:block; height:28px; border-bottom:1px solid #83939e; }
+    .comment { display:grid; gap:6px; margin-top:18px; font-weight:700; }
+    .comment textarea { min-height:140px; }
+    .source-note { margin:20px 4px 0; color:var(--muted); font-size:.82rem; }
+    .storage-status { margin-top:14px; padding:10px 13px; border-radius:8px; background:var(--soft); color:var(--blue); font-size:.88rem; }
+    @media (max-width:1040px) { .layout { display:block; padding:14px; } .sidebar { position:static; margin-bottom:16px; padding:16px; } .sidebar nav { display:flex; gap:4px; overflow:auto; white-space:nowrap; } .sidebar nav a { padding:7px 9px; } .hero,.section { padding:22px; } }
+    @media (max-width:780px) { .criterion { grid-template-columns:repeat(3,minmax(0,1fr)); } .statement { grid-column:1/-1; } .reflection-grid { grid-template-columns:1fr; } .reflection-card textarea { min-height:145px; } }
+    @media (max-width:540px) { .people { grid-template-columns:1fr; } .criterion { gap:5px; } .rating select { padding:7px 3px; font-size:.76rem; } }
+    @media print { body { background:#fff; font-size:9pt; } .layout { display:block; max-width:none; padding:0; } .sidebar { display:none; } .hero,.section { border:0; border-radius:0; box-shadow:none; padding:0; margin:0 0 18pt; } .hero { border-top:0; } .section { break-inside:auto; } .criterion,.reflection-card { break-inside:avoid; } .criterion { padding:5pt; } .reflection { break-before:page; } .reflection-card textarea { min-height:220pt; } .source-note,.storage-status { display:none; } }
+  </style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" aria-label="Page navigation">
+    <p class="eyebrow">Burnaby School District 41</p>
+    <h2>Practicum 1 self-evaluation</h2>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#accountability">Accountability and safety</a>
+      <a href="#attire">Professional attire</a>
+      <a href="#ethics">Ethics and respect</a>
+      <a href="#communication">Communication</a>
+      <a href="#administrative">Administrative tasks</a>
+      <a href="#support">Student support</a>
+      <a href="#independence">Facilitating independence</a>
+      <a href="#reflection-1">Week 1 reflection</a>
+      <a href="#reflection-2">Week 2 reflection</a>
+      <a href="#reflection-3">Week 3 reflection</a>
+    </nav>
+    <div class="other">
+      <a href="practicum-1-guidelines.html">Practicum 1 guidelines</a>
+      <a href="practicum-1-evaluation-checklist.html">Supervisor evaluation checklist</a>
+    </div>
+    <button class="button" type="button" onclick="window.print()">Print page</button>
+  </aside>
+
+  <main>
+    <header class="hero" id="overview">
+      <p class="eyebrow">Burnaby School District 41</p>
+      <h1>Practicum 1 – Self-Evaluation Checklist</h1>
+      <div class="people">
+        <label class="field">EA Practicum Student <input type="text" autocomplete="off"></label>
+        <label class="field">Administrator <input type="text" autocomplete="off"></label>
+        <label class="field">School Supervisor <input type="text" autocomplete="off"></label>
+        <label class="field">EA Host <input type="text" autocomplete="off"></label>
+        <label class="field">Practicum Supervisor <input type="text" autocomplete="off"></label>
+      </div>
+      <p>The Assessment Checklist is intended to guide the EA Students in providing ongoing self-evaluation and self-reflection throughout the practicum. Three weekly self-evaluations and self-reflections are to be completed by the EA student <strong>in advance to follow up with practicum supervisor.</strong> Each self-evaluation should be completed by the end of each week of Practicum, to provide students with the opportunity to adjust their ongoing performance for the remainder of their practicum experience. The Practicum Supervisor and EA host will check each week’s entry and provide feedback on EA students’ Self-evaluation and will provide suggestions for improvement.</p>
+      <p class="footnote">For each criterion, select a rating for Week 1, Week 2, and Week 3.</p>
+      <p class="storage-status" data-storage-status role="status">Entries, including student details, save in this browser as you type.</p>
+    </header>
+
+    <section class="section" id="accountability">
+      <h2>Accountability and Safety</h2>
+      <ol class="criteria">
+        <li class="criterion"><span class="statement">Arrives prepared and on time.</span></li>
+        <li class="criterion"><span class="statement">Uses personal electronic devices only during designated breaks times.*</span></li>
+        <li class="criterion"><span class="statement">Able to explain the legal responsibility to report incidents of child abuse or neglect.</span></li>
+        <li class="criterion"><span class="statement">Uses feedback to enhance skills and abilities.</span></li>
+        <li class="criterion"><span class="statement">Behaves in a professional manner at all times.</span></li>
+      </ol>
+    </section>
+
+    <section class="section" id="attire">
+      <h2>Professional Attire</h2>
+      <ol class="criteria">
+        <li class="criterion"><span class="statement">Wears comfortable, professional clothing that allows for physical activity, with full coverage, and without questionable logos or references, rips, or tears.</span></li>
+        <li class="criterion"><span class="statement">Wears supportive footwear with non-slip soles, securely attached to the foot.</span></li>
+        <li class="criterion"><span class="statement">Secures long hair and removes loose items, such as long jewelry.</span></li>
+      </ol>
+    </section>
+
+    <section class="section" id="ethics">
+      <h2>Ethics and Respect</h2>
+      <ol class="criteria">
+        <li class="criterion"><span class="statement">Maintains professional boundaries with school staff, students, and families.</span></li>
+        <li class="criterion"><span class="statement">Protects confidential student, staff, and parent information, verbally and in writing.</span></li>
+        <li class="criterion"><span class="statement">Discusses students in classroom, hallway and staffroom with a strong focus on protecting the students’ privacy and dignity at all times.</span></li>
+        <li class="criterion"><span class="statement">Accepts and supports the decisions and directions of school staff.</span></li>
+        <li class="criterion"><span class="statement">Demonstrates a strong awareness and practice of respectful language related to race, culture, religion, sexual orientation, gender identity, and disability.</span></li>
+      </ol>
+    </section>
+
+    <section class="section" id="communication">
+      <h2>Communication and Collaboration</h2>
+      <ol class="criteria">
+        <li class="criterion"><span class="statement">Models respectful and effective verbal and non-verbal communication.</span></li>
+        <li class="criterion"><span class="statement">Respects other’s ideas and perspectives.</span></li>
+        <li class="criterion"><span class="statement">Communicates student progress to the classroom teacher, verbally and in writing.</span></li>
+        <li class="criterion"><span class="statement">Reviews all written information, as available, and asks questions to gather more information helpful to the support of the students.</span></li>
+        <li class="criterion"><span class="statement">Demonstrates an understanding that home/school communications are to be conducted by the classroom teacher and directs parent inquiries to the teacher.</span></li>
+        <li class="criterion"><span class="statement">Demonstrates a strong ability to communicate effectively in English.</span></li>
+        <li class="criterion"><span class="statement">Engages with students and school staff in a positive and cheerful manner.</span></li>
+      </ol>
+    </section>
+
+    <section class="section" id="administrative">
+      <h2>Administrative Tasks / Non-Instructional Support</h2>
+      <ol class="criteria">
+        <li class="criterion"><span class="statement">Knows where all student documentation is located. (e.g. IEP, SRP, PBS Plan)</span></li>
+        <li class="criterion"><span class="statement">With support, records and tracks data as outlined in student IEPs.</span></li>
+        <li class="criterion"><span class="statement">Able to complete timecards and absence logging as necessary.</span></li>
+        <li class="criterion"><span class="statement">Understands roles and responsibilities of school and district staff.</span></li>
+      </ol>
+    </section>
+
+    <section class="section" id="support">
+      <h2>Student Support</h2>
+      <ol class="criteria">
+        <li class="criterion"><span class="statement">Demonstrates an understanding of inclusion, and the ability to facilitate it.</span></li>
+        <li class="criterion"><span class="statement">Takes initiative to support student needs, while taking direction from the classroom teacher and EA Host.</span></li>
+        <li class="criterion"><span class="statement">Demonstrates an ability to establish themselves as an authority figure in the class.</span></li>
+        <li class="criterion"><span class="statement">Provides specific, positive feedback to students, with a focus on competencies, to build confidence and self esteem.</span></li>
+        <li class="criterion"><span class="statement">Provides clear and consistent direction and follows through.</span></li>
+        <li class="criterion"><span class="statement">With assistance, uses supports to support inclusion and self regulation. (visual schedule, timers, transition countdown, contingency maps, social stories)</span></li>
+        <li class="criterion"><span class="statement">With assistance, reinforces socially appropriate behaviour.</span></li>
+        <li class="criterion"><span class="statement">With assistance, understands and implements break and reward times.</span></li>
+        <li class="criterion"><span class="statement">With assistance, collects and reviews data to assess social and behavioural needs.</span></li>
+        <li class="criterion"><span class="statement">With assistance, seeks to understand the function of student behaviour.</span></li>
+        <li class="criterion"><span class="statement">With assistance, encourages student engagement amongst peers during instructional and non-instructional time</span></li>
+        <li class="criterion"><span class="statement">With assistance, facilitates opportunities to develop friendships by creating or developing connections amongst students.</span></li>
+        <li class="criterion"><span class="statement">Understands the impact of different experiences and cultural backgrounds.</span></li>
+      </ol>
+    </section>
+
+    <section class="section" id="independence">
+      <h2>Facilitating Independence</h2>
+      <ol class="criteria">
+        <li class="criterion"><span class="statement">With assistance, uses developmentally and age appropriate adaptations and modifications to support student inclusion in the classroom</span></li>
+        <li class="criterion"><span class="statement">With assistance, uses the lowest level of prompting required, as outlined in the Prompting Hierarchy</span></li>
+        <li class="criterion"><span class="statement">With assistance, identifies strategies that may be used to reduce student reliance on EA support</span></li>
+        <li class="criterion"><span class="statement">With assistance, provides opportunities for students to practice self-monitoring and problem solving</span></li>
+        <li class="criterion"><span class="statement">Honours student perspective and input</span></li>
+      </ol>
+    </section>
+
+    <section class="section reflection" id="reflection-1">
+      <h2>Practicum 1 – Weekly Self-Reflection</h2>
+      <h3>Week 1</h3>
+      <div class="reflection-grid">
+        <div class="reflection-card"><label>List the skills that you are exceeding in.<textarea></textarea></label><div class="initial">Practicum Supervisor’s initial:<span></span></div></div>
+        <div class="reflection-card"><label>List the skills you need to work on for the next week.<textarea></textarea></label><div class="initial">Practicum Supervisor’s initial:<span></span></div></div>
+        <div class="reflection-card"><label>List 1–2 strategies to improve the skills.<textarea></textarea></label><div class="initial">Practicum Supervisor’s initial:<span></span></div></div>
+      </div>
+    </section>
+
+    <section class="section reflection" id="reflection-2">
+      <h2>Week 2 Self-Reflection</h2>
+      <div class="reflection-grid">
+        <div class="reflection-card"><label>List the skills that you are exceeding in.<textarea></textarea></label><div class="initial">Practicum Supervisor’s initial:<span></span></div></div>
+        <div class="reflection-card"><label>List the skills you need to work on for the next week.<textarea></textarea></label><div class="initial">Practicum Supervisor’s initial:<span></span></div></div>
+        <div class="reflection-card"><label>List 1–2 strategies to improve the skills.<textarea></textarea></label><div class="initial">Practicum Supervisor’s initial:<span></span></div></div>
+      </div>
+      <label class="comment">Comment<textarea></textarea></label>
+    </section>
+
+    <section class="section reflection" id="reflection-3">
+      <h2>Week 3 Self-Reflection</h2>
+      <div class="reflection-grid">
+        <div class="reflection-card"><label>List the skills that you are exceeding in.<textarea></textarea></label><div class="initial">Practicum Supervisor’s initial:<span></span></div></div>
+        <div class="reflection-card"><label>List the skills you need to work on for Practicum 2.<textarea></textarea></label><div class="initial">Practicum Supervisor’s initial:<span></span></div></div>
+        <div class="reflection-card"><label>List 1–2 strategies to improve the skills.<textarea></textarea></label><div class="initial">Practicum Supervisor’s initial:<span></span></div></div>
+      </div>
+      <label class="comment">Comment<textarea></textarea></label>
+    </section>
+
+    <p class="source-note">Transcribed from six photographed pages (IMG_2672–IMG_2677). Entries are stored in this browser. You can also print or save the completed form as a PDF.</p>
+  </main>
+</div>
+<script>
+  const options = ['Not Yet Meeting', 'Approaching', 'Meeting', 'Exceeding', 'No Opportunity'];
+  document.querySelectorAll('.criterion').forEach(item => {
+    const statement = item.querySelector('.statement').textContent.trim();
+    for (const week of [1, 2, 3]) {
+      const label = document.createElement('label');
+      label.className = 'rating';
+      label.textContent = `Week ${week}`;
+      const select = document.createElement('select');
+      select.setAttribute('aria-label', `Week ${week}: ${statement}`);
+      select.innerHTML = '<option value="">Select rating</option>';
+      for (const value of options) {
+        const option = document.createElement('option');
+        option.value = value;
+        option.textContent = value;
+        select.append(option);
+      }
+      label.append(select);
+      item.append(label);
+    }
+  });
+  (() => {
+    const key = `ea-practicum-form-v1:${location.pathname.split('/').pop()}`;
+    const fields = [...document.querySelectorAll('input, select, textarea')];
+    const status = document.querySelector('[data-storage-status]');
+    let available = true;
+    try {
+      const saved = JSON.parse(localStorage.getItem(key) || 'null');
+      if (Array.isArray(saved)) fields.forEach((field, index) => {
+        if (saved[index] === undefined) return;
+        if (field.type === 'checkbox' || field.type === 'radio') field.checked = Boolean(saved[index]);
+        else field.value = saved[index];
+      });
+    } catch (_) {
+      available = false;
+      status.textContent = 'Browser storage is unavailable. Print or save as a PDF to keep your entries.';
+    }
+    const save = () => {
+      if (!available) return;
+      try {
+        localStorage.setItem(key, JSON.stringify(fields.map(field =>
+          field.type === 'checkbox' || field.type === 'radio' ? field.checked : field.value
+        )));
+        status.textContent = 'Entries, including student details, are saved in this browser.';
+      } catch (_) {
+        available = false;
+        status.textContent = 'Browser storage is unavailable. Print or save as a PDF to keep your entries.';
+      }
+    };
+    fields.forEach(field => {
+      field.addEventListener('input', save);
+      field.addEventListener('change', save);
+    });
+  })();
+</script>
+</body>
+</html>

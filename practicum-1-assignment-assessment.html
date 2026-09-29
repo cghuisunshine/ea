@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practicum 1 Assignment Assessment | Burnaby CCE</title>
+  <style>
+    :root { color-scheme:light; --ink:#1c2631; --muted:#566575; --line:#cbd7df; --blue:#0d5b87; --soft:#eaf4fa; --paper:#fff; --canvas:#f4f7f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; padding:22px; background:var(--canvas); color:var(--ink); font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--blue); }
+    .page { max-width:1100px; margin:auto; padding:34px 42px; background:var(--paper); border:1px solid var(--line); border-top:5px solid var(--blue); border-radius:16px; box-shadow:0 8px 24px #14324a0a; }
+    .topline { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { margin:0; color:var(--blue); font-weight:800; font-size:.85rem; letter-spacing:.07em; text-transform:uppercase; }
+    .button { appearance:none; border:1px solid var(--line); border-radius:9px; background:#fff; color:var(--ink); padding:7px 12px; font:inherit; cursor:pointer; }
+    .button:hover,.button:focus-visible { border-color:var(--blue); color:var(--blue); }
+    h1 { margin:18px 0 24px; font-size:clamp(1.7rem,3.6vw,2.4rem); line-height:1.2; letter-spacing:-.03em; }
+    .details { display:grid; grid-template-columns:1fr 1fr; gap:14px 22px; margin-bottom:26px; }
+    label { display:grid; gap:5px; font-weight:700; }
+    input,textarea { width:100%; min-width:0; border:1px solid #aebfc9; border-radius:7px; padding:9px 10px; background:#fff; color:var(--ink); font:inherit; font-weight:400; }
+    input:focus-visible,textarea:focus-visible { outline:2px solid var(--blue); outline-offset:1px; }
+    textarea { resize:vertical; min-height:145px; }
+    .assessment-grid { display:grid; grid-template-columns:22% 39% 39%; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+    .cell { padding:16px; min-width:0; }
+    .cell + .cell { border-left:1px solid var(--line); }
+    .cell h2 { margin:0 0 12px; font-size:1.05rem; line-height:1.35; }
+    .cell p { margin:0 0 15px; color:var(--muted); font-size:.92rem; }
+    .cell textarea { min-height:230px; }
+    .prompt { display:block; margin-top:22px; font-size:.93rem; font-weight:700; }
+    .prompt textarea { margin-top:8px; min-height:150px; }
+    .wide { margin-top:0; padding:18px; border:1px solid var(--line); border-top:0; border-radius:0 0 10px 10px; }
+    .wide label { font-size:1.05rem; }
+    .wide textarea { min-height:200px; }
+    .signatures { display:grid; grid-template-columns:1fr 1fr; gap:30px; margin:34px 0 26px; }
+    .signature { display:grid; gap:26px; }
+    .signature strong { font-size:.94rem; }
+    .line { display:block; border-bottom:1px solid var(--ink); height:1px; }
+    .storage-status { margin:15px 0 0; padding:10px 13px; border-radius:8px; background:var(--soft); color:var(--blue); font-size:.88rem; }
+    footer { display:flex; justify-content:space-between; align-items:flex-end; gap:18px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:.86rem; }
+    footer p { margin:0; }
+    .related { margin:20px auto 0; max-width:1100px; color:var(--muted); font-size:.86rem; }
+    .related a { margin-right:16px; }
+    @media (max-width:760px) { body { padding:12px; } .page { padding:20px; } .assessment-grid { grid-template-columns:1fr; } .cell + .cell { border-left:0; border-top:1px solid var(--line); } .details,.signatures { grid-template-columns:1fr; } footer { display:block; } }
+    @media print { @page { size:letter; margin:12mm; } body { padding:0; background:#fff; font-size:10pt; } .page { max-width:none; padding:0; border:0; border-radius:0; box-shadow:none; } .topline { display:block; } .button,.related,.storage-status { display:none; } h1 { margin:8pt 0 14pt; font-size:16pt; } .details { gap:6pt 12pt; margin-bottom:12pt; } input,textarea { border-radius:0; padding:5pt; font-size:9pt; } .cell { padding:8pt; } .cell h2 { font-size:10pt; margin-bottom:5pt; } .cell p { font-size:8pt; margin-bottom:5pt; } .cell textarea { min-height:150pt; } .prompt { margin-top:8pt; } .prompt textarea { min-height:90pt; } .wide { padding:8pt; } .wide textarea { min-height:105pt; } .signatures { margin:18pt 0 10pt; gap:18pt; } .signature { gap:18pt; } footer { padding-top:8pt; font-size:7pt; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="topline">
+      <p class="brand">Burnaby Community &amp; Continuing Education · EA Program</p>
+      <button class="button" type="button" onclick="window.print()">Print page</button>
+    </div>
+    <h1>Practicum 1 Assignment Assessment</h1>
+
+    <div class="details">
+      <label>EA Practicum Student <input type="text" autocomplete="off"></label>
+      <label>EA Host <input type="text" autocomplete="off"></label>
+      <label>School <input type="text" autocomplete="off"></label>
+      <label>Date <input type="date"></label>
+    </div>
+    <p class="storage-status" data-storage-status role="status">Entries, including student details, save in this browser as you type.</p>
+
+    <div class="assessment-grid">
+      <section class="cell">
+        <h2>IEP Goals</h2>
+        <textarea aria-label="IEP Goals"></textarea>
+      </section>
+      <section class="cell">
+        <h2>Strategies used to support the goal</h2>
+        <p>(Errorless learning, social story, discrete trial, task analysis, etc.)</p>
+        <textarea aria-label="Strategies used to support the goal"></textarea>
+        <label class="prompt">Can the student reflect on how the strategy can support the goal?
+          <textarea></textarea>
+        </label>
+      </section>
+      <section class="cell">
+        <h2>Feedback and guidance</h2>
+        <p>Was the strategy useful or successful? Any correction or adjustment needed?</p>
+        <textarea aria-label="Feedback and guidance"></textarea>
+        <label class="prompt">Did the student demonstrate the skills necessary for implementing the strategies?
+          <textarea></textarea>
+        </label>
+      </section>
+    </div>
+
+    <section class="wide">
+      <label>How EA student supported independence and inclusion:
+        <textarea></textarea>
+      </label>
+    </section>
+
+    <div class="signatures">
+      <div class="signature"><strong>EA Host Signature</strong><span class="line"></span></div>
+      <div class="signature"><strong>Practicum Supervisor Signature</strong><span class="line"></span></div>
+    </div>
+
+    <footer>
+      <p>ECE Program at BCCE, 751 Hammarskjold Drive · 604-296-6901 · <a href="https://www.burnabycce.ca">www.burnabycce.ca</a></p>
+      <p>Burnaby School District 41</p>
+    </footer>
+  </main>
+  <p class="related">Transcribed from IMG_2666. Entries are stored in this browser. You can also print or save the completed form as a PDF. <a href="practicum-1-guidelines.html">Guidelines</a><a href="practicum-1-assignments.html">Assignments</a><a href="practicum-1-evaluation-checklist.html">Evaluation checklist</a></p>
+<script>
+  (() => {
+    const key = `ea-practicum-form-v1:${location.pathname.split('/').pop()}`;
+    const fields = [...document.querySelectorAll('input, select, textarea')];
+    const status = document.querySelector('[data-storage-status]');
+    let available = true;
+    try {
+      const saved = JSON.parse(localStorage.getItem(key) || 'null');
+      if (Array.isArray(saved)) fields.forEach((field, index) => {
+        if (saved[index] === undefined) return;
+        if (field.type === 'checkbox' || field.type === 'radio') field.checked = Boolean(saved[index]);
+        else field.value = saved[index];
+      });
+    } catch (_) {
+      available = false;
+      status.textContent = 'Browser storage is unavailable. Print or save as a PDF to keep your entries.';
+    }
+    const save = () => {
+      if (!available) return;
+      try {
+        localStorage.setItem(key, JSON.stringify(fields.map(field =>
+          field.type === 'checkbox' || field.type === 'radio' ? field.checked : field.value
+        )));
+        status.textContent = 'Entries, including student details, are saved in this browser.';
+      } catch (_) {
+        available = false;
+        status.textContent = 'Browser storage is unavailable. Print or save as a PDF to keep your entries.';
+      }
+    };
+    fields.forEach(field => {
+      field.addEventListener('input', save);
+      field.addEventListener('change', save);
+    });
+  })();
+</script>
+</body>
+</html>

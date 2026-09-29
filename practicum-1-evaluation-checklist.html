@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practicum 1 Evaluation Checklist | Burnaby School District 41</title>
+  <style>
+    :root { color-scheme:light; --ink:#1c2631; --muted:#566575; --line:#dbe3e9; --blue:#0d5b87; --soft:#eaf4fa; --paper:#fff; --canvas:#f4f7f9; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--canvas); color:var(--ink); font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--blue); }
+    .layout { display:grid; grid-template-columns:240px minmax(0,1fr); gap:28px; max-width:1400px; padding:30px; margin:auto; }
+    .sidebar { position:sticky; top:20px; align-self:start; padding:24px 18px; background:var(--paper); border:1px solid var(--line); border-radius:18px; box-shadow:0 8px 24px #14324a0a; }
+    .eyebrow { margin:0; color:var(--blue); font-size:.75rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    .sidebar h2 { margin:4px 0 14px; font-size:1rem; }
+    .sidebar nav { display:grid; gap:4px; }
+    .sidebar nav a { display:block; padding:8px 10px; border-radius:8px; color:var(--ink); text-decoration:none; font-size:.9rem; }
+    .sidebar nav a:hover,.sidebar nav a:focus-visible { color:var(--blue); background:var(--soft); }
+    .sidebar .other { margin-top:18px; padding-top:15px; border-top:1px solid var(--line); font-size:.9rem; }
+    .sidebar .other a { display:block; margin:0 0 8px; }
+    .button { appearance:none; width:100%; margin-top:15px; border:1px solid var(--line); border-radius:9px; background:#fff; color:var(--ink); padding:8px 12px; font:inherit; cursor:pointer; }
+    .button:hover,.button:focus-visible { border-color:var(--blue); color:var(--blue); }
+    main { min-width:0; }
+    .hero,.section { background:var(--paper); border:1px solid var(--line); border-radius:18px; box-shadow:0 8px 24px #14324a0a; }
+    .hero { padding:32px 38px; border-top:5px solid var(--blue); }
+    h1 { margin:5px 0 20px; font-size:clamp(1.8rem,4vw,2.65rem); line-height:1.17; letter-spacing:-.035em; }
+    h2 { margin:0 0 16px; font-size:1.45rem; letter-spacing:-.025em; }
+    h3 { margin:0 0 12px; font-size:1.1rem; }
+    p { margin:0 0 15px; }
+    p:last-child { margin-bottom:0; }
+    .intro { color:var(--muted); }
+    .people { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px 16px; margin:22px 0; }
+    .field { display:grid; gap:5px; font-weight:650; font-size:.9rem; }
+    input[type="text"],input[type="date"],select,textarea { width:100%; min-width:0; border:1px solid #bacbd5; border-radius:8px; background:#fff; color:var(--ink); padding:8px 10px; font:inherit; }
+    input:focus-visible,select:focus-visible,textarea:focus-visible { outline:2px solid var(--blue); outline-offset:1px; }
+    textarea { min-height:82px; resize:vertical; }
+    .section { margin-top:22px; padding:28px 38px; scroll-margin-top:20px; }
+    .criteria { list-style:none; margin:0; padding:0; border:1px solid var(--line); border-radius:11px; overflow:hidden; }
+    .criterion { display:grid; grid-template-columns:minmax(0,1fr) minmax(145px,190px) minmax(145px,190px); gap:12px; align-items:start; padding:14px; }
+    .criterion + .criterion { border-top:1px solid var(--line); }
+    .criterion:nth-child(even) { background:#fbfcfd; }
+    .statement { padding-top:3px; }
+    .rating { display:grid; gap:4px; color:var(--muted); font-size:.8rem; font-weight:700; }
+    .rating select { font-size:.9rem; font-weight:400; }
+    .row-comments { grid-column:1/-1; display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .row-comment { display:grid; gap:4px; color:var(--muted); font-size:.82rem; }
+    .row-comment input { padding:5px 8px; font-size:.9rem; }
+    .section-comment { display:grid; gap:6px; margin-top:16px; font-weight:700; font-size:.9rem; }
+    .footnote { margin-top:10px; font-size:.86rem; color:var(--muted); }
+    .signature-block { padding:18px; border:1px solid var(--line); border-radius:11px; margin-top:17px; }
+    .signature-head { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:15px; font-weight:800; font-size:.83rem; letter-spacing:.06em; }
+    .signature-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; border-top:1px solid var(--line); padding:12px 0; }
+    .signature-row span { display:block; font-size:.82rem; color:var(--muted); }
+    .signature-line { display:block; height:31px; border-bottom:1px solid #81919c; }
+    .outcome { display:grid; gap:12px; margin-top:16px; }
+    .outcome-row { display:grid; grid-template-columns:1fr minmax(150px,35%); gap:20px; align-items:center; padding:13px; border:1px solid var(--line); border-radius:9px; }
+    .source-note { margin:20px 4px 0; color:var(--muted); font-size:.82rem; }
+    .storage-status { margin-top:14px; padding:10px 13px; border-radius:8px; background:var(--soft); color:var(--blue); font-size:.88rem; }
+    @media (max-width:950px) { .layout { display:block; padding:14px; } .sidebar { position:static; margin-bottom:16px; padding:16px; } .sidebar nav { display:flex; gap:4px; overflow:auto; white-space:nowrap; } .sidebar nav a { padding:7px 9px; } .hero,.section { padding:22px; } }
+    @media (max-width:680px) { .people { grid-template-columns:1fr; } .criterion { grid-template-columns:1fr 1fr; } .statement { grid-column:1/-1; } .outcome-row { grid-template-columns:1fr; } }
+    @media print { body { background:#fff; font-size:9.5pt; } .layout { display:block; max-width:none; padding:0; } .sidebar { display:none; } .hero,.section { border:0; border-radius:0; box-shadow:none; padding:0; margin:0 0 18pt; } .hero { border-top:0; } .section { break-inside:auto; } .criterion,.signature-block { break-inside:avoid; } .criterion { padding:6pt; } .section-comment textarea { min-height:45pt; } .source-note,.storage-status { display:none; } }
+  </style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" aria-label="Page navigation">
+    <p class="eyebrow">Burnaby School District 41</p>
+    <h2>Practicum 1 evaluation</h2>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#accountability">Accountability and safety</a>
+      <a href="#attire">Professional attire</a>
+      <a href="#ethics">Ethics and respect</a>
+      <a href="#communication">Communication</a>
+      <a href="#administrative">Administrative tasks</a>
+      <a href="#support">Student support</a>
+      <a href="#independence">Facilitating independence</a>
+      <a href="#signatures">Assessment and signatures</a>
+    </nav>
+    <div class="other">
+      <a href="practicum-1-guidelines.html">Practicum 1 guidelines</a>
+      <a href="practicum-1-assignments.html">Practicum 1 assignments</a>
+    </div>
+    <button class="button" type="button" onclick="window.print()">Print page</button>
+  </aside>
+
+  <main>
+    <header class="hero" id="overview">
+      <p class="eyebrow">Burnaby School District 41</p>
+      <h1>Practicum 1 – Evaluation Checklist</h1>
+      <div class="people">
+        <label class="field">EA Practicum Student <input type="text" autocomplete="off"></label>
+        <label class="field">Administrator <input type="text" autocomplete="off"></label>
+        <label class="field">School Supervisor <input type="text" autocomplete="off"></label>
+        <label class="field">EA Host <input type="text" autocomplete="off"></label>
+        <label class="field">Practicum Supervisor <input type="text" autocomplete="off"></label>
+      </div>
+      <p>The Assessment Checklist is intended to guide both the School Supervisor and EA Host in providing ongoing feedback to the EA Practicum Student throughout the practicum. Two formal student evaluations are to be completed by the School Supervisor, in collaboration with the EA Host <strong>in advance of the meeting with the Practicum Supervisor.</strong> The midterm evaluation should be complete by the midpoint of the practicum, to provide the EA Practicum Students with the opportunity to adjust their ongoing performance for the remainder of their practicum experience.</p>
+      <p>Due to placement limitations, it is acknowledged that EA Practicum Students may not have the opportunity to engage with or demonstrate ALL the criteria listed. However, School Supervisors are encouraged to make every effort to provide each EA Practicum Student with access to as many learning opportunities as possible.</p>
+      <p>The final evaluation will be held near the end of the practicum, with the expectation that the EA Practicum Student will have met or exceeded all the Assessment Checklist criteria. Please ensure all team members sign the last page of this document.</p>
+      <p class="footnote">Choose a midterm and final rating for each criterion. The rating options match those shown in the photographed checklist.</p>
+      <p class="storage-status" data-storage-status role="status">Entries, including student details, save in this browser as you type.</p>
+    </header>
+
+    <section class="section" id="accountability" data-scale="standard">
+      <h2>Accountability and Safety</h2>
+      <ol class="criteria">
+        <li class="criterion"><span class="statement">Arrives prepared and on time.</span></li>
+        <li class="criterion"><span class="statement">Uses personal electronic devices only during designated breaks times*.</span></li>
+        <li class="criterion"><span class="statement">Able to explain the legal responsibility to report incidents of child abuse or neglect.</span></li>
+        <li class="criterion"><span class="statement">Uses feedback to enhance skills and abilities.</span></li>
+        <li class="criterion"><span class="statement">Behaves in a professional manner at all times.</span></li>
+      </ol>
+      <label class="section-comment">Comments <textarea></textarea></label>
+      <p class="footnote">* unless it’s required by the EA Host.</p>
+    </section>
+
+    <section class="section" id="attire" data-scale="standard">
+      <h2>Professional Attire</h2>
+      <ol class="criteria">
+        <li class="criterion"><span class="statement">Wears comfortable, professional clothing that allows for physical activity, with full coverage, and without questionable logos or references, rips, or tears.</span></li>
+        <li class="criterion"><span class="statement">Wears supportive footwear with non-slip soles, securely attached to the foot.</span></li>
+        <li class="criterion"><span class="statement">Secures long hair and removes loose items, such as long jewelry.</span></li>
+      </ol>
+      <label class="section-comment">Comments <textarea></textarea></label>
+    </section>
+
+    <section class="section" id="ethics" data-scale="standard">
+      <h2>Ethics and Respect</h2>
+      <ol class="criteria">
+        <li class="criterion"><span class="statement">Maintains professional boundaries with school staff, children/youth, and families.</span></li>
+        <li class="criterion"><span class="statement">Protects confidential child/youth, staff, and parent information, verbally and in writing.</span></li>
+        <li class="criterion"><span class="statement">Discussions about children/youth are conducted in a way to ensure their privacy and dignity at all times.</span></li>
+        <li class="criterion"><span class="statement">Accepts and supports the decisions and directions of school staff.</span></li>
+        <li class="criterion"><span class="statement">Demonstrates a strong awareness and practice of respectful language related to race, culture, religion, sexual orientation, gender identity, and disability.</span></li>
+      </ol>
+      <label class="section-comment">Comments <textarea></textarea></label>
+    </section>
+
+    <section class="section" id="communication" data-scale="standard">
+      <h2>Communication and Collaboration</h2>
+      <ol class="criteria">
+        <li class="criterion"><span class="statement">Models respectful and effective verbal and non-verbal communication.</span></li>
+        <li class="criterion"><span class="statement">Respects other’s ideas and perspectives.</span></li>
+        <li class="criterion"><span class="statement">Communicates child/youth progress to the classroom teacher, verbally and in writing.</span></li>
+        <li class="criterion"><span class="statement">Reviews all written information, as available, and asks questions to gather more information helpful to the support of the children youth.</span></li>
+        <li class="criterion"><span class="statement">Demonstrates an understanding that home/school communications are to be conducted by the classroom teacher, and directs parent inquiries to the teacher.</span></li>
+        <li class="criterion"><span class="statement">Demonstrates a strong ability to communicate effectively in English.</span></li>
+        <li class="criterion"><span class="statement">Engages with students and school staff in a positive and cheerful manner.</span></li>
+      </ol>
+      <label class="section-comment">Comments <textarea></textarea></label>
+    </section>
+
+    <section class="section" id="administrative" data-scale="standard">
+      <h2>Administrative Tasks / Non-Instructional Support</h2>
+      <ol class="criteria">
+        <li class="criterion"><span class="statement">Knows where all children/youth documentation is located. (e.g. IEP, SRP, PBS Plan)</span></li>
+        <li class="criterion"><span class="statement">With support, records and tracks data as outlined in student IEPs.</span></li>
+        <li class="criterion"><span class="statement">Understands roles and responsibilities of school and district staff.</span></li>
+      </ol>
+      <label class="section-comment">Comments <textarea></textarea></label>
+    </section>
+
+    <section class="section" id="support" data-scale="extended">
+      <h2>Student Support</h2>
+      <ol class="criteria">
+        <li class="criterion"><span class="statement">Demonstrates an understanding of inclusion, and the ability to facilitate it.</span></li>
+        <li class="criterion"><span class="statement">Takes initiative to support children/youth needs, while taking direction from the classroom teacher and EA Host.</span></li>
+        <li class="criterion"><span class="statement">Demonstrates an ability to establish themselves as an authority figure in the class.</span></li>
+        <li class="criterion"><span class="statement">Provides specific, positive feedback to children/youth, with a focus on competencies, to build confidence and self esteem.</span></li>
+        <li class="criterion"><span class="statement">Provides clear and consistent direction, and follows through.</span></li>
+        <li class="criterion"><span class="statement">With assistance, uses supports to support inclusion and self regulation. (visual schedule, timers, transition countdown, contingency maps, social stories)</span></li>
+        <li class="criterion"><span class="statement">With assistance, reinforces socially appropriate behaviour.</span></li>
+        <li class="criterion"><span class="statement">With assistance, understands and implements break and reward times.</span></li>
+        <li class="criterion"><span class="statement">With assistance, collects and reviews data to assess social and behavioural needs.</span></li>
+        <li class="criterion"><span class="statement">With assistance, seeks to understand the function of student behaviour.</span></li>
+        <li class="criterion"><span class="statement">With assistance, encourages child/youth engagement amongst peers during instructional and non-instructional time</span></li>
+        <li class="criterion"><span class="statement">With assistance, facilitates opportunities to develop friendships by creating or developing connections amongst children/youth.</span></li>
+        <li class="criterion"><span class="statement">Understands the impact of different experiences and cultural backgrounds.</span></li>
+      </ol>
+      <label class="section-comment">Comments <textarea></textarea></label>
+    </section>
+
+    <section class="section" id="independence" data-scale="extended">
+      <h2>Facilitating Independence</h2>
+      <ol class="criteria">
+        <li class="criterion"><span class="statement">With assistance, uses developmentally and age appropriate adaptations and modifications to support chil/youth inclusion in the classroom</span></li>
+        <li class="criterion"><span class="statement">With assistance, uses the lowest level of prompting required, as outlined in the Prompting Hierarchy</span></li>
+        <li class="criterion"><span class="statement">With assistance, identifies strategies that may be used to reduce student reliance on EA support</span></li>
+        <li class="criterion"><span class="statement">With assistance, provides opportunities for child/youth to practice self-monitoring and problem solving</span></li>
+        <li class="criterion"><span class="statement">Honours child/youth perspective and input</span></li>
+      </ol>
+      <label class="section-comment">Comments <textarea></textarea></label>
+    </section>
+
+    <section class="section" id="signatures">
+      <h2>Assessment and Signatures</h2>
+      <div class="signature-block">
+        <label class="field">Date of Midterm Assessment <input type="date"></label>
+        <div class="signature-head"><span>PRINT</span><span>SIGN</span></div>
+        <div class="signature-row"><div><span>EA Practicum Student</span><i class="signature-line"></i></div><div><span>EA Practicum Student</span><i class="signature-line"></i></div></div>
+        <div class="signature-row"><div><span>School Supervisor</span><i class="signature-line"></i></div><div><span>School Supervisor</span><i class="signature-line"></i></div></div>
+        <div class="signature-row"><div><span>EA Host</span><i class="signature-line"></i></div><div><span>EA Host</span><i class="signature-line"></i></div></div>
+        <div class="signature-row"><div><span>Practicum Supervisor</span><i class="signature-line"></i></div><div><span>Practicum Supervisor</span><i class="signature-line"></i></div></div>
+        <label class="section-comment">Additional Notes <textarea></textarea></label>
+      </div>
+      <div class="signature-block">
+        <label class="field">Date of Final Assessment <input type="date"></label>
+        <div class="signature-head"><span>PRINT</span><span>SIGN</span></div>
+        <div class="signature-row"><div><span>EA Practicum Student</span><i class="signature-line"></i></div><div><span>EA Practicum Student</span><i class="signature-line"></i></div></div>
+        <div class="signature-row"><div><span>School Supervisor</span><i class="signature-line"></i></div><div><span>School Supervisor</span><i class="signature-line"></i></div></div>
+        <div class="signature-row"><div><span>EA Host</span><i class="signature-line"></i></div><div><span>EA Host</span><i class="signature-line"></i></div></div>
+        <div class="signature-row"><div><span>Practicum Supervisor</span><i class="signature-line"></i></div><div><span>Practicum Supervisor</span><i class="signature-line"></i></div></div>
+      </div>
+      <div class="signature-block">
+        <h3>School Supervisor will sign in ONE of the following boxes.</h3>
+        <div class="outcome">
+          <div class="outcome-row"><span>The EA Practicum Student has successfully completed the first practicum.</span><i class="signature-line" aria-label="School Supervisor signature"></i></div>
+          <div class="outcome-row"><span>The EA Practicum Student requires further practice and/or instruction.</span><i class="signature-line" aria-label="School Supervisor signature"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <p class="source-note">Transcribed from four photographed pages (IMG_2662–IMG_2665). Entries are stored in this browser. You can also print or save the completed form as a PDF.</p>
+  </main>
+</div>
+<script>
+  const standard = ['Not Yet Meeting', 'Approaching', 'Meeting'];
+  const extended = ['Not Yet Meeting', 'Approaching', 'Meeting', 'Exceeding', 'No Opportunity'];
+  document.querySelectorAll('[data-scale]').forEach(section => {
+    const options = section.dataset.scale === 'extended' ? extended : standard;
+    section.querySelectorAll('.criterion').forEach(item => {
+      const statement = item.querySelector('.statement').textContent.trim();
+      for (const stage of ['Midterm', 'Final']) {
+        const label = document.createElement('label');
+        label.className = 'rating';
+        label.textContent = stage;
+        const select = document.createElement('select');
+        select.setAttribute('aria-label', `${stage}: ${statement}`);
+        select.innerHTML = '<option value="">Select rating</option>';
+        for (const value of options) {
+          const option = document.createElement('option');
+          option.value = value;
+          option.textContent = value;
+          select.append(option);
+        }
+        label.append(select);
+        item.append(label);
+      }
+      if (section.dataset.scale === 'standard') {
+        const comments = document.createElement('div');
+        comments.className = 'row-comments';
+        for (const stage of ['Midterm', 'Final']) {
+          const label = document.createElement('label');
+          label.className = 'row-comment';
+          label.textContent = `${stage} comments`;
+          const input = document.createElement('input');
+          input.type = 'text';
+          input.setAttribute('aria-label', `${stage} comments: ${statement}`);
+          label.append(input);
+          comments.append(label);
+        }
+        item.append(comments);
+      }
+    });
+  });
+  (() => {
+    const key = `ea-practicum-form-v1:${location.pathname.split('/').pop()}`;
+    const fields = [...document.querySelectorAll('input, select, textarea')];
+    const status = document.querySelector('[data-storage-status]');
+    let available = true;
+    try {
+      const saved = JSON.parse(localStorage.getItem(key) || 'null');
+      if (Array.isArray(saved)) fields.forEach((field, index) => {
+        if (saved[index] === undefined) return;
+        if (field.type === 'checkbox' || field.type === 'radio') field.checked = Boolean(saved[index]);
+        else field.value = saved[index];
+      });
+    } catch (_) {
+      available = false;
+      status.textContent = 'Browser storage is unavailable. Print or save as a PDF to keep your entries.';
+    }
+    const save = () => {
+      if (!available) return;
+      try {
+        localStorage.setItem(key, JSON.stringify(fields.map(field =>
+          field.type === 'checkbox' || field.type === 'radio' ? field.checked : field.value
+        )));
+        status.textContent = 'Entries, including student details, are saved in this browser.';
+      } catch (_) {
+        available = false;
+        status.textContent = 'Browser storage is unavailable. Print or save as a PDF to keep your entries.';
+      }
+    };
+    fields.forEach(field => {
+      field.addEventListener('input', save);
+      field.addEventListener('change', save);
+    });
+  })();
+</script>
+</body>
+</html>

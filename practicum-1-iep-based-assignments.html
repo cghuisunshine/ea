@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practicum 1 IEP Based Assignments | Burnaby CCE</title>
+  <style>
+    :root { color-scheme:light; --ink:#1c2631; --muted:#566575; --line:#d4dfe6; --blue:#0d5b87; --soft:#eaf4fa; --paper:#fff; --canvas:#f4f7f9; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--canvas); color:var(--ink); font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--blue); }
+    .layout { display:grid; grid-template-columns:230px minmax(0,1fr); gap:28px; max-width:1340px; margin:auto; padding:30px; }
+    .sidebar { position:sticky; top:20px; align-self:start; padding:24px 18px; background:var(--paper); border:1px solid var(--line); border-radius:18px; box-shadow:0 8px 24px #14324a0a; }
+    .eyebrow { margin:0; color:var(--blue); font-size:.75rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    .sidebar h2 { margin:4px 0 14px; font-size:1rem; }
+    .sidebar nav { display:grid; gap:4px; }
+    .sidebar nav a { display:block; padding:8px 10px; border-radius:8px; color:var(--ink); text-decoration:none; font-size:.92rem; }
+    .sidebar nav a:hover,.sidebar nav a:focus-visible { color:var(--blue); background:var(--soft); }
+    .sidebar .other { margin-top:18px; padding-top:15px; border-top:1px solid var(--line); font-size:.9rem; }
+    .sidebar .other a { display:block; margin:0 0 8px; }
+    .button { appearance:none; width:100%; margin-top:15px; border:1px solid var(--line); border-radius:9px; background:#fff; color:var(--ink); padding:8px 12px; font:inherit; cursor:pointer; }
+    .button:hover,.button:focus-visible { border-color:var(--blue); color:var(--blue); }
+    main { min-width:0; }
+    .hero,.section { background:var(--paper); border:1px solid var(--line); border-radius:18px; box-shadow:0 8px 24px #14324a0a; }
+    .hero { padding:32px 38px; border-top:5px solid var(--blue); }
+    h1 { margin:5px 0 20px; font-size:clamp(1.8rem,4vw,2.65rem); line-height:1.17; letter-spacing:-.035em; }
+    h2 { margin:0 0 18px; font-size:1.45rem; letter-spacing:-.025em; }
+    h3 { margin:0 0 14px; font-size:1.07rem; }
+    p { margin:0 0 14px; }
+    .details { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px 20px; }
+    label { display:grid; gap:6px; font-size:.92rem; font-weight:700; }
+    input,textarea { width:100%; min-width:0; border:1px solid #adbfca; border-radius:8px; padding:9px 10px; background:#fff; color:var(--ink); font:inherit; font-weight:400; }
+    input:focus-visible,textarea:focus-visible { outline:2px solid var(--blue); outline-offset:1px; }
+    textarea { min-height:110px; resize:vertical; }
+    .section { margin-top:22px; padding:28px 38px; scroll-margin-top:20px; }
+    .profile-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:0; border:1px solid var(--line); border-radius:11px; overflow:hidden; }
+    .profile-column { min-width:0; padding:16px; }
+    .profile-column + .profile-column { border-left:1px solid var(--line); }
+    .profile-column h3 { padding:10px 12px; margin:-16px -16px 16px; background:var(--soft); color:var(--blue); border-bottom:1px solid var(--line); }
+    .profile-column label + label { margin-top:18px; }
+    .profile-column textarea { min-height:130px; }
+    .profile-column .tall { min-height:350px; }
+    .profile-column .short { min-height:105px; }
+    .reflections { display:grid; gap:16px; margin-top:20px; }
+    .reflection { border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+    .reflection label { display:grid; grid-template-columns:minmax(180px,30%) 1fr; gap:0; }
+    .reflection .prompt { padding:17px; background:#edf3f6; font-weight:700; }
+    .reflection textarea { min-height:160px; border:0; border-left:1px solid var(--line); border-radius:0; }
+    .reflection.large textarea { min-height:265px; }
+    .note { margin:16px 0 0; color:var(--muted); font-size:.84rem; }
+    .storage-status { margin-top:17px; padding:10px 13px; border-radius:8px; background:var(--soft); color:var(--blue); font-size:.88rem; }
+    footer { display:flex; justify-content:space-between; gap:20px; margin-top:22px; padding:18px 4px; color:var(--muted); font-size:.85rem; }
+    @media (max-width:920px) { .layout { display:block; padding:14px; } .sidebar { position:static; margin-bottom:16px; padding:16px; } .sidebar nav { display:flex; gap:4px; overflow:auto; white-space:nowrap; } .sidebar nav a { padding:7px 9px; } .hero,.section { padding:22px; } }
+    @media (max-width:680px) { .details,.profile-grid { grid-template-columns:1fr; } .profile-column + .profile-column { border-left:0; border-top:1px solid var(--line); } .profile-column .tall { min-height:150px; } .reflection label { grid-template-columns:1fr; } .reflection textarea { border-left:0; border-top:1px solid var(--line); } footer { display:block; } }
+    @media print { @page { size:letter; margin:12mm; } body { background:#fff; font-size:9pt; } .layout { display:block; max-width:none; padding:0; } .sidebar { display:none; } .hero,.section { border:0; border-radius:0; box-shadow:none; padding:0; margin:0 0 16pt; } .hero { border-top:0; } h1 { font-size:18pt; margin-bottom:10pt; } h2 { font-size:13pt; } #assignment-2 { break-before:page; } .profile-column { padding:7pt; } .profile-column h3 { margin:-7pt -7pt 7pt; padding:5pt; } .profile-column textarea { min-height:70pt; } .profile-column .tall { min-height:180pt; } .profile-column .short { min-height:50pt; } .reflection { break-inside:avoid; } .reflection textarea { min-height:70pt; } .reflection.large textarea { min-height:125pt; } .reflection .prompt { padding:8pt; } .note,.storage-status { display:none; } footer { font-size:7pt; } }
+  </style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" aria-label="Page navigation">
+    <p class="eyebrow">Burnaby CCE</p>
+    <h2>Practicum 1 IEP assignments</h2>
+    <nav>
+      <a href="#details">Student and school</a>
+      <a href="#assignment-1">First IEP goal</a>
+      <a href="#assignment-1-reflection">First reflection</a>
+      <a href="#assignment-2">Second IEP goal</a>
+      <a href="#assignment-2-reflection">Second reflection</a>
+    </nav>
+    <div class="other">
+      <a href="practicum-1-assignments.html">Practicum 1 assignments</a>
+      <a href="practicum-1-assignment-assessment.html">Assignment assessment</a>
+    </div>
+    <button class="button" type="button" onclick="window.print()">Print page</button>
+  </aside>
+
+  <main>
+    <header class="hero" id="details">
+      <p class="eyebrow">Burnaby Community &amp; Continuing Education · EA Program</p>
+      <h1>Practicum 1 IEP Based Assignments</h1>
+      <div class="details">
+        <label>EA practicum student <input type="text" autocomplete="off"></label>
+        <label>EA Host <input type="text" autocomplete="off"></label>
+        <label>School <input type="text" autocomplete="off"></label>
+        <label>Date <input type="date"></label>
+      </div>
+      <p class="storage-status" data-storage-status role="status">Entries, including student details, save in this browser as you type.</p>
+    </header>
+
+    <section class="section" id="assignment-1">
+      <h2>First IEP Goal</h2>
+      <div class="profile-grid">
+        <div class="profile-column">
+          <h3>Student’s Profile Information</h3>
+          <label>Diagnosis and Designation <textarea></textarea></label>
+          <label>Likes <textarea></textarea></label>
+          <label>Strengths <textarea></textarea></label>
+          <label>Area of stretch <textarea></textarea></label>
+        </div>
+        <div class="profile-column">
+          <h3>IEP Goal</h3>
+          <textarea class="tall" aria-label="First IEP goal"></textarea>
+        </div>
+        <div class="profile-column">
+          <h3>Strategies Used to Support the Goal</h3>
+          <label>Preventative and Antecedent strategies <textarea class="short"></textarea></label>
+          <label>Teaching Strategies <textarea class="short"></textarea></label>
+          <label>Consequence strategies <textarea class="short"></textarea></label>
+          <label>Data Collection method (if applicable) <textarea class="short"></textarea></label>
+        </div>
+      </div>
+      <div class="reflections" id="assignment-1-reflection">
+        <div class="reflection"><label><span class="prompt">How did you introduced the strategies</span><textarea></textarea></label></div>
+        <div class="reflection"><label><span class="prompt">How your strategies were received by the student</span><textarea></textarea></label></div>
+        <div class="reflection"><label><span class="prompt">Provide one suggestion for how it could be altered to increase its effectiveness</span><textarea></textarea></label></div>
+      </div>
+    </section>
+
+    <section class="section" id="assignment-2">
+      <h2>Second IEP Goal</h2>
+      <div class="profile-grid">
+        <div class="profile-column">
+          <h3>Student’s Profile Information</h3>
+          <label>Diagnosis and Designation <textarea></textarea></label>
+          <label>Likes <textarea></textarea></label>
+          <label>Strengths <textarea></textarea></label>
+          <label>Area of stretch <textarea></textarea></label>
+        </div>
+        <div class="profile-column">
+          <h3>IEP Goal</h3>
+          <textarea class="tall" aria-label="Second IEP goal"></textarea>
+        </div>
+        <div class="profile-column">
+          <h3>Strategies Used to Support the Goal</h3>
+          <label>Preventative and Antecedent strategies <textarea class="short"></textarea></label>
+          <label>Teaching Strategies <textarea class="short"></textarea></label>
+          <label>Consequence strategies <textarea class="short"></textarea></label>
+          <label>Data Collection method <textarea class="short"></textarea></label>
+        </div>
+      </div>
+      <div class="reflections" id="assignment-2-reflection">
+        <div class="reflection large"><label><span class="prompt">Write a reflection on student’s progress on the IEP Goal or the challenging behaviours.<br><br>In Case of taking ABC data, write a reflection on the most common challenging behaviours, their triggers, and the function of the behaviours</span><textarea></textarea></label></div>
+        <div class="reflection large"><label><span class="prompt">If applicable, what strategies you would use to improve the student’s performance<br><br>In Case of taking ABC data, what strategies you would use to prevent the student’s challenging behaviour?</span><textarea></textarea></label></div>
+      </div>
+    </section>
+
+    <footer>
+      <span>EA Program at BCCE, 751 Hammarskjold Drive · 604-296-6901 · <a href="https://www.burnabycce.ca">www.burnabycce.ca</a></span>
+      <span>Burnaby School District 41</span>
+    </footer>
+    <p class="note">Transcribed from IMG_2678–IMG_2680.</p>
+  </main>
+</div>
+<script>
+  (() => {
+    const key = `ea-practicum-form-v1:${location.pathname.split('/').pop()}`;
+    const fields = [...document.querySelectorAll('input, select, textarea')];
+    const status = document.querySelector('[data-storage-status]');
+    let available = true;
+    try {
+      const saved = JSON.parse(localStorage.getItem(key) || 'null');
+      if (Array.isArray(saved)) fields.forEach((field, index) => {
+        if (saved[index] === undefined) return;
+        if (field.type === 'checkbox' || field.type === 'radio') field.checked = Boolean(saved[index]);
+        else field.value = saved[index];
+      });
+    } catch (_) {
+      available = false;
+      status.textContent = 'Browser storage is unavailable. Print or save as a PDF to keep your entries.';
+    }
+    const save = () => {
+      if (!available) return;
+      try {
+        localStorage.setItem(key, JSON.stringify(fields.map(field =>
+          field.type === 'checkbox' || field.type === 'radio' ? field.checked : field.value
+        )));
+        status.textContent = 'Entries, including student details, are saved in this browser.';
+      } catch (_) {
+        available = false;
+        status.textContent = 'Browser storage is unavailable. Print or save as a PDF to keep your entries.';
+      }
+    };
+    fields.forEach(field => {
+      field.addEventListener('input', save);
+      field.addEventListener('change', save);
+    });
+  })();
+</script>
+</body>
+</html>
