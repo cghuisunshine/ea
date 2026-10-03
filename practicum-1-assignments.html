@@ -33,24 +33,47 @@
     .blank { display:inline-block; min-width:180px; border-bottom:2px solid var(--ink); height:1em; vertical-align:baseline; }
     .section { margin-top:22px; padding:30px 38px; scroll-margin-top:20px; }
     .assignments { display:grid; gap:16px; margin:24px 0 0; padding:0; list-style:none; counter-reset:assignments; }
-    .assignments li { position:relative; padding:20px 20px 20px 72px; border:1px solid var(--line); border-radius:12px; background:#fcfdfe; counter-increment:assignments; }
-    .assignments li::before { content:counter(assignments); position:absolute; top:18px; left:20px; width:36px; height:36px; display:grid; place-items:center; border-radius:50%; background:var(--soft); color:var(--blue); font-weight:800; }
+    .assignments > li { position:relative; padding:20px 20px 20px 72px; border:1px solid var(--line); border-radius:12px; background:#fcfdfe; counter-increment:assignments; }
+    .assignments > li::before { content:counter(assignments); position:absolute; top:18px; left:20px; width:36px; height:36px; display:grid; place-items:center; border-radius:50%; background:var(--soft); color:var(--blue); font-weight:800; }
     .intro { color:var(--muted); }
     .questions { display:grid; gap:12px; }
-    .question { display:grid; grid-template-columns:78px 1fr; gap:12px; padding:15px 18px; border:1px solid var(--line); border-radius:11px; background:#fcfdfe; scroll-margin-top:20px; }
+    .question { display:grid; grid-template-columns:78px minmax(0,1fr); gap:12px; padding:15px 18px; border:1px solid var(--line); border-radius:11px; background:#fcfdfe; scroll-margin-top:20px; }
     .question h3 { margin:0; color:var(--blue); font-size:1rem; white-space:nowrap; }
     .question p { margin:0; }
-    .reflection-entry { margin-top:14px; }
+    .reflection-entry { min-width:0; margin-top:14px; }
     .question .reflection-entry { grid-column:2; margin-top:0; }
     .reflection-entry label { display:block; margin-bottom:6px; font-weight:650; }
     .reflection-entry textarea { display:block; width:100%; min-height:150px; padding:12px; border:1px solid #bacbd5; border-radius:8px; background:#fff; color:var(--ink); font:inherit; resize:vertical; }
     .reflection-entry textarea:focus-visible { outline:2px solid var(--blue); outline-offset:2px; }
-    .reflection-print { display:none; white-space:pre-wrap; overflow-wrap:anywhere; }
+    .editor-toolbar { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:8px; }
+    .editor-toolbar .button { padding:5px 12px; font-size:.9rem; }
+    .editor-toolbar .button[aria-pressed="true"] { background:var(--soft); border-color:var(--blue); color:var(--blue); }
+    .reflection-entry [hidden] { display:none; }
+    .markdown-preview { min-height:150px; max-width:100%; padding:12px; border:1px solid #bacbd5; border-radius:8px; background:#fff; overflow-wrap:anywhere; }
+    .markdown-preview.is-plain { white-space:pre-wrap; }
+    .markdown-preview :is(h1,h2,h3,h4,h5,h6) { margin:16px 0 8px; color:var(--ink); line-height:1.35; white-space:normal; letter-spacing:normal; }
+    .markdown-preview h1 { font-size:1.6rem; }
+    .markdown-preview h2 { font-size:1.35rem; }
+    .markdown-preview h3 { font-size:1.15rem; }
+    .markdown-preview p { margin:0 0 12px; }
+    .markdown-preview :first-child { margin-top:0; }
+    .markdown-preview :last-child { margin-bottom:0; }
+    .markdown-preview :is(ul,ol) { margin:8px 0 12px; padding-left:26px; }
+    .markdown-preview li { margin:4px 0; }
+    .markdown-preview blockquote { margin:12px 0; padding:4px 14px; border-left:3px solid var(--blue); color:var(--muted); }
+    .markdown-preview code { padding:2px 4px; border-radius:4px; background:var(--canvas); font-size:.9em; }
+    .markdown-preview pre { overflow:auto; padding:12px; border-radius:8px; background:var(--canvas); white-space:pre-wrap; }
+    .markdown-preview pre code { padding:0; }
+    .markdown-preview table { display:block; max-width:100%; overflow:auto; border-collapse:collapse; margin:12px 0; }
+    .markdown-preview :is(th,td) { padding:6px 10px; border:1px solid var(--line); }
+    .markdown-preview th { background:var(--soft); }
+    .markdown-preview img { max-width:100%; height:auto; }
+    .editor-help { color:var(--muted); font-size:.9rem; }
     .storage-status { color:var(--muted); font-size:.9rem; }
     .source-note { margin:20px 4px 0; color:var(--muted); font-size:.82rem; }
     @media (max-width:850px) { .layout { display:block; padding:14px; } .sidebar { position:static; margin-bottom:16px; padding:16px; } .sidebar nav { display:flex; gap:4px; overflow:auto; white-space:nowrap; } .sidebar nav a { padding:7px 9px; } .hero,.section { padding:22px; } }
-    @media (max-width:520px) { .question { grid-template-columns:1fr; gap:4px; } .question .reflection-entry { grid-column:1; margin-top:10px; } .assignments li { padding:60px 16px 16px; } .assignments li::before { top:14px; left:16px; } }
-    @media print { body { background:#fff; font-size:10.5pt; } .layout { display:block; max-width:none; padding:0; } .sidebar { display:none; } .hero,.section { box-shadow:none; border:0; border-radius:0; padding:0; margin:0 0 18pt; } .hero { border-top:0; } .question,.assignments li { break-inside:avoid; } .source-note,.storage-status,.reflection-entry textarea { display:none; } .reflection-print { display:block; min-height:60pt; } }
+    @media (max-width:520px) { .question { grid-template-columns:1fr; gap:4px; } .question .reflection-entry { grid-column:1; margin-top:10px; } .assignments > li { padding:60px 16px 16px; } .assignments > li::before { top:14px; left:16px; } }
+    @media print { body { background:#fff; font-size:10.5pt; } .layout { display:block; max-width:none; padding:0; } .sidebar { display:none; } .hero,.section { box-shadow:none; border:0; border-radius:0; padding:0; margin:0 0 18pt; } .hero { border-top:0; } .question,.assignments > li { break-inside:avoid; } .source-note,.storage-status,.editor-help,.editor-toolbar,.reflection-entry textarea { display:none; } .reflection-entry .markdown-preview { display:block; min-height:60pt; border:0; padding:0; } }
   </style>
 </head>
 <body>
@@ -74,6 +97,7 @@
       <h1>Practicum 1 Assignments</h1>
       <p class="notice">EA Practicum students will hand in three assignments by the end of Practicum 1, including 2 IEP support assignments and daily reflections.</p>
       <p class="storage-status" data-storage-status role="status">Reflections are saved automatically in this browser and restored when you reopen this page.</p>
+      <p class="editor-help" id="markdown-help">Write or paste Markdown, then select Preview to see formatted headings, bold text, lists, and tables. Select Edit Markdown to make changes.</p>
       <p class="deadline"><strong>All the assignments must be handed in by</strong> <span class="blank" aria-label="Deadline left blank in the source document"></span>.</p>
     </header>
 
@@ -219,6 +243,8 @@
     <p class="source-note">Transcribed from three photographed pages (IMG_2659–IMG_2661).</p>
   </main>
 </div>
+<script src="assets/vendor/marked-18.0.14.js"></script>
+<script src="assets/vendor/dompurify-3.4.16.js"></script>
 <script>
   (() => {
     const status = document.querySelector('[data-storage-status]');
@@ -228,17 +254,71 @@
 
     document.querySelectorAll('.reflection-entry textarea').forEach(field => {
       const key = storagePrefix + field.id;
-      const printCopy = field.parentElement.querySelector('.reflection-print');
+      const entry = field.parentElement;
+      const preview = entry.querySelector('.reflection-print');
+      const label = entry.querySelector('label');
+      preview.className = 'markdown-preview';
+      preview.id = field.id + '-preview';
+      preview.removeAttribute('aria-hidden');
+      preview.setAttribute('role', 'region');
+      label.id = field.id + '-label';
+      preview.setAttribute('aria-labelledby', label.id);
+      field.setAttribute('aria-describedby', 'markdown-help');
+
+      const toolbar = document.createElement('div');
+      toolbar.className = 'editor-toolbar';
+      toolbar.setAttribute('role', 'group');
+      toolbar.setAttribute('aria-label', label.textContent + ' display');
+      const editButton = document.createElement('button');
+      const previewButton = document.createElement('button');
+      [editButton, previewButton].forEach(button => {
+        button.type = 'button';
+        button.className = 'button';
+        toolbar.append(button);
+      });
+      editButton.textContent = 'Edit Markdown';
+      previewButton.textContent = 'Preview';
+      editButton.setAttribute('aria-controls', field.id);
+      previewButton.setAttribute('aria-controls', preview.id);
+      entry.insertBefore(toolbar, field);
+
+      const render = () => {
+        if (window.marked && window.DOMPurify) {
+          preview.innerHTML = DOMPurify.sanitize(marked.parse(field.value, { gfm:true, breaks:true }), {
+            USE_PROFILES: { html:true },
+            FORBID_TAGS: ['style', 'form'],
+            FORBID_ATTR: ['style', 'id', 'name']
+          });
+        } else {
+          preview.textContent = field.value;
+          preview.classList.add('is-plain');
+        }
+      };
+      const setMode = (editing) => {
+        field.hidden = !editing;
+        preview.hidden = editing;
+        editButton.setAttribute('aria-pressed', String(editing));
+        previewButton.setAttribute('aria-pressed', String(!editing));
+      };
+      editButton.addEventListener('click', () => {
+        setMode(true);
+        field.focus();
+      });
+      previewButton.addEventListener('click', () => {
+        render();
+        setMode(false);
+      });
       try {
         const saved = localStorage.getItem(key);
         if (saved !== null) field.value = saved;
       } catch (_) {
         restoreFailed = true;
       }
-      printCopy.textContent = field.value;
+      render();
+      setMode(!field.value.trim());
 
       field.addEventListener('input', () => {
-        printCopy.textContent = field.value;
+        render();
         try {
           localStorage.setItem(key, field.value);
           status.textContent = 'Reflections saved in this browser.';
