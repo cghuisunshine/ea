@@ -40,10 +40,17 @@
     .question { display:grid; grid-template-columns:78px 1fr; gap:12px; padding:15px 18px; border:1px solid var(--line); border-radius:11px; background:#fcfdfe; scroll-margin-top:20px; }
     .question h3 { margin:0; color:var(--blue); font-size:1rem; white-space:nowrap; }
     .question p { margin:0; }
+    .reflection-entry { margin-top:14px; }
+    .question .reflection-entry { grid-column:2; margin-top:0; }
+    .reflection-entry label { display:block; margin-bottom:6px; font-weight:650; }
+    .reflection-entry textarea { display:block; width:100%; min-height:150px; padding:12px; border:1px solid #bacbd5; border-radius:8px; background:#fff; color:var(--ink); font:inherit; resize:vertical; }
+    .reflection-entry textarea:focus-visible { outline:2px solid var(--blue); outline-offset:2px; }
+    .reflection-print { display:none; white-space:pre-wrap; overflow-wrap:anywhere; }
+    .storage-status { color:var(--muted); font-size:.9rem; }
     .source-note { margin:20px 4px 0; color:var(--muted); font-size:.82rem; }
     @media (max-width:850px) { .layout { display:block; padding:14px; } .sidebar { position:static; margin-bottom:16px; padding:16px; } .sidebar nav { display:flex; gap:4px; overflow:auto; white-space:nowrap; } .sidebar nav a { padding:7px 9px; } .hero,.section { padding:22px; } }
-    @media (max-width:520px) { .question { grid-template-columns:1fr; gap:4px; } .assignments li { padding:60px 16px 16px; } .assignments li::before { top:14px; left:16px; } }
-    @media print { body { background:#fff; font-size:10.5pt; } .layout { display:block; max-width:none; padding:0; } .sidebar { display:none; } .hero,.section { box-shadow:none; border:0; border-radius:0; padding:0; margin:0 0 18pt; } .hero { border-top:0; } .question,.assignments li { break-inside:avoid; } .source-note { display:none; } }
+    @media (max-width:520px) { .question { grid-template-columns:1fr; gap:4px; } .question .reflection-entry { grid-column:1; margin-top:10px; } .assignments li { padding:60px 16px 16px; } .assignments li::before { top:14px; left:16px; } }
+    @media print { body { background:#fff; font-size:10.5pt; } .layout { display:block; max-width:none; padding:0; } .sidebar { display:none; } .hero,.section { box-shadow:none; border:0; border-radius:0; padding:0; margin:0 0 18pt; } .hero { border-top:0; } .question,.assignments li { break-inside:avoid; } .source-note,.storage-status,.reflection-entry textarea { display:none; } .reflection-print { display:block; min-height:60pt; } }
   </style>
 </head>
 <body>
@@ -66,6 +73,7 @@
       <p class="eyebrow">EA Diploma Program</p>
       <h1>Practicum 1 Assignments</h1>
       <p class="notice">EA Practicum students will hand in three assignments by the end of Practicum 1, including 2 IEP support assignments and daily reflections.</p>
+      <p class="storage-status" data-storage-status role="status">Reflections are saved automatically in this browser and restored when you reopen this page.</p>
       <p class="deadline"><strong>All the assignments must be handed in by</strong> <span class="blank" aria-label="Deadline left blank in the source document"></span>.</p>
     </header>
 
@@ -74,8 +82,20 @@
       <p>With the support of the EA Host, Classroom Teacher, and School Supervisor, EA Practicum Students will begin to engage in the process of adaptation, use of visual supports (if applicable), and data collection.</p>
       <p>EA Hosts can provide guidance and help to the EA Practicum Students for the practicum assignments. EA Practicum Students will write a reflection on their assignments and include evidence in their Learning Portfolio, to be handed in after the practicum.</p>
       <ol class="assignments">
-        <li>In collaboration with the EA Host and/or School Supervisor, create an adaptation or adaptations to assist a student with an academic task, and/or to support a social objective. This could include creating a visual support, social story, contingency map, DTT, etc. After implementing the strategy, write a reflection on how you introduced the adaptation, how it was received by the student, and add one suggestion for how it could be altered to increase its effectiveness.</li>
-        <li>In collaboration with the EA Host, choose an IEP goal that is appropriate for data collection. Then, find an appropriate datasheet from your Practicum folder or one from the EA Host. Along with the EA host, take data from an identical but different data sheet on two occasions within a reasonable time. Compare the result of your data to the EA host’s data to find inconsistencies and ask for feedback. Lastly, write a reflection on the kind of datasheet that you used and discuss your findings on the student’s progress on that specific goal. In your reflections also include what strategies you would use to adjust the support program.</li>
+        <li>In collaboration with the EA Host and/or School Supervisor, create an adaptation or adaptations to assist a student with an academic task, and/or to support a social objective. This could include creating a visual support, social story, contingency map, DTT, etc. After implementing the strategy, write a reflection on how you introduced the adaptation, how it was received by the student, and add one suggestion for how it could be altered to increase its effectiveness.
+          <div class="reflection-entry">
+            <label for="assignment-1-reflection">Assignment 1 reflection</label>
+            <textarea id="assignment-1-reflection" name="assignment-1-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </li>
+        <li>In collaboration with the EA Host, choose an IEP goal that is appropriate for data collection. Then, find an appropriate datasheet from your Practicum folder or one from the EA Host. Along with the EA host, take data from an identical but different data sheet on two occasions within a reasonable time. Compare the result of your data to the EA host’s data to find inconsistencies and ask for feedback. Lastly, write a reflection on the kind of datasheet that you used and discuss your findings on the student’s progress on that specific goal. In your reflections also include what strategies you would use to adjust the support program.
+          <div class="reflection-entry">
+            <label for="assignment-2-reflection">Assignment 2 reflection</label>
+            <textarea id="assignment-2-reflection" name="assignment-2-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </li>
       </ol>
     </section>
 
@@ -88,26 +108,148 @@
     <section class="section" id="reflections">
       <h2>Daily reflection questions</h2>
       <div class="questions">
-        <article class="question" id="day-1"><h3>Day 1</h3><p>Who were the staff that you met on your orientation day? What kind of documents and information was shared with you? How did you find that helpful?</p></article>
-        <article class="question" id="day-2"><h3>Day 2</h3><p>What were some classroom routines and norms that you have observed in the classroom? What are the types of universal supports that are available for the whole class? What are some types of essential supports for the student(s) you are supporting?</p></article>
-        <article class="question" id="day-3"><h3>Day 3</h3><p>Write a reflection on your student learning profile? What are the student’s strengths and challenges? What IEP goal do they currently have?</p></article>
-        <article class="question" id="day-4"><h3>Day 4</h3><p>What are some strategies you use to make rapport between you and the student(s) whom you are supporting? How did you approach other students? What else can you do to make the rapport bond stronger?</p></article>
-        <article class="question" id="day-5"><h3>Day 5</h3><p>What is the appropriate proximity of EA to students when supporting students? When does the EA need to be close to supporting the student(s) and when can EA allow space?</p></article>
-        <article class="question" id="day-6"><h3>Day 6</h3><p>What strategies have you observed that EA host uses and have been successful? Describe the strategies and explain why you think they were successful. Make one suggestion to improve that strategy.</p></article>
-        <article class="question" id="day-7"><h3>Day 7</h3><p>What is the routine task that you took over? What strategies did you use to support student(s) during that routine task? How can you facilitate student’s independence within that routine task?</p></article>
-        <article class="question" id="day-8"><h3>Day 8</h3><p>What is one valuable lesson you have learned so far. In which areas are you exceeding? How and in which areas can you improve yourselves for the next half of practicum 1?</p></article>
-        <article class="question" id="day-9"><h3>Day 9</h3><p>What are the direct and indirect triggers to the student(s) problem behaviours? What are the most common functions of behaviour for the student(s) you are supporting? How can you prevent the problem behaviours from happening?</p></article>
-        <article class="question" id="day-10"><h3>Day 10</h3><p>What strategies did you facilitate to promote social inclusion between the student whom you are supporting and other students in instructional and non-instructional times? Make one or two suggestions to improve your strategies.</p></article>
-        <article class="question" id="day-11"><h3>Day 11</h3><p>Explain how you are facilitating student’s independence during instructional and non-instructional times. Provide some examples.</p></article>
-        <article class="question" id="day-12"><h3>Day 12</h3><p>Explain the consequence strategies you are implementing and evaluate their effectiveness. How can you improve them?</p></article>
-        <article class="question" id="day-13"><h3>Day 13</h3><p>During your first practicum experience, explain a time that there was a conflict between you and the EA host and/or classroom teacher or explain a time that you witnessed a conflict. What was the conflict about and how it was resolved? What did you learn?</p></article>
-        <article class="question" id="day-14"><h3>Day 14</h3><p>How has your understanding of the role of Education Assistant changed since you began this practicum? Explain one or two strategies that you’ve observed so far that seemed to work with the student(s) that you would add to your “toolkit”.</p></article>
-        <article class="question" id="day-15"><h3>Day 15</h3><p>(a) What were your successes? What was satisfying? What will you keep doing on your next practicum? (b) What remains challenging? What would you like to learn more about for your next practicum?</p></article>
+        <article class="question" id="day-1"><h3>Day 1</h3><p>Who were the staff that you met on your orientation day? What kind of documents and information was shared with you? How did you find that helpful?</p>
+          <div class="reflection-entry">
+            <label for="day-1-reflection">Day 1 reflection</label>
+            <textarea id="day-1-reflection" name="day-1-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="question" id="day-2"><h3>Day 2</h3><p>What were some classroom routines and norms that you have observed in the classroom? What are the types of universal supports that are available for the whole class? What are some types of essential supports for the student(s) you are supporting?</p>
+          <div class="reflection-entry">
+            <label for="day-2-reflection">Day 2 reflection</label>
+            <textarea id="day-2-reflection" name="day-2-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="question" id="day-3"><h3>Day 3</h3><p>Write a reflection on your student learning profile? What are the student’s strengths and challenges? What IEP goal do they currently have?</p>
+          <div class="reflection-entry">
+            <label for="day-3-reflection">Day 3 reflection</label>
+            <textarea id="day-3-reflection" name="day-3-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="question" id="day-4"><h3>Day 4</h3><p>What are some strategies you use to make rapport between you and the student(s) whom you are supporting? How did you approach other students? What else can you do to make the rapport bond stronger?</p>
+          <div class="reflection-entry">
+            <label for="day-4-reflection">Day 4 reflection</label>
+            <textarea id="day-4-reflection" name="day-4-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="question" id="day-5"><h3>Day 5</h3><p>What is the appropriate proximity of EA to students when supporting students? When does the EA need to be close to supporting the student(s) and when can EA allow space?</p>
+          <div class="reflection-entry">
+            <label for="day-5-reflection">Day 5 reflection</label>
+            <textarea id="day-5-reflection" name="day-5-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="question" id="day-6"><h3>Day 6</h3><p>What strategies have you observed that EA host uses and have been successful? Describe the strategies and explain why you think they were successful. Make one suggestion to improve that strategy.</p>
+          <div class="reflection-entry">
+            <label for="day-6-reflection">Day 6 reflection</label>
+            <textarea id="day-6-reflection" name="day-6-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="question" id="day-7"><h3>Day 7</h3><p>What is the routine task that you took over? What strategies did you use to support student(s) during that routine task? How can you facilitate student’s independence within that routine task?</p>
+          <div class="reflection-entry">
+            <label for="day-7-reflection">Day 7 reflection</label>
+            <textarea id="day-7-reflection" name="day-7-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="question" id="day-8"><h3>Day 8</h3><p>What is one valuable lesson you have learned so far. In which areas are you exceeding? How and in which areas can you improve yourselves for the next half of practicum 1?</p>
+          <div class="reflection-entry">
+            <label for="day-8-reflection">Day 8 reflection</label>
+            <textarea id="day-8-reflection" name="day-8-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="question" id="day-9"><h3>Day 9</h3><p>What are the direct and indirect triggers to the student(s) problem behaviours? What are the most common functions of behaviour for the student(s) you are supporting? How can you prevent the problem behaviours from happening?</p>
+          <div class="reflection-entry">
+            <label for="day-9-reflection">Day 9 reflection</label>
+            <textarea id="day-9-reflection" name="day-9-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="question" id="day-10"><h3>Day 10</h3><p>What strategies did you facilitate to promote social inclusion between the student whom you are supporting and other students in instructional and non-instructional times? Make one or two suggestions to improve your strategies.</p>
+          <div class="reflection-entry">
+            <label for="day-10-reflection">Day 10 reflection</label>
+            <textarea id="day-10-reflection" name="day-10-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="question" id="day-11"><h3>Day 11</h3><p>Explain how you are facilitating student’s independence during instructional and non-instructional times. Provide some examples.</p>
+          <div class="reflection-entry">
+            <label for="day-11-reflection">Day 11 reflection</label>
+            <textarea id="day-11-reflection" name="day-11-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="question" id="day-12"><h3>Day 12</h3><p>Explain the consequence strategies you are implementing and evaluate their effectiveness. How can you improve them?</p>
+          <div class="reflection-entry">
+            <label for="day-12-reflection">Day 12 reflection</label>
+            <textarea id="day-12-reflection" name="day-12-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="question" id="day-13"><h3>Day 13</h3><p>During your first practicum experience, explain a time that there was a conflict between you and the EA host and/or classroom teacher or explain a time that you witnessed a conflict. What was the conflict about and how it was resolved? What did you learn?</p>
+          <div class="reflection-entry">
+            <label for="day-13-reflection">Day 13 reflection</label>
+            <textarea id="day-13-reflection" name="day-13-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="question" id="day-14"><h3>Day 14</h3><p>How has your understanding of the role of Education Assistant changed since you began this practicum? Explain one or two strategies that you’ve observed so far that seemed to work with the student(s) that you would add to your “toolkit”.</p>
+          <div class="reflection-entry">
+            <label for="day-14-reflection">Day 14 reflection</label>
+            <textarea id="day-14-reflection" name="day-14-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="question" id="day-15"><h3>Day 15</h3><p>(a) What were your successes? What was satisfying? What will you keep doing on your next practicum? (b) What remains challenging? What would you like to learn more about for your next practicum?</p>
+          <div class="reflection-entry">
+            <label for="day-15-reflection">Day 15 reflection</label>
+            <textarea id="day-15-reflection" name="day-15-reflection" rows="5" placeholder="Write your reflection here…"></textarea>
+            <div class="reflection-print" aria-hidden="true"></div>
+          </div>
+        </article>
       </div>
     </section>
 
     <p class="source-note">Transcribed from three photographed pages (IMG_2659–IMG_2661).</p>
   </main>
 </div>
+<script>
+  (() => {
+    const status = document.querySelector('[data-storage-status]');
+    const storagePrefix = 'ea-practicum-reflection-v1:practicum-1-assignments.html:';
+    const storageError = 'Browser storage is unavailable. Your reflections can still be edited; print or save as a PDF to keep them.';
+    let restoreFailed = false;
+
+    document.querySelectorAll('.reflection-entry textarea').forEach(field => {
+      const key = storagePrefix + field.id;
+      const printCopy = field.parentElement.querySelector('.reflection-print');
+      try {
+        const saved = localStorage.getItem(key);
+        if (saved !== null) field.value = saved;
+      } catch (_) {
+        restoreFailed = true;
+      }
+      printCopy.textContent = field.value;
+
+      field.addEventListener('input', () => {
+        printCopy.textContent = field.value;
+        try {
+          localStorage.setItem(key, field.value);
+          status.textContent = 'Reflections saved in this browser.';
+        } catch (_) {
+          status.textContent = storageError;
+        }
+      });
+    });
+
+    if (restoreFailed) status.textContent = storageError;
+  })();
+</script>
 </body>
 </html>
